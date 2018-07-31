@@ -42,36 +42,30 @@ class EvenDivisionMusicMaker:
         beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
-            beam_rests=self.beams
+            beam_rests=self.beams,
             )
         division_masks = rhythmmakertools.SilenceMask(
-            pattern = abjad.Pattern(
+            pattern=abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period,
-                )
+                ),
             )
-
         even_division_rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
             denominators=self.denominators,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
             )
-
         selections = even_division_rhythm_maker(time_signature_pairs)
-
         music = abjad.Staff(selections)
-
         music = self._apply_pitches(music)
-
         return music
 
     def _apply_pitches(self, selections):
-        selections = selections
-        leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
+        leaves = [_ for _ in abjad.iterate(selections).by_logical_tie()]
         pitches = self._cyclic_pitches(self.pitches)
         for i, leaf in enumerate(leaves):
-            if leaf.is_pitched ==True:
+            if leaf.is_pitched is True:
                 pitch = next(pitches)
                 for note in leaf:
                     note.written_pitch = pitch
@@ -2172,6 +2166,7 @@ score_file.layout_block.items.append(block)
 
 ###################
 
-# print(format(score_file))
-abjad.show(score_file)
+#print(format(score_file))
+#abjad.show(score_file)
 #abjad.play(score_file)
+abjad.persist(score_file).as_ly('Introduction.ly')
