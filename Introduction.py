@@ -22,12 +22,12 @@ class EvenDivisionMusicMaker:
         pitches,
         extra_counts_per_division=[0],
         beams=False,
-        clef='treble'):
-
+        clef='treble',
+        ):
         self.denominators = denominators
-        self.extra_counts_per_division=extra_counts_per_division
-        self.mask_indices=mask_indices
-        self.mask_period=mask_period
+        self.extra_counts_per_division = extra_counts_per_division
+        self.mask_indices = mask_indices
+        self.mask_period = mask_period
         self.pitches = pitches
         self.beams = beams
         self.clef = abjad.Clef(clef)
@@ -39,7 +39,6 @@ class EvenDivisionMusicMaker:
             yield cyclic[c]
             c = c + 1
 
-
     def make_basic_rhythm(self, time_signature_pairs):
 
         beam_specifier = rhythmmakertools.BeamSpecifier(
@@ -50,7 +49,8 @@ class EvenDivisionMusicMaker:
         division_masks = rhythmmakertools.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
-                period=self.mask_period)
+                period=self.mask_period,
+                )
             )
 
         even_division_rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
@@ -68,19 +68,16 @@ class EvenDivisionMusicMaker:
 
         return music
 
-
     def _apply_pitches(self, selections):
         selections = selections
         leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
         pitches = self._cyclic_pitches(self.pitches)
-
         for i, leaf in enumerate(leaves):
             if leaf.is_pitched ==True:
                 pitch = next(pitches)
                 for note in leaf:
                     note.written_pitch = pitch
         return selections
-
 
     def add_attachments(self, music):
         runs = abjad.select(music).by_run()
