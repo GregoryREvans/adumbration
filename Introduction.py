@@ -4,9 +4,8 @@
 ################################################################################
 
 import abjad
+import random
 from abjad import rhythmmakertools
-from random import random
-from random import seed
 
 ################################################################################
 ############################### MUSIC MAKERS ###################################
@@ -433,11 +432,11 @@ class TupletMusicMaker:
 ##### violin ######
 ###################
 
-seed(1)
+random.seed(1)
 violin_random_walk_1 = list()
-violin_random_walk_1.append(-1 if random() < 0.5 else 1)
+violin_random_walk_1.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = violin_random_walk_1[i-1] + movement
 	violin_random_walk_1.append(value)
 
@@ -447,11 +446,11 @@ violin_notes_1 = [(x / 4.0) for x in violin_random_walk_1]
 ###### viola ######
 ###################
 
-seed(2)
+random.seed(2)
 viola_random_walk_1 = list()
-viola_random_walk_1.append(-1 if random() < 0.5 else 1)
+viola_random_walk_1.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = viola_random_walk_1[i-1] + movement
 	viola_random_walk_1.append(value)
 
@@ -461,11 +460,11 @@ viola_notes_1 = [((x / 4.0) - 6) for x in viola_random_walk_1]
 ###### cello ######
 ###################
 
-seed(3)
+random.seed(3)
 cello_random_walk_1 = list()
-cello_random_walk_1.append(-1 if random() < 0.5 else 1)
+cello_random_walk_1.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = cello_random_walk_1[i-1] + movement
 	cello_random_walk_1.append(value)
 
@@ -479,11 +478,11 @@ cello_notes_1 = [((x / 4.0) - 8) for x in cello_random_walk_1]
 ##### violin ######
 ###################
 
-seed(4)
+random.seed(4)
 violin_random_walk_2 = list()
-violin_random_walk_2.append(-1 if random() < 0.5 else 1)
+violin_random_walk_2.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = violin_random_walk_2[i-1] + movement
 	violin_random_walk_2.append(value)
 
@@ -493,11 +492,11 @@ violin_notes_2 = [((x / 4.0) + 3) for x in violin_random_walk_2]
 ###### viola ######
 ###################
 
-seed(5)
+random.seed(5)
 viola_random_walk_2 = list()
-viola_random_walk_2.append(-1 if random() < 0.5 else 1)
+viola_random_walk_2.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = viola_random_walk_2[i-1] + movement
 	viola_random_walk_2.append(value)
 
@@ -507,11 +506,11 @@ viola_notes_2 = [((x / 2.0) - 5) for x in viola_random_walk_2]
 ###### cello ######
 ###################
 
-seed(6)
+random.seed(6)
 cello_random_walk_2 = list()
-cello_random_walk_2.append(-1 if random() < 0.5 else 1)
+cello_random_walk_2.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = cello_random_walk_2[i-1] + movement
 	cello_random_walk_2.append(value)
 
@@ -525,11 +524,11 @@ cello_notes_2 = [((x / 4.0) - 12) for x in cello_random_walk_2]
 ##### violin ######
 ###################
 
-seed(7)
+random.seed(7)
 violin_random_walk_3 = list()
-violin_random_walk_3.append(-1 if random() < 0.5 else 1)
+violin_random_walk_3.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = violin_random_walk_3[i-1] + movement
 	violin_random_walk_3.append(value)
 
@@ -539,11 +538,11 @@ violin_notes_3 = [((x / 2.0) + 5) for x in violin_random_walk_3]
 ###### viola ######
 ###################
 
-seed(8)
+random.seed(8)
 viola_random_walk_3 = list()
-viola_random_walk_3.append(-1 if random() < 0.5 else 1)
+viola_random_walk_3.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = viola_random_walk_3[i-1] + movement
 	viola_random_walk_3.append(value)
 
@@ -553,11 +552,11 @@ viola_notes_3 = [((x / 4.0) - 2) for x in viola_random_walk_3]
 ###### cello ######
 ###################
 
-seed(9)
+random.seed(9)
 cello_random_walk_3 = list()
-cello_random_walk_3.append(-1 if random() < 0.5 else 1)
+cello_random_walk_3.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = cello_random_walk_3[i-1] + movement
 	cello_random_walk_3.append(value)
 
@@ -571,11 +570,11 @@ cello_notes_3 = [((x / 4.0) - 15) for x in cello_random_walk_3]
 ##### violin ######
 ###################
 
-seed(10)
+random.seed(10)
 violin_random_walk_4 = list()
-violin_random_walk_4.append(-1 if random() < 0.5 else 1)
+violin_random_walk_4.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = violin_random_walk_4[i-1] + movement
 	violin_random_walk_4.append(value)
 
@@ -585,11 +584,11 @@ violin_notes_4 = [((x / 2.0) + 7) for x in violin_random_walk_4]
 ###### viola ######
 ###################
 
-seed(11)
+random.seed(11)
 viola_random_walk_4 = list()
-viola_random_walk_4.append(-1 if random() < 0.5 else 1)
+viola_random_walk_4.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = viola_random_walk_4[i-1] + movement
 	viola_random_walk_4.append(value)
 
@@ -599,11 +598,11 @@ viola_notes_4 = [((x / 2.0) - 8) for x in viola_random_walk_4]
 ###### cello ######
 ###################
 
-seed(12)
+random.seed(12)
 cello_random_walk_4 = list()
-cello_random_walk_4.append(-1 if random() < 0.5 else 1)
+cello_random_walk_4.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = cello_random_walk_4[i-1] + movement
 	cello_random_walk_4.append(value)
 
@@ -617,11 +616,11 @@ cello_notes_4 = [((x / 4.0) - 12) for x in cello_random_walk_4]
 ##### violin ######
 ###################
 
-seed(13)
+random.seed(13)
 violin_random_walk_5 = list()
-violin_random_walk_5.append(-1 if random() < 0.5 else 1)
+violin_random_walk_5.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = violin_random_walk_5[i-1] + movement
 	violin_random_walk_5.append(value)
 
@@ -631,11 +630,11 @@ violin_notes_5 = [((x / 4.0) + 11) for x in violin_random_walk_5]
 ###### viola ######
 ###################
 
-seed(14)
+random.seed(14)
 viola_random_walk_5 = list()
-viola_random_walk_5.append(-1 if random() < 0.5 else 1)
+viola_random_walk_5.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = viola_random_walk_5[i-1] + movement
 	viola_random_walk_5.append(value)
 
@@ -645,11 +644,11 @@ viola_notes_5 = [((x / 4.0) - 6) for x in viola_random_walk_5]
 ###### cello ######
 ###################
 
-seed(15)
+random.seed(15)
 cello_random_walk_5 = list()
-cello_random_walk_5.append(-1 if random() < 0.5 else 1)
+cello_random_walk_5.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random() < 0.5 else 1
+	movement = -1 if random.random() < 0.5 else 1
 	value = cello_random_walk_5[i-1] + movement
 	cello_random_walk_5.append(value)
 
