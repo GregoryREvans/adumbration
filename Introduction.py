@@ -40,7 +40,6 @@ class EvenDivisionMusicMaker:
             c = c + 1
 
     def make_basic_rhythm(self, time_signature_pairs):
-
         beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
@@ -91,13 +90,11 @@ class EvenDivisionMusicMaker:
                 abjad.attach(abjad.Dynamic('ppp'), run[0])
         return music
 
-
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
             time_signature_pairs,
             )
 
-        #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
@@ -123,8 +120,8 @@ class NoteMusicMaker:
         mask_period,
         pitches,
         beams=False,
-        clef='treble'):
-
+        clef='treble',
+        ):
         self.mask_indices=mask_indices
         self.mask_period=mask_period
         self.pitches = pitches
@@ -138,9 +135,7 @@ class NoteMusicMaker:
             yield cyclic[c]
             c = c + 1
 
-
     def make_basic_rhythm(self, time_signature_pairs):
-
         beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
@@ -165,7 +160,6 @@ class NoteMusicMaker:
 
         return music
 
-
     def _apply_pitches(self, selections):
         selections = selections
         leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
@@ -177,7 +171,6 @@ class NoteMusicMaker:
                 for note in leaf:
                     note.written_pitch = pitch
         return selections
-
 
     def add_attachments(self, music):
         runs = abjad.select(music).by_run()
@@ -191,13 +184,11 @@ class NoteMusicMaker:
                 abjad.attach(abjad.Dynamic('ppp'), run[0])
         return music
 
-
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
             time_signature_pairs,
             )
 
-        #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
@@ -226,8 +217,8 @@ class TaleaMusicMaker:
         pitches,
         extra_counts_per_division=[0],
         beams=False,
-        clef='treble'):
-
+        clef='treble',
+        ):
         self.counts = counts
         self.denominator = denominator
         self.extra_counts_per_division=extra_counts_per_division
@@ -243,7 +234,6 @@ class TaleaMusicMaker:
         while True:
             yield cyclic[c]
             c = c + 1
-
 
     def make_basic_rhythm(self, time_signature_pairs):
 
@@ -277,7 +267,6 @@ class TaleaMusicMaker:
 
         return music
 
-
     def _apply_pitches(self, selections):
         selections = selections
         leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
@@ -289,7 +278,6 @@ class TaleaMusicMaker:
                 for note in leaf:
                     note.written_pitch = pitch
         return selections
-
 
     def add_attachments(self, music):
         runs = abjad.select(music).by_run()
@@ -303,13 +291,11 @@ class TaleaMusicMaker:
                 abjad.attach(abjad.Dynamic('ppp'), run[0])
         return music
 
-
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
             time_signature_pairs,
             )
 
-        #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
@@ -336,8 +322,8 @@ class TupletMusicMaker:
         mask_period,
         pitches,
         beams=False,
-        clef='treble'):
-
+        clef='treble',
+        ):
         self.tuplet_ratio = tuplet_ratio
         self.mask_indices=mask_indices
         self.mask_period=mask_period
@@ -352,7 +338,6 @@ class TupletMusicMaker:
             yield cyclic[c]
             c = c + 1
 
-
     def make_basic_rhythm(self, time_signature_pairs):
 
         beam_specifier = rhythmmakertools.BeamSpecifier(
@@ -361,7 +346,6 @@ class TupletMusicMaker:
             beam_rests=self.beams,
             )
 
-        # Ivan 1:
         division_masks = rhythmmakertools.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
@@ -373,10 +357,9 @@ class TupletMusicMaker:
             tuplet_ratios=self.tuplet_ratio,
             beam_specifier=beam_specifier,
             division_masks=division_masks,
-            # Ivan 2:
             # preferred_denominator=None
-            # I don't have n equiv of this, I think it is duration specifier
-            # but since pretty much everything defaults to None, I just left it out.
+            # ...equiv of this...I think it is duration specifier
+            # but since pretty much everything defaults to None...its okay?
             )
 
         selections = tuplet_rhythm_maker(time_signature_pairs)
@@ -393,7 +376,6 @@ class TupletMusicMaker:
 
     def _apply_pitches(self, selections):
         selections = selections
-        # Ivan 3:
         leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
         #leaves = [i for i in abjad.iterate(selections).logical_ties()]
         pitches = self._cyclic_pitches(self.pitches)
@@ -404,7 +386,6 @@ class TupletMusicMaker:
                 for note in leaf:
                     note.written_pitch = pitch
         return selections
-
 
     def add_attachments(self, music):
         # Ivan 4:
@@ -420,13 +401,11 @@ class TupletMusicMaker:
                 abjad.attach(abjad.Dynamic('ppp'), run[0])
         return music
 
-
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
             time_signature_pairs,
             )
 
-        #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
@@ -781,7 +760,7 @@ time_signature_maker = NoteMusicMaker(
 mask_indices = [0],
 mask_period = 1,
 pitches = [0],
-beams = False
+beams = False,
 )
 
                                 #########
@@ -2141,9 +2120,6 @@ viola_staff.extend([viola_string_staff, viola_bow_staff, viola_bow_beam_staff, v
 cello_staff = abjad.StaffGroup(context_name='StaffGroup')
 cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, cello_lh_staff])
 
-#trio_staff = abjad.StaffGroup(context_name='StaffGroup')
-#trio_staff.extend([violin_staff, viola_staff, cello_staff])
-
 ################################################################################
 ############################### FILE CLEANUP ###################################
 ################################################################################
@@ -2199,4 +2175,4 @@ score_file.layout_block.items.append(block)
 
 # print(format(score_file))
 abjad.show(score_file)
-#play(score_file)
+#abjad.play(score_file)
