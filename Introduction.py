@@ -1,8 +1,10 @@
+
 ################################################################################
 ################################## IMPORTS #####################################
 ################################################################################
 
-from abjad import *
+import abjad
+from abjad import rhythmmakertools
 from random import random
 from random import seed
 
@@ -40,18 +42,18 @@ class EvenDivisionMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        beam_specifier = abjad.BeamSpecifier(
+        beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams
             )
-        division_masks = abjad.SilenceMask(
+        division_masks = rhythmmakertools.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
 
-        even_division_rhythm_maker = abjad.EvenDivisionRhythmMaker(
+        even_division_rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
             denominators=self.denominators,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
@@ -100,7 +102,7 @@ class EvenDivisionMusicMaker:
 
         #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=abjad.BeamSpecifier(
+        beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams
@@ -142,18 +144,18 @@ class NoteMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        beam_specifier = abjad.BeamSpecifier(
+        beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
-        division_masks = abjad.SilenceMask(
+        division_masks = rhythmmakertools.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
 
-        note_rhythm_maker = abjad.NoteRhythmMaker(
+        note_rhythm_maker = rhythmmakertools.NoteRhythmMaker(
             beam_specifier=beam_specifier,
             division_masks=division_masks,
             )
@@ -200,7 +202,7 @@ class NoteMusicMaker:
 
         #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=abjad.BeamSpecifier(
+        beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -248,22 +250,22 @@ class TaleaMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        talea = abjad.Talea(
+        talea = rhythmmakertools.Talea(
             counts = self.counts,
             denominator=self.denominator,
             )
-        beam_specifier = abjad.BeamSpecifier(
+        beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
-        division_masks = abjad.SilenceMask(
+        division_masks = rhythmmakertools.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
 
-        talea_rhythm_maker = abjad.TaleaRhythmMaker(
+        talea_rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
             talea=talea,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
@@ -312,7 +314,7 @@ class TaleaMusicMaker:
 
         #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=abjad.BeamSpecifier(
+        beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -356,21 +358,21 @@ class TupletMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        beam_specifier = abjad.BeamSpecifier(
+        beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
 
         # Ivan 1:
-        division_masks = abjad.SilenceMask(
+        division_masks = rhythmmakertools.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
                 )
         # division_masks = [silence_every([mask_indicies], period=mask_period),]
 
-        tuplet_rhythm_maker = abjad.TupletRhythmMaker(
+        tuplet_rhythm_maker = rhythmmakertools.TupletRhythmMaker(
             tuplet_ratios=self.tuplet_ratio,
             beam_specifier=beam_specifier,
             division_masks=division_masks,
@@ -429,7 +431,7 @@ class TupletMusicMaker:
 
         #clean up rhythm: beam together and wrap in measure
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=abjad.BeamSpecifier(
+        beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -1951,7 +1953,7 @@ abjad.override(violin_string_staff).glissando.bound_details__right__padding = 1.
 abjad.override(violin_string_staff).glissando.thickness = 2
 abjad.override(violin_string_staff).script.staff_padding = 3
 abjad.override(violin_string_staff).staff_symbol.transparent = True
-abjad.override(violin_string_staff).stem.direction = abjad.Down
+abjad.override(violin_string_staff).stem.direction = Down
 abjad.override(violin_string_staff).stem.length = 8
 abjad.override(violin_string_staff).stem.stem_begin_position = -9
 abjad.override(violin_string_staff).time_signature.stencil = False
@@ -1963,7 +1965,7 @@ abjad.override(violin_string_staff).rest.stencil = False
 # abjad.override(violin_bow_staff).glissando.bound_details__right__padding = 1.5
 # abjad.override(violin_bow_staff).glissando.thickness = 2
 # abjad.override(violin_bow_staff).script.staff_padding = 3
-# abjad.override(violin_bow_staff).stem.direction = abjad.Down
+# abjad.override(violin_bow_staff).stem.direction = Down
 # abjad.override(violin_bow_staff).stem.length = 8
 # abjad.override(violin_bow_staff).stem.stem_begin_position = -9
 # abjad.override(violin_bow_staff).time_signature.stencil = False
@@ -1974,7 +1976,7 @@ abjad.override(violin_bow_staff).script.staff_padding = 3
 abjad.override(violin_bow_staff).staff_symbol.transparent = True
 abjad.override(violin_bow_staff).stem.stencil = False
 abjad.override(violin_bow_staff).time_signature.stencil = False
-abjad.override(violin_bow_staff).stem.direction = abjad.Down
+abjad.override(violin_bow_staff).stem.direction = Down
 abjad.override(violin_bow_staff).beam.stencil = False
 abjad.override(violin_bow_staff).note_head.extra_offset = (0.05 , 0)
 abjad.override(violin_bow_staff).rest.stencil = False
@@ -1993,11 +1995,11 @@ abjad.override(violin_bow_beam_staff).flag.Y_offset = 3
 abjad.override(violin_bow_beam_staff).script.staff_padding = 3
 abjad.override(violin_bow_beam_staff).staff_symbol.transparent = True
 abjad.override(violin_bow_beam_staff).stem.beamed_lengths = 11
-abjad.override(violin_bow_beam_staff).stem.direction = abjad.Down
+abjad.override(violin_bow_beam_staff).stem.direction = Down
 abjad.override(violin_bow_beam_staff).stem.length = 10
 abjad.override(violin_bow_beam_staff).stem.stem_begin_position = 15.75
 abjad.override(violin_bow_beam_staff).time_signature.stencil = False
-abjad.override(violin_bow_beam_staff).beam.direction = abjad.Down
+abjad.override(violin_bow_beam_staff).beam.direction = Down
 abjad.override(violin_bow_beam_staff).beam.positions = (0 , 0)
 abjad.override(violin_bow_beam_staff).tuplet_bracket.positions = (-2 , -2)
 abjad.override(violin_bow_beam_staff).rest.stencil = False
@@ -2014,7 +2016,7 @@ abjad.override(viola_string_staff).glissando.bound_details__right__padding = 1.5
 abjad.override(viola_string_staff).glissando.thickness = 2
 abjad.override(viola_string_staff).script.staff_padding = 3
 abjad.override(viola_string_staff).staff_symbol.transparent = True
-abjad.override(viola_string_staff).stem.direction = abjad.Down
+abjad.override(viola_string_staff).stem.direction = Down
 abjad.override(viola_string_staff).stem.length = 8
 abjad.override(viola_string_staff).stem.stem_begin_position = -9
 abjad.override(viola_string_staff).time_signature.stencil = False
@@ -2026,7 +2028,7 @@ abjad.override(viola_string_staff).rest.stencil = False
 # abjad.override(viola_bow_staff).glissando.bound_details__right__padding = 1.5
 # abjad.override(viola_bow_staff).glissando.thickness = 2
 # abjad.override(viola_bow_staff).script.staff_padding = 3
-# abjad.override(viola_bow_staff).stem.direction = abjad.Down
+# abjad.override(viola_bow_staff).stem.direction = Down
 # abjad.override(viola_bow_staff).stem.length = 8
 # abjad.override(viola_bow_staff).stem.stem_begin_position = -9
 # abjad.override(viola_bow_staff).time_signature.stencil = False
@@ -2037,7 +2039,7 @@ abjad.override(viola_bow_staff).script.staff_padding = 3
 abjad.override(viola_bow_staff).staff_symbol.transparent = True
 abjad.override(viola_bow_staff).stem.stencil = False
 abjad.override(viola_bow_staff).time_signature.stencil = False
-abjad.override(viola_bow_staff).stem.direction = abjad.Down
+abjad.override(viola_bow_staff).stem.direction = Down
 abjad.override(viola_bow_staff).beam.stencil = False
 abjad.override(viola_bow_staff).note_head.extra_offset = (0.05 , 0)
 abjad.override(viola_bow_staff).rest.stencil = False
@@ -2056,11 +2058,11 @@ abjad.override(viola_bow_beam_staff).flag.Y_offset = 3
 abjad.override(viola_bow_beam_staff).script.staff_padding = 3
 abjad.override(viola_bow_beam_staff).staff_symbol.transparent = True
 abjad.override(viola_bow_beam_staff).stem.beamed_lengths = 11
-abjad.override(viola_bow_beam_staff).stem.direction = abjad.Down
+abjad.override(viola_bow_beam_staff).stem.direction = Down
 abjad.override(viola_bow_beam_staff).stem.length = 10
 abjad.override(viola_bow_beam_staff).stem.stem_begin_position = 15.75
 abjad.override(viola_bow_beam_staff).time_signature.stencil = False
-abjad.override(viola_bow_beam_staff).beam.direction = abjad.Down
+abjad.override(viola_bow_beam_staff).beam.direction = Down
 abjad.override(viola_bow_beam_staff).beam.positions = (0 , 0)
 abjad.override(viola_bow_beam_staff).tuplet_bracket.positions = (-2 , -2)
 abjad.override(viola_bow_beam_staff).rest.stencil = False
@@ -2077,7 +2079,7 @@ abjad.override(cello_string_staff).glissando.bound_details__right__padding = 1.5
 abjad.override(cello_string_staff).glissando.thickness = 2
 abjad.override(cello_string_staff).script.staff_padding = 3
 abjad.override(cello_string_staff).staff_symbol.transparent = True
-abjad.override(cello_string_staff).stem.direction = abjad.Down
+abjad.override(cello_string_staff).stem.direction = Down
 abjad.override(cello_string_staff).stem.length = 8
 abjad.override(cello_string_staff).stem.stem_begin_position = -9
 abjad.override(cello_string_staff).time_signature.stencil = False
@@ -2089,7 +2091,7 @@ abjad.override(cello_string_staff).rest.stencil = False
 # abjad.override(cello_bow_staff).glissando.bound_details__right__padding = 1.5
 # abjad.override(cello_bow_staff).glissando.thickness = 2
 # abjad.override(cello_bow_staff).script.staff_padding = 3
-# abjad.override(cello_bow_staff).stem.direction = abjad.Down
+# abjad.override(cello_bow_staff).stem.direction = Down
 # abjad.override(cello_bow_staff).stem.length = 8
 # abjad.override(cello_bow_staff).stem.stem_begin_position = -9
 # abjad.override(cello_bow_staff).time_signature.stencil = False
@@ -2100,7 +2102,7 @@ abjad.override(cello_bow_staff).script.staff_padding = 3
 abjad.override(cello_bow_staff).staff_symbol.transparent = True
 abjad.override(cello_bow_staff).stem.stencil = False
 abjad.override(cello_bow_staff).time_signature.stencil = False
-abjad.override(cello_bow_staff).stem.direction = abjad.Down
+abjad.override(cello_bow_staff).stem.direction = Down
 abjad.override(cello_bow_staff).beam.stencil = False
 abjad.override(cello_bow_staff).note_head.extra_offset = (0.05 , 0)
 abjad.override(cello_bow_staff).rest.stencil = False
@@ -2119,11 +2121,11 @@ abjad.override(cello_bow_beam_staff).flag.Y_offset = 3
 abjad.override(cello_bow_beam_staff).script.staff_padding = 3
 abjad.override(cello_bow_beam_staff).staff_symbol.transparent = True
 abjad.override(cello_bow_beam_staff).stem.beamed_lengths = 11
-abjad.override(cello_bow_beam_staff).stem.direction = abjad.Down
+abjad.override(cello_bow_beam_staff).stem.direction = Down
 abjad.override(cello_bow_beam_staff).stem.length = 10
 abjad.override(cello_bow_beam_staff).stem.stem_begin_position = 15.75
 abjad.override(cello_bow_beam_staff).time_signature.stencil = False
-abjad.override(cello_bow_beam_staff).beam.direction = abjad.Down
+abjad.override(cello_bow_beam_staff).beam.direction = Down
 abjad.override(cello_bow_beam_staff).beam.positions = (0 , 0)
 abjad.override(cello_bow_beam_staff).tuplet_bracket.positions = (-2 , -2)
 abjad.override(cello_bow_beam_staff).rest.stencil = False
@@ -2154,17 +2156,17 @@ score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viol
 
 metro = abjad.MetronomeMark((1, 2), 60)
 abjad.attach(metro, violin_lh_staff[0][0])
-violin = abjad.Violin()
+violin = abjad.instrumenttools.Violin()
 abjad.attach(violin, violin_lh_staff[0][0])
 
-viola = abjad.Viola()
+viola = abjad.instrumenttools.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])
 alto_clef = abjad.Clef('alto')
 abjad.attach(alto_clef, viola_lh_staff[0][0])
 
 bass_clef = abjad.Clef('bass')
 abjad.attach(bass_clef, cello_lh_staff[0][0])
-cello = abjad.Cello()
+cello = abjad.instrumenttools.Cello()
 abjad.attach(cello, cello_lh_staff[0][0])
 
 ###################
@@ -2193,7 +2195,7 @@ abjad.override(block).TupletBracket.bracket_visibility = True
 abjad.override(block).BarLine.stencil = True
 abjad.override(block).DynamicText.font_size = -2
 scheme_moment = abjad.SchemeMoment((3, 32))
-setting(block).proportionalNotationDuration = scheme_moment
+abjad.setting(block).proportionalNotationDuration = scheme_moment
 score_file.layout_block.items.append(block)
 
 ###################
