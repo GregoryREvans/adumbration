@@ -1,11 +1,11 @@
-% 2018-08-01 17:26
+% 2018-08-01 17:53
 
 \version "2.19.82"
 \language "english"
 
 \include "ekmel.ily"
+\include "stylesheet.ily"
 
-#(set-default-paper-size "11x17" 'landscape)
 #(set-global-staff-size 15)
 
 \header {

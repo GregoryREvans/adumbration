@@ -5,6 +5,7 @@
 
 import abjad
 import random
+import time
 from abjad import rhythmmakertools
 
 ################################################################################
@@ -2135,7 +2136,11 @@ abjad.attach(cello, cello_lh_staff[0][0])
 
 ###################
 
-score_file = abjad.LilyPondFile.new(score, default_paper_size=('11x17', 'landscape'), global_staff_size=15, includes = ['ekmel.ily', ])
+score_file = abjad.LilyPondFile.new(
+    score,
+    global_staff_size=15,
+    includes=['ekmel.ily', 'stylesheet.ily'],
+    )
 score_file.header_block.composer = 'Gregory Rowland Evans'
 score_file.header_block.title = abjad.Markup("String Trio no.2").bold().fontsize(5)
 score_file.header_block.subtitle = 'for violin, viola, and violoncello'
@@ -2165,7 +2170,8 @@ score_file.layout_block.items.append(block)
 ###################
 
 #print(format(score_file))
-#abjad.show(score_file)
-#abjad.play(score_file)
-#abjad.persist(score_file).as_ly('Introduction.ly', strict=None)
+time_1 = time.time()
 abjad.persist(score_file).as_pdf('Introduction.pdf')
+time_2 = time.time()
+total_time = time_2 - time_1
+print(f'total time: {total_time} seconds')
