@@ -7,6 +7,20 @@
 \include "ekmel.ily"
 \ekmelicStyle evans
 
+stringtab = {
+  \override Staff.Clef.stencil = #ly:text-interface::print
+  \override Staff.Clef.text = \markup { \general-align #Y #-0.05
+    \epsfile #Y #8 #"string_position_tablature.eps"
+  }
+}
+
+ bowtab = {
+  \override Staff.Clef.stencil = #ly:text-interface::print
+  \override Staff.Clef.text = \markup { \general-align #Y #-0.05
+    \epsfile #Y #9 #"bow_position_tablature.eps"
+  }
+ }
+
 \layout {
     \accidentalStyle forget
     indent = #0
@@ -58,10 +72,7 @@
         \type Engraver_group
         \alias Staff
 
-        \override Staff.Clef.stencil = #ly:text-interface::print
-        \override Staff.Clef.text = \markup { \general-align #Y #-0.05
-          \epsfile #Y #8 #"string_position_tablature.eps"
-        }
+        \stringtab
 
 	    \override NoteHead.color = #blue %test
         \override Rest.color = #red %test
@@ -87,10 +98,7 @@
 
         \override Script.color = #red %test
 
-        \override Staff.Clef.stencil = #ly:text-interface::print
-        \override Staff.Clef.text = \markup { \general-align #Y #-0.05
-          \epsfile #Y #9 #"bow_position_tablature.eps"
-        }
+        \bowtab
 
         \override Beam.stencil = ##f
         \override Dots.stencil = ##f
