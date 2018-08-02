@@ -1,4 +1,3 @@
-
 ################################################################################
 ################################## IMPORTS #####################################
 ################################################################################
@@ -97,11 +96,13 @@ class EvenDivisionMusicMaker:
         beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
-            beam_rests=self.beams
+            beam_rests=self.beams,
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier([shard])
+            leaves = abjad.select(shard).by_leaf()
+            if not all(isinstance(_, abjad.Rest) for _ in leaves):
+                beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
@@ -195,7 +196,9 @@ class NoteMusicMaker:
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier([shard])
+            leaves = abjad.select(shard).by_leaf()
+            if not all(isinstance(_, abjad.Rest) for _ in leaves):
+                beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
@@ -301,7 +304,9 @@ class TaleaMusicMaker:
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier([shard])
+            leaves = abjad.select(shard).by_leaf()
+            if not all(isinstance(_, abjad.Rest) for _ in leaves):
+                beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
         music = self.add_attachments(music)
@@ -410,7 +415,9 @@ class TupletMusicMaker:
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier([shard])
+            leaves = abjad.select(shard).by_leaf()
+            if not all(isinstance(_, abjad.Rest) for _ in leaves):
+                beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 

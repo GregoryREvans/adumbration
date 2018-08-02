@@ -1,4 +1,4 @@
-% 2018-08-01 20:44
+% 2018-08-01 20:55
 
 \version "2.19.82"
 \language "english"
@@ -9218,7 +9218,7 @@
                                     1
                                     4
                         }
-                    r1 [
+                    r1
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9229,7 +9229,7 @@
                                     0
                                     1
                         }
-                    r4 ^\downbow ] \glissando
+                    r4 ^\downbow \glissando
                 }
                 {
                     \time 4/4
@@ -9912,7 +9912,7 @@
                                     0
                                     1
                         }
-                    r1 [
+                    r1
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9923,7 +9923,7 @@
                                     1
                                     4
                         }
-                    r4 ^\upbow ] \glissando
+                    r4 ^\upbow \glissando
                 }
                 {
                     \time 4/4
@@ -10653,8 +10653,8 @@
                 }
                 {
                     \time 5/4
-                    r1 [
-                    r4 ]
+                    r1
+                    r4
                 }
                 {
                     \time 4/4
@@ -10830,8 +10830,8 @@
                 }
                 {
                     \time 5/4
-                    r1 [
-                    r4 ]
+                    r1
+                    r4
                 }
                 {
                     \time 4/4
@@ -14239,7 +14239,7 @@
                                     1
                                     4
                         }
-                    r2 [
+                    r2
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14250,7 +14250,7 @@
                                     0
                                     1
                         }
-                    r8 ^\downbow ] \glissando
+                    r8 ^\downbow \glissando
                 }
                 {
                     \time 4/4
@@ -14636,7 +14636,7 @@
                                     3
                                     4
                         }
-                    r1 [
+                    r1
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14647,7 +14647,7 @@
                                     1
                                     2
                         }
-                    r4 ^\downbow ] \glissando
+                    r4 ^\downbow \glissando
                 }
                 {
                     \time 4/4
@@ -16360,8 +16360,8 @@
                 }
                 {
                     \time 5/8
-                    r2 [
-                    r8 ]
+                    r2
+                    r8
                 }
                 {
                     \time 4/4
@@ -16459,8 +16459,8 @@
                 }
                 {
                     \time 5/4
-                    r1 [
-                    r4 ]
+                    r1
+                    r4
                 }
                 {
                     \time 4/4
