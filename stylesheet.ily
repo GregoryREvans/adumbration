@@ -58,9 +58,13 @@
         \type Engraver_group
         \alias Staff
 
-	\override NoteHead.color = #blue
-        \override Rest.color = #red
-        \override Script.color = #red
+        \override Staff.Clef.stencil = #ly:text-interface::print
+        \override Staff.Clef.text = \markup { \general-align #Y #-0.05
+          \epsfile #Y #8 #"string_position_tablature.eps"
+        }
+
+	    \override NoteHead.color = #blue %test
+        \override Rest.color = #red %test
 
         \override Dots.staff-position = #-8
         \override Flag.Y-offset = #-8.5
@@ -80,6 +84,14 @@
         \name BowStaff
         \type Engraver_group
         \alias Staff
+
+        \override Script.color = #red %test
+
+        \override Staff.Clef.stencil = #ly:text-interface::print
+        \override Staff.Clef.text = \markup { \general-align #Y #-0.05
+          \epsfile #Y #9 #"bow_position_tablature.eps"
+        }
+
         \override Beam.stencil = ##f
         \override Dots.stencil = ##f
         \override Flag.stencil = ##f

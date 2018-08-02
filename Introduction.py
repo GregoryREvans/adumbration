@@ -1,3 +1,4 @@
+
 ################################################################################
 ################################## IMPORTS #####################################
 ################################################################################
@@ -13,7 +14,7 @@ from abjadext import rmakers
 ############################### MUSIC MAKERS ###################################
 ################################################################################
 
-print('Intepreting file ...')
+print('Interpreting file ...')
 
 class EvenDivisionMusicMaker:
 
@@ -76,17 +77,17 @@ class EvenDivisionMusicMaker:
                 note.written_pitch = pitch
         return selections
 
-    def add_attachments(self, music):
-        runs = abjad.select(music).runs()
-        for run in runs:
-            abjad.attach(abjad.Articulation('tenuto'), run[0])
-            if 4 < len(run):
-                abjad.attach(abjad.Hairpin('mp > niente'), run)
-            elif 4 > len(run) and len(run) > 1:
-                abjad.attach(abjad.Dynamic('fff'), run[0])
-            else:
-                abjad.attach(abjad.Dynamic('ppp'), run[0])
-        return music
+    # def add_attachments(self, music):
+    #     runs = abjad.select(music).runs()
+    #     for run in runs:
+    #         abjad.attach(abjad.Articulation('tenuto'), run[0])
+    #         if 4 < len(run):
+    #             abjad.attach(abjad.Hairpin('mp > niente'), run)
+    #         elif 4 > len(run) and len(run) > 1:
+    #             abjad.attach(abjad.Dynamic('fff'), run[0])
+    #         else:
+    #             abjad.attach(abjad.Dynamic('ppp'), run[0])
+    #     return music
 
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
@@ -106,7 +107,7 @@ class EvenDivisionMusicMaker:
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
-        music = self.add_attachments(music)
+        # music = self.add_attachments(music)
         return music
 
 ###################
@@ -171,17 +172,17 @@ class NoteMusicMaker:
                     note.written_pitch = pitch
         return selections
 
-    def add_attachments(self, music):
-        runs = abjad.select(music).runs()
-        for run in runs:
-            abjad.attach(abjad.Articulation('tenuto'), run[0])
-            if 4 < len(run):
-                abjad.attach(abjad.Hairpin('mp > niente'), run)
-            elif 4 > len(run) and len(run) > 1:
-                abjad.attach(abjad.Dynamic('fff'), run[0])
-            else:
-                abjad.attach(abjad.Dynamic('ppp'), run[0])
-        return music
+    # def add_attachments(self, music):
+    #     runs = abjad.select(music).runs()
+    #     for run in runs:
+    #         abjad.attach(abjad.Articulation('tenuto'), run[0])
+    #         if 4 < len(run):
+    #             abjad.attach(abjad.Hairpin('mp > niente'), run)
+    #         elif 4 > len(run) and len(run) > 1:
+    #             abjad.attach(abjad.Dynamic('fff'), run[0])
+    #         else:
+    #             abjad.attach(abjad.Dynamic('ppp'), run[0])
+    #     return music
 
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
@@ -202,7 +203,7 @@ class NoteMusicMaker:
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
-        music = self.add_attachments(music)
+        # music = self.add_attachments(music)
         return music
 
 ###################
@@ -280,17 +281,17 @@ class TaleaMusicMaker:
                     note.written_pitch = pitch
         return selections
 
-    def add_attachments(self, music):
-        runs = abjad.select(music).runs()
-        for run in runs:
-            abjad.attach(abjad.Articulation('tenuto'), run[0])
-            if 4 < len(run):
-                abjad.attach(abjad.Hairpin('mp > niente'), run)
-            elif 4 > len(run) and len(run) > 1:
-                abjad.attach(abjad.Dynamic('fff'), run[0])
-            else:
-                abjad.attach(abjad.Dynamic('ppp'), run[0])
-        return music
+    # def add_attachments(self, music):
+    #     runs = abjad.select(music).runs()
+    #     for run in runs:
+    #         abjad.attach(abjad.Articulation('tenuto'), run[0])
+    #         if 4 < len(run):
+    #             abjad.attach(abjad.Hairpin('mp > niente'), run)
+    #         elif 4 > len(run) and len(run) > 1:
+    #             abjad.attach(abjad.Dynamic('fff'), run[0])
+    #         else:
+    #             abjad.attach(abjad.Dynamic('ppp'), run[0])
+    #     return music
 
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
@@ -309,7 +310,7 @@ class TaleaMusicMaker:
                 beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
-        music = self.add_attachments(music)
+        # music = self.add_attachments(music)
         return music
 
 ###################
@@ -388,19 +389,17 @@ class TupletMusicMaker:
                     note.written_pitch = pitch
         return selections
 
-    def add_attachments(self, music):
-        # Ivan 4:
-        runs = abjad.select(music).runs()
-        #runs = abjad.select(music).runs()
-        for run in runs:
-            abjad.attach(abjad.Articulation('tenuto'), run[0])
-            if 4 < len(run):
-                abjad.attach(abjad.Hairpin('mp > niente'), run)
-            elif 4 > len(run) and len(run) > 1:
-                abjad.attach(abjad.Dynamic('fff'), run[0])
-            else:
-                abjad.attach(abjad.Dynamic('ppp'), run[0])
-        return music
+    # def add_attachments(self, music):
+    #     runs = abjad.select(music).runs()
+    #     for run in runs:
+    #         abjad.attach(abjad.Articulation('tenuto'), run[0])
+    #         if 4 < len(run):
+    #             abjad.attach(abjad.Hairpin('mp > niente'), run)
+    #         elif 4 > len(run) and len(run) > 1:
+    #             abjad.attach(abjad.Dynamic('fff'), run[0])
+    #         else:
+    #             abjad.attach(abjad.Dynamic('ppp'), run[0])
+    #     return music
 
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(
@@ -421,7 +420,7 @@ class TupletMusicMaker:
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
-        music = self.add_attachments(music)
+        # music = self.add_attachments(music)
         return music
 
 ################################################################################
@@ -1918,7 +1917,7 @@ def _apply_string_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
     techs = cyc(tech)
     logical_ties = abjad.select(staff[:]).leaves()
-    spanner = abjad.BowContactSpanner()
+    spanner = abjad.StringContactSpanner()
     abjad.attach(spanner, logical_ties)
 
     for logical_tie in logical_ties:

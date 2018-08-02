@@ -148,12 +148,7 @@
                                         1
                             }
                         c'4
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -177,7 +172,6 @@
                                         1
                             }
                         c'4.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -202,7 +196,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         ~
                         \glissando
                     }
@@ -222,7 +215,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -235,7 +227,6 @@
                                         5
                             }
                         c'2
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -249,7 +240,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -262,7 +252,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         ~
                         \glissando
                     }
@@ -294,7 +283,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -349,7 +337,6 @@
                                         1
                             }
                         c'8
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -365,7 +352,6 @@
                                     5
                         }
                     r2.
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -382,12 +368,7 @@
                                         1
                             }
                         c'4
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -411,7 +392,6 @@
                                         1
                             }
                         c'2
-                        ^\upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -443,7 +423,6 @@
                                         5
                             }
                         c'4.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -479,7 +458,6 @@
                                         1
                             }
                         c'4
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -495,7 +473,6 @@
                                     1
                         }
                     r2.
-                    ^\downbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -513,8 +490,6 @@
                                         5
                             }
                         c'2
-                        \fff
-                        -\tenuto
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -528,7 +503,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -559,12 +533,7 @@
                                         5
                             }
                         c'2.
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -576,7 +545,6 @@
                                         5
                             }
                         c'1
-                        ^\upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -590,7 +558,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         \glissando
                     }
                 }   % measure
@@ -608,7 +575,6 @@
                                         5
                             }
                         c'2
-                        ^\upbow
                         ~
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -624,7 +590,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         [
                         ]
                         \glissando
@@ -638,7 +603,6 @@
                                         5
                             }
                         c'2
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -654,7 +618,6 @@
                                     1
                         }
                     r2.
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -672,11 +635,7 @@
                                         5
                             }
                         c'4.
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -718,7 +677,6 @@
                                         1
                             }
                         c'4.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -731,7 +689,6 @@
                                         5
                             }
                         c'2
-                        ^\upbow
                         ~
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -747,8 +704,6 @@
                                         1
                             }
                         c'8
-                        ^\downbow
-                        \!
                         [
                         ]
                         \glissando
@@ -769,11 +724,7 @@
                                         5
                             }
                         c'8
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -785,7 +736,6 @@
                                         1
                             }
                         c'4
-                        ^\upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -811,7 +761,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -854,7 +803,6 @@
                                         1
                             }
                         c'16
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -867,7 +815,6 @@
                                         1
                             }
                         c'8.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -892,7 +839,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -918,7 +864,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -931,7 +876,6 @@
                                         5
                             }
                         c'4
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -944,7 +888,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -957,7 +900,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -970,7 +912,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -982,7 +923,6 @@
                                         5
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -998,7 +938,6 @@
                                     1
                         }
                     r1
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -1016,11 +955,7 @@
                                         5
                             }
                         c'16
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1056,7 +991,6 @@
                                         1
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -1069,7 +1003,6 @@
                                         5
                             }
                         c'4
-                        ^\upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -1083,7 +1016,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -1096,7 +1028,6 @@
                                         5
                             }
                         c'8.
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -1115,12 +1046,7 @@
                                         1
                             }
                         c'16
-                        -\tenuto
-                        ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1144,7 +1070,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -1181,7 +1106,6 @@
                                         1
                             }
                         c'8
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -1194,7 +1118,6 @@
                                         1
                             }
                         c'4
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -1220,7 +1143,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         ~
                         \glissando
                     }
@@ -1252,7 +1174,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -1265,7 +1186,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -1278,7 +1198,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -1291,7 +1210,6 @@
                                         5
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -1304,7 +1222,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -1329,7 +1246,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1341,7 +1257,6 @@
                                         5
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -1374,11 +1289,7 @@
                                         5
                             }
                         c'16
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1390,7 +1301,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -1403,7 +1313,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -1416,7 +1325,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -1441,7 +1349,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -1466,7 +1373,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -1504,7 +1410,6 @@
                                         1
                             }
                         c'16
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -1517,7 +1422,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                     }
                 }   % measure
@@ -1548,7 +1452,6 @@
                                         1
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -1573,7 +1476,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -1586,7 +1488,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -1599,7 +1500,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -1612,7 +1512,6 @@
                                         5
                             }
                         c'4.
-                        ^\upbow
                         \glissando
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1624,7 +1523,6 @@
                                         5
                             }
                         c'16
-                        \!
                     }
                 }   % measure
             }
@@ -1646,13 +1544,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -2434,7 +2328,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -2469,13 +2362,9 @@
                                         1
                             }
                         c'8
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
@@ -2823,7 +2712,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -2859,12 +2747,8 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -3015,7 +2899,6 @@
                         c'16
                         ^\upbow
                         ]
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -3036,13 +2919,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -3822,7 +3701,6 @@
                             }
                         c'32
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -3858,13 +3736,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -4198,7 +4072,6 @@
                         c'8
                         ^\upbow
                         ]
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -4217,12 +4090,8 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4407,7 +4276,6 @@
                                         1
                             }
                         c'8
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -4441,12 +4309,8 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4549,7 +4413,6 @@
                             }
                         c'8
                         ^\downbow
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -4570,13 +4433,9 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -4999,7 +4858,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -5035,13 +4893,9 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -5481,7 +5335,6 @@
                             }
                         c'8
                         ]
-                        \!
                     }
                 }   % measure
             }
@@ -5493,11 +5346,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -5676,7 +5525,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -5689,11 +5537,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
                         d''''8
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         d''''8
@@ -5772,7 +5616,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -5786,11 +5629,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -5822,7 +5661,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -5832,11 +5670,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -6002,7 +5836,6 @@
                         \set stemRightBeamCount = 0
                         d''''32
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -6016,11 +5849,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -6095,7 +5924,6 @@
                         \set stemRightBeamCount = 0
                         d''''8
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -6103,10 +5931,6 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         d''''16
-                        -\tenuto
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         d''''8
                         d''''16
                         d''''4.
@@ -6127,7 +5951,6 @@
                         d''''4.
                         d''''8
                         d''''8
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -6139,10 +5962,6 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         d''''16
-                        -\tenuto
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         d''''8.
                         d''''16
                         d''''16
@@ -6151,7 +5970,6 @@
                         d''''8
                         d''''16
                         d''''8
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -6161,11 +5979,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -6259,7 +6073,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -6273,11 +6086,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -6373,7 +6182,6 @@
                         \set stemRightBeamCount = 0
                         d''''8
                         ]
-                        \!
                     }
                 }   % measure
             }
@@ -6383,8 +6191,6 @@
                     \time 4/4
                     \tempo 2=60
                     c'1
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -6406,10 +6212,6 @@
                     \time 4/4
                     \times 4/5 {
                         ef'2
-                        -\tenuto
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         dqs'2.
                     }
                 }   % measure
@@ -6435,7 +6237,6 @@
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         dqs'8
-                        \!
                         [
                         ]
                     }
@@ -6449,16 +6250,12 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 1/1 {
                         d'4.
-                        \fff
-                        -\tenuto
                         d'4
                     }
                 }   % measure
                 {   % measure
                     \time 5/4
                     eqs'1
-                    \fff
-                    -\tenuto
                     ~
                     eqs'4
                 }   % measure
@@ -6473,8 +6270,6 @@
                 {   % measure
                     \time 5/8
                     eqs'2
-                    \fff
-                    -\tenuto
                     ~
                     eqs'8
                 }   % measure
@@ -6485,8 +6280,6 @@
                 {   % measure
                     \time 3/4
                     gqs'2.
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -6501,14 +6294,10 @@
                 {   % measure
                     \time 7/8
                     gqs'2..
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 4/4
                     b'1
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -6521,8 +6310,6 @@
                 {   % measure
                     \time 5/4
                     b'1
-                    \fff
-                    -\tenuto
                     ~
                     b'4
                 }   % measure
@@ -6650,11 +6437,7 @@
                                         1
                             }
                         c'2.
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6683,7 +6466,6 @@
                                         1
                             }
                         c'2
-                        ^ \parenthesize \upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -6697,7 +6479,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -6727,7 +6508,6 @@
                                         1
                             }
                         c'4
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -6752,7 +6532,6 @@
                                         1
                             }
                         c'4
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -6765,7 +6544,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -6778,7 +6556,6 @@
                                         1
                             }
                         c'2
-                        ^\downbow
                         \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6790,7 +6567,6 @@
                                         5
                             }
                         c'4.
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -6822,11 +6598,7 @@
                                         5
                             }
                         c'2
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6838,7 +6610,6 @@
                                         1
                             }
                         c'2
-                        ^\upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -6869,7 +6640,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -6882,7 +6652,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -6895,7 +6664,6 @@
                                         5
                             }
                         c'2
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -6909,7 +6677,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -6922,8 +6689,6 @@
                                         5
                             }
                         c'2
-                        ^\downbow
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -6942,11 +6707,7 @@
                                         5
                             }
                         c'16
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6958,7 +6719,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -6983,7 +6743,6 @@
                                         1
                             }
                         c'4
-                        ^\downbow
                         \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6995,7 +6754,6 @@
                                         1
                             }
                         c'4.
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -7028,12 +6786,7 @@
                                         1
                             }
                         c'8
-                        -\tenuto
-                        ^ \parenthesize \upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7045,7 +6798,6 @@
                                         5
                             }
                         c'8.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -7070,7 +6822,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7095,7 +6846,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7108,8 +6858,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -7128,12 +6876,7 @@
                                         1
                             }
                         c'16
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7181,7 +6924,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7206,7 +6948,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -7220,7 +6961,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7233,7 +6973,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7246,7 +6985,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7258,7 +6996,6 @@
                                         5
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -7291,12 +7028,7 @@
                                         1
                             }
                         c'8.
-                        -\tenuto
-                        ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7320,7 +7052,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -7357,7 +7088,6 @@
                                         1
                             }
                         c'16
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7370,7 +7100,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -7402,7 +7131,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7427,7 +7155,6 @@
                                         1
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7440,7 +7167,6 @@
                                         5
                             }
                         c'4
-                        ^\upbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -7454,7 +7180,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -7510,7 +7235,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7535,7 +7259,6 @@
                                         5
                             }
                         c'8.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -7548,7 +7271,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7561,7 +7283,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7574,7 +7295,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -7587,7 +7307,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -7600,7 +7319,6 @@
                                         5
                             }
                         c'8.
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -7619,12 +7337,7 @@
                                         1
                             }
                         c'16
-                        -\tenuto
-                        ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7648,7 +7361,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -7685,7 +7397,6 @@
                                         1
                             }
                         c'8
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7697,7 +7408,6 @@
                                         5
                             }
                         c'8.
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -7723,7 +7433,6 @@
                                     1
                         }
                     r4
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -7741,11 +7450,7 @@
                                         5
                             }
                         c'8
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7757,7 +7462,6 @@
                                         1
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7770,7 +7474,6 @@
                                         5
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -7783,7 +7486,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -7832,7 +7534,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7857,7 +7558,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         ~
                         \glissando
                     }
@@ -7877,7 +7577,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7890,7 +7589,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7903,7 +7601,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -7916,7 +7613,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -7942,7 +7638,6 @@
                                         1
                             }
                         c'4
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -7966,7 +7661,6 @@
                                         1
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -7999,11 +7693,7 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8015,7 +7705,6 @@
                                         1
                             }
                         c'16
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -8028,7 +7717,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -8053,7 +7741,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -8078,7 +7765,6 @@
                                         1
                             }
                         c'8.
-                        ^\downbow
                         ~
                         \glissando
                     }
@@ -8098,7 +7784,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -8111,7 +7796,6 @@
                                         1
                             }
                         c'4
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -8160,7 +7844,6 @@
                                         1
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -8185,7 +7868,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8197,7 +7879,6 @@
                                         5
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -8223,7 +7904,6 @@
                                     5
                         }
                     r4
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -8240,12 +7920,7 @@
                                         5
                             }
                         c'8.
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8269,7 +7944,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -8295,7 +7969,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -8331,7 +8004,6 @@
                                         1
                             }
                         c'16
-                        \!
                     }
                 }   % measure
             }
@@ -8354,13 +8026,9 @@
                                         1
                             }
                         c'8
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
@@ -8954,7 +8622,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -8990,13 +8657,9 @@
                                         1
                             }
                         c'8
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
@@ -9390,7 +9053,6 @@
                             }
                         c'16
                         ]
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -9411,13 +9073,9 @@
                                         2
                             }
                         c'16
-                        -\tenuto
                         ^ \parenthesize \upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -9609,7 +9267,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -9645,13 +9302,9 @@
                                         1
                             }
                         c'32
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 3
                         \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
@@ -9936,7 +9589,6 @@
                         c'32
                         ^\downbow
                         ]
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -9957,13 +9609,9 @@
                                         4
                             }
                         c'8
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
@@ -10096,7 +9744,6 @@
                             }
                         c'8
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -10131,12 +9778,8 @@
                                         2
                             }
                         c'16
-                        -\tenuto
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -10489,7 +10132,6 @@
                         c'8
                         ^\upbow
                         ]
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -10510,13 +10152,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -10679,7 +10317,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -10725,13 +10362,9 @@
                                         4
                             }
                         c'8
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
@@ -11048,7 +10681,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -11084,13 +10716,9 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -11486,7 +11114,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -11532,13 +11159,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -11758,7 +11381,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
             }
@@ -11771,11 +11393,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
                         d''''8
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         d''''8
@@ -11909,7 +11527,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -11923,11 +11540,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
                         d''''8
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         d''''8
@@ -12014,7 +11627,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12024,11 +11636,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -12069,7 +11677,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12083,11 +11690,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 3
                         d''''32
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 3
                         \set stemRightBeamCount = 3
                         d''''32
@@ -12146,7 +11749,6 @@
                         \set stemRightBeamCount = 0
                         d''''32
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12156,11 +11758,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
                         d''''8
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         d''''8
@@ -12189,7 +11787,6 @@
                         \set stemRightBeamCount = 0
                         d''''8
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12203,11 +11800,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -12287,7 +11880,6 @@
                         \set stemRightBeamCount = 0
                         d''''8
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12297,11 +11889,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -12336,7 +11924,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12351,11 +11938,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 1
                         d''''8
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
                         d''''8
@@ -12428,7 +12011,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12442,11 +12024,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -12534,7 +12112,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12549,11 +12126,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -12600,7 +12173,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
             }
@@ -12610,8 +12182,6 @@
                     \time 4/4
                     \clef "alto"
                     fs1
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -12628,8 +12198,6 @@
                 {   % measure
                     \time 3/4
                     fs2.
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 4/4
@@ -12638,8 +12206,6 @@
                 {   % measure
                     \time 7/8
                     gqs2..
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -12648,16 +12214,12 @@
                 {   % measure
                     \time 5/8
                     af2
-                    \fff
-                    -\tenuto
                     ~
                     af8
                 }   % measure
                 {   % measure
                     \time 5/4
                     bf1
-                    \fff
-                    -\tenuto
                     ~
                     bf4
                 }   % measure
@@ -12668,8 +12230,6 @@
                 {   % measure
                     \time 6/8
                     bf2.
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 5/8
@@ -12684,8 +12244,6 @@
                 {   % measure
                     \time 3/4
                     eqf2.
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -12695,8 +12253,6 @@
                 {   % measure
                     \time 4/4
                     e1
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -12709,8 +12265,6 @@
                 {   % measure
                     \time 3/4
                     fs2.
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -12724,8 +12278,6 @@
                 {   % measure
                     \time 4/4
                     fs1
-                    \ppp
-                    -\tenuto
                 }   % measure
             }
         >>
@@ -12848,12 +12400,7 @@
                                         1
                             }
                         c'8
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12877,7 +12424,6 @@
                                         1
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -12901,7 +12447,6 @@
                                         5
                             }
                         c'8
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -12934,12 +12479,7 @@
                                         1
                             }
                         c'4.
-                        -\tenuto
-                        ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12994,7 +12534,6 @@
                                         1
                             }
                         c'2
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13007,7 +12546,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                     }
                 }   % measure
@@ -13026,7 +12564,6 @@
                                         1
                             }
                         c'2
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -13039,7 +12576,6 @@
                                         5
                             }
                         c'4
-                        ^\upbow
                         ~
                         \glissando
                     }
@@ -13059,7 +12595,6 @@
                                         5
                             }
                         c'4.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -13072,7 +12607,6 @@
                                         5
                             }
                         c'8
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13085,7 +12619,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13097,7 +12630,6 @@
                                         5
                             }
                         c'4
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -13143,12 +12675,7 @@
                                         5
                             }
                         c'8
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13184,7 +12711,6 @@
                                         1
                             }
                         c'16
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -13197,7 +12723,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13229,7 +12754,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13254,7 +12778,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -13279,7 +12802,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13328,7 +12850,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13341,7 +12862,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13353,7 +12873,6 @@
                                         1
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -13369,7 +12888,6 @@
                                     5
                         }
                     r1
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -13387,12 +12905,7 @@
                                         5
                             }
                         c'8.
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13404,7 +12917,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13417,7 +12929,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -13441,7 +12952,6 @@
                                         1
                             }
                         c'8.
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -13467,7 +12977,6 @@
                                     5
                         }
                     r8
-                    ^\downbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -13485,11 +12994,7 @@
                                         1
                             }
                         c'4.
-                        -\tenuto
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13513,7 +13018,6 @@
                                         1
                             }
                         c'8
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -13526,7 +13030,6 @@
                                         1
                             }
                         c'8.
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13539,7 +13042,6 @@
                                         5
                             }
                         c'4
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -13558,12 +13060,7 @@
                                         1
                             }
                         c'16
-                        -\tenuto
-                        ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13587,7 +13084,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -13612,7 +13108,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13636,7 +13131,6 @@
                                         5
                             }
                         c'8.
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -13662,7 +13156,6 @@
                                     1
                         }
                     r4
-                    ^\downbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -13680,12 +13173,7 @@
                                         5
                             }
                         c'8
-                        -\tenuto
-                        ^\upbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13697,7 +13185,6 @@
                                         1
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -13710,7 +13197,6 @@
                                         5
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13723,7 +13209,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
@@ -13736,7 +13221,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -13749,7 +13233,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -13774,7 +13257,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13799,7 +13281,6 @@
                                         5
                             }
                         c'8
-                        ^\downbow
                         ~
                         \glissando
                     }
@@ -13843,7 +13324,6 @@
                                         1
                             }
                         c'8
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -13856,7 +13336,6 @@
                                         1
                             }
                         c'4
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -13882,7 +13361,6 @@
                                         1
                             }
                         c'4
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13907,7 +13385,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                     }
                 }   % measure
@@ -13938,7 +13415,6 @@
                                         1
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13987,7 +13463,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -14000,7 +13475,6 @@
                                         5
                             }
                         c'4.
-                        ^\upbow
                         \glissando
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14012,7 +13486,6 @@
                                         1
                             }
                         c'16
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -14028,7 +13501,6 @@
                                     5
                         }
                     r2.
-                    ^\upbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -14046,12 +13518,7 @@
                                         5
                             }
                         c'16
-                        -\tenuto
-                        ^\downbow
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14063,7 +13530,6 @@
                                         5
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -14076,7 +13542,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -14101,7 +13566,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -14126,7 +13590,6 @@
                                         5
                             }
                         c'4
-                        ^\downbow
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
@@ -14170,7 +13633,6 @@
                                         1
                             }
                         c'16
-                        ^ \parenthesize \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -14183,7 +13645,6 @@
                                         1
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -14208,7 +13669,6 @@
                                         1
                             }
                         c'8.
-                        ^\upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -14233,7 +13693,6 @@
                                         5
                             }
                         c'16
-                        ^\downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -14258,7 +13717,6 @@
                                         1
                             }
                         c'16
-                        ^\upbow
                         \glissando
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14270,7 +13728,6 @@
                                         5
                             }
                         c'4.
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -14306,13 +13763,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\downbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -14536,7 +13989,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -14571,12 +14023,8 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -15444,7 +14892,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -15493,13 +14940,9 @@
                                         1
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -16249,7 +15692,6 @@
                             }
                         c'32
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -16285,13 +15727,9 @@
                                         2
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -16469,7 +15907,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -16515,13 +15952,9 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -16746,7 +16179,6 @@
                         c'16
                         ^\upbow
                         ]
-                        \!
                         \glissando
                     }
                 }   % measure
@@ -16767,12 +16199,8 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -16934,7 +16362,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -16980,13 +16407,9 @@
                                         4
                             }
                         c'32
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 3
                         \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
@@ -17819,7 +17242,6 @@
                             }
                         c'8
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -17855,13 +17277,9 @@
                                         4
                             }
                         c'16
-                        -\tenuto
                         ^\upbow
                         [
                         \glissando
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -18373,7 +17791,6 @@
                             }
                         c'16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -18399,11 +17816,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -18450,7 +17863,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -18463,11 +17875,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -18663,7 +18071,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -18681,11 +18088,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -18845,7 +18248,6 @@
                         \set stemRightBeamCount = 0
                         d''''32
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -18859,11 +18261,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -18901,7 +18299,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -18916,11 +18313,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -18967,7 +18360,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -18977,11 +18369,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -19016,7 +18404,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -19031,11 +18418,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 3
                         d''''32
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 3
                         \set stemRightBeamCount = 3
                         d''''32
@@ -19217,7 +18600,6 @@
                         \set stemRightBeamCount = 0
                         d''''8
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -19231,11 +18613,7 @@
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         d''''16
-                        -\tenuto
                         [
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
@@ -19347,7 +18725,6 @@
                         \set stemRightBeamCount = 0
                         d''''16
                         ]
-                        \!
                     }
                 }   % measure
                 {   % measure
@@ -19361,8 +18738,6 @@
                     \time 4/4
                     \clef "bass"
                     e1
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -19371,8 +18746,6 @@
                 {   % measure
                     \time 4/4
                     e1
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -19399,11 +18772,7 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
                         c4
-                        -\tenuto
                         ~
-                        - \tweak circled-tip ##t
-                        \>
-                        \mp
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         c16
@@ -19422,7 +18791,6 @@
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
                         c8
-                        \!
                         [
                         ]
                     }
@@ -19434,8 +18802,6 @@
                 {   % measure
                     \time 6/8
                     a,2.
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 5/8
@@ -19445,14 +18811,10 @@
                 {   % measure
                     \time 4/4
                     aqf,1
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 3/4
                     c2.
-                    \ppp
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -19462,8 +18824,6 @@
                 {   % measure
                     \time 4/4
                     c1
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -19480,8 +18840,6 @@
                 {   % measure
                     \time 7/8
                     eqs2..
-                    \fff
-                    -\tenuto
                 }   % measure
                 {   % measure
                     \time 5/4
