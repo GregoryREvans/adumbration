@@ -1,4 +1,4 @@
-% 2018-07-31 16:11
+% 2018-08-01 17:26
 
 \version "2.19.82"
 \language "english"
@@ -143,7 +143,7 @@
             }
         }
         \new StaffGroup <<
-            \new Staff \with {
+            \context Staff = "violin_string_staff" \with {
                 \override Dots.staff-position = #-8
                 \override Flag.Y-offset = #-8.5
                 \override Glissando.bound-details.left.padding = #1.5
@@ -1441,7 +1441,7 @@
                     }
                 }
             }
-            \new Staff \with {
+            \context Staff = "violin_bow_staff" \with {
                 \override Beam.stencil = ##f
                 \override Dots.stencil = ##f
                 \override Flag.stencil = ##f
@@ -6477,7 +6477,7 @@
                     }
                 }
             }
-            \new Staff \with {
+            \context Staff = "violin_beam_staff" \with {
                 \override Beam.direction = #down
                 \override Beam.positions = #'(0 . 0)
                 \override Clef.stencil = ##f
@@ -9009,7 +9009,7 @@
                     }
                 }
             }
-            \new Staff {
+            \context Staff = "violin_lh_staff" {
                 {
                     \time 4/4
                     \tempo 2=60
@@ -9264,7 +9264,7 @@
             }
         }
         \new StaffGroup <<
-            \new Staff \with {
+            \context Staff = "viola_string_staff" \with {
                 \override Dots.staff-position = #-8
                 \override Flag.Y-offset = #-8.5
                 \override Glissando.bound-details.left.padding = #1.5
@@ -10730,7 +10730,7 @@
                     }
                 }
             }
-            \new Staff \with {
+            \context Staff = "viola_bow_staff" \with {
                 \override Beam.stencil = ##f
                 \override Dots.stencil = ##f
                 \override Flag.stencil = ##f
@@ -15279,7 +15279,7 @@
                     }
                 }
             }
-            \new Staff \with {
+            \context Staff = "viola_beam_staff" \with {
                 \override Beam.direction = #down
                 \override Beam.positions = #'(0 . 0)
                 \override Clef.stencil = ##f
@@ -17637,7 +17637,7 @@
                     }
                 }
             }
-            \new Staff {
+            \context Staff = "viola_lh_staff" {
                 {
                     \time 4/4
                     \set Staff.instrumentName = \markup { Viola }
@@ -17840,7 +17840,7 @@
             }
         }
         \new StaffGroup <<
-            \new Staff \with {
+            \context Staff = "cello_string_staff" \with {
                 \override Dots.staff-position = #-8
                 \override Flag.Y-offset = #-8.5
                 \override Glissando.bound-details.left.padding = #1.5
@@ -19102,7 +19102,7 @@
                     r1
                 }
             }
-            \new Staff \with {
+            \context Staff = "cello_bow_staff" \with {
                 \override Beam.stencil = ##f
                 \override Dots.stencil = ##f
                 \override Flag.stencil = ##f
@@ -24750,7 +24750,7 @@
                     r1 ] ] ]
                 }
             }
-            \new Staff \with {
+            \context Staff = "cello_beam_staff" \with {
                 \override Beam.direction = #down
                 \override Beam.positions = #'(0 . 0)
                 \override Clef.stencil = ##f
@@ -27739,7 +27739,7 @@
                     r1 ] ] ]
                 }
             }
-            \new Staff {
+            \context Staff = "cello_lh_staff" {
                 {
                     \time 4/4
                     \set Staff.instrumentName = \markup { Cello }

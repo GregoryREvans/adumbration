@@ -62,13 +62,14 @@ class EvenDivisionMusicMaker:
         return music
 
     def _apply_pitches(self, selections):
-        leaves = [_ for _ in abjad.iterate(selections).by_logical_tie()]
+        logical_ties = list(abjad.iterate(selections).by_logical_tie())
         pitches = self._cyclic_pitches(self.pitches)
-        for i, leaf in enumerate(leaves):
-            if leaf.is_pitched is True:
-                pitch = next(pitches)
-                for note in leaf:
-                    note.written_pitch = pitch
+        for i, logical_tie in enumerate(logical_ties):
+            if not logical_tie.is_pitched:
+                continue
+            pitch = next(pitches)
+            for note in logical_tie:
+                note.written_pitch = pitch
         return selections
 
     def add_attachments(self, music):
@@ -656,39 +657,36 @@ cello_notes_5 = [((x / 2.0) - 8) for x in cello_random_walk_5]
 # time signatures #
 ###################
 
-time_signature_staff_1 = abjad.Staff(context_name = 'TimeSignatureContext')
-time_signature_staff_2 = abjad.Staff(context_name = 'TimeSignatureContext')
-time_signature_staff_3 = abjad.Staff(context_name = 'TimeSignatureContext')
+time_signature_staff_1 = abjad.Staff(context_name='TimeSignatureContext')
+time_signature_staff_2 = abjad.Staff(context_name='TimeSignatureContext')
+time_signature_staff_3 = abjad.Staff(context_name='TimeSignatureContext')
 
 ###################
 ##### violin ######
 ###################
 
-violin_string_staff = abjad.Staff()
-violin_bow_staff = abjad.Staff()
-violin_bow_beam_staff = abjad.Staff()
-#violin_bow_staff = abjad.Staff()
-violin_lh_staff = abjad.Staff()
+violin_string_staff = abjad.Staff(name='violin_string_staff')
+violin_bow_staff = abjad.Staff(name='violin_bow_staff')
+violin_bow_beam_staff = abjad.Staff(name='violin_beam_staff')
+violin_lh_staff = abjad.Staff(name='violin_lh_staff')
 
 ###################
 ###### viola ######
 ###################
 
-viola_string_staff = abjad.Staff()
-viola_bow_staff = abjad.Staff()
-viola_bow_beam_staff = abjad.Staff()
-#viola_bow_staff = abjad.Staff()
-viola_lh_staff = abjad.Staff()
+viola_string_staff = abjad.Staff(name='viola_string_staff')
+viola_bow_staff = abjad.Staff(name='viola_bow_staff')
+viola_bow_beam_staff = abjad.Staff(name='viola_beam_staff')
+viola_lh_staff = abjad.Staff(name='viola_lh_staff')
 
 ###################
 ###### cello ######
 ###################
 
-cello_string_staff = abjad.Staff()
-cello_bow_staff = abjad.Staff()
-cello_bow_beam_staff = abjad.Staff()
-#cello_bow_staff = abjad.Staff()
-cello_lh_staff = abjad.Staff()
+cello_string_staff = abjad.Staff(name='cello_string_staff')
+cello_bow_staff = abjad.Staff(name='cello_bow_staff')
+cello_bow_beam_staff = abjad.Staff(name='cello_beam_staff')
+cello_lh_staff = abjad.Staff(name='cello_lh_staff')
 
 ################### Time Signature Pairs
 
@@ -2169,4 +2167,5 @@ score_file.layout_block.items.append(block)
 #print(format(score_file))
 #abjad.show(score_file)
 #abjad.play(score_file)
-abjad.persist(score_file).as_ly('Introduction.ly')
+#abjad.persist(score_file).as_ly('Introduction.ly', strict=None)
+abjad.persist(score_file).as_pdf('Introduction.pdf')
