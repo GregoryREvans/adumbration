@@ -41,7 +41,7 @@
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
-        proportionalNotationDuration = #(ly:make-moment 1 32)
+        proportionalNotationDuration = #(ly:make-moment 1 64)
         tupletFullLength = ##t
     }
     \context {

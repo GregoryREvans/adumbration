@@ -1,4 +1,4 @@
-% 2018-08-01 17:53
+% 2018-08-01 18:15
 
 \version "2.19.82"
 \language "english"
@@ -19,26 +19,12 @@
     subtitle = #"for violin, viola, and violoncello"
 }
 
-\layout {
-    \context {
-        \Score
-        \remove Bar_number_engraver
-        \override BarLine.stencil = ##t
-        \override Beam.beam-thickness = #0.8
-        \override Beam.length-fraction = #1.5
-        \override DynamicText.font-size = #-2
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 0))
-        \override Stem.thickness = #0.75
-        \override TupletBracket.bracket-visibility = ##t
-        proportionalNotationDuration = #(ly:make-moment 3 32)
-    }
-}
+\layout {}
 
 \paper {
     top-margin = #20
     bottom-margin = #20
     system-count = #5
-    system-system-spacing = #'((basic-distance . 50) (padding . 0))
 }
 
 \score {

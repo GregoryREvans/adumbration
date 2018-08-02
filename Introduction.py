@@ -4,6 +4,8 @@
 ################################################################################
 
 import abjad
+import os
+import pathlib
 import random
 import time
 from abjad import rhythmmakertools
@@ -2150,28 +2152,14 @@ score_file.paper_block.system_count = 5
 
 ###################
 
-block = abjad.ContextBlock(source_context_name='Score')
-staff_block = abjad.ContextBlock(source_context_name='Staff')
-block.remove_commands.append('Bar_number_engraver')
-pair = abjad.SchemeAssociativeList([('basic-distance', 50), ('padding', 0)])
-score_file.paper_block.system_system_spacing = pair
-pair = abjad.SchemeAssociativeList([('basic-distance', 15), ('minimum-distance', 15), ('padding', 0)])
-abjad.override(block).StaffGrouper.staff_staff_spacing = pair
-abjad.override(block).beam.beam_thickness = 0.8
-abjad.override(block).beam.length_fraction = 1.5
-abjad.override(block).stem.thickness = 0.75
-abjad.override(block).TupletBracket.bracket_visibility = True
-abjad.override(block).BarLine.stencil = True
-abjad.override(block).DynamicText.font_size = -2
-scheme_moment = abjad.SchemeMoment((3, 32))
-abjad.setting(block).proportionalNotationDuration = scheme_moment
-score_file.layout_block.items.append(block)
-
-###################
-
 #print(format(score_file))
+path = pathlib.Path('Introduction.pdf')
+if path.exists():
+    path.unlink()
 time_1 = time.time()
 abjad.persist(score_file).as_pdf('Introduction.pdf')
 time_2 = time.time()
 total_time = time_2 - time_1
 print(f'total time: {total_time} seconds')
+if path.exists():
+    os.system('open Introduction.pdf')
