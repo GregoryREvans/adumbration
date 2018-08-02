@@ -7,7 +7,7 @@ import os
 import pathlib
 import random
 import time
-from abjad import rhythmmakertools
+from abjadext import rmakers
 
 ################################################################################
 ############################### MUSIC MAKERS ###################################
@@ -43,18 +43,18 @@ class EvenDivisionMusicMaker:
             c = c + 1
 
     def make_basic_rhythm(self, time_signature_pairs):
-        beam_specifier = rhythmmakertools.BeamSpecifier(
+        beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
-        division_masks = rhythmmakertools.SilenceMask(
+        division_masks = rmakers.SilenceMask(
             pattern=abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period,
                 ),
             )
-        even_division_rhythm_maker = rhythmmakertools.EvenDivisionRhythmMaker(
+        even_division_rhythm_maker = rmakers.EvenDivisionRhythmMaker(
             denominators=self.denominators,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
@@ -66,7 +66,7 @@ class EvenDivisionMusicMaker:
         return music
 
     def _apply_pitches(self, selections):
-        logical_ties = list(abjad.iterate(selections).by_logical_tie())
+        logical_ties = list(abjad.iterate(selections).logical_ties())
         pitches = self._cyclic_pitches(self.pitches)
         for i, logical_tie in enumerate(logical_ties):
             if not logical_tie.is_pitched:
@@ -77,7 +77,7 @@ class EvenDivisionMusicMaker:
         return selections
 
     def add_attachments(self, music):
-        runs = abjad.select(music).by_run()
+        runs = abjad.select(music).runs()
         for run in runs:
             abjad.attach(abjad.Articulation('tenuto'), run[0])
             if 4 < len(run):
@@ -93,14 +93,14 @@ class EvenDivisionMusicMaker:
             time_signature_pairs,
             )
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=rhythmmakertools.BeamSpecifier(
+        beam_specifier=rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            leaves = abjad.select(shard).by_leaf()
+            leaves = abjad.select(shard).leaves()
             if not all(isinstance(_, abjad.Rest) for _ in leaves):
                 beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
@@ -135,18 +135,18 @@ class NoteMusicMaker:
             c = c + 1
 
     def make_basic_rhythm(self, time_signature_pairs):
-        beam_specifier = rhythmmakertools.BeamSpecifier(
+        beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
-        division_masks = rhythmmakertools.SilenceMask(
+        division_masks = rmakers.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
 
-        note_rhythm_maker = rhythmmakertools.NoteRhythmMaker(
+        note_rhythm_maker = rmakers.NoteRhythmMaker(
             beam_specifier=beam_specifier,
             division_masks=division_masks,
             )
@@ -161,7 +161,7 @@ class NoteMusicMaker:
 
     def _apply_pitches(self, selections):
         selections = selections
-        leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
+        leaves = [i for i in abjad.iterate(selections).logical_ties()]
         pitches = self._cyclic_pitches(self.pitches)
 
         for i, leaf in enumerate(leaves):
@@ -172,7 +172,7 @@ class NoteMusicMaker:
         return selections
 
     def add_attachments(self, music):
-        runs = abjad.select(music).by_run()
+        runs = abjad.select(music).runs()
         for run in runs:
             abjad.attach(abjad.Articulation('tenuto'), run[0])
             if 4 < len(run):
@@ -189,14 +189,14 @@ class NoteMusicMaker:
             )
 
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=rhythmmakertools.BeamSpecifier(
+        beam_specifier=rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            leaves = abjad.select(shard).by_leaf()
+            leaves = abjad.select(shard).leaves()
             if not all(isinstance(_, abjad.Rest) for _ in leaves):
                 beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
@@ -238,22 +238,22 @@ class TaleaMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        talea = rhythmmakertools.Talea(
+        talea = rmakers.Talea(
             counts = self.counts,
             denominator=self.denominator,
             )
-        beam_specifier = rhythmmakertools.BeamSpecifier(
+        beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
-        division_masks = rhythmmakertools.SilenceMask(
+        division_masks = rmakers.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
 
-        talea_rhythm_maker = rhythmmakertools.TaleaRhythmMaker(
+        talea_rhythm_maker = rmakers.TaleaRhythmMaker(
             talea=talea,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
@@ -270,7 +270,7 @@ class TaleaMusicMaker:
 
     def _apply_pitches(self, selections):
         selections = selections
-        leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
+        leaves = [i for i in abjad.iterate(selections).logical_ties()]
         pitches = self._cyclic_pitches(self.pitches)
 
         for i, leaf in enumerate(leaves):
@@ -281,7 +281,7 @@ class TaleaMusicMaker:
         return selections
 
     def add_attachments(self, music):
-        runs = abjad.select(music).by_run()
+        runs = abjad.select(music).runs()
         for run in runs:
             abjad.attach(abjad.Articulation('tenuto'), run[0])
             if 4 < len(run):
@@ -297,14 +297,14 @@ class TaleaMusicMaker:
             time_signature_pairs,
             )
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier = rhythmmakertools.BeamSpecifier(
+        beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            leaves = abjad.select(shard).by_leaf()
+            leaves = abjad.select(shard).leaves()
             if not all(isinstance(_, abjad.Rest) for _ in leaves):
                 beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
@@ -341,20 +341,20 @@ class TupletMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        beam_specifier = rhythmmakertools.BeamSpecifier(
+        beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
 
-        division_masks = rhythmmakertools.SilenceMask(
+        division_masks = rmakers.SilenceMask(
             pattern = abjad.Pattern(
                 indices=self.mask_indices,
                 period=self.mask_period)
                 )
         # division_masks = [silence_every([mask_indicies], period=mask_period),]
 
-        tuplet_rhythm_maker = rhythmmakertools.TupletRhythmMaker(
+        tuplet_rhythm_maker = rmakers.TupletRhythmMaker(
             tuplet_ratios=self.tuplet_ratio,
             beam_specifier=beam_specifier,
             division_masks=division_masks,
@@ -377,7 +377,7 @@ class TupletMusicMaker:
 
     def _apply_pitches(self, selections):
         selections = selections
-        leaves = [i for i in abjad.iterate(selections).by_logical_tie()]
+        leaves = [i for i in abjad.iterate(selections).logical_ties()]
         #leaves = [i for i in abjad.iterate(selections).logical_ties()]
         pitches = self._cyclic_pitches(self.pitches)
 
@@ -390,7 +390,7 @@ class TupletMusicMaker:
 
     def add_attachments(self, music):
         # Ivan 4:
-        runs = abjad.select(music).by_run()
+        runs = abjad.select(music).runs()
         #runs = abjad.select(music).runs()
         for run in runs:
             abjad.attach(abjad.Articulation('tenuto'), run[0])
@@ -408,14 +408,14 @@ class TupletMusicMaker:
             )
 
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=rhythmmakertools.BeamSpecifier(
+        beam_specifier=rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            leaves = abjad.select(shard).by_leaf()
+            leaves = abjad.select(shard).leaves()
             if not all(isinstance(_, abjad.Rest) for _ in leaves):
                 beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
@@ -666,24 +666,24 @@ cello_notes_5 = [((x / 2.0) - 8) for x in cello_random_walk_5]
 # time signatures #
 ###################
 
-time_signature_staff_1 = abjad.Staff(context_name='TimeSignatureContext')
-time_signature_staff_2 = abjad.Staff(context_name='TimeSignatureContext')
-time_signature_staff_3 = abjad.Staff(context_name='TimeSignatureContext')
+time_signature_staff_1 = abjad.Staff(lilypond_type='TimeSignatureContext')
+time_signature_staff_2 = abjad.Staff(lilypond_type='TimeSignatureContext')
+time_signature_staff_3 = abjad.Staff(lilypond_type='TimeSignatureContext')
 
 ###################
 ##### violin ######
 ###################
 
 violin_string_staff = abjad.Staff(
-    context_name='StringStaff',
+    lilypond_type='StringStaff',
     name='violin_string_staff',
     )
 violin_bow_staff = abjad.Staff(
-    context_name='BowStaff',
+    lilypond_type='BowStaff',
     name='violin_bow_staff',
     )
 violin_bow_beam_staff = abjad.Staff(
-    context_name='BeamStaff',
+    lilypond_type='BeamStaff',
     name='violin_beam_staff',
     )
 violin_lh_staff = abjad.Staff()
@@ -693,15 +693,15 @@ violin_lh_staff = abjad.Staff()
 ###################
 
 viola_string_staff = abjad.Staff(
-    context_name='StringStaff',
+    lilypond_type='StringStaff',
     name='viola_string_staff',
     )
 viola_bow_staff = abjad.Staff(
-    context_name='BowStaff',
+    lilypond_type='BowStaff',
     name='viola_bow_staff',
     )
 viola_bow_beam_staff = abjad.Staff(
-    context_name='BeamStaff',
+    lilypond_type='BeamStaff',
     name='viola_beam_staff',
     )
 viola_lh_staff = abjad.Staff()
@@ -711,15 +711,15 @@ viola_lh_staff = abjad.Staff()
 ###################
 
 cello_string_staff = abjad.Staff(
-    context_name='StringStaff',
+    lilypond_type='StringStaff',
     name='cello_string_staff',
     )
 cello_bow_staff = abjad.Staff(
-    context_name='BowStaff',
+    lilypond_type='BowStaff',
     name='cello_bow_staff',
     )
 cello_bow_beam_staff = abjad.Staff(
-    context_name='BeamStaff',
+    lilypond_type='BeamStaff',
     name='cello_beam_staff',
     )
 cello_lh_staff = abjad.Staff()
@@ -1902,7 +1902,7 @@ def cyc(lst):
 def _apply_bow_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
     techs = cyc(tech)
-    logical_ties = abjad.select(staff[:]).by_leaf()
+    logical_ties = abjad.select(staff[:]).leaves()
     spanner = abjad.BowContactSpanner()
     abjad.attach(spanner, logical_ties)
 
@@ -1911,13 +1911,13 @@ def _apply_bow_numerators_and_tech(staff, nums, tech):
         numerator = next(numerators)
         bcp = abjad.BowContactPoint((numerator, 4))
         technis = abjad.BowMotionTechnique(tech)
-        spanner.attach(bcp, logical_tie)
-        spanner.attach(technis, logical_tie)
+        abjad.attach(bcp, logical_tie)
+        abjad.attach(technis, logical_tie)
 
 def _apply_string_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
     techs = cyc(tech)
-    logical_ties = abjad.select(staff[:]).by_leaf()
+    logical_ties = abjad.select(staff[:]).leaves()
     spanner = abjad.BowContactSpanner()
     abjad.attach(spanner, logical_ties)
 
@@ -1926,8 +1926,8 @@ def _apply_string_numerators_and_tech(staff, nums, tech):
         numerator = next(numerators)
         bcp = abjad.BowContactPoint((numerator, 5))
         technis = abjad.BowMotionTechnique(tech)
-        spanner.attach(bcp, logical_tie)
-        spanner.attach(technis, logical_tie)
+        abjad.attach(bcp, logical_tie)
+        abjad.attach(technis, logical_tie)
 
 ###################
 ##### spanner #####
@@ -2102,13 +2102,13 @@ _apply_bow_numerators_and_tech(staff=cello_bow_staff, nums=cello_bow_nums, tech=
 ############################## FINAL ASSEMBLY ##################################
 ################################################################################
 
-violin_staff = abjad.StaffGroup(context_name='StaffGroup')
+violin_staff = abjad.StaffGroup(lilypond_type='StaffGroup')
 violin_staff.extend([violin_string_staff, violin_bow_staff, violin_bow_beam_staff, violin_lh_staff])
 
-viola_staff = abjad.StaffGroup(context_name='StaffGroup')
+viola_staff = abjad.StaffGroup(lilypond_type='StaffGroup')
 viola_staff.extend([viola_string_staff, viola_bow_staff, viola_bow_beam_staff, viola_lh_staff])
 
-cello_staff = abjad.StaffGroup(context_name='StaffGroup')
+cello_staff = abjad.StaffGroup(lilypond_type='StaffGroup')
 cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, cello_lh_staff])
 
 ################################################################################
@@ -2120,17 +2120,17 @@ score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viol
 
 metro = abjad.MetronomeMark((1, 2), 60)
 abjad.attach(metro, violin_lh_staff[0][0])
-violin = abjad.instrumenttools.Violin()
+violin = abjad.Violin()
 abjad.attach(violin, violin_lh_staff[0][0])
 
-viola = abjad.instrumenttools.Viola()
+viola = abjad.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])
 alto_clef = abjad.Clef('alto')
 abjad.attach(alto_clef, viola_lh_staff[0][0])
 
 bass_clef = abjad.Clef('bass')
 abjad.attach(bass_clef, cello_lh_staff[0][0])
-cello = abjad.instrumenttools.Cello()
+cello = abjad.Cello()
 abjad.attach(cello, cello_lh_staff[0][0])
 
 ###################

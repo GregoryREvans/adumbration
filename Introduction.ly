@@ -1,5 +1,3 @@
-% 2018-08-01 20:55
-
 \version "2.19.82"
 \language "english"
 
@@ -9,6 +7,7 @@
 #(set-global-staff-size 15)
 
 \header {
+    tagline = ##f
     composer = #"Gregory Rowland Evans"
     title = \markup {
         \fontsize
@@ -28,111 +27,116 @@
 }
 
 \score {
-    \new Score <<
-        \new TimeSignatureContext {
-            {
+    \new Score
+    <<
+        \new TimeSignatureContext
+        {
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/8
                 r2
                 r8
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 6/8
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/8
                 r2
                 r8
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
+            }   % measure
         }
-        \new StaffGroup <<
-            \context StringStaff = "violin_string_staff" {
-                {
+        \new StaffGroup
+        <<
+            \context StringStaff = "violin_string_staff"
+            {
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -143,7 +147,13 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -154,7 +164,8 @@
                                         1
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -165,7 +176,9 @@
                                         1
                                         1
                             }
-                        c'4. ^\upbow \glissando
+                        c'4.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -176,7 +189,8 @@
                                         4
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -187,10 +201,13 @@
                                         2
                                         5
                             }
-                        c'8 ^\downbow ~ \glissando
+                        c'8
+                        ^\downbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/7 {
@@ -204,7 +221,9 @@
                                         3
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -215,7 +234,10 @@
                                         1
                                         5
                             }
-                        c'2 ^\downbow ~ \glissando
+                        c'2
+                        ^\downbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -226,7 +248,9 @@
                                         2
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -237,12 +261,16 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow ~ \glissando
+                        c'8
+                        ^\downbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -253,7 +281,8 @@
                                         3
                                         5
                             }
-                        c'4. \glissando
+                        c'4.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -264,7 +293,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -275,10 +306,11 @@
                                         4
                                         5
                             }
-                        c'2 \glissando
+                        c'2
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
@@ -292,7 +324,8 @@
                                         3
                                         5
                             }
-                        c'4. \glissando
+                        c'4.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -303,7 +336,9 @@
                                         2
                                         5
                             }
-                        c'2 ~ \glissando
+                        c'2
+                        ~
+                        \glissando
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -314,9 +349,10 @@
                                         1
                             }
                         c'8
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
@@ -328,9 +364,11 @@
                                     1
                                     5
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/9 {
                         \once \override Glissando.style = #'line
@@ -343,7 +381,13 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -354,7 +398,8 @@
                                         3
                                         5
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -365,7 +410,10 @@
                                         1
                                         1
                             }
-                        c'2 ^\upbow ~ \glissando
+                        c'2
+                        ^\upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -376,12 +424,14 @@
                                         4
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -392,7 +442,9 @@
                                         3
                                         5
                             }
-                        c'4. ^\downbow \glissando
+                        c'4.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -403,7 +455,8 @@
                                         1
                                         1
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -414,7 +467,8 @@
                                         1
                                         1
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -425,9 +479,10 @@
                                         1
                             }
                         c'4
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -439,9 +494,11 @@
                                     0
                                     1
                         }
-                    r2. ^\downbow \glissando
-                }
-                {
+                    r2.
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/6 {
@@ -455,7 +512,11 @@
                                         1
                                         5
                             }
-                        c'2 ~ \glissando
+                        c'2
+                        \fff
+                        -\tenuto
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -466,7 +527,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -477,10 +540,11 @@
                                         4
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/8 {
@@ -494,7 +558,13 @@
                                         2
                                         5
                             }
-                        c'2. ^\downbow \glissando
+                        c'2.
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -505,7 +575,10 @@
                                         3
                                         5
                             }
-                        c'1 ^\upbow ~ \glissando
+                        c'1
+                        ^\upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -516,10 +589,12 @@
                                         1
                                         5
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        ^\downbow
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/9 {
                         \once \override Glissando.style = #'line
@@ -532,9 +607,12 @@
                                         2
                                         5
                             }
-                        c'2 ^\upbow ~ \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'2
+                        ^\upbow
+                        ~
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -545,7 +623,11 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow \glissando [ ]
+                        c'8
+                        ^\downbow
+                        [
+                        ]
+                        \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -556,9 +638,10 @@
                                         5
                             }
                         c'2
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -570,9 +653,11 @@
                                     1
                                     1
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/9 {
@@ -586,7 +671,12 @@
                                         4
                                         5
                             }
-                        c'4. \glissando
+                        c'4.
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -597,7 +687,8 @@
                                         3
                                         5
                             }
-                        c'2 \glissando
+                        c'2
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -608,12 +699,14 @@
                                         2
                                         5
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -624,7 +717,9 @@
                                         0
                                         1
                             }
-                        c'4. ^\downbow \glissando
+                        c'4.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -635,9 +730,12 @@
                                         1
                                         5
                             }
-                        c'2 ^\upbow ~ \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'2
+                        ^\upbow
+                        ~
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -648,12 +746,18 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [ ]
+                        c'8
+                        ^\downbow
+                        \!
+                        [
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -664,7 +768,12 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -675,7 +784,10 @@
                                         1
                                         1
                             }
-                        c'4 ^\upbow ~ \glissando
+                        c'4
+                        ^\upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -686,7 +798,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -697,7 +810,9 @@
                                         3
                                         5
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -708,10 +823,11 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
@@ -725,7 +841,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -736,7 +853,9 @@
                                         1
                                         1
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -747,7 +866,9 @@
                                         0
                                         1
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -758,7 +879,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -769,7 +891,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -780,7 +904,9 @@
                                         4
                                         5
                             }
-                        c'4 ~ \glissando
+                        c'4
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -791,7 +917,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -802,7 +930,9 @@
                                         3
                                         5
                             }
-                        c'4 ^\upbow \glissando
+                        c'4
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -813,7 +943,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -824,7 +956,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -835,7 +969,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -846,9 +982,10 @@
                                         5
                             }
                         c'16
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -860,9 +997,11 @@
                                     1
                                     1
                         }
-                    r1 ^\upbow \glissando
-                }
-                {
+                    r1
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
@@ -876,7 +1015,12 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -887,7 +1031,8 @@
                                         3
                                         5
                             }
-                        c'8. \glissando
+                        c'8.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -898,7 +1043,8 @@
                                         2
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -909,7 +1055,9 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -920,7 +1068,10 @@
                                         1
                                         5
                             }
-                        c'4 ^\upbow ~ \glissando
+                        c'4
+                        ^\upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -931,7 +1082,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -942,12 +1095,15 @@
                                         3
                                         5
                             }
-                        c'8. \glissando
+                        c'8.
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -958,7 +1114,13 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -969,7 +1131,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -980,7 +1143,9 @@
                                         3
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -991,7 +1156,8 @@
                                         1
                                         1
                             }
-                        c'8. \glissando
+                        c'8.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1002,7 +1168,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1013,7 +1180,9 @@
                                         1
                                         1
                             }
-                        c'8 ^ \parenthesize \upbow \glissando
+                        c'8
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1024,7 +1193,10 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow ~ \glissando
+                        c'4
+                        ^\downbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1035,7 +1207,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1046,10 +1219,13 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow ~ \glissando
+                        c'8
+                        ^\upbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
@@ -1063,7 +1239,8 @@
                                         4
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1074,7 +1251,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1085,7 +1264,9 @@
                                         3
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1096,7 +1277,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1107,7 +1290,9 @@
                                         2
                                         5
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1118,7 +1303,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1129,7 +1316,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1140,7 +1328,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -1151,9 +1341,10 @@
                                         5
                             }
                         c'16
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -1165,9 +1356,10 @@
                                     3
                                     5
                         }
-                    r2.. \glissando
-                }
-                {
+                    r2..
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
@@ -1181,7 +1373,12 @@
                                         2
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1192,199 +1389,10 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8. \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'8 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'4 ^\downbow ~ \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'4 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16 ^\downbow \glissando
-                    }
-                }
-                {
-                    \time 4/4
-                    {
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'8. ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'4. ^\upbow \glissando
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -1395,15 +1403,238 @@
                                         5
                             }
                         c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'4
+                        ^\downbow
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'4
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
                     }
-                }
+                }   % measure
+                {   % measure
+                    \time 4/4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'8.
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'4.
+                        ^\upbow
+                        \glissando
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'16
+                        \!
+                    }
+                }   % measure
             }
-            \context BowStaff = "violin_bow_staff" {
-                {
+            \context BowStaff = "violin_bow_staff"
+            {
+                {   % measure
                     \time 4/4
                     \times 16/17 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1414,9 +1645,16 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1427,9 +1665,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1440,9 +1680,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1453,9 +1695,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1466,9 +1710,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1479,9 +1725,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1492,9 +1740,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1505,9 +1755,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1518,9 +1770,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1531,9 +1785,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1544,9 +1800,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1557,9 +1815,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1570,9 +1830,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1583,9 +1845,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1596,9 +1860,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1609,9 +1875,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1622,14 +1890,18 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow ] \glissando
+                        c'16
+                        ^\downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1640,9 +1912,11 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1653,9 +1927,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1666,9 +1942,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1679,9 +1956,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1692,9 +1970,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1705,9 +1985,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1718,9 +1999,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1731,9 +2014,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1744,9 +2029,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1757,9 +2044,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1770,9 +2059,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1783,14 +2074,18 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/8 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1801,9 +2096,12 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1814,9 +2112,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1827,9 +2127,10 @@
                                         3
                                         4
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1840,9 +2141,11 @@
                                         1
                                         2
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1853,9 +2156,11 @@
                                         3
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1866,9 +2171,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1879,9 +2186,11 @@
                                         1
                                         2
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1892,15 +2201,18 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow ] \glissando
+                        c'8
+                        ^\downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1911,9 +2223,12 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1924,9 +2239,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1937,9 +2254,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1950,9 +2269,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1963,9 +2284,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1976,9 +2299,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1989,9 +2314,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2002,9 +2329,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2015,9 +2344,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2028,9 +2359,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2041,9 +2373,11 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2054,9 +2388,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2067,9 +2403,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2080,9 +2418,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -2092,10 +2432,12 @@
                                         0
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
@@ -2107,13 +2449,15 @@
                                     1
                                     4
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/9 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2124,9 +2468,16 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2137,9 +2488,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2150,9 +2503,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2163,9 +2518,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2176,9 +2533,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2189,9 +2548,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2202,9 +2563,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2215,9 +2578,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2228,15 +2593,18 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow ] \glissando
+                        c'8
+                        ^\downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2247,9 +2615,12 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2260,9 +2631,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2273,9 +2646,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2286,9 +2660,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2299,9 +2675,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2312,9 +2689,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2325,9 +2703,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2338,9 +2718,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2351,9 +2732,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2364,9 +2747,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2377,9 +2762,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2390,9 +2777,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2403,9 +2792,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2416,9 +2807,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -2428,10 +2821,12 @@
                                         0
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -2443,14 +2838,16 @@
                                     1
                                     1
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2461,9 +2858,15 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2474,9 +2877,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2487,9 +2892,11 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2500,9 +2907,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2513,9 +2922,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2526,9 +2937,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2539,9 +2952,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2552,9 +2967,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2565,9 +2982,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2578,9 +2997,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2591,15 +3012,19 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2610,9 +3035,16 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2623,9 +3055,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2636,9 +3070,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2649,9 +3085,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2662,9 +3100,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2675,9 +3114,11 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2688,9 +3129,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2701,9 +3144,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2714,9 +3159,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2727,9 +3174,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2740,9 +3189,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2753,9 +3204,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2766,9 +3219,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2779,9 +3234,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2792,9 +3249,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2805,9 +3264,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2818,9 +3279,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2831,9 +3294,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2844,9 +3309,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2857,9 +3324,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2870,14 +3339,18 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 32/32 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2888,9 +3361,12 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2901,9 +3377,10 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2914,9 +3391,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2927,9 +3406,10 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2940,9 +3420,10 @@
                                         1
                                         2
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2953,9 +3434,11 @@
                                         1
                                         2
                             }
-                        c'32 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2966,9 +3449,10 @@
                                         1
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2979,9 +3463,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2992,9 +3478,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3005,9 +3493,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3018,9 +3508,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3031,9 +3523,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3044,9 +3538,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3057,9 +3553,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3070,9 +3568,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3083,9 +3583,10 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3096,9 +3597,11 @@
                                         1
                                         2
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3109,9 +3612,11 @@
                                         3
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3122,9 +3627,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3135,9 +3642,11 @@
                                         1
                                         2
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3148,9 +3657,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3161,9 +3672,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3174,9 +3687,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3187,9 +3702,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3200,9 +3717,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3213,9 +3732,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3226,9 +3747,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3239,9 +3762,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3252,9 +3777,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3265,9 +3792,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3278,9 +3807,10 @@
                                         0
                                         1
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -3290,10 +3820,12 @@
                                         0
                                         1
                             }
-                        c'32 ]
+                        c'32
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
@@ -3305,14 +3837,16 @@
                                     1
                                     4
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3323,9 +3857,16 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3336,9 +3877,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3349,9 +3892,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3362,9 +3907,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3375,9 +3922,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3388,9 +3937,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3401,9 +3952,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3414,9 +3967,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3427,9 +3982,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3440,9 +3997,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3453,9 +4012,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3466,9 +4027,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3479,14 +4042,17 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow ] \glissando
+                        c'16
+                        ^\downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3497,9 +4063,12 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3510,9 +4079,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3523,9 +4094,10 @@
                                         3
                                         4
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3536,9 +4108,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3549,9 +4123,10 @@
                                         3
                                         4
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3562,9 +4137,10 @@
                                         1
                                         2
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3575,9 +4151,11 @@
                                         1
                                         2
                             }
-                        c'8 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3588,9 +4166,10 @@
                                         1
                                         4
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3601,9 +4180,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3614,12 +4195,17 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow ] \glissando
+                        c'8
+                        ^\upbow
+                        ]
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3630,7 +4216,13 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3641,7 +4233,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3652,7 +4246,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3663,7 +4259,9 @@
                                         1
                                         1
                             }
-                        c'4. ^\upbow \glissando
+                        c'4.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3674,10 +4272,12 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
@@ -3691,7 +4291,9 @@
                                         1
                                         1
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3702,7 +4304,8 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3713,7 +4316,9 @@
                                         1
                                         2
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3724,7 +4329,9 @@
                                         3
                                         4
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3735,7 +4342,9 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3746,7 +4355,9 @@
                                         1
                                         2
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3757,7 +4368,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3768,7 +4381,9 @@
                                         1
                                         1
                             }
-                        c'4. ^\upbow \glissando
+                        c'4.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3779,7 +4394,9 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -3790,9 +4407,10 @@
                                         1
                             }
                         c'8
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -3804,11 +4422,14 @@
                                     0
                                     1
                         }
-                    r1 ^\downbow \glissando
-                }
-                {
+                    r1
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3819,7 +4440,13 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3830,7 +4457,9 @@
                                         0
                                         1
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3841,7 +4470,9 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3852,7 +4483,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3863,7 +4496,9 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3874,7 +4509,8 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3885,7 +4521,9 @@
                                         0
                                         1
                             }
-                        c'8 ^ \parenthesize \downbow \glissando
+                        c'8
+                        ^ \parenthesize \downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3896,7 +4534,9 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3907,14 +4547,18 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3925,9 +4569,16 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3938,9 +4589,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3951,9 +4604,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3964,9 +4619,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3977,9 +4634,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3990,9 +4649,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4003,9 +4664,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4016,9 +4679,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4029,9 +4694,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4042,9 +4709,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4055,9 +4724,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4068,9 +4739,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4081,9 +4754,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4094,9 +4769,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4107,9 +4784,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4120,15 +4798,18 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4139,9 +4820,11 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4152,9 +4835,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4165,9 +4849,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4178,9 +4864,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4191,9 +4878,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4204,9 +4893,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4217,9 +4908,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4230,9 +4923,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4243,9 +4938,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4256,9 +4953,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4269,9 +4968,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4282,9 +4983,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -4294,10 +4997,12 @@
                                         3
                                         4
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.0
@@ -4309,13 +5014,16 @@
                                     1
                                     2
                         }
-                    r2.. ^\downbow \glissando
-                }
-                {
+                    r2..
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 20/20 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4326,9 +5034,16 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4339,9 +5054,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4352,9 +5069,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4365,9 +5084,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4378,9 +5099,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4391,9 +5114,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4404,9 +5129,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4417,9 +5144,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4430,9 +5159,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4443,9 +5174,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4456,9 +5189,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4469,9 +5204,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4482,9 +5219,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4495,9 +5234,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4508,9 +5248,11 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4521,9 +5263,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4534,9 +5278,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4547,9 +5293,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4560,9 +5308,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4573,14 +5323,17 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4591,9 +5344,12 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4604,9 +5360,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4617,9 +5375,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4630,9 +5390,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4643,9 +5405,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4656,9 +5420,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4669,9 +5435,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4682,9 +5450,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4695,9 +5465,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -4707,583 +5479,641 @@
                                         1
                                         4
                             }
-                        c'8 ]
+                        c'8
+                        ]
+                        \!
                     }
-                }
+                }   % measure
             }
-            \context BeamStaff = "violin_beam_staff" {
-                {
+            \context BeamStaff = "violin_beam_staff"
+            {
+                {   % measure
                     \time 4/4
                     \times 16/17 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/8 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/9 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
-                        d''''32 [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 32/32 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        [
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        d''''32 ]
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
+                        d''''32
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
+                        d''''32
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         d''''16
+                        -\tenuto
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         d''''8
                         d''''16
                         d''''4.
                         d''''8
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
@@ -5297,16 +6127,22 @@
                         d''''4.
                         d''''8
                         d''''8
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         d''''16
+                        -\tenuto
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         d''''8.
                         d''''16
                         d''''16
@@ -5315,438 +6151,492 @@
                         d''''8
                         d''''16
                         d''''8
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 20/20 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
+                        \!
                     }
-                }
+                }   % measure
             }
-            \new Staff {
-                {
+            \new Staff
+            {
+                {   % measure
                     \time 4/4
                     \tempo 2=60
-                    \set Staff.instrumentName = \markup { Violin }
-                    \set Staff.shortInstrumentName = \markup { Vn. }
-                    btes1
-                }
-                {
+                    c'1
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 3/4
                     c'2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    ces'1
-                }
-                {
+                    c'1
+                }   % measure
+                {   % measure
                     \time 7/8
                     c'2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 4/5 {
-                        efef'2
+                        ef'2
+                        -\tenuto
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         dqs'2.
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        des'8. [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        d'8.
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d'8
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        def'16
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        dqf'8 ]
-                        efef'4
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        dqs'8 [ ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
+                        d'16
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        dqf'8
+                        ]
+                        ef'4
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        dqs'8
+                        \!
+                        [
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
-                    {
-                        des'4.
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        d'4.
+                        \fff
+                        -\tenuto
                         d'4
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    eqs'1 ~
+                    eqs'1
+                    \fff
+                    -\tenuto
+                    ~
                     eqs'4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     e'1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
-                    eqs'2 ~
+                    eqs'2
+                    \fff
+                    -\tenuto
+                    ~
                     eqs'8
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     e'1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     gqs'2.
-                }
-                {
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 5/4
-                    g'1 ~
+                    g'1
+                    ~
                     g'4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     gqs'2..
-                }
-                {
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 4/4
-                    bef'1
-                }
-                {
+                    b'1
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 3/4
                     b'2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    bes'1 ~
-                    bes'4
-                }
-                {
+                    b'1
+                    \fff
+                    -\tenuto
+                    ~
+                    b'4
+                }   % measure
+                {   % measure
                     \time 4/4
                     bqs'1
-                }
+                }   % measure
             }
         >>
-        \new TimeSignatureContext {
-            {
+        \new TimeSignatureContext
+        {
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/8
                 r2
                 r8
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 6/8
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/8
                 r2
                 r8
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
+            }   % measure
         }
-        \new StaffGroup <<
-            \context StringStaff = "viola_string_staff" {
-                {
+        \new StaffGroup
+        <<
+            \context StringStaff = "viola_string_staff"
+            {
+                {   % measure
                     \time 4/4
                     \times 4/5 {
                         \once \override Glissando.style = #'line
@@ -5759,7 +6649,12 @@
                                         1
                                         1
                             }
-                        c'2. \glissando
+                        c'2.
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5770,10 +6665,11 @@
                                         1
                                         1
                             }
-                        c'2 \glissando
+                        c'2
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \times 2/3 {
                         \once \override Glissando.style = #'line
@@ -5786,7 +6682,10 @@
                                         1
                                         1
                             }
-                        c'2 ^ \parenthesize \upbow ~ \glissando
+                        c'2
+                        ^ \parenthesize \upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5797,7 +6696,9 @@
                                         3
                                         5
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5808,10 +6709,11 @@
                                         4
                                         5
                             }
-                        c'2 \glissando
+                        c'2
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 4/7 {
                         \once \override Glissando.style = #'line
@@ -5824,7 +6726,9 @@
                                         1
                                         1
                             }
-                        c'4 ^\upbow \glissando
+                        c'4
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5835,7 +6739,8 @@
                                         3
                                         5
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5846,7 +6751,9 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5857,7 +6764,9 @@
                                         1
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5868,7 +6777,9 @@
                                         0
                                         1
                             }
-                        c'2 ^\downbow \glissando
+                        c'2
+                        ^\downbow
+                        \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -5879,9 +6790,10 @@
                                         5
                             }
                         c'4.
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -5893,9 +6805,10 @@
                                     3
                                     5
                         }
-                    r2.. \glissando
-                }
-                {
+                    r2..
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 3/4
                     \times 2/3 {
                         \once \override Glissando.style = #'line
@@ -5908,7 +6821,12 @@
                                         4
                                         5
                             }
-                        c'2 \glissando
+                        c'2
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5919,7 +6837,10 @@
                                         1
                                         1
                             }
-                        c'2 ^\upbow ~ \glissando
+                        c'2
+                        ^\upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5930,10 +6851,11 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/11 {
                         \once \override Glissando.style = #'line
@@ -5946,7 +6868,9 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5957,7 +6881,9 @@
                                         2
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5968,7 +6894,10 @@
                                         1
                                         5
                             }
-                        c'2 ^\downbow ~ \glissando
+                        c'2
+                        ^\downbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5979,7 +6908,9 @@
                                         3
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5990,12 +6921,16 @@
                                         2
                                         5
                             }
-                        c'2 ^\downbow \glissando
+                        c'2
+                        ^\downbow
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6006,7 +6941,12 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6017,7 +6957,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6028,7 +6970,8 @@
                                         1
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6039,7 +6982,9 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        ^\downbow
+                        \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6050,9 +6995,10 @@
                                         1
                             }
                         c'4.
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -6064,9 +7010,10 @@
                                     1
                                     1
                         }
-                    r2. \glissando
-                }
-                {
+                    r2.
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
@@ -6080,7 +7027,13 @@
                                         1
                                         1
                             }
-                        c'8 ^ \parenthesize \upbow \glissando
+                        c'8
+                        -\tenuto
+                        ^ \parenthesize \upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6091,7 +7044,9 @@
                                         3
                                         5
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6102,7 +7057,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6113,7 +7069,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6124,7 +7082,8 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6135,7 +7094,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6146,12 +7107,16 @@
                                         1
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6162,106 +7127,14 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'8. \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'4 ^\downbow ~ \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'4 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'16 ^\upbow \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6272,9 +7145,123 @@
                                         5
                             }
                         c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'4
+                        ^\downbow
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'4
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'16
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
@@ -6286,11 +7273,13 @@
                                     4
                                     5
                         }
-                    r1 \glissando
-                }
-                {
+                    r1
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 6/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6301,7 +7290,13 @@
                                         1
                                         1
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6312,7 +7307,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6323,7 +7319,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6334,7 +7332,8 @@
                                         1
                                         1
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6345,7 +7344,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6356,7 +7356,9 @@
                                         1
                                         1
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6367,7 +7369,9 @@
                                         3
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6378,10 +7382,12 @@
                                         4
                                         5
                             }
-                        c'8 ~ \glissando
+                        c'8
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
@@ -6395,7 +7401,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6406,7 +7414,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6417,7 +7426,9 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6428,7 +7439,10 @@
                                         1
                                         5
                             }
-                        c'4 ^\upbow ~ \glissando
+                        c'4
+                        ^\upbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6439,7 +7453,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6450,12 +7466,15 @@
                                         2
                                         5
                             }
-                        c'8 ~ \glissando
+                        c'8
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6466,7 +7485,8 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6477,7 +7497,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6488,7 +7509,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6499,7 +7522,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6510,7 +7534,9 @@
                                         1
                                         5
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6521,7 +7547,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6532,7 +7560,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6543,7 +7573,9 @@
                                         3
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6554,7 +7586,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6565,12 +7599,15 @@
                                         4
                                         5
                             }
-                        c'8. \glissando
+                        c'8.
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6581,7 +7618,13 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6592,7 +7635,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6603,7 +7647,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6614,7 +7660,8 @@
                                         1
                                         1
                             }
-                        c'8. \glissando
+                        c'8.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6625,7 +7672,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6636,7 +7684,9 @@
                                         1
                                         1
                             }
-                        c'8 ^ \parenthesize \upbow \glissando
+                        c'8
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6647,9 +7697,10 @@
                                         5
                             }
                         c'8.
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6671,11 +7722,14 @@
                                     1
                                     1
                         }
-                    r4 ^\upbow \glissando
-                }
-                {
+                    r4
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6686,7 +7740,12 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6697,7 +7756,9 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6708,7 +7769,9 @@
                                         1
                                         5
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6719,7 +7782,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6730,7 +7795,8 @@
                                         2
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6741,7 +7807,8 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6752,7 +7819,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6763,7 +7831,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6774,7 +7844,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6785,10 +7856,13 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow ~ \glissando
+                        c'8
+                        ^\downbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
@@ -6802,7 +7876,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6813,7 +7889,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6824,7 +7902,9 @@
                                         3
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6835,7 +7915,10 @@
                                         2
                                         5
                             }
-                        c'4 ^\downbow ~ \glissando
+                        c'4
+                        ^\downbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6846,7 +7929,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6857,7 +7941,9 @@
                                         1
                                         1
                             }
-                        c'4 ^\upbow \glissando
+                        c'4
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6868,7 +7954,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6879,9 +7966,10 @@
                                         1
                             }
                         c'16
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -6893,11 +7981,13 @@
                                     1
                                     1
                         }
-                    r1 \glissando
-                }
-                {
+                    r1
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6908,7 +7998,12 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6919,7 +8014,9 @@
                                         1
                                         1
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6930,7 +8027,9 @@
                                         3
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6941,7 +8040,8 @@
                                         4
                                         5
                             }
-                        c'8. \glissando
+                        c'8.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6952,7 +8052,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6963,7 +8065,8 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6974,10 +8077,13 @@
                                         0
                                         1
                             }
-                        c'8. ^\downbow ~ \glissando
+                        c'8.
+                        ^\downbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
@@ -6991,7 +8097,9 @@
                                         1
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7002,73 +8110,10 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'8. ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16 ^\downbow \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7079,9 +8124,83 @@
                                         5
                             }
                         c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'8.
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'16
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7103,9 +8222,11 @@
                                     3
                                     5
                         }
-                    r4 ^\upbow \glissando
-                }
-                {
+                    r4
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/17 {
                         \once \override Glissando.style = #'line
@@ -7118,7 +8239,13 @@
                                         2
                                         5
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7129,7 +8256,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7140,7 +8268,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7151,7 +8281,9 @@
                                         1
                                         5
                             }
-                        c'4 ~ \glissando
+                        c'4
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7162,7 +8294,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7173,18 +8307,9 @@
                                         1
                                         1
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7195,15 +8320,29 @@
                                         1
                             }
                         c'16
+                        \glissando
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        \!
                     }
-                }
+                }   % measure
             }
-            \context BowStaff = "viola_bow_staff" {
-                {
+            \context BowStaff = "viola_bow_staff"
+            {
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/8 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7214,9 +8353,16 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7227,9 +8373,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7240,9 +8388,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7253,9 +8403,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7266,9 +8418,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7279,9 +8433,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7292,9 +8448,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7305,15 +8463,18 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow ] \glissando
+                        c'8
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7324,9 +8485,12 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7337,9 +8501,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7350,9 +8516,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7363,9 +8531,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7376,9 +8546,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7389,9 +8561,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7402,9 +8576,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7415,9 +8591,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7428,9 +8606,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7441,9 +8621,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7454,9 +8635,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7467,9 +8650,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7480,14 +8664,16 @@
                                         1
                                         2
                             }
-                        c'16 ] \glissando
+                        c'16
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7498,9 +8684,12 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7511,9 +8700,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7524,9 +8714,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7537,9 +8729,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7550,9 +8744,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7563,9 +8759,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7576,9 +8774,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7589,9 +8789,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7602,9 +8804,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7615,9 +8819,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7628,9 +8834,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7641,9 +8848,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7654,9 +8863,11 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7667,9 +8878,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7680,9 +8893,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7693,9 +8908,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7706,9 +8923,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7719,9 +8938,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7731,10 +8952,12 @@
                                         1
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -7746,14 +8969,16 @@
                                     0
                                     1
                         }
-                    r2.. ^\downbow \glissando
-                }
-                {
+                    r2..
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7764,9 +8989,16 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7777,9 +9009,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7790,9 +9024,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7803,9 +9039,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7816,9 +9054,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7829,9 +9069,10 @@
                                         0
                                         1
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7842,9 +9083,11 @@
                                         0
                                         1
                             }
-                        c'8 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7855,14 +9098,17 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow ] \glissando
+                        c'8
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7873,9 +9119,12 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7886,9 +9135,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7899,9 +9150,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7912,9 +9165,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7925,9 +9180,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7938,9 +9195,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7951,9 +9210,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7964,9 +9225,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7977,9 +9240,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -7990,9 +9255,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8003,9 +9270,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8016,9 +9285,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8029,9 +9300,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8042,9 +9315,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8055,9 +9330,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8068,9 +9345,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8081,9 +9359,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8094,9 +9374,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8107,14 +9388,18 @@
                                         1
                                         2
                             }
-                        c'16 ] \glissando
+                        c'16
+                        ]
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8125,9 +9410,16 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^ \parenthesize \upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8138,9 +9430,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8151,9 +9444,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8164,9 +9459,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8177,9 +9474,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8190,9 +9489,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8203,9 +9504,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8216,9 +9519,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8229,9 +9534,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8242,9 +9549,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8255,9 +9564,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8268,9 +9578,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8281,9 +9593,11 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -8293,10 +9607,12 @@
                                         1
                                         4
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.0
@@ -8308,13 +9624,16 @@
                                     1
                                     2
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 20/20 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8325,9 +9644,16 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8338,9 +9664,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8351,9 +9679,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8364,9 +9694,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8377,9 +9709,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8390,9 +9724,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8403,9 +9739,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8416,9 +9754,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8429,9 +9769,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8442,9 +9784,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8455,9 +9799,10 @@
                                         0
                                         1
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8468,9 +9813,11 @@
                                         0
                                         1
                             }
-                        c'32 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8481,9 +9828,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8494,9 +9843,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8507,9 +9858,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8520,9 +9873,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8533,9 +9888,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8546,9 +9903,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8559,9 +9918,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8572,14 +9933,19 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow ] \glissando
+                        c'32
+                        ^\downbow
+                        ]
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 10/10 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8590,9 +9956,16 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8603,9 +9976,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8616,9 +9991,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8629,9 +10006,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8642,9 +10021,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8655,9 +10036,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8668,9 +10051,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8681,9 +10066,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8694,9 +10081,10 @@
                                         3
                                         4
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -8706,10 +10094,12 @@
                                         1
                                         1
                             }
-                        c'8 ]
+                        c'8
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.0
@@ -8721,13 +10111,15 @@
                                     3
                                     4
                         }
-                    r1 \glissando
-                }
-                {
+                    r1
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 6/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8738,9 +10130,15 @@
                                         1
                                         2
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8751,9 +10149,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8764,9 +10164,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8777,9 +10178,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8790,9 +10193,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8803,9 +10208,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8816,9 +10223,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8829,9 +10238,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8842,9 +10253,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8855,9 +10268,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8868,9 +10283,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8881,10 +10298,12 @@
                                         3
                                         4
                             }
-                        c'16 ] \glissando
+                        c'16
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/4 {
@@ -8898,7 +10317,9 @@
                                         1
                                         2
                             }
-                        c'4 ^\downbow \glissando
+                        c'4
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8909,14 +10330,16 @@
                                         3
                                         4
                             }
-                        c'4 ^\upbow \glissando
+                        c'4
+                        ^\upbow
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8927,9 +10350,12 @@
                                         1
                                         4
                             }
-                        c'8 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8940,9 +10366,11 @@
                                         1
                                         2
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8953,9 +10381,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8966,9 +10396,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8979,9 +10411,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -8992,9 +10426,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9005,9 +10441,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9018,9 +10456,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9031,9 +10471,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9044,14 +10486,19 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow ] \glissando
+                        c'8
+                        ^\upbow
+                        ]
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9062,9 +10509,16 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9075,9 +10529,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9088,9 +10544,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9101,9 +10558,11 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9114,9 +10573,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9127,9 +10588,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9140,9 +10603,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9153,9 +10618,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9166,9 +10633,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9179,9 +10648,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9192,9 +10663,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -9204,10 +10677,12 @@
                                         0
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \once \override NoteHead.Y-offset = -1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9229,13 +10704,16 @@
                                     0
                                     1
                         }
-                    r4 ^\downbow \glissando
-                }
-                {
+                    r4
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/8 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9246,9 +10724,16 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9259,9 +10744,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9272,9 +10759,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9285,9 +10774,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9298,9 +10789,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9311,9 +10804,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9324,9 +10819,10 @@
                                         3
                                         4
                             }
-                        c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9337,14 +10833,18 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow ] \glissando
+                        c'8
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9355,9 +10855,11 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9368,9 +10870,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9381,9 +10884,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9394,9 +10899,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9407,9 +10913,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9420,9 +10928,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9433,9 +10943,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9446,9 +10958,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9459,9 +10973,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9472,9 +10988,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9485,9 +11003,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9498,9 +11018,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9511,9 +11033,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -9523,10 +11046,12 @@
                                         1
                                         2
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.0
@@ -9538,13 +11063,16 @@
                                     3
                                     4
                         }
-                    r1 ^\upbow \glissando
-                }
-                {
+                    r1
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9555,9 +11083,16 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9568,9 +11103,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9581,9 +11118,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9594,9 +11133,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9607,9 +11148,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9620,9 +11163,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9633,9 +11178,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9646,9 +11193,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9659,9 +11208,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9672,9 +11223,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9685,9 +11238,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9698,15 +11253,18 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9717,9 +11275,11 @@
                                         0
                                         1
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9730,9 +11290,11 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9743,9 +11305,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9756,9 +11320,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9769,9 +11335,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9782,9 +11350,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9795,9 +11365,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9808,9 +11380,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9821,9 +11395,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9834,9 +11410,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9847,9 +11425,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9860,9 +11440,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9873,9 +11455,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9886,9 +11470,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -9898,10 +11484,12 @@
                                         1
                                         4
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9923,13 +11511,16 @@
                                     1
                                     4
                         }
-                    r4 ^\upbow \glissando
-                }
-                {
+                    r4
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9940,9 +11531,16 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9953,9 +11551,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9966,9 +11565,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9979,9 +11580,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -9992,9 +11594,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10005,9 +11608,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10018,9 +11623,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10031,9 +11637,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10044,9 +11652,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10057,9 +11667,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10070,9 +11682,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10083,9 +11697,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10096,9 +11712,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10109,9 +11727,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10122,9 +11742,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -10134,966 +11756,1087 @@
                                         3
                                         4
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
+                }   % measure
             }
-            \context BeamStaff = "viola_beam_staff" {
-                {
+            \context BeamStaff = "viola_beam_staff"
+            {
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/8 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
-                        d''''32 [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 20/20 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        d''''32 ]
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
+                        d''''32
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
+                        d''''32
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 10/10 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 5/4 {
                         d''''4
                         d''''4
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     r1
                     r4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 8/8 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     r1
                     r4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
+                }   % measure
             }
-            \new Staff {
-                {
+            \new Staff
+            {
+                {   % measure
                     \time 4/4
-                    \set Staff.instrumentName = \markup { Viola }
-                    \set Staff.shortInstrumentName = \markup { Va. }
                     \clef "alto"
-                    ffes1
-                }
-                {
+                    fs1
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 3/4
                     gqf2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    ffes1
-                }
-                {
+                    fs1
+                }   % measure
+                {   % measure
                     \time 7/8
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     fs2.
-                }
-                {
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 4/4
-                    ffes1
-                }
-                {
+                    fs1
+                }   % measure
+                {   % measure
                     \time 7/8
                     gqs2..
-                }
-                {
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
-                    af2 ~
+                    af2
+                    \fff
+                    -\tenuto
+                    ~
                     af8
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    bfef1 ~
-                    bfef4
-                }
-                {
+                    bf1
+                    \fff
+                    -\tenuto
+                    ~
+                    bf4
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
                     bf2.
-                }
-                {
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 5/8
-                    bfef2 ~
-                    bfef8
-                }
-                {
+                    bf2
+                    ~
+                    bf8
+                }   % measure
+                {   % measure
                     \time 4/4
                     bf1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     eqf2.
-                }
-                {
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 5/4
                     r1
                     r4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     e1
-                }
-                {
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 7/8
                     eqs2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    ftes2.
-                }
-                {
+                    fs2.
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 7/8
                     fs2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     r1
                     r4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    ffes1
-                }
+                    fs1
+                    \ppp
+                    -\tenuto
+                }   % measure
             }
         >>
-        \new TimeSignatureContext {
-            {
+        \new TimeSignatureContext
+        {
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/8
                 r2
                 r8
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 6/8
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/8
                 r2
                 r8
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 3/4
                 r2.
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 7/8
                 r2..
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 5/4
                 r1
                 r4
-            }
-            {
+            }   % measure
+            {   % measure
                 \time 4/4
                 r1
-            }
+            }   % measure
         }
-        \new StaffGroup <<
-            \context StringStaff = "cello_string_staff" {
-                {
+        \new StaffGroup
+        <<
+            \context StringStaff = "cello_string_staff"
+            {
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11104,7 +12847,13 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11115,7 +12864,8 @@
                                         1
                                         5
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11126,7 +12876,9 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11137,7 +12889,8 @@
                                         4
                                         5
                             }
-                        c'4. \glissando
+                        c'4.
+                        \glissando
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -11148,9 +12901,10 @@
                                         5
                             }
                         c'8
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -11162,11 +12916,13 @@
                                     3
                                     5
                         }
-                    r2. \glissando
-                }
-                {
+                    r2.
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11177,7 +12933,13 @@
                                         1
                                         1
                             }
-                        c'4. ^\upbow \glissando
+                        c'4.
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11188,7 +12950,9 @@
                                         4
                                         5
                             }
-                        c'2 ~ \glissando
+                        c'2
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11199,10 +12963,11 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 7/8 {
@@ -11216,7 +12981,8 @@
                                         2
                                         5
                             }
-                        c'4. \glissando
+                        c'4.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11227,7 +12993,9 @@
                                         0
                                         1
                             }
-                        c'2 ^\downbow \glissando
+                        c'2
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11238,12 +13006,15 @@
                                         1
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        ^\upbow
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11254,56 +13025,10 @@
                                         0
                                         1
                             }
-                        c'2 ^\downbow \glissando
+                        c'2
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'4 ^\upbow ~ \glissando
-                    }
-                }
-                {
-                    \time 4/4
-                    {
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'4. ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'8 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'4 ^\downbow \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -11314,9 +13039,68 @@
                                         5
                             }
                         c'4
+                        ^\upbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
+                    \time 4/4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'4.
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'4
+                        ^\downbow
+                        \glissando
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'4
+                        \!
+                    }
+                }   % measure
+                {   % measure
                     \time 7/8
                     \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11328,8 +13112,8 @@
                                     1
                         }
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
@@ -11341,9 +13125,10 @@
                                     4
                                     5
                         }
-                    r2. \glissando
-                }
-                {
+                    r2.
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
@@ -11357,7 +13142,13 @@
                                         3
                                         5
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11368,7 +13159,8 @@
                                         1
                                         1
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11379,7 +13171,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11390,144 +13183,10 @@
                                         1
                                         1
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'8 ~ \glissando
-                    }
-                }
-                {
-                    \time 5/4
-                    {
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'16 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'4. \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8 \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'8. \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16 ^\upbow \glissando
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -11538,9 +13197,166 @@
                                         1
                             }
                         c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'8
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
+                    \time 5/4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'4.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        \!
+                    }
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -11552,11 +13368,14 @@
                                     3
                                     5
                         }
-                    r1 ^\upbow \glissando
-                }
-                {
+                    r1
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 6/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11567,7 +13386,13 @@
                                         1
                                         5
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11578,7 +13403,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11589,7 +13416,9 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11600,7 +13429,8 @@
                                         3
                                         5
                             }
-                        c'8. \glissando
+                        c'8.
+                        \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -11611,9 +13441,10 @@
                                         1
                             }
                         c'8.
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11635,11 +13466,14 @@
                                     3
                                     5
                         }
-                    r8 ^\downbow \glissando
-                }
-                {
+                    r8
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11650,7 +13484,12 @@
                                         1
                                         1
                             }
-                        c'4. \glissando
+                        c'4.
+                        -\tenuto
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11661,7 +13500,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11672,7 +13512,9 @@
                                         1
                                         1
                             }
-                        c'8 ^ \parenthesize \upbow \glissando
+                        c'8
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11683,7 +13525,9 @@
                                         0
                                         1
                             }
-                        c'8. ^\downbow \glissando
+                        c'8.
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11694,12 +13538,15 @@
                                         1
                                         5
                             }
-                        c'4 \glissando
+                        c'4
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11710,7 +13557,13 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11721,7 +13574,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11732,40 +13586,10 @@
                                         2
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8. \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16 ^\upbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'8 \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -11776,9 +13600,46 @@
                                         5
                             }
                         c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8.
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \once \override NoteHead.Y-offset = -0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11800,11 +13661,14 @@
                                     0
                                     1
                         }
-                    r4 ^\downbow \glissando
-                }
-                {
+                    r4
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11815,7 +13679,13 @@
                                         1
                                         5
                             }
-                        c'8 ^\upbow \glissando
+                        c'8
+                        -\tenuto
+                        ^\upbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11826,7 +13696,9 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11837,7 +13709,9 @@
                                         3
                                         5
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11848,7 +13722,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11859,7 +13735,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11870,7 +13748,9 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow \glissando
+                        c'8
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11881,7 +13761,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11892,7 +13773,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11903,7 +13786,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11914,10 +13798,13 @@
                                         3
                                         5
                             }
-                        c'8 ^\downbow ~ \glissando
+                        c'8
+                        ^\downbow
+                        ~
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
@@ -11931,7 +13818,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11942,7 +13830,8 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11953,7 +13842,9 @@
                                         1
                                         1
                             }
-                        c'8 ^ \parenthesize \upbow \glissando
+                        c'8
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11964,7 +13855,10 @@
                                         0
                                         1
                             }
-                        c'4 ^\downbow ~ \glissando
+                        c'4
+                        ^\downbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11975,7 +13869,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11986,7 +13881,9 @@
                                         1
                                         1
                             }
-                        c'4 ^\upbow \glissando
+                        c'4
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11997,7 +13894,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12008,12 +13906,15 @@
                                         2
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12024,7 +13925,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12035,7 +13937,9 @@
                                         1
                                         1
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12046,7 +13950,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12057,7 +13962,8 @@
                                         3
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12068,29 +13974,9 @@
                                         2
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16 ^\downbow \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'4. ^\upbow \glissando
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -12101,9 +13987,35 @@
                                         1
                             }
                         c'16
+                        ^\downbow
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
+                        c'4.
+                        ^\upbow
+                        \glissando
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -12115,11 +14027,14 @@
                                     3
                                     5
                         }
-                    r2. ^\upbow \glissando
-                }
-                {
+                    r2.
+                    ^\upbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12130,7 +14045,13 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12141,7 +14062,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12152,7 +14075,9 @@
                                         1
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12163,7 +14088,8 @@
                                         3
                                         5
                             }
-                        c'8. \glissando
+                        c'8.
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12174,7 +14100,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12185,7 +14113,8 @@
                                         4
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12196,7 +14125,10 @@
                                         3
                                         5
                             }
-                        c'4 ^\downbow ~ \glissando
+                        c'4
+                        ^\downbow
+                        ~
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12207,10 +14139,11 @@
                                         1
                                         1
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
@@ -12224,7 +14157,8 @@
                                         1
                                         1
                             }
-                        c'4 \glissando
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12235,7 +14169,9 @@
                                         1
                                         1
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12246,7 +14182,9 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12257,7 +14195,8 @@
                                         1
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12268,7 +14207,9 @@
                                         1
                                         1
                             }
-                        c'8. ^\upbow \glissando
+                        c'8.
+                        ^\upbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12279,7 +14220,8 @@
                                         4
                                         5
                             }
-                        c'16 \glissando
+                        c'16
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12290,7 +14232,9 @@
                                         2
                                         5
                             }
-                        c'16 ^\downbow \glissando
+                        c'16
+                        ^\downbow
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12301,7 +14245,8 @@
                                         3
                                         5
                             }
-                        c'8 \glissando
+                        c'8
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12312,7 +14257,9 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16
+                        ^\upbow
+                        \glissando
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -12323,9 +14270,10 @@
                                         5
                             }
                         c'4.
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12337,14 +14285,16 @@
                                     5
                         }
                     r1
-                }
+                }   % measure
             }
-            \context BowStaff = "cello_bow_staff" {
-                {
+            \context BowStaff = "cello_bow_staff"
+            {
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12355,9 +14305,16 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\downbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12368,9 +14325,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12381,9 +14340,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12394,9 +14355,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12407,9 +14370,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12420,9 +14385,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12433,9 +14400,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12446,9 +14415,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12459,9 +14430,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12472,9 +14445,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12485,9 +14460,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12498,9 +14475,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12511,9 +14490,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12524,9 +14505,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12537,9 +14520,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -12549,10 +14534,12 @@
                                         1
                                         4
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -12564,13 +14551,15 @@
                                     0
                                     1
                         }
-                    r2. ^\downbow \glissando
-                }
-                {
+                    r2.
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/17 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12581,9 +14570,15 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12594,9 +14589,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12607,9 +14604,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12620,9 +14618,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12633,9 +14632,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12646,9 +14647,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12659,9 +14661,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12672,9 +14676,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12685,9 +14691,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12698,9 +14706,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12711,9 +14721,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12724,9 +14736,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12737,9 +14751,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12750,9 +14766,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12763,9 +14781,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12776,9 +14795,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12789,14 +14810,18 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12807,9 +14832,12 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12820,9 +14848,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12833,9 +14863,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12846,9 +14878,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12859,9 +14893,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12872,9 +14908,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12885,9 +14923,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12898,9 +14938,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12911,9 +14953,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12924,9 +14968,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12937,9 +14983,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12950,9 +14998,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12963,9 +15013,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12976,15 +15027,18 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow ] \glissando
+                        c'16
+                        ^ \parenthesize \downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12995,9 +15049,12 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13008,9 +15065,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13021,9 +15080,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13034,9 +15095,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13047,9 +15110,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13060,9 +15125,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13073,9 +15140,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13086,14 +15155,17 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow ] \glissando
+                        c'8
+                        ^\downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13104,9 +15176,12 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13117,9 +15192,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13130,9 +15207,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13143,9 +15222,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13156,9 +15237,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13169,9 +15252,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13182,9 +15267,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13195,9 +15282,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13208,9 +15297,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13221,9 +15311,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13234,9 +15326,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13247,9 +15340,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13260,9 +15354,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13273,9 +15369,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13286,9 +15383,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13299,9 +15398,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13312,9 +15413,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13325,9 +15428,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -13337,10 +15442,12 @@
                                         0
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13352,8 +15459,8 @@
                                     1
                         }
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -13365,14 +15472,16 @@
                                     0
                                     1
                         }
-                    r2. ^\downbow \glissando
-                }
-                {
+                    r2.
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13383,9 +15492,16 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13396,9 +15512,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13409,9 +15526,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13422,9 +15541,11 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13435,9 +15556,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13448,9 +15571,11 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13461,9 +15586,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13474,9 +15601,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13487,9 +15616,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13500,9 +15631,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13513,14 +15646,18 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow ] \glissando
+                        c'16
+                        ^\downbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 40/40 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13531,9 +15668,12 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13544,9 +15684,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13557,9 +15699,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13570,9 +15714,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13583,9 +15729,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13596,9 +15744,10 @@
                                         0
                                         1
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13609,9 +15758,11 @@
                                         0
                                         1
                             }
-                        c'32 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13622,9 +15773,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13635,9 +15788,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13648,9 +15803,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13661,9 +15818,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13674,9 +15833,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13687,9 +15848,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13700,9 +15863,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13713,9 +15878,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13726,9 +15893,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13739,9 +15908,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13752,9 +15923,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13765,9 +15938,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13778,9 +15953,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13791,9 +15968,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13804,9 +15983,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13817,9 +15998,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13830,9 +16013,10 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13843,9 +16027,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13856,9 +16042,10 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13869,9 +16056,10 @@
                                         1
                                         2
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13882,9 +16070,11 @@
                                         1
                                         2
                             }
-                        c'32 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13895,9 +16085,10 @@
                                         1
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13908,9 +16099,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13921,9 +16114,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13934,9 +16129,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13947,9 +16144,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13960,9 +16159,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13973,9 +16174,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13986,9 +16189,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13999,9 +16204,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14012,9 +16219,10 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14025,9 +16233,11 @@
                                         1
                                         2
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -14037,10 +16247,12 @@
                                         3
                                         4
                             }
-                        c'32 ]
+                        c'32
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
@@ -14052,14 +16264,16 @@
                                     1
                                     4
                         }
-                    r1 ^\downbow \glissando
-                }
-                {
+                    r1
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 6/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14070,9 +16284,16 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14083,9 +16304,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14096,9 +16319,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14109,9 +16334,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14122,9 +16349,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14135,9 +16364,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14148,9 +16379,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14161,9 +16394,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14174,9 +16409,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14187,9 +16424,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14200,9 +16439,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14213,9 +16454,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -14225,10 +16467,12 @@
                                         0
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \once \override NoteHead.Y-offset = -1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14250,13 +16494,16 @@
                                     0
                                     1
                         }
-                    r8 ^\downbow \glissando
-                }
-                {
+                    r8
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14267,9 +16514,16 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14280,9 +16534,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14293,9 +16549,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14306,9 +16564,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14319,9 +16579,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14332,9 +16594,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14345,9 +16609,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14358,9 +16624,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14371,9 +16639,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14384,9 +16654,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14397,9 +16669,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14410,9 +16684,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14423,9 +16699,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14436,9 +16714,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14449,9 +16729,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14462,14 +16743,19 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \!
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14480,9 +16766,15 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14493,9 +16785,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14506,9 +16799,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14519,9 +16814,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14532,9 +16828,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14545,9 +16843,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14558,9 +16858,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14571,9 +16873,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14584,9 +16888,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14597,9 +16903,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14610,9 +16918,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -14622,10 +16932,12 @@
                                         1
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \once \override NoteHead.Y-offset = 1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14647,13 +16959,16 @@
                                     1
                                     2
                         }
-                    r4 ^\downbow \glissando
-                }
-                {
+                    r4
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 32/32 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14664,9 +16979,16 @@
                                         3
                                         4
                             }
-                        c'32 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14677,9 +16999,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14690,9 +17014,11 @@
                                         1
                                         2
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14703,9 +17029,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14716,9 +17044,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14729,9 +17059,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14742,9 +17074,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14755,9 +17089,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14768,9 +17104,11 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14781,9 +17119,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14794,9 +17134,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14807,9 +17149,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14820,9 +17164,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14833,9 +17179,10 @@
                                         0
                                         1
                             }
-                        c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14846,9 +17193,11 @@
                                         0
                                         1
                             }
-                        c'32 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14859,9 +17208,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14872,9 +17223,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14885,9 +17238,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14898,9 +17253,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14911,9 +17268,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14924,9 +17283,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14937,9 +17298,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14950,9 +17313,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14963,9 +17328,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14976,9 +17343,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14989,9 +17358,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15002,9 +17373,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15015,9 +17388,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15028,9 +17403,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15041,9 +17418,11 @@
                                         1
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15054,9 +17433,11 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
+                        c'32
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15067,14 +17448,17 @@
                                         3
                                         4
                             }
-                        c'32 ] \glissando
+                        c'32
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15085,9 +17469,12 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15098,9 +17485,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15111,9 +17499,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15124,9 +17513,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15137,9 +17528,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15150,9 +17542,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15163,9 +17557,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15176,9 +17572,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15189,9 +17587,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15202,9 +17602,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15215,9 +17617,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15228,9 +17632,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15241,9 +17647,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15254,14 +17662,16 @@
                                         3
                                         4
                             }
-                        c'16 ] \glissando
+                        c'16
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15272,9 +17682,12 @@
                                         1
                                         2
                             }
-                        c'8 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15285,9 +17698,11 @@
                                         3
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15298,9 +17713,11 @@
                                         1
                                         4
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15311,9 +17728,11 @@
                                         1
                                         2
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15324,9 +17743,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15337,9 +17758,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15350,9 +17773,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15363,9 +17788,11 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15376,9 +17803,11 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
+                        c'8
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -15388,10 +17817,12 @@
                                         1
                                         1
                             }
-                        c'8 ]
+                        c'8
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -15403,13 +17834,16 @@
                                     0
                                     1
                         }
-                    r2. ^\downbow \glissando
-                }
-                {
+                    r2.
+                    ^\downbow
+                    \glissando
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15420,9 +17854,16 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        -\tenuto
+                        ^\upbow
+                        [
+                        \glissando
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15433,9 +17874,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15446,9 +17889,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15459,9 +17904,10 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15472,9 +17918,11 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15485,9 +17933,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15498,9 +17948,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15511,9 +17963,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15524,9 +17978,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15537,9 +17993,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15550,9 +18008,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15563,9 +18023,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15576,9 +18038,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15589,15 +18053,18 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow ] \glissando
+                        c'16
+                        ^\upbow
+                        ]
+                        \glissando
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15608,9 +18075,12 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        [
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15621,9 +18091,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15634,9 +18106,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15647,9 +18121,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15660,9 +18136,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15673,9 +18151,11 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15686,9 +18166,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15699,9 +18181,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15712,9 +18195,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15725,9 +18210,10 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15738,9 +18224,10 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15751,9 +18238,11 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^ \parenthesize \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15764,9 +18253,10 @@
                                         1
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15777,9 +18267,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15790,9 +18282,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15803,9 +18297,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15816,9 +18312,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15829,9 +18327,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15842,9 +18342,11 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16
+                        ^\upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15855,9 +18357,11 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
+                        c'16
+                        ^\downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -15867,10 +18371,12 @@
                                         1
                                         1
                             }
-                        c'16 ]
+                        c'16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \once \override NoteHead.Y-offset = 1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15882,1007 +18388,1111 @@
                                     4
                         }
                     r1
-                }
+                }   % measure
             }
-            \context BeamStaff = "cello_beam_staff" {
-                {
+            \context BeamStaff = "cello_beam_staff"
+            {
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/17 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
-                        d''''32 [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 40/40 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        [
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        d''''32 ]
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
+                        d''''32
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
+                        d''''32
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     r2
                     r8
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 16/16 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/12 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     r1
                     r4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #3
-                        d''''32 [
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 32/32 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        d''''32 ]
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 3
+                        d''''32
+                        \set stemLeftBeamCount = 3
+                        \set stemRightBeamCount = 0
+                        d''''32
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ]
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        d''''8
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
-                    {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 14/14 {
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        -\tenuto
+                        [
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ]
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 0
+                        d''''16
+                        ]
+                        \!
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
+                }   % measure
             }
-            \new Staff {
-                {
+            \new Staff
+            {
+                {   % measure
                     \time 4/4
-                    \set Staff.instrumentName = \markup { Cello }
-                    \set Staff.shortInstrumentName = \markup { Vc. }
                     \clef "bass"
-                    eef1
-                }
-                {
+                    e1
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     e1
-                }
-                {
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 7/8
-                    eef2..
-                }
-                {
+                    e2..
+                }   % measure
+                {   % measure
                     \time 3/4
                     e2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
-                    ees1
-                }
-                {
+                    e1
+                }   % measure
+                {   % measure
                     \time 7/8
                     r2..
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        ces4 ~
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        ces16 [ ]
+                        c4
+                        -\tenuto
+                        ~
+                        - \tweak circled-tip ##t
+                        \>
+                        \mp
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        c16
+                        [
+                        ]
                         cqs4.
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 5/4
-                    {
-                        ces2
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 1/1 {
+                        c2
                         c4.
-                        btes,4
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        c8 [ ]
+                        c4
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        c8
+                        \!
+                        [
+                        ]
                     }
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 6/8
-                    aef,2.
-                }
-                {
+                    a,2.
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 5/8
                     r2
                     r8
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     aqf,1
-                }
-                {
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 3/4
-                    btes,2.
-                }
-                {
+                    c2.
+                    \ppp
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 5/4
                     r1
                     r4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     c1
-                }
-                {
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 7/8
-                    ces2..
-                }
-                {
+                    c2..
+                }   % measure
+                {   % measure
                     \time 4/4
                     c1
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 3/4
                     r2.
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 7/8
                     eqs2..
-                }
-                {
+                    \fff
+                    -\tenuto
+                }   % measure
+                {   % measure
                     \time 5/4
-                    e1 ~
+                    e1
+                    ~
                     e4
-                }
-                {
+                }   % measure
+                {   % measure
                     \time 4/4
                     r1
-                }
+                }   % measure
             }
         >>
     >>
