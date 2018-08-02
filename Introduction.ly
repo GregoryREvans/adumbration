@@ -1,4 +1,4 @@
-% 2018-08-01 20:21
+% 2018-08-01 20:44
 
 \version "2.19.82"
 \language "english"
@@ -535,14 +535,6 @@
                         c'2 ^\upbow ~ \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -553,7 +545,7 @@
                                         1
                                         5
                             }
-                        c'8 ^\downbow \glissando [ ] [ ] [ ] [ ] [ ]
+                        c'8 ^\downbow \glissando [ ]
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -578,7 +570,7 @@
                                     1
                                     1
                         }
-                    r2. ^\upbow \glissando [ ] [ ] [ ] [ ] [ ]
+                    r2. ^\upbow \glissando
                 }
                 {
                     \time 5/8
@@ -646,14 +638,6 @@
                         c'2 ^\upbow ~ \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -664,7 +648,7 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [ ] [ ] [ ] [ ] [ ]
+                        c'8 ^\downbow \glissando [ ]
                     }
                 }
                 {
@@ -1420,14 +1404,6 @@
                     \times 16/17 {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1438,15 +1414,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1462,14 +1430,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1481,14 +1441,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1504,14 +1456,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1523,14 +1467,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1546,14 +1482,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1565,14 +1493,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1588,14 +1508,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1607,14 +1519,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1630,14 +1534,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1649,14 +1545,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1672,14 +1560,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1691,14 +1571,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1714,14 +1586,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1733,14 +1597,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1755,15 +1611,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1774,21 +1622,13 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16 ^\downbow ] \glissando
                     }
                 }
                 {
                     \time 3/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -1800,15 +1640,7 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1824,14 +1656,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1845,14 +1669,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1864,14 +1680,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1887,14 +1695,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1908,14 +1708,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1927,14 +1719,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1950,14 +1734,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1969,14 +1745,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -1992,14 +1760,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2012,15 +1772,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2031,21 +1783,13 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -2057,15 +1801,7 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\downbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2079,14 +1815,6 @@
                                         1
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2102,14 +1830,6 @@
                         c'8 \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2121,14 +1841,6 @@
                                         2
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2144,14 +1856,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2163,14 +1867,6 @@
                                         4
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2185,15 +1881,7 @@
                             }
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2204,22 +1892,14 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8 ^\downbow ] \glissando
                     }
                 }
                 {
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -2231,15 +1911,7 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2255,14 +1927,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2274,14 +1938,6 @@
                                         1
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2297,14 +1953,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2318,14 +1966,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2337,14 +1977,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2360,14 +1992,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2381,14 +2005,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2400,14 +2016,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2421,14 +2029,6 @@
                                         1
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2444,14 +2044,6 @@
                         c'16 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2463,14 +2055,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2486,14 +2070,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2506,15 +2082,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -2524,7 +2092,7 @@
                                         0
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -2539,19 +2107,13 @@
                                     1
                                     4
                         }
-                    r2. ^\upbow ] ] ] ] ] \glissando
+                    r2. ^\upbow \glissando
                 }
                 {
                     \time 4/4
                     \times 8/9 {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2562,13 +2124,7 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\downbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2584,12 +2140,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2601,12 +2151,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2622,12 +2166,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2639,12 +2177,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2660,12 +2192,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2677,12 +2203,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -2697,13 +2217,7 @@
                             }
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2714,20 +2228,14 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8 ^\downbow ] \glissando
                     }
                 }
                 {
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -2739,13 +2247,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2761,12 +2263,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2778,12 +2274,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2799,12 +2289,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2818,12 +2302,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2835,12 +2313,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2856,12 +2328,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2875,12 +2341,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2892,12 +2352,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2913,12 +2367,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2930,12 +2378,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2951,12 +2393,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -2968,12 +2404,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -2988,13 +2418,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -3004,7 +2428,7 @@
                                         0
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -3025,13 +2449,7 @@
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -3043,13 +2461,7 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3065,12 +2477,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3082,12 +2488,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3103,12 +2503,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3122,12 +2516,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3139,12 +2527,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3160,12 +2542,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3177,12 +2553,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3198,12 +2568,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3217,12 +2581,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3233,7 +2591,7 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow ] ] ] ] \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
@@ -3242,14 +2600,6 @@
                     \times 20/21 {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3260,15 +2610,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3282,14 +2624,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3305,14 +2639,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3326,14 +2652,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3345,14 +2663,6 @@
                                         1
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3368,14 +2678,6 @@
                         c'16 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3387,14 +2689,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3410,14 +2704,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3429,14 +2715,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3452,14 +2730,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3471,14 +2741,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3494,14 +2756,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3513,14 +2767,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3536,14 +2782,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3555,14 +2793,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3578,14 +2808,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3597,14 +2819,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3620,14 +2834,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3639,14 +2845,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -3661,15 +2859,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3680,21 +2870,13 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -3706,15 +2888,7 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32 ^\downbow \glissando [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -3728,14 +2902,6 @@
                                         4
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -3751,14 +2917,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3772,14 +2930,6 @@
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3791,14 +2941,6 @@
                                         2
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -3814,14 +2956,6 @@
                         c'32 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3835,14 +2969,6 @@
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3854,14 +2980,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -3877,14 +2995,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3896,14 +3006,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -3919,14 +3021,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3938,14 +3032,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -3961,14 +3047,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -3982,14 +3060,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4001,14 +3071,6 @@
                                         1
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4024,14 +3086,6 @@
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4043,14 +3097,6 @@
                                         2
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4066,14 +3112,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4085,14 +3123,6 @@
                                         4
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4108,14 +3138,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4127,14 +3149,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4150,14 +3164,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4169,14 +3175,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4192,14 +3190,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4211,14 +3201,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4234,14 +3216,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4253,14 +3227,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4276,14 +3242,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4297,14 +3255,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4316,14 +3266,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -4338,15 +3280,7 @@
                             }
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -4356,7 +3290,7 @@
                                         0
                                         1
                             }
-                        c'32
+                        c'32 ]
                     }
                 }
                 {
@@ -4377,15 +3311,7 @@
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/13 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -4397,15 +3323,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -4421,14 +3339,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4440,14 +3350,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -4463,14 +3365,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4482,14 +3376,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -4505,14 +3391,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4524,14 +3402,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -4547,14 +3417,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4566,14 +3428,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -4589,14 +3443,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4608,14 +3454,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -4630,15 +3468,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4649,21 +3479,13 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16 ^\downbow ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -4675,15 +3497,7 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\upbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -4699,14 +3513,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4718,14 +3524,6 @@
                                         4
                             }
                         c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -4741,14 +3539,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4762,14 +3552,6 @@
                         c'8 \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4781,14 +3563,6 @@
                                         2
                             }
                         c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -4804,14 +3578,6 @@
                         c'8 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4823,14 +3589,6 @@
                                         4
                             }
                         c'8 \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -4846,14 +3604,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4864,7 +3614,7 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow ] ] ] ] ] \glissando
+                        c'8 ^\upbow ] \glissando
                     }
                 }
                 {
@@ -5165,14 +3915,6 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5183,15 +3925,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5205,14 +3939,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5228,14 +3954,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5247,14 +3965,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5270,14 +3980,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5289,14 +3991,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5312,14 +4006,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5331,14 +4017,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5354,14 +4032,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5373,14 +4043,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5396,14 +4058,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5415,14 +4069,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5438,14 +4084,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5457,14 +4095,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5479,15 +4109,7 @@
                             }
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5498,22 +4120,14 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -5525,15 +4139,7 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5547,14 +4153,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5570,14 +4168,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5591,14 +4181,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5610,14 +4192,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5633,14 +4207,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5652,14 +4218,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5675,14 +4233,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5694,14 +4244,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5717,14 +4259,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5736,14 +4270,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5758,15 +4284,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -5776,7 +4294,7 @@
                                         3
                                         4
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -5796,15 +4314,7 @@
                 {
                     \time 5/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -5816,15 +4326,7 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5838,14 +4340,6 @@
                                         4
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5861,14 +4355,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5880,14 +4366,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5903,14 +4381,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5922,14 +4392,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5945,14 +4407,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -5964,14 +4418,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -5987,14 +4433,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6006,14 +4444,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -6029,14 +4459,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6050,14 +4472,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6069,14 +4483,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -6092,14 +4498,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6113,14 +4511,6 @@
                         c'16 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6132,14 +4522,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -6155,14 +4537,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6174,14 +4548,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -6196,15 +4562,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6215,21 +4573,13 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -6241,15 +4591,7 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\downbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -6265,14 +4607,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6284,14 +4618,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -6307,14 +4633,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6326,14 +4644,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -6349,14 +4659,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6368,14 +4670,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -6391,14 +4685,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6412,14 +4698,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6429,7 +4707,7 @@
                                         1
                                         4
                             }
-                        c'8 ] ] ] ] ]
+                        c'8 ]
                     }
                 }
             }
@@ -6439,823 +4717,263 @@
                     \times 16/17 {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 3/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 3/4
-                    r2. ] ] ] ] ]
+                    r2.
                 }
                 {
                     \time 4/4
                     \times 8/9 {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
@@ -7266,105 +4984,39 @@
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ] ] ] ]
+                        d''''16 ]
                     }
                 }
                 {
@@ -7373,592 +5025,168 @@
                     \times 20/21 {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32 [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        d''''32
+                        \set stemRightBeamCount = #0
+                        d''''32 ]
                     }
                 }
                 {
@@ -7969,264 +5197,80 @@
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/13 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ] ] ] ] ]
+                        d''''8 ]
                     }
                 }
                 {
@@ -8278,329 +5322,97 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
@@ -8610,341 +5422,101 @@
                 {
                     \time 5/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ] ] ] ] ]
+                        d''''8 ]
                     }
                 }
             }
@@ -8982,57 +5554,27 @@
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        des'8. [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        des'8. [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d'8
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
                         def'16
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        dqf'8 ] ] ] ]
+                        dqf'8 ]
                         efef'4
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        dqs'8 [ [ [ [
+                        \set stemRightBeamCount = #0
+                        dqs'8 [ ]
                     }
                 }
                 {
                     \time 3/4
-                    r2. ] ] ] ]
+                    r2.
                 }
                 {
                     \time 5/8
@@ -10662,16 +7204,6 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10682,17 +7214,7 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando [ [ [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\downbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -10706,16 +7228,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -10731,16 +7243,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10752,16 +7254,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -10777,16 +7269,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10798,16 +7280,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -10822,17 +7294,7 @@
                             }
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10843,24 +7305,14 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
+                        c'8 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -10872,17 +7324,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -10898,16 +7340,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10919,16 +7351,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -10944,16 +7366,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10965,16 +7377,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -10990,16 +7392,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11011,16 +7403,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11036,16 +7418,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11057,16 +7429,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11080,16 +7442,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11105,16 +7457,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11127,17 +7469,7 @@
                             }
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11148,23 +7480,13 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
+                        c'16 ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
@@ -11176,17 +7498,7 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^ \parenthesize \upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11202,16 +7514,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11223,16 +7525,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11248,16 +7540,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11269,16 +7551,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11294,16 +7566,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11315,16 +7577,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11340,16 +7592,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11363,16 +7605,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11384,16 +7616,6 @@
                                         1
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11409,16 +7631,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11430,16 +7642,6 @@
                                         2
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11455,16 +7657,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11476,16 +7668,6 @@
                                         4
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11501,16 +7683,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11522,16 +7694,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11547,16 +7709,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11569,17 +7721,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -11589,7 +7731,7 @@
                                         1
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -11610,17 +7752,7 @@
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -11632,17 +7764,7 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\upbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -11658,16 +7780,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11679,16 +7791,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -11704,16 +7806,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11725,16 +7817,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -11750,16 +7832,6 @@
                         c'8 \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11772,17 +7844,7 @@
                             }
                         c'8 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11793,23 +7855,13 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
+                        c'8 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -11821,17 +7873,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11847,16 +7889,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11868,16 +7900,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11893,16 +7915,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11914,16 +7926,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11939,16 +7941,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -11960,16 +7952,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -11985,16 +7967,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12006,16 +7978,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12031,16 +7993,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12052,16 +8004,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12077,16 +8019,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12098,16 +8030,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12123,16 +8045,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12144,16 +8056,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12167,16 +8069,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12192,16 +8084,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12215,16 +8097,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12235,7 +8107,7 @@
                                         1
                                         2
                             }
-                        c'16 ] ] ] ] ] ] \glissando
+                        c'16 ] \glissando
                     }
                 }
                 {
@@ -12243,10 +8115,6 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12257,11 +8125,7 @@
                                         1
                                         2
                             }
-                        c'16 ^ \parenthesize \upbow \glissando [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^ \parenthesize \upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12277,10 +8141,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12292,10 +8152,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12311,10 +8167,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12326,10 +8178,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12345,10 +8193,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12360,10 +8204,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12379,10 +8219,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12396,10 +8232,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12411,10 +8243,6 @@
                                         1
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12430,10 +8258,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12445,10 +8269,6 @@
                                         2
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -12463,11 +8283,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -12477,7 +8293,7 @@
                                         1
                                         4
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -12497,11 +8313,7 @@
                 {
                     \time 5/8
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -12513,11 +8325,7 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32 ^\downbow \glissando [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12533,10 +8341,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12548,10 +8352,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12567,10 +8367,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12582,10 +8378,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12601,10 +8393,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12616,10 +8404,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12635,10 +8419,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12652,10 +8432,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12667,10 +8443,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12686,10 +8458,6 @@
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12703,10 +8471,6 @@
                         c'32 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12718,10 +8482,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12737,10 +8497,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12752,10 +8508,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12771,10 +8523,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12786,10 +8534,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -12805,10 +8549,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12822,10 +8562,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12836,7 +8572,7 @@
                                         0
                                         1
                             }
-                        c'32 ^\downbow ] ] ] \glissando
+                        c'32 ^\downbow ] \glissando
                     }
                 }
                 {
@@ -12844,14 +8580,6 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12862,15 +8590,7 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando [ [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\upbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -12884,14 +8604,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -12907,14 +8619,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12926,14 +8630,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -12949,14 +8645,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12968,14 +8656,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -12991,14 +8671,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13010,14 +8682,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13032,15 +8696,7 @@
                             }
                         c'8 \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -13050,7 +8706,7 @@
                                         1
                                         1
                             }
-                        c'8
+                        c'8 ]
                     }
                 }
                 {
@@ -13070,15 +8726,7 @@
                 {
                     \time 6/8
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
@@ -13090,15 +8738,7 @@
                                         1
                                         2
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13114,14 +8754,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13135,14 +8767,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13154,14 +8778,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13177,14 +8793,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13196,14 +8804,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13219,14 +8819,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13238,14 +8830,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13261,14 +8845,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13280,14 +8856,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13302,15 +8870,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13321,7 +8881,7 @@
                                         3
                                         4
                             }
-                        c'16 ] ] ] ] ] \glissando
+                        c'16 ] \glissando
                     }
                 }
                 {
@@ -13355,15 +8915,7 @@
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -13375,15 +8927,7 @@
                                         1
                                         4
                             }
-                        c'8 ^\downbow \glissando [ [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\downbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13399,14 +8943,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13418,14 +8954,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13441,14 +8969,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13460,14 +8980,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13483,14 +8995,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13502,14 +9006,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13525,14 +9021,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13544,14 +9032,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
@@ -13564,20 +9044,12 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow ] ] ] ] ] \glissando
+                        c'8 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 3/4
                     {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13590,15 +9062,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13612,14 +9076,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13635,14 +9091,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13656,14 +9104,6 @@
                         c'16 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13675,14 +9115,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13698,14 +9130,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13717,14 +9141,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13740,14 +9156,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13759,14 +9167,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -13782,14 +9182,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13802,15 +9194,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -13820,7 +9204,7 @@
                                         0
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -13834,7 +9218,7 @@
                                     1
                                     4
                         }
-                    r1
+                    r1 [
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13845,20 +9229,12 @@
                                     0
                                     1
                         }
-                    r4 ^\downbow \glissando
+                    r4 ^\downbow ] \glissando
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -13870,15 +9246,7 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\upbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13894,14 +9262,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13913,14 +9273,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13936,14 +9288,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13957,14 +9301,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13976,14 +9312,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -13998,15 +9326,7 @@
                             }
                         c'8 \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14017,21 +9337,13 @@
                                         1
                                         1
                             }
-                        c'8 ^\upbow \glissando
+                        c'8 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -14043,15 +9355,7 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14065,14 +9369,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14088,14 +9384,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14109,14 +9397,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14128,14 +9408,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14151,14 +9423,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14170,14 +9434,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14193,14 +9449,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14212,14 +9460,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14235,14 +9475,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14256,14 +9488,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14275,14 +9499,6 @@
                                         1
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14297,15 +9513,7 @@
                             }
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -14315,7 +9523,7 @@
                                         1
                                         2
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -14330,17 +9538,11 @@
                                     3
                                     4
                         }
-                    r1 ^\upbow ] ] ] ] ] \glissando
+                    r1 ^\upbow \glissando
                 }
                 {
                     \time 3/4
                     {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14353,13 +9555,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14375,12 +9571,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14392,12 +9582,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14413,12 +9597,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14430,12 +9608,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14451,12 +9623,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14468,12 +9634,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14489,12 +9649,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14506,12 +9660,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14527,12 +9675,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14545,13 +9687,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14562,20 +9698,14 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -14587,13 +9717,7 @@
                                         0
                                         1
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14609,12 +9733,6 @@
                         c'16 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14626,12 +9744,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14647,12 +9759,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14664,12 +9770,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14685,12 +9785,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14702,12 +9796,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14723,12 +9811,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14740,12 +9822,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14761,12 +9837,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14778,12 +9848,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14799,12 +9863,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14816,12 +9874,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14836,13 +9888,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -14852,7 +9898,7 @@
                                         1
                                         4
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -14866,7 +9912,7 @@
                                     0
                                     1
                         }
-                    r1
+                    r1 [
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14877,18 +9923,12 @@
                                     1
                                     4
                         }
-                    r4 ^\upbow \glissando
+                    r4 ^\upbow ] \glissando
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -14900,13 +9940,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14920,12 +9954,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14941,12 +9969,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14960,12 +9982,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -14977,12 +9993,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -14998,12 +10008,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15017,12 +10021,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15034,12 +10032,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -15055,12 +10047,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15072,12 +10058,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -15093,12 +10073,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15110,12 +10084,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -15131,12 +10099,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15150,12 +10112,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -15167,12 +10123,6 @@
                                         1
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 1.0
@@ -15184,7 +10134,7 @@
                                         3
                                         4
                             }
-                        c'16 ] ] ] ]
+                        c'16 ]
                     }
                 }
             }
@@ -15194,535 +10144,135 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [ [ [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
@@ -15733,362 +10283,92 @@
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ] ] ] ] ] ]
+                        d''''16 ]
                     }
                 }
                 {
@@ -16096,102 +10376,46 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
@@ -16201,146 +10425,66 @@
                 {
                     \time 5/8
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32 [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        d''''32 ] ] ]
+                        d''''32 ]
                     }
                 }
                 {
@@ -16348,114 +10492,34 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #1
-                        d''''8 [ [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
@@ -16465,138 +10529,42 @@
                 {
                     \time 6/8
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16 ] ] ] ] ]
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
@@ -16610,116 +10578,36 @@
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8 [ [ [ [ [
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        d''''8 ] ] ] ] ]
+                        d''''8 ]
                     }
                 }
                 {
@@ -16727,805 +10615,275 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 5/4
-                    r1
-                    r4
+                    r1 [
+                    r4 ]
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
-                    r1 ] ] ] ] ]
+                    r1
                 }
                 {
                     \time 3/4
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 7/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 14/15 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 5/4
-                    r1
-                    r4
+                    r1 [
+                    r4 ]
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ] ] ] ]
+                        d''''16 ]
                     }
                 }
             }
@@ -18987,18 +12345,6 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19009,19 +12355,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando [ [ [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19037,18 +12371,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19060,18 +12382,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19087,18 +12397,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19110,18 +12408,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19137,18 +12423,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19160,18 +12434,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19187,18 +12449,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19210,18 +12460,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19237,18 +12475,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19260,18 +12486,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19287,18 +12501,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19310,18 +12512,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19337,18 +12527,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19361,19 +12539,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -19383,7 +12549,7 @@
                                         1
                                         4
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -19403,19 +12569,7 @@
                 {
                     \time 4/4
                     \times 16/17 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -19427,19 +12581,7 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19455,18 +12597,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19480,18 +12610,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19503,18 +12621,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19530,18 +12636,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19555,18 +12649,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19578,18 +12660,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19605,18 +12675,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19628,18 +12686,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19655,18 +12701,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19678,18 +12712,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19705,18 +12727,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19730,18 +12740,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19753,18 +12751,6 @@
                                         1
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19778,18 +12764,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19804,19 +12778,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19827,25 +12789,13 @@
                                         3
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -19857,19 +12807,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19885,18 +12823,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19908,18 +12834,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19935,18 +12849,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -19958,18 +12860,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -19985,18 +12875,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20008,18 +12886,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20035,18 +12901,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20058,18 +12912,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20085,18 +12927,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20110,18 +12940,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20133,18 +12951,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20159,19 +12965,7 @@
                             }
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20182,26 +12976,14 @@
                                         0
                                         1
                             }
-                        c'16 ^ \parenthesize \downbow \glissando
+                        c'16 ^ \parenthesize \downbow ] \glissando
                     }
                 }
                 {
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -20213,19 +12995,7 @@
                                         1
                                         4
                             }
-                        c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\upbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -20241,18 +13011,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20264,18 +13022,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -20291,18 +13037,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20314,18 +13048,6 @@
                                         4
                             }
                         c'8 ^\upbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -20341,18 +13063,6 @@
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20365,19 +13075,7 @@
                             }
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20388,25 +13086,13 @@
                                         0
                                         1
                             }
-                        c'8 ^\downbow \glissando
+                        c'8 ^\downbow ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -20418,19 +13104,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20446,18 +13120,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20469,18 +13131,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20496,18 +13146,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20519,18 +13157,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20546,18 +13172,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20571,18 +13185,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20594,18 +13196,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20619,18 +13209,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20646,18 +13224,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20671,18 +13237,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20694,18 +13248,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20721,18 +13263,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20746,18 +13276,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20769,18 +13287,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20796,18 +13302,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20819,18 +13313,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20845,19 +13327,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -20867,7 +13337,7 @@
                                         0
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -20881,7 +13351,7 @@
                                     1
                                     1
                         }
-                    r2.. ] ] ] ] ] ] ]
+                    r2..
                 }
                 {
                     \time 3/4
@@ -20895,17 +13365,13 @@
                                     0
                                     1
                         }
-                    r2. ^\downbow \glissando [ [ [
+                    r2. ^\downbow \glissando
                 }
                 {
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -20917,11 +13383,7 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20937,10 +13399,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20952,10 +13410,6 @@
                                         2
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -20971,10 +13425,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -20986,10 +13436,6 @@
                                         4
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21005,10 +13451,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21020,10 +13462,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21039,10 +13477,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21054,10 +13488,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21072,11 +13502,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21087,17 +13513,13 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
+                        c'16 ^\downbow ] \glissando
                     }
                 }
                 {
                     \time 5/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -21109,11 +13531,7 @@
                                         1
                                         1
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32 ^\upbow \glissando [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21129,10 +13547,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21144,10 +13558,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21163,10 +13573,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21178,10 +13584,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21195,10 +13597,6 @@
                                         1
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21214,10 +13612,6 @@
                         c'32 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21229,10 +13623,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21248,10 +13638,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21263,10 +13649,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21282,10 +13664,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21297,10 +13675,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21316,10 +13690,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21331,10 +13701,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21350,10 +13716,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21365,10 +13727,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21384,10 +13742,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21399,10 +13753,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21418,10 +13768,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21433,10 +13779,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21452,10 +13794,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21469,10 +13807,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21484,10 +13818,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21501,10 +13831,6 @@
                                         4
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21520,10 +13846,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21537,10 +13859,6 @@
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21552,10 +13870,6 @@
                                         2
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21571,10 +13885,6 @@
                         c'32 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21588,10 +13898,6 @@
                         c'32 \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21603,10 +13909,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21622,10 +13924,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21637,10 +13935,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21656,10 +13950,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21671,10 +13961,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21690,10 +13976,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21707,10 +13989,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21722,10 +14000,6 @@
                                         1
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21739,10 +14013,6 @@
                                         4
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -21758,10 +14028,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -21771,7 +14037,7 @@
                                         3
                                         4
                             }
-                        c'32 ] ] ]
+                        c'32 ]
                     }
                 }
                 {
@@ -21786,19 +14052,13 @@
                                     1
                                     4
                         }
-                    r1 ^\downbow \glissando [ [ [ [
+                    r1 ^\downbow \glissando
                 }
                 {
                     \time 6/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
@@ -21810,13 +14070,7 @@
                                         1
                                         2
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21830,12 +14084,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21851,12 +14099,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21868,12 +14110,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21889,12 +14125,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21906,12 +14136,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21927,12 +14151,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21944,12 +14162,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -21965,12 +14177,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -21984,12 +14190,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22001,12 +14201,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22021,13 +14215,7 @@
                             }
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -22037,7 +14225,7 @@
                                         0
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -22051,7 +14239,7 @@
                                     1
                                     4
                         }
-                    r2
+                    r2 [
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22062,18 +14250,12 @@
                                     0
                                     1
                         }
-                    r8 ^\downbow \glissando
+                    r8 ^\downbow ] \glissando
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -22085,13 +14267,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22107,12 +14283,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22124,12 +14294,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22145,12 +14309,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22162,12 +14320,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22183,12 +14335,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22200,12 +14346,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22221,12 +14361,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22238,12 +14372,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22259,12 +14387,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22276,12 +14398,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22297,12 +14413,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22316,12 +14426,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22333,12 +14437,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22354,12 +14452,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22370,22 +14462,12 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow ] ] ] ] \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 3/4
                     {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22398,17 +14480,7 @@
                                         3
                                         4
                             }
-                        c'16 \glissando [ [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22422,16 +14494,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22447,16 +14509,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22470,16 +14522,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22491,16 +14533,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22516,16 +14548,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22537,16 +14559,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22562,16 +14574,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22583,16 +14585,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -22608,16 +14600,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22630,17 +14612,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -22650,7 +14622,7 @@
                                         1
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -22664,7 +14636,7 @@
                                     3
                                     4
                         }
-                    r1
+                    r1 [
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22675,22 +14647,12 @@
                                     1
                                     2
                         }
-                    r4 ^\downbow \glissando
+                    r4 ^\downbow ] \glissando
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -22702,17 +14664,7 @@
                                         3
                                         4
                             }
-                        c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        c'32 ^\upbow \glissando [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -22726,16 +14678,6 @@
                                         4
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -22751,16 +14693,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22772,16 +14704,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -22797,16 +14719,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22818,16 +14730,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -22843,16 +14745,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22864,16 +14756,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -22889,16 +14771,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22910,16 +14782,6 @@
                                         1
                             }
                         c'32 ^\downbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -22935,16 +14797,6 @@
                         c'32 ^\upbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22958,16 +14810,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -22979,16 +14821,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23002,16 +14834,6 @@
                                         1
                             }
                         c'32 \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23027,16 +14849,6 @@
                         c'32 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23048,16 +14860,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23073,16 +14875,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23094,16 +14886,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23119,16 +14901,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23140,16 +14912,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23165,16 +14927,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23186,16 +14938,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23211,16 +14953,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23232,16 +14964,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23257,16 +14979,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23278,16 +14990,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23303,16 +15005,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23324,16 +15016,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23349,16 +15031,6 @@
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23370,16 +15042,6 @@
                                         4
                             }
                         c'32 ^\upbow \glissando
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         \once \override Glissando.style = #'line
@@ -23394,17 +15056,7 @@
                             }
                         c'32 ^\downbow \glissando
                         \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23415,23 +15067,13 @@
                                         3
                                         4
                             }
-                        c'32 \glissando
+                        c'32 ] \glissando
                     }
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -23443,17 +15085,7 @@
                                         1
                                         1
                             }
-                        c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23467,16 +15099,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23490,16 +15112,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23515,16 +15127,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23538,16 +15140,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23559,16 +15151,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23584,16 +15166,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23605,16 +15177,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23630,16 +15192,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23651,16 +15203,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23676,16 +15218,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23697,16 +15229,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -23721,17 +15243,7 @@
                             }
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23742,23 +15254,13 @@
                                         3
                                         4
                             }
-                        c'16 \glissando
+                        c'16 ] \glissando
                     }
                 }
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
@@ -23770,17 +15272,7 @@
                                         1
                                         2
                             }
-                        c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        c'8 ^\downbow \glissando [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -23796,16 +15288,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23817,16 +15299,6 @@
                                         4
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -23842,16 +15314,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23863,16 +15325,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -23888,16 +15340,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23909,16 +15351,6 @@
                                         1
                             }
                         c'8 ^\downbow \glissando
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
@@ -23934,16 +15366,6 @@
                         c'8 ^\upbow \glissando
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -23956,17 +15378,7 @@
                             }
                         c'8 ^\downbow \glissando
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -23976,7 +15388,7 @@
                                         1
                                         1
                             }
-                        c'8
+                        c'8 ]
                     }
                 }
                 {
@@ -23991,15 +15403,11 @@
                                     0
                                     1
                         }
-                    r2. ^\downbow ] ] ] ] ] ] \glissando
+                    r2. ^\downbow \glissando
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24012,11 +15420,7 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\upbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24032,10 +15436,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24049,10 +15449,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24064,10 +15460,6 @@
                                         1
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24083,10 +15475,6 @@
                         c'16 ^ \parenthesize \downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24098,10 +15486,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24117,10 +15501,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24132,10 +15512,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24151,10 +15527,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24166,10 +15538,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24185,10 +15553,6 @@
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24200,10 +15564,6 @@
                                         4
                             }
                         c'16 ^\upbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24218,11 +15578,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24233,18 +15589,14 @@
                                         1
                                         4
                             }
-                        c'16 ^\upbow \glissando
+                        c'16 ^\upbow ] \glissando
                     }
                 }
                 {
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -24256,11 +15608,7 @@
                                         0
                                         1
                             }
-                        c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        c'16 ^\downbow \glissando [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24276,10 +15624,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24291,10 +15635,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24310,10 +15650,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24325,10 +15661,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24344,10 +15676,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24359,10 +15687,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24376,10 +15700,6 @@
                                         4
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24395,10 +15715,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24412,10 +15728,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24427,10 +15739,6 @@
                                         2
                             }
                         c'16 \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24446,10 +15754,6 @@
                         c'16 ^ \parenthesize \upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24463,10 +15767,6 @@
                         c'16 \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24478,10 +15778,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24497,10 +15793,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24512,10 +15804,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24531,10 +15819,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24546,10 +15830,6 @@
                                         1
                             }
                         c'16 ^\downbow \glissando
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
@@ -24565,10 +15845,6 @@
                         c'16 ^\upbow \glissando
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -24581,11 +15857,7 @@
                             }
                         c'16 ^\downbow \glissando
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
+                        \set stemRightBeamCount = #0
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -24595,7 +15867,7 @@
                                         1
                                         1
                             }
-                        c'16
+                        c'16 ]
                     }
                 }
                 {
@@ -24609,7 +15881,7 @@
                                     3
                                     4
                         }
-                    r1 ] ] ]
+                    r1
                 }
             }
             \context BeamStaff = "cello_beam_staff" {
@@ -24618,244 +15890,52 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
@@ -24865,1549 +15945,475 @@
                 {
                     \time 4/4
                     \times 16/17 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 3/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 6/8 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 4/4
                     \times 16/19 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 7/8
-                    r2.. ] ] ] ] ] ] ]
+                    r2..
                 }
                 {
                     \time 3/4
-                    r2. [ [ [
+                    r2.
                 }
                 {
                     \time 5/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 5/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32 [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #0
-                        d''''32 ] ] ]
+                        d''''32 ]
                     }
                 }
                 {
                     \time 4/4
-                    r1 [ [ [ [
+                    r1
                 }
                 {
                     \time 6/8
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 12/13 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 5/8
-                    r2
-                    r8
+                    r2 [
+                    r8 ]
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #0
-                        d''''16 ] ] ] ]
+                        d''''16 ]
                     }
                 }
                 {
@@ -26415,1173 +16421,353 @@
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [ [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 5/4
-                    r1
-                    r4
+                    r1 [
+                    r4 ]
                 }
                 {
                     \time 4/4
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32 [
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
+                        d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
                         \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
                         d''''32
                         \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #3
-                        d''''32
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #3
-                        \set stemRightBeamCount = #1
-                        d''''32
+                        \set stemRightBeamCount = #0
+                        d''''32 ]
                     }
                 }
                 {
                     \time 7/8
                     {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
                     \times 8/10 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8 [
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
+                        d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
                         d''''8
                         \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #1
-                        d''''8
+                        \set stemRightBeamCount = #0
+                        d''''8 ]
                     }
                 }
                 {
                     \time 3/4
-                    r2. ] ] ] ] ] ]
+                    r2.
                 }
                 {
                     \time 7/8
                     {
                         \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #0
-                        \set stemRightBeamCount = #2
-                        d''''16 [ [ [
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
-                        \set stemLeftBeamCount = #1
+                        \set stemLeftBeamCount = #0
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16 [
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
+                        d''''16
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
                         d''''16
                         \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        d''''16
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #1
-                        d''''16
+                        \set stemRightBeamCount = #0
+                        d''''16 ]
                     }
                 }
                 {
                     \time 4/4
-                    r1 ] ] ]
+                    r1
                 }
             }
             \new Staff {
@@ -27618,7 +16804,7 @@
                 }
                 {
                     \time 3/4
-                    r2. [ ] [ ] [ ]
+                    r2.
                 }
                 {
                     \time 5/8
@@ -27627,11 +16813,7 @@
                         ces4 ~
                         \set stemLeftBeamCount = #2
                         \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        \set stemLeftBeamCount = #2
-                        \set stemRightBeamCount = #2
-                        ces16 [ ] [ ] [ ]
+                        ces16 [ ]
                         cqs4.
                     }
                 }
@@ -27643,11 +16825,7 @@
                         btes,4
                         \set stemLeftBeamCount = #1
                         \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        \set stemLeftBeamCount = #1
-                        \set stemRightBeamCount = #0
-                        c8 [ ] [ ] [ ]
+                        c8 [ ]
                     }
                 }
                 {

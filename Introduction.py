@@ -93,7 +93,6 @@ class EvenDivisionMusicMaker:
         music = self.make_basic_rhythm(
             time_signature_pairs,
             )
-
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         beam_specifier=rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
@@ -102,7 +101,7 @@ class EvenDivisionMusicMaker:
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier(shards)
+            beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
@@ -196,7 +195,7 @@ class NoteMusicMaker:
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier(shards)
+            beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
@@ -294,19 +293,17 @@ class TaleaMusicMaker:
         music = self.make_basic_rhythm(
             time_signature_pairs,
             )
-
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=rhythmmakertools.BeamSpecifier(
+        beam_specifier = rhythmmakertools.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier(shards)
+            beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
-
         music = self.add_attachments(music)
         return music
 
@@ -413,7 +410,7 @@ class TupletMusicMaker:
             )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            beam_specifier(shards)
+            beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
@@ -795,42 +792,42 @@ beams = False,
 ###################
 
 violin_string_maker_1 = TaleaMusicMaker(
-counts=[2, 1, 3, 1, 2, 5, 4, 1, 4, 3, 5, 4, 2, 1, 5, 2, 3, 1, 1, 2],
-denominator=8,
-pitches=[0],
-clef='percussion',
-extra_counts_per_division=[0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0],
-mask_indices=[4],
-mask_period=5,
-beams=False,
-)
+    counts=[2, 1, 3, 1, 2, 5, 4, 1, 4, 3, 5, 4, 2, 1, 5, 2, 3, 1, 1, 2],
+    denominator=8,
+    pitches=[0],
+    clef='percussion',
+    extra_counts_per_division=[0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0],
+    mask_indices=[4],
+    mask_period=5,
+    beams=False,
+    )
 ###
 violin_bow_maker_1 = EvenDivisionMusicMaker(
-denominators=[16, 16, 8, 16, 8, 16, 4, 8],
-mask_indices=[4],
-mask_period=5,
-pitches=[0],
-clef='percussion',
-extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
-beams=True,
-)
+    denominators=[16, 16, 8, 16, 8, 16, 4, 8],
+    mask_indices=[4],
+    mask_period=5,
+    pitches=[0],
+    clef='percussion',
+    extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
+    beams=True,
+    )
 ###
 violin_bow_beam_maker_1 = EvenDivisionMusicMaker(
-denominators=[16, 16, 8, 16, 8, 16, 4, 8],
-mask_indices=[4],
-mask_period=5,
-pitches=[38],
-clef='percussion',
-extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
-beams=True,
-)
+    denominators=[16, 16, 8, 16, 8, 16, 4, 8],
+    mask_indices=[4],
+    mask_period=5,
+    pitches=[38],
+    clef='percussion',
+    extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
+    beams=True,
+    )
 ###
 violin_lh_maker_1 = NoteMusicMaker(
-mask_indices=[4],
-mask_period=5,
-pitches=violin_notes_1,
-beams=False,
-)
+    mask_indices=[4],
+    mask_period=5,
+    pitches=violin_notes_1,
+    beams=False,
+    )
 
 ###################
 ###### viola ######
