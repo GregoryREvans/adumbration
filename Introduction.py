@@ -1929,17 +1929,6 @@ abjad.override(violin_string_staff).stem.stem_begin_position = -9
 abjad.override(violin_string_staff).time_signature.stencil = False
 abjad.override(violin_string_staff).rest.stencil = False
 
-# abjad.override(violin_bow_staff).dots.staff_position = -8
-# abjad.override(violin_bow_staff).flag.Y_offset = -8.5
-# abjad.override(violin_bow_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(violin_bow_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(violin_bow_staff).glissando.thickness = 2
-# abjad.override(violin_bow_staff).script.staff_padding = 3
-# abjad.override(violin_bow_staff).stem.direction = Down
-# abjad.override(violin_bow_staff).stem.length = 8
-# abjad.override(violin_bow_staff).stem.stem_begin_position = -9
-# abjad.override(violin_bow_staff).time_signature.stencil = False
-
 abjad.override(violin_bow_staff).dots.stencil = False
 abjad.override(violin_bow_staff).flag.stencil = False
 abjad.override(violin_bow_staff).script.staff_padding = 3
@@ -1992,17 +1981,6 @@ abjad.override(viola_string_staff).stem.stem_begin_position = -9
 abjad.override(viola_string_staff).time_signature.stencil = False
 abjad.override(viola_string_staff).rest.stencil = False
 
-# abjad.override(viola_bow_staff).dots.staff_position = -8
-# abjad.override(viola_bow_staff).flag.Y_offset = -8.5
-# abjad.override(viola_bow_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(viola_bow_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(viola_bow_staff).glissando.thickness = 2
-# abjad.override(viola_bow_staff).script.staff_padding = 3
-# abjad.override(viola_bow_staff).stem.direction = Down
-# abjad.override(viola_bow_staff).stem.length = 8
-# abjad.override(viola_bow_staff).stem.stem_begin_position = -9
-# abjad.override(viola_bow_staff).time_signature.stencil = False
-
 abjad.override(viola_bow_staff).dots.stencil = False
 abjad.override(viola_bow_staff).flag.stencil = False
 abjad.override(viola_bow_staff).script.staff_padding = 3
@@ -2054,17 +2032,6 @@ abjad.override(cello_string_staff).stem.length = 8
 abjad.override(cello_string_staff).stem.stem_begin_position = -9
 abjad.override(cello_string_staff).time_signature.stencil = False
 abjad.override(cello_string_staff).rest.stencil = False
-
-# abjad.override(cello_bow_staff).dots.staff_position = -8
-# abjad.override(cello_bow_staff).flag.Y_offset = -8.5
-# abjad.override(cello_bow_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(cello_bow_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(cello_bow_staff).glissando.thickness = 2
-# abjad.override(cello_bow_staff).script.staff_padding = 3
-# abjad.override(cello_bow_staff).stem.direction = Down
-# abjad.override(cello_bow_staff).stem.length = 8
-# abjad.override(cello_bow_staff).stem.stem_begin_position = -9
-# abjad.override(cello_bow_staff).time_signature.stencil = False
 
 abjad.override(cello_bow_staff).dots.stencil = False
 abjad.override(cello_bow_staff).flag.stencil = False
