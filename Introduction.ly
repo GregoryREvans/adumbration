@@ -1,4 +1,4 @@
-% 2018-08-01 18:36
+% 2018-08-01 20:21
 
 \version "2.19.82"
 \language "english"
@@ -129,20 +129,7 @@
             }
         }
         \new StaffGroup <<
-            \context Staff = "violin_string_staff" \with {
-                \override Dots.staff-position = #-8
-                \override Flag.Y-offset = #-8.5
-                \override Glissando.bound-details.left.padding = #1.5
-                \override Glissando.bound-details.right.padding = #1.5
-                \override Glissando.thickness = #2
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #3
-                \override StaffSymbol.transparent = ##t
-                \override Stem.direction = #down
-                \override Stem.length = #8
-                \override Stem.stem-begin-position = #-9
-                \override TimeSignature.stencil = ##f
-            } {
+            \context StringStaff = "violin_string_staff" {
                 {
                     \time 4/4
                     {
@@ -1427,24 +1414,7 @@
                     }
                 }
             }
-            \context Staff = "violin_bow_staff" \with {
-                \override Beam.stencil = ##f
-                \override Dots.stencil = ##f
-                \override Flag.stencil = ##f
-                \override Glissando.bound-details.left.padding = #1.5
-                \override Glissando.bound-details.right.padding = #1.5
-                \override Glissando.thickness = #2
-                \override NoteHead.Y-offset = #-5
-                \override NoteHead.extra-offset = #'(0.05 . 0)
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #2.5
-                \override StaffSymbol.transparent = ##t
-                \override Stem.direction = #down
-                \override Stem.stencil = ##f
-                \override TimeSignature.stencil = ##f
-                \override TupletBracket.stencil = ##f
-                \override TupletNumber.stencil = ##f
-            } {
+            \context BowStaff = "violin_bow_staff" {
                 {
                     \time 4/4
                     \times 16/17 {
@@ -6463,24 +6433,7 @@
                     }
                 }
             }
-            \context Staff = "violin_beam_staff" \with {
-                \override Beam.direction = #down
-                \override Beam.positions = #'(0 . 0)
-                \override Clef.stencil = ##f
-                \override Dots.staff-position = #8
-                \override Flag.Y-offset = #3
-                \override NoteHead.no-ledgers = ##t
-                \override NoteHead.stencil = ##f
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #3
-                \override StaffSymbol.transparent = ##t
-                \override Stem.beamed-lengths = #11
-                \override Stem.direction = #down
-                \override Stem.length = #10
-                \override Stem.stem-begin-position = #15.75
-                \override TimeSignature.stencil = ##f
-                \override TupletBracket.positions = #'(-2 . -2)
-            } {
+            \context BeamStaff = "violin_beam_staff" {
                 {
                     \time 4/4
                     \times 16/17 {
@@ -8995,7 +8948,7 @@
                     }
                 }
             }
-            \context Staff = "violin_lh_staff" {
+            \new Staff {
                 {
                     \time 4/4
                     \tempo 2=60
@@ -9250,20 +9203,7 @@
             }
         }
         \new StaffGroup <<
-            \context Staff = "viola_string_staff" \with {
-                \override Dots.staff-position = #-8
-                \override Flag.Y-offset = #-8.5
-                \override Glissando.bound-details.left.padding = #1.5
-                \override Glissando.bound-details.right.padding = #1.5
-                \override Glissando.thickness = #2
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #3
-                \override StaffSymbol.transparent = ##t
-                \override Stem.direction = #down
-                \override Stem.length = #8
-                \override Stem.stem-begin-position = #-9
-                \override TimeSignature.stencil = ##f
-            } {
+            \context StringStaff = "viola_string_staff" {
                 {
                     \time 4/4
                     \times 4/5 {
@@ -10716,24 +10656,7 @@
                     }
                 }
             }
-            \context Staff = "viola_bow_staff" \with {
-                \override Beam.stencil = ##f
-                \override Dots.stencil = ##f
-                \override Flag.stencil = ##f
-                \override Glissando.bound-details.left.padding = #1.5
-                \override Glissando.bound-details.right.padding = #1.5
-                \override Glissando.thickness = #2
-                \override NoteHead.Y-offset = #-5
-                \override NoteHead.extra-offset = #'(0.05 . 0)
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #2.5
-                \override StaffSymbol.transparent = ##t
-                \override Stem.direction = #down
-                \override Stem.stencil = ##f
-                \override TimeSignature.stencil = ##f
-                \override TupletBracket.stencil = ##f
-                \override TupletNumber.stencil = ##f
-            } {
+            \context BowStaff = "viola_bow_staff" {
                 {
                     \time 4/4
                     {
@@ -15265,24 +15188,7 @@
                     }
                 }
             }
-            \context Staff = "viola_beam_staff" \with {
-                \override Beam.direction = #down
-                \override Beam.positions = #'(0 . 0)
-                \override Clef.stencil = ##f
-                \override Dots.staff-position = #8
-                \override Flag.Y-offset = #3
-                \override NoteHead.no-ledgers = ##t
-                \override NoteHead.stencil = ##f
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #3
-                \override StaffSymbol.transparent = ##t
-                \override Stem.beamed-lengths = #11
-                \override Stem.direction = #down
-                \override Stem.length = #10
-                \override Stem.stem-begin-position = #15.75
-                \override TimeSignature.stencil = ##f
-                \override TupletBracket.positions = #'(-2 . -2)
-            } {
+            \context BeamStaff = "viola_beam_staff" {
                 {
                     \time 4/4
                     {
@@ -17623,7 +17529,7 @@
                     }
                 }
             }
-            \context Staff = "viola_lh_staff" {
+            \new Staff {
                 {
                     \time 4/4
                     \set Staff.instrumentName = \markup { Viola }
@@ -17826,20 +17732,7 @@
             }
         }
         \new StaffGroup <<
-            \context Staff = "cello_string_staff" \with {
-                \override Dots.staff-position = #-8
-                \override Flag.Y-offset = #-8.5
-                \override Glissando.bound-details.left.padding = #1.5
-                \override Glissando.bound-details.right.padding = #1.5
-                \override Glissando.thickness = #2
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #3
-                \override StaffSymbol.transparent = ##t
-                \override Stem.direction = #down
-                \override Stem.length = #8
-                \override Stem.stem-begin-position = #-9
-                \override TimeSignature.stencil = ##f
-            } {
+            \context StringStaff = "cello_string_staff" {
                 {
                     \time 4/4
                     {
@@ -19088,24 +18981,7 @@
                     r1
                 }
             }
-            \context Staff = "cello_bow_staff" \with {
-                \override Beam.stencil = ##f
-                \override Dots.stencil = ##f
-                \override Flag.stencil = ##f
-                \override Glissando.bound-details.left.padding = #1.5
-                \override Glissando.bound-details.right.padding = #1.5
-                \override Glissando.thickness = #2
-                \override NoteHead.Y-offset = #-5
-                \override NoteHead.extra-offset = #'(0.05 . 0)
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #2.5
-                \override StaffSymbol.transparent = ##t
-                \override Stem.direction = #down
-                \override Stem.stencil = ##f
-                \override TimeSignature.stencil = ##f
-                \override TupletBracket.stencil = ##f
-                \override TupletNumber.stencil = ##f
-            } {
+            \context BowStaff = "cello_bow_staff" {
                 {
                     \time 4/4
                     {
@@ -24736,24 +24612,7 @@
                     r1 ] ] ]
                 }
             }
-            \context Staff = "cello_beam_staff" \with {
-                \override Beam.direction = #down
-                \override Beam.positions = #'(0 . 0)
-                \override Clef.stencil = ##f
-                \override Dots.staff-position = #8
-                \override Flag.Y-offset = #3
-                \override NoteHead.no-ledgers = ##t
-                \override NoteHead.stencil = ##f
-                \override Rest.stencil = ##f
-                \override Script.staff-padding = #3
-                \override StaffSymbol.transparent = ##t
-                \override Stem.beamed-lengths = #11
-                \override Stem.direction = #down
-                \override Stem.length = #10
-                \override Stem.stem-begin-position = #15.75
-                \override TimeSignature.stencil = ##f
-                \override TupletBracket.positions = #'(-2 . -2)
-            } {
+            \context BeamStaff = "cello_beam_staff" {
                 {
                     \time 4/4
                     {
@@ -27725,7 +27584,7 @@
                     r1 ] ] ]
                 }
             }
-            \context Staff = "cello_lh_staff" {
+            \new Staff {
                 {
                     \time 4/4
                     \set Staff.instrumentName = \markup { Cello }

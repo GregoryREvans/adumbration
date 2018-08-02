@@ -15,7 +15,7 @@
     \context {
         \name TimeSignatureContext
         \type Engraver_group
-         \numericTimeSignature
+        \numericTimeSignature
         \consists Axis_group_engraver
         \consists Time_signature_engraver
         \override TimeSignature.X-extent = #'(0 . 0)
@@ -45,9 +45,6 @@
         tupletFullLength = ##t
     }
     \context {
-        \StaffGroup
-    }
-    \context {
         \Staff
         \remove Time_signature_engraver
     }
@@ -55,7 +52,79 @@
         \RhythmicStaff
         \remove Time_signature_engraver
     }
+    \context {
+        \Staff
+        \name StringStaff
+        \type Engraver_group
+        \alias Staff
 
+	\override NoteHead.color = #blue
+        \override Rest.color = #red
+        \override Script.color = #red
+
+        \override Dots.staff-position = #-8
+        \override Flag.Y-offset = #-8.5
+        \override Glissando.bound-details.left.padding = #1.5
+        \override Glissando.bound-details.right.padding = #1.5
+        \override Glissando.thickness = #2
+        \override Rest.stencil = ##f
+        \override Script.staff-padding = #3
+        \override StaffSymbol.transparent = ##t
+        \override Stem.direction = #down
+        \override Stem.length = #8
+        \override Stem.stem-begin-position = #-9
+        \override TimeSignature.stencil = ##f
+    }
+    \context {
+        \Staff
+        \name BowStaff
+        \type Engraver_group
+        \alias Staff
+        \override Beam.stencil = ##f
+        \override Dots.stencil = ##f
+        \override Flag.stencil = ##f
+        \override Glissando.bound-details.left.padding = #1.5
+        \override Glissando.bound-details.right.padding = #1.5
+        \override Glissando.thickness = #2
+        \override NoteHead.Y-offset = #-5
+        \override NoteHead.extra-offset = #'(0.05 . 0)
+        \override Rest.stencil = ##f
+        \override Script.staff-padding = #2.5
+        \override StaffSymbol.transparent = ##t
+        \override Stem.direction = #down
+        \override Stem.stencil = ##f
+        \override TimeSignature.stencil = ##f
+        \override TupletBracket.stencil = ##f
+        \override TupletNumber.stencil = ##f
+    }
+
+    \context {
+        \Staff
+        \name BeamStaff
+        \type Engraver_group
+        \alias Staff
+        \override Beam.direction = #down
+        \override Beam.positions = #'(0 . 0)
+        \override Clef.stencil = ##f
+        \override Dots.staff-position = #8
+        \override Flag.Y-offset = #3
+        \override NoteHead.no-ledgers = ##t
+        \override NoteHead.stencil = ##f
+        \override Rest.stencil = ##f
+        \override Script.staff-padding = #3
+        \override StaffSymbol.transparent = ##t
+        \override Stem.direction = #down
+        \override Stem.length = #10
+        \override Stem.stem-begin-position = #15.75
+        \override TimeSignature.stencil = ##f
+        \override TupletBracket.positions = #'(-2 . -2)
+    }
+    \context {
+        \StaffGroup
+        \accepts StringStaff
+        \accepts BowStaff
+        \accepts BeamStaff
+    }
 }
 
 \paper {
