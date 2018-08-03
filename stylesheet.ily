@@ -53,7 +53,7 @@ stringtab = {
     }
     \context {
         \Score
-        %\remove Bar_number_engraver
+        \remove Bar_number_engraver
         \accepts TimeSignatureContext
         \override Beam.breakable = ##t
 		\override Glissando.breakable = ##t
@@ -65,7 +65,7 @@ stringtab = {
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 64)
+		proportionalNotationDuration = #(ly:make-moment 1 80)
         autoBeaming = ##f
         tupletFullLength = ##t
     }

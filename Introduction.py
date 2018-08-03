@@ -1986,7 +1986,6 @@ score_file = abjad.LilyPondFile.new(
     )
 score_file.paper_block.top_margin = 20
 score_file.paper_block.bottom_margin = 20
-score_file.paper_block.system_count = 5
 
 ###################
 
