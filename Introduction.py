@@ -55,11 +55,15 @@ class EvenDivisionMusicMaker:
                 period=self.mask_period,
                 ),
             )
+        tuplet_specifier = rmakers.TupletSpecifier(
+            extract_trivial=True,
+            )
         even_division_rhythm_maker = rmakers.EvenDivisionRhythmMaker(
             denominators=self.denominators,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
+            tuplet_specifier=tuplet_specifier,
             )
         selections = even_division_rhythm_maker(time_signature_pairs)
         music = abjad.Staff(selections)
@@ -146,18 +150,13 @@ class NoteMusicMaker:
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
-
         note_rhythm_maker = rmakers.NoteRhythmMaker(
             beam_specifier=beam_specifier,
             division_masks=division_masks,
             )
-
         selections = note_rhythm_maker(time_signature_pairs)
-
         music = abjad.Staff(selections)
-
         music = self._apply_pitches(music)
-
         return music
 
     def _apply_pitches(self, selections):
@@ -253,12 +252,15 @@ class TaleaMusicMaker:
                 indices=self.mask_indices,
                 period=self.mask_period)
             )
-
+        tuplet_specifier = rmakers.TupletSpecifier(
+            extract_trivial=True,
+            )
         talea_rhythm_maker = rmakers.TaleaRhythmMaker(
             talea=talea,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
+            tuplet_specifier=tuplet_specifier,
             )
 
         selections = talea_rhythm_maker(time_signature_pairs)
@@ -354,7 +356,9 @@ class TupletMusicMaker:
                 period=self.mask_period)
                 )
         # division_masks = [silence_every([mask_indicies], period=mask_period),]
-
+        tuplet_specifier = rmakers.TupletSpecifier(
+            extract_trivial=True,
+            )
         tuplet_rhythm_maker = rmakers.TupletRhythmMaker(
             tuplet_ratios=self.tuplet_ratio,
             beam_specifier=beam_specifier,
@@ -362,19 +366,12 @@ class TupletMusicMaker:
             # preferred_denominator=None
             # ...equiv of this...I think it is duration specifier
             # but since pretty much everything defaults to None...its okay?
+            tuplet_specifier=tuplet_specifier,
             )
-
         selections = tuplet_rhythm_maker(time_signature_pairs)
-
-
         music = abjad.Staff(selections)
-
-
         music = self._apply_pitches(music)
-
-
         return music
-
 
     def _apply_pitches(self, selections):
         selections = selections
