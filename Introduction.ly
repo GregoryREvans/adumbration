@@ -1482,6 +1482,12 @@
                     \time 4/4
                     \times 16/17 {
                         % [violin_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
+                        \set BowStaff.instrumentName =
+                        \markup { Vln. }
+                        \set BowStaff.shortInstrumentName =
+                        \markup { Vln. }
+                        \set BowStaff.instrumentName =
+                        \markup { Violin }
                         \set stemLeftBeamCount = 0
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
@@ -7865,6 +7871,12 @@
                 {   % measure
                     \time 4/4
                     % [viola_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
+                    \set BowStaff.instrumentName =
+                    \markup { Vla. }
+                    \set BowStaff.shortInstrumentName =
+                    \markup { Vla. }
+                    \set BowStaff.instrumentName =
+                    \markup { Viola }
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
                     \once \override Glissando.style = #'line
@@ -11931,7 +11943,7 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                    \clef "alto"
+                    \clef "varC"
                     fs1
                 }   % measure
                 {   % measure
@@ -13433,6 +13445,12 @@
                 {   % measure
                     \time 4/4
                     % [cello_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
+                    \set BowStaff.instrumentName =
+                    \markup { Vc. }
+                    \set BowStaff.shortInstrumentName =
+                    \markup { Vc. }
+                    \set BowStaff.instrumentName =
+                    \markup { Violoncello }
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     \once \override Glissando.style = #'line

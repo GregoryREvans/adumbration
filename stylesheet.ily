@@ -18,15 +18,15 @@
 
 stringtab = {
 	\override Staff.Clef.stencil = #ly:text-interface::print
-	\override Staff.Clef.text = \markup { \general-align #Y #-0.05
-	\epsfile #Y #8 #"string_position_tablature.eps"
+	\override Staff.Clef.text = \markup { \general-align #Y #-0.02
+	\epsfile #Y #7 #"string_position_tablature.eps"
   	}
 }
 
  bowtab = {
 	\override Staff.Clef.stencil = #ly:text-interface::print
-	\override Staff.Clef.text = \markup { \general-align #Y #-0.05
-	\epsfile #Y #9 #"bow_position_tablature.eps"
+	\override Staff.Clef.text = \markup { \general-align #Y #0.03
+	\epsfile #Y #10 #"bow_position_tablature.eps"
   	}
  }
 
@@ -34,7 +34,7 @@ stringtab = {
     \accidentalStyle forget
     indent = #0
 	ragged-last = ##t
-    ragged-right = ##t
+    %ragged-right = ##t
     left-margin = #15
     \context {
         \name TimeSignatureContext
@@ -65,7 +65,7 @@ stringtab = {
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
-		proportionalNotationDuration = #(ly:make-moment 1 80)
+		proportionalNotationDuration = #(ly:make-moment 1 50)
         autoBeaming = ##f
         tupletFullLength = ##t
     }
@@ -89,8 +89,8 @@ stringtab = {
 
         \stringtab
 
-	    \override NoteHead.color = #blue %test
-        \override Rest.color = #red %test
+	    % \override NoteHead.color = #blue %test
+        % \override Rest.color = #red %test
 
         \override Dots.staff-position = #-8
         \override Flag.Y-offset = #-8.4
@@ -112,8 +112,8 @@ stringtab = {
         \type Engraver_group
         \alias Staff
 
-        \override Script.color = #red %test
-
+        % \override Script.color = #red %test
+		% \override NoteHead.color = #yellow %test
         \bowtab
 
         \override Beam.stencil = ##f

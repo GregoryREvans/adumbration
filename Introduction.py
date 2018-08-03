@@ -1963,16 +1963,31 @@ metro = abjad.MetronomeMark((1, 2), 60)
 abjad.attach(metro, violin_lh_staff[0][0])
 violin = abjad.Violin()
 abjad.attach(violin, violin_lh_staff[0][0])
+first_violin_leaf = abjad.select(violin_bow_staff).leaves()[0]
+violin_name2 = abjad.MarginMarkup(markup=abjad.Markup('Vln.'), context='BowStaff')
+abjad.attach(violin_name2, first_violin_leaf)
+violin_name1 = abjad.StartMarkup(markup=abjad.Markup('Violin'), context='BowStaff')
+abjad.attach(violin_name1, first_violin_leaf)
 
 viola = abjad.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])
-alto_clef = abjad.Clef('alto')
+alto_clef = abjad.Clef('varC')
 abjad.attach(alto_clef, viola_lh_staff[0][0])
+first_viola_leaf = abjad.select(viola_bow_staff).leaves()[0]
+viola_name2 = abjad.MarginMarkup(markup=abjad.Markup('Vla.'), context='BowStaff')
+abjad.attach(viola_name2, first_viola_leaf)
+viola_name1 = abjad.StartMarkup(markup=abjad.Markup('Viola'), context='BowStaff')
+abjad.attach(viola_name1, first_viola_leaf)
 
 bass_clef = abjad.Clef('bass')
 abjad.attach(bass_clef, cello_lh_staff[0][0])
 cello = abjad.Cello()
 abjad.attach(cello, cello_lh_staff[0][0])
+first_cello_leaf = abjad.select(cello_bow_staff).leaves()[0]
+cello_name2 = abjad.MarginMarkup(markup=abjad.Markup('Vc.'), context='BowStaff')
+abjad.attach(cello_name2, first_cello_leaf)
+cello_name1 = abjad.StartMarkup(markup=abjad.Markup('Violoncello'), context='BowStaff')
+abjad.attach(cello_name1, first_cello_leaf)
 
 ###################
 
