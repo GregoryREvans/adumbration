@@ -36,9 +36,9 @@ random.seed(1)
 violin_random_walk_1 = list()
 violin_random_walk_1.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = violin_random_walk_1[i-1] + movement
-	violin_random_walk_1.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = violin_random_walk_1[i-1] + movement
+    violin_random_walk_1.append(value)
 
 violin_notes_1 = [(x / 4.0) for x in violin_random_walk_1]
 
@@ -50,9 +50,9 @@ random.seed(2)
 viola_random_walk_1 = list()
 viola_random_walk_1.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = viola_random_walk_1[i-1] + movement
-	viola_random_walk_1.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = viola_random_walk_1[i-1] + movement
+    viola_random_walk_1.append(value)
 
 viola_notes_1 = [((x / 4.0) - 6) for x in viola_random_walk_1]
 
@@ -64,9 +64,9 @@ random.seed(3)
 cello_random_walk_1 = list()
 cello_random_walk_1.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = cello_random_walk_1[i-1] + movement
-	cello_random_walk_1.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = cello_random_walk_1[i-1] + movement
+    cello_random_walk_1.append(value)
 
 cello_notes_1 = [((x / 4.0) - 8) for x in cello_random_walk_1]
 
@@ -82,9 +82,9 @@ random.seed(4)
 violin_random_walk_2 = list()
 violin_random_walk_2.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = violin_random_walk_2[i-1] + movement
-	violin_random_walk_2.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = violin_random_walk_2[i-1] + movement
+    violin_random_walk_2.append(value)
 
 violin_notes_2 = [((x / 4.0) + 3) for x in violin_random_walk_2]
 
@@ -96,9 +96,9 @@ random.seed(5)
 viola_random_walk_2 = list()
 viola_random_walk_2.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = viola_random_walk_2[i-1] + movement
-	viola_random_walk_2.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = viola_random_walk_2[i-1] + movement
+    viola_random_walk_2.append(value)
 
 viola_notes_2 = [((x / 2.0) - 5) for x in viola_random_walk_2]
 
@@ -110,9 +110,9 @@ random.seed(6)
 cello_random_walk_2 = list()
 cello_random_walk_2.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = cello_random_walk_2[i-1] + movement
-	cello_random_walk_2.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = cello_random_walk_2[i-1] + movement
+    cello_random_walk_2.append(value)
 
 cello_notes_2 = [((x / 4.0) - 12) for x in cello_random_walk_2]
 
@@ -128,9 +128,9 @@ random.seed(7)
 violin_random_walk_3 = list()
 violin_random_walk_3.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = violin_random_walk_3[i-1] + movement
-	violin_random_walk_3.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = violin_random_walk_3[i-1] + movement
+    violin_random_walk_3.append(value)
 
 violin_notes_3 = [((x / 2.0) + 5) for x in violin_random_walk_3]
 
@@ -142,9 +142,9 @@ random.seed(8)
 viola_random_walk_3 = list()
 viola_random_walk_3.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = viola_random_walk_3[i-1] + movement
-	viola_random_walk_3.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = viola_random_walk_3[i-1] + movement
+    viola_random_walk_3.append(value)
 
 viola_notes_3 = [((x / 4.0) - 2) for x in viola_random_walk_3]
 
@@ -156,9 +156,9 @@ random.seed(9)
 cello_random_walk_3 = list()
 cello_random_walk_3.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = cello_random_walk_3[i-1] + movement
-	cello_random_walk_3.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = cello_random_walk_3[i-1] + movement
+    cello_random_walk_3.append(value)
 
 cello_notes_3 = [((x / 4.0) - 15) for x in cello_random_walk_3]
 
@@ -174,9 +174,9 @@ random.seed(10)
 violin_random_walk_4 = list()
 violin_random_walk_4.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = violin_random_walk_4[i-1] + movement
-	violin_random_walk_4.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = violin_random_walk_4[i-1] + movement
+    violin_random_walk_4.append(value)
 
 violin_notes_4 = [((x / 2.0) + 7) for x in violin_random_walk_4]
 
@@ -188,9 +188,9 @@ random.seed(11)
 viola_random_walk_4 = list()
 viola_random_walk_4.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = viola_random_walk_4[i-1] + movement
-	viola_random_walk_4.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = viola_random_walk_4[i-1] + movement
+    viola_random_walk_4.append(value)
 
 viola_notes_4 = [((x / 2.0) - 8) for x in viola_random_walk_4]
 
@@ -202,9 +202,9 @@ random.seed(12)
 cello_random_walk_4 = list()
 cello_random_walk_4.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = cello_random_walk_4[i-1] + movement
-	cello_random_walk_4.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = cello_random_walk_4[i-1] + movement
+    cello_random_walk_4.append(value)
 
 cello_notes_4 = [((x / 4.0) - 12) for x in cello_random_walk_4]
 
@@ -220,9 +220,9 @@ random.seed(13)
 violin_random_walk_5 = list()
 violin_random_walk_5.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = violin_random_walk_5[i-1] + movement
-	violin_random_walk_5.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = violin_random_walk_5[i-1] + movement
+    violin_random_walk_5.append(value)
 
 violin_notes_5 = [((x / 4.0) + 11) for x in violin_random_walk_5]
 
@@ -234,9 +234,9 @@ random.seed(14)
 viola_random_walk_5 = list()
 viola_random_walk_5.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = viola_random_walk_5[i-1] + movement
-	viola_random_walk_5.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = viola_random_walk_5[i-1] + movement
+    viola_random_walk_5.append(value)
 
 viola_notes_5 = [((x / 4.0) - 6) for x in viola_random_walk_5]
 
@@ -248,9 +248,9 @@ random.seed(15)
 cello_random_walk_5 = list()
 cello_random_walk_5.append(-1 if random.random() < 0.5 else 1)
 for i in range(1, 6):
-	movement = -1 if random.random() < 0.5 else 1
-	value = cello_random_walk_5[i-1] + movement
-	cello_random_walk_5.append(value)
+    movement = -1 if random.random() < 0.5 else 1
+    value = cello_random_walk_5[i-1] + movement
+    cello_random_walk_5.append(value)
 
 cello_notes_5 = [((x / 2.0) - 8) for x in cello_random_walk_5]
 
@@ -1502,14 +1502,14 @@ def _apply_bow_numerators_and_tech(staff, nums, tech):
         spanner = abjad.BowContactSpanner()
         abjad.attach(spanner, run)
 
-    logical_ties = abjad.select(staff[:]).leaves()
-    for logical_tie in logical_ties:
+    for logical_tie in abjad.select(staff).logical_ties():
         tech = next(techs)
         numerator = next(numerators)
         bcp = abjad.BowContactPoint((numerator, 4))
         technis = abjad.BowMotionTechnique(tech)
-        abjad.attach(bcp, logical_tie)
-        abjad.attach(technis, logical_tie)
+        for note in logical_tie:
+            abjad.attach(bcp, note)
+            abjad.attach(technis, note)
 
 def _apply_string_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
@@ -1518,14 +1518,14 @@ def _apply_string_numerators_and_tech(staff, nums, tech):
         spanner = abjad.StringContactSpanner()
         abjad.attach(spanner, run)
 
-    logical_ties = abjad.select(staff[:]).leaves()
-    for logical_tie in logical_ties:
+    for logical_tie in abjad.select(staff).logical_ties():
         tech = next(techs)
         numerator = next(numerators)
         bcp = abjad.BowContactPoint((numerator, 5))
         technis = abjad.BowMotionTechnique(tech)
-        abjad.attach(bcp, logical_tie)
-        abjad.attach(technis, logical_tie)
+        for note in logical_tie:
+            abjad.attach(bcp, note)
+            abjad.attach(technis, note)
 
 ###################
 ##### spanner #####
@@ -1569,9 +1569,9 @@ abjad.attach(violin_name2, first_violin_leaf)
 violin_name1 = abjad.StartMarkup(markup=abjad.Markup('Violin'), context='BowStaff')
 abjad.attach(violin_name1, first_violin_leaf)
 for rest in abjad.select(violin_string_staff).components(abjad.Rest):
-	abjad.override(rest).dots.transparent = True
-for rest in abjad.select(violin_beam_staff).components(abjad.Rest):
-	abjad.override(rest).dots.transparent = True
+    abjad.override(rest).dots.transparent = True
+for rest in abjad.select(violin_bow_beam_staff).components(abjad.Rest):
+    abjad.override(rest).dots.transparent = True
 
 viola = abjad.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])
@@ -1583,9 +1583,9 @@ abjad.attach(viola_name2, first_viola_leaf)
 viola_name1 = abjad.StartMarkup(markup=abjad.Markup('Viola'), context='BowStaff')
 abjad.attach(viola_name1, first_viola_leaf)
 for rest in abjad.select(viola_string_staff).components(abjad.Rest):
-	abjad.override(rest).dots.transparent = True
-for rest in abjad.select(viola_beam_staff).components(abjad.Rest):
-	abjad.override(rest).dots.transparent = True
+    abjad.override(rest).dots.transparent = True
+for rest in abjad.select(viola_bow_beam_staff).components(abjad.Rest):
+    abjad.override(rest).dots.transparent = True
 
 bass_clef = abjad.Clef('bass')
 abjad.attach(bass_clef, cello_lh_staff[0][0])
@@ -1597,9 +1597,9 @@ abjad.attach(cello_name2, first_cello_leaf)
 cello_name1 = abjad.StartMarkup(markup=abjad.Markup('Violoncello'), context='BowStaff')
 abjad.attach(cello_name1, first_cello_leaf)
 for rest in abjad.select(cello_string_staff).components(abjad.Rest):
-	abjad.override(rest).dots.transparent = True
-for rest in abjad.select(cello_beam_staff).components(abjad.Rest):
-	abjad.override(rest).dots.transparent = True
+    abjad.override(rest).dots.transparent = True
+for rest in abjad.select(cello_bow_beam_staff).components(abjad.Rest):
+    abjad.override(rest).dots.transparent = True
 
 ###################
 

@@ -215,6 +215,18 @@
                     \times 6/7 {
                         % [violin_string_staff measure 2] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -224,29 +236,17 @@
                                         3
                                         5
                             }
-                        c'8
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
                         c'2
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
+                                        3
                                         5
                             }
                         c'8
@@ -270,37 +270,37 @@
                     \time 4/4
                     % [violin_string_staff measure 3] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    3
+                                    1
                                     5
                         }
                     c'4.
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
-                                    1
+                                    2
+                                    5
                         }
                     c'8
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    4
+                                    1
                                     5
                         }
                     c'2
@@ -324,25 +324,25 @@
                         c'4.
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
-                                        5
+                                        1
+                                        1
                             }
                         c'2
                         ~
                         \glissando
-                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        0
+                                        1
                                         1
                             }
                         c'8
@@ -359,18 +359,6 @@
                     \times 8/9 {
                         % [violin_string_staff measure 6] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'4
-                        \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -383,27 +371,39 @@
                         c'4
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        1
+                                        2
+                                        5
+                            }
+                        c'4
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
                                         1
                             }
                         c'2
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        4
-                                        5
+                                        0
+                                        1
                             }
                         c'8
                         \glissando
@@ -413,6 +413,30 @@
                     \time 7/8
                     % [violin_string_staff measure 7] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'4.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -421,30 +445,6 @@
                                 \fraction
                                     3
                                     5
-                        }
-                    c'4.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
                         }
                     c'8
                     \glissando
@@ -471,17 +471,29 @@
                     \times 5/6 {
                         % [violin_string_staff measure 9] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        1
+                                        3
                                         5
                             }
                         c'2
                         ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -495,18 +507,6 @@
                             }
                         c'8
                         \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'8
-                        \glissando
                     }
                 }   % measure
                 {   % measure
@@ -515,39 +515,39 @@
                     \times 5/8 {
                         % [violin_string_staff measure 10] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'2.
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'1
-                        ~
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        5
+                                        1
+                            }
+                        c'2.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'1
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
                             }
                         c'4
                         \glissando
@@ -558,19 +558,30 @@
                     \times 8/9 {
                         % [violin_string_staff measure 11] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
-                                        5
+                                        0
+                                        1
                             }
                         c'2
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'8
+                        \glissando
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -578,17 +589,6 @@
                                 \vcenter
                                     \fraction
                                         1
-                                        5
-                            }
-                        c'8
-                        \glissando
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
                                         5
                             }
                         c'2
@@ -618,18 +618,6 @@
                         c'4.
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'2
-                        \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -637,6 +625,18 @@
                                 \vcenter
                                     \fraction
                                         2
+                                        5
+                            }
+                        c'2
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
                                         5
                             }
                         c'4
@@ -647,17 +647,46 @@
                     \time 4/4
                     % [violin_string_staff measure 14] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    0
                                     1
+                                    5
                         }
                     c'4.
                     \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'2
+                    ~
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'8
+                    \glissando
+                }   % measure
+                {   % measure
+                    \time 3/4
+                    % [violin_string_staff measure 15] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -668,25 +697,8 @@
                                     1
                                     5
                         }
-                    c'2
-                    ~
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
                     c'8
                     \glissando
-                }   % measure
-                {   % measure
-                    \time 3/4
-                    % [violin_string_staff measure 15] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -697,7 +709,20 @@
                                     3
                                     5
                         }
-                    c'8
+                    c'4
+                    ~
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -710,7 +735,6 @@
                                     1
                         }
                     c'4
-                    ~
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
@@ -724,30 +748,6 @@
                         }
                     c'16
                     \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'4
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -755,26 +755,26 @@
                     \times 20/21 {
                         % [violin_string_staff measure 16] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        1
-                                        1
+                                        3
+                                        5
                             }
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        1
-                                        1
+                                        2
+                                        5
                             }
                         c'16
                         \glissando
@@ -803,6 +803,43 @@
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'4
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -812,7 +849,7 @@
                                         1
                                         1
                             }
-                        c'8
+                        c'4
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -824,19 +861,6 @@
                                         4
                                         5
                             }
-                        c'4
-                        ~
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
@@ -849,52 +873,28 @@
                                         3
                                         5
                             }
-                        c'4
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        5
+                                        1
                             }
                         c'16
                         \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
+                                        1
                             }
                         c'16
                     }
@@ -911,42 +911,6 @@
                     \times 14/15 {
                         % [violin_string_staff measure 18] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8.
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -956,7 +920,7 @@
                                         0
                                         1
                             }
-                        c'8
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -968,18 +932,54 @@
                                         1
                                         5
                             }
-                        c'4
-                        ~
+                        c'8.
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        0
                                         1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'4
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
                             }
                         c'16
                         \glissando
@@ -1001,6 +1001,54 @@
                     \time 4/4
                     % [violin_string_staff measure 19] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -1022,7 +1070,20 @@
                                     4
                                     5
                         }
-                    c'16
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'4
+                    ~
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -1037,75 +1098,14 @@
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
-                                    1
-                        }
-                    c'8.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'4
-                    ~
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
+                                    2
                                     5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
                         }
                     c'8
                     ~
@@ -1117,38 +1117,26 @@
                     \times 12/13 {
                         % [violin_string_staff measure 20] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        4
+                                        2
                                         5
                             }
                         c'8
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
+                                        0
+                                        1
                             }
                         c'16
                         \glissando
@@ -1165,40 +1153,28 @@
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
+                                        0
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
                                         5
                             }
                         c'8.
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -1210,8 +1186,9 @@
                                         1
                                         1
                             }
-                        c'8
+                        c'16
                         \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -1220,6 +1197,29 @@
                                     \fraction
                                         4
                                         5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
                             }
                         c'16
                     }
@@ -1236,14 +1236,14 @@
                     \times 20/21 {
                         % [violin_string_staff measure 22] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
-                                        5
+                                        1
+                                        1
                             }
                         c'16
                         \glissando
@@ -1272,30 +1272,6 @@
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8.
-                        \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -1317,7 +1293,19 @@
                                         4
                                         5
                             }
-                        c'8
+                        c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -1329,54 +1317,66 @@
                                         3
                                         5
                             }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        5
+                            }
                         c'4
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        1
+                                        5
                             }
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        1
-                                        1
+                                        2
+                                        5
                             }
                         c'4
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        1
+                                        5
                             }
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        0
-                                        1
+                                        3
+                                        5
                             }
                         c'16
                         \glissando
@@ -1385,18 +1385,6 @@
                 {   % measure
                     \time 4/4
                     % [violin_string_staff measure 23] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    5
-                        }
-                    c'16
-                    \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -1407,7 +1395,7 @@
                                     1
                                     1
                         }
-                    c'8.
+                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
@@ -1417,6 +1405,18 @@
                             \vcenter
                                 \fraction
                                     4
+                                    5
+                        }
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
                                     5
                         }
                     c'16
@@ -1434,14 +1434,14 @@
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    3
-                                    5
+                                    0
+                                    1
                         }
                     c'8
                     \glissando
@@ -1458,24 +1458,24 @@
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    2
-                                    5
+                                    0
+                                    1
                         }
                     c'4.
                     \glissando
-                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
+                                    3
                                     5
                         }
                     c'16
@@ -2292,7 +2292,6 @@
                 {   % measure
                     \time 3/4
                     % [violin_bow_staff measure 5] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -2668,7 +2667,6 @@
                 {   % measure
                     \time 3/4
                     % [violin_bow_staff measure 8] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -3648,7 +3646,6 @@
                 {   % measure
                     \time 6/8
                     % [violin_bow_staff measure 12] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -4214,7 +4211,6 @@
                 {   % measure
                     \time 4/4
                     % [violin_bow_staff measure 17] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -4783,7 +4779,6 @@
                 {   % measure
                     \time 7/8
                     % [violin_bow_staff measure 21] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -5437,6 +5432,7 @@
                 {   % measure
                     \time 3/4
                     % [violin_beam_staff measure 5] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -5531,6 +5527,7 @@
                 {   % measure
                     \time 3/4
                     % [violin_beam_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -5752,6 +5749,7 @@
                 {   % measure
                     \time 6/8
                     % [violin_beam_staff measure 12] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -5869,6 +5867,7 @@
                 {   % measure
                     \time 4/4
                     % [violin_beam_staff measure 17] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -5989,6 +5988,7 @@
                 {   % measure
                     \time 7/8
                     % [violin_beam_staff measure 21] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -6422,6 +6422,18 @@
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6429,18 +6441,6 @@
                                 \vcenter
                                     \fraction
                                         3
-                                        5
-                            }
-                        c'8
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        4
                                         5
                             }
                         c'2
@@ -6451,6 +6451,18 @@
                     \time 4/4
                     \times 4/7 {
                         % [viola_string_staff measure 3] %! COMMENT_MEASURE_NUMBERS
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'4
+                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6485,7 +6497,7 @@
                                         0
                                         1
                             }
-                        c'4
+                        c'8
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
@@ -6497,9 +6509,8 @@
                                         1
                                         5
                             }
-                        c'8
+                        c'2
                         \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6508,17 +6519,6 @@
                                     \fraction
                                         0
                                         1
-                            }
-                        c'2
-                        \glissando
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
                             }
                         c'4.
                     }
@@ -6534,6 +6534,18 @@
                     \times 2/3 {
                         % [viola_string_staff measure 5] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'2
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6544,28 +6556,16 @@
                                         5
                             }
                         c'2
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'2
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        3
+                                        4
                                         5
                             }
                         c'8
@@ -6577,25 +6577,25 @@
                     \times 8/11 {
                         % [viola_string_staff measure 6] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        5
+                                        1
                             }
                         c'8
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
+                                        3
                                         5
                             }
                         c'8
@@ -6614,13 +6614,13 @@
                         ~
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        3
+                                        1
                                         5
                             }
                         c'8
@@ -6643,30 +6643,6 @@
                     \time 7/8
                     % [viola_string_staff measure 7] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -6676,17 +6652,41 @@
                                     1
                                     5
                         }
-                    c'8
+                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    0
-                                    1
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
                         }
                     c'4
                     \glissando
@@ -6713,6 +6713,18 @@
                     \times 10/11 {
                         % [viola_string_staff measure 9] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -6722,7 +6734,31 @@
                                         1
                                         1
                             }
-                        c'8
+                        c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -6734,7 +6770,7 @@
                                         3
                                         5
                             }
-                        c'8.
+                        c'8
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -6760,71 +6796,11 @@
                             }
                         c'16
                         \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        3
-                                        5
-                            }
-                        c'8
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16
-                        \glissando
                     }
                 }   % measure
                 {   % measure
                     \time 5/4
                     % [viola_string_staff measure 10] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'16
-                    \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -6838,26 +6814,50 @@
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    4
+                                    0
+                                    1
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
                                     5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
                         }
                     c'8.
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
-                                    1
+                                    2
+                                    5
                         }
                     c'16
                     \glissando
@@ -6874,39 +6874,39 @@
                     c'8
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
+                                    4
                                     5
                         }
                     c'4
                     ~
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    2
+                                    4
                                     5
                         }
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    5
+                                    1
                         }
                     c'4
                     \glissando
@@ -6922,13 +6922,13 @@
                         }
                     c'16
                     \glissando
-                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    2
+                                    1
                                     5
                         }
                     c'16
@@ -6943,6 +6943,54 @@
                     \time 6/8
                     % [viola_string_staff measure 12] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -6952,7 +7000,7 @@
                                     1
                                     1
                         }
-                    c'8.
+                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
@@ -6987,54 +7035,6 @@
                                 \fraction
                                     1
                                     1
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
                         }
                     c'8
                     ~
@@ -7058,6 +7058,43 @@
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'4
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7070,50 +7107,13 @@
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.Y-offset = 1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        0
-                                        1
-                            }
-                        c'8
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'4
-                        ~
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
+                                        4
                                         5
                             }
                         c'8
@@ -7125,18 +7125,6 @@
                     \time 4/4
                     % [viola_string_staff measure 14] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -7146,7 +7134,7 @@
                                     4
                                     5
                         }
-                    c'16
+                    c'8
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -7168,106 +7156,6 @@
                             \vcenter
                                 \fraction
                                     3
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    5
-                        }
-                    c'8.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'8.
-                    \glissando
-                }   % measure
-                {   % measure
-                    \time 3/4
-                    % [viola_string_staff measure 15] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
                                     5
                         }
                     c'16
@@ -7285,26 +7173,62 @@
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    1
+                                    5
                         }
                     c'8.
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
+                                    0
                                     1
-                                    1
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
                         }
                     c'16
                     \glissando
@@ -7318,8 +7242,13 @@
                                     1
                                     1
                         }
-                    c'8
+                    c'8.
                     \glissando
+                }   % measure
+                {   % measure
+                    \time 3/4
+                    % [viola_string_staff measure 15] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -7327,6 +7256,77 @@
                             \vcenter
                                 \fraction
                                     3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
                                     5
                         }
                     c'8.
@@ -7343,18 +7343,6 @@
                     \time 4/4
                     % [viola_string_staff measure 17] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -7367,64 +7355,28 @@
                     c'8
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    5
+                                    1
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    1
                         }
                     c'8.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -7447,6 +7399,54 @@
                                 \fraction
                                     3
                                     5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    1
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
                         }
                     c'16
                     \glissando
@@ -7470,18 +7470,6 @@
                     \times 14/15 {
                         % [viola_string_staff measure 18] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7492,6 +7480,30 @@
                                         5
                             }
                         c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        2
+                                        5
+                            }
+                        c'8
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
@@ -7503,20 +7515,20 @@
                                         3
                                         5
                             }
-                        c'8
+                        c'4
+                        ~
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
+                                        3
                                         5
                             }
-                        c'4
-                        ~
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -7528,7 +7540,7 @@
                                         4
                                         5
                             }
-                        c'16
+                        c'4
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -7540,28 +7552,16 @@
                                         1
                                         1
                             }
-                        c'4
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
                         c'16
                         \glissando
-                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        0
-                                        1
+                                        3
+                                        5
                             }
                         c'16
                     }
@@ -7576,26 +7576,26 @@
                     \time 3/4
                     % [viola_string_staff measure 20] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
-                                    1
+                                    2
+                                    5
                         }
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    1
+                                    5
                         }
                     c'16
                     \glissando
@@ -7610,6 +7610,18 @@
                                     5
                         }
                     c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'8.
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
@@ -7621,7 +7633,7 @@
                                     4
                                     5
                         }
-                    c'8.
+                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -7633,29 +7645,17 @@
                                     1
                                     1
                         }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
                     c'8
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    0
                                     1
+                                    5
                         }
                     c'8.
                     ~
@@ -7691,14 +7691,38 @@
                         c'4
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
-                                        5
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
                             }
                         c'16
                         \glissando
@@ -7712,7 +7736,7 @@
                                         3
                                         5
                             }
-                        c'16
+                        c'8.
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -7736,9 +7760,8 @@
                                         1
                                         1
                             }
-                        c'8.
+                        c'16
                         \glissando
-                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7746,29 +7769,6 @@
                                 \vcenter
                                     \fraction
                                         3
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
                                         5
                             }
                         c'16
@@ -7787,6 +7787,18 @@
                     \times 16/17 {
                         % [viola_string_staff measure 23] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'8.
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7796,7 +7808,32 @@
                                         2
                                         5
                             }
-                        c'8.
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'4
+                        ~
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -7820,9 +7857,20 @@
                                         1
                                         1
                             }
-                        c'8
+                        c'4
                         \glissando
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        \glissando
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -7831,54 +7879,6 @@
                                     \fraction
                                         1
                                         5
-                            }
-                        c'4
-                        ~
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'4
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
                             }
                         c'16
                     }
@@ -8510,7 +8510,6 @@
                 {   % measure
                     \time 7/8
                     % [viola_bow_staff measure 4] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -9145,7 +9144,6 @@
                 {   % measure
                     \time 3/4
                     % [viola_bow_staff measure 8] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -9608,7 +9606,6 @@
                 {   % measure
                     \time 4/4
                     % [viola_bow_staff measure 11] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -10170,9 +10167,7 @@
                 {   % measure
                     \time 5/4
                     % [viola_bow_staff measure 16] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
-                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -10512,7 +10507,6 @@
                 {   % measure
                     \time 4/4
                     % [viola_bow_staff measure 19] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -10934,9 +10928,7 @@
                 {   % measure
                     \time 5/4
                     % [viola_bow_staff measure 22] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
-                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -11327,6 +11319,7 @@
                 {   % measure
                     \time 7/8
                     % [viola_beam_staff measure 4] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -11478,6 +11471,7 @@
                 {   % measure
                     \time 3/4
                     % [viola_beam_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -11585,6 +11579,7 @@
                 {   % measure
                     \time 4/4
                     % [viola_beam_staff measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -11721,7 +11716,9 @@
                 {   % measure
                     \time 5/4
                     % [viola_beam_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -11805,6 +11802,7 @@
                 {   % measure
                     \time 4/4
                     % [viola_beam_staff measure 19] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -11906,7 +11904,9 @@
                 {   % measure
                     \time 5/4
                     % [viola_beam_staff measure 22] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -12316,13 +12316,13 @@
                     ~
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    3
+                                    4
                                     5
                         }
                     c'8
@@ -12334,6 +12334,18 @@
                     \times 7/8 {
                         % [cello_string_staff measure 4] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'4.
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -12343,7 +12355,7 @@
                                         2
                                         5
                             }
-                        c'4.
+                        c'2
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -12355,18 +12367,6 @@
                                         0
                                         1
                             }
-                        c'2
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        5
-                            }
                         c'8
                         \glissando
                     }
@@ -12374,35 +12374,6 @@
                 {   % measure
                     \time 3/4
                     % [cello_string_staff measure 5] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'2
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'4
-                    ~
-                    \glissando
-                }   % measure
-                {   % measure
-                    \time 4/4
-                    % [cello_string_staff measure 6] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -12413,16 +12384,45 @@
                                     1
                                     5
                         }
-                    c'4.
+                    c'2
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    2
+                                    0
+                                    1
+                        }
+                    c'4
+                    ~
+                    \glissando
+                }   % measure
+                {   % measure
+                    \time 4/4
+                    % [cello_string_staff measure 6] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    c'4.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
                                     5
                         }
                     c'8
@@ -12439,13 +12439,13 @@
                         }
                     c'4
                     \glissando
-                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.Y-offset = -0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    3
+                                    2
                                     5
                         }
                     c'4
@@ -12468,6 +12468,30 @@
                     \times 10/11 {
                         % [cello_string_staff measure 9] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        4
+                                        5
+                            }
+                        c'4
+                        \glissando
+                        \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
@@ -12477,19 +12501,7 @@
                                         3
                                         5
                             }
-                        c'8
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'4
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -12516,26 +12528,14 @@
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
                                         1
-                                        5
+                                        1
                             }
                         c'8
                         ~
@@ -12556,90 +12556,6 @@
                                     1
                         }
                     c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'4.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'8.
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -12665,14 +12581,98 @@
                         }
                     c'16
                     \glissando
-                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    0
                                     1
+                                    1
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'4.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    1
+                        }
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
                         }
                     c'16
                 }   % measure
@@ -12698,28 +12698,16 @@
                     c'8.
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    2
-                                    5
+                                    0
+                                    1
                         }
                     c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    5
-                        }
-                    c'8
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -12731,16 +12719,28 @@
                                     3
                                     5
                         }
-                    c'8.
+                    c'8
                     \glissando
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    1
+                                    5
+                        }
+                    c'8.
+                    \glissando
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
                         }
                     c'8.
                 }   % measure
@@ -12768,18 +12768,30 @@
                     c'4.
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = 1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
-                                    1
+                                    4
+                                    5
                         }
                     c'16
                     \glissando
                     \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -12787,31 +12799,19 @@
                             \vcenter
                                 \fraction
                                     1
-                                    1
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
                                     1
                         }
                     c'8.
                     \glissando
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    5
+                                    1
                         }
                     c'4
                     \glissando
@@ -12830,6 +12830,42 @@
                                     1
                         }
                     c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    1
+                        }
+                    c'8.
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 1.2
@@ -12851,42 +12887,6 @@
                             \vcenter
                                 \fraction
                                     2
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
                                     5
                         }
                     c'8
@@ -12914,13 +12914,25 @@
                     \time 4/4
                     % [cello_string_staff measure 17] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.Y-offset = 0.4
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
+                                    3
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
                                     5
                         }
                     c'8
@@ -12935,7 +12947,31 @@
                                     0
                                     1
                         }
-                    c'8
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    c'16
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.4
@@ -12947,7 +12983,7 @@
                                     3
                                     5
                         }
-                    c'8.
+                    c'8
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
@@ -12981,42 +13017,6 @@
                             \vcenter
                                 \fraction
                                     1
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
                                     5
                         }
                     c'16
@@ -13041,62 +13041,13 @@
                     \times 14/15 {
                         % [cello_string_staff measure 18] %! COMMENT_MEASURE_NUMBERS
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        1
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'8
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'4
-                        ~
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.2
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
+                                        3
                                         5
                             }
                         c'16
@@ -13111,7 +13062,7 @@
                                         1
                                         1
                             }
-                        c'4
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13123,17 +13074,66 @@
                                         4
                                         5
                             }
-                        c'16
+                        c'8
                         \glissando
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
+                        \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        2
+                                        3
                                         5
+                            }
+                        c'4
+                        ~
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'4
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
                             }
                         c'16
                         \glissando
@@ -13142,66 +13142,6 @@
                 {   % measure
                     \time 4/4
                     % [cello_string_staff measure 19] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'8.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    2
-                                    5
-                        }
-                    c'8
-                    \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13224,16 +13164,76 @@
                                     1
                                     5
                         }
-                    c'4.
+                    c'8.
                     \glissando
-                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    0
                                     1
+                                    1
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    1
+                        }
+                    c'4.
+                    \glissando
+                    \once \override NoteHead.Y-offset = 1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    4
+                                    5
                         }
                     c'16
                 }   % measure
@@ -13247,6 +13247,30 @@
                     \time 7/8
                     % [cello_string_staff measure 21] %! COMMENT_MEASURE_NUMBERS
                     \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.2
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
@@ -13257,6 +13281,55 @@
                                     5
                         }
                     c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    c'8.
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    3
+                                    5
+                        }
+                    c'16
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.2
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    5
+                        }
+                    c'8
+                    \glissando
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -0.4
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    2
+                                    5
+                        }
+                    c'4
+                    ~
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -0.4
@@ -13270,121 +13343,12 @@
                         }
                     c'16
                     \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    5
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'8.
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.2
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    4
-                                    5
-                        }
-                    c'8
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.4
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    5
-                        }
-                    c'4
-                    ~
-                    \glissando
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    \glissando
                 }   % measure
                 {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
                         % [cello_string_staff measure 22] %! COMMENT_MEASURE_NUMBERS
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'4
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = 2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        1
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -13395,6 +13359,18 @@
                                         1
                                         5
                             }
+                        c'4
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 0.4
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        3
+                                        5
+                            }
                         c'16
                         \glissando
                         \once \override Glissando.style = #'line
@@ -13407,7 +13383,7 @@
                                         1
                                         1
                             }
-                        c'8.
+                        c'16
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.2
@@ -13417,18 +13393,6 @@
                                 \vcenter
                                     \fraction
                                         4
-                                        5
-                            }
-                        c'16
-                        \glissando
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -0.4
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        2
                                         5
                             }
                         c'16
@@ -13443,7 +13407,7 @@
                                         3
                                         5
                             }
-                        c'8
+                        c'8.
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -13457,13 +13421,49 @@
                             }
                         c'16
                         \glissando
-                        \once \override NoteHead.Y-offset = 1.2
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        4
+                                        1
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = 2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        1
+                            }
+                        c'8
+                        \glissando
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        c'16
+                        \glissando
+                        \once \override NoteHead.Y-offset = -1.2
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
                                         5
                             }
                         c'4.
@@ -13730,7 +13730,6 @@
                 {   % measure
                     \time 3/4
                     % [cello_bow_staff measure 2] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -14625,13 +14624,11 @@
                 {   % measure
                     \time 7/8
                     % [cello_bow_staff measure 7] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
                     \time 3/4
                     % [cello_bow_staff measure 8] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -15407,7 +15404,6 @@
                 {   % measure
                     \time 4/4
                     % [cello_bow_staff measure 11] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -15613,9 +15609,7 @@
                 {   % measure
                     \time 5/8
                     % [cello_bow_staff measure 13] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2
-                    \once \override Dots.transparent = ##t
                     r8
                 }   % measure
                 {   % measure
@@ -16046,9 +16040,7 @@
                 {   % measure
                     \time 5/4
                     % [cello_bow_staff measure 16] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
-                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -16905,7 +16897,6 @@
                 {   % measure
                     \time 3/4
                     % [cello_bow_staff measure 20] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -17443,7 +17434,6 @@
                 {   % measure
                     \time 4/4
                     % [cello_bow_staff measure 23] %! COMMENT_MEASURE_NUMBERS
-                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
             }
@@ -17506,6 +17496,7 @@
                 {   % measure
                     \time 3/4
                     % [cello_beam_staff measure 2] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -17716,11 +17707,13 @@
                 {   % measure
                     \time 7/8
                     % [cello_beam_staff measure 7] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
                     \time 3/4
                     % [cello_beam_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -17894,6 +17887,7 @@
                 {   % measure
                     \time 4/4
                     % [cello_beam_staff measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -17947,7 +17941,9 @@
                 {   % measure
                     \time 5/8
                     % [cello_beam_staff measure 13] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2
+                    \once \override Dots.transparent = ##t
                     r8
                 }   % measure
                 {   % measure
@@ -18049,7 +18045,9 @@
                 {   % measure
                     \time 5/4
                     % [cello_beam_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -18243,6 +18241,7 @@
                 {   % measure
                     \time 3/4
                     % [cello_beam_staff measure 20] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -18368,6 +18367,7 @@
                 {   % measure
                     \time 4/4
                     % [cello_beam_staff measure 23] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
             }
