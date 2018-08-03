@@ -1901,10 +1901,11 @@ def cyc(lst):
 def _apply_bow_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
     techs = cyc(tech)
-    logical_ties = abjad.select(staff[:]).leaves()
-    spanner = abjad.BowContactSpanner()
-    abjad.attach(spanner, logical_ties)
+    for run in abjad.select(staff).runs():
+        spanner = abjad.BowContactSpanner()
+        abjad.attach(spanner, run)
 
+    logical_ties = abjad.select(staff[:]).leaves()
     for logical_tie in logical_ties:
         tech = next(techs)
         numerator = next(numerators)
@@ -1916,10 +1917,11 @@ def _apply_bow_numerators_and_tech(staff, nums, tech):
 def _apply_string_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
     techs = cyc(tech)
-    logical_ties = abjad.select(staff[:]).leaves()
-    spanner = abjad.StringContactSpanner()
-    abjad.attach(spanner, logical_ties)
+    for run in abjad.select(staff).runs():
+        spanner = abjad.StringContactSpanner()
+        abjad.attach(spanner, run)
 
+    logical_ties = abjad.select(staff[:]).leaves()
     for logical_tie in logical_ties:
         tech = next(techs)
         numerator = next(numerators)
