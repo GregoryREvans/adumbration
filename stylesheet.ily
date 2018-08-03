@@ -10,30 +10,31 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-    title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"String Trio no.2" }
-  subtitle = \markup {" "}
-  subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
-  arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
+	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"String Trio no.2" }
+	subtitle = \markup {" "}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
 }
 
 stringtab = {
-  \override Staff.Clef.stencil = #ly:text-interface::print
-  \override Staff.Clef.text = \markup { \general-align #Y #-0.05
-    \epsfile #Y #8 #"string_position_tablature.eps"
-  }
+	\override Staff.Clef.stencil = #ly:text-interface::print
+	\override Staff.Clef.text = \markup { \general-align #Y #-0.05
+	\epsfile #Y #8 #"string_position_tablature.eps"
+  	}
 }
 
  bowtab = {
-  \override Staff.Clef.stencil = #ly:text-interface::print
-  \override Staff.Clef.text = \markup { \general-align #Y #-0.05
-    \epsfile #Y #9 #"bow_position_tablature.eps"
-  }
+	\override Staff.Clef.stencil = #ly:text-interface::print
+	\override Staff.Clef.text = \markup { \general-align #Y #-0.05
+	\epsfile #Y #9 #"bow_position_tablature.eps"
+  	}
  }
 
 \layout {
     \accidentalStyle forget
     indent = #0
-    ragged-right = ##f
+	ragged-last = ##t
+    ragged-right = ##t
     left-margin = #15
     \context {
         \name TimeSignatureContext
@@ -52,20 +53,25 @@ stringtab = {
     }
     \context {
         \Score
-        \remove Bar_number_engraver
+        %\remove Bar_number_engraver
         \accepts TimeSignatureContext
         \override Beam.breakable = ##t
+		\override Glissando.breakable = ##t
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
-		proportionalNotationDuration = #(ly:make-moment 1/64)
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
+		proportionalNotationDuration = #(ly:make-moment 1 64)
         autoBeaming = ##f
         tupletFullLength = ##t
+    }
+	\context {
+        \Voice
+        \remove Forbid_line_break_engraver
     }
     \context {
         \Staff
@@ -159,21 +165,21 @@ stringtab = {
 
 \paper {
 	top-margin = .90\in
-	 oddHeaderMarkup = \markup ""
-  evenHeaderMarkup = \markup ""
-  oddFooterMarkup = \markup \fill-line {
+	oddHeaderMarkup = \markup ""
+	evenHeaderMarkup = \markup ""
+	oddFooterMarkup = \markup \fill-line {
     ""
     \concat {
       "~"
-      \override #'(font-name . "Didot") \fontsize #2
-        \fromproperty #'page:page-number-string "~"
+	  \override #'(font-name . "Didot") \fontsize #2
+	  \fromproperty #'page:page-number-string "~"
      }
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
-    \concat { "~" \override #'(font-name . "Didot") \fontsize #2
-        \fromproperty #'page:page-number-string "~"
+	\concat { "~" \override #'(font-name . "Didot") \fontsize #2
+	\fromproperty #'page:page-number-string "~"
     } ""
   }
 }

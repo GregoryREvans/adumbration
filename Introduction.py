@@ -1977,6 +1977,10 @@ abjad.attach(cello, cello_lh_staff[0][0])
 
 ###################
 
+abjad.SegmentMaker.comment_measure_numbers(score)
+
+###################
+
 score_file = abjad.LilyPondFile.new(
     score,
     includes=['stylesheet.ily'],
