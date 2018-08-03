@@ -351,6 +351,7 @@
                 {   % measure
                     \time 3/4
                     % [violin_string_staff measure 5] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -461,6 +462,7 @@
                 {   % measure
                     \time 3/4
                     % [violin_string_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -595,6 +597,7 @@
                 {   % measure
                     \time 6/8
                     % [violin_string_staff measure 12] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -899,6 +902,7 @@
                 {   % measure
                     \time 4/4
                     % [violin_string_staff measure 17] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -1223,6 +1227,7 @@
                 {   % measure
                     \time 7/8
                     % [violin_string_staff measure 21] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -2287,6 +2292,7 @@
                 {   % measure
                     \time 3/4
                     % [violin_bow_staff measure 5] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -2662,6 +2668,7 @@
                 {   % measure
                     \time 3/4
                     % [violin_bow_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -3641,6 +3648,7 @@
                 {   % measure
                     \time 6/8
                     % [violin_bow_staff measure 12] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -4206,6 +4214,7 @@
                 {   % measure
                     \time 4/4
                     % [violin_bow_staff measure 17] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -4774,6 +4783,7 @@
                 {   % measure
                     \time 7/8
                     % [violin_bow_staff measure 21] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -6516,6 +6526,7 @@
                 {   % measure
                     \time 7/8
                     % [viola_string_staff measure 4] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -6693,6 +6704,7 @@
                 {   % measure
                     \time 3/4
                     % [viola_string_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -6924,6 +6936,7 @@
                 {   % measure
                     \time 4/4
                     % [viola_string_staff measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -7321,7 +7334,9 @@
                 {   % measure
                     \time 5/4
                     % [viola_string_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -7554,6 +7569,7 @@
                 {   % measure
                     \time 4/4
                     % [viola_string_staff measure 19] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -7761,7 +7777,9 @@
                 {   % measure
                     \time 5/4
                     % [viola_string_staff measure 22] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -8492,6 +8510,7 @@
                 {   % measure
                     \time 7/8
                     % [viola_bow_staff measure 4] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
@@ -9126,6 +9145,7 @@
                 {   % measure
                     \time 3/4
                     % [viola_bow_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -9588,6 +9608,7 @@
                 {   % measure
                     \time 4/4
                     % [viola_bow_staff measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -10149,7 +10170,9 @@
                 {   % measure
                     \time 5/4
                     % [viola_bow_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -10489,6 +10512,7 @@
                 {   % measure
                     \time 4/4
                     % [viola_bow_staff measure 19] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -10910,7 +10934,9 @@
                 {   % measure
                     \time 5/4
                     % [viola_bow_staff measure 22] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -12258,6 +12284,7 @@
                 {   % measure
                     \time 3/4
                     % [cello_string_staff measure 2] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -12426,11 +12453,13 @@
                 {   % measure
                     \time 7/8
                     % [cello_string_staff measure 7] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
                     \time 3/4
                     % [cello_string_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -12650,6 +12679,7 @@
                 {   % measure
                     \time 4/4
                     % [cello_string_staff measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -12717,7 +12747,9 @@
                 {   % measure
                     \time 5/8
                     % [cello_string_staff measure 13] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2
+                    \once \override Dots.transparent = ##t
                     r8
                 }   % measure
                 {   % measure
@@ -12873,7 +12905,9 @@
                 {   % measure
                     \time 5/4
                     % [cello_string_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -13206,6 +13240,7 @@
                 {   % measure
                     \time 3/4
                     % [cello_string_staff measure 20] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -13437,6 +13472,7 @@
                 {   % measure
                     \time 4/4
                     % [cello_string_staff measure 23] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
             }
@@ -13694,6 +13730,7 @@
                 {   % measure
                     \time 3/4
                     % [cello_bow_staff measure 2] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -14588,11 +14625,13 @@
                 {   % measure
                     \time 7/8
                     % [cello_bow_staff measure 7] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2..
                 }   % measure
                 {   % measure
                     \time 3/4
                     % [cello_bow_staff measure 8] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -15368,6 +15407,7 @@
                 {   % measure
                     \time 4/4
                     % [cello_bow_staff measure 11] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
                 {   % measure
@@ -15573,7 +15613,9 @@
                 {   % measure
                     \time 5/8
                     % [cello_bow_staff measure 13] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2
+                    \once \override Dots.transparent = ##t
                     r8
                 }   % measure
                 {   % measure
@@ -16004,7 +16046,9 @@
                 {   % measure
                     \time 5/4
                     % [cello_bow_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
+                    \once \override Dots.transparent = ##t
                     r4
                 }   % measure
                 {   % measure
@@ -16861,6 +16905,7 @@
                 {   % measure
                     \time 3/4
                     % [cello_bow_staff measure 20] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r2.
                 }   % measure
                 {   % measure
@@ -17398,6 +17443,7 @@
                 {   % measure
                     \time 4/4
                     % [cello_bow_staff measure 23] %! COMMENT_MEASURE_NUMBERS
+                    \once \override Dots.transparent = ##t
                     r1
                 }   % measure
             }

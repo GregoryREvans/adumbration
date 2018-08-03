@@ -1568,6 +1568,10 @@ violin_name2 = abjad.MarginMarkup(markup=abjad.Markup('Vln.'), context='BowStaff
 abjad.attach(violin_name2, first_violin_leaf)
 violin_name1 = abjad.StartMarkup(markup=abjad.Markup('Violin'), context='BowStaff')
 abjad.attach(violin_name1, first_violin_leaf)
+for rest in abjad.select(violin_string_staff).components(abjad.Rest):
+	abjad.override(rest).dots.transparent = True
+for rest in abjad.select(violin_beam_staff).components(abjad.Rest):
+	abjad.override(rest).dots.transparent = True
 
 viola = abjad.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])
@@ -1578,6 +1582,10 @@ viola_name2 = abjad.MarginMarkup(markup=abjad.Markup('Vla.'), context='BowStaff'
 abjad.attach(viola_name2, first_viola_leaf)
 viola_name1 = abjad.StartMarkup(markup=abjad.Markup('Viola'), context='BowStaff')
 abjad.attach(viola_name1, first_viola_leaf)
+for rest in abjad.select(viola_string_staff).components(abjad.Rest):
+	abjad.override(rest).dots.transparent = True
+for rest in abjad.select(viola_beam_staff).components(abjad.Rest):
+	abjad.override(rest).dots.transparent = True
 
 bass_clef = abjad.Clef('bass')
 abjad.attach(bass_clef, cello_lh_staff[0][0])
@@ -1588,6 +1596,10 @@ cello_name2 = abjad.MarginMarkup(markup=abjad.Markup('Vc.'), context='BowStaff')
 abjad.attach(cello_name2, first_cello_leaf)
 cello_name1 = abjad.StartMarkup(markup=abjad.Markup('Violoncello'), context='BowStaff')
 abjad.attach(cello_name1, first_cello_leaf)
+for rest in abjad.select(cello_string_staff).components(abjad.Rest):
+	abjad.override(rest).dots.transparent = True
+for rest in abjad.select(cello_beam_staff).components(abjad.Rest):
+	abjad.override(rest).dots.transparent = True
 
 ###################
 
