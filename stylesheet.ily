@@ -7,6 +7,15 @@
 \include "ekmel.ily"
 \ekmelicStyle evans
 
+\header {
+	tagline = ##f
+	breakbefore = ##t
+    title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"String Trio no.2" }
+  subtitle = \markup {" "}
+  subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
+  arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
+}
+
 stringtab = {
   \override Staff.Clef.stencil = #ly:text-interface::print
   \override Staff.Clef.text = \markup { \general-align #Y #-0.05
@@ -49,13 +58,13 @@ stringtab = {
         \override SpacingSpanner.strict-grace-spacing = ##t
         \override SpacingSpanner.strict-note-spacing = ##t
         \override SpacingSpanner.uniform-stretching = ##t
+		proportionalNotationDuration = #(ly:make-moment 1/64)
         \override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
         autoBeaming = ##f
-        proportionalNotationDuration = #(ly:make-moment 1 64)
         tupletFullLength = ##t
     }
     \context {
@@ -78,9 +87,9 @@ stringtab = {
         \override Rest.color = #red %test
 
         \override Dots.staff-position = #-8
-        \override Flag.Y-offset = #-8.5
-        \override Glissando.bound-details.left.padding = #1.5
-        \override Glissando.bound-details.right.padding = #1.5
+        \override Flag.Y-offset = #-8.4
+        \override Glissando.bound-details.left.padding = #0.5
+        \override Glissando.bound-details.right.padding = #0.5
         \override Glissando.thickness = #2
         \override Rest.stencil = ##f
         \override Script.staff-padding = #3
@@ -88,6 +97,7 @@ stringtab = {
         \override Stem.direction = #down
         \override Stem.length = #8
         \override Stem.stem-begin-position = #-9
+		\override Tie.stencil = ##f
         \override TimeSignature.stencil = ##f
     }
     \context {
@@ -103,8 +113,8 @@ stringtab = {
         \override Beam.stencil = ##f
         \override Dots.stencil = ##f
         \override Flag.stencil = ##f
-        \override Glissando.bound-details.left.padding = #1.5
-        \override Glissando.bound-details.right.padding = #1.5
+        \override Glissando.bound-details.left.padding = #0.5
+        \override Glissando.bound-details.right.padding = #0.5
         \override Glissando.thickness = #2
         \override NoteHead.Y-offset = #-5
         \override NoteHead.extra-offset = #'(0.05 . 0)
@@ -124,10 +134,10 @@ stringtab = {
         \type Engraver_group
         \alias Staff
         \override Beam.direction = #down
-        \override Beam.positions = #'(0 . 0)
+        \override Beam.positions = #'(3 . 3)
         \override Clef.stencil = ##f
         \override Dots.staff-position = #8
-        \override Flag.Y-offset = #3
+        \override Flag.Y-offset = #2.93
         \override NoteHead.no-ledgers = ##t
         \override NoteHead.stencil = ##f
         \override Rest.stencil = ##f
@@ -137,7 +147,7 @@ stringtab = {
         \override Stem.length = #10
         \override Stem.stem-begin-position = #15.75
         \override TimeSignature.stencil = ##f
-        \override TupletBracket.positions = #'(-2 . -2)
+        \override TupletBracket.positions = #'(1 . 1)
     }
     \context {
         \StaffGroup

@@ -1,21 +1,10 @@
 \version "2.19.82"
 \language "english"
 
-\include "ekmel.ily"
 \include "stylesheet.ily"
-
-#(set-global-staff-size 15)
 
 \header {
     tagline = ##f
-    composer = #"Gregory Rowland Evans"
-    title = \markup {
-        \fontsize
-            #5
-            \bold
-                "String Trio no.2"
-        }
-    subtitle = #"for violin, viola, and violoncello"
 }
 
 \layout {}
@@ -577,8 +566,6 @@
                         c'2
                         ~
                         \glissando
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.2
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -590,8 +577,6 @@
                                         5
                             }
                         c'8
-                        [
-                        ]
                         \glissando
                         \once \override NoteHead.Y-offset = 0.4
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -691,8 +676,6 @@
                         c'2
                         ~
                         \glissando
-                        \set stemLeftBeamCount = 1
-                        \set stemRightBeamCount = 0
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -704,8 +687,6 @@
                                         1
                             }
                         c'8
-                        [
-                        ]
                         \glissando
                     }
                 }   % measure

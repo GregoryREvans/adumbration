@@ -1065,7 +1065,7 @@ mask_indices=[2],
 mask_period=6,
 pitches=[0],
 clef='percussion',
-beams=True,
+beams=False,
 )
 ###
 violin_bow_maker_3 = EvenDivisionMusicMaker(
@@ -1940,163 +1940,6 @@ _apply_bow_numerators_and_tech(staff=violin_bow_staff, nums=violin_bow_nums, tec
 _apply_bow_numerators_and_tech(staff=viola_bow_staff, nums=viola_bow_nums, tech=viola_bow_tech)
 _apply_bow_numerators_and_tech(staff=cello_bow_staff, nums=cello_bow_nums, tech=cello_bow_tech)
 
-                            ###################
-                            ##### cleanup #####
-                            ###################
-#
-# ###################
-# ##### violin ######
-# ###################
-#
-# abjad.override(violin_string_staff).dots.staff_position = -8
-# abjad.override(violin_string_staff).flag.Y_offset = -8.5
-# abjad.override(violin_string_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(violin_string_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(violin_string_staff).glissando.thickness = 2
-# abjad.override(violin_string_staff).script.staff_padding = 3
-# abjad.override(violin_string_staff).staff_symbol.transparent = True
-# abjad.override(violin_string_staff).stem.direction = Down
-# abjad.override(violin_string_staff).stem.length = 8
-# abjad.override(violin_string_staff).stem.stem_begin_position = -9
-# abjad.override(violin_string_staff).time_signature.stencil = False
-# abjad.override(violin_string_staff).rest.stencil = False
-#
-# abjad.override(violin_bow_staff).dots.stencil = False
-# abjad.override(violin_bow_staff).flag.stencil = False
-# abjad.override(violin_bow_staff).script.staff_padding = 3
-# abjad.override(violin_bow_staff).staff_symbol.transparent = True
-# abjad.override(violin_bow_staff).stem.stencil = False
-# abjad.override(violin_bow_staff).time_signature.stencil = False
-# abjad.override(violin_bow_staff).stem.direction = Down
-# abjad.override(violin_bow_staff).beam.stencil = False
-# abjad.override(violin_bow_staff).note_head.extra_offset = (0.05 , 0)
-# abjad.override(violin_bow_staff).rest.stencil = False
-# abjad.override(violin_bow_staff).script.staff_padding = 2.5
-# abjad.override(violin_bow_staff).tuplet_bracket.stencil = False
-# abjad.override(violin_bow_staff).tuplet_number.stencil = False
-# abjad.override(violin_bow_staff).note_head.Y_offset = -5
-# abjad.override(violin_bow_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(violin_bow_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(violin_bow_staff).glissando.thickness = 2
-#
-# abjad.override(violin_bow_beam_staff).note_head.no_ledgers = True
-# abjad.override(violin_bow_beam_staff).note_head.stencil = False
-# abjad.override(violin_bow_beam_staff).dots.staff_position = 8
-# abjad.override(violin_bow_beam_staff).flag.Y_offset = 3
-# abjad.override(violin_bow_beam_staff).script.staff_padding = 3
-# abjad.override(violin_bow_beam_staff).staff_symbol.transparent = True
-# abjad.override(violin_bow_beam_staff).stem.direction = Down
-# abjad.override(violin_bow_beam_staff).stem.length = 10
-# abjad.override(violin_bow_beam_staff).stem.stem_begin_position = 15.75
-# abjad.override(violin_bow_beam_staff).time_signature.stencil = False
-# abjad.override(violin_bow_beam_staff).beam.direction = Down
-# abjad.override(violin_bow_beam_staff).beam.positions = (0 , 0)
-# abjad.override(violin_bow_beam_staff).tuplet_bracket.positions = (-2 , -2)
-# abjad.override(violin_bow_beam_staff).rest.stencil = False
-# abjad.override(violin_bow_beam_staff).clef.stencil = False
-#
-# ###################
-# ###### viola ######
-# ###################
-#
-# abjad.override(viola_string_staff).dots.staff_position = -8
-# abjad.override(viola_string_staff).flag.Y_offset = -8.5
-# abjad.override(viola_string_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(viola_string_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(viola_string_staff).glissando.thickness = 2
-# abjad.override(viola_string_staff).script.staff_padding = 3
-# abjad.override(viola_string_staff).staff_symbol.transparent = True
-# abjad.override(viola_string_staff).stem.direction = Down
-# abjad.override(viola_string_staff).stem.length = 8
-# abjad.override(viola_string_staff).stem.stem_begin_position = -9
-# abjad.override(viola_string_staff).time_signature.stencil = False
-# abjad.override(viola_string_staff).rest.stencil = False
-#
-# abjad.override(viola_bow_staff).dots.stencil = False
-# abjad.override(viola_bow_staff).flag.stencil = False
-# abjad.override(viola_bow_staff).script.staff_padding = 3
-# abjad.override(viola_bow_staff).staff_symbol.transparent = True
-# abjad.override(viola_bow_staff).stem.stencil = False
-# abjad.override(viola_bow_staff).time_signature.stencil = False
-# abjad.override(viola_bow_staff).stem.direction = Down
-# abjad.override(viola_bow_staff).beam.stencil = False
-# abjad.override(viola_bow_staff).note_head.extra_offset = (0.05 , 0)
-# abjad.override(viola_bow_staff).rest.stencil = False
-# abjad.override(viola_bow_staff).script.staff_padding = 2.5
-# abjad.override(viola_bow_staff).tuplet_bracket.stencil = False
-# abjad.override(viola_bow_staff).tuplet_number.stencil = False
-# abjad.override(viola_bow_staff).note_head.Y_offset = -5
-# abjad.override(viola_bow_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(viola_bow_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(viola_bow_staff).glissando.thickness = 2
-#
-# abjad.override(viola_bow_beam_staff).note_head.no_ledgers = True
-# abjad.override(viola_bow_beam_staff).note_head.stencil = False
-# abjad.override(viola_bow_beam_staff).dots.staff_position = 8
-# abjad.override(viola_bow_beam_staff).flag.Y_offset = 3
-# abjad.override(viola_bow_beam_staff).script.staff_padding = 3
-# abjad.override(viola_bow_beam_staff).staff_symbol.transparent = True
-# abjad.override(viola_bow_beam_staff).stem.direction = Down
-# abjad.override(viola_bow_beam_staff).stem.length = 10
-# abjad.override(viola_bow_beam_staff).stem.stem_begin_position = 15.75
-# abjad.override(viola_bow_beam_staff).time_signature.stencil = False
-# abjad.override(viola_bow_beam_staff).beam.direction = Down
-# abjad.override(viola_bow_beam_staff).beam.positions = (0 , 0)
-# abjad.override(viola_bow_beam_staff).tuplet_bracket.positions = (-2 , -2)
-# abjad.override(viola_bow_beam_staff).rest.stencil = False
-# abjad.override(viola_bow_beam_staff).clef.stencil = False
-#
-# ###################
-# ###### cello ######
-# ###################
-#
-# abjad.override(cello_string_staff).dots.staff_position = -8
-# abjad.override(cello_string_staff).flag.Y_offset = -8.5
-# abjad.override(cello_string_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(cello_string_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(cello_string_staff).glissando.thickness = 2
-# abjad.override(cello_string_staff).script.staff_padding = 3
-# abjad.override(cello_string_staff).staff_symbol.transparent = True
-# abjad.override(cello_string_staff).stem.direction = Down
-# abjad.override(cello_string_staff).stem.length = 8
-# abjad.override(cello_string_staff).stem.stem_begin_position = -9
-# abjad.override(cello_string_staff).time_signature.stencil = False
-# abjad.override(cello_string_staff).rest.stencil = False
-#
-# abjad.override(cello_bow_staff).dots.stencil = False
-# abjad.override(cello_bow_staff).flag.stencil = False
-# abjad.override(cello_bow_staff).script.staff_padding = 3
-# abjad.override(cello_bow_staff).staff_symbol.transparent = True
-# abjad.override(cello_bow_staff).stem.stencil = False
-# abjad.override(cello_bow_staff).time_signature.stencil = False
-# abjad.override(cello_bow_staff).stem.direction = Down
-# abjad.override(cello_bow_staff).beam.stencil = False
-# abjad.override(cello_bow_staff).note_head.extra_offset = (0.05 , 0)
-# abjad.override(cello_bow_staff).rest.stencil = False
-# abjad.override(cello_bow_staff).script.staff_padding = 2.5
-# abjad.override(cello_bow_staff).tuplet_bracket.stencil = False
-# abjad.override(cello_bow_staff).tuplet_number.stencil = False
-# abjad.override(cello_bow_staff).note_head.Y_offset = -5
-# abjad.override(cello_bow_staff).glissando.bound_details__left__padding = 1.5
-# abjad.override(cello_bow_staff).glissando.bound_details__right__padding = 1.5
-# abjad.override(cello_bow_staff).glissando.thickness = 2
-#
-# abjad.override(cello_bow_beam_staff).note_head.no_ledgers = True
-# abjad.override(cello_bow_beam_staff).note_head.stencil = False
-# abjad.override(cello_bow_beam_staff).dots.staff_position = 8
-# abjad.override(cello_bow_beam_staff).flag.Y_offset = 3
-# abjad.override(cello_bow_beam_staff).script.staff_padding = 3
-# abjad.override(cello_bow_beam_staff).staff_symbol.transparent = True
-# abjad.override(cello_bow_beam_staff).stem.direction = Down
-# abjad.override(cello_bow_beam_staff).stem.length = 10
-# abjad.override(cello_bow_beam_staff).stem.stem_begin_position = 15.75
-# abjad.override(cello_bow_beam_staff).time_signature.stencil = False
-# abjad.override(cello_bow_beam_staff).beam.direction = Down
-# abjad.override(cello_bow_beam_staff).beam.positions = (0 , 0)
-# abjad.override(cello_bow_beam_staff).tuplet_bracket.positions = (-2 , -2)
-# abjad.override(cello_bow_beam_staff).rest.stencil = False
-# abjad.override(cello_bow_beam_staff).clef.stencil = False
-
 ################################################################################
 ############################## FINAL ASSEMBLY ##################################
 ################################################################################
@@ -2136,12 +1979,8 @@ abjad.attach(cello, cello_lh_staff[0][0])
 
 score_file = abjad.LilyPondFile.new(
     score,
-    global_staff_size=15,
-    includes=['ekmel.ily', 'stylesheet.ily'],
+    includes=['stylesheet.ily'],
     )
-score_file.header_block.composer = 'Gregory Rowland Evans'
-score_file.header_block.title = abjad.Markup("String Trio no.2").bold().fontsize(5)
-score_file.header_block.subtitle = 'for violin, viola, and violoncello'
 score_file.paper_block.top_margin = 20
 score_file.paper_block.bottom_margin = 20
 score_file.paper_block.system_count = 5
