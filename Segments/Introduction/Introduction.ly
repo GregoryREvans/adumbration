@@ -1,7 +1,7 @@
 \version "2.19.82"
 \language "english"
 
-\include "stylesheet.ily"
+\include "first_stylesheet.ily"
 
 \header {
     tagline = ##f
