@@ -9,10 +9,7 @@
 
 \layout {}
 
-\paper {
-    top-margin = #20
-    bottom-margin = #20
-}
+\paper {}
 
 \score {
     \new Score
@@ -6102,7 +6099,7 @@
                     \time 4/4
                     % [Staff measure 1] %! COMMENT_MEASURE_NUMBERS
                     \tempo 2=60
-                    c'1
+                    bqs1
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -6112,7 +6109,7 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 3] %! COMMENT_MEASURE_NUMBERS
-                    c'1
+                    cqs'1
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -6128,8 +6125,8 @@
                     \time 4/4
                     \times 4/5 {
                         % [Staff measure 6] %! COMMENT_MEASURE_NUMBERS
-                        ef'2
-                        dqs'2.
+                        dqs'2
+                        d'2.
                     }
                 }   % measure
                 {   % measure
@@ -6137,22 +6134,22 @@
                     % [Staff measure 7] %! COMMENT_MEASURE_NUMBERS
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 1
-                    d'8.
+                    dqf'8.
                     [
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
-                    d'8
+                    cs'8
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 1
-                    d'16
+                    cqs'16
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
-                    dqf'8
+                    c'8
                     ]
-                    ef'4
+                    dqs'4
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 0
-                    dqs'8
+                    d'8
                     [
                     ]
                 }   % measure
@@ -6164,8 +6161,8 @@
                 {   % measure
                     \time 5/8
                     % [Staff measure 9] %! COMMENT_MEASURE_NUMBERS
-                    d'4.
-                    d'4
+                    dqf'4.
+                    cs'4
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -6221,7 +6218,7 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 19] %! COMMENT_MEASURE_NUMBERS
-                    b'1
+                    bqf'1
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -6236,14 +6233,14 @@
                 {   % measure
                     \time 5/4
                     % [Staff measure 22] %! COMMENT_MEASURE_NUMBERS
-                    b'1
+                    bqs'1
                     ~
-                    b'4
+                    bqs'4
                 }   % measure
                 {   % measure
                     \time 4/4
                     % [Staff measure 23] %! COMMENT_MEASURE_NUMBERS
-                    bqs'1
+                    c''1
                 }   % measure
             }
         >>
@@ -11970,17 +11967,17 @@
                     \time 4/4
                     % [Staff measure 1] %! COMMENT_MEASURE_NUMBERS
                     \clef "varC"
-                    fs1
+                    gqf1
                 }   % measure
                 {   % measure
                     \time 3/4
                     % [Staff measure 2] %! COMMENT_MEASURE_NUMBERS
-                    gqf2.
+                    g2.
                 }   % measure
                 {   % measure
                     \time 4/4
                     % [Staff measure 3] %! COMMENT_MEASURE_NUMBERS
-                    fs1
+                    gqf1
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -11995,7 +11992,7 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 6] %! COMMENT_MEASURE_NUMBERS
-                    fs1
+                    gqf1
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -12017,9 +12014,9 @@
                 {   % measure
                     \time 5/4
                     % [Staff measure 10] %! COMMENT_MEASURE_NUMBERS
-                    bf1
+                    aqs1
                     ~
-                    bf4
+                    aqs4
                 }   % measure
                 {   % measure
                     \time 4/4
@@ -12034,9 +12031,9 @@
                 {   % measure
                     \time 5/8
                     % [Staff measure 13] %! COMMENT_MEASURE_NUMBERS
-                    bf2
+                    aqs2
                     ~
-                    bf8
+                    aqs8
                 }   % measure
                 {   % measure
                     \time 4/4
@@ -12072,7 +12069,7 @@
                 {   % measure
                     \time 3/4
                     % [Staff measure 20] %! COMMENT_MEASURE_NUMBERS
-                    fs2.
+                    fqs2.
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -12088,7 +12085,7 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 23] %! COMMENT_MEASURE_NUMBERS
-                    fs1
+                    gqf1
                 }   % measure
             }
         >>
@@ -18377,7 +18374,7 @@
                     \time 4/4
                     % [Staff measure 1] %! COMMENT_MEASURE_NUMBERS
                     \clef "bass"
-                    e1
+                    eqf1
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -18392,7 +18389,7 @@
                 {   % measure
                     \time 7/8
                     % [Staff measure 4] %! COMMENT_MEASURE_NUMBERS
-                    e2..
+                    eqf2..
                 }   % measure
                 {   % measure
                     \time 3/4
@@ -18402,7 +18399,7 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 6] %! COMMENT_MEASURE_NUMBERS
-                    e1
+                    eqs1
                 }   % measure
                 {   % measure
                     \time 7/8
@@ -18419,22 +18416,22 @@
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 10/11 {
                         % [Staff measure 9] %! COMMENT_MEASURE_NUMBERS
-                        c4
+                        cqs4
                         ~
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
-                        c16
+                        cqs16
                         [
                         ]
-                        cqs4.
+                        cs4.
                     }
                 }   % measure
                 {   % measure
                     \time 5/4
                     % [Staff measure 10] %! COMMENT_MEASURE_NUMBERS
-                    c2
+                    cqs2
                     c4.
-                    c4
+                    bqs,4
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 0
                     c8
@@ -18449,7 +18446,7 @@
                 {   % measure
                     \time 6/8
                     % [Staff measure 12] %! COMMENT_MEASURE_NUMBERS
-                    a,2.
+                    aqf,2.
                 }   % measure
                 {   % measure
                     \time 5/8
@@ -18460,12 +18457,12 @@
                 {   % measure
                     \time 4/4
                     % [Staff measure 14] %! COMMENT_MEASURE_NUMBERS
-                    aqf,1
+                    af,1
                 }   % measure
                 {   % measure
                     \time 3/4
                     % [Staff measure 15] %! COMMENT_MEASURE_NUMBERS
-                    c2.
+                    bqs,2.
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -18481,7 +18478,7 @@
                 {   % measure
                     \time 7/8
                     % [Staff measure 18] %! COMMENT_MEASURE_NUMBERS
-                    c2..
+                    cqs2..
                 }   % measure
                 {   % measure
                     \time 4/4
