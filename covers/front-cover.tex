@@ -1,0 +1,59 @@
+\documentclass[11pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[papersize={17in, 11in}, margin=0.5in]{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{xltxtra,fontspec,xunicode}
+\usetikzlibrary{calc}
+\defaultfontfeatures{Scale=MatchLowercase}
+\newlength{\drop}
+\pagenumbering{gobble}
+\parindent=0pt
+\setmainfont{Didot}
+%Adobe Garamond Pro Bold
+\begin{document}
+    \begin{titlepage}
+
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width = 3pt]
+                ($(current page.north west) + (1.0in,-1.0in)$)
+                rectangle
+                ($(current page.south east) + (-1.0in,1.0in)$);
+        \end{tikzpicture}
+
+        \drop=0.1\textheight
+        \centering
+
+        \vspace*{4\baselineskip}
+        {
+            \scalebox{1.6}[2]
+            {\fontsize{2.10cm}{1em}\selectfont
+                STRING \hspace{0.3pt} TRIO \hspace{1pt} no.2
+            }
+        }
+
+        \vspace*{8\baselineskip}
+
+        {
+            \scalebox{1.3}[2]
+            {\fontsize{0.8cm}{1em}\selectfont (for violin, viola, and violoncello)}
+        }
+
+        \vspace*{1\baselineskip}
+
+        {
+            \scalebox{1.2}[2]
+            {\fontsize{0.5cm}{1em}\selectfont 2018}
+        }
+
+        \vfill
+
+        {
+            \scalebox{1.4}[2]
+            {\fontsize{2cm}{1em}\selectfont Gregory \hspace{1pt} Rowland \hspace{1pt} Evans}
+        }
+
+        \vspace*{4\baselineskip}
+
+    \end{titlepage}
+\end{document}end{document}

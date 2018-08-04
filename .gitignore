@@ -1,4 +1,8 @@
 .DS_Store
 *.pdf
 *.eps
+*.aux
+*.log
+*gz
+__images__
 __pycache__
