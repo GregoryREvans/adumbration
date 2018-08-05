@@ -823,7 +823,7 @@ violin_bow_beam_maker_4 = TaleaMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 1, 1, 0],
     mask_indices=[2],
     mask_period=6,
-    beams=False,
+    beams=True,
 )
 ###
 violin_lh_maker_4 = NoteMusicMaker(

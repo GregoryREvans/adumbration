@@ -3,6 +3,7 @@
 *.eps
 *.aux
 *.log
-*gz
+*.gz
+*.png
 __images__
 __pycache__

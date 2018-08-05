@@ -5838,27 +5838,61 @@
                 {   % measure
                     \time 3/4
                     % [violin_beam_staff measure 15] %! COMMENT_MEASURE_NUMBERS
+                    \set stemLeftBeamCount = 0
+                    \set stemRightBeamCount = 2
                     d''''16
+                    [
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     d''''8
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 2
                     d''''16
+                    ]
                     d''''4.
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
                     d''''8
+                    [
+                    ]
                 }   % measure
                 {   % measure
                     \time 5/4
                     \tweak text #tuplet-number::calc-fraction-text
                     \times 20/21 {
                         % [violin_beam_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
                         d''''8.
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 2
                         d''''16
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         d''''16
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
                         d''''16
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 2
                         d''''16
+                        ]
                         d''''4.
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
                         d''''8
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
                         d''''8
+                        ]
                     }
                 }   % measure
                 {   % measure
@@ -5870,15 +5904,35 @@
                 {   % measure
                     \time 7/8
                     % [violin_beam_staff measure 18] %! COMMENT_MEASURE_NUMBERS
+                    \set stemLeftBeamCount = 0
+                    \set stemRightBeamCount = 2
                     d''''16
+                    [
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     d''''8.
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 2
                     d''''16
+                    \set stemLeftBeamCount = 2
+                    \set stemRightBeamCount = 1
                     d''''16
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     d''''8
+                    \set stemLeftBeamCount = 2
+                    \set stemRightBeamCount = 1
                     d''''16
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     d''''8
+                    \set stemLeftBeamCount = 2
+                    \set stemRightBeamCount = 1
                     d''''16
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
                     d''''8
+                    ]
                 }   % measure
                 {   % measure
                     \time 4/4
