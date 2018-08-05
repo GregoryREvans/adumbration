@@ -10,7 +10,7 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"Adumberation" }
+	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"Adumbration" }
 	subtitle = \markup {" "}
 	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
