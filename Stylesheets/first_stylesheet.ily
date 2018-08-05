@@ -1,6 +1,5 @@
 % 2018-07-17 19:54
 
-
 \version "2.19.82"
 \language "english"
 #(set-default-paper-size "11x17landscape")
@@ -12,7 +11,7 @@
 	tagline = ##f
 	breakbefore = ##t
 	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"Adumbration" }
-	subtitle = \markup {" "}
+	subtitle = \markup \override #'(font-name . "Didot") {"String Trio no.2"}
 	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
 	arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
 }
@@ -152,7 +151,7 @@ stringtab = {
         \override StaffSymbol.transparent = ##t
         \override Stem.direction = #down
         \override Stem.length = #10
-        \override Stem.stem-begin-position = #15.75
+        \override Stem.stem-begin-position = #15.975
         \override TimeSignature.stencil = ##f
         \override TupletBracket.positions = #'(1 . 1)
     }

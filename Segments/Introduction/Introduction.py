@@ -291,7 +291,9 @@ violin_bow_beam_staff = abjad.Staff(
     lilypond_type='BeamStaff',
     name='violin_beam_staff',
     )
-violin_lh_staff = abjad.Staff()
+violin_lh_staff = abjad.Staff(
+    name='violin_lh_staff',
+)
 
 ###################
 ###### viola ######
@@ -309,7 +311,9 @@ viola_bow_beam_staff = abjad.Staff(
     lilypond_type='BeamStaff',
     name='viola_beam_staff',
     )
-viola_lh_staff = abjad.Staff()
+viola_lh_staff = abjad.Staff(
+    name='viola_lh_staff',
+)
 
 ###################
 ###### cello ######
@@ -327,7 +331,9 @@ cello_bow_beam_staff = abjad.Staff(
     lilypond_type='BeamStaff',
     name='cello_beam_staff',
     )
-cello_lh_staff = abjad.Staff()
+cello_lh_staff = abjad.Staff(
+    name='cello_lh_staff',
+)
 
 ################### Time Signature Pairs
 

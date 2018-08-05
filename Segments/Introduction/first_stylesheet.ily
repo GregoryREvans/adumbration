@@ -151,7 +151,7 @@ stringtab = {
         \override StaffSymbol.transparent = ##t
         \override Stem.direction = #down
         \override Stem.length = #10
-        \override Stem.stem-begin-position = #15.75
+        \override Stem.stem-begin-position = #15.975
         \override TimeSignature.stencil = ##f
         \override TupletBracket.positions = #'(1 . 1)
     }
