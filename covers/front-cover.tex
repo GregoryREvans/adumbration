@@ -10,49 +10,49 @@
 \pagenumbering{gobble}
 \parindent=0pt
 \setmainfont{Didot}
+\usepackage{microtype}
 %Adobe Garamond Pro Bold
 \begin{document}
     \begin{titlepage}
 
         \begin{tikzpicture}[remember picture, overlay]
-            \draw[line width = 3pt]
+            \draw[line width = 2.5pt]
                 ($(current page.north west) + (1.0in,-1.0in)$)
                 rectangle
                 ($(current page.south east) + (-1.0in,1.0in)$);
         \end{tikzpicture}
 
         \drop=0.1\textheight
-        \centering
 
-        \vspace*{4\baselineskip}
+        \vspace*{5\baselineskip}
+\begin{center}
         {
-            \scalebox{1.6}[2]
-            {\fontsize{2.10cm}{1em}\selectfont
-                Adumbration
-            }
+          \scalebox{3.1}[4]
+        {\fontsize{2cm}{1em}\selectfont Adumbration}
+         
         }
-
-        \vspace*{8\baselineskip}
-
+\end{center}
+        \vspace*{4\baselineskip}
+\begin{center}
         {
             \scalebox{1.3}[2]
             {\fontsize{0.8cm}{1em}\selectfont (for violin, viola, and violoncello)}
         }
-
+\end{center}
         \vspace*{1\baselineskip}
-
+\begin{center}
         {
             \scalebox{1.2}[2]
             {\fontsize{0.5cm}{1em}\selectfont 2018}
         }
-
+\end{center}
         \vfill
-
+\begin{center}
         {
             \scalebox{1.4}[2]
             {\fontsize{2cm}{1em}\selectfont Gregory \hspace{1pt} Rowland \hspace{1pt} Evans}
         }
-
+\end{center}
         \vspace*{4\baselineskip}
 
     \end{titlepage}

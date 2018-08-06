@@ -335,8 +335,6 @@ cello_lh_staff = abjad.Staff(
     name='cello_lh_staff',
 )
 
-################### Time Signature Pairs
-
 ###################
 # time signatures #
 ###################

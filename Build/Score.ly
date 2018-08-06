@@ -7,6 +7,15 @@
 \include "ekmel.ily"
 \ekmelicStyle evans
 
+\header {
+	tagline = ##f
+	breakbefore = ##t
+	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"Adumbration" }
+	subtitle = \markup \override #'(font-name . "Didot") {"String Trio no.2"}
+	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
+}
+
 stringtab = {
 	\override Staff.Clef.stencil = #ly:text-interface::print
 	\override Staff.Clef.text = \markup { \general-align #Y #-0.02
@@ -173,4 +182,11 @@ stringtab = {
 	\fromproperty #'page:page-number-string "~"
     } ""
   }
+}
+
+\score{
+{
+\include "Introduction.ly"
+\include "transition_to_segment_A.ly"
+}
 }
