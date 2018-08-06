@@ -271,9 +271,18 @@ cello_notes_5 = [((x / 2.0) - 8) for x in cello_random_walk_5]
 # time signatures #
 ###################
 
-time_signature_staff_1 = abjad.Staff(lilypond_type='TimeSignatureContext')
-time_signature_staff_2 = abjad.Staff(lilypond_type='TimeSignatureContext')
-time_signature_staff_3 = abjad.Staff(lilypond_type='TimeSignatureContext')
+time_signature_staff_1 = abjad.Staff(
+    lilypond_type='TimeSignatureContext',
+    name='TimeSignatureContext1',
+    )
+time_signature_staff_2 = abjad.Staff(
+    lilypond_type='TimeSignatureContext',
+    name='TimeSignatureContext2',
+    )
+time_signature_staff_3 = abjad.Staff(
+    lilypond_type='TimeSignatureContext',
+    name='TimeSignatureContext3',
+    )
 
 ###################
 ##### violin ######
@@ -1556,13 +1565,13 @@ _apply_bow_numerators_and_tech(staff=cello_bow_staff, nums=cello_bow_nums, tech=
 ############################## FINAL ASSEMBLY ##################################
 ################################################################################
 
-violin_staff = abjad.StaffGroup(lilypond_type='StaffGroup')
+violin_staff = abjad.StaffGroup(lilypond_type='StaffGroup', name='violin',)
 violin_staff.extend([violin_string_staff, violin_bow_staff, violin_bow_beam_staff, violin_lh_staff])
 
-viola_staff = abjad.StaffGroup(lilypond_type='StaffGroup')
+viola_staff = abjad.StaffGroup(lilypond_type='StaffGroup', name='viola',)
 viola_staff.extend([viola_string_staff, viola_bow_staff, viola_bow_beam_staff, viola_lh_staff])
 
-cello_staff = abjad.StaffGroup(lilypond_type='StaffGroup')
+cello_staff = abjad.StaffGroup(lilypond_type='StaffGroup', name='cello',)
 cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, cello_lh_staff])
 
 ################################################################################
