@@ -1498,18 +1498,18 @@ for music_maker in [
 ################################ ATTACHMENTS ###################################
 ################################################################################
 
-violin_bow_tech = ['ordinario', ]
-viola_bow_tech = ['ordinario', ]
-cello_bow_tech = ['ordinario', ]
-string_tech = ['ordinario', ]
+violin_bow_tech = ['jete', 'jete', 'jete', 'ordinario', 'jete', 'ordinario', 'jete', 'jete', ]
+viola_bow_tech = ['jete', 'jete', 'ordinario', 'jete', 'ordinario', 'jete', 'ordinario', 'jete', 'jete',]
+cello_bow_tech = ['jete', 'jete', 'jete', 'ordinario', 'jete', 'ordinario', 'jete', 'jete', 'ordinario', ]
+string_tech = ['ordinario', 'ordinario', 'ordinario', 'circular', 'circular', 'ordinario', 'circular', 'ordinario', 'ordinario', 'circular', ]
 
-violin_bow_nums = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 3, 4, 3, 2, 2, 1, 0, 4, 0, 4, 0, 4, 0, 4, 3, 2, 3, 1, 2, 0, 4, 0, 4, 0, 4, 0, 1, 0, 1, 0,]
-viola_bow_nums = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 3, 4, 3, 2, 2, 1, 0, 4, 0, 4, 0, 4, 0, 4, 3, 2, 3, 1, 2, 0, 4, 0, 4, 0, 4, 0, 1, 0, 1, 0,]
-cello_bow_nums = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 3, 4, 3, 2, 2, 1, 0, 4, 0, 4, 0, 4, 0, 4, 3, 2, 3, 1, 2, 0, 4, 0, 4, 0, 4, 0, 1, 0, 1, 0,]
+violin_bow_nums = [0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 3, 1, 3, 1, 4, 0, 4, 0, 4, 1, 3, 0,]
+viola_bow_nums = [0, 4, 0, 4, 0, 4, 0, 4, 1, 3, 0, 0, 4, 0, 4, 0, 3, 1, 3, 1, 4, 0, 4, ]
+cello_bow_nums = [0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 1, 3, 0, 0, 3, 1, 3, 1, 4, 0, 4, 0, 4,]
 
-violin_string_nums = [0, 1, 5, 4, 2, 3, 1, 2, 1, 3, 5, 4, 3, 2, 0, 1, 0, 3, 5, 4, 3, 5, 5, 5]
-viola_string_nums = [5, 5, 5, 3, 4, 5, 3, 0, 1, 0, 2, 3, 4, 5, 3, 1, 2, 1, 3, 2, 4, 5, 1, 0]
-cello_string_nums = [0, 1, 5, 4, 2, 3, 5, 4, 3, 2, 0, 1, 0, 3, 1, 2, 1, 3, 5, 4, 3, 5, 5, 5]
+violin_string_nums = [1, 2, 4, 3, 2, 1, 5, 0, 2, 4, 1, 0, 1, 1, 1, 4, 3, 5, 2, 4, ]
+viola_string_nums = [4, 2, 5, 3, 4, 1, 1, 0, 1, 1, 1, 4, 2, 0, 5, 1, 2, 3, 4, 2, 1, ]
+cello_string_nums = [4, 2, 3, 5, 4, 3, 2, 0, 0, 1, 5, 1, 0, 3, 3, 5, 5, 1, 2, 1, 3, 5, 4,]
 
 def cyc(lst):
     count = 0
@@ -1581,8 +1581,11 @@ cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, c
 score = abjad.Score()
 score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viola_staff, time_signature_staff_3, cello_staff, ])
 
-metro = abjad.MetronomeMark((1, 2), 60)
-abjad.attach(metro, violin_lh_staff[0][0])
+mark = abjad.RehearsalMark(number=1)
+abjad.attach(mark, time_signature_staff_1[0][0])
+scheme_mark = abjad.Scheme('format-mark-box-alphabet')
+abjad.setting(score).markFormatter = scheme_mark
+
 violin = abjad.Violin()
 abjad.attach(violin, violin_lh_staff[0][0])
 first_violin_leaf = abjad.select(violin_bow_staff).leaves()[0]
@@ -1631,7 +1634,7 @@ abjad.SegmentMaker.comment_measure_numbers(score)
 
 score_file = abjad.LilyPondFile.new(
     score,
-    includes=['first_stylesheet.ily'],
+    includes=['internal_stylesheet.ily'],
     )
 # score_file.paper_block.top_margin = 20
 # score_file.paper_block.bottom_margin = 20
@@ -1639,9 +1642,9 @@ score_file = abjad.LilyPondFile.new(
 ###################
 
 #print(format(score_file))
-directory = '/Users/evansdsg2/Scores/trio/Segments/Introduction'
-pdf_path = f'{directory}/Introduction.pdf'
-path = pathlib.Path('Introduction.pdf')
+directory = '/Users/evansdsg2/Scores/trio/Segments/Segment_A'
+pdf_path = f'{directory}/Segment_A.pdf'
+path = pathlib.Path('Segment_A.pdf')
 if path.exists():
     print(f'Removing {pdf_path} ...')
     path.unlink()
