@@ -27,12 +27,36 @@ stringtab = {
 	ragged-last = ##t
     %ragged-right = ##t
     left-margin = #15
-    \context {
+	\context {
         \name TimeSignatureContext
         \type Engraver_group
         \numericTimeSignature
         \consists Axis_group_engraver
+		\consists Bar_number_engraver
         \consists Time_signature_engraver
+		\consists Mark_engraver
+		\consists Metronome_mark_engraver
+		\override BarNumber.Y-extent = #'(0 . 0)
+		\override BarNumber.Y-offset = 0
+		\override BarNumber.extra-offset = #'(-6 . 0)
+		\override BarNumber.font-name = "Didot Italic"
+		\override BarNumber.font-size = 1
+		\override BarNumber.padding = 4
+		\override BarNumber.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
+		\override MetronomeMark.X-extent = #'(0 . 0)
+		\override MetronomeMark.Y-extent = #'(0 . 0)
+		\override MetronomeMark.break-align-symbols = #'(left-edge)
+		\override MetronomeMark.extra-offset = #'(0 . 4)
+		\override MetronomeMark.font-size = 3
+		\override RehearsalMark.X-extent = #'(0 . 0)
+		\override RehearsalMark.X-offset = 6
+		\override RehearsalMark.Y-offset = -2.25
+		\override RehearsalMark.break-align-symbols = #'(time-signature)
+		\override RehearsalMark.break-visibility = #end-of-line-invisible
+		\override RehearsalMark.font-name = "Didot"
+		\override RehearsalMark.font-size = 8
+		\override RehearsalMark.outside-staff-priority = 500
+		\override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.X-offset = #ly:self-alignment-interface::x-aligned-on-self
         \override TimeSignature.Y-extent = #'(0 . 0)
@@ -45,6 +69,7 @@ stringtab = {
     \context {
         \Score
         \remove Bar_number_engraver
+		\remove Mark_engraver
         \accepts TimeSignatureContext
         \override Beam.breakable = ##t
 		\override Glissando.breakable = ##t

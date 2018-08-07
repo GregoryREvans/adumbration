@@ -36,12 +36,37 @@ stringtab = {
 	ragged-last = ##t
     %ragged-right = ##t
     left-margin = #15
-    \context {
+	\context {
         \name TimeSignatureContext
         \type Engraver_group
         \numericTimeSignature
         \consists Axis_group_engraver
+		\consists Bar_number_engraver
         \consists Time_signature_engraver
+		\consists Mark_engraver
+		\consists Metronome_mark_engraver
+		\override BarNumber.Y-extent = #'(0 . 0)
+		\override BarNumber.Y-offset = 0
+		\override BarNumber.extra-offset = #'(-6 . 0)
+		%\override BarNumber.font-name = "Didot"
+		\override BarNumber.stencil = #(make-stencil-boxer 0.1 0.7 ly:text-interface::print)
+		\override BarNumber.font-size = 1
+		\override BarNumber.padding = 4
+		\override MetronomeMark.X-extent = #'(0 . 0)
+		\override MetronomeMark.Y-extent = #'(0 . 0)
+		\override MetronomeMark.break-align-symbols = #'(left-edge)
+		\override MetronomeMark.extra-offset = #'(0 . 4)
+		\override MetronomeMark.font-size = 3
+		\override RehearsalMark.stencil = #(make-stencil-circler 0.1 0.7 ly:text-interface::print)
+		\override RehearsalMark.X-extent = #'(0 . 0)
+		\override RehearsalMark.X-offset = 6
+		\override RehearsalMark.Y-offset = -2.25
+		\override RehearsalMark.break-align-symbols = #'(time-signature)
+		\override RehearsalMark.break-visibility = #end-of-line-invisible
+		\override RehearsalMark.font-name = "Didot"
+		\override RehearsalMark.font-size = 8
+		\override RehearsalMark.outside-staff-priority = 500
+		\override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)
         \override TimeSignature.X-offset = #ly:self-alignment-interface::x-aligned-on-self
         \override TimeSignature.Y-extent = #'(0 . 0)
@@ -54,6 +79,7 @@ stringtab = {
     \context {
         \Score
         \remove Bar_number_engraver
+		\remove Mark_engraver
         \accepts TimeSignatureContext
         \override Beam.breakable = ##t
 		\override Glissando.breakable = ##t
@@ -171,14 +197,14 @@ stringtab = {
     ""
     \concat {
       "~"
-	  \override #'(font-name . "Didot") \fontsize #2
+	  \fontsize #2
 	  \fromproperty #'page:page-number-string "~"
      }
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
-	\concat { "~" \override #'(font-name . "Didot") \fontsize #2
+	\concat { "~" \fontsize #2
 	\fromproperty #'page:page-number-string "~"
     } ""
   }
@@ -188,5 +214,12 @@ stringtab = {
 {
 \include "Introduction.ly"
 \include "transition_to_segment_A.ly"
+\include "Segment_A.ly"
+\include "transition_to_segment_B.ly"
+\include "Segment_B.ly"
+\include "transition_to_segment_C.ly"
+\include "Segment_C.ly"
+\include "transition_to_conclusion.ly"
+\include "Conclusion.ly"
 }
 }

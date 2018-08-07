@@ -14,16 +14,16 @@
 \score {
     \new Score
     <<
-        \new TimeSignatureContext
+        \context TimeSignatureContext = "TimeSignatureContext1"
         {
             {   % measure
                 \time 5/8
-                % [TimeSignatureContext measure 1] %! COMMENT_MEASURE_NUMBERS
+                % [TimeSignatureContext1 measure 1] %! COMMENT_MEASURE_NUMBERS
                 r2
                 r8
             }   % measure
         }
-        \new StaffGroup
+        \context StaffGroup = "violin"
         <<
             \context StringStaff = "violin_string_staff"
             {
@@ -124,16 +124,16 @@
                 }   % measure
             }
         >>
-        \new TimeSignatureContext
+        \context TimeSignatureContext = "TimeSignatureContext2"
         {
             {   % measure
                 \time 5/8
-                % [TimeSignatureContext measure 1] %! COMMENT_MEASURE_NUMBERS
+                % [TimeSignatureContext2 measure 1] %! COMMENT_MEASURE_NUMBERS
                 r2
                 r8
             }   % measure
         }
-        \new StaffGroup
+        \context StaffGroup = "viola"
         <<
             \context StringStaff = "viola_string_staff"
             {
@@ -235,16 +235,16 @@
                 }   % measure
             }
         >>
-        \new TimeSignatureContext
+        \context TimeSignatureContext = "TimeSignatureContext3"
         {
             {   % measure
                 \time 5/8
-                % [TimeSignatureContext measure 1] %! COMMENT_MEASURE_NUMBERS
+                % [TimeSignatureContext3 measure 1] %! COMMENT_MEASURE_NUMBERS
                 r2
                 r8
             }   % measure
         }
-        \new StaffGroup
+        \context StaffGroup = "cello"
         <<
             \context StringStaff = "cello_string_staff"
             {
