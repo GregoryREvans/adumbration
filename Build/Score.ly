@@ -10,10 +10,10 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"Adumbration" }
+	title =  \markup \override #'(font-name . "Didot") \fontsize #15 \bold\center-column {"Adumbration" }
 	subtitle = \markup \override #'(font-name . "Didot") {"String Trio no.2"}
 	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
+	arranger = \markup \override #'(font-name . "Didot") \fontsize #2.5 {"Gregory Rowland Evans"}
 }
 
 stringtab = {
@@ -178,6 +178,10 @@ stringtab = {
         \override Stem.direction = #down
         \override Stem.length = #10
         \override Stem.stem-begin-position = #15.975
+		\override StemTremolo.beam-width = 1.5
+		\override StemTremolo.flag-count = 4
+		\override StemTremolo.slope = 0.5
+		\override StemTremolo.style = #'default
         \override TimeSignature.stencil = ##f
         \override TupletBracket.positions = #'(1 . 1)
     }
@@ -190,7 +194,11 @@ stringtab = {
 }
 
 \paper {
-	top-margin = .90\in
+
+	top-margin = 1.5\cm
+	bottom-margin = 1.5\cm
+
+	%top-margin = .90\in
 	oddHeaderMarkup = \markup ""
 	evenHeaderMarkup = \markup ""
 	oddFooterMarkup = \markup \fill-line {
@@ -211,15 +219,15 @@ stringtab = {
 }
 
 \score{
-{
-\include "Introduction.ly"
-\include "transition_to_segment_A.ly"
-\include "Segment_A.ly"
-\include "transition_to_segment_B.ly"
-\include "Segment_B.ly"
-\include "transition_to_segment_C.ly"
-\include "Segment_C.ly"
-\include "transition_to_conclusion.ly"
-\include "Conclusion.ly"
-}
+	{
+	\include "Introduction.ly"
+	\include "transition_to_segment_A.ly"
+	\include "Segment_A.ly"
+	%{ \include "transition_to_segment_B.ly"
+	\include "Segment_B.ly"
+	\include "transition_to_segment_C.ly"
+	\include "Segment_C.ly"
+	\include "transition_to_conclusion.ly"
+	\include "Conclusion.ly" %}
+	}
 }

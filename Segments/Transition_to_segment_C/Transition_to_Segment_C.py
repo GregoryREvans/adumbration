@@ -1578,7 +1578,7 @@ cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, c
 ############################### FILE CLEANUP ###################################
 ################################################################################
 
-score = abjad.Score()
+score = abjad.Score(name='Adumbration Score')
 score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viola_staff, time_signature_staff_3, cello_staff, ])
 
 metro = abjad.MetronomeMark((1, 2), 60)
@@ -1594,6 +1594,8 @@ for rest in abjad.select(violin_string_staff).components(abjad.Rest):
     abjad.override(rest).dots.transparent = True
 for rest in abjad.select(violin_bow_beam_staff).components(abjad.Rest):
     abjad.override(rest).dots.transparent = True
+barline = abjad.BarLine('||')
+abjad.attach(barline, violin_string_staff[-1][-1])
 
 viola = abjad.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])

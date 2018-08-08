@@ -771,23 +771,25 @@ cello_string_maker_3 = TaleaMusicMaker(
     beams=False,
 )
 ###
-cello_bow_maker_3 = EvenDivisionMusicMaker(
-    denominators=[16, 16, 32, 16, 8, 16, 4, 8],
+cello_bow_maker_3 = TaleaMusicMaker(
+    counts=[1, 1, 1, 3, 1, 1, 2, 3, 1, 6, 2, 1, 2],
+    denominator=16,
+    pitches=[38],
+    clef='percussion',
+    extra_counts_per_division=[0, 1, 0, 0],
     mask_indices=[0],
     mask_period=2,
-    pitches=[0],
-    extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
-    clef='percussion',
     beams=True,
 )
 ###
-cello_bow_beam_maker_3 = EvenDivisionMusicMaker(
-    denominators=[16, 16, 32, 16, 8, 16, 4, 8],
+cello_bow_beam_maker_3 = TaleaMusicMaker(
+    counts=[1, 1, 1, 3, 1, 1, 2, 3, 1, 6, 2, 1, 2],
+    denominator=16,
+    pitches=[38],
+    clef='percussion',
+    extra_counts_per_division=[0, 1, 0, 0],
     mask_indices=[0],
     mask_period=2,
-    pitches=[38],
-    extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
-    clef='percussion',
     beams=True,
 )
 ###
@@ -1562,6 +1564,45 @@ _apply_bow_numerators_and_tech(staff=viola_bow_staff, nums=viola_bow_nums, tech=
 _apply_bow_numerators_and_tech(staff=cello_bow_staff, nums=cello_bow_nums, tech=cello_bow_tech)
 
 ################################################################################
+################################## Dynamics ####################################
+################################################################################
+
+def add_dynamic_attachments(music):
+    runs = abjad.select(music).runs()
+    for run in runs:
+        if 16 > len(run):
+            abjad.attach(abjad.Hairpin('niente < ff'), run)
+        elif 16 < len(run) and len(run) > 30:
+            abjad.attach(abjad.Dynamic('f'), run[0])
+            abjad.attach(abjad.Hairpin('>'), run[:5])
+            abjad.attach(abjad.Dynamic('mf'), run[4])
+            abjad.attach(abjad.Hairpin('<'), run[4:9])
+            abjad.attach(abjad.Dynamic('ff'), run[8])
+            abjad.attach(abjad.Hairpin('>'), run[8:12])
+            abjad.attach(abjad.Dynamic('mp'), run[11])
+            abjad.attach(abjad.Hairpin('<'), run[11:16])
+            abjad.attach(abjad.Dynamic('fff'), run[15])
+            abjad.attach(abjad.Hairpin('>'), run[15:])
+            abjad.attach(abjad.Dynamic('f'), run[-12])
+            abjad.attach(abjad.Hairpin('>'), run[-12:])
+            abjad.attach(abjad.Dynamic('mf'), run[-1])
+        else:
+            abjad.attach(abjad.Dynamic('ff'), run[0])
+            abjad.attach(abjad.Hairpin('>'), run[:5])
+            abjad.attach(abjad.Dynamic('p'), run[4])
+            abjad.attach(abjad.Hairpin('<'), run[4:7])
+            abjad.attach(abjad.Dynamic('fff'), run[6])
+            abjad.attach(abjad.Hairpin('>'), run[6:9])
+            abjad.attach(abjad.Dynamic('f'), run[8])
+            abjad.attach(abjad.Hairpin('>'), run[8:])
+            abjad.attach(abjad.Dynamic('p'), run[-1])
+    return music
+
+add_dynamic_attachments(violin_bow_beam_staff)
+add_dynamic_attachments(viola_bow_beam_staff)
+add_dynamic_attachments(cello_bow_beam_staff)
+
+################################################################################
 ############################## FINAL ASSEMBLY ##################################
 ################################################################################
 
@@ -1578,7 +1619,7 @@ cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, c
 ############################### FILE CLEANUP ###################################
 ################################################################################
 
-score = abjad.Score()
+score = abjad.Score(name='Adumbration Score')
 score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viola_staff, time_signature_staff_3, cello_staff, ])
 
 metro = abjad.MetronomeMark((1, 2), 60)
@@ -1594,6 +1635,8 @@ for rest in abjad.select(violin_string_staff).components(abjad.Rest):
     abjad.override(rest).dots.transparent = True
 for rest in abjad.select(violin_bow_beam_staff).components(abjad.Rest):
     abjad.override(rest).dots.transparent = True
+barline = abjad.BarLine('||')
+abjad.attach(barline, violin_string_staff[-1][-1])
 
 viola = abjad.Viola()
 abjad.attach(viola, viola_lh_staff[0][0])
