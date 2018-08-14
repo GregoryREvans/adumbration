@@ -12,6 +12,7 @@ class EvenDivisionMusicMaker:
         extra_counts_per_division=[0],
         beams=False,
         clef='treble',
+        #tag='None',
         ):
         self.denominators = denominators
         self.extra_counts_per_division = extra_counts_per_division
@@ -20,6 +21,7 @@ class EvenDivisionMusicMaker:
         self.pitches = pitches
         self.beams = beams
         self.clef = abjad.Clef(clef)
+        #self.tag=tag
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -49,6 +51,7 @@ class EvenDivisionMusicMaker:
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
             tuplet_specifier=tuplet_specifier,
+            #tag=self.tag,
             )
         selections = even_division_rhythm_maker(time_signature_pairs)
         music = abjad.Staff(selections)

@@ -32,6 +32,9 @@ stringtab = {
 
 \layout {
     \accidentalStyle forget
+	%\accidentalStyle modern
+	%\accidentalStyle modern-cautionary
+	%\accidentalStyle modern
     indent = #0
 	ragged-last = ##t
     %ragged-right = ##t

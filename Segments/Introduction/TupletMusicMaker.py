@@ -11,6 +11,7 @@ class TupletMusicMaker:
         pitches,
         beams=False,
         clef='treble',
+        #tag='None',
         ):
         self.tuplet_ratio = tuplet_ratio
         self.mask_indices=mask_indices
@@ -18,6 +19,7 @@ class TupletMusicMaker:
         self.pitches = pitches
         self.beams = beams
         self.clef = abjad.Clef(clef)
+        #self.tag=tag
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -51,6 +53,7 @@ class TupletMusicMaker:
             # ...equiv of this...I think it is duration specifier
             # but since pretty much everything defaults to None...its okay?
             tuplet_specifier=tuplet_specifier,
+            #tag=self.tag,
             )
         selections = tuplet_rhythm_maker(time_signature_pairs)
         music = abjad.Staff(selections)

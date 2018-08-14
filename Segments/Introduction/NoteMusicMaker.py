@@ -10,12 +10,14 @@ class NoteMusicMaker:
         pitches,
         beams=False,
         clef='treble',
+        #tag='None',
         ):
         self.mask_indices=mask_indices
         self.mask_period=mask_period
         self.pitches = pitches
         self.beams=beams
         self.clef = abjad.Clef(clef)
+        #self.tag=tag
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -38,6 +40,7 @@ class NoteMusicMaker:
         note_rhythm_maker = rmakers.NoteRhythmMaker(
             beam_specifier=beam_specifier,
             division_masks=division_masks,
+            #tag=self.tag,
             )
         selections = note_rhythm_maker(time_signature_pairs)
         music = abjad.Staff(selections)

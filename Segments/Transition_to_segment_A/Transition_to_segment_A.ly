@@ -29,6 +29,81 @@
                 % [violin_string_staff measure 1] %! COMMENT_MEASURE_NUMBERS
                 \once \override Dots.transparent = ##t
                 r8
+                ^ \markup {
+                    \score
+                        {
+                            \new Score
+                            \with
+                            {
+                                \override SpacingSpanner.spacing-increment = #0.5
+                                proportionalNotationDuration = ##f
+                            }
+                            <<
+                                \new RhythmicStaff
+                                \with
+                                {
+                                    \remove Time_signature_engraver
+                                    \remove Staff_symbol_engraver
+                                    \override Stem.direction = #up
+                                    \override Stem.length = #5
+                                    \override TupletBracket.bracket-visibility = ##t
+                                    \override TupletBracket.direction = #up
+                                    \override TupletBracket.minimum-length = #4
+                                    \override TupletBracket.padding = #1.25
+                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                    \override TupletNumber.font-size = #0
+                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                    tupletFullLength = ##t
+                                }
+                                {
+                                    c4.
+                                }
+                            >>
+                            \layout {
+                                indent = #0
+                                ragged-right = ##t
+                            }
+                        }
+                    =
+                    \hspace
+                        #-0.5
+                    \score
+                        {
+                            \new Score
+                            \with
+                            {
+                                \override SpacingSpanner.spacing-increment = #0.5
+                                proportionalNotationDuration = ##f
+                            }
+                            <<
+                                \new RhythmicStaff
+                                \with
+                                {
+                                    \remove Time_signature_engraver
+                                    \remove Staff_symbol_engraver
+                                    \override Stem.direction = #up
+                                    \override Stem.length = #5
+                                    \override TupletBracket.bracket-visibility = ##t
+                                    \override TupletBracket.direction = #up
+                                    \override TupletBracket.minimum-length = #4
+                                    \override TupletBracket.padding = #1.25
+                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                    \override TupletNumber.font-size = #0
+                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                    tupletFullLength = ##t
+                                }
+                                {
+                                    c4
+                                }
+                            >>
+                            \layout {
+                                indent = #0
+                                ragged-right = ##t
+                            }
+                        }
+                    }
                 \times 2/3 {
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -72,8 +147,6 @@
             \context BowStaff = "violin_bow_staff"
             {
                 % [violin_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                \set BowStaff.instrumentName =
-                \markup { Vln. }
                 \set BowStaff.shortInstrumentName =
                 \markup { Vln. }
                 r8
@@ -88,8 +161,8 @@
                                 1
                     }
                 c'4
-                -\accent
-                ^\downbow
+                - \accent
+                ^ \downbow
                 \glissando
                 \once \override NoteHead.Y-offset = 2.0
                 \once \override NoteHead.stencil = #ly:text-interface::print
@@ -119,6 +192,7 @@
             \context Staff = "violin_lh_staff"
             {
                 % [violin_lh_staff measure 1] %! COMMENT_MEASURE_NUMBERS
+                \tempo " " 4=80
                 r8
                 c'2
                 r8
@@ -139,6 +213,81 @@
                 % [viola_string_staff measure 1] %! COMMENT_MEASURE_NUMBERS
                 \once \override Dots.transparent = ##t
                 r8
+                ^ \markup {
+                    \score
+                        {
+                            \new Score
+                            \with
+                            {
+                                \override SpacingSpanner.spacing-increment = #0.5
+                                proportionalNotationDuration = ##f
+                            }
+                            <<
+                                \new RhythmicStaff
+                                \with
+                                {
+                                    \remove Time_signature_engraver
+                                    \remove Staff_symbol_engraver
+                                    \override Stem.direction = #up
+                                    \override Stem.length = #5
+                                    \override TupletBracket.bracket-visibility = ##t
+                                    \override TupletBracket.direction = #up
+                                    \override TupletBracket.minimum-length = #4
+                                    \override TupletBracket.padding = #1.25
+                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                    \override TupletNumber.font-size = #0
+                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                    tupletFullLength = ##t
+                                }
+                                {
+                                    c4.
+                                }
+                            >>
+                            \layout {
+                                indent = #0
+                                ragged-right = ##t
+                            }
+                        }
+                    =
+                    \hspace
+                        #-0.5
+                    \score
+                        {
+                            \new Score
+                            \with
+                            {
+                                \override SpacingSpanner.spacing-increment = #0.5
+                                proportionalNotationDuration = ##f
+                            }
+                            <<
+                                \new RhythmicStaff
+                                \with
+                                {
+                                    \remove Time_signature_engraver
+                                    \remove Staff_symbol_engraver
+                                    \override Stem.direction = #up
+                                    \override Stem.length = #5
+                                    \override TupletBracket.bracket-visibility = ##t
+                                    \override TupletBracket.direction = #up
+                                    \override TupletBracket.minimum-length = #4
+                                    \override TupletBracket.padding = #1.25
+                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                    \override TupletNumber.font-size = #0
+                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                    tupletFullLength = ##t
+                                }
+                                {
+                                    c4
+                                }
+                            >>
+                            \layout {
+                                indent = #0
+                                ragged-right = ##t
+                            }
+                        }
+                    }
                 \times 2/3 {
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -181,8 +330,6 @@
             \context BowStaff = "viola_bow_staff"
             {
                 % [viola_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                \set BowStaff.instrumentName =
-                \markup { Vla. }
                 \set BowStaff.shortInstrumentName =
                 \markup { Vla. }
                 r8
@@ -197,8 +344,8 @@
                                 1
                     }
                 c'4
-                -\accent
-                ^\downbow
+                - \accent
+                ^ \downbow
                 \glissando
                 \once \override NoteHead.Y-offset = 2.0
                 \once \override NoteHead.stencil = #ly:text-interface::print
@@ -251,6 +398,81 @@
                 % [cello_string_staff measure 1] %! COMMENT_MEASURE_NUMBERS
                 \once \override Dots.transparent = ##t
                 r8
+                ^ \markup {
+                    \score
+                        {
+                            \new Score
+                            \with
+                            {
+                                \override SpacingSpanner.spacing-increment = #0.5
+                                proportionalNotationDuration = ##f
+                            }
+                            <<
+                                \new RhythmicStaff
+                                \with
+                                {
+                                    \remove Time_signature_engraver
+                                    \remove Staff_symbol_engraver
+                                    \override Stem.direction = #up
+                                    \override Stem.length = #5
+                                    \override TupletBracket.bracket-visibility = ##t
+                                    \override TupletBracket.direction = #up
+                                    \override TupletBracket.minimum-length = #4
+                                    \override TupletBracket.padding = #1.25
+                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                    \override TupletNumber.font-size = #0
+                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                    tupletFullLength = ##t
+                                }
+                                {
+                                    c4.
+                                }
+                            >>
+                            \layout {
+                                indent = #0
+                                ragged-right = ##t
+                            }
+                        }
+                    =
+                    \hspace
+                        #-0.5
+                    \score
+                        {
+                            \new Score
+                            \with
+                            {
+                                \override SpacingSpanner.spacing-increment = #0.5
+                                proportionalNotationDuration = ##f
+                            }
+                            <<
+                                \new RhythmicStaff
+                                \with
+                                {
+                                    \remove Time_signature_engraver
+                                    \remove Staff_symbol_engraver
+                                    \override Stem.direction = #up
+                                    \override Stem.length = #5
+                                    \override TupletBracket.bracket-visibility = ##t
+                                    \override TupletBracket.direction = #up
+                                    \override TupletBracket.minimum-length = #4
+                                    \override TupletBracket.padding = #1.25
+                                    \override TupletBracket.shorten-pair = #'(-1 . -1.5)
+                                    \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
+                                    \override TupletNumber.font-size = #0
+                                    \override TupletNumber.text = #tuplet-number::calc-fraction-text
+                                    tupletFullLength = ##t
+                                }
+                                {
+                                    c4
+                                }
+                            >>
+                            \layout {
+                                indent = #0
+                                ragged-right = ##t
+                            }
+                        }
+                    }
                 \times 2/3 {
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -293,8 +515,6 @@
             \context BowStaff = "cello_bow_staff"
             {
                 % [cello_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                \set BowStaff.instrumentName =
-                \markup { Vc. }
                 \set BowStaff.shortInstrumentName =
                 \markup { Vc. }
                 r8
@@ -309,8 +529,8 @@
                                 1
                     }
                 c'4
-                -\accent
-                ^\downbow
+                - \accent
+                ^ \downbow
                 \glissando
                 \once \override NoteHead.Y-offset = 2.0
                 \once \override NoteHead.stencil = #ly:text-interface::print

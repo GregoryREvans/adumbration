@@ -1485,8 +1485,6 @@
                     \time 4/4
                     \times 16/17 {
                         % [violin_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                        \set BowStaff.instrumentName =
-                        \markup { Vln. }
                         \set BowStaff.shortInstrumentName =
                         \markup { Vln. }
                         \set BowStaff.instrumentName =
@@ -1504,7 +1502,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -1520,7 +1518,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1535,7 +1533,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1550,7 +1548,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1565,7 +1563,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1580,7 +1578,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1595,7 +1593,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1610,7 +1608,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1625,7 +1623,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1640,7 +1638,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1655,7 +1653,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1670,7 +1668,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1685,7 +1683,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1700,7 +1698,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1715,7 +1713,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -1730,7 +1728,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -1745,7 +1743,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         ]
                         \glissando
                     }
@@ -1781,7 +1779,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -1853,7 +1851,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -1868,7 +1866,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -1883,7 +1881,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -1898,7 +1896,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -1913,7 +1911,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -1928,7 +1926,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -1948,7 +1946,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 1
@@ -1964,7 +1962,7 @@
                                     1
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -1993,7 +1991,7 @@
                                     2
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -2008,7 +2006,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -2023,7 +2021,7 @@
                                     4
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -2038,7 +2036,7 @@
                                     2
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 0
@@ -2053,7 +2051,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     ]
                     \glissando
                 }   % measure
@@ -2075,7 +2073,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -2091,7 +2089,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2106,7 +2104,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2121,7 +2119,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2136,7 +2134,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2151,7 +2149,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2166,7 +2164,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2181,7 +2179,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2196,7 +2194,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2240,7 +2238,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2255,7 +2253,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2270,7 +2268,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -2309,7 +2307,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -2325,7 +2323,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -2340,7 +2338,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -2355,7 +2353,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -2370,7 +2368,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -2385,7 +2383,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -2400,7 +2398,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -2415,7 +2413,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
@@ -2430,7 +2428,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         ]
                         \glissando
                     }
@@ -2453,7 +2451,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -2469,7 +2467,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2498,7 +2496,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2570,7 +2568,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2585,7 +2583,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2600,7 +2598,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2615,7 +2613,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2630,7 +2628,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2645,7 +2643,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -2685,7 +2683,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -2701,7 +2699,7 @@
                                         2
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2716,7 +2714,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2731,7 +2729,7 @@
                                         4
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2746,7 +2744,7 @@
                                         2
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2761,7 +2759,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2776,7 +2774,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2791,7 +2789,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2806,7 +2804,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2821,7 +2819,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -2836,7 +2834,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         ]
                         \glissando
                     }
@@ -2859,7 +2857,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -2875,7 +2873,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2890,7 +2888,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2905,7 +2903,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2949,7 +2947,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2964,7 +2962,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2979,7 +2977,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -2994,7 +2992,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3009,7 +3007,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3024,7 +3022,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3039,7 +3037,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3054,7 +3052,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3069,7 +3067,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3084,7 +3082,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3099,7 +3097,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3114,7 +3112,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3129,7 +3127,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3144,7 +3142,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -3159,7 +3157,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         ]
                         \glissando
                     }
@@ -3180,7 +3178,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 3
@@ -3210,7 +3208,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3282,7 +3280,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3297,7 +3295,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3312,7 +3310,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3327,7 +3325,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3342,7 +3340,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3357,7 +3355,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3372,7 +3370,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3387,7 +3385,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3416,7 +3414,7 @@
                                     2
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3431,7 +3429,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3446,7 +3444,7 @@
                                     4
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3461,7 +3459,7 @@
                                     2
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3476,7 +3474,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3491,7 +3489,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3506,7 +3504,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3521,7 +3519,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3536,7 +3534,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3551,7 +3549,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3566,7 +3564,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3581,7 +3579,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3596,7 +3594,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3611,7 +3609,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -3664,7 +3662,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -3680,7 +3678,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3695,7 +3693,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3710,7 +3708,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3725,7 +3723,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3740,7 +3738,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3755,7 +3753,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3770,7 +3768,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3785,7 +3783,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3800,7 +3798,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3815,7 +3813,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -3830,7 +3828,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -3845,7 +3843,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         ]
                         \glissando
                     }
@@ -3867,7 +3865,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -3883,7 +3881,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -3912,7 +3910,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -3984,7 +3982,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
@@ -3999,7 +3997,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         ]
                         \glissando
                     }
@@ -4018,7 +4016,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -4031,7 +4029,7 @@
                                     1
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -4044,7 +4042,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 2.0
@@ -4057,7 +4055,7 @@
                                     1
                         }
                     c'4.
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -4070,7 +4068,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -4089,7 +4087,7 @@
                                         1
                             }
                         c'8.
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -4114,7 +4112,7 @@
                                         2
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -4127,7 +4125,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -1.0
@@ -4140,7 +4138,7 @@
                                         4
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 0.0
@@ -4153,7 +4151,7 @@
                                         2
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -4166,7 +4164,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 2.0
@@ -4179,7 +4177,7 @@
                                         1
                             }
                         c'4.
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -4192,7 +4190,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
@@ -4225,7 +4223,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -4238,7 +4236,7 @@
                                     1
                         }
                     c'8.
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
@@ -4251,7 +4249,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -4264,7 +4262,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
@@ -4277,7 +4275,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -4315,7 +4313,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -4328,7 +4326,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                 }   % measure
                 {   % measure
@@ -4347,7 +4345,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -4363,7 +4361,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4378,7 +4376,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4393,7 +4391,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4408,7 +4406,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4423,7 +4421,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4438,7 +4436,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4453,7 +4451,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4468,7 +4466,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4483,7 +4481,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4498,7 +4496,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4513,7 +4511,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4528,7 +4526,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4543,7 +4541,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4572,7 +4570,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -4652,7 +4650,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4667,7 +4665,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4682,7 +4680,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4697,7 +4695,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4712,7 +4710,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4727,7 +4725,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4742,7 +4740,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -4757,7 +4755,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -4795,7 +4793,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -4811,7 +4809,7 @@
                                     4
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4826,7 +4824,7 @@
                                     2
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4841,7 +4839,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4856,7 +4854,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4871,7 +4869,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4886,7 +4884,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4901,7 +4899,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4916,7 +4914,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4931,7 +4929,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4946,7 +4944,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4961,7 +4959,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -4976,7 +4974,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -5020,7 +5018,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -5035,7 +5033,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -5050,7 +5048,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -5065,7 +5063,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -5080,7 +5078,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -5101,7 +5099,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -5117,7 +5115,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5132,7 +5130,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5147,7 +5145,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5162,7 +5160,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5177,7 +5175,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5192,7 +5190,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5207,7 +5205,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -5222,7 +5220,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
@@ -6223,7 +6221,7 @@
                 {   % measure
                     \time 4/4
                     % [violin_lh_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                    \tempo 2=60
+                    \tempo 4=120
                     bqs1
                 }   % measure
                 {   % measure
@@ -6320,15 +6318,46 @@
                 }   % measure
                 {   % measure
                     \time 3/4
-                    % [violin_lh_staff measure 15] %! COMMENT_MEASURE_NUMBERS
-                    gqs'2.
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 12/13 {
+                        % [violin_lh_staff measure 15] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 2
+                        gqs'16
+                        [
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        g'16
+                        ]
+                        gqs'4
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        g'8
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        gqs'8.
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        af'8
+                        ]
+                    }
                 }   % measure
                 {   % measure
                     \time 5/4
-                    % [violin_lh_staff measure 16] %! COMMENT_MEASURE_NUMBERS
-                    g'1
-                    ~
-                    g'4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 5/6 {
+                        % [violin_lh_staff measure 16] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        gqs'8
+                        [
+                        ]
+                        g'2
+                        gqs'4
+                        g'4
+                        gqs'4.
+                    }
                 }   % measure
                 {   % measure
                     \time 4/4
@@ -6337,8 +6366,28 @@
                 }   % measure
                 {   % measure
                     \time 7/8
-                    % [violin_lh_staff measure 18] %! COMMENT_MEASURE_NUMBERS
-                    gqs'2..
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 7/8 {
+                        % [violin_lh_staff measure 18] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        af'8
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        gqs'8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        g'8
+                        ]
+                        gqs'2
+                        ~
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 0
+                        gqs'8
+                        [
+                        ]
+                    }
                 }   % measure
                 {   % measure
                     \time 4/4
@@ -8011,8 +8060,6 @@
                 {   % measure
                     \time 4/4
                     % [viola_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                    \set BowStaff.instrumentName =
-                    \markup { Vla. }
                     \set BowStaff.shortInstrumentName =
                     \markup { Vla. }
                     \set BowStaff.instrumentName =
@@ -8030,7 +8077,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 1
@@ -8046,7 +8093,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -8061,7 +8108,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -8076,7 +8123,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -8091,7 +8138,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -8106,7 +8153,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -8121,7 +8168,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 0
@@ -8136,7 +8183,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -8158,7 +8205,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -8174,7 +8221,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8189,7 +8236,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8204,7 +8251,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8219,7 +8266,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8234,7 +8281,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8249,7 +8296,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8264,7 +8311,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8279,7 +8326,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8308,7 +8355,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8388,7 +8435,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8403,7 +8450,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8418,7 +8465,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8433,7 +8480,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8448,7 +8495,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8463,7 +8510,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8478,7 +8525,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8493,7 +8540,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8522,7 +8569,7 @@
                                         2
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8537,7 +8584,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8552,7 +8599,7 @@
                                         4
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8567,7 +8614,7 @@
                                         2
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8582,7 +8629,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8597,7 +8644,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8612,7 +8659,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -8652,7 +8699,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -8668,7 +8715,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -8683,7 +8730,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -8698,7 +8745,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -8713,7 +8760,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -8757,7 +8804,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         ]
                         \glissando
                     }
@@ -8779,7 +8826,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -8795,7 +8842,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8810,7 +8857,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8825,7 +8872,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8840,7 +8887,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8855,7 +8902,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8870,7 +8917,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8885,7 +8932,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8900,7 +8947,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8915,7 +8962,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8930,7 +8977,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8945,7 +8992,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8960,7 +9007,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8975,7 +9022,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -8990,7 +9037,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -9019,7 +9066,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -9098,7 +9145,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9113,7 +9160,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9128,7 +9175,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9143,7 +9190,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9158,7 +9205,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9173,7 +9220,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9188,7 +9235,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9203,7 +9250,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9232,7 +9279,7 @@
                                     2
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9247,7 +9294,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -9284,7 +9331,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 3
@@ -9300,7 +9347,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9315,7 +9362,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9330,7 +9377,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9345,7 +9392,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9360,7 +9407,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9375,7 +9422,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9390,7 +9437,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9405,7 +9452,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9420,7 +9467,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9464,7 +9511,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9479,7 +9526,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9494,7 +9541,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9509,7 +9556,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9524,7 +9571,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9539,7 +9586,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -9554,7 +9601,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 0
@@ -9569,7 +9616,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     ]
                     \glissando
                 }   % measure
@@ -9589,7 +9636,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 1
@@ -9605,7 +9652,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9620,7 +9667,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9635,7 +9682,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9650,7 +9697,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9665,7 +9712,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9680,7 +9727,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9695,7 +9742,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -9790,7 +9837,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9805,7 +9852,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9820,7 +9867,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9835,7 +9882,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9850,7 +9897,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9865,7 +9912,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9880,7 +9927,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -9895,7 +9942,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -9929,7 +9976,7 @@
                                         2
                             }
                         c'4
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = 1.0
@@ -9942,7 +9989,7 @@
                                         4
                             }
                         c'4
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                     }
                 }   % measure
@@ -9963,7 +10010,7 @@
                                         4
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -9979,7 +10026,7 @@
                                         2
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -9994,7 +10041,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -10009,7 +10056,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -10024,7 +10071,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -10039,7 +10086,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -10054,7 +10101,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -10069,7 +10116,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -10084,7 +10131,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
@@ -10099,7 +10146,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         ]
                         \glissando
                     }
@@ -10120,7 +10167,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -10136,7 +10183,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10180,7 +10227,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10195,7 +10242,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10210,7 +10257,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10225,7 +10272,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10240,7 +10287,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10255,7 +10302,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10270,7 +10317,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -10308,7 +10355,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 1
@@ -10324,7 +10371,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -10339,7 +10386,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -10354,7 +10401,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -10369,7 +10416,7 @@
                                     4
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -10384,7 +10431,7 @@
                                     1
                         }
                     c'8
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -10413,7 +10460,7 @@
                                     1
                         }
                     c'8
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -10491,7 +10538,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10506,7 +10553,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10521,7 +10568,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10536,7 +10583,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10551,7 +10598,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10566,7 +10613,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10581,7 +10628,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10596,7 +10643,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10646,12 +10693,12 @@
                                     1
                                     4
                         }
-                    c'16
-                    ^\downbow
+                    d''''16
+                    ^ \downbow
                     [
                     \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = 0.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
@@ -10662,10 +10709,40 @@
                                     1
                                     2
                         }
-                    c'16
-                    ^\upbow
+                    d''''8.
+                    ^ \upbow
                     \glissando
-                    \set stemLeftBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    d''''8
+                    ^ \downbow
+                    \glissando
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    1
+                        }
+                    d''''8.
+                    ^ \upbow
+                    \glissando
+                    \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 2
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -2.0
@@ -10677,8 +10754,8 @@
                                     0
                                     1
                         }
-                    c'16
-                    ^\downbow
+                    d''''16
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -10692,128 +10769,23 @@
                                     1
                                     1
                         }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    4
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
+                    d''''16
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -1.0
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
+                                    0
                                     1
-                                    4
                         }
-                    c'16
-                    ^\upbow
+                    d''''16
+                    ^ \downbow
                     ]
                     \glissando
                 }   % measure
@@ -10823,21 +10795,52 @@
                     \times 14/15 {
                         % [viola_bow_staff measure 21] %! COMMENT_MEASURE_NUMBERS
                         \set stemLeftBeamCount = 0
-                        \set stemRightBeamCount = 2
+                        \set stemRightBeamCount = 1
                         \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.Y-offset = 2.0
                         \once \override NoteHead.stencil = #ly:text-interface::print
                         \once \override NoteHead.text = \markup {
                             \center-align
                                 \vcenter
                                     \fraction
-                                        0
+                                        1
                                         1
                             }
-                        c'16
+                        d''''8.
+                        ^ \upbow
                         [
                         \glissando
-                        \set stemLeftBeamCount = 2
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        d''''8
+                        ^ \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        4
+                            }
+                        d''''8.
+                        ^ \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 2
                         \once \override Glissando.style = #'line
                         \once \override NoteHead.Y-offset = -2.0
@@ -10849,188 +10852,52 @@
                                         0
                                         1
                             }
-                        c'16
+                        d''''16
+                        ^ \downbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 2
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -1.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        1
+                                        4
+                            }
+                        d''''16
+                        ^ \upbow
+                        \glissando
+                        \set stemLeftBeamCount = 2
+                        \set stemRightBeamCount = 1
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        d''''16
+                        \glissando
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        \once \override Glissando.style = #'line
+                        \once \override NoteHead.Y-offset = -2.0
+                        \once \override NoteHead.stencil = #ly:text-interface::print
+                        \once \override NoteHead.text = \markup {
+                            \center-align
+                                \vcenter
+                                    \fraction
+                                        0
+                                        1
+                            }
+                        d''''8.
                         ^ \parenthesize \downbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        4
-                            }
-                        c'16
-                        ^\upbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        ^\downbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        4
-                            }
-                        c'16
-                        ^\upbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        ^\downbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        4
-                            }
-                        c'16
-                        ^\upbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        ^\downbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        4
-                            }
-                        c'16
-                        ^\upbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        ^\downbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        4
-                            }
-                        c'16
-                        ^\upbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        ^\downbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -1.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        1
-                                        4
-                            }
-                        c'16
-                        ^\upbow
-                        \glissando
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        \once \override Glissando.style = #'line
-                        \once \override NoteHead.Y-offset = -2.0
-                        \once \override NoteHead.stencil = #ly:text-interface::print
-                        \once \override NoteHead.text = \markup {
-                            \center-align
-                                \vcenter
-                                    \fraction
-                                        0
-                                        1
-                            }
-                        c'16
-                        ^\downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -11043,7 +10910,7 @@
                                         1
                                         4
                             }
-                        c'16
+                        d''''16
                         ]
                     }
                 }   % measure
@@ -11068,83 +10935,41 @@
                                     0
                                     1
                         }
-                    c'16
-                    ^\downbow
+                    d''''16
+                    ^ \downbow
                     [
                     \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.0
+                    \once \override NoteHead.Y-offset = -1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    3
+                                    1
                                     4
                         }
-                    c'16
+                    d''''8
+                    ^ \upbow
                     \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -2.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
-                                    1
+                                    0
                                     1
                         }
-                    c'16
-                    ^\upbow
+                    d''''8.
+                    ^ \downbow
                     \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 1.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
-                                    4
-                        }
-                    c'16
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    2
-                        }
-                    c'16
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 0.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    2
-                        }
-                    c'16
-                    ^ \parenthesize \upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
+                    \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 2
                     \once \override Glissando.style = #'line
                     \once \override NoteHead.Y-offset = -1.0
@@ -11156,7 +10981,8 @@
                                     1
                                     4
                         }
-                    c'16
+                    d''''16
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -11170,126 +10996,66 @@
                                     0
                                     1
                         }
-                    c'16
-                    ^\downbow
+                    d''''16
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
+                    \set stemRightBeamCount = 1
                     \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
+                    \once \override NoteHead.Y-offset = -1.0
                     \once \override NoteHead.stencil = #ly:text-interface::print
                     \once \override NoteHead.text = \markup {
                         \center-align
                             \vcenter
                                 \fraction
                                     1
-                                    1
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = -2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    0
-                                    1
-                        }
-                    c'16
-                    ^\downbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    \once \override Glissando.style = #'line
-                    \once \override NoteHead.Y-offset = 2.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    1
-                                    1
-                        }
-                    c'16
-                    ^\upbow
-                    \glissando
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 0
-                    \once \override NoteHead.Y-offset = 1.0
-                    \once \override NoteHead.stencil = #ly:text-interface::print
-                    \once \override NoteHead.text = \markup {
-                        \center-align
-                            \vcenter
-                                \fraction
-                                    3
                                     4
                         }
-                    c'16
+                    d''''16
+                    ^ \upbow
+                    \glissando
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    d''''8.
+                    ^ \downbow
+                    \glissando
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    \once \override Glissando.style = #'line
+                    \once \override NoteHead.Y-offset = -1.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    1
+                                    4
+                        }
+                    d''''8
+                    ^ \upbow
+                    \glissando
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
+                    \once \override NoteHead.Y-offset = -2.0
+                    \once \override NoteHead.stencil = #ly:text-interface::print
+                    \once \override NoteHead.text = \markup {
+                        \center-align
+                            \vcenter
+                                \fraction
+                                    0
+                                    1
+                        }
+                    d''''8
                     ]
                 }   % measure
             }
@@ -11990,40 +11756,19 @@
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     d''''16
-                    \ff
                     [
-                    \>
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \p
+                    - \tweak circled-tip ##t
                     \<
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \fff
-                    \>
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \f
-                    \>
-                    \set stemLeftBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8.
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8.
+                    \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 2
                     d''''16
                     \set stemLeftBeamCount = 2
@@ -12040,53 +11785,32 @@
                     \times 14/15 {
                         % [viola_beam_staff measure 21] %! COMMENT_MEASURE_NUMBERS
                         \set stemLeftBeamCount = 0
-                        \set stemRightBeamCount = 2
-                        d''''16
+                        \set stemRightBeamCount = 1
+                        d''''8.
                         [
-                        \set stemLeftBeamCount = 2
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8.
+                        \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 2
                         d''''16
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
                         d''''16
                         \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
+                        \set stemRightBeamCount = 1
                         d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
-                        \set stemLeftBeamCount = 2
-                        \set stemRightBeamCount = 2
-                        d''''16
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        d''''8.
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
                         d''''16
-                        \p
                         ]
+                        \ff
                     }
                 }   % measure
                 {   % measure
@@ -12103,62 +11827,35 @@
                     \set stemLeftBeamCount = 0
                     \set stemRightBeamCount = 2
                     d''''16
-                    \ff
                     [
-                    \>
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \p
+                    - \tweak circled-tip ##t
                     \<
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \fff
-                    \>
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \f
-                    \>
-                    \set stemLeftBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8.
+                    \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 2
                     d''''16
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
                     d''''16
                     \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
+                    \set stemRightBeamCount = 1
                     d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
-                    \set stemRightBeamCount = 2
-                    d''''16
-                    \set stemLeftBeamCount = 2
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8.
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    d''''8
+                    \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 0
-                    d''''16
-                    \p
+                    d''''8
                     ]
+                    \ff
                 }   % measure
             }
             \context Staff = "viola_lh_staff"
@@ -12243,7 +11940,23 @@
                 {   % measure
                     \time 3/4
                     % [viola_lh_staff measure 15] %! COMMENT_MEASURE_NUMBERS
-                    eqf2.
+                    \set stemLeftBeamCount = 0
+                    \set stemRightBeamCount = 2
+                    eqf16
+                    [
+                    ]
+                    e4
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    eqs8
+                    [
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 1
+                    e8
+                    \set stemLeftBeamCount = 1
+                    \set stemRightBeamCount = 0
+                    eqs8.
+                    ]
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -12253,13 +11966,30 @@
                 }   % measure
                 {   % measure
                     \time 4/4
-                    % [viola_lh_staff measure 17] %! COMMENT_MEASURE_NUMBERS
-                    e1
+                    \times 4/5 {
+                        % [viola_lh_staff measure 17] %! COMMENT_MEASURE_NUMBERS
+                        f2
+                        eqf2.
+                    }
                 }   % measure
                 {   % measure
                     \time 7/8
-                    % [viola_lh_staff measure 18] %! COMMENT_MEASURE_NUMBERS
-                    eqs2..
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 7/13 {
+                        % [viola_lh_staff measure 18] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        e8
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        eqs8
+                        ]
+                        e2
+                        eqs4
+                        f4.
+                        eqf4
+                    }
                 }   % measure
                 {   % measure
                     \time 4/4
@@ -13678,8 +13408,6 @@
                 {   % measure
                     \time 4/4
                     % [cello_bow_staff measure 1] %! COMMENT_MEASURE_NUMBERS
-                    \set BowStaff.instrumentName =
-                    \markup { Vc. }
                     \set BowStaff.shortInstrumentName =
                     \markup { Vc. }
                     \set BowStaff.instrumentName =
@@ -13697,7 +13425,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -13713,7 +13441,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13728,7 +13456,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13743,7 +13471,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13758,7 +13486,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13773,7 +13501,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13788,7 +13516,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13803,7 +13531,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13818,7 +13546,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13833,7 +13561,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13848,7 +13576,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13863,7 +13591,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13878,7 +13606,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13893,7 +13621,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -13908,7 +13636,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -13946,7 +13674,7 @@
                                         4
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -13962,7 +13690,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14034,7 +13762,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14049,7 +13777,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14064,7 +13792,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14079,7 +13807,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14094,7 +13822,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14109,7 +13837,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14124,7 +13852,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14139,7 +13867,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14168,7 +13896,7 @@
                                         2
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -14183,7 +13911,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         ]
                         \glissando
                     }
@@ -14204,7 +13932,7 @@
                                     4
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -14220,7 +13948,7 @@
                                     2
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14235,7 +13963,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14250,7 +13978,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14265,7 +13993,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14280,7 +14008,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14295,7 +14023,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14310,7 +14038,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14325,7 +14053,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14340,7 +14068,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14355,7 +14083,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14370,7 +14098,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -14421,7 +14149,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 1
@@ -14437,7 +14165,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -14452,7 +14180,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -14467,7 +14195,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -14482,7 +14210,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -14497,7 +14225,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -14512,7 +14240,7 @@
                                         4
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
@@ -14527,7 +14255,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         ]
                         \glissando
                     }
@@ -14549,7 +14277,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -14565,7 +14293,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14580,7 +14308,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14595,7 +14323,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14610,7 +14338,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14625,7 +14353,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14640,7 +14368,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14655,7 +14383,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14684,7 +14412,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14756,7 +14484,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14771,7 +14499,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14786,7 +14514,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14801,7 +14529,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -14846,7 +14574,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -14876,7 +14604,7 @@
                                         2
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14891,7 +14619,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14906,7 +14634,7 @@
                                         4
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14921,7 +14649,7 @@
                                         2
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14936,7 +14664,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14951,7 +14679,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14966,7 +14694,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -14981,7 +14709,7 @@
                                         1
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -14996,7 +14724,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         ]
                         \glissando
                     }
@@ -15017,7 +14745,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 3
@@ -15033,7 +14761,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15048,7 +14776,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15063,7 +14791,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15078,7 +14806,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15122,7 +14850,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15137,7 +14865,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15152,7 +14880,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15167,7 +14895,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15182,7 +14910,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15197,7 +14925,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15212,7 +14940,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15227,7 +14955,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15242,7 +14970,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15257,7 +14985,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15272,7 +15000,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15287,7 +15015,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15302,7 +15030,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15317,7 +15045,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15332,7 +15060,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15347,7 +15075,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15376,7 +15104,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15448,7 +15176,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15463,7 +15191,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15478,7 +15206,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15493,7 +15221,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15508,7 +15236,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15523,7 +15251,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15538,7 +15266,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15553,7 +15281,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -15582,7 +15310,7 @@
                                     2
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 0
@@ -15619,7 +15347,7 @@
                                         2
                             }
                         d''''4
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -15634,7 +15362,7 @@
                                         1
                             }
                         d''''8
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -15650,7 +15378,7 @@
                                         1
                             }
                         d''''16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -15665,7 +15393,7 @@
                                         1
                             }
                         d''''8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 2
@@ -15680,7 +15408,7 @@
                                         1
                             }
                         d''''16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -15695,7 +15423,7 @@
                                         1
                             }
                         d''''16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -15710,7 +15438,7 @@
                                         1
                             }
                         d''''16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -15747,7 +15475,7 @@
                                     4
                         }
                     d''''4.
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 1
@@ -15792,7 +15520,7 @@
                                     4
                         }
                     d''''8
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 2
@@ -15807,7 +15535,7 @@
                                     1
                         }
                     d''''16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15822,7 +15550,7 @@
                                     4
                         }
                     d''''16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 1
@@ -15837,7 +15565,7 @@
                                     1
                         }
                     d''''16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 1
                     \set stemRightBeamCount = 0
@@ -15852,7 +15580,7 @@
                                     4
                         }
                     d''''8
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -15872,7 +15600,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -15888,7 +15616,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15903,7 +15631,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15918,7 +15646,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15933,7 +15661,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15948,7 +15676,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15963,7 +15691,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15978,7 +15706,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -15993,7 +15721,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16008,7 +15736,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16023,7 +15751,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -16105,7 +15833,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16120,7 +15848,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16135,7 +15863,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16150,7 +15878,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16165,7 +15893,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16180,7 +15908,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16195,7 +15923,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16210,7 +15938,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16239,7 +15967,7 @@
                                     2
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16254,7 +15982,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16269,7 +15997,7 @@
                                     4
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16284,7 +16012,7 @@
                                     2
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16299,7 +16027,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16314,7 +16042,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16329,7 +16057,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16344,7 +16072,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16359,7 +16087,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16374,7 +16102,7 @@
                                     1
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16389,7 +16117,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16404,7 +16132,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16419,7 +16147,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16434,7 +16162,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16478,7 +16206,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16493,7 +16221,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 3
@@ -16508,7 +16236,7 @@
                                     4
                         }
                     c'32
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 3
                     \set stemRightBeamCount = 0
@@ -16523,7 +16251,7 @@
                                     1
                         }
                     c'32
-                    ^\downbow
+                    ^ \downbow
                     ]
                     \glissando
                 }   % measure
@@ -16543,7 +16271,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -16559,7 +16287,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16574,7 +16302,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16589,7 +16317,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16604,7 +16332,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16619,7 +16347,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16634,7 +16362,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16649,7 +16377,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16664,7 +16392,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16679,7 +16407,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16694,7 +16422,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16709,7 +16437,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16738,7 +16466,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -16817,7 +16545,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -16832,7 +16560,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -16847,7 +16575,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -16862,7 +16590,7 @@
                                         1
                             }
                         c'8
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 1
@@ -16877,7 +16605,7 @@
                                         1
                             }
                         c'8
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 1
                         \set stemRightBeamCount = 0
@@ -16915,7 +16643,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     [
                     \glissando
                     \set stemLeftBeamCount = 2
@@ -16945,7 +16673,7 @@
                                     2
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16960,7 +16688,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16975,7 +16703,7 @@
                                     4
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -16990,7 +16718,7 @@
                                     2
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17005,7 +16733,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17020,7 +16748,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17035,7 +16763,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17050,7 +16778,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17065,7 +16793,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17080,7 +16808,7 @@
                                     1
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 2
@@ -17095,7 +16823,7 @@
                                     1
                         }
                     c'16
-                    ^\downbow
+                    ^ \downbow
                     \glissando
                     \set stemLeftBeamCount = 2
                     \set stemRightBeamCount = 0
@@ -17110,7 +16838,7 @@
                                     4
                         }
                     c'16
-                    ^\upbow
+                    ^ \upbow
                     ]
                     \glissando
                 }   % measure
@@ -17132,7 +16860,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         [
                         \glissando
                         \set stemLeftBeamCount = 2
@@ -17148,7 +16876,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17192,7 +16920,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17207,7 +16935,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17222,7 +16950,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17237,7 +16965,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17252,7 +16980,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17267,7 +16995,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17282,7 +17010,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17297,7 +17025,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17312,7 +17040,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17327,7 +17055,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17342,7 +17070,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17357,7 +17085,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17372,7 +17100,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17387,7 +17115,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17402,7 +17130,7 @@
                                         4
                             }
                         c'16
-                        ^\upbow
+                        ^ \upbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 2
@@ -17417,7 +17145,7 @@
                                         1
                             }
                         c'16
-                        ^\downbow
+                        ^ \downbow
                         \glissando
                         \set stemLeftBeamCount = 2
                         \set stemRightBeamCount = 0
@@ -18497,8 +18225,12 @@
                 }   % measure
                 {   % measure
                     \time 3/4
-                    % [cello_lh_staff measure 15] %! COMMENT_MEASURE_NUMBERS
-                    bqs,2.
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 3/5 {
+                        % [cello_lh_staff measure 15] %! COMMENT_MEASURE_NUMBERS
+                        bqs,2
+                        c2.
+                    }
                 }   % measure
                 {   % measure
                     \time 5/4
@@ -18508,18 +18240,59 @@
                 }   % measure
                 {   % measure
                     \time 4/4
-                    % [cello_lh_staff measure 17] %! COMMENT_MEASURE_NUMBERS
-                    c1
+                    \times 2/3 {
+                        % [cello_lh_staff measure 17] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        cqs8
+                        [
+                        ]
+                        c2
+                        bqs,4
+                        b,4
+                        bqs,4.
+                    }
                 }   % measure
                 {   % measure
                     \time 7/8
-                    % [cello_lh_staff measure 18] %! COMMENT_MEASURE_NUMBERS
-                    cqs2..
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \times 7/13 {
+                        % [cello_lh_staff measure 18] %! COMMENT_MEASURE_NUMBERS
+                        \set stemLeftBeamCount = 0
+                        \set stemRightBeamCount = 1
+                        c8
+                        [
+                        ]
+                        cqs2
+                        ~
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        cqs8
+                        [
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        c8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        bqs,8
+                        \set stemLeftBeamCount = 1
+                        \set stemRightBeamCount = 1
+                        b,8
+                        ]
+                        bqs,2
+                    }
                 }   % measure
                 {   % measure
                     \time 4/4
                     % [cello_lh_staff measure 19] %! COMMENT_MEASURE_NUMBERS
-                    c1
+                    \set stemLeftBeamCount = 0
+                    \set stemRightBeamCount = 1
+                    c8
+                    [
+                    ]
+                    cqs4
+                    c4.
+                    bqs,4
                 }   % measure
                 {   % measure
                     \time 3/4

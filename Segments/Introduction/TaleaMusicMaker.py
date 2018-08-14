@@ -13,6 +13,7 @@ class TaleaMusicMaker:
         extra_counts_per_division=[0],
         beams=False,
         clef='treble',
+        #tag='None',
         ):
         self.counts = counts
         self.denominator = denominator
@@ -22,6 +23,7 @@ class TaleaMusicMaker:
         self.pitches = pitches
         self.beams = beams
         self.clef = abjad.Clef(clef)
+        #self.tag=tag
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -55,6 +57,7 @@ class TaleaMusicMaker:
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
             tuplet_specifier=tuplet_specifier,
+            #tag=self.tag,
             )
 
         selections = talea_rhythm_maker(time_signature_pairs)

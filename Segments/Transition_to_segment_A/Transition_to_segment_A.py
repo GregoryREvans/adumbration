@@ -390,8 +390,16 @@ cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, c
 score = abjad.Score(name="Adumbration Score")
 score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viola_staff, time_signature_staff_3, cello_staff, ])
 
-#metro = abjad.MetronomeMark((1, 2), 60)
-#abjad.attach(metro, violin_lh_staff[0][0])
+metro = abjad.MetronomeMark((1, 4), (80), ' ')
+abjad.attach(metro, violin_lh_staff[0])
+metric_modulation = abjad.MetricModulation(
+    left_rhythm=abjad.Note("c4."),
+    right_rhythm=abjad.Note("c4"),
+    )
+abjad.attach(metric_modulation, violin_string_staff[0])
+abjad.attach(metric_modulation, viola_string_staff[0])
+abjad.attach(metric_modulation, cello_string_staff[0])
+
 violin = abjad.Violin()
 abjad.attach(violin, violin_lh_staff[0])
 first_violin_leaf = abjad.select(violin_bow_staff).leaves()[0]

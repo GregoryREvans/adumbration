@@ -11,8 +11,16 @@
 \usepackage{eurosym}
 \usepackage{paracol}
 \usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{calc}
 \begin{document}
 
+        \begin{tikzpicture}[remember picture, overlay]
+            \draw[line width = 2.5pt]
+                ($(current page.north west) + (0.25in,-0.25in)$)
+                rectangle
+                ($(current page.south east) + (-0.25in,0.25in)$);
+        \end{tikzpicture}
 
 \begin{center}
 \textit{\fontsize{.7cm}{1em}\selectfont Other scores from Gregory Rowland Evans include:} \hfill
@@ -20,39 +28,57 @@
 \vspace*{4\baselineskip}
 {
 \begin{center}
+\setcolumnwidth{0.50\textwidth, 0.50\textwidth, 0.50\textwidth, 0.50\textwidth}
+\setlength{\columnseprule}{1pt}
+\setlength{\columnsep}{6em}
+
 \begin{paracol}{4}
 \textit{\fontsize{.5cm}{1em}\selectfont UNACCOMPANIED}
-\switchcolumn
+\switchcolumn[1]
 \textit{\fontsize{.5cm}{1em}\selectfont CHAMBER}
-\switchcolumn
+\switchcolumn[2]
 \textit{\fontsize{.5cm}{1em}\selectfont ELECTROACOUSTIC}
-\switchcolumn
+\switchcolumn[3]
 \textit{\fontsize{.5cm}{1em}\selectfont ORCHESTRAL}
-\switchcolumn
-\pmb{Five Excuses} (for cello alone),
-\switchcolumn
+\switchcolumn[0]
+\pmb{Five Excuses} (for cello alone)
+\switchcolumn[0]
+\pmb{Five Excuses} (for piano alone)
+\switchcolumn[0]
+ \pmb{Epiphora} (for solo cello)
+ \switchcolumn[0]
+ \pmb{Five Excuses} (for xiao alone)
+  \switchcolumn[0]
+ \pmb{soNOTina} (for solo piano)
+\switchcolumn[1]
 \pmb{String Trio no.1}
-\switchcolumn
+\switchcolumn[1]
+\pmb{Concerto} (for violin and jazz ensemble)
+\switchcolumn[1]
+\pmb{"Variations"} Five Excuses (for string trio)
+\switchcolumn[1]
+\pmb{Adumbration} "String Trio no.2"
+\switchcolumn[1]
+\pmb{Hamon sh\=u} "String Quartet no.1"
+\switchcolumn[2]
 \pmb{Bewegt die Erde}:
-\switchcolumn
+\switchcolumn[2]
+$B.E. \ vi: \ Ohrenquallen \ (for \ violin)$
+\switchcolumn[2]
+$B.E. \ vii: \ Staub \ (for \ laptop \ ensemble)$
+\switchcolumn[2]
+$B.E. \ i: \ NGC \ 3370 \ (for \ percussion \ trio)$
+\switchcolumn[2]
+$B.E. \ ii: \ Carinanebel \ (for \ viola)$
+\switchcolumn[2]
+$B.E. \ iv: \ Arborealkartographie \ (for \ cello)$
+\switchcolumn[2]
+\pmb{Sidereus Nuncius} (for oboe)
+\switchcolumn[3]
 \pmb{Arquitectura 11611}
-\switchcolumn
-\pmb{Five Excuses} (for piano alone),
-\switchcolumn
-\switchcolumn
-$B.E. \ vi: \ Ohrenquallen \ (for \ violin)$,
-\switchcolumn
+\switchcolumn[3]
 \pmb{Metamorphoses} (after Salomon Illouz)
-\switchcolumn
- \pmb{Epiphora} (for solo cello),
- \switchcolumn
- \switchcolumn
-$B.E. \ ii: \ Carinanebel \ (for \ viola)$,
-\switchcolumn
-\switchcolumn
-\switchcolumn
-\switchcolumn
-$B.E. \ iv: \ Arborealkartographie \ (for \ cello)$,
+ 
 
 \end{paracol}
 \end{center}

@@ -274,14 +274,17 @@ cello_notes_5 = [((x / 2.0) - 8) for x in cello_random_walk_5]
 time_signature_staff_1 = abjad.Staff(
     lilypond_type='TimeSignatureContext',
     name='TimeSignatureContext1',
+    #tag='time-signature-staff-1',
     )
 time_signature_staff_2 = abjad.Staff(
     lilypond_type='TimeSignatureContext',
     name='TimeSignatureContext2',
+    #tag='time-signature-staff-2',
     )
 time_signature_staff_3 = abjad.Staff(
     lilypond_type='TimeSignatureContext',
     name='TimeSignatureContext3',
+    #tag='time-signature-staff-3',
     )
 
 ###################
@@ -291,17 +294,21 @@ time_signature_staff_3 = abjad.Staff(
 violin_string_staff = abjad.Staff(
     lilypond_type='StringStaff',
     name='violin_string_staff',
+    #tag='violin-string-staff',
     )
 violin_bow_staff = abjad.Staff(
     lilypond_type='BowStaff',
     name='violin_bow_staff',
+    #tag='violin-bow-staff',
     )
 violin_bow_beam_staff = abjad.Staff(
     lilypond_type='BeamStaff',
     name='violin_beam_staff',
+    #tag='violin-beam-staff',
     )
 violin_lh_staff = abjad.Staff(
     name='violin_lh_staff',
+    #tag='violin-lh-staff',
 )
 
 ###################
@@ -311,17 +318,21 @@ violin_lh_staff = abjad.Staff(
 viola_string_staff = abjad.Staff(
     lilypond_type='StringStaff',
     name='viola_string_staff',
+    #tag='viola-string-staff',
     )
 viola_bow_staff = abjad.Staff(
     lilypond_type='BowStaff',
     name='viola_bow_staff',
+    #tag='viola-bow-staff',
     )
 viola_bow_beam_staff = abjad.Staff(
     lilypond_type='BeamStaff',
     name='viola_beam_staff',
+    #tag='viola-beam-staff',
     )
 viola_lh_staff = abjad.Staff(
     name='viola_lh_staff',
+    #tag='viola-lh-staff',
 )
 
 ###################
@@ -331,17 +342,21 @@ viola_lh_staff = abjad.Staff(
 cello_string_staff = abjad.Staff(
     lilypond_type='StringStaff',
     name='cello_string_staff',
+    #tag='cello-string-staff',
     )
 cello_bow_staff = abjad.Staff(
     lilypond_type='BowStaff',
     name='cello_bow_staff',
+    #tag='cello-bow-staff',
     )
 cello_bow_beam_staff = abjad.Staff(
     lilypond_type='BeamStaff',
     name='cello_beam_staff',
+    #tag='cello-beam-staff',
     )
 cello_lh_staff = abjad.Staff(
     name='cello_lh_staff',
+    #tag='cello-lh-staff',
 )
 
 ###################
@@ -406,6 +421,7 @@ time_signature_maker = NoteMusicMaker(
     mask_period = 1,
     pitches = [0],
     beams = False,
+    #tag='introduction-time-signature-maker',
 )
 
                                 #########
@@ -425,6 +441,7 @@ violin_string_maker_1 = TaleaMusicMaker(
     mask_indices=[4],
     mask_period=5,
     beams=False,
+    #tag='introduction-violin-string-maker-1',
     )
 ###
 violin_bow_maker_1 = EvenDivisionMusicMaker(
@@ -435,6 +452,7 @@ violin_bow_maker_1 = EvenDivisionMusicMaker(
     clef='percussion',
     extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
     beams=True,
+    #tag='introduction-violin-bow-maker-1',
     )
 ###
 violin_bow_beam_maker_1 = EvenDivisionMusicMaker(
@@ -445,6 +463,7 @@ violin_bow_beam_maker_1 = EvenDivisionMusicMaker(
     clef='percussion',
     extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
     beams=True,
+    #tag='introduction-violin-beam-maker-1',
     )
 ###
 violin_lh_maker_1 = NoteMusicMaker(
@@ -452,6 +471,7 @@ violin_lh_maker_1 = NoteMusicMaker(
     mask_period=5,
     pitches=violin_notes_1,
     beams=False,
+    #tag='introduction-violin-lh-maker-1',
     )
 
 ###################
@@ -465,6 +485,7 @@ viola_string_maker_1 = TupletMusicMaker(
     pitches=[0],
     clef='percussion',
     beams=False,
+    #tag='introduction-viola-string-maker-1',
 )
 ###
 viola_bow_maker_1 = EvenDivisionMusicMaker(
@@ -475,6 +496,7 @@ viola_bow_maker_1 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 3, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-bow-maker-1',
 )
 ###
 viola_bow_beam_maker_1 = EvenDivisionMusicMaker(
@@ -485,6 +507,7 @@ viola_bow_beam_maker_1 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 3, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-beam-maker-1',
 )
 ###
 viola_lh_maker_1 = NoteMusicMaker(
@@ -492,6 +515,7 @@ viola_lh_maker_1 = NoteMusicMaker(
     mask_period=4,
     pitches=viola_notes_1,
     beams=False,
+    #tag='introduction-viola-lh-maker-1',
 )
 
 ###################
@@ -507,6 +531,7 @@ cello_string_maker_1 = TaleaMusicMaker(
     mask_indices=[1],
     mask_period=5,
     beams=False,
+    #tag='introduction-cello-string-maker-1',
 )
 ###
 cello_bow_maker_1 = EvenDivisionMusicMaker(
@@ -517,6 +542,7 @@ cello_bow_maker_1 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 1, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-bow-maker-1',
 )
 ###
 cello_bow_beam_maker_1 = EvenDivisionMusicMaker(
@@ -527,6 +553,7 @@ cello_bow_beam_maker_1 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 1, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-beam-maker-1',
 )
 ###
 cello_lh_maker_1 = NoteMusicMaker(
@@ -534,6 +561,7 @@ cello_lh_maker_1 = NoteMusicMaker(
     mask_period=5,
     pitches=cello_notes_1,
     beams=False,
+    #tag='introduction-cello-lh-maker-1',
 )
 
                                 #########
@@ -553,6 +581,7 @@ violin_string_maker_2 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=5,
     beams=False,
+    #tag='introduction-violin-string-maker-2',
 )
 ###
 violin_bow_maker_2 = EvenDivisionMusicMaker(
@@ -563,6 +592,7 @@ violin_bow_maker_2 = EvenDivisionMusicMaker(
     extra_counts_per_division=[1, 1, 0, 1, 0, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-violin-bow-maker-2',
 )
 ###
 violin_bow_beam_maker_2 = EvenDivisionMusicMaker(
@@ -573,6 +603,7 @@ violin_bow_beam_maker_2 = EvenDivisionMusicMaker(
     extra_counts_per_division=[1, 1, 0, 1, 0, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-violin-beam-maker-2',
 )
 ###
 violin_lh_maker_2 = TupletMusicMaker(
@@ -582,6 +613,7 @@ violin_lh_maker_2 = TupletMusicMaker(
     pitches=violin_notes_2,
     clef='treble',
     beams=True,
+    #tag='introduction-violin-lh-maker-2',
 )
 
 ###################
@@ -597,6 +629,7 @@ viola_string_maker_2 = TaleaMusicMaker(
     mask_indices=[1],
     mask_period=3,
     beams=False,
+    #tag='introduction-viola-string-maker-2',
 )
 ###
 viola_bow_maker_2 = EvenDivisionMusicMaker(
@@ -607,6 +640,7 @@ viola_bow_maker_2 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-bow-maker-2',
 )
 ###
 viola_bow_beam_maker_2 = EvenDivisionMusicMaker(
@@ -617,6 +651,7 @@ viola_bow_beam_maker_2 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-beam-maker-2',
 )
 ###
 viola_lh_maker_2 = NoteMusicMaker(
@@ -624,6 +659,7 @@ viola_lh_maker_2 = NoteMusicMaker(
     mask_period=3,
     pitches=viola_notes_2,
     beams=False,
+    #tag='introduction-viola-lh-maker-2',
 )
 
 ###################
@@ -639,6 +675,7 @@ cello_string_maker_2 = TaleaMusicMaker(
     mask_indices=[0],
     mask_period=4,
     beams=False,
+    #tag='introduction-cello-string-maker-2',
 )
 ###
 cello_bow_maker_2 = EvenDivisionMusicMaker(
@@ -649,6 +686,7 @@ cello_bow_maker_2 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-bow-maker-2',
 )
 ###
 cello_bow_beam_maker_2 = EvenDivisionMusicMaker(
@@ -659,6 +697,7 @@ cello_bow_beam_maker_2 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-beam-maker-2',
 )
 ###
 cello_lh_maker_2 = TupletMusicMaker(
@@ -668,6 +707,7 @@ cello_lh_maker_2 = TupletMusicMaker(
     pitches=cello_notes_2,
     clef='bass',
     beams=True,
+    #tag='introduction-cello-lh-maker-2',
 )
 
                                 #########
@@ -685,6 +725,7 @@ violin_string_maker_3 = TupletMusicMaker(
     pitches=[0],
     clef='percussion',
     beams=False,
+    #tag='introduction-violin-string-maker-3',
 )
 ###
 violin_bow_maker_3 = EvenDivisionMusicMaker(
@@ -695,6 +736,7 @@ violin_bow_maker_3 = EvenDivisionMusicMaker(
     extra_counts_per_division=[1, 0, 1, 3, 2, 0, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-violin-bow-maker-3',
 )
 ###
 violin_bow_beam_maker_3 = EvenDivisionMusicMaker(
@@ -705,6 +747,7 @@ violin_bow_beam_maker_3 = EvenDivisionMusicMaker(
     extra_counts_per_division=[1, 0, 1, 3, 2, 0, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-violin-beam-maker-3',
 )
 ###
 violin_lh_maker_3 = NoteMusicMaker(
@@ -712,6 +755,7 @@ violin_lh_maker_3 = NoteMusicMaker(
     mask_period=6,
     pitches=violin_notes_3,
     beams=False,
+    #tag='introduction-violin-lh-maker-3',
 )
 
 ###################
@@ -727,6 +771,7 @@ viola_string_maker_3 = TaleaMusicMaker(
     mask_indices=[1],
     mask_period=5,
     beams=False,
+    #tag='introduction-viola-string-maker-3',
 )
 ###
 viola_bow_maker_3 = EvenDivisionMusicMaker(
@@ -737,6 +782,7 @@ viola_bow_maker_3 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-bow-maker-3',
 )
 ###
 viola_bow_beam_maker_3 = EvenDivisionMusicMaker(
@@ -747,6 +793,7 @@ viola_bow_beam_maker_3 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-beam-maker-3',
 )
 ###
 viola_lh_maker_3 = NoteMusicMaker(
@@ -754,6 +801,7 @@ viola_lh_maker_3 = NoteMusicMaker(
     mask_period=5,
     pitches=viola_notes_3,
     beams=False,
+    #tag='introduction-viola-lh-maker-3',
 )
 
 ###################
@@ -769,6 +817,7 @@ cello_string_maker_3 = TaleaMusicMaker(
     mask_indices=[0],
     mask_period=2,
     beams=False,
+    #tag='introduction-cello-string-maker-3',
 )
 ###
 cello_bow_maker_3 = TaleaMusicMaker(
@@ -780,6 +829,7 @@ cello_bow_maker_3 = TaleaMusicMaker(
     mask_indices=[0],
     mask_period=2,
     beams=True,
+    #tag='introduction-cello-bow-maker-3',
 )
 ###
 cello_bow_beam_maker_3 = TaleaMusicMaker(
@@ -791,6 +841,7 @@ cello_bow_beam_maker_3 = TaleaMusicMaker(
     mask_indices=[0],
     mask_period=2,
     beams=True,
+    #tag='introduction-cello-beam-maker-3',
 )
 ###
 cello_lh_maker_3 = NoteMusicMaker(
@@ -798,6 +849,7 @@ cello_lh_maker_3 = NoteMusicMaker(
     mask_period=2,
     pitches=cello_notes_3,
     beams=False,
+    #tag='introduction-cello-lh-maker-3',
 )
 
                                 #########
@@ -817,6 +869,7 @@ violin_string_maker_4 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=6,
     beams=False,
+    #tag='introduction-violin-string-maker-4',
 )
 ###
 violin_bow_maker_4 = TaleaMusicMaker(
@@ -828,6 +881,7 @@ violin_bow_maker_4 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=6,
     beams=False,
+    #tag='introduction-violin-bow-maker-4',
 )
 ###
 violin_bow_beam_maker_4 = TaleaMusicMaker(
@@ -839,13 +893,17 @@ violin_bow_beam_maker_4 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=6,
     beams=True,
+    #tag='introduction-violin-beam-maker-4',
 )
 ###
-violin_lh_maker_4 = NoteMusicMaker(
+violin_lh_maker_4 = TupletMusicMaker(
+    tuplet_ratio=[(1, 1, 4, 2, 3, 2), (1, 4, 2, 2, 3), (1, 4, 5, 4), (1, 1, 1, 5), (2, 3),],
     mask_indices=[2],
     mask_period=6,
     pitches=violin_notes_4,
-    beams=False,
+    clef='percussion',
+    beams=True,
+    #tag='introduction-violin-lh-maker-4',
 )
 
 ###################
@@ -861,6 +919,7 @@ viola_string_maker_4 = TaleaMusicMaker(
     mask_indices=[1],
     mask_period=3,
     beams=False,
+    #tag='introduction-viola-string-maker-4',
 )
 ###
 viola_bow_maker_4 = EvenDivisionMusicMaker(
@@ -871,6 +930,7 @@ viola_bow_maker_4 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-bow-maker-4',
 )
 ###
 viola_bow_beam_maker_4 = EvenDivisionMusicMaker(
@@ -881,13 +941,17 @@ viola_bow_beam_maker_4 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-viola-beam-maker-4',
 )
 ###
-viola_lh_maker_4 = NoteMusicMaker(
+viola_lh_maker_4 = TupletMusicMaker(
+    tuplet_ratio=[(1, 4, 2, 2, 3), (1, 4, 5, 4), (2, 3), (1, 1, 4, 2, 3, 2), (1, 1, 1, 5),],
     mask_indices=[1],
     mask_period=3,
     pitches=viola_notes_4,
-    beams=False,
+    clef='percussion',
+    beams=True,
+    #tag='introduction-viola-lh-maker-4',
 )
 
 ###################
@@ -903,6 +967,7 @@ cello_string_maker_4 = TaleaMusicMaker(
     mask_indices=[-1],
     mask_period=4,
     beams=False,
+    #tag='introduction-cello-string-maker-4',
 )
 ###
 cello_bow_maker_4 = EvenDivisionMusicMaker(
@@ -913,6 +978,7 @@ cello_bow_maker_4 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-bow-maker-4',
 )
 ###
 cello_bow_beam_maker_4 = EvenDivisionMusicMaker(
@@ -923,13 +989,17 @@ cello_bow_beam_maker_4 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-beam-maker-4',
 )
 ###
-cello_lh_maker_4 = NoteMusicMaker(
+cello_lh_maker_4 = TupletMusicMaker(
+    tuplet_ratio=[(2, 3), (1, 4, 5, 4), (1, 4, 2, 2, 3), (1, 5, 1, 1, 1, 4,), (1, 2, 3, 2),],
     mask_indices=[-1],
     mask_period=4,
     pitches=cello_notes_4,
-    beams=False,
+    clef='percussion',
+    beams=True,
+    #tag='introduction-cello-lh-maker-4',
 )
 
                                 #########
@@ -949,6 +1019,7 @@ violin_string_maker_5 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=5,
     beams=False,
+    #tag='introduction-violin-string-maker-5',
 )
 ###
 violin_bow_maker_5 = EvenDivisionMusicMaker(
@@ -959,6 +1030,7 @@ violin_bow_maker_5 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-violin-bow-maker-5',
 )
 ###
 violin_bow_beam_maker_5 = EvenDivisionMusicMaker(
@@ -969,13 +1041,15 @@ violin_bow_beam_maker_5 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-violin-beam-maker-5',
 )
 ###
 violin_lh_maker_5 = NoteMusicMaker(
     mask_indices=[2],
     mask_period=5,
     pitches=violin_notes_5,
-    beams=False,
+    beams=True,
+    #tag='introduction-violin-lh-maker-5',
 )
 
 ###################
@@ -991,33 +1065,39 @@ viola_string_maker_5 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=5,
     beams=False,
+    #tag='introduction-viola-string-maker-5',
 )
 ###
-viola_bow_maker_5 = EvenDivisionMusicMaker(
-    denominators=[16, 16, 32, 16, 8, 16, 4, 8],
-    mask_indices=[2],
-    mask_period=5,
-    pitches=[0],
-    extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
-    clef='percussion',
-    beams=True,
-)
-###
-viola_bow_beam_maker_5 = EvenDivisionMusicMaker(
-    denominators=[16, 16, 32, 16, 8, 16, 4, 8],
-    mask_indices=[2],
-    mask_period=5,
+viola_bow_maker_5 = TaleaMusicMaker(
+    counts=[1, 3, 2, 3, 1, 1, ],
+    denominator=16,
     pitches=[38],
-    extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
+    extra_counts_per_division=[0, 1, 0,],
+    mask_indices=[2],
+    mask_period=5,
     beams=True,
+    #tag='introduction-viola-bow-maker-5',
+)
+###
+viola_bow_beam_maker_5 = TaleaMusicMaker(
+    counts=[1, 3, 2, 3, 1, 1, ],
+    denominator=16,
+    pitches=[38],
+    clef='percussion',
+    extra_counts_per_division=[0, 1, 0,],
+    mask_indices=[2],
+    mask_period=5,
+    beams=True,
+    #tag='introduction-viola-beam-maker-5',
 )
 ###
 viola_lh_maker_5 = NoteMusicMaker(
     mask_indices=[2],
     mask_period=5,
     pitches=viola_notes_5,
-    beams=False,
+    beams=True,
+    #tag='introduction-viola-lh-maker-5',
 )
 
 ###################
@@ -1033,6 +1113,7 @@ cello_string_maker_5 = TaleaMusicMaker(
     mask_indices=[2],
     mask_period=5,
     beams=False,
+    #tag='introduction-cello-string-maker-5',
 )
 ###
 cello_bow_maker_5 = EvenDivisionMusicMaker(
@@ -1043,6 +1124,7 @@ cello_bow_maker_5 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-bow-maker-5',
 )
 ###
 cello_bow_beam_maker_5 = EvenDivisionMusicMaker(
@@ -1053,13 +1135,15 @@ cello_bow_beam_maker_5 = EvenDivisionMusicMaker(
     extra_counts_per_division=[0, 1, 0, 0, 2, 3, 0, 1, 0],
     clef='percussion',
     beams=True,
+    #tag='introduction-cello-beam-maker-5',
 )
 ###
 cello_lh_maker_5 = NoteMusicMaker(
     mask_indices=[2],
     mask_period=5,
     pitches=cello_notes_5,
-    beams=False,
+    beams=True,
+    #tag='introduction-cello-lh-maker-5',
 )
 
 ################################################################################
@@ -1606,23 +1690,68 @@ add_dynamic_attachments(cello_bow_beam_staff)
 ############################## FINAL ASSEMBLY ##################################
 ################################################################################
 
-violin_staff = abjad.StaffGroup(lilypond_type='StaffGroup', name='violin',)
-violin_staff.extend([violin_string_staff, violin_bow_staff, violin_bow_beam_staff, violin_lh_staff])
+violin_staff = abjad.StaffGroup(
+    lilypond_type='StaffGroup',
+    name='violin',
+    #tag='introduction-violin-staffgroup',
+)
+violin_staff.extend(
+    [
+    violin_string_staff,
+    violin_bow_staff,
+    violin_bow_beam_staff,
+    violin_lh_staff
+    ]
+)
 
-viola_staff = abjad.StaffGroup(lilypond_type='StaffGroup', name='viola',)
-viola_staff.extend([viola_string_staff, viola_bow_staff, viola_bow_beam_staff, viola_lh_staff])
+viola_staff = abjad.StaffGroup(
+    lilypond_type='StaffGroup',
+    name='viola',
+    #tag='introduction-viola-staffgroup',
+)
+viola_staff.extend(
+    [
+    viola_string_staff,
+    viola_bow_staff,
+    viola_bow_beam_staff,
+    viola_lh_staff
+    ]
+)
 
-cello_staff = abjad.StaffGroup(lilypond_type='StaffGroup', name='cello',)
-cello_staff.extend([cello_string_staff, cello_bow_staff, cello_bow_beam_staff, cello_lh_staff])
+cello_staff = abjad.StaffGroup(
+    lilypond_type='StaffGroup',
+    name='cello',
+    #tag='introduction-cello-staffgroup',
+)
+cello_staff.extend(
+    [
+    cello_string_staff,
+    cello_bow_staff,
+    cello_bow_beam_staff,
+    cello_lh_staff
+    ]
+)
 
 ################################################################################
 ############################### FILE CLEANUP ###################################
 ################################################################################
 
-score = abjad.Score(name='Adumbration Score')
-score.extend([time_signature_staff_1, violin_staff, time_signature_staff_2, viola_staff, time_signature_staff_3, cello_staff, ])
+score = abjad.Score(
+    name='Adumbration Score',
+    #tag='introduction-trio-score',
+)
+score.extend(
+[
+    time_signature_staff_1,
+    violin_staff,
+    time_signature_staff_2,
+    viola_staff,
+    time_signature_staff_3,
+    cello_staff,
+    ]
+)
 
-metro = abjad.MetronomeMark((1, 2), 60)
+metro = abjad.MetronomeMark((1, 4), 120)
 abjad.attach(metro, violin_lh_staff[0][0])
 violin = abjad.Violin()
 abjad.attach(violin, violin_lh_staff[0][0])
