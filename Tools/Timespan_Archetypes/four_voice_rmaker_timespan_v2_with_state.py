@@ -228,28 +228,20 @@ for voice_name, timespan_list in all_timespan_lists.items():
 
 
 # Create a score structure
+staff1 = abjad.Staff([abjad.Voice(name='Voice 1')],name='Staff 1',)
+staff2 = abjad.Staff([abjad.Voice(name='Voice 2')],name='Staff 2',)
+staff3 = abjad.Staff([abjad.Voice(name='Voice 3')],name='Staff 3',)
+staff4 = abjad.Staff([abjad.Voice(name='Voice 4')],name='Staff 4',)
 
 
 score = abjad.Score([
     abjad.Staff(name='Global Context'),
     abjad.StaffGroup(
         [
-            abjad.Staff(
-                [abjad.Voice(name='Voice 1')],
-                name='Staff 1',
-            ),
-            abjad.Staff(
-                [abjad.Voice(name='Voice 2')],
-                name='Staff 2',
-            ),
-            abjad.Staff(
-                [abjad.Voice(name='Voice 3')],
-                name='Staff 3',
-            ),
-            abjad.Staff(
-                [abjad.Voice(name='Voice 4')],
-                name='Staff 4',
-            ),
+            staff1,
+            staff2,
+            staff3,
+            staff4,
         ],
         name='Staff Group',
     )
@@ -340,17 +332,17 @@ for voice_name, timespan_list in all_timespan_lists.items():
 for staff in score['Staff Group']:
     abjad.mutate(staff[:]).split(time_signatures)
 
-# for measure in abjad.iterate(staff1).components(abjad.Measure):
-#     abjad.mutate(measure[:]).rewrite_meter(measure)
-#
-# for measure in abjad.iterate(staff2).components(abjad.Measure):
-#     abjad.mutate(measure[:]).rewrite_meter(measure)
-#
-# for measure in abjad.iterate(staff3).components(abjad.Measure):
-#     abjad.mutate(measure[:]).rewrite_meter(measure)
-#
-# for measure in abjad.iterate(staff4).components(abjad.Measure):
-#     abjad.mutate(measure[:]).rewrite_meter(measure)
+for measure in abjad.iterate(staff1).components(abjad.Measure):
+    abjad.mutate(measure[:]).rewrite_meter(measure)
+
+for measure in abjad.iterate(staff2).components(abjad.Measure):
+    abjad.mutate(measure[:]).rewrite_meter(measure)
+
+for measure in abjad.iterate(staff3).components(abjad.Measure):
+    abjad.mutate(measure[:]).rewrite_meter(measure)
+
+for measure in abjad.iterate(staff4).components(abjad.Measure):
+    abjad.mutate(measure[:]).rewrite_meter(measure)
 
 
 # Loop over the voices and replace full-measure single rests (lowercase
@@ -360,15 +352,15 @@ for staff in score['Staff Group']:
 # split:
 
 
-for voice in abjad.iterate(score).components(abjad.Voice):
-    leaves = abjad.select(voice).leaves()
-    for shard in abjad.mutate(leaves).split(time_signatures):
-        if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
-            continue
-        multiplier = abjad.Multiplier(abjad.inspect(shard).duration())
-        multimeasure_rest = abjad.MultimeasureRest(1)
-        abjad.attach(multiplier, multimeasure_rest)
-        abjad.mutate(shard).replace(multimeasure_rest)
+# for voice in abjad.iterate(score).components(abjad.Voice):
+#     leaves = abjad.select(voice).leaves()
+#     for shard in abjad.mutate(leaves).split(time_signatures):
+#         if not all(isinstance(leaf, abjad.Rest) for leaf in shard):
+#             continue
+#         multiplier = abjad.Multiplier(abjad.inspect(shard).duration())
+#         multimeasure_rest = abjad.MultimeasureRest(1)
+#         abjad.attach(multiplier, multimeasure_rest)
+#         abjad.mutate(shard).replace(multimeasure_rest)
 
 
 # Make a lilypond file and show it:
