@@ -187,8 +187,8 @@ violin_timespan_list_4.compute_overlap_factor_mapping()
 overlap_mapping = violin_timespan_list_4.compute_overlap_factor_mapping()
 for key, value in overlap_mapping.items(): key, value
 
-abjad.show(violin_timespan_list_4, scale=0.5)
-#abjad.show(violin_timespan_list_4, scale=0.5, key='annotation')
+#abjad.show(violin_timespan_list_4, scale=0.5)
+abjad.show(violin_timespan_list_4, scale=0.5, key='annotation')
 
 ####viola####
 
@@ -208,8 +208,8 @@ viola_timespan_list_4.compute_overlap_factor_mapping()
 overlap_mapping = viola_timespan_list_4.compute_overlap_factor_mapping()
 for key, value in overlap_mapping.items(): key, value
 
-abjad.show(viola_timespan_list_4, scale=0.5)
-#abjad.show(viola_timespan_list_4, scale=0.5, key='annotation')
+#abjad.show(viola_timespan_list_4, scale=0.5)
+abjad.show(viola_timespan_list_4, scale=0.5, key='annotation')
 
 ####cello####
 
@@ -229,5 +229,5 @@ cello_timespan_list_4.compute_overlap_factor_mapping()
 overlap_mapping = cello_timespan_list_4.compute_overlap_factor_mapping()
 for key, value in overlap_mapping.items(): key, value
 
-abjad.show(cello_timespan_list_4, scale=0.5)
-#abjad.show(cello_timespan_list_4, scale=0.5, key='annotation')
+#abjad.show(cello_timespan_list_4, scale=0.5)
+abjad.show(cello_timespan_list_4, scale=0.5, key='annotation')
