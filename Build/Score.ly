@@ -134,6 +134,8 @@ stringtab = {
         \override Stem.stem-begin-position = #-9
 		\override Tie.stencil = ##f
         \override TimeSignature.stencil = ##f
+
+		\RemoveEmptyStaves
     }
     \context {
         \Staff
@@ -161,6 +163,8 @@ stringtab = {
         \override TimeSignature.stencil = ##f
         \override TupletBracket.stencil = ##f
         \override TupletNumber.stencil = ##f
+
+		\RemoveEmptyStaves
     }
 
     \context {
@@ -187,6 +191,8 @@ stringtab = {
 		\override StemTremolo.style = #'default
         \override TimeSignature.stencil = ##f
         \override TupletBracket.positions = #'(1 . 1)
+
+		\RemoveEmptyStaves
     }
     \context {
         \StaffGroup
