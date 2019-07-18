@@ -2,19 +2,10 @@
 
 \version "2.19.82"
 \language "english"
-#(set-default-paper-size "11x17landscape")
+#(set-default-paper-size "11x17landscape"")
 #(set-global-staff-size 15)
 \include "ekmel.ily"
 \ekmelicStyle evans
-
-\header {
-	tagline = ##f
-	breakbefore = ##t
-	title =  \markup \override #'(font-name . "Didot") \fontsize #8 \bold\center-column {"Adumbration" }
-	subtitle = \markup \override #'(font-name . "Didot") {"String Trio no.2"}
-	subsubtitle = \markup \override #'(font-name . "Didot") \fontsize #6 \center-column {"for violin, viola, and violoncello"}
-	arranger = \markup \override #'(font-name . "Didot") \fontsize #3 {"Gregory Rowland Evans"}
-}
 
 stringtab = {
 	\override Staff.Clef.stencil = #ly:text-interface::print
@@ -33,8 +24,7 @@ stringtab = {
 \layout {
     \accidentalStyle forget
     indent = #0
-	ragged-last = ##t
-    %ragged-right = ##t
+    ragged-right = ##f
     left-margin = #15
 	\context {
         \name TimeSignatureContext
@@ -75,7 +65,7 @@ stringtab = {
         \override TimeSignature.self-alignment-X = #center
         \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 0) (minimum-distance . 10) (padding . 6) (stretchability . 0))
     }
-    \context {
+	\context {
         \Score
         \remove Bar_number_engraver
 		\remove Mark_engraver
@@ -94,123 +84,119 @@ stringtab = {
         autoBeaming = ##f
         tupletFullLength = ##t
     }
+
 	\context {
-        \Voice
-        \remove Forbid_line_break_engraver
-    }
-    \context {
-        \Staff
-        \remove Time_signature_engraver
-    }
-    \context {
-        \RhythmicStaff
-        \remove Time_signature_engraver
-    }
-    \context {
-        \Staff
-        \name StringStaff
-        \type Engraver_group
-        \alias Staff
+		\Voice
+		\remove Forbid_line_break_engraver
+	}
+	\context {
+		\Staff
+		\remove Time_signature_engraver
+	}
+	\context {
+		\RhythmicStaff
+		\remove Time_signature_engraver
+	}
+	\context {
+		\Staff
+		\name StringStaff
+		\type Engraver_group
+		\alias Staff
 
-        \stringtab
+		\stringtab
 
-	    % \override NoteHead.color = #blue %test
-        % \override Rest.color = #red %test
+		% \override NoteHead.color = #blue %test
+		% \override Rest.color = #red %test
 
-        \override Dots.staff-position = #-8
-        \override Flag.Y-offset = #-8.4
-        \override Glissando.bound-details.left.padding = #0.5
-        \override Glissando.bound-details.right.padding = #0.5
-        \override Glissando.thickness = #2
+		\override Dots.staff-position = #-8
+		\override Flag.Y-offset = #-8.4
+		\override Glissando.bound-details.left.padding = #0.5
+		\override Glissando.bound-details.right.padding = #0.5
+		\override Glissando.thickness = #2
 		\override Rest.transparent = ##t
-        \override Script.staff-padding = #3
-        \override StaffSymbol.transparent = ##t
-        \override Stem.direction = #down
-        \override Stem.length = #8
-        \override Stem.stem-begin-position = #-9
+		\override Script.staff-padding = #3
+		\override StaffSymbol.transparent = ##t
+		\override Stem.direction = #down
+		\override Stem.length = #8
+		\override Stem.stem-begin-position = #-9
 		\override Tie.stencil = ##f
-        \override TimeSignature.stencil = ##f
+		\override TimeSignature.stencil = ##f
+	}
+	\context {
+		\Staff
+		\name BowStaff
+		\type Engraver_group
+		\alias Staff
 
-		\RemoveEmptyStaves
-    }
-    \context {
-        \Staff
-        \name BowStaff
-        \type Engraver_group
-        \alias Staff
-
-        % \override Script.color = #red %test
+		% \override Script.color = #red %test
 		% \override NoteHead.color = #yellow %test
-        \bowtab
+		\bowtab
 
-        \override Beam.stencil = ##f
-        \override Dots.stencil = ##f
-        \override Flag.stencil = ##f
-        \override Glissando.bound-details.left.padding = #0.5
-        \override Glissando.bound-details.right.padding = #0.5
-        \override Glissando.thickness = #2
-        \override NoteHead.Y-offset = #-5
-        \override NoteHead.extra-offset = #'(0.05 . 0)
+		\override Beam.stencil = ##f
+		\override Dots.stencil = ##f
+		\override Flag.stencil = ##f
+		\override Glissando.bound-details.left.padding = #0.5
+		\override Glissando.bound-details.right.padding = #0.5
+		\override Glissando.thickness = #2
+		\override NoteHead.Y-offset = #-5
+		\override NoteHead.extra-offset = #'(0.05 . 0)
 		\override Rest.transparent = ##t
-        \override Script.staff-padding = #2.5
-        \override StaffSymbol.transparent = ##t
-        \override Stem.direction = #down
-        \override Stem.stencil = ##f
-        \override TimeSignature.stencil = ##f
-        \override TupletBracket.stencil = ##f
-        \override TupletNumber.stencil = ##f
+		\override Script.staff-padding = #2.5
+		\override StaffSymbol.transparent = ##t
+		\override Stem.direction = #down
+		\override Stem.stencil = ##f
+		\override TimeSignature.stencil = ##f
+		\override TupletBracket.stencil = ##f
+		\override TupletNumber.stencil = ##f
+	}
 
-		\RemoveEmptyStaves
-    }
-
-    \context {
-        \Staff
-        \name BeamStaff
-        \type Engraver_group
-        \alias Staff
-        \override Beam.direction = #down
-        \override Beam.positions = #'(3 . 3)
-        \override Clef.stencil = ##f
-        \override Dots.staff-position = #-2
-        \override Flag.Y-offset = #2.93
-        \override NoteHead.no-ledgers = ##t
-        \override NoteHead.stencil = ##f
+	\context {
+		\Staff
+		\name BeamStaff
+		\type Engraver_group
+		\alias Staff
+		\override Beam.direction = #down
+		\override Beam.positions = #'(3 . 3)
+		\override Clef.stencil = ##f
+		\override Dots.staff-position = #-2
+		\override Flag.Y-offset = #2.93
+		\override NoteHead.no-ledgers = ##t
+		\override NoteHead.stencil = ##f
 		\override Rest.transparent = ##t
-        \override Script.staff-padding = #3
-        \override StaffSymbol.transparent = ##t
-        \override Stem.direction = #down
-        \override Stem.length = #10
-        \override Stem.stem-begin-position = #15.975
-        \override TimeSignature.stencil = ##f
-		\override Tie.stencil = ##f
-        \override TupletBracket.positions = #'(1 . 1)
-		\RemoveEmptyStaves
-    }
-    \context {
-        \StaffGroup
-        \accepts StringStaff
-        \accepts BowStaff
-        \accepts BeamStaff
-    }
-}
+		\override Script.staff-padding = #3
+		\override StaffSymbol.transparent = ##t
+		\override Stem.direction = #down
+		\override Stem.length = #10
+		\override Stem.stem-begin-position = #15.975
+		\override TimeSignature.stencil = ##f
+		\override TupletBracket.positions = #'(1 . 1)
+	}
+	\context {
+		\StaffGroup
+		\accepts StringStaff
+		\accepts BowStaff
+		\accepts BeamStaff
+	}
+	}
 
 \paper {
+  #(set-paper-size "17x11")
 	top-margin = .90\in
-	oddHeaderMarkup = \markup ""
-	evenHeaderMarkup = \markup ""
-	oddFooterMarkup = \markup \fill-line {
+	 oddHeaderMarkup = \markup ""
+  evenHeaderMarkup = \markup ""
+  oddFooterMarkup = \markup \fill-line {
     ""
     \concat {
       "~"
-	  \override #'(font-name . "Didot") \fontsize #2
-	  \fromproperty #'page:page-number-string "~"
+      \override #'(font-name . "Didot") \fontsize #2
+        \fromproperty #'page:page-number-string "~"
      }
     ""
   }
   evenFooterMarkup = \markup \fill-line {
     ""
-	\concat { "~" \override #'(font-name . "Didot") \fontsize #2
-	\fromproperty #'page:page-number-string "~"
+    \concat { "~" \override #'(font-name . "Didot") \fontsize #2
+        \fromproperty #'page:page-number-string "~"
     } ""
   }
 }

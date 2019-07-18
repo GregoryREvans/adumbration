@@ -25,7 +25,7 @@ stringtab = {
     \accidentalStyle forget
     indent = #0
 	ragged-last = ##t
-    %ragged-right = ##t
+    ragged-right = ##f
     left-margin = #15
     \context {
         \name TimeSignatureContext
