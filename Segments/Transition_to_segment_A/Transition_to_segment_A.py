@@ -2,10 +2,11 @@
 ################################## IMPORTS #####################################
 ################################################################################
 
-import abjad
 import os
 import pathlib
 import time
+
+import abjad
 from EvenDivisionMusicMaker import EvenDivisionMusicMaker
 from NoteMusicMaker import NoteMusicMaker
 from TaleaMusicMaker import TaleaMusicMaker

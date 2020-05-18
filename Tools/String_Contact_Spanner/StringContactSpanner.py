@@ -1,4 +1,5 @@
 import typing
+
 from abjad import enums
 from abjad.core.Leaf import Leaf
 from abjad.core.MultimeasureRest import MultimeasureRest
@@ -8,11 +9,11 @@ from abjad.indicators.Articulation import Articulation
 from abjad.indicators.BowContactPoint import BowContactPoint
 from abjad.indicators.BowMotionTechnique import BowMotionTechnique
 from abjad.lilypondnames.LilyPondGrobOverride import LilyPondGrobOverride
-from abjad.scheme import Scheme
-from abjad.scheme import SchemeSymbol
+from abjad.scheme import Scheme, SchemeSymbol
 from abjad.system.Tag import Tag
 from abjad.system.Wrapper import Wrapper
 from abjad.top.inspect import inspect
+
 from .Spanner import Spanner
 
 

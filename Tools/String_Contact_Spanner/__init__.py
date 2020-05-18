@@ -2,19 +2,17 @@
 Tools for modeling spanners: slurs, beams, glissandi, etc.
 """
 
-from .Spanner import Spanner
 from .Beam import Beam
 from .BowContactSpanner import BowContactSpanner
-from .StringContactSpanner import StringContactSpanner
 from .Glissando import Glissando
-from .Hairpin import Hairpin
-from .Hairpin import hairpin
+from .Hairpin import Hairpin, hairpin
 from .HorizontalBracket import HorizontalBracket
 from .OctavationSpanner import OctavationSpanner
 from .PhrasingSlur import PhrasingSlur
 from .PianoPedalSpanner import PianoPedalSpanner
 from .Slur import Slur
-from .TextSpanner import TextSpanner
-from .TextSpanner import text_spanner
+from .Spanner import Spanner
+from .StringContactSpanner import StringContactSpanner
+from .TextSpanner import TextSpanner, text_spanner
 from .Tie import Tie
 from .TrillSpanner import TrillSpanner

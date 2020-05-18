@@ -1,6 +1,6 @@
 import abjad
-from abjad import *
 import consort
+from abjad import *
 from consort import *
 
 ##################### imports

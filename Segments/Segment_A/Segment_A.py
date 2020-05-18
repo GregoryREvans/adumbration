@@ -1,13 +1,13 @@
-import abjad
 import itertools
 import os
 import pathlib
 import time
+from random import random, seed
+
+import abjad
 import abjadext.rmakers
-from MusicMaker import MusicMaker
 from AttachmentHandler import AttachmentHandler
-from random import random
-from random import seed
+from MusicMaker import MusicMaker
 
 print("Interpreting file ...")
 
