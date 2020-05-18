@@ -1,8 +1,8 @@
 import abjad
 from abjadext import rmakers
 
-class TaleaMusicMaker:
 
+class TaleaMusicMaker:
     def __init__(
         self,
         counts,
@@ -12,18 +12,18 @@ class TaleaMusicMaker:
         pitches,
         extra_counts_per_division=[0],
         beams=False,
-        clef='treble',
-        #tag='None',
-        ):
+        clef="treble",
+        # tag='None',
+    ):
         self.counts = counts
         self.denominator = denominator
-        self.extra_counts_per_division=extra_counts_per_division
-        self.mask_indices=mask_indices
-        self.mask_period=mask_period
+        self.extra_counts_per_division = extra_counts_per_division
+        self.mask_indices = mask_indices
+        self.mask_period = mask_period
         self.pitches = pitches
         self.beams = beams
         self.clef = abjad.Clef(clef)
-        #self.tag=tag
+        # self.tag=tag
 
     def _cyclic_pitches(self, pitches):
         c = 0
@@ -34,31 +34,24 @@ class TaleaMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        talea = rmakers.Talea(
-            counts = self.counts,
-            denominator=self.denominator,
-            )
+        talea = rmakers.Talea(counts=self.counts, denominator=self.denominator)
         beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
-            )
+        )
         division_masks = rmakers.SilenceMask(
-            pattern = abjad.Pattern(
-                indices=self.mask_indices,
-                period=self.mask_period)
-            )
-        tuplet_specifier = rmakers.TupletSpecifier(
-            extract_trivial=True,
-            )
+            pattern=abjad.Pattern(indices=self.mask_indices, period=self.mask_period)
+        )
+        tuplet_specifier = rmakers.TupletSpecifier(extract_trivial=True)
         talea_rhythm_maker = rmakers.TaleaRhythmMaker(
             talea=talea,
             beam_specifier=beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
             tuplet_specifier=tuplet_specifier,
-            #tag=self.tag,
-            )
+            # tag=self.tag,
+        )
 
         selections = talea_rhythm_maker(time_signature_pairs)
 
@@ -74,7 +67,7 @@ class TaleaMusicMaker:
         pitches = self._cyclic_pitches(self.pitches)
 
         for i, leaf in enumerate(leaves):
-            if leaf.is_pitched ==True:
+            if leaf.is_pitched == True:
                 pitch = next(pitches)
                 for note in leaf:
                     note.written_pitch = pitch
@@ -93,15 +86,13 @@ class TaleaMusicMaker:
     #     return music
 
     def make_music(self, time_signature_pairs):
-        music = self.make_basic_rhythm(
-            time_signature_pairs,
-            )
+        music = self.make_basic_rhythm(time_signature_pairs)
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
-            )
+        )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
             leaves = abjad.select(shard).leaves()

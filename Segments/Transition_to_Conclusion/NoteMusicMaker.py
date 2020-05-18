@@ -1,20 +1,13 @@
 import abjad
 from abjadext import rmakers
 
-class NoteMusicMaker:
 
-    def __init__(
-        self,
-        mask_indices,
-        mask_period,
-        pitches,
-        beams=False,
-        clef='treble',
-        ):
-        self.mask_indices=mask_indices
-        self.mask_period=mask_period
+class NoteMusicMaker:
+    def __init__(self, mask_indices, mask_period, pitches, beams=False, clef="treble"):
+        self.mask_indices = mask_indices
+        self.mask_period = mask_period
         self.pitches = pitches
-        self.beams=beams
+        self.beams = beams
         self.clef = abjad.Clef(clef)
 
     def _cyclic_pitches(self, pitches):
@@ -29,16 +22,13 @@ class NoteMusicMaker:
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
-            )
+        )
         division_masks = rmakers.SilenceMask(
-            pattern = abjad.Pattern(
-                indices=self.mask_indices,
-                period=self.mask_period)
-            )
+            pattern=abjad.Pattern(indices=self.mask_indices, period=self.mask_period)
+        )
         note_rhythm_maker = rmakers.NoteRhythmMaker(
-            beam_specifier=beam_specifier,
-            division_masks=division_masks,
-            )
+            beam_specifier=beam_specifier, division_masks=division_masks
+        )
         selections = note_rhythm_maker(time_signature_pairs)
         music = abjad.Staff(selections)
         music = self._apply_pitches(music)
@@ -50,7 +40,7 @@ class NoteMusicMaker:
         pitches = self._cyclic_pitches(self.pitches)
 
         for i, leaf in enumerate(leaves):
-            if leaf.is_pitched ==True:
+            if leaf.is_pitched == True:
                 pitch = next(pitches)
                 for note in leaf:
                     note.written_pitch = pitch
@@ -69,16 +59,14 @@ class NoteMusicMaker:
     #     return music
 
     def make_music(self, time_signature_pairs):
-        music = self.make_basic_rhythm(
-            time_signature_pairs,
-            )
+        music = self.make_basic_rhythm(time_signature_pairs)
 
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier=rmakers.BeamSpecifier(
+        beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
-            )
+        )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
             leaves = abjad.select(shard).leaves()

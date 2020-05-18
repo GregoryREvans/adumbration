@@ -15,26 +15,16 @@ time_signatures = [
 
 
 rmaker_one = abjadext.rmakers.TaleaRhythmMaker(
-    talea=abjadext.rmakers.Talea(
-        counts=[1, 2, 3, 4],
-        denominator=16,
-        ),
-    )
+    talea=abjadext.rmakers.Talea(counts=[1, 2, 3, 4], denominator=16)
+)
 
 rmaker_two = abjadext.rmakers.TaleaRhythmMaker(
-    talea=abjadext.rmakers.Talea(
-        counts=[4, 3, 2, -1],
-        denominator=8,
-        ),
-    )
+    talea=abjadext.rmakers.Talea(counts=[4, 3, 2, -1], denominator=8)
+)
 
 silence_maker = abjadext.rmakers.NoteRhythmMaker(
-    division_masks=[
-        abjadext.rmakers.SilenceMask(
-            pattern=abjad.index([0], 1),
-            ),
-        ],
-    )
+    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
+)
 
 
 # Define an initial timespan structure, annotated with rhythm-makers. This
@@ -42,28 +32,22 @@ silence_maker = abjadext.rmakers.NoteRhythmMaker(
 # contain timespans explicitly representing silence.
 
 
-timespan_list = abjad.TimespanList([
-    abjad.AnnotatedTimespan(
-        start_offset=0,
-        stop_offset=(1, 4),
-        annotation=rmaker_one,
+timespan_list = abjad.TimespanList(
+    [
+        abjad.AnnotatedTimespan(
+            start_offset=0, stop_offset=(1, 4), annotation=rmaker_one
         ),
-    abjad.AnnotatedTimespan(
-        start_offset=(1, 4),
-        stop_offset=(3, 4),
-        annotation=rmaker_one,
+        abjad.AnnotatedTimespan(
+            start_offset=(1, 4), stop_offset=(3, 4), annotation=rmaker_one
         ),
-    abjad.AnnotatedTimespan(
-        start_offset=(3, 4),
-        stop_offset=(8, 4),
-        annotation=rmaker_two,
+        abjad.AnnotatedTimespan(
+            start_offset=(3, 4), stop_offset=(8, 4), annotation=rmaker_two
         ),
-    abjad.AnnotatedTimespan(
-        start_offset=(11, 4),
-        stop_offset=(14, 4),
-        annotation=rmaker_one,
+        abjad.AnnotatedTimespan(
+            start_offset=(11, 4), stop_offset=(14, 4), annotation=rmaker_one
         ),
-    ])
+    ]
+)
 
 
 # Guarantee that gaps in the timespan list are explicitly represented by
@@ -98,8 +82,8 @@ def make_container(rhythm_maker, durations):
     selections = rhythm_maker(durations)
     container = abjad.Container(selections)
     # Add analysis brackets so we can see the phrasing graphically
-    start_indicator = abjad.LilyPondLiteral('\startGroup', format_slot='after')
-    stop_indicator = abjad.LilyPondLiteral('\stopGroup', format_slot='after')
+    start_indicator = abjad.LilyPondLiteral("\startGroup", format_slot="after")
+    stop_indicator = abjad.LilyPondLiteral("\stopGroup", format_slot="after")
     for cell in selections:
         cell_first_leaf = abjad.select(cell).leaves()[0]
         cell_last_leaf = abjad.select(cell).leaves()[-1]
@@ -107,13 +91,14 @@ def make_container(rhythm_maker, durations):
         abjad.attach(stop_indicator, cell_last_leaf)
     # The extra space in the literals is a hack around a check for whether an
     # identical object has already been attached
-    start_indicator = abjad.LilyPondLiteral('\startGroup ', format_slot='after')
-    stop_indicator = abjad.LilyPondLiteral('\stopGroup ', format_slot='after')
+    start_indicator = abjad.LilyPondLiteral("\startGroup ", format_slot="after")
+    stop_indicator = abjad.LilyPondLiteral("\stopGroup ", format_slot="after")
     phrase_first_leaf = abjad.select(container).leaves()[0]
     phrase_last_leaf = abjad.select(container).leaves()[-1]
     abjad.attach(start_indicator, phrase_first_leaf)
     abjad.attach(stop_indicator, phrase_last_leaf)
     return container
+
 
 # Loop over the timespan list, grouping timespans into phrases, with all
 # timespans in each phrase having an identical rhythm maker.
@@ -124,7 +109,7 @@ def make_container(rhythm_maker, durations):
 staff = abjad.Staff()
 for rhythm_maker, grouper in itertools.groupby(
     timespan_list,
-    key=lambda timespan: getattr(timespan, 'annotation', silence_maker),
+    key=lambda timespan: getattr(timespan, "annotation", silence_maker),
     # The key function attempts to get the "annotation" property of each
     # timespan in the timespan list. If a timespan has no "annotation", because
     # it is a normal un-annotated timespan, we return the silence rhythm-maker
@@ -138,7 +123,7 @@ for rhythm_maker, grouper in itertools.groupby(
 # Teach the staff that it can draw the analysis brackets
 
 
-staff.consists_commands.append('Horizontal_bracket_engraver')
+staff.consists_commands.append("Horizontal_bracket_engraver")
 
 
 # Create a "global" context. I'm just going to use a normal staff here.

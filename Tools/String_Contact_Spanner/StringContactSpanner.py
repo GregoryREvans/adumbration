@@ -219,8 +219,7 @@ class StringContactSpanner(Spanner):
 
     ### CLASS VARIABLES ###
 
-    __slots__ = (
-        )
+    __slots__ = ()
 
     ### PRIVATE METHODS ###
 
@@ -234,84 +233,73 @@ class StringContactSpanner(Spanner):
         prototype = BowMotionTechnique
         if inspector.has_indicator(prototype):
             bow_motion_technique = inspector.indicator(prototype)
-        return (
-            bow_contact_point,
-            bow_motion_technique,
-            )
+        return (bow_contact_point, bow_motion_technique)
 
     def _get_lilypond_format_bundle(self, leaf):
         lilypond_format_bundle = self._get_basic_lilypond_format_bundle(leaf)
         indicators = self._get_annotations(leaf)
         bow_contact_point = indicators[0]
         bow_motion_technique = indicators[1]
-        #print(leaf)
+        # print(leaf)
         if bow_contact_point is None:
-            #print('\t', None)
+            # print('\t', None)
             return lilypond_format_bundle
         if bow_contact_point.contact_point is None:
-            #print('\t', 'PIZZ')
+            # print('\t', 'PIZZ')
             self._make_pizzicato_overrides(lilypond_format_bundle)
             return lilypond_format_bundle
         if len(self) == 1:
-            #print('\t', 'ONLY')
+            # print('\t', 'ONLY')
             return lilypond_format_bundle
-        #print('\t', 'NORM')
+        # print('\t', 'NORM')
         self._make_bow_contact_point_overrides(
             bow_contact_point=bow_contact_point,
             lilypond_format_bundle=lilypond_format_bundle,
-            )
+        )
         if self._next_leaf_is_bowed(leaf):
-            lilypond_format_bundle.after.spanner_starts.append(r'\glissando')
+            lilypond_format_bundle.after.spanner_starts.append(r"\glissando")
             self._make_bow_direction_change_contributions(
                 bow_contact_point=bow_contact_point,
                 leaf=leaf,
                 lilypond_format_bundle=lilypond_format_bundle,
-                )
+            )
             self._make_glissando_overrides(
                 bow_motion_technique=bow_motion_technique,
                 lilypond_format_bundle=lilypond_format_bundle,
-                )
+            )
         return lilypond_format_bundle
 
     def _make_bow_contact_point_overrides(
-        self,
-        bow_contact_point=None,
-        lilypond_format_bundle=None,
-        ):
+        self, bow_contact_point=None, lilypond_format_bundle=None
+    ):
         if bow_contact_point is None:
             return
         override_ = LilyPondGrobOverride(
-            grob_name='NoteHead',
+            grob_name="NoteHead",
             once=True,
-            property_path='stencil',
-            value=Scheme('ly:text-interface::print'),
-            )
+            property_path="stencil",
+            value=Scheme("ly:text-interface::print"),
+        )
         string = override_.override_string
         lilypond_format_bundle.grob_overrides.append(string)
         override_ = LilyPondGrobOverride(
-            grob_name='NoteHead',
+            grob_name="NoteHead",
             once=True,
-            property_path='text',
+            property_path="text",
             value=bow_contact_point.markup,
-            )
+        )
         string = override_.override_string
         lilypond_format_bundle.grob_overrides.append(string)
         y_offset = float((4 * bow_contact_point.contact_point) - 2)
         override_ = LilyPondGrobOverride(
-            grob_name='NoteHead',
-            once=True,
-            property_path='Y-offset',
-            value=y_offset,
-            )
+            grob_name="NoteHead", once=True, property_path="Y-offset", value=y_offset
+        )
         string = override_.override_string
         lilypond_format_bundle.grob_overrides.append(string)
 
     def _make_bow_direction_change_contributions(
-        self,
-        bow_contact_point=None,
-        leaf=None,
-        lilypond_format_bundle=None,
-        ):
+        self, bow_contact_point=None, leaf=None, lilypond_format_bundle=None
+    ):
         cautionary_change = False
         direction_change = None
         next_leaf = inspect(leaf).leaf(1)
@@ -324,29 +312,32 @@ class StringContactSpanner(Spanner):
         previous_leaf = inspect(leaf).leaf(-1)
         previous_contact_point = None
         if previous_leaf is not None:
-            previous_contact_points = inspect(previous_leaf
-                ).indicators(BowContactPoint)
+            previous_contact_points = inspect(previous_leaf).indicators(BowContactPoint)
             if previous_contact_points:
                 previous_contact_point = previous_contact_points[0]
-        if (leaf is self[0] or
-            previous_contact_point is None or
-            previous_contact_point.contact_point is None
-            ):
+        if (
+            leaf is self[0]
+            or previous_contact_point is None
+            or previous_contact_point.contact_point is None
+        ):
             if this_contact_point < next_contact_point:
                 direction_change = enums.Down
             elif next_contact_point < this_contact_point:
                 direction_change = enums.Up
         else:
             previous_leaf = inspect(leaf).leaf(-1)
-            previous_contact_point = inspect(previous_leaf).indicator(
-                BowContactPoint)
-            if (previous_contact_point < this_contact_point and
-                next_contact_point < this_contact_point):
+            previous_contact_point = inspect(previous_leaf).indicator(BowContactPoint)
+            if (
+                previous_contact_point < this_contact_point
+                and next_contact_point < this_contact_point
+            ):
                 direction_change = enums.Up
-            elif (this_contact_point < previous_contact_point and
-                this_contact_point < next_contact_point):
+            elif (
+                this_contact_point < previous_contact_point
+                and this_contact_point < next_contact_point
+            ):
                 direction_change = enums.Down
-            elif (this_contact_point == previous_contact_point):
+            elif this_contact_point == previous_contact_point:
                 if this_contact_point < next_contact_point:
                     cautionary_change = True
                     direction_change = enums.Down
@@ -357,43 +348,28 @@ class StringContactSpanner(Spanner):
             return
 
     def _make_glissando_overrides(
-        self,
-        bow_motion_technique=None,
-        lilypond_format_bundle=None,
-        ):
+        self, bow_motion_technique=None, lilypond_format_bundle=None
+    ):
         if bow_motion_technique is not None:
             style = SchemeSymbol(bow_motion_technique.glissando_style)
             override_ = LilyPondGrobOverride(
-                grob_name='Glissando',
-                once=True,
-                property_path='style',
-                value=style,
-                )
+                grob_name="Glissando", once=True, property_path="style", value=style
+            )
             string = override_.override_string
             lilypond_format_bundle.grob_overrides.append(string)
 
-    def _make_pizzicato_overrides(
-        self,
-        lilypond_format_bundle=None,
-        ):
-        style = SchemeSymbol('cross')
+    def _make_pizzicato_overrides(self, lilypond_format_bundle=None):
+        style = SchemeSymbol("cross")
         override_ = LilyPondGrobOverride(
-            grob_name='NoteHead',
-            once=True,
-            property_path='style',
-            value=style,
-            )
+            grob_name="NoteHead", once=True, property_path="style", value=style
+        )
         string = override_.override_string
         lilypond_format_bundle.grob_overrides.append(string)
 
     def _next_leaf_is_bowed(self, leaf):
         if leaf is self[-1]:
             return False
-        prototype = (
-            MultimeasureRest,
-            Rest,
-            Skip,
-            )
+        prototype = (MultimeasureRest, Rest, Skip)
         next_leaf = inspect(leaf).leaf(1)
         if next_leaf is None or isinstance(next_leaf, prototype):
             return False

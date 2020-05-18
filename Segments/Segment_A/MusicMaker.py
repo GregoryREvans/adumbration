@@ -1,6 +1,7 @@
 import abjad
 from AttachmentHandler import AttachmentHandler
 
+
 class MusicMaker:
     def __init__(
         self,
@@ -43,6 +44,7 @@ class MusicMaker:
             while True:
                 yield lst[self._count % len(lst)]
                 self._count += 1
+
         cyc_pitches = cyc(pitches)
         pitches, durations, leaves = [[], [], []]
         for tie in logical_ties:
@@ -62,10 +64,10 @@ class MusicMaker:
     def _apply_pitches(self, selections, pitches):
         leaf_maker = abjad.LeafMaker()
         container = abjad.Container(selections)
-        old_ties = [tie for tie in abjad.iterate(
-            container).logical_ties()]
+        old_ties = [tie for tie in abjad.iterate(container).logical_ties()]
         pitches, durations, old_leaves = self._collect_pitches_durations_leaves(
-            old_ties, pitches)
+            old_ties, pitches
+        )
         new_leaves = [leaf for leaf in leaf_maker(pitches, durations)]
         for old_leaf, new_leaf in zip(old_leaves, new_leaves):
             indicators = abjad.inspect(old_leaf).indicators()
