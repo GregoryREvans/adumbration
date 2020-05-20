@@ -65,6 +65,7 @@ before_install:
     - export PYTHONPATH=$TSMAKERS:$PYTHONPATH
 
     # log setup:
+    - echo $PATH
     - echo $PYTHONPATH
     - echo $TRAVIS_BUILD_DIR
     - ls
