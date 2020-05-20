@@ -142,7 +142,7 @@ rmaker_one = abjadext.rmakers.NoteRhythmMaker()
 rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
     denominators=[16, 16, 8, 16, 4, 16, 8],
     extra_counts_per_division=[0, 1, 0, 0, -1, 0, 1, -1],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+    # burnish_specifier= abjadext.rmakers.BurnishSpecifier(
     #     left_classes=[abjad.Rest],
     #     left_counts=[1],
     #     right_classes=[abjad.Rest],
@@ -160,7 +160,7 @@ rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
         beam_divisions_together=True, beam_rests=False
     ),
     extra_counts_per_division=[0, 1, 0, -1],
-    # burnish_specifier=abjadext.rmakers.BurnishSpecifier(
+    # burnish_specifier= abjadext.rmakers.BurnishSpecifier(
     #     left_classes=[abjad.Note, abjad.Rest],
     #     left_counts=[1, 0, 1],
     #     ),

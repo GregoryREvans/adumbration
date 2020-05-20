@@ -40,7 +40,7 @@ class NoteMusicMaker:
         pitches = self._cyclic_pitches(self.pitches)
 
         for i, leaf in enumerate(leaves):
-            if leaf.is_pitched == True:
+            if leaf.is_pitched is True:
                 pitch = next(pitches)
                 for note in leaf:
                     note.written_pitch = pitch

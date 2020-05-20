@@ -1799,7 +1799,7 @@ def _apply_string_numerators_and_tech(staff, nums, tech):
     numerators = cyc(nums)
     techs = cyc(tech)
     for run in abjad.select(staff).runs():
-        spanner = abjad.StringContactSpanner()
+        spanner = abjad.BowContactSpanner()
         abjad.attach(spanner, run)
 
     for logical_tie in abjad.select(staff).logical_ties():

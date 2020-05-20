@@ -1,5 +1,4 @@
 import abjad
-from AttachmentHandler import AttachmentHandler
 
 
 class MusicMaker:
@@ -22,14 +21,13 @@ class MusicMaker:
         return self._make_music(durations)
 
     def _make_basic_rhythm(self, durations):
-        state = self.state
         selections = self.rmaker(durations, previous_state=self.rmaker.state)
         self.state = self.rmaker.state
         return selections
 
     def _make_music(self, durations):
         selections = self._make_basic_rhythm(durations)
-        if self.pitches == None:
+        if self.pitches is None:
             selections = self.attachment_handler.add_attachments(selections)
             return selections
         selections = self._apply_pitches(selections, self.pitches)
@@ -39,7 +37,7 @@ class MusicMaker:
 
     def _collect_pitches_durations_leaves(self, logical_ties, pitches):
         def cyc(lst):
-            if self.continuous == False:
+            if self.continuous is False:
                 self._count = 0
             while True:
                 yield lst[self._count % len(lst)]
