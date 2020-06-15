@@ -1,6 +1,6 @@
-################################################################################
-################################## IMPORTS #####################################
-################################################################################
+# ###############################################################################
+# ################################# IMPORTS #####################################
+# ###############################################################################
 
 import os
 import pathlib
@@ -9,19 +9,19 @@ import time
 import abjad
 from NoteMusicMaker import NoteMusicMaker
 
-################################################################################
-############################## Print  Statemet #################################
-################################################################################
+# ###############################################################################
+# ############################# Print  Statemet #################################
+# ###############################################################################
 
 print("Interpreting file ...")
 
-################################################################################
-################################## STAVES ######################################
-################################################################################
+# ###############################################################################
+# ################################# STAVES ######################################
+# ###############################################################################
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 time_signature_staff_1 = abjad.Staff(
     lilypond_type="TimeSignatureContext", name="Global Context"
@@ -33,9 +33,9 @@ time_signature_staff_3 = abjad.Staff(
     lilypond_type="TimeSignatureContext", name="TimeSignatureContext3"
 )
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_staff = abjad.Staff(
     lilypond_type="StringStaff", name="violin_string_staff"
@@ -44,56 +44,56 @@ violin_bow_staff = abjad.Staff(lilypond_type="BowStaff", name="violin_bow_staff"
 violin_bow_beam_staff = abjad.Staff(lilypond_type="BeamStaff", name="violin_beam_staff")
 violin_lh_staff = abjad.Staff(name="violin_lh_staff")
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_staff = abjad.Staff(lilypond_type="StringStaff", name="viola_string_staff")
 viola_bow_staff = abjad.Staff(lilypond_type="BowStaff", name="viola_bow_staff")
 viola_bow_beam_staff = abjad.Staff(lilypond_type="BeamStaff", name="viola_beam_staff")
 viola_lh_staff = abjad.Staff(name="viola_lh_staff")
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_staff = abjad.Staff(lilypond_type="StringStaff", name="cello_string_staff")
 cello_bow_staff = abjad.Staff(lilypond_type="BowStaff", name="cello_bow_staff")
 cello_bow_beam_staff = abjad.Staff(lilypond_type="BeamStaff", name="cello_beam_staff")
 cello_lh_staff = abjad.Staff(name="cello_lh_staff")
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 time_signature_pairs_for_context = [(6, 8)]  # 1 MEASURE
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_time_signature_pairs_1 = [(6, 8)]  # 1 MEASURE
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_time_signature_pairs_1 = [(6, 8)]  # 1 MEASURE
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_time_signature_pairs_1 = [(6, 8)]  # 1 MEASURE
 
-################################################################################
-############################## MUSIC MAKERS ####################################
-############################### IN ACTION ######################################
-################################################################################
+# ###############################################################################
+# ############################# MUSIC MAKERS ####################################
+# ############################## IN ACTION ######################################
+# ###############################################################################
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 time_signature_maker = NoteMusicMaker(
     mask_indices=[0], mask_period=1, pitches=[0], beams=False
@@ -114,13 +114,13 @@ cello_bow_staff.extend(r" r8 c'4 -> c'4 r8")
 cello_bow_beam_staff.extend(r" r8 c'4 \mp \> c'4 \! \pp r8")
 cello_lh_staff.extend(r" r8 c2 r8")
 # gef
-################################################################################
-################################## ASSEMBLY ####################################
-################################################################################
+# ###############################################################################
+# ################################# ASSEMBLY ####################################
+# ###############################################################################
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 for music_maker in [time_signature_maker]:
     music = music_maker.make_music(time_signature_pairs_for_context)
@@ -138,9 +138,9 @@ for music_maker in [time_signature_maker]:
     ##### violin ######
     ###################
 
-###################
-##### string ######
-###################
+# ##################
+# #### string ######
+# ##################
 #
 # for music_maker in [
 #     violin_string_maker_1,
@@ -257,9 +257,9 @@ for music_maker in [time_signature_maker]:
 #     music = music_maker.make_music(cello_time_signature_pairs_1)
 #     cello_lh_staff.append(music[:])
 
-################################################################################
-################################ ATTACHMENTS ###################################
-################################################################################
+# ###############################################################################
+# ############################### ATTACHMENTS ###################################
+# ###############################################################################
 
 violin_bow_tech = ["jete"]
 viola_bow_tech = ["jete"]
@@ -316,9 +316,9 @@ def _apply_string_numerators_and_tech(staff, nums, tech):
             abjad.attach(technis, note)
 
 
-###################
-##### spanner #####
-###################
+# ##################
+# #### spanner #####
+# ##################
 
 _apply_string_numerators_and_tech(
     staff=violin_string_staff, nums=violin_string_nums, tech=string_tech
@@ -340,9 +340,9 @@ _apply_bow_numerators_and_tech(
     staff=cello_bow_staff, nums=cello_bow_nums, tech=cello_bow_tech
 )
 
-################################################################################
-############################## FINAL ASSEMBLY ##################################
-################################################################################
+# ###############################################################################
+# ############################# FINAL ASSEMBLY ##################################
+# ###############################################################################
 
 violin_staff = abjad.StaffGroup(lilypond_type="StaffGroup", name="violin")
 violin_staff.extend(
@@ -360,9 +360,9 @@ cello_staff.extend(
 )
 
 group = abjad.StaffGroup(lilypond_type="StaffGroup", name="Staff Group")
-################################################################################
-############################### FILE CLEANUP ###################################
-################################################################################
+# ###############################################################################
+# ############################## FILE CLEANUP ###################################
+# ###############################################################################
 
 score = abjad.Score(name="Adumbration Score")
 score.extend(
@@ -421,11 +421,11 @@ for rest in abjad.select(cello_string_staff).components(abjad.Rest):
 for rest in abjad.select(cello_bow_beam_staff).components(abjad.Rest):
     abjad.override(rest).dots.transparent = True
 
-###################
+# ##################
 
 abjad.SegmentMaker.comment_measure_numbers(score)
 
-###################
+# ##################
 
 score_file = abjad.LilyPondFile.new(
     score, includes=["transition_to_segment_a_stylesheet.ily"]
@@ -433,7 +433,7 @@ score_file = abjad.LilyPondFile.new(
 # score_file.paper_block.top_margin = 20
 # score_file.paper_block.bottom_margin = 20
 
-###################
+# ##################
 
 # print(format(score_file))
 directory = "/Users/evansdsg2/Scores/trio/Segments/Transition_to_segment_A"

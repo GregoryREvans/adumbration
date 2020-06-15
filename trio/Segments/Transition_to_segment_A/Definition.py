@@ -1,6 +1,6 @@
 import abjad
 
-##################### imports
+# #################### imports
 violin_string_staff = abjad.Staff()
 violin_bow_staff = abjad.Staff()
 violin_lh_staff = abjad.Staff()
@@ -12,7 +12,7 @@ viola_lh_staff = abjad.Staff()
 cello_string_staff = abjad.Staff()
 cello_bow_staff = abjad.Staff()
 cello_lh_staff = abjad.Staff()
-##################### staves
+# #################### staves
 
 violin_string_staff.extend(r" \times 2/3 {c'4 c'4 c'4}")
 violin_bow_staff.extend(r"c'4 c'4")
@@ -25,7 +25,7 @@ viola_lh_staff.extend(r"c'2")
 cello_string_staff.extend(r" \times 2/3 {c'4 c'4 c'4}")
 cello_bow_staff.extend(r"c'4 c'4")
 cello_lh_staff.extend(r"c'2")
-##################### measures/notes
+# #################### measures/notes
 
 violin_string_staff_leaves = abjad.select(violin_string_staff).by_leaf()
 abjad.attach(abjad.BowContactPoint((0, 5)), violin_string_staff_leaves[0])
@@ -68,7 +68,7 @@ abjad.attach(abjad.BowContactSpanner(), violin_bow_staff_leaves)
 abjad.attach(abjad.Clef("treble"), violin_lh_staff)
 abjad.attach(abjad.Violin(), violin_lh_staff[0])
 abjad.attach(abjad.TimeSignature((2, 4)), violin_lh_staff[0])
-###################### violin
+# ##################### violin
 
 viola_string_staff_leaves = abjad.select(viola_string_staff).by_leaf()
 abjad.attach(abjad.BowContactPoint((0, 5)), viola_string_staff_leaves[0])
@@ -111,7 +111,7 @@ abjad.attach(abjad.BowContactSpanner(), viola_bow_staff_leaves)
 abjad.attach(abjad.Clef("alto"), viola_lh_staff)
 abjad.attach(abjad.Viola(), viola_lh_staff[0])
 abjad.attach(abjad.TimeSignature((2, 4)), viola_lh_staff[0])
-###################### viola
+# ##################### viola
 
 cello_string_staff_leaves = abjad.select(cello_string_staff).by_leaf()
 abjad.attach(abjad.BowContactPoint((0, 5)), cello_string_staff_leaves[0])
@@ -154,7 +154,7 @@ abjad.attach(abjad.BowContactSpanner(), cello_bow_staff_leaves)
 abjad.attach(abjad.Clef("bass"), cello_lh_staff)
 abjad.attach(abjad.Cello(), cello_lh_staff[0])
 abjad.attach(abjad.TimeSignature((2, 4)), cello_lh_staff[0])
-###################### cello
+# ##################### cello
 
 violin = abjad.StaffGroup([violin_string_staff, violin_bow_staff, violin_lh_staff])
 viola = abjad.StaffGroup([viola_string_staff, viola_bow_staff, viola_lh_staff])

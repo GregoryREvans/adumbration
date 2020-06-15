@@ -194,7 +194,7 @@ attachment_handler_three = AttachmentHandler(
 )
 
 # Initialize MusicMakers with the rhythm-makers.
-#####oboe#####
+# ####oboe#####
 violinmusicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=violin_notes,
@@ -213,7 +213,7 @@ violinmusicmaker_three = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_three,
 )
-#####clarinet#####
+# ####clarinet#####
 violamusicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=viola_notes,
@@ -232,7 +232,7 @@ violamusicmaker_three = MusicMaker(
     continuous=True,
     attachment_handler=attachment_handler_three,
 )
-#####bassoon#####
+# ####bassoon#####
 cellomusicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=cello_notes,
@@ -269,7 +269,7 @@ class MusicSpecifier:
 # space.
 
 print("Collecting timespans and rmakers ...")
-###group one###
+# ##group one###
 voice_4_timespan_list = abjad.TimespanList(
     [
         abjad.AnnotatedTimespan(
@@ -498,7 +498,7 @@ voice_1_timespan_list = abjad.TimespanList(
     ]
 )
 
-###group two###
+# ##group two###
 voice_8_timespan_list = abjad.TimespanList(
     [
         abjad.AnnotatedTimespan(
@@ -727,7 +727,7 @@ voice_5_timespan_list = abjad.TimespanList(
     ]
 )
 
-###group three###
+# ##group three###
 voice_12_timespan_list = abjad.TimespanList(
     [
         abjad.AnnotatedTimespan(
@@ -1429,7 +1429,7 @@ score_file = abjad.LilyPondFile.new(
 )
 
 abjad.SegmentMaker.comment_measure_numbers(score)
-###################
+# ##################
 
 directory = "/Users/evansdsg2/Scores/trio/Segments/Segment_A"
 pdf_path = f"{directory}/Segment_A.pdf"

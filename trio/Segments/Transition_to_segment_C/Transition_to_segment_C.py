@@ -1,6 +1,6 @@
-################################################################################
-################################## IMPORTS #####################################
-################################################################################
+# ###############################################################################
+# ################################# IMPORTS #####################################
+# ###############################################################################
 
 import os
 import pathlib
@@ -13,23 +13,23 @@ from NoteMusicMaker import NoteMusicMaker
 from TaleaMusicMaker import TaleaMusicMaker
 from TupletMusicMaker import TupletMusicMaker
 
-################################################################################
-############################## Print  Statemet #################################
-################################################################################
+# ###############################################################################
+# ############################# Print  Statemet #################################
+# ###############################################################################
 
 print("Interpreting file ...")
 
-################################################################################
-############################### MAKE PITCHES ###################################
-################################################################################
+# ###############################################################################
+# ############################## MAKE PITCHES ###################################
+# ###############################################################################
 
-###################
-######## 1 ########
-###################
+# ##################
+# ####### 1 ########
+# ##################
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 random.seed(1)
 violin_random_walk_1 = list()
@@ -42,9 +42,9 @@ for i in range(1, 6):
 # violin_notes_1 = [(x / 4.0) for x in violin_random_walk_1]
 violin_notes_1 = [(x / 2.0) for x in violin_random_walk_1]
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 random.seed(2)
 viola_random_walk_1 = list()
@@ -57,9 +57,9 @@ for i in range(1, 6):
 # viola_notes_1 = [((x / 4.0) - 6) for x in viola_random_walk_1]
 viola_notes_1 = [((x / 2.0) - 6) for x in viola_random_walk_1]
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 random.seed(3)
 cello_random_walk_1 = list()
@@ -72,13 +72,13 @@ for i in range(1, 6):
 # cello_notes_1 = [((x / 4.0) - 8) for x in cello_random_walk_1]
 cello_notes_1 = [((x / 2.0) - 8) for x in cello_random_walk_1]
 
-###################
-######## 2 ########
-###################
+# ##################
+# ####### 2 ########
+# ##################
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 random.seed(4)
 violin_random_walk_2 = list()
@@ -91,9 +91,9 @@ for i in range(1, 6):
 # violin_notes_2 = [((x / 4.0) + 3) for x in violin_random_walk_2]
 violin_notes_2 = [((x / 2.0) + 3) for x in violin_random_walk_2]
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 random.seed(5)
 viola_random_walk_2 = list()
@@ -105,9 +105,9 @@ for i in range(1, 6):
 
 viola_notes_2 = [((x / 2.0) - 5) for x in viola_random_walk_2]
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 random.seed(6)
 cello_random_walk_2 = list()
@@ -120,13 +120,13 @@ for i in range(1, 6):
 # cello_notes_2 = [((x / 4.0) - 12) for x in cello_random_walk_2]
 cello_notes_2 = [((x / 2.0) - 12) for x in cello_random_walk_2]
 
-###################
-######## 3 ########
-###################
+# ##################
+# ####### 3 ########
+# ##################
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 random.seed(7)
 violin_random_walk_3 = list()
@@ -138,9 +138,9 @@ for i in range(1, 6):
 
 violin_notes_3 = [((x / 2.0) + 5) for x in violin_random_walk_3]
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 random.seed(8)
 viola_random_walk_3 = list()
@@ -153,9 +153,9 @@ for i in range(1, 6):
 # viola_notes_3 = [((x / 4.0) - 2) for x in viola_random_walk_3]
 viola_notes_3 = [((x / 2.0) - 2) for x in viola_random_walk_3]
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 random.seed(9)
 cello_random_walk_3 = list()
@@ -168,13 +168,13 @@ for i in range(1, 6):
 # cello_notes_3 = [((x / 4.0) - 15) for x in cello_random_walk_3]
 cello_notes_3 = [((x / 2.0) - 15) for x in cello_random_walk_3]
 
-###################
-######## 4 ########
-###################
+# ##################
+# ####### 4 ########
+# ##################
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 random.seed(10)
 violin_random_walk_4 = list()
@@ -186,9 +186,9 @@ for i in range(1, 6):
 
 violin_notes_4 = [((x / 2.0) + 7) for x in violin_random_walk_4]
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 random.seed(11)
 viola_random_walk_4 = list()
@@ -200,9 +200,9 @@ for i in range(1, 6):
 
 viola_notes_4 = [((x / 2.0) - 8) for x in viola_random_walk_4]
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 random.seed(12)
 cello_random_walk_4 = list()
@@ -215,13 +215,13 @@ for i in range(1, 6):
 # cello_notes_4 = [((x / 4.0) - 12) for x in cello_random_walk_4]
 cello_notes_4 = [((x / 2.0) - 12) for x in cello_random_walk_4]
 
-###################
-######## 5 ########
-###################
+# ##################
+# ####### 5 ########
+# ##################
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 random.seed(13)
 violin_random_walk_5 = list()
@@ -234,9 +234,9 @@ for i in range(1, 6):
 # violin_notes_5 = [((x / 4.0) + 11) for x in violin_random_walk_5]
 violin_notes_5 = [((x / 2.0) + 11) for x in violin_random_walk_5]
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 random.seed(14)
 viola_random_walk_5 = list()
@@ -249,9 +249,9 @@ for i in range(1, 6):
 # viola_notes_5 = [((x / 4.0) - 6) for x in viola_random_walk_5]
 viola_notes_5 = [((x / 2.0) - 6) for x in viola_random_walk_5]
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 random.seed(15)
 cello_random_walk_5 = list()
@@ -263,13 +263,13 @@ for i in range(1, 6):
 
 cello_notes_5 = [((x / 2.0) - 8) for x in cello_random_walk_5]
 
-################################################################################
-################################## STAVES ######################################
-################################################################################
+# ###############################################################################
+# ################################# STAVES ######################################
+# ###############################################################################
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 time_signature_staff_1 = abjad.Staff(
     lilypond_type="TimeSignatureContext", name="TimeSignatureContext1"
@@ -281,9 +281,9 @@ time_signature_staff_3 = abjad.Staff(
     lilypond_type="TimeSignatureContext", name="TimeSignatureContext3"
 )
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_staff = abjad.Staff(
     lilypond_type="StringStaff", name="violin_string_staff"
@@ -292,27 +292,27 @@ violin_bow_staff = abjad.Staff(lilypond_type="BowStaff", name="violin_bow_staff"
 violin_bow_beam_staff = abjad.Staff(lilypond_type="BeamStaff", name="violin_beam_staff")
 violin_lh_staff = abjad.Staff(name="violin_lh_staff")
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_staff = abjad.Staff(lilypond_type="StringStaff", name="viola_string_staff")
 viola_bow_staff = abjad.Staff(lilypond_type="BowStaff", name="viola_bow_staff")
 viola_bow_beam_staff = abjad.Staff(lilypond_type="BeamStaff", name="viola_beam_staff")
 viola_lh_staff = abjad.Staff(name="viola_lh_staff")
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_staff = abjad.Staff(lilypond_type="StringStaff", name="cello_string_staff")
 cello_bow_staff = abjad.Staff(lilypond_type="BowStaff", name="cello_bow_staff")
 cello_bow_beam_staff = abjad.Staff(lilypond_type="BeamStaff", name="cello_beam_staff")
 cello_lh_staff = abjad.Staff(name="cello_lh_staff")
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 time_signature_pairs_for_context = [
     (4, 4),
@@ -340,9 +340,9 @@ time_signature_pairs_for_context = [
     (4, 4),
 ]
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_time_signature_pairs_1 = [(4, 4), (3, 4), (4, 4), (7, 8), (3, 4)]  # 5 MEASURES
 
@@ -354,9 +354,9 @@ violin_time_signature_pairs_4 = [(3, 4), (5, 4), (4, 4), (7, 8)]  # 4 MEASURES
 
 violin_time_signature_pairs_5 = [(4, 4), (3, 4), (7, 8), (5, 4), (4, 4)]  # 5 MEASURES
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_time_signature_pairs_1 = [
     (4, 4),
@@ -375,9 +375,9 @@ viola_time_signature_pairs_4 = [(3, 4), (5, 4), (4, 4), (7, 8), (4, 4)]  # 5 MEA
 
 viola_time_signature_pairs_5 = [(3, 4), (7, 8), (5, 4), (4, 4)]  # 4 MEASURES
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_time_signature_pairs_1 = [
     (4, 4),
@@ -404,26 +404,26 @@ cello_time_signature_pairs_4 = [
 
 cello_time_signature_pairs_5 = [(7, 8), (5, 4), (4, 4)]  # 3 MEASURES
 
-################################################################################
-############################## MUSIC MAKERS ####################################
-############################### IN ACTION ######################################
-################################################################################
+# ###############################################################################
+# ############################# MUSIC MAKERS ####################################
+# ############################## IN ACTION ######################################
+# ###############################################################################
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 time_signature_maker = NoteMusicMaker(
     mask_indices=[0], mask_period=1, pitches=[0], beams=False
 )
 
-#########
-### 1 ###
-#########
+# ########
+# ## 1 ###
+# ########
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_maker_1 = TaleaMusicMaker(
     counts=[2, 1, 3, 1, 2, 5, 4, 1, 4, 3, 5, 4, 2, 1, 5, 2, 3, 1, 1, 2],
@@ -435,7 +435,7 @@ violin_string_maker_1 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 violin_bow_maker_1 = EvenDivisionMusicMaker(
     denominators=[16, 16, 8, 16, 8, 16, 4, 8],
     mask_indices=[4],
@@ -445,7 +445,7 @@ violin_bow_maker_1 = EvenDivisionMusicMaker(
     extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
     beams=True,
 )
-###
+# ##
 violin_bow_beam_maker_1 = EvenDivisionMusicMaker(
     denominators=[16, 16, 8, 16, 8, 16, 4, 8],
     mask_indices=[4],
@@ -455,14 +455,14 @@ violin_bow_beam_maker_1 = EvenDivisionMusicMaker(
     extra_counts_per_division=[1, 0, 0, 1, 1, 3, 0, 1, 0],
     beams=True,
 )
-###
+# ##
 violin_lh_maker_1 = NoteMusicMaker(
     mask_indices=[4], mask_period=5, pitches=violin_notes_1, beams=False
 )
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_maker_1 = TupletMusicMaker(
     tuplet_ratio=[
@@ -480,7 +480,7 @@ viola_string_maker_1 = TupletMusicMaker(
     clef="percussion",
     beams=False,
 )
-###
+# ##
 viola_bow_maker_1 = EvenDivisionMusicMaker(
     denominators=[8, 16, 16, 16, 8, 16, 8, 4],
     mask_indices=[3],
@@ -490,7 +490,7 @@ viola_bow_maker_1 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_bow_beam_maker_1 = EvenDivisionMusicMaker(
     denominators=[8, 16, 16, 16, 8, 16, 8, 4],
     mask_indices=[3],
@@ -500,14 +500,14 @@ viola_bow_beam_maker_1 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_lh_maker_1 = NoteMusicMaker(
     mask_indices=[3], mask_period=4, pitches=viola_notes_1, beams=False
 )
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_maker_1 = TaleaMusicMaker(
     counts=[1, 2, 1, 3, 5, 2, 4, 5, 3, 4, 1, 4, 5, 1, 2, 2, 1, 3, 1, 1, 1],
@@ -519,7 +519,7 @@ cello_string_maker_1 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 cello_bow_maker_1 = EvenDivisionMusicMaker(
     denominators=[16, 8, 16, 16, 8, 16, 4, 8],
     mask_indices=[1],
@@ -529,7 +529,7 @@ cello_bow_maker_1 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_bow_beam_maker_1 = EvenDivisionMusicMaker(
     denominators=[16, 8, 16, 16, 8, 16, 4, 8],
     mask_indices=[1],
@@ -539,18 +539,18 @@ cello_bow_beam_maker_1 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_lh_maker_1 = NoteMusicMaker(
     mask_indices=[1], mask_period=5, pitches=cello_notes_1, beams=False
 )
 
-#########
-### 2 ###
-#########
+# ########
+# ## 2 ###
+# ########
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_maker_2 = TaleaMusicMaker(
     counts=[2, 2, 5, 3, 1, 1, 3, 1],
@@ -562,7 +562,7 @@ violin_string_maker_2 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 violin_bow_maker_2 = EvenDivisionMusicMaker(
     denominators=[8, 16, 8, 16, 16, 4, 16, 16, 8],
     mask_indices=[2],
@@ -572,7 +572,7 @@ violin_bow_maker_2 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 violin_bow_beam_maker_2 = EvenDivisionMusicMaker(
     denominators=[8, 16, 8, 16, 16, 4, 16, 16, 8],
     mask_indices=[2],
@@ -582,7 +582,7 @@ violin_bow_beam_maker_2 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 violin_lh_maker_2 = TupletMusicMaker(
     tuplet_ratio=[
         (2, 3),
@@ -600,9 +600,9 @@ violin_lh_maker_2 = TupletMusicMaker(
     beams=True,
 )
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_maker_2 = TaleaMusicMaker(
     counts=[1, 1, 2, 4, 6, 1, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -614,7 +614,7 @@ viola_string_maker_2 = TaleaMusicMaker(
     mask_period=3,
     beams=False,
 )
-###
+# ##
 viola_bow_maker_2 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[1],
@@ -624,7 +624,7 @@ viola_bow_maker_2 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_bow_beam_maker_2 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[1],
@@ -634,14 +634,14 @@ viola_bow_beam_maker_2 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_lh_maker_2 = NoteMusicMaker(
     mask_indices=[1], mask_period=3, pitches=viola_notes_2, beams=False
 )
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_maker_2 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -653,7 +653,7 @@ cello_string_maker_2 = TaleaMusicMaker(
     mask_period=4,
     beams=False,
 )
-###
+# ##
 cello_bow_maker_2 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[0],
@@ -663,7 +663,7 @@ cello_bow_maker_2 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_bow_beam_maker_2 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[0],
@@ -673,7 +673,7 @@ cello_bow_beam_maker_2 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_lh_maker_2 = TupletMusicMaker(
     tuplet_ratio=[(3, 3, 3, 1), (5, 6), (4, 3, 2, 1), (2, 4, 3)],
     mask_indices=[0],
@@ -683,13 +683,13 @@ cello_lh_maker_2 = TupletMusicMaker(
     beams=True,
 )
 
-#########
-### 3 ###
-#########
+# ########
+# ## 3 ###
+# ########
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_maker_3 = TupletMusicMaker(
     tuplet_ratio=[(3, 5), (5, 4), (4, 1), (3, 4, 2)],
@@ -699,7 +699,7 @@ violin_string_maker_3 = TupletMusicMaker(
     clef="percussion",
     beams=False,
 )
-###
+# ##
 violin_bow_maker_3 = EvenDivisionMusicMaker(
     denominators=[16, 32, 16, 16, 8, 4, 16, 8],
     mask_indices=[2],
@@ -709,7 +709,7 @@ violin_bow_maker_3 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 violin_bow_beam_maker_3 = EvenDivisionMusicMaker(
     denominators=[16, 32, 16, 16, 8, 4, 16, 8],
     mask_indices=[2],
@@ -719,14 +719,14 @@ violin_bow_beam_maker_3 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 violin_lh_maker_3 = NoteMusicMaker(
     mask_indices=[2], mask_period=6, pitches=violin_notes_3, beams=False
 )
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_maker_3 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -738,7 +738,7 @@ viola_string_maker_3 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 viola_bow_maker_3 = EvenDivisionMusicMaker(
     denominators=[8, 16, 16, 4, 8, 16, 4, 8],
     mask_indices=[1],
@@ -748,7 +748,7 @@ viola_bow_maker_3 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_bow_beam_maker_3 = EvenDivisionMusicMaker(
     denominators=[8, 16, 16, 4, 8, 16, 4, 8],
     mask_indices=[1],
@@ -758,14 +758,14 @@ viola_bow_beam_maker_3 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_lh_maker_3 = NoteMusicMaker(
     mask_indices=[1], mask_period=5, pitches=viola_notes_3, beams=False
 )
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_maker_3 = TaleaMusicMaker(
     counts=[4, 3, 5, 2, 6, 1, 2, 3],
@@ -777,7 +777,7 @@ cello_string_maker_3 = TaleaMusicMaker(
     mask_period=2,
     beams=False,
 )
-###
+# ##
 cello_bow_maker_3 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[0],
@@ -787,7 +787,7 @@ cello_bow_maker_3 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_bow_beam_maker_3 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[0],
@@ -797,18 +797,18 @@ cello_bow_beam_maker_3 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_lh_maker_3 = NoteMusicMaker(
     mask_indices=[0], mask_period=2, pitches=cello_notes_3, beams=False
 )
 
-#########
-### 4 ###
-#########
+# ########
+# ## 4 ###
+# ########
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_maker_4 = TaleaMusicMaker(
     counts=[2, 5, 4, 1, 1, 1, 3, 1],
@@ -820,7 +820,7 @@ violin_string_maker_4 = TaleaMusicMaker(
     mask_period=6,
     beams=False,
 )
-###
+# ##
 violin_bow_maker_4 = TaleaMusicMaker(
     counts=[1, 2, 1, 6, 2, 3, 1, 1, 2],
     denominator=16,
@@ -831,7 +831,7 @@ violin_bow_maker_4 = TaleaMusicMaker(
     mask_period=6,
     beams=False,
 )
-###
+# ##
 violin_bow_beam_maker_4 = TaleaMusicMaker(
     counts=[1, 2, 1, 6, 2, 3, 1, 1, 2],
     denominator=16,
@@ -842,14 +842,14 @@ violin_bow_beam_maker_4 = TaleaMusicMaker(
     mask_period=6,
     beams=True,
 )
-###
+# ##
 violin_lh_maker_4 = NoteMusicMaker(
     mask_indices=[2], mask_period=6, pitches=violin_notes_4, beams=False
 )
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_maker_4 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -861,7 +861,7 @@ viola_string_maker_4 = TaleaMusicMaker(
     mask_period=3,
     beams=False,
 )
-###
+# ##
 viola_bow_maker_4 = EvenDivisionMusicMaker(
     denominators=[16, 16, 8, 16, 4, 8],
     mask_indices=[1],
@@ -871,7 +871,7 @@ viola_bow_maker_4 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_bow_beam_maker_4 = EvenDivisionMusicMaker(
     denominators=[16, 16, 8, 16, 4, 8],
     mask_indices=[1],
@@ -881,14 +881,14 @@ viola_bow_beam_maker_4 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_lh_maker_4 = NoteMusicMaker(
     mask_indices=[1], mask_period=3, pitches=viola_notes_4, beams=False
 )
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_maker_4 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -900,7 +900,7 @@ cello_string_maker_4 = TaleaMusicMaker(
     mask_period=4,
     beams=False,
 )
-###
+# ##
 cello_bow_maker_4 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[-1],
@@ -910,7 +910,7 @@ cello_bow_maker_4 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_bow_beam_maker_4 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[-1],
@@ -920,18 +920,18 @@ cello_bow_beam_maker_4 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_lh_maker_4 = NoteMusicMaker(
     mask_indices=[-1], mask_period=4, pitches=cello_notes_4, beams=False
 )
 
-#########
-### 5 ###
-#########
+# ########
+# ## 5 ###
+# ########
 
-###################
-##### violin ######
-###################
+# ##################
+# #### violin ######
+# ##################
 
 violin_string_maker_5 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, -3, 1, 1, 2],
@@ -943,7 +943,7 @@ violin_string_maker_5 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 violin_bow_maker_5 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[2],
@@ -953,7 +953,7 @@ violin_bow_maker_5 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 violin_bow_beam_maker_5 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[2],
@@ -963,14 +963,14 @@ violin_bow_beam_maker_5 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 violin_lh_maker_5 = NoteMusicMaker(
     mask_indices=[2], mask_period=5, pitches=violin_notes_5, beams=False
 )
 
-###################
-###### viola ######
-###################
+# ##################
+# ##### viola ######
+# ##################
 
 viola_string_maker_5 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -982,7 +982,7 @@ viola_string_maker_5 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 viola_bow_maker_5 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[2],
@@ -992,7 +992,7 @@ viola_bow_maker_5 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_bow_beam_maker_5 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[2],
@@ -1002,14 +1002,14 @@ viola_bow_beam_maker_5 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 viola_lh_maker_5 = NoteMusicMaker(
     mask_indices=[2], mask_period=5, pitches=viola_notes_5, beams=False
 )
 
-###################
-###### cello ######
-###################
+# ##################
+# ##### cello ######
+# ##################
 
 cello_string_maker_5 = TaleaMusicMaker(
     counts=[1, 1, 1, 3, 1, 2, 5, 4, 1, 1, 1, 3, 1, 1, 2, 1, 6, 2, 3, 1, 1, 2],
@@ -1021,7 +1021,7 @@ cello_string_maker_5 = TaleaMusicMaker(
     mask_period=5,
     beams=False,
 )
-###
+# ##
 cello_bow_maker_5 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[2],
@@ -1031,7 +1031,7 @@ cello_bow_maker_5 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_bow_beam_maker_5 = EvenDivisionMusicMaker(
     denominators=[16, 16, 32, 16, 8, 16, 4, 8],
     mask_indices=[2],
@@ -1041,18 +1041,18 @@ cello_bow_beam_maker_5 = EvenDivisionMusicMaker(
     clef="percussion",
     beams=True,
 )
-###
+# ##
 cello_lh_maker_5 = NoteMusicMaker(
     mask_indices=[2], mask_period=5, pitches=cello_notes_5, beams=False
 )
 
-################################################################################
-################################## ASSEMBLY ####################################
-################################################################################
+# ###############################################################################
+# ################################# ASSEMBLY ####################################
+# ###############################################################################
 
-###################
+# ##################
 # time signatures #
-###################
+# ##################
 
 for music_maker in [time_signature_maker]:
     music = music_maker.make_music(time_signature_pairs_for_context)
@@ -1070,9 +1070,9 @@ for music_maker in [time_signature_maker]:
     ##### violin ######
     ###################
 
-###################
-##### string ######
-###################
+# ##################
+# #### string ######
+# ##################
 
 for music_maker in [violin_string_maker_1]:
     music = music_maker.make_music(violin_time_signature_pairs_1)
@@ -1094,9 +1094,9 @@ for music_maker in [violin_string_maker_5]:
     music = music_maker.make_music(violin_time_signature_pairs_5)
     violin_string_staff.append(music[:])
 
-###################
-####### bow #######
-###################
+# ##################
+# ###### bow #######
+# ##################
 
 for music_maker in [violin_bow_maker_1]:
     music = music_maker.make_music(violin_time_signature_pairs_1)
@@ -1117,7 +1117,7 @@ for music_maker in [violin_bow_maker_4]:
 for music_maker in [violin_bow_maker_5]:
     music = music_maker.make_music(violin_time_signature_pairs_5)
     violin_bow_staff.append(music[:])
-###beams###
+# ##beams###
 for music_maker in [violin_bow_beam_maker_1]:
     music = music_maker.make_music(violin_time_signature_pairs_1)
     violin_bow_beam_staff.append(music[:])
@@ -1138,9 +1138,9 @@ for music_maker in [violin_bow_beam_maker_5]:
     music = music_maker.make_music(violin_time_signature_pairs_5)
     violin_bow_beam_staff.append(music[:])
 
-###################
-#### left hand ####
-###################
+# ##################
+# ### left hand ####
+# ##################
 
 for music_maker in [violin_lh_maker_1]:
     music = music_maker.make_music(violin_time_signature_pairs_1)
@@ -1166,9 +1166,9 @@ for music_maker in [violin_lh_maker_5]:
     ###### viola ######
     ###################
 
-###################
-##### string ######
-###################
+# ##################
+# #### string ######
+# ##################
 
 for music_maker in [viola_string_maker_1]:
     music = music_maker.make_music(viola_time_signature_pairs_1)
@@ -1190,9 +1190,9 @@ for music_maker in [viola_string_maker_5]:
     music = music_maker.make_music(viola_time_signature_pairs_5)
     viola_string_staff.append(music[:])
 
-###################
-####### bow #######
-###################
+# ##################
+# ###### bow #######
+# ##################
 
 for music_maker in [viola_bow_maker_1]:
     music = music_maker.make_music(viola_time_signature_pairs_1)
@@ -1213,7 +1213,7 @@ for music_maker in [viola_bow_maker_4]:
 for music_maker in [viola_bow_maker_5]:
     music = music_maker.make_music(viola_time_signature_pairs_5)
     viola_bow_staff.append(music[:])
-###beams###
+# ##beams###
 for music_maker in [viola_bow_beam_maker_1]:
     music = music_maker.make_music(viola_time_signature_pairs_1)
     viola_bow_beam_staff.append(music[:])
@@ -1234,9 +1234,9 @@ for music_maker in [viola_bow_beam_maker_5]:
     music = music_maker.make_music(viola_time_signature_pairs_5)
     viola_bow_beam_staff.append(music[:])
 
-###################
-#### left hand ####
-###################
+# ##################
+# ### left hand ####
+# ##################
 
 for music_maker in [viola_lh_maker_1]:
     music = music_maker.make_music(viola_time_signature_pairs_1)
@@ -1262,9 +1262,9 @@ for music_maker in [viola_lh_maker_5]:
     ###### cello ######
     ###################
 
-###################
-##### string ######
-###################
+# ##################
+# #### string ######
+# ##################
 
 for music_maker in [cello_string_maker_1]:
     music = music_maker.make_music(cello_time_signature_pairs_1)
@@ -1286,9 +1286,9 @@ for music_maker in [cello_string_maker_5]:
     music = music_maker.make_music(cello_time_signature_pairs_5)
     cello_string_staff.append(music[:])
 
-###################
-####### bow #######
-###################
+# ##################
+# ###### bow #######
+# ##################
 
 for music_maker in [cello_bow_maker_1]:
     music = music_maker.make_music(cello_time_signature_pairs_1)
@@ -1309,7 +1309,7 @@ for music_maker in [cello_bow_maker_4]:
 for music_maker in [cello_bow_maker_5]:
     music = music_maker.make_music(cello_time_signature_pairs_5)
     cello_bow_staff.append(music[:])
-###beams###
+# ##beams###
 for music_maker in [cello_bow_beam_maker_1]:
     music = music_maker.make_music(cello_time_signature_pairs_1)
     cello_bow_beam_staff.append(music[:])
@@ -1330,9 +1330,9 @@ for music_maker in [cello_bow_beam_maker_5]:
     music = music_maker.make_music(cello_time_signature_pairs_5)
     cello_bow_beam_staff.append(music[:])
 
-###################
-#### left hand ####
-###################
+# ##################
+# ### left hand ####
+# ##################
 
 for music_maker in [cello_lh_maker_1]:
     music = music_maker.make_music(cello_time_signature_pairs_1)
@@ -1354,9 +1354,9 @@ for music_maker in [cello_lh_maker_5]:
     music = music_maker.make_music(cello_time_signature_pairs_5)
     cello_lh_staff.append(music[:])
 
-################################################################################
-################################ ATTACHMENTS ###################################
-################################################################################
+# ###############################################################################
+# ############################### ATTACHMENTS ###################################
+# ###############################################################################
 
 violin_bow_tech = ["ordinario"]
 viola_bow_tech = ["ordinario"]
@@ -1632,9 +1632,9 @@ def _apply_string_numerators_and_tech(staff, nums, tech):
             abjad.attach(technis, note)
 
 
-###################
-##### spanner #####
-###################
+# ##################
+# #### spanner #####
+# ##################
 
 _apply_string_numerators_and_tech(
     staff=violin_string_staff, nums=violin_string_nums, tech=string_tech
@@ -1656,9 +1656,9 @@ _apply_bow_numerators_and_tech(
     staff=cello_bow_staff, nums=cello_bow_nums, tech=cello_bow_tech
 )
 
-################################################################################
-############################## FINAL ASSEMBLY ##################################
-################################################################################
+# ###############################################################################
+# ############################# FINAL ASSEMBLY ##################################
+# ###############################################################################
 
 violin_staff = abjad.StaffGroup(lilypond_type="StaffGroup", name="violin")
 violin_staff.extend(
@@ -1675,9 +1675,9 @@ cello_staff.extend(
     [cello_string_staff, cello_bow_staff, cello_bow_beam_staff, cello_lh_staff]
 )
 
-################################################################################
-############################### FILE CLEANUP ###################################
-################################################################################
+# ###############################################################################
+# ############################## FILE CLEANUP ###################################
+# ###############################################################################
 
 score = abjad.Score(name="Adumbration Score")
 score.extend(
@@ -1735,17 +1735,17 @@ for rest in abjad.select(cello_string_staff).components(abjad.Rest):
 for rest in abjad.select(cello_bow_beam_staff).components(abjad.Rest):
     abjad.override(rest).dots.transparent = True
 
-###################
+# ##################
 
 abjad.SegmentMaker.comment_measure_numbers(score)
 
-###################
+# ##################
 
 score_file = abjad.LilyPondFile.new(score, includes=["first_stylesheet.ily"])
 # score_file.paper_block.top_margin = 20
 # score_file.paper_block.bottom_margin = 20
 
-###################
+# ##################
 
 # print(format(score_file))
 directory = "/Users/evansdsg2/Scores/trio/Segments/Introduction"
