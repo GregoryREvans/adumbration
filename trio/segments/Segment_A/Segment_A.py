@@ -4,10 +4,11 @@ import pathlib
 import time
 from random import random, seed
 
-import abjad
-import abjadext.rmakers
 from AttachmentHandler import AttachmentHandler
 from MusicMaker import MusicMaker
+
+import abjad
+import abjadext.rmakers
 
 print("Interpreting file ...")
 

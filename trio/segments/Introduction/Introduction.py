@@ -1,17 +1,17 @@
 # ###############################################################################
 # ################################# IMPORTS #####################################
 # ###############################################################################
-
 import os
 import pathlib
 import random
 import time
 
-import abjad
 from EvenDivisionMusicMaker import EvenDivisionMusicMaker
 from NoteMusicMaker import NoteMusicMaker
 from TaleaMusicMaker import TaleaMusicMaker
 from TupletMusicMaker import TupletMusicMaker
+
+import abjad
 
 # ###############################################################################
 # ############################# Print  Statemet #################################
