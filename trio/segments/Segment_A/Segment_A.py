@@ -1182,17 +1182,17 @@ print("Splitting and rewriting ...")
 for voice in abjad.iterate(score["Staff Group 1"]).components(abjad.Voice):
     for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
         time_signature = time_signatures[i]
-        abjad.mutate(shard).rewrite_meter(time_signature)
+        abjad.Meter.rewrite_meter(shard, time_signature)
 
 for voice in abjad.iterate(score["Staff Group 2"]).components(abjad.Voice):
     for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
         time_signature = time_signatures[i]
-        abjad.mutate(shard).rewrite_meter(time_signature)
+        abjad.Meter.rewrite_meter(shard, time_signature)
 
 for voice in abjad.iterate(score["Staff Group 3"]).components(abjad.Voice):
     for i, shard in enumerate(abjad.mutate(voice[:]).split(time_signatures)):
         time_signature = time_signatures[i]
-        abjad.mutate(shard).rewrite_meter(time_signature)
+        abjad.Meter.rewrite_meter(shard, time_signature)
 
 print("Beaming runs ...")
 
