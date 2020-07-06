@@ -61,7 +61,7 @@ before_install:
 
     # clone & install tsmakers:
     - TSMAKERS=/tmp/tsmakers
-    - git clone https://github.com/ivanalexandermoscotta/tsmakers.git $TSMAKERS
+    - git clone https://github.com/GregoryREvans/tsmakers.git $TSMAKERS
     - export PYTHONPATH=$TSMAKERS:$PYTHONPATH
 
     # log setup:
