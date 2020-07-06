@@ -1985,8 +1985,8 @@ score_file = abjad.LilyPondFile.new(score, includes=["first_stylesheet.ily"])
 
 # print(format(score_file))
 directory = "/Users/evansdsg2/Scores/trio/Segments/Introduction"
-pdf_path = f"{directory}/Introduction.pdf"
-path = pathlib.Path("Introduction.pdf")
+pdf_path = f"{directory}/illustration.pdf"
+path = pathlib.Path("illustration.pdf")
 if path.exists():
     print(f"Removing {pdf_path} ...")
     path.unlink()

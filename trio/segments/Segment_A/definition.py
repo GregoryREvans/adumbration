@@ -1433,8 +1433,8 @@ abjad.SegmentMaker.comment_measure_numbers(score)
 # ##################
 
 directory = "/Users/evansdsg2/Scores/trio/Segments/Segment_A"
-pdf_path = f"{directory}/Segment_A.pdf"
-path = pathlib.Path("Segment_A.pdf")
+pdf_path = f"{directory}/illustration.pdf"
+path = pathlib.Path("illustration.pdf")
 if path.exists():
     print(f"Removing {pdf_path} ...")
     path.unlink()
