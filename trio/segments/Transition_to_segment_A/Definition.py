@@ -5,9 +5,9 @@ import os
 import pathlib
 import time
 
-from NoteMusicMaker import NoteMusicMaker
-
 import abjad
+
+from .NoteMusicMaker import NoteMusicMaker
 
 # ###############################################################################
 # ############################# Print  Statemet #################################

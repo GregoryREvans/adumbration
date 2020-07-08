@@ -6,12 +6,12 @@ import pathlib
 import random
 import time
 
-from EvenDivisionMusicMaker import EvenDivisionMusicMaker
-from NoteMusicMaker import NoteMusicMaker
-from TaleaMusicMaker import TaleaMusicMaker
-from TupletMusicMaker import TupletMusicMaker
-
 import abjad
+
+from .EvenDivisionMusicMaker import EvenDivisionMusicMaker
+from .NoteMusicMaker import NoteMusicMaker
+from .TaleaMusicMaker import TaleaMusicMaker
+from .TupletMusicMaker import TupletMusicMaker
 
 # ###############################################################################
 # ############################# Print  Statemet #################################
