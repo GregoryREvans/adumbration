@@ -30,7 +30,7 @@ class TupletMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
 
-        beam_specifier = rmakers.BeamSpecifier(
+        # beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -43,7 +43,7 @@ class TupletMusicMaker:
         tuplet_specifier = rmakers.TupletSpecifier(extract_trivial=True)
         tuplet_rhythm_maker = rmakers.TupletRhythmMaker(
             tuplet_ratios=self.tuplet_ratio,
-            beam_specifier=beam_specifier,
+            # beam_specifier=# beam_specifier,
             division_masks=division_masks,
             # preferred_denominator=None
             # ...equiv of this...I think it is duration specifier
@@ -85,7 +85,7 @@ class TupletMusicMaker:
         music = self.make_basic_rhythm(time_signature_pairs)
 
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier = rmakers.BeamSpecifier(
+        # beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -94,7 +94,7 @@ class TupletMusicMaker:
         for i, shard in enumerate(shards):
             leaves = abjad.select(shard).leaves()
             if not all(isinstance(_, abjad.Rest) for _ in leaves):
-                beam_specifier([shard])
+                # beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 

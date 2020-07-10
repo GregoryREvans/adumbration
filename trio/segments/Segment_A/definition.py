@@ -7,8 +7,8 @@ from random import random, seed
 import abjad
 import abjadext.rmakers
 
-from .AttachmentHandler import AttachmentHandler
-from .MusicMaker import MusicMaker
+from AttachmentHandler import AttachmentHandler
+from MusicMaker import MusicMaker
 
 print("Interpreting file ...")
 
@@ -157,7 +157,7 @@ rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
 
 rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(counts=[1, 1, 1, 2, 1, 3, 1, 4, 5], denominator=16),
-    beam_specifier=abjadext.rmakers.BeamSpecifier(
+    # beam_specifier=abjadext.rmakers.BeamSpecifier(
         beam_divisions_together=True, beam_rests=False
     ),
     extra_counts_per_division=[0, 1, 0, -1],
@@ -1199,7 +1199,7 @@ print("Beaming runs ...")
 for voice in abjad.select(score).components(abjad.Voice):
     for run in abjad.select(voice).runs():
         if 1 < len(run):
-            # use a beam_specifier to remove beam indicators from run
+            # use a # beam_specifier to remove beam indicators from run
             specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
             specifier(run)
             # then attach new indicators at the 0 and -1 of run

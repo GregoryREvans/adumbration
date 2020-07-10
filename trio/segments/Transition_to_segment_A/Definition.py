@@ -7,7 +7,7 @@ import time
 
 import abjad
 
-from .NoteMusicMaker import NoteMusicMaker
+from NoteMusicMaker import NoteMusicMaker
 
 # ###############################################################################
 # ############################# Print  Statemet #################################

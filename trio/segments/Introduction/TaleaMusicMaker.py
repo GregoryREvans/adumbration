@@ -35,7 +35,7 @@ class TaleaMusicMaker:
     def make_basic_rhythm(self, time_signature_pairs):
 
         talea = rmakers.Talea(counts=self.counts, denominator=self.denominator)
-        beam_specifier = rmakers.BeamSpecifier(
+        # beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -46,7 +46,7 @@ class TaleaMusicMaker:
         tuplet_specifier = rmakers.TupletSpecifier(extract_trivial=True)
         talea_rhythm_maker = rmakers.TaleaRhythmMaker(
             talea=talea,
-            beam_specifier=beam_specifier,
+            # beam_specifier=# beam_specifier,
             extra_counts_per_division=self.extra_counts_per_division,
             division_masks=division_masks,
             tuplet_specifier=tuplet_specifier,
@@ -88,7 +88,7 @@ class TaleaMusicMaker:
     def make_music(self, time_signature_pairs):
         music = self.make_basic_rhythm(time_signature_pairs)
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
-        beam_specifier = rmakers.BeamSpecifier(
+        # beam_specifier = rmakers.BeamSpecifier(
             beam_divisions_together=self.beams,
             beam_each_division=self.beams,
             beam_rests=self.beams,
@@ -97,7 +97,7 @@ class TaleaMusicMaker:
         for i, shard in enumerate(shards):
             leaves = abjad.select(shard).leaves()
             if not all(isinstance(_, abjad.Rest) for _ in leaves):
-                beam_specifier([shard])
+                # beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
         # music = self.add_attachments(music)
