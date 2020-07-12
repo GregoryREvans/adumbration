@@ -6,7 +6,6 @@ import pathlib
 import time
 
 import abjad
-
 from NoteMusicMaker import NoteMusicMaker
 
 # ###############################################################################
