@@ -80,7 +80,7 @@ class NoteMusicMaker:
         # )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
-            leaves = abjad.select(shard).leaves()
+            # leaves = abjad.select(shard).leaves()
             # if not all(isinstance(_, abjad.Rest) for _ in leaves):
             # beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
