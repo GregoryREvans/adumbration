@@ -157,8 +157,8 @@ rmaker_two = abjadext.rmakers.EvenDivisionRhythmMaker(
 rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
     talea=abjadext.rmakers.Talea(counts=[1, 1, 1, 2, 1, 3, 1, 4, 5], denominator=16),
     # beam_specifier=abjadext.rmakers.BeamSpecifier(
-        beam_divisions_together=True, beam_rests=False
-    ),
+    #     beam_divisions_together=True, beam_rests=False
+    # ),
     extra_counts_per_division=[0, 1, 0, -1],
     # burnish_specifier= abjadext.rmakers.BurnishSpecifier(
     #     left_classes=[abjad.Note, abjad.Rest],
@@ -170,7 +170,7 @@ rmaker_three = abjadext.rmakers.TaleaRhythmMaker(
 )
 
 silence_maker = abjadext.rmakers.NoteRhythmMaker(
-    division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
+    # division_masks=[abjadext.rmakers.SilenceMask(pattern=abjad.index([0], 1))]
 )
 
 # Initialize AttachmentHandler
@@ -1199,8 +1199,8 @@ for voice in abjad.select(score).components(abjad.Voice):
     for run in abjad.select(voice).runs():
         if 1 < len(run):
             # use a # beam_specifier to remove beam indicators from run
-            specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
-            specifier(run)
+            # specifier = abjadext.rmakers.BeamSpecifier(beam_each_division=False)
+            # specifier(run)
             # then attach new indicators at the 0 and -1 of run
             abjad.attach(abjad.StartBeam(), run[0])
             abjad.attach(abjad.StopBeam(), run[-1])

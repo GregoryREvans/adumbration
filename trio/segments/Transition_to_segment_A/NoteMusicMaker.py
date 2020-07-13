@@ -19,13 +19,13 @@ class NoteMusicMaker:
 
     def make_basic_rhythm(self, time_signature_pairs):
         # beam_specifier = rmakers.BeamSpecifier(
-            beam_divisions_together=self.beams,
-            beam_each_division=self.beams,
-            beam_rests=self.beams,
-        )
-        division_masks = rmakers.SilenceMask(
-            pattern=abjad.Pattern(indices=self.mask_indices, period=self.mask_period)
-        )
+        #    beam_divisions_together=self\.beams,
+        #    beam_each_division=self.beams,
+        #    beam_rests=self.beams,
+        # )
+        # division_masks = rmakers.SilenceMask(
+        #     pattern=abjad.Pattern(indices=self.mask_indices, period=self.mask_period)
+        # )
         note_rhythm_maker = rmakers.NoteRhythmMaker(
             # beam_specifier=# beam_specifier, division_masks=division_masks
         )
@@ -63,15 +63,15 @@ class NoteMusicMaker:
 
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         # beam_specifier = rmakers.BeamSpecifier(
-            beam_divisions_together=self.beams,
-            beam_each_division=self.beams,
-            beam_rests=self.beams,
-        )
+        #    beam_divisions_together=self\.beams,
+        #    beam_each_division=self.beams,
+        #    beam_rests=self.beams,
+        # )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
             leaves = abjad.select(shard).leaves()
-            if not all(isinstance(_, abjad.Rest) for _ in leaves):
-                # beam_specifier([shard])
+            # if not all(isinstance(_, abjad.Rest) for _ in leaves):
+            # beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 

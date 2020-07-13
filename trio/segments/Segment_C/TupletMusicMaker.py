@@ -29,20 +29,20 @@ class TupletMusicMaker:
     def make_basic_rhythm(self, time_signature_pairs):
 
         # beam_specifier = rmakers.BeamSpecifier(
-            beam_divisions_together=self.beams,
-            beam_each_division=self.beams,
-            beam_rests=self.beams,
-        )
+        #    beam_divisions_together=self\.beams,
+        #    beam_each_division=self.beams,
+        #    beam_rests=self.beams,
+        # )
 
-        division_masks = rmakers.SilenceMask(
-            pattern=abjad.Pattern(indices=self.mask_indices, period=self.mask_period)
-        )
+        # division_masks = rmakers.SilenceMask(
+        #     pattern=abjad.Pattern(indices=self.mask_indices, period=self.mask_period)
+        # )
         # division_masks = [silence_every([mask_indicies], period=mask_period),]
         tuplet_specifier = rmakers.TupletSpecifier(extract_trivial=True)
         tuplet_rhythm_maker = rmakers.TupletRhythmMaker(
             tuplet_ratios=self.tuplet_ratio,
             # beam_specifier=# beam_specifier,
-            division_masks=division_masks,
+            # division_masks=division_masks,
             # preferred_denominator=None
             # ...equiv of this...I think it is duration specifier
             # but since pretty much everything defaults to None...its okay?
@@ -83,15 +83,15 @@ class TupletMusicMaker:
 
         shards = abjad.mutate(music[:]).split(time_signature_pairs)
         # beam_specifier = rmakers.BeamSpecifier(
-            beam_divisions_together=self.beams,
-            beam_each_division=self.beams,
-            beam_rests=self.beams,
-        )
+        #    beam_divisions_together=self\.beams,
+        #    beam_each_division=self.beams,
+        #    beam_rests=self.beams,
+        # )
         time_signature_pairs = abjad.CyclicTuple(time_signature_pairs)
         for i, shard in enumerate(shards):
             leaves = abjad.select(shard).leaves()
-            if not all(isinstance(_, abjad.Rest) for _ in leaves):
-                # beam_specifier([shard])
+            # if not all(isinstance(_, abjad.Rest) for _ in leaves):
+            # beam_specifier([shard])
             measure = abjad.Measure(time_signature_pairs[i])
             abjad.mutate(shard).wrap(measure)
 
