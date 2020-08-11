@@ -3,17 +3,12 @@ import abjad
 
 class MusicMaker:
     def __init__(
-        self,
-        rmaker,
-        attachment_handler=None,
-        pitches=None,
-        continuous=False,
-        state=None,
+        self, rmaker, attachment_handler=None, pitches=None, forget=True, state=None,
     ):
         self.attachment_handler = attachment_handler
         self.rmaker = rmaker
         self.pitches = pitches
-        self.continuous = continuous
+        self.forget = forget
         self.state = self.rmaker.state
         self._count = 0
 
@@ -37,7 +32,7 @@ class MusicMaker:
 
     def _collect_pitches_durations_leaves(self, logical_ties, pitches):
         def cyc(lst):
-            if self.continuous is False:
+            if self.forget is True:
                 self._count = 0
             while True:
                 yield lst[self._count % len(lst)]

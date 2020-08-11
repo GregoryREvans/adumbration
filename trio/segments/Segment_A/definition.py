@@ -198,57 +198,57 @@ attachment_handler_three = AttachmentHandler(
 violinmusicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=violin_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 violinmusicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=[0],
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 violinmusicmaker_three = MusicMaker(
     rmaker=rmaker_three,
     pitches=[0],
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_three,
 )
 # ####clarinet#####
 violamusicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=viola_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 violamusicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=[0],
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 violamusicmaker_three = MusicMaker(
     rmaker=rmaker_three,
     pitches=[0],
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_three,
 )
 # ####bassoon#####
 cellomusicmaker_one = MusicMaker(
     rmaker=rmaker_one,
     pitches=cello_notes,
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_one,
 )
 cellomusicmaker_two = MusicMaker(
     rmaker=rmaker_two,
     pitches=[0],
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_two,
 )
 cellomusicmaker_three = MusicMaker(
     rmaker=rmaker_three,
     pitches=[0],
-    continuous=True,
+    forget=False,
     attachment_handler=attachment_handler_three,
 )
 
