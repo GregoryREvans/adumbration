@@ -88,7 +88,7 @@
                     c'''4
                     ^ \markup {
                         \center-align
-                            -59
+                            "b +41"
                         }
 
                     r4
@@ -147,7 +147,7 @@
                         f'''2.
                         ^ \markup {
                             \center-align
-                                +126
+                                "f♯ +26"
                             }
 
                     }
@@ -333,7 +333,7 @@
                     g''8
                     ^ \markup {
                         \center-align
-                            -74
+                            "f♯ +26"
                         }
                     ~
                     ]
@@ -378,7 +378,7 @@
                     c''4
                     ^ \markup {
                         \center-align
-                            -59
+                            "b +41"
                         }
                     ~
 
@@ -528,7 +528,7 @@
                     g'2
                     ^ \markup {
                         \center-align
-                            -74
+                            "f♯ +26"
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -555,7 +555,7 @@
                     c'4
                     ^ \markup {
                         \center-align
-                            -59
+                            "b +41"
                         }
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -612,7 +612,7 @@
                     f'4
                     ^ \markup {
                         \center-align
-                            +126
+                            "f♯ +26"
                         }
 
                     r4
@@ -734,7 +734,7 @@
                     f2.
                     ^ \markup {
                         \center-align
-                            +126
+                            "f♯ +26"
                         }
                     ~
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -834,7 +834,7 @@
                     g4
                     ^ \markup {
                         \center-align
-                            -74
+                            "f♯ +26"
                         }
                     ~
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -874,7 +874,7 @@
                     a'2
                     ^ \markup {
                         \center-align
-                            -59
+                            "a♭ +41"
                         }
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 

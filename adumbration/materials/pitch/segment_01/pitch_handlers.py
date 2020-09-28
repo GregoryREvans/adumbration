@@ -9,21 +9,23 @@ pitch_handler_three = evans.PitchHandler(pitch_list=[-9], forget=False)
 
 pitch_handler_four = evans.PitchHandler(pitch_list=[-21], forget=False)
 
-ratio_class_segment = microtones.RatioSegment([
-    "1/1", # gold
-    "2/1",
-    "3/2",
-    "5/3",
-    "8/5",
-    "13/8",
-    "21/13",
-    "1/1", # silver
-    "2/1",
-    "5/2",
-    "12/5",
-    "169/70",
-    "408/169",
-])
+ratio_class_segment = microtones.RatioSegment(
+    [
+        "1/1",  # gold
+        "2/1",
+        "3/2",
+        "5/3",
+        "8/5",
+        "13/8",
+        "21/13",
+        "1/1",  # silver
+        "2/1",
+        "5/2",
+        "12/5",
+        "169/70",
+        "408/169",
+    ]
+)
 
 global_pitch_handler = evans.PitchHandler(
     pitch_list=ratio_class_segment,
@@ -34,21 +36,23 @@ global_pitch_handler = evans.PitchHandler(
     # chord_groups=[2],
 )
 
-ratio_class_segment_2 = microtones.RatioSegment([
-    "1/2", # gold
-    "5/8",
-    "1/1",
-    "3/2",
-    "13/8",
-    "2/1",
-    "5/2",
-    "1/1", # silver
-    "2/1",
-    "5/2",
-    "3/1",
-    "7/2",
-    "9/2",
-])
+ratio_class_segment_2 = microtones.RatioSegment(
+    [
+        "1/2",  # gold
+        "5/8",
+        "1/1",
+        "3/2",
+        "13/8",
+        "2/1",
+        "5/2",
+        "1/1",  # silver
+        "2/1",
+        "5/2",
+        "3/1",
+        "7/2",
+        "9/2",
+    ]
+)
 
 global_pitch_handler_two = evans.PitchHandler(
     pitch_list=ratio_class_segment_2,

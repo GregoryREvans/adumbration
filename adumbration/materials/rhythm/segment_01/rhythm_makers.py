@@ -2,7 +2,6 @@ import abjad
 import abjadext.rmakers
 import evans
 
-
 rmaker_one = abjadext.rmakers.stack(
     abjadext.rmakers.talea(
         [2, 1, 6, 4, 3, 5], 16, extra_counts=[0, -1, 0, 1, -1, 0, 1]
