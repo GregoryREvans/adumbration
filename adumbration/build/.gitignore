@@ -2,8 +2,13 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pdf
+*.png
 *.wav
 *.DS_Store
+*.aux
+*.log
+*.synctex.gz
 
 # C extensions
 *.so

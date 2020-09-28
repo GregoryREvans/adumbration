@@ -16,8 +16,8 @@ if __name__ == "__main__":
         author_email="gregoryrowlandevans@gmail.com",
         install_requires=install_requires,
         keywords=", ".join(keywords),
-        name="trio",
-        packages=["trio"],
+        name="adumbration",
+        packages=["adumbration"],
         platforms="Any",
-        url="https://github.com/GregoryREvans/trio",
+        url="https://github.com/GregoryREvans/adumbration",
     )
