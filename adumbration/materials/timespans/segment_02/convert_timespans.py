@@ -1,16 +1,12 @@
 import abjad
 import evans
 
-from adumbration.materials.pitch import (
-    pitch_handler_four,
-    pitch_handler_three,
-    pitch_handler_two,
-)
-from adumbration.materials.score_structure.segment_01.rhythm_material_pattern import (
+from adumbration.materials.pitch import pitch_handler_three, pitch_handler_two
+from adumbration.materials.score_structure.segment_02.rhythm_material_pattern import (
     rhythm_material_list,
 )
-from adumbration.materials.score_structure.segment_01.time_signatures import bounds
-from adumbration.materials.timespans.segment_01.make_timespans import (
+from adumbration.materials.score_structure.segment_02.time_signatures import bounds
+from adumbration.materials.timespans.segment_02.make_timespans import (
     pitch_timespan_list,
     rhythm_timespan_list,
 )
@@ -29,12 +25,12 @@ for voice in voice_names:
         if span.voice_name == voice:
             span._handler = rhythm_mat(r=1)[0]
 
-segment_01_rhythm_timespans = evans.timespan.make_split_list(
+segment_02_rhythm_timespans = evans.timespan.make_split_list(
     rhythm_timespan_list, bounds
 )
 
 rhythm_commands = []
-for span in segment_01_rhythm_timespans:
+for span in segment_02_rhythm_timespans:
     r_command = evans.RhythmCommand(
         voice_name=span.voice_name,
         timespan=abjad.Timespan(span.start_offset, span.stop_offset),
@@ -51,8 +47,8 @@ voicewise_material = abjad.OrderedDict(
     [
         ("Voice 1", pitch_handler_two),
         ("Voice 2", pitch_handler_two),
-        ("Voice 3", pitch_handler_three),
-        ("Voice 4", pitch_handler_four),
+        ("Voice 3", pitch_handler_two),
+        ("Voice 4", pitch_handler_three),
     ]
 )
 
@@ -61,10 +57,10 @@ for voice in voice_names:
         if span.voice_name == voice:
             span._handler = voicewise_material[voice]
 
-segment_01_pitch_timespans = pitch_timespan_list
+segment_02_pitch_timespans = pitch_timespan_list
 
 pitch_commands = []
-for span in segment_01_pitch_timespans:
+for span in segment_02_pitch_timespans:
     command = evans.HandlerCommand(
         voice_name=span.voice_name,
         timespan=abjad.Timespan(span.start_offset, span.stop_offset),

@@ -2,6 +2,7 @@ from collections import OrderedDict
 
 import abjad
 from abjadext import rmakers as rmakers
+from tsmakers.CascadingTimespanMaker import CascadingTimespanMaker
 from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
 
 from adumbration.materials.score_structure.instruments import instruments
@@ -13,13 +14,27 @@ music_specifiers = OrderedDict(
 # #######
 # rhythm#
 # #######
-rhythm_target_timespan = abjad.Timespan(0, 9)
+rhythm_target_timespan = abjad.Timespan(0, (5, 2))
 
-rhythm_timespan_maker = TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([0, 2, 2, 0]), denominator=8),
-    playing_talea=rmakers.Talea(counts=([5, 3, 2, 1, 1]), denominator=4),
-    playing_groupings=([1, 2, 3, 2]),
-    # silence_talea=rmakers.Talea(counts=([1, 2, 1, 3]), denominator=4),
+rhythm_timespan_maker = CascadingTimespanMaker(
+    cascade_pattern=(-1),
+    # division_masks=None,
+    # fuse_groups=None,
+    # padding=None,
+    playing_talea=rmakers.Talea(
+        [
+            2,
+            2,
+            2,
+            2,
+            3,
+        ],
+        8,
+    ),
+    playing_groupings=([2, 3, 2, 3, 2, 2]),
+    repeat=True,
+    # silence_talea=rmakers.Talea([1, 1, 2, 3, 5], 4),
+    timespan_specifier=None,
 )
 
 rhythm_timespan_list = rhythm_timespan_maker(
@@ -29,7 +44,7 @@ rhythm_timespan_list = rhythm_timespan_maker(
 # ######
 # pitch#
 # ######
-pitch_target_timespan = abjad.Timespan(0, 9)
+pitch_target_timespan = abjad.Timespan(0, (5, 2))
 
 pitch_timespan_maker = TaleaTimespanMaker(
     playing_talea=rmakers.Talea(counts=([5, 3, 2, 6]), denominator=4),

@@ -89,7 +89,7 @@
   		\override Clef.whiteout = 1
 		\override DynamicText.font-size = #-2
 		%{ \override DynamicLineSpanner.staff-padding = 4.5 %}
-		\override DynamicLineSpanner.staff-padding = 7
+		\override DynamicLineSpanner.staff-padding = 5
 		\override DynamicLineSpanner.padding = 2
         %{ \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5) %}
 		\override Hairpin.bound-padding = #1
@@ -105,14 +105,13 @@
         %{ \override SpacingSpanner.strict-note-spacing = ##t %}
         %{ \override SpacingSpanner.uniform-stretching = ##t %}
         \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
-		\override StemTremolo.beam-width = 1.5
+		\override StemTremolo.beam-width = 1
+		\override StemTremolo.beam-thickness = #0.3
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
 		\override StemTremolo.slope = #0.3
 		%{ \override StemTremolo.shape = #'rectangle %}
 		\override StemTremolo.shape = #'beam-like
-		%{ \override StemTremolo.flag-count = #3 %}
-		%{ \override StemTremolo.beam-thickness = #0.3 %}
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
         \override TupletBracket.padding = #2

@@ -13,13 +13,24 @@ music_specifiers = OrderedDict(
 # #######
 # rhythm#
 # #######
-rhythm_target_timespan = abjad.Timespan(0, 9)
+rhythm_target_timespan = abjad.Timespan(0, (30, 8))
 
 rhythm_timespan_maker = TaleaTimespanMaker(
-    initial_silence_talea=rmakers.Talea(counts=([0, 2, 2, 0]), denominator=8),
-    playing_talea=rmakers.Talea(counts=([5, 3, 2, 1, 1]), denominator=4),
-    playing_groupings=([1, 2, 3, 2]),
-    # silence_talea=rmakers.Talea(counts=([1, 2, 1, 3]), denominator=4),
+    initial_silence_talea=rmakers.Talea(counts=([0]), denominator=8),
+    playing_talea=rmakers.Talea(counts=([3, 4, 2, 1, 1]), denominator=4),
+    # playing_groupings=([1, 2, 3, 2,]),
+    silence_talea=rmakers.Talea(
+        counts=(
+            [
+                1,
+                2,
+                4,
+                1,
+            ]
+        ),
+        denominator=8,
+    ),
+    # synchronize_step=True,
 )
 
 rhythm_timespan_list = rhythm_timespan_maker(
@@ -29,10 +40,10 @@ rhythm_timespan_list = rhythm_timespan_maker(
 # ######
 # pitch#
 # ######
-pitch_target_timespan = abjad.Timespan(0, 9)
+pitch_target_timespan = abjad.Timespan(0, (30, 8))
 
 pitch_timespan_maker = TaleaTimespanMaker(
-    playing_talea=rmakers.Talea(counts=([5, 3, 2, 6]), denominator=4),
+    playing_talea=rmakers.Talea(counts=([30]), denominator=8),
     silence_talea=rmakers.Talea(counts=([0]), denominator=4),
 )
 
