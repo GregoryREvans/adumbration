@@ -8,10 +8,10 @@
 \header {
 	tagline = ##f
 	breakbefore = ##t
-	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #1 \center-column {\line{"to the JACK quartet"} \fontsize #3 \with-color #white \line{"."} }
-	title = \markup \override #'(font-name . "STIXGeneral") \fontsize #12 \center-column {"Adumbration"}
-	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #4 \center-column {\with-color #white \line{"."} \fontsize #-1 \with-color #black \line{"for string quartet"} }
-	composer = \markup \override #'(font-name . "STIXGeneral") \fontsize #1 {"G r e g o r y  R o w l a n d  E v a n s (*1995)"}
+	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #1 \center-column {\line{"t o   t h e   J A C K   q u a r t e t"} \fontsize #3 \with-color #white \line{"."} }
+	title = \markup \override #'(font-name . "STIXGeneral") \fontsize #12 \center-column {"A d u m b r a t i o n"}
+	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #4 \center-column {\with-color #white \line{"."} \fontsize #2 \with-color #black \line{"f o r   s t r i n g   q u a r t e t"} }
+	composer = \markup \override #'(font-name . "STIXGeneral") \center-column {\line{\fontsize #1 {"G r e g o r y  R o w l a n d  E v a n s (*1995)"}} \line{ \vspace #4 }}
 }
 
 \layout {
@@ -19,7 +19,7 @@
 	%{ \accidentalStyle modern %}
 	%{ \accidentalStyle modern-cautionary %}
 	\accidentalStyle dodecaphonic
-    indent = #26
+    indent = #15
 	ragged-last = ##t
     ragged-right = ##t
     %left-margin = #15
@@ -68,7 +68,7 @@
         \override TimeSignature.self-alignment-X = #center
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 9) (minimum-distance . 9) (padding . 5) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 11) (minimum-distance . 11) (padding . 5) (stretchability . 0))
     }
     \context {
         \Score
@@ -104,7 +104,7 @@
 		%{ \override GraceSpacing.spacing-increment = #2.0 %}
         %{ \override SpacingSpanner.strict-note-spacing = ##t %}
         %{ \override SpacingSpanner.uniform-stretching = ##t %}
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 23) (minimum-distance . 23) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
 		\override StemTremolo.beam-width = 1.5
         \override StemTremolo.flag-count = 4
         \override StemTremolo.slope = 0.5
@@ -152,7 +152,8 @@
 }
 
 \paper {
-	system-system-spacing = #'((basic-distance . 18) (minimum-distance . 18) (padding . 6))
+	system-separator-markup = \markup { \slashSeparator }
+	system-system-spacing = #'((basic-distance . 16) (minimum-distance . 16) (padding . 6))
 
 	indent = 20\mm
     short-indent = 15\mm

@@ -1,13 +1,13 @@
 import evans
 from abjadext import microtones
 
-pitch_handler_one = evans.PitchHandler(pitch_list=[12], forget=False)
+pitch_handler_one = evans.PitchHandler(pitch_list=[15], forget=False)
 
-pitch_handler_two = evans.PitchHandler(pitch_list=[0], forget=False)
+pitch_handler_two = evans.PitchHandler(pitch_list=[3], forget=False)
 
-pitch_handler_three = evans.PitchHandler(pitch_list=[-12], forget=False)
+pitch_handler_three = evans.PitchHandler(pitch_list=[-9], forget=False)
 
-pitch_handler_four = evans.PitchHandler(pitch_list=[-24], forget=False)
+pitch_handler_four = evans.PitchHandler(pitch_list=[-21], forget=False)
 
 ratio_class_segment = microtones.RatioSegment([
     "1/1", # gold

@@ -1,10 +1,10 @@
 import evans
 
 clef_handler_one = evans.ClefHandler(
-    clef="treble", add_extended_clefs=True, add_ottavas=True
+    clef="treble", add_extended_clefs=True, add_ottavas=False
 )
 clef_handler_two = evans.ClefHandler(
-    clef="treble", add_extended_clefs=True, add_ottavas=True
+    clef="treble", add_extended_clefs=True, add_ottavas=False
 )
 clef_handler_three = evans.ClefHandler(
     clef="alto", add_extended_clefs=False, add_ottavas=False
