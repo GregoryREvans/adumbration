@@ -227,7 +227,7 @@
                     R1 * 1/8
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
+                            #"scripts.ulongfermata"                            %! applying ending skips
                         }                                                      %! applying ending skips
                     \stopStaff \startStaff                                     %! applying ending skips
 
@@ -400,7 +400,7 @@
                     R1 * 1/8
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
+                            #"scripts.ulongfermata"                            %! applying ending skips
                         }                                                      %! applying ending skips
                     \stopStaff \startStaff                                     %! applying ending skips
 
@@ -551,7 +551,7 @@
                     R1 * 1/8
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
+                            #"scripts.ulongfermata"                            %! applying ending skips
                         }                                                      %! applying ending skips
                     \stopStaff \startStaff                                     %! applying ending skips
 
@@ -702,7 +702,7 @@
                     R1 * 1/8
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
+                            #"scripts.ulongfermata"                            %! applying ending skips
                         }                                                      %! applying ending skips
                     \stopStaff \startStaff                                     %! applying ending skips
 

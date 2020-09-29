@@ -39,6 +39,22 @@ seg_3_pitch_handler_three = evans.PitchHandler(pitch_list=[-9, -8], forget=False
 
 seg_3_pitch_handler_four = evans.PitchHandler(pitch_list=[-9, -8], forget=False)
 
+c_pitch_handler_one = evans.PitchHandler(pitch_list=[12], forget=False)
+
+c_pitch_handler_two = evans.PitchHandler(pitch_list=[0], forget=False)
+
+c_pitch_handler_three = evans.PitchHandler(pitch_list=[-12], forget=False)
+
+c_pitch_handler_four = evans.PitchHandler(pitch_list=[-24], forget=False)
+
+seg_5_pitch_handler_one = evans.PitchHandler(pitch_list=[19], forget=False)
+
+seg_5_pitch_handler_two = evans.PitchHandler(pitch_list=[7], forget=False)
+
+seg_5_pitch_handler_three = evans.PitchHandler(pitch_list=[-5], forget=False)
+
+seg_5_pitch_handler_four = evans.PitchHandler(pitch_list=[-17], forget=False)
+
 ratio_class_segment = microtones.RatioSegment(
     [
         "1/1",  # gold
@@ -84,6 +100,7 @@ flurry_pitch_handler = evans.PitchHandler(
     pitch_list=cleaned_flurry_pitches,
     forget=False,
     name="flurry_pitch_handler",
+    # apply_all=True,
     # chord_boolean_vector=[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     # chord_groups=[2],
 )
@@ -127,4 +144,61 @@ ring_pitch_handler = evans.PitchHandler(
         0,
     ],
     chord_groups=[2],
+)
+
+# segment 4
+# Link chord 153
+link_pitches = microtones.PitchSegment(
+    [0, 2, 9, 8, 11, 3, 4, 10, 7, 5, 1, 6]
+).transpose(4)
+link_pitches += flurry_pitches.invert(8)
+link_pitches += flurry_pitches.retrograde().transpose(7)
+
+link_pitch_handler = evans.PitchHandler(
+    pitch_list=link_pitches,
+    forget=False,
+    name="link_pitch_handler",
+    apply_all=True,
+)
+
+# segment 5
+
+combination_multiples = microtones.RatioSegment(
+    [
+        "25/16",  #
+        "325/256",
+        "9/8",
+        "1/1",
+        "25/16",  #
+        "13/8",
+        "9/8",
+        "1/1",
+        "63/64",  #
+        "13/8",
+        "9/8",
+        "1/1",
+        "63/64",  #
+        "13/8",
+        "9/8",
+        "325/256",
+        "63/64",  #
+        "13/8",
+        "9/8",
+        "325/256",
+        "63/64",  #
+        "13/8",
+        "9/8",
+        "1/1",
+        "63/64",  #
+        "13/8",
+        "175/128",
+        "1/1",
+    ]
+)
+
+seg_5_pitch_handler = evans.PitchHandler(
+    pitch_list=combination_multiples,
+    forget=False,
+    name="seg_5_pitch_handler",
+    as_ratios=True,
 )

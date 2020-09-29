@@ -397,6 +397,7 @@ maker = evans.SegmentMaker(
     tempo=((1, 4), 102),
     rehearsal_mark="",
     page_break_counts=[90],
+    fermata="scripts.ulongfermata",
 )
 
 maker.build_segment()

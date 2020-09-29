@@ -59,3 +59,40 @@ rhythm_handler_three = evans.RhythmHandler(
     forget=False,
     name="rhythm_handler_three",
 )
+
+#### SEGMENT 04
+
+rmaker_four = abjadext.rmakers.stack(
+    abjadext.rmakers.even_division(
+        [
+            16,
+        ],
+        extra_counts=[0],
+    ),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
+
+rhythm_handler_four = evans.RhythmHandler(
+    rmaker=rmaker_four,
+    forget=False,
+    name="rhythm_handler_four",
+)
+
+#### SEGMENT 05
+
+rmaker_five = abjadext.rmakers.stack(
+    abjadext.rmakers.note(),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
+
+rhythm_handler_five = evans.RhythmHandler(
+    rmaker=rmaker_five,
+    forget=False,
+    name="rhythm_handler_five",
+)
