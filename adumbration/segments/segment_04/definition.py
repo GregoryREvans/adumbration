@@ -66,11 +66,11 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
-        evans.attach(
-            "Voice 2",
-            abjad.StopTextSpan(command=r"\stopTextSpanOne"),
-            baca.leaf(0),
-        ),
+        # evans.attach(
+        #     "Voice 2",
+        #     abjad.StopTextSpan(command=r"\stopTextSpanOne"),
+        #     baca.leaf(0),
+        # ),
         evans.attach(
             "Global Context",
             evans.metric_modulation(
@@ -127,6 +127,12 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             baca.leaf(0, pitched=True),
         ),
+        evans.attach("Voice 2", abjad.StopSlur(), baca.leaf(-19, pitched=True)),
+        evans.attach("Voice 2", abjad.StartSlur(), baca.leaf(-18, pitched=True)),
+        evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(-4, pitched=True)),
+        evans.attach("Voice 3", abjad.StartSlur(), baca.leaf(-3, pitched=True)),
+        evans.attach("Voice 4", abjad.StopSlur(), baca.leaf(-8, pitched=True)),
+        evans.attach("Voice 4", abjad.StartSlur(), baca.leaf(-7, pitched=True)),
     ],
     score_template=score,
     time_signatures=time_signatures,

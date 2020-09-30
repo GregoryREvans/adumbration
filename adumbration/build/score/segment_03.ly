@@ -110,8 +110,8 @@
 
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
-                        d'''
+                        \tweak Accidental.text \abjad-natural 
+                        b''
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp 
                         fs'''
@@ -124,7 +124,7 @@
                                     \center-align
                                         +4
                                     \center-align
-                                        -31
+                                        +2
                                 }
                         }
                     \<
@@ -159,8 +159,8 @@
 
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
-                        d'''
+                        \tweak Accidental.text \abjad-natural 
+                        b''
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp 
                         fs'''
@@ -174,34 +174,76 @@
                                     \center-align
                                         +4
                                     \center-align
-                                        -31
+                                        +2
                                 }
                         }
                     ^ \markup { sp. }
 
                     r8
 
-                    <
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
-                        g''
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-flat 
-                        ef'''
-                    >4
-                    \mp
-                    ^ \markup {
-                        \center-align
-                            \center-column
-                                {
-                                    \center-align
-                                        +0
-                                    \center-align
-                                        -14
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #left
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                ef''
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                throw
+                                (4)
                                 }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef''32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef''32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef''32 * 4/3
+                            ]
+
                         }
-                    ^ \markup { gett. }
-                    \bar "||"
+                        \tag #'voice2 {
+
+                        \context Voice = "Voice 1"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            \tweak Accidental.stencil #ly:text-interface::print
+                            \tweak Accidental.text \abjad-flat 
+                            ef''4
+                            \mp
+                            ^ \markup {
+                                \center-align
+                                    +0
+                                }
+                            \bar "||"
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
@@ -223,7 +265,7 @@
 
             \context Staff = "Staff 2"
             {
-                \tag #'voice2 {
+                \tag #'voice3 {
 
                 \context Voice = "Voice 2"
                 {
@@ -286,8 +328,8 @@
                         \tweak Accidental.text \sharp-one-syntonic-comma-down 
                         gs''
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
-                        b''
+                        \tweak Accidental.text \one-septimal-comma-down 
+                        d'''
                     >1
                     \sfp
                     ^ \markup {
@@ -295,7 +337,7 @@
                             \center-column
                                 {
                                     \center-align
-                                        +2
+                                        -31
                                     \center-align
                                         -14
                                 }
@@ -335,8 +377,8 @@
                         \tweak Accidental.text \sharp-one-syntonic-comma-down 
                         gs''
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
-                        b''
+                        \tweak Accidental.text \one-septimal-comma-down 
+                        d'''
                     >4
                     \f
                     - \tenuto
@@ -345,7 +387,7 @@
                             \center-column
                                 {
                                     \center-align
-                                        +2
+                                        -31
                                     \center-align
                                         -14
                                 }
@@ -354,27 +396,74 @@
 
                     r8
 
-                    <
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-flat 
-                        ef'
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-tridecimal-third-tone-down 
-                        c''
-                    >4
-                    \mp
-                    ^ \markup {
-                        \center-align
-                            \center-column
-                                {
-                                    \center-align
-                                        B+41
-                                    \center-align
-                                        +0
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #right
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                f'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                drop
+                                (5)
                                 }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f'32 * 4/3
+                            ]
+
                         }
-                    ^ \markup { gett. }
-                    \bar "||"
+                        \tag #'voice4 {
+
+                        \context Voice = "Voice 2"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            \tweak Accidental.stencil #ly:text-interface::print
+                            \tweak Accidental.text \abjad-natural 
+                            f'4
+                            \mp
+                            ^ \markup {
+                                \center-align
+                                    +4
+                                }
+                            \bar "||"
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
                     % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
@@ -396,7 +485,7 @@
 
             \context Staff = "Staff 3"
             {
-                \tag #'voice3 {
+                \tag #'voice5 {
 
                 \context Voice = "Voice 3"
                 {
@@ -505,27 +594,79 @@
 
                     r8
 
-                    <
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-flat 
-                        bf
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
-                        g'
-                    >4
-                    \mp
-                    ^ \markup {
-                        \center-align
-                            \center-column
-                                {
-                                    \center-align
-                                        -14
-                                    \center-align
-                                        +2
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #left
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                ef
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                throw
+                                (6)
                                 }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef32 * 4/3
+                            ]
+
                         }
-                    ^ \markup { gett. }
-                    \bar "||"
+                        \tag #'voice6 {
+
+                        \context Voice = "Voice 3"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            \tweak Accidental.stencil #ly:text-interface::print
+                            \tweak Accidental.text \abjad-flat 
+                            ef4
+                            \mp
+                            ^ \markup {
+                                \center-align
+                                    +0
+                                }
+                            \bar "||"
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
@@ -547,7 +688,7 @@
 
             \context Staff = "Staff 4"
             {
-                \tag #'voice4 {
+                \tag #'voice7 {
 
                 \context Voice = "Voice 4"
                 {
@@ -656,27 +797,69 @@
 
                     r8
 
-                    <
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-flat 
-                        ef,
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-flat 
-                        ef
-                    >4
-                    \mp
-                    ^ \markup {
-                        \center-align
-                            \center-column
-                                {
-                                    \center-align
-                                        +0
-                                    \center-align
-                                        +0
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #right
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                f
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                drop
+                                (4)
                                 }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            f32 * 4/3
+                            ]
+
                         }
-                    ^ \markup { gett. }
-                    \bar "||"
+                        \tag #'voice8 {
+
+                        \context Voice = "Voice 4"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            \tweak Accidental.stencil #ly:text-interface::print
+                            \tweak Accidental.text \abjad-natural 
+                            f4
+                            \mp
+                            ^ \markup {
+                                \center-align
+                                    +4
+                                }
+                            \bar "||"
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips

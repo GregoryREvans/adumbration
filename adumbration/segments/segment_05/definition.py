@@ -16,6 +16,25 @@ from adumbration.materials.timespans.segment_05.convert_timespans import (
     rhythm_commands,
 )
 
+
+def _add_tremolos(selections):
+    for leaf in abjad.select(selections).leaves(pitched=True):
+        tremolo = abjad.StemTremolo(32)
+        abjad.attach(tremolo, leaf)
+
+
+x = abjad.Markup("XFB.", direction=abjad.Up)
+n = abjad.Markup("norm.", direction=abjad.Up)
+s = abjad.Markup("scratch", direction=abjad.Up)
+
+cyc_techniques = evans.CyclicList([x, n, s, n, x, n, s], forget=False)
+
+
+def _attach_marks(selections):
+    for tie in abjad.select(selections).logical_ties(pitched=True):
+        abjad.attach(cyc_techniques(r=1)[0], tie[0])
+
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -105,12 +124,104 @@ maker = evans.SegmentMaker(
             abjad.Markup("st.", direction=abjad.Up),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup(
+                "cresc. a m.29 (fortissimo)",
+                direction=abjad.Down,
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup(
+                "cresc. a m.29 (fortissimo)",
+                direction=abjad.Down,
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Markup(
+                "cresc. a m.29 (fortissimo)",
+                direction=abjad.Down,
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup(
+                "cresc. a m.29 (fortissimo)",
+                direction=abjad.Down,
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("ff"),
+            baca.leaf(-2, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("ff"),
+            baca.leaf(-2, pitched=True),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("ff"),
+            baca.leaf(-2, pitched=True),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("ff"),
+            baca.leaf(-2, pitched=True),
+        ),
+        evans.call(
+            "Voice 1",
+            _add_tremolos,
+            abjad.select().leaves(),
+        ),
+        evans.call(
+            "Voice 2",
+            _add_tremolos,
+            abjad.select().leaves(),
+        ),
+        evans.call(
+            "Voice 3",
+            _add_tremolos,
+            abjad.select().leaves(),
+        ),
+        evans.call(
+            "Voice 4",
+            _add_tremolos,
+            abjad.select().leaves(),
+        ),
+        evans.call(
+            "Voice 1",
+            _attach_marks,
+            abjad.select().logical_ties(),
+        ),
+        evans.call(
+            "Voice 2",
+            _attach_marks,
+            abjad.select().logical_ties(),
+        ),
+        evans.call(
+            "Voice 3",
+            _attach_marks,
+            abjad.select().logical_ties(),
+        ),
+        evans.call(
+            "Voice 4",
+            _attach_marks,
+            abjad.select().logical_ties(),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily",
@@ -124,7 +235,6 @@ maker = evans.SegmentMaker(
     tempo=((1, 4), 76),
     rehearsal_mark="",
     page_break_counts=[90],
-    fermata="scripts.ulongfermata",
 )
 
 maker.build_segment()

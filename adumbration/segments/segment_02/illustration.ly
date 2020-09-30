@@ -105,6 +105,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         f'16
+                        \mp
                         [
 
                         f'16
@@ -142,6 +143,7 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     b16
+                    \f
                     [
                     (
 
@@ -195,7 +197,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         bf'16
-                        \pp
+                        \p
                         ^ \markup { sp. }
                         [
 
@@ -254,6 +256,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         e'16
+                        \f
                         [
                         (
 
@@ -353,6 +356,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         af'16
+                        \mf
                         [
                         (
 
@@ -377,6 +381,7 @@
                         c'16
 
                         af'16
+                        )
 
                         \revert Staff.Stem.stemlet-length
                         af'16
@@ -386,7 +391,6 @@
                     }
 
                     r8
-                    )
 
                     r4
                     \bar "||"
@@ -475,6 +479,7 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         d'16
+                        \mf
                         [
                         (
 
@@ -503,6 +508,7 @@
                     \clef "treble"
                     \override Staff.Stem.stemlet-length = 0.75
                     cs''16
+                    \f
                     [
                     (
 

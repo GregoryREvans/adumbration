@@ -89,7 +89,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 2",
-            abjad.Dynamic("pp"),
+            abjad.Dynamic("p"),
             baca.leaf(1),
         ),
         evans.attach(
@@ -143,10 +143,40 @@ maker = evans.SegmentMaker(
         evans.attach("Voice 2", abjad.StartSlur(), baca.leaf(3)),
         evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(4)),
         evans.attach("Voice 3", abjad.StartSlur(), baca.leaf(5)),
-        evans.detach("Voice 3", abjad.StopSlur(), baca.leaf(-3)),
-        evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(-4)),
+        evans.detach("Voice 3", abjad.StopSlur(), baca.leaf(-1, pitched=True)),
+        evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(-2, pitched=True)),
         evans.attach("Voice 4", abjad.StopSlur(), baca.leaf(8)),
         evans.attach("Voice 4", abjad.StartSlur(), baca.leaf(12)),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("mp"),
+            baca.leaf(8, pitched=True),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Dynamic("f"),
+            baca.leaf(16, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("f"),
+            baca.leaf(-13, pitched=True),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Dynamic("mf"),
+            baca.leaf(-13, pitched=True),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.leaf(-11, pitched=True),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.leaf(-4, pitched=True),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

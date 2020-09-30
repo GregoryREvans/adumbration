@@ -23,7 +23,6 @@ gettato = evans.GettatoHandler(
 
 
 def _add_gettato(selections):
-    print(selections)
     gettato(selections)
 
 
@@ -338,46 +337,30 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             baca.leaf(10),
         ),
-        evans.attach(
-            "Voice 1",
-            abjad.Markup("gett.", direction=abjad.Up),
-            baca.leaf(-3),
-        ),
-        evans.attach(
-            "Voice 2",
-            abjad.Markup("gett.", direction=abjad.Up),
-            baca.leaf(-3),
-        ),
-        evans.attach(
-            "Voice 3",
-            abjad.Markup("gett.", direction=abjad.Up),
-            baca.leaf(-3),
-        ),
-        evans.attach(
-            "Voice 4",
-            abjad.Markup("gett.", direction=abjad.Up),
-            baca.leaf(-3),
-        ),
-        # evans.call(
+        # evans.attach(
         #     "Voice 1",
-        #     _add_gettato,
-        #     baca.leaf(-3)
+        #     abjad.Markup("gett.", direction=abjad.Up),
+        #     baca.leaf(-3),
         # ),
-        # evans.call(
+        # evans.attach(
         #     "Voice 2",
-        #     _add_gettato,
-        #     baca.leaf(-3)
+        #     abjad.Markup("gett.", direction=abjad.Up),
+        #     baca.leaf(-3),
         # ),
-        # evans.call(
+        # evans.attach(
         #     "Voice 3",
-        #     _add_gettato,
-        #     baca.leaf(-3)
+        #     abjad.Markup("gett.", direction=abjad.Up),
+        #     baca.leaf(-3),
         # ),
-        # evans.call(
+        # evans.attach(
         #     "Voice 4",
-        #     _add_gettato,
-        #     baca.leaf(-3)
+        #     abjad.Markup("gett.", direction=abjad.Up),
+        #     baca.leaf(-3),
         # ),
+        evans.call("Voice 1", _add_gettato, baca.leaf(-3)),
+        evans.call("Voice 2", _add_gettato, baca.leaf(-3)),
+        evans.call("Voice 3", _add_gettato, baca.leaf(-3)),
+        evans.call("Voice 4", _add_gettato, baca.leaf(-3)),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -245,7 +245,6 @@
                     \bar ".|:"                                                 %! applying indicators
                     \clef "treble"
                     r1 * 1/2
-                    \stopTextSpanOne                                           %! applying indicators
 
                     R1 * 1/2
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -261,10 +260,12 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     e''16
+                    )
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     e''16
+                    (
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -438,11 +439,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-flat-markup
                     ef'16
+                    )
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-flat-markup
                     ef'16
+                    (
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
@@ -565,11 +568,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     f,16
+                    )
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     f,16
+                    (
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-flat-markup

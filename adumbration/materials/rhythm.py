@@ -96,3 +96,123 @@ rhythm_handler_five = evans.RhythmHandler(
     forget=False,
     name="rhythm_handler_five",
 )
+
+#### SEGMENT 06
+
+rmaker_six = abjadext.rmakers.stack(
+    abjadext.rmakers.even_division(
+        [
+            16,
+        ],
+        extra_counts=[
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+        ],
+    ),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
+
+rhythm_handler_six = evans.RhythmHandler(
+    rmaker=rmaker_six,
+    forget=False,
+    name="rhythm_handler_six",
+)
+
+rmaker_seven = abjadext.rmakers.stack(
+    abjadext.rmakers.even_division(
+        [
+            8,  # binary silver ratio
+            # 16,
+            # 16,
+            # 8,
+            # 8,
+            # 16,
+            # 8,
+            # 16,
+            # 8,
+            # 16,
+            # 16,
+            # 16,
+            # 16,
+            # 16,
+            # 8,
+            # 16,
+            # 16,
+            # 8,
+            # 8,
+            # 8,
+            # 8,
+            # 16,
+        ],
+        extra_counts=[
+            1,  # binary golden ratio
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+        ],
+    ),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
+
+rhythm_handler_seven = evans.RhythmHandler(
+    rmaker=rmaker_seven,
+    forget=False,
+    name="rhythm_handler_seven",
+)
+
+rmaker_eight = abjadext.rmakers.stack(
+    abjadext.rmakers.talea(
+        [2, 1, 4, 3, 1, 2, 3],
+        2,
+        extra_counts=[0, -1, 2, 0, -3, 0, 0, 4, 3, 0, 2, 1],
+    ),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
+
+rhythm_handler_eight = evans.RhythmHandler(
+    rmaker=rmaker_eight,
+    forget=False,
+    name="rhythm_handler_eight",
+)

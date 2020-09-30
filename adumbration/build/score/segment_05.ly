@@ -49,11 +49,6 @@
 
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
-            % [Global Context measure 8]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/4                                                          %! scaling time signatures
-            s1 * 1/4
 
         }
 
@@ -76,95 +71,101 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-two-syntonic-comma-down 
                     ds'''2.
+                    :32
                     \mf
                     ^ \markup {
                         \center-align
                             -27
                         }
                     ^ \markup { st. }
+                    ^ \markup { XFB. }
+                    _ \markup { "cresc. a m.29 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-two-syntonic-comma-down 
                     ds'''2
+                    :32
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-two-syntonic-comma-down 
                     ds'''4
+                    :32
                     ^ \markup {
                         \center-align
                             -27
                         }
+                    ^ \markup { norm. }
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2
+                    :32
                     ^ \markup {
                         \center-align
                             -27
                         }
+                    ^ \markup { scratch }
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2.
+                    :32
                     ^ \markup {
                         \center-align
                             -27
                         }
+                    ^ \markup { norm. }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2
+                    :32
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2.
+                    :32
                     ^ \markup {
                         \center-align
                             -27
                         }
+                    ^ \markup { XFB. }
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''1
+                    :32
                     ^ \markup {
                         \center-align
                             -27
                         }
+                    ^ \markup { norm. }
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2.
+                    :32
+                    \ff
                     ^ \markup {
                         \center-align
                             -27
                         }
+                    ^ \markup { scratch }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2
+                    :32
                     \bar "||"
-                    % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ulongfermata"                            %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -194,12 +195,15 @@
                             }
                         }
                     bs'2.
+                    :32
                     \mf
                     ^ \markup {
                         \center-align
                             B+13
                         }
                     ^ \markup { st. }
+                    ^ \markup { norm. }
+                    _ \markup { "cresc. a m.29 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -212,84 +216,87 @@
                             }
                         }
                     bs'2
+                    :32
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''4
+                    :32
                     ^ \markup {
                         \center-align
                             E♭+41
                         }
+                    ^ \markup { XFB. }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2
+                    :32
                     ^ \markup {
                         \center-align
                             E♭+41
                         }
+                    ^ \markup { norm. }
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2.
+                    :32
                     ^ \markup {
                         \center-align
                             E♭+41
                         }
+                    ^ \markup { scratch }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2
+                    :32
                     % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2.
+                    :32
                     ^ \markup {
                         \center-align
                             E♭+41
                         }
+                    ^ \markup { norm. }
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''1
+                    :32
                     ^ \markup {
                         \center-align
                             E♭+41
                         }
+                    ^ \markup { XFB. }
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2.
+                    :32
+                    \ff
                     ^ \markup {
                         \center-align
                             E♭+41
                         }
+                    ^ \markup { norm. }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2
+                    :32
                     \bar "||"
-                    % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ulongfermata"                            %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -312,67 +319,82 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a2.
+                    :32
                     \mf
                     ^ \markup {
                         \center-align
                             +4
                         }
                     ^ \markup { st. }
+                    ^ \markup { scratch }
+                    _ \markup { "cresc. a m.29 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a2
+                    :32
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a4
+                    :32
                     ^ \markup {
                         \center-align
                             +4
                         }
+                    ^ \markup { norm. }
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a2
+                    :32
                     ^ \markup {
                         \center-align
                             +4
                         }
+                    ^ \markup { XFB. }
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a2.
+                    :32
                     ^ \markup {
                         \center-align
                             +4
                         }
+                    ^ \markup { norm. }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a2
+                    :32
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a2.
+                    :32
                     ^ \markup {
                         \center-align
                             +4
                         }
+                    ^ \markup { scratch }
                     % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     a1
+                    :32
                     ^ \markup {
                         \center-align
                             +4
                         }
+                    ^ \markup { norm. }
                     % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -385,10 +407,13 @@
                             }
                         }
                     cs'2.
+                    :32
+                    \ff
                     ^ \markup {
                         \center-align
                             C+41
                         }
+                    ^ \markup { XFB. }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -401,20 +426,8 @@
                             }
                         }
                     cs'2
+                    :32
                     \bar "||"
-                    % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ulongfermata"                            %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -437,35 +450,43 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2.
+                    :32
                     \mf
                     ^ \markup {
                         \center-align
                             +0
                         }
                     ^ \markup { st. }
+                    ^ \markup { norm. }
+                    _ \markup { "cresc. a m.29 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2
+                    :32
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,4
+                    :32
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    ^ \markup { scratch }
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2
+                    :32
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    ^ \markup { norm. }
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -478,10 +499,12 @@
                             }
                         }
                     bs,2.
+                    :32
                     ^ \markup {
                         \center-align
                             B+13
                         }
+                    ^ \markup { XFB. }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -494,6 +517,7 @@
                             }
                         }
                     bs,2
+                    :32
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -506,47 +530,42 @@
                             }
                         }
                     bs,2.
+                    :32
                     ^ \markup {
                         \center-align
                             B+13
                         }
+                    ^ \markup { norm. }
                     % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,1
+                    :32
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    ^ \markup { scratch }
                     % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2.
+                    :32
+                    \ff
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    ^ \markup { norm. }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2
+                    :32
                     \bar "||"
-                    % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ulongfermata"                            %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
