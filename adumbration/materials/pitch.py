@@ -55,6 +55,14 @@ seg_5_pitch_handler_three = evans.PitchHandler(pitch_list=[-5], forget=False)
 
 seg_5_pitch_handler_four = evans.PitchHandler(pitch_list=[-17], forget=False)
 
+seg_7_pitch_handler_one = evans.PitchHandler(pitch_list=[16], forget=False)
+
+seg_7_pitch_handler_two = evans.PitchHandler(pitch_list=[4], forget=False)
+
+seg_7_pitch_handler_three = evans.PitchHandler(pitch_list=[-8], forget=False)
+
+seg_7_pitch_handler_four = evans.PitchHandler(pitch_list=[-20], forget=False)
+
 ratio_class_segment = microtones.RatioSegment(
     [
         "1/1",  # gold
@@ -120,8 +128,8 @@ ratio_class_segment_2 = microtones.RatioSegment(
         "1/2",
         # silver
         "9/2",
-        "3/1",  # was 3/1
-        "7/2",  # was 7/2
+        "7/2",  # was 3/1
+        "3/1",  # was 7/2
         "5/2",
         "2/1",
         "1/1",
@@ -136,8 +144,8 @@ ratio_class_segment_2 = microtones.RatioSegment(
         "1/2",
         # silver
         "9/2",
-        "3/1",  # was 3/1
-        "7/2",  # was 7/2
+        "7/2",  # was 3/1
+        "3/1",  # was 7/2
         "5/2",
         "2/1",
         "1/1",
@@ -195,6 +203,7 @@ link_pitch_handler = evans.PitchHandler(
     forget=False,
     name="link_pitch_handler",
     apply_all=True,
+    apply_all_spelling="sharp",
 )
 
 # segment 5
@@ -246,6 +255,10 @@ gestures_1 = subject_1.transpose(3)
 gestures_1 += subject_1.transpose(7).rotate(-1).retrograde()
 gestures_1 += subject_1.transpose(4).rotate(-2)
 gestures_1 += subject_1.transpose(9).rotate(-3).retrograde()
+gestures_1_copy = microtones.PitchSegment([x for x in gestures_1])
+for _ in range(20):
+    i = _ + 1
+    gestures_1 += gestures_1_copy.transpose(i)
 
 violin_1_pitch_handler_six = evans.PitchHandler(
     pitch_list=gestures_1,
@@ -380,4 +393,57 @@ viola_pitch_handler_eight = evans.PitchHandler(
 cello_pitch_handler_eight = evans.PitchHandler(
     pitch_list=gestures_3.transpose(-24).rotate(3),
     forget=False,
+)
+
+# segment 7
+
+seg_7_ratio_class_segment = microtones.RatioClassSegment(
+    [
+        "1/1",  # gold
+        "1/2",
+        "2/3",
+        "3/5",
+        "5/8",
+        "8/13",
+        "13/21",
+        "1/1",  # silver
+        "1/2",
+        "2/5",
+        "5/12",
+        "70/169",
+        "169/408",
+    ]
+)
+
+seg_7_ratio_class_segment += seg_7_ratio_class_segment.multiply("3/2").retrograde()
+
+seg_7_ratio_class_segment += seg_7_ratio_class_segment.transpose("2")
+
+seg_7_global_pitch_handler = evans.PitchHandler(
+    pitch_list=seg_7_ratio_class_segment,
+    forget=False,
+    name="seg_7_global_pitch_handler",
+    as_ratios=True,
+)
+
+# segment 8
+
+chorale = microtones.RatioClassSegment(
+    [
+        "1/1",
+        "35/32",
+        "5/4",
+        "7/4",
+    ]
+)
+
+chorale += chorale.invert().multiply("3/2")
+
+chorale += chorale.retrograde().transpose("3/2")
+
+chorale_pitch_handler = evans.PitchHandler(
+    pitch_list=chorale,
+    forget=False,
+    name="chorale_pitch_handler",
+    as_ratios=True,
 )

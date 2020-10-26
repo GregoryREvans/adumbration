@@ -59,11 +59,6 @@ maker = evans.SegmentMaker(
             abjad.select().components(abjad.Score),
         ),
         evans.attach(
-            "Voice 2",
-            abjad.StopTextSpan(command=r"\stopTextSpanOne"),
-            baca.leaf(0),
-        ),
-        evans.attach(
             "Global Context",
             evans.metric_modulation(
                 metronome_mark=((1, 4), quicktions.Fraction(230, 3)),
@@ -78,7 +73,7 @@ maker = evans.SegmentMaker(
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily",

@@ -1,6 +1,6 @@
 import abjad
 
-# from adumbration.materials.timespans.segment_06.make_timespans import (
+# from adumbration.materials.timespans.segment_07.make_timespans import (
 #     rhythm_timespan_list,
 # )
 #
@@ -25,43 +25,23 @@ import abjad
 # fitted_meters = abjad.Meter.fit_meters(
 #     argument=offset_counter,
 #     meters=permitted_meters,
-#     # maximum_run_length=1,
+#     maximum_run_length=2,
 # )
 
+# time_signatures = [abjad.TimeSignature(_) for _ in fitted_meters]
+
 time_signatures = [
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((5, 4)),
+    abjad.TimeSignature((6, 4)),
     abjad.TimeSignature((5, 4)),
     abjad.TimeSignature((4, 4)),
     abjad.TimeSignature((5, 4)),
+    abjad.TimeSignature((4, 4)),
+    abjad.TimeSignature((5, 4)),
+    abjad.TimeSignature((3, 4)),
+    abjad.TimeSignature((5, 4)),
+    abjad.TimeSignature((2, 4)),
     abjad.TimeSignature((6, 4)),
     abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((6, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((6, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((6, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((6, 4)),
-    abjad.TimeSignature((3, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((4, 4)),
-    abjad.TimeSignature((5, 4)),
-    abjad.TimeSignature((4, 4)),
 ]
 
 time_signatures.append(abjad.TimeSignature((1, 4)))  # for ending skip

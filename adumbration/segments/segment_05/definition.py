@@ -25,7 +25,7 @@ def _add_tremolos(selections):
 
 x = abjad.Markup("XFB.", direction=abjad.Up)
 n = abjad.Markup("norm.", direction=abjad.Up)
-s = abjad.Markup("scratch", direction=abjad.Up)
+s = abjad.Markup("noise", direction=abjad.Up)
 
 cyc_techniques = evans.CyclicList([x, n, s, n, x, n, s], forget=False)
 
@@ -127,7 +127,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "cresc. a m.29 (fortissimo)",
+                "cresc. a m.28 (fortissimo)",
                 direction=abjad.Down,
             ),
             baca.leaf(0),
@@ -135,7 +135,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "cresc. a m.29 (fortissimo)",
+                "cresc. a m.28 (fortissimo)",
                 direction=abjad.Down,
             ),
             baca.leaf(0),
@@ -143,7 +143,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "cresc. a m.29 (fortissimo)",
+                "cresc. a m.28 (fortissimo)",
                 direction=abjad.Down,
             ),
             baca.leaf(0),
@@ -151,7 +151,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "cresc. a m.29 (fortissimo)",
+                "cresc. a m.28 (fortissimo)",
                 direction=abjad.Down,
             ),
             baca.leaf(0),

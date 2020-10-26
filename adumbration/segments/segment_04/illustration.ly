@@ -83,12 +83,12 @@
                     (
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs''16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    df'''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    cs'''16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -98,13 +98,13 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef'''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    ds'''16
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs''16
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
@@ -150,8 +150,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    df'''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    cs'''16
                     [
                     (
 
@@ -160,8 +160,8 @@
                     d'''16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    df'''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    cs'''16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -171,8 +171,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef'''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    ds'''16
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -185,8 +185,8 @@
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf'''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs'''16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -196,12 +196,12 @@
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs''16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs''16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -251,8 +251,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs'16
                     \f
                     [
                     (
@@ -275,8 +275,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    df''16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    cs''16
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -289,8 +289,8 @@
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    bf'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    as'16
                     ]
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -310,8 +310,8 @@
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs'16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -321,8 +321,8 @@
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs'16
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
@@ -336,8 +336,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    bf'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    as'16
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -345,8 +345,8 @@
                     a'16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs'16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -394,15 +394,15 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    ds'16
                     \f
                     [
                     (
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs'16
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
@@ -416,8 +416,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    bf16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    as16
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -425,8 +425,8 @@
                     a16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -437,14 +437,14 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    ds'16
                     )
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef'16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    ds'16
                     (
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -519,8 +519,8 @@
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    bf,16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    as,16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -530,17 +530,17 @@
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    df16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    cs16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    bf,16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    as,16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -554,8 +554,8 @@
                     c16
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    df16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    cs16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -577,13 +577,13 @@
                     (
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    ds16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    gf16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    fs16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -593,8 +593,8 @@
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    af16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    gs16
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
@@ -602,8 +602,8 @@
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    bf,16
+                    \tweak Accidental.text \abjad-sharp-markup
+                    as,16
                     )
                     ]
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()

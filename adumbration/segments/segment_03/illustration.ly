@@ -125,8 +125,8 @@
 
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
-                        b''
+                        \tweak Accidental.text \one-septimal-comma-down 
+                        d'''
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp 
                         fs'''
@@ -139,7 +139,7 @@
                                     \center-align
                                         +4
                                     \center-align
-                                        +2
+                                        -31
                                 }
                         }
                     \<
@@ -174,8 +174,8 @@
 
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
-                        b''
+                        \tweak Accidental.text \one-septimal-comma-down 
+                        d'''
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp 
                         fs'''
@@ -189,7 +189,7 @@
                                     \center-align
                                         +4
                                     \center-align
-                                        +2
+                                        -31
                                 }
                         }
                     ^ \markup { sp. }
@@ -343,8 +343,8 @@
                         \tweak Accidental.text \sharp-one-syntonic-comma-down 
                         gs''
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
-                        d'''
+                        \tweak Accidental.text \abjad-natural 
+                        b''
                     >1
                     \sfp
                     ^ \markup {
@@ -352,7 +352,7 @@
                             \center-column
                                 {
                                     \center-align
-                                        -31
+                                        +2
                                     \center-align
                                         -14
                                 }
@@ -392,8 +392,8 @@
                         \tweak Accidental.text \sharp-one-syntonic-comma-down 
                         gs''
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
-                        d'''
+                        \tweak Accidental.text \abjad-natural 
+                        b''
                     >4
                     \f
                     - \tenuto
@@ -402,7 +402,7 @@
                             \center-column
                                 {
                                     \center-align
-                                        -31
+                                        +2
                                     \center-align
                                         -14
                                 }

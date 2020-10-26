@@ -1,6 +1,6 @@
 import abjad
 
-# from adumbration.materials.timespans.segment_05.make_timespans import (
+# from adumbration.materials.timespans.segment_04.make_timespans import (
 #     rhythm_timespan_list,
 # )
 #
@@ -25,17 +25,14 @@ import abjad
 # fitted_meters = abjad.Meter.fit_meters(
 #     argument=offset_counter,
 #     meters=permitted_meters,
-#     # maximum_run_length=1,
+#     maximum_run_length=1,
 # )
 
-fitted_meter_pairs = (
-    (6, 4),
-    (2, 4),
-    (5, 4),
-    (3, 4),
+fitted_meter_pairs = [
     (4, 4),
-    (5, 4),
-)
+    (2, 4),
+    (4, 4),
+]
 fitted_meters = [abjad.Meter(_) for _ in fitted_meter_pairs]
 time_signatures = [abjad.TimeSignature(_) for _ in fitted_meters]
 

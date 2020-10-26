@@ -101,7 +101,7 @@
                         }
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.5
                     \startTextSpanOne
@@ -153,7 +153,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #4.5
                     \startTextSpanOne
@@ -238,7 +238,7 @@
                         }
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.5
                     \startTextSpanOne
@@ -312,7 +312,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #4.5
                     \startTextSpanOne
@@ -357,7 +357,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.5
                     \startTextSpanOne
@@ -427,7 +427,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #5.5
                     \startTextSpanOne
@@ -518,7 +518,7 @@
                         }
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.5
                     \startTextSpanOne
@@ -599,7 +599,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #5.5
                     \startTextSpanOne
@@ -687,7 +687,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.9
                     \startTextSpanOne
@@ -762,7 +762,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #4.9
                     \startTextSpanOne
@@ -820,7 +820,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.9
                     \startTextSpanOne
@@ -892,7 +892,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #4.9
                     \startTextSpanOne
@@ -951,7 +951,7 @@
                             }
                         - \abjad-solid-line-with-arrow
                         - \tweak bound-details.left.text \markup \concat { \upright
-                            scratch \hspace #0.5 }
+                            noise \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
                         - \tweak staff-padding #5.9
                         \startTextSpanOne
@@ -1053,7 +1053,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #5.9
                     \startTextSpanOne
@@ -1171,7 +1171,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.9
                     \startTextSpanOne
@@ -1236,7 +1236,7 @@
                     \stopTextSpanOne
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        scratch \hspace #0.5 }
+                        noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
                     - \tweak staff-padding #5.9
                     \startTextSpanOne

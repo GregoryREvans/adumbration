@@ -27,7 +27,7 @@ cyc_padding = evans.CyclicList([4.5, 5.5, 4.9, 5.9], forget=False)
 
 def _call_text_spanner(selections):
     trem_text = evans.TextSpanHandler(
-        span_one_positions=["scratch", "norm.", "XFB.", "scratch", "XFB.", "norm."],
+        span_one_positions=["noise", "norm.", "XFB.", "noise", "XFB.", "norm."],
         span_one_style="solid-line",
         span_one_padding=cyc_padding(r=1)[0],
         attach_span_one_to="bounds",

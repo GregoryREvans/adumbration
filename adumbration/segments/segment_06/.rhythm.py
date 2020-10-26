@@ -10,7 +10,7 @@ handler_to_value = abjad.OrderedDict(
                         abjad.OrderedDict(
                             [
                                 ('divisions_consumed', 71),
-                                ('logical_ties_produced', 892),
+                                ('logical_ties_produced', 848),
                                 ]
                             ),
                         ),
@@ -42,7 +42,7 @@ handler_to_value = abjad.OrderedDict(
                         abjad.OrderedDict(
                             [
                                 ('divisions_consumed', 33),
-                                ('logical_ties_produced', 192),
+                                ('logical_ties_produced', 222),
                                 ]
                             ),
                         ),
@@ -59,8 +59,8 @@ handler_to_value = abjad.OrderedDict(
                             [
                                 ('divisions_consumed', 54),
                                 ('incomplete_last_note', True),
-                                ('logical_ties_produced', 42),
-                                ('talea_weight_consumed', 314),
+                                ('logical_ties_produced', 41),
+                                ('talea_weight_consumed', 294),
                                 ]
                             ),
                         ),
