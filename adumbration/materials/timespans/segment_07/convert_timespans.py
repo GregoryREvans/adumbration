@@ -2,10 +2,10 @@ import abjad
 import evans
 
 from adumbration.materials.pitch import (
-    seg_7_pitch_handler_one,
-    seg_7_pitch_handler_two,
-    seg_7_pitch_handler_three,
     seg_7_pitch_handler_four,
+    seg_7_pitch_handler_one,
+    seg_7_pitch_handler_three,
+    seg_7_pitch_handler_two,
 )
 from adumbration.materials.score_structure.segment_07.rhythm_material_pattern import (
     rhythm_material_list,

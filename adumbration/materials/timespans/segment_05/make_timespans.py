@@ -34,9 +34,12 @@ rhythm_timespan_list = rhythm_timespan_maker(
     music_specifiers=music_specifiers, target_timespan=rhythm_target_timespan
 )
 
-temp_list = abjad.TimespanList([
-    abjad.AnnotatedTimespan(_.start_offset, _.stop_offset, annotation=_.voice_name) for _ in rhythm_timespan_list
-])
+temp_list = abjad.TimespanList(
+    [
+        abjad.AnnotatedTimespan(_.start_offset, _.stop_offset, annotation=_.voice_name)
+        for _ in rhythm_timespan_list
+    ]
+)
 
 abjad.show(temp_list, scale=0.7, key="annotation")
 

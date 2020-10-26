@@ -5,7 +5,7 @@ import baca
 import evans
 import quicktions
 
-from adumbration.materials.pitch import clef_handlers, chorale_pitch_handler
+from adumbration.materials.pitch import chorale_pitch_handler, clef_handlers
 from adumbration.materials.score_structure.instruments import instruments as insts
 from adumbration.materials.score_structure.score_structure import score
 from adumbration.materials.score_structure.segment_08.time_signatures import (
@@ -15,7 +15,6 @@ from adumbration.materials.timespans.segment_08.convert_timespans import (
     handler_commands,
     rhythm_commands,
 )
-
 
 bar_literal = abjad.LilyPondLiteral(r'\bar ".|:"', format_slot="before")
 

@@ -60,7 +60,9 @@ maker = evans.SegmentMaker(
             evans.metric_modulation(
                 metronome_mark=((1, 4), quicktions.Fraction(460, 3)),
                 left_note=(abjad.Note("c'2")),
-                right_note=(abjad.Tuplet(multiplier=(2, 3), components=[abjad.Note("c'4")])),
+                right_note=(
+                    abjad.Tuplet(multiplier=(2, 3), components=[abjad.Note("c'4")])
+                ),
                 modulated_beat=(abjad.Note("c'4")),
             ),
             baca.leaf(0),

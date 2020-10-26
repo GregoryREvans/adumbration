@@ -166,15 +166,18 @@ dynamic_handler_six = evans.DynamicHandler(
     forget=False,
     hold_last_boolean_vector=[1],
     with_constante_hairpins=False,
-    name="dynamic_handler_six"
+    name="dynamic_handler_six",
 )
 
 dynamic_handler_seven = evans.DynamicHandler(
-    ["niente", "fff",],
+    [
+        "niente",
+        "fff",
+    ],
     forget=True,
     hold_last_boolean_vector=[1],
     with_constante_hairpins=False,
-    name="dynamic_handler_seven"
+    name="dynamic_handler_seven",
 )
 
 dynamic_handler_eight = evans.DynamicHandler(
@@ -182,7 +185,7 @@ dynamic_handler_eight = evans.DynamicHandler(
     forget=False,
     hold_last_boolean_vector=[1],
     with_constante_hairpins=False,
-    name="dynamic_handler_eight"
+    name="dynamic_handler_eight",
 )
 
 dyn_mat = evans.CyclicList(

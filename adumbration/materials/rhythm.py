@@ -126,7 +126,7 @@ rmaker_six = abjadext.rmakers.stack(
             -1,
             -1,
             -1,
-            0
+            0,
         ],
     ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
@@ -222,7 +222,7 @@ seg_7_rmaker = abjadext.rmakers.stack(
             1,
         ],
         2,
-        extra_counts=[0, -1, 1, 2, -3, 0, -1, 4, 3, 1, 2, 1]
+        extra_counts=[0, -1, 1, 2, -3, 0, -1, 4, 3, 1, 2, 1],
     ),
     abjadext.rmakers.trivialize(abjad.select().tuplets()),
     abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
