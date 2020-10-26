@@ -60,7 +60,7 @@
                     \bar ".|:"
                     \clef "treble"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
+                    \tweak Accidental.text \abjad-natural
                     c''2.
                     \f
                     ^ \markup {
@@ -83,9 +83,9 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-up 
+                                \one-septimal-comma-up
                                 \hspace #0.125
-                                \sharp-one-syntonic-comma-down 
+                                \sharp-one-syntonic-comma-down
                             }
                         }
                     gs''2.
@@ -137,9 +137,9 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-up 
+                                \one-septimal-comma-up
                                 \hspace #0.125
-                                \natural-one-syntonic-comma-up 
+                                \natural-one-syntonic-comma-up
                             }
                         }
                     f'2
@@ -151,7 +151,7 @@
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \one-septimal-comma-up 
+                    \tweak Accidental.text \one-septimal-comma-up
                     a'2.
                     ^ \markup {
                         \center-align
@@ -196,7 +196,7 @@
                     r2
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \natural-one-syntonic-comma-down 
+                    \tweak Accidental.text \natural-one-syntonic-comma-down
                     e4
                     \f
                     ^ \markup {
@@ -205,7 +205,7 @@
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
+                    \tweak Accidental.text \abjad-natural
                     g4
                     ^ \markup {
                         \center-align
@@ -215,7 +215,7 @@
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
+                    \tweak Accidental.text \abjad-natural
                     g4
 
                     r4
@@ -251,6 +251,7 @@
 
                 \context Voice = "Voice 4"
                 {
+                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                     % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \set Staff.shortInstrumentName =                           %! applying staff names and clefs
@@ -265,9 +266,9 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-down 
+                                \one-septimal-comma-down
                                 \hspace #0.125
-                                \natural-one-syntonic-comma-down 
+                                \natural-one-syntonic-comma-down
                             }
                         }
                     d,4
@@ -281,9 +282,9 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-down 
+                                \one-septimal-comma-down
                                 \hspace #0.125
-                                \abjad-flat 
+                                \abjad-flat
                             }
                         }
                     bf,2
@@ -294,7 +295,7 @@
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    \tweak Accidental.text \flat-one-syntonic-comma-up
                     ef,2
                     ^ \markup {
                         \center-align

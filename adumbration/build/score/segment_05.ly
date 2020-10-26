@@ -75,7 +75,17 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.28 (fortissimo)" }
+                    _ \markup {
+                        \override
+                            #'(style . "box")
+                            \override
+                                #'(box-padding . 0.5)
+                                \italic
+                                    \box
+                                        \whiteout
+                                            \small
+                                                "cresc. a m.28 (ff)"
+                        }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -198,7 +208,17 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.28 (fortissimo)" }
+                    _ \markup {
+                        \override
+                            #'(style . "box")
+                            \override
+                                #'(box-padding . 0.5)
+                                \italic
+                                    \box
+                                        \whiteout
+                                            \small
+                                                "cresc. a m.28 (ff)"
+                        }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -321,7 +341,17 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.28 (fortissimo)" }
+                    _ \markup {
+                        \override
+                            #'(style . "box")
+                            \override
+                                #'(box-padding . 0.5)
+                                \italic
+                                    \box
+                                        \whiteout
+                                            \small
+                                                "cresc. a m.28 (ff)"
+                        }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -451,7 +481,17 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.28 (fortissimo)" }
+                    _ \markup {
+                        \override
+                            #'(style . "box")
+                            \override
+                                #'(box-padding . 0.5)
+                                \italic
+                                    \box
+                                        \whiteout
+                                            \small
+                                                "cresc. a m.28 (ff)"
+                        }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print

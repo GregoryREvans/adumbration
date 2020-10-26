@@ -127,33 +127,57 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "cresc. a m.28 (fortissimo)",
+                "cresc. a m.28 (ff)",
                 direction=abjad.Down,
-            ),
+            )
+            .small()
+            .whiteout()
+            .box()
+            .italic()
+            .override(("box-padding", 0.5))
+            .override(("style", "box")),
             baca.leaf(0),
         ),
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "cresc. a m.28 (fortissimo)",
+                "cresc. a m.28 (ff)",
                 direction=abjad.Down,
-            ),
+            )
+            .small()
+            .whiteout()
+            .box()
+            .italic()
+            .override(("box-padding", 0.5))
+            .override(("style", "box")),
             baca.leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "cresc. a m.28 (fortissimo)",
+                "cresc. a m.28 (ff)",
                 direction=abjad.Down,
-            ),
+            )
+            .small()
+            .whiteout()
+            .box()
+            .italic()
+            .override(("box-padding", 0.5))
+            .override(("style", "box")),
             baca.leaf(0),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "cresc. a m.28 (fortissimo)",
+                "cresc. a m.28 (ff)",
                 direction=abjad.Down,
-            ),
+            )
+            .small()
+            .whiteout()
+            .box()
+            .italic()
+            .override(("box-padding", 0.5))
+            .override(("style", "box")),
             baca.leaf(0),
         ),
         evans.attach(

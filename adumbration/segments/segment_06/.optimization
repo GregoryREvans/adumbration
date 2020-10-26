@@ -125,3 +125,93 @@ Segment runtime: 262 seconds
  Pre-handlers runtime: 0 seconds
  Handlers runtime: 253 seconds
  Post-handlers runtime: 9 seconds
+
+2020-10-26 09:38:06
+Segment runtime: 192 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 186 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 09:44:52
+Segment runtime: 188 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 182 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 09:57:34
+Segment runtime: 193 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 187 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 10:22:00
+Segment runtime: 191 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 185 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 10:28:44
+Segment runtime: 191 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 185 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 10:37:44
+Segment runtime: 188 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 182 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 10:41:44
+Segment runtime: 189 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 183 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 11:12:42
+Segment runtime: 235 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 226 seconds
+ Post-handlers runtime: 9 seconds
+
+2020-10-26 11:18:46
+Segment runtime: 221 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 215 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 11:29:28
+Segment runtime: 190 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 184 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 11:37:06
+Segment runtime: 257 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 249 seconds
+ Post-handlers runtime: 8 seconds
+
+2020-10-26 11:41:44
+Segment runtime: 236 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 228 seconds
+ Post-handlers runtime: 8 seconds
+
+2020-10-26 12:30:13
+Segment runtime: 234 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 226 seconds
+ Post-handlers runtime: 8 seconds
+
+2020-10-26 13:29:26
+Segment runtime: 193 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 187 seconds
+ Post-handlers runtime: 6 seconds
+
+2020-10-26 13:58:48
+Segment runtime: 190 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 184 seconds
+ Post-handlers runtime: 6 seconds

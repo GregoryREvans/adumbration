@@ -177,6 +177,38 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             baca.leaf(-4, pitched=True),
         ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.TupletBracket.direction = #UP",
+                format_slot="after",
+            ),
+            baca.leaf(9),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.TupletBracket.direction = #UP",
+                format_slot="after",
+            ),
+            baca.leaf(14),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.TupletBracket.direction = #UP",
+                format_slot="absolute_before",
+            ),
+            baca.leaf(1),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.TupletBracket.direction = #UP",
+                format_slot="after",
+            ),
+            baca.leaf(18),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -266,6 +266,7 @@
 
                 \context Voice = "Voice 4"
                 {
+                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-1.25 . 0)
                     % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \set Staff.shortInstrumentName =                           %! applying staff names and clefs

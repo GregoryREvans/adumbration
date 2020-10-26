@@ -84,6 +84,7 @@
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
+                    \once \override Staff.TupletBracket.direction = #UP
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                     \times 4/5 {
@@ -103,6 +104,7 @@
                         \revert Staff.Stem.stemlet-length
                         bf'16
                         ]
+                        \once \override Staff.TupletBracket.direction = #UP
 
                     }
 
@@ -178,6 +180,7 @@
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 8) "16")
                     \times 8/11 {
+                        \once \override Staff.TupletBracket.direction = #UP
                         % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -234,6 +237,7 @@
                     ]
 
                     r8
+                    \once \override Staff.TupletBracket.direction = #UP
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 13 12) "16")

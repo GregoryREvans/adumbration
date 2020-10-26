@@ -92,6 +92,14 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             baca.leaf(0, pitched=True),
         ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
+                format_slot="absolute_before",
+            ),
+            baca.leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,
