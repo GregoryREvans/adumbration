@@ -90,7 +90,7 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.29 (fortissimo)" }
+                    _ \markup { "cresc. a m.28 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -213,7 +213,7 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.29 (fortissimo)" }
+                    _ \markup { "cresc. a m.28 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -336,7 +336,7 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.29 (fortissimo)" }
+                    _ \markup { "cresc. a m.28 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -466,7 +466,7 @@
                         }
                     ^ \markup { st. }
                     ^ \markup { XFB. }
-                    _ \markup { "cresc. a m.29 (fortissimo)" }
+                    _ \markup { "cresc. a m.28 (fortissimo)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
