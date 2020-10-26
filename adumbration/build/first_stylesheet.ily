@@ -118,7 +118,7 @@
 		%{ \override TupletBracket.staff-padding = #1.5 %}
 		\override TupletBracket.staff-padding = #1.5
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
-		\override TupletBracket.direction = #down
+		%{ \override TupletBracket.direction = #down %}
 		\override TupletNumber.font-size = #1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
