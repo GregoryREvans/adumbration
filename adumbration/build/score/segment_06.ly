@@ -3401,6 +3401,17 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         a,8
+                        _ \markup {
+                            \override
+                                #'(style . "box")
+                                \override
+                                    #'(box-padding . 0.5)
+                                    \italic
+                                        \box
+                                            \whiteout
+                                                \small
+                                                    "cresc. a fff"
+                            }
                         - \tweak circled-tip ##t
                         \<
                         [
