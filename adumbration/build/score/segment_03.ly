@@ -15,6 +15,11 @@
                 }
             s1 * 7/8
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "extinct anatomies"
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"102" #"2" #"9"

@@ -107,6 +107,14 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             baca.leaf(1),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "E.H. [komm (ii)]",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

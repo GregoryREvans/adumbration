@@ -68,6 +68,22 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "(ascend to the basement)",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "t. talked with god",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

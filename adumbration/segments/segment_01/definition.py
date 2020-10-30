@@ -31,6 +31,7 @@ def _call_text_spanner(selections):
         span_one_style="solid-line",
         span_one_padding=cyc_padding(r=1)[0],
         attach_span_one_to="bounds",
+        hooks=False,
         forget=False,
     )
     for run in abjad.select(selections).runs():
@@ -274,6 +275,14 @@ maker = evans.SegmentMaker(
             "Voice 4",
             abjad.Dynamic("mf"),
             baca.leaf(18),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "ensombrecida",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
         ),
     ],
     score_template=score,

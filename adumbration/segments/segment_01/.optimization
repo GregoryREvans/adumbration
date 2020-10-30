@@ -425,3 +425,81 @@ Segment runtime: 4 seconds
  Pre-handlers runtime: 0 seconds
  Handlers runtime: 2 seconds
  Post-handlers runtime: 2 seconds
+
+2020-10-28 17:29:51
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 2 seconds
+
+2020-10-28 17:31:04
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 17:31:40
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 17:32:03
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 17:32:29
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 17:33:01
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 17:33:25
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 17:44:30
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-28 23:47:21
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-29 22:04:01
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-29 22:04:35
+Segment runtime: 3 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 1 second
+
+2020-10-29 22:23:44
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 2 seconds
+
+2020-10-29 22:40:55
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 2 seconds

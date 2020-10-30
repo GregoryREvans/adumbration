@@ -15,6 +15,11 @@
                 }
             s1 * 3/2
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "E.H. [komm (ii)]"
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"51" #"1" #"9"

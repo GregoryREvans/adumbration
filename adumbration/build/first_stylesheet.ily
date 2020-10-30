@@ -4,13 +4,15 @@
 #(set-global-staff-size 13)
 %\include "/Users/evansdsg2/evans/lilypond/evans-articulations.ily"
 \include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
+\include "/Users/evansdsg2/baca/lilypond/baca-circle-bow-markups.ily"
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/ekmelos-ji-accidental-markups.ily"
 \header {
 	tagline = ##f
 	breakbefore = ##t
 	dedication = \markup \override #'(font-name . "STIXGeneral") \fontsize #1 \center-column {\line{"t o   t h e   J A C K   q u a r t e t"} \fontsize #3 \with-color #white \line{"."} }
 	title = \markup \override #'(font-name . "STIXGeneral") \fontsize #12 \center-column {"A d u m b r a t i o n"}
-	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #4 \center-column {\with-color #white \line{"."} \fontsize #2 \with-color #black \line{"f o r   s t r i n g   q u a r t e t"} }
+	subtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #4 \center-column {\with-color #white \line{"."} \fontsize #2 \with-color #black \line{"f r o m   t h e   m u s e u m s   o f   s l e e p"} } % f o r   s t r i n g   q u a r t e t
+	subsubtitle = \markup \override #'(font-name . "STIXGeneral") \fontsize #3 \center-column {\with-color #white \line{"."} \fontsize #1 \with-color #black \line{"f o r   s t r i n g   q u a r t e t"} } % from the museums of sleep
 	composer = \markup \override #'(font-name . "STIXGeneral") \center-column {\line{\fontsize #1 {"G r e g o r y  R o w l a n d  E v a n s (*1995)"}} \line{ \vspace #4 }}
 }
 

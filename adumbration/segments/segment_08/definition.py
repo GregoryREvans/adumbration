@@ -74,12 +74,7 @@ maker = evans.SegmentMaker(
         evans.attach("Voice 4", bar_literal, baca.leaf(0)),
         evans.attach(
             "Voice 1",
-            abjad.Dynamic("f"),
-            baca.leaf(0, pitched=True),
-        ),
-        evans.attach(
-            "Voice 2",
-            abjad.Dynamic("f"),
+            abjad.Dynamic("p"),
             baca.leaf(0, pitched=True),
         ),
         evans.attach(
@@ -89,7 +84,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.Dynamic("f"),
+            abjad.Dynamic("mp"),
             baca.leaf(0, pitched=True),
         ),
         evans.attach(
@@ -98,6 +93,81 @@ maker = evans.SegmentMaker(
                 r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
                 format_slot="absolute_before",
             ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Articulation("snappizzicato"),
+            baca.leaf(1),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Markup("slow bow", direction=abjad.Up),
+            baca.leaf(2),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StemTremolo(32),
+            baca.leaf(2),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("f"),
+            baca.leaf(2),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r"^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }",
+                format_slot="after",
+            ),
+            baca.leaf(3),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Dynamic("mf"),
+            baca.leaf(3),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r"^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }",
+                format_slot="after",
+            ),
+            baca.leaf(1),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r"^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }",
+                format_slot="after",
+            ),
+            baca.leaf(2),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Dynamic("mf"),
+            baca.leaf(1),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("1/2clt.", direction=abjad.Up),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "[ensombrecida (ii)]",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "anamorphosis/calligrapher",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),
     ],

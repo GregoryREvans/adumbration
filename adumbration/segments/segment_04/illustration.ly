@@ -31,6 +31,11 @@
                 }
             s1 * 1
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "crocodiles (ii)"
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"153" #"1" #"3"

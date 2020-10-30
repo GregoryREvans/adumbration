@@ -128,6 +128,14 @@ maker = evans.SegmentMaker(
         evans.attach("Voice 3", abjad.StartSlur(), baca.leaf(-3, pitched=True)),
         evans.attach("Voice 4", abjad.StopSlur(), baca.leaf(-8, pitched=True)),
         evans.attach("Voice 4", abjad.StartSlur(), baca.leaf(-7, pitched=True)),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "crocodiles (ii)",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

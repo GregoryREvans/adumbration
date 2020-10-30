@@ -30,6 +30,16 @@
                 }
             s1 * 3/4
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "(ascend to the basement)"
+                }
+            ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "t. talked with god"
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"153" #"1" #"3"

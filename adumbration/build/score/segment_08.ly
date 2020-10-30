@@ -16,6 +16,16 @@
                 }
             s1 * 1
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "[ensombrecida (ii)]"
+                }
+            ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    anamorphosis/calligrapher
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"38" #"1" #"3"
@@ -60,13 +70,14 @@
                     \bar ".|:"
                     \clef "treble"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural
+                    \tweak Accidental.text \abjad-natural 
                     c''2.
-                    \f
+                    \p
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    ^ \markup { 1/2clt. }
 
                     r4
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -83,9 +94,9 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-up
+                                \one-septimal-comma-up 
                                 \hspace #0.125
-                                \sharp-one-syntonic-comma-down
+                                \sharp-one-syntonic-comma-down 
                             }
                         }
                     gs''2.
@@ -137,26 +148,28 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-up
+                                \one-septimal-comma-up 
                                 \hspace #0.125
-                                \natural-one-syntonic-comma-up
+                                \natural-one-syntonic-comma-up 
                             }
                         }
                     f'2
-                    \f
+                    \mf
                     ^ \markup {
                         \center-align
                             +47
                         }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \one-septimal-comma-up
+                    \tweak Accidental.text \one-septimal-comma-up 
                     a'2.
                     ^ \markup {
                         \center-align
                             +33
                         }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }
 
                     r4
                     \bar ":|."
@@ -196,26 +209,28 @@
                     r2
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \natural-one-syntonic-comma-down
+                    \tweak Accidental.text \natural-one-syntonic-comma-down 
                     e4
                     \f
+                    - \snappizzicato
                     ^ \markup {
                         \center-align
                             -14
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural
+                    \tweak Accidental.text \abjad-natural 
                     g4
                     ^ \markup {
                         \center-align
                             +2
                         }
+                    ^ \markup { "slow bow" }
                     ~
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural
+                    \tweak Accidental.text \abjad-natural 
                     g4
 
                     r4
@@ -266,13 +281,13 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-down
+                                \one-septimal-comma-down 
                                 \hspace #0.125
-                                \natural-one-syntonic-comma-down
+                                \natural-one-syntonic-comma-down 
                             }
                         }
                     d,4
-                    \f
+                    \mp
                     ^ \markup {
                         \center-align
                             -45
@@ -282,12 +297,14 @@
                     \tweak Accidental.text \markup {
                         \concat
                             {
-                                \one-septimal-comma-down
+                                \one-septimal-comma-down 
                                 \hspace #0.125
-                                \abjad-flat
+                                \abjad-flat 
                             }
                         }
                     bf,2
+                    :32
+                    \f
                     ^ \markup {
                         \center-align
                             -31
@@ -295,12 +312,14 @@
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
                     ef,2
+                    \mf
                     ^ \markup {
                         \center-align
                             +16
                         }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility

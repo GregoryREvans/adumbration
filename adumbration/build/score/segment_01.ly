@@ -15,6 +15,11 @@
                 }
             s1 * 1
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    ensombrecida
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-markup #2 #0 #1 #"115"
@@ -101,7 +106,7 @@
                             B+41
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -136,7 +141,7 @@
                     g''1
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -199,7 +204,7 @@
                                 F♯+26
                             }
                         \stopTextSpanOne
-                        - \abjad-solid-line-with-hook
+                        - \abjad-invisible-line
                         - \tweak bound-details.left.text \markup \concat { \upright
                             norm. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
@@ -247,7 +252,7 @@
                             +0
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -295,7 +300,7 @@
                             +14
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -362,7 +367,7 @@
                             +0
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -410,7 +415,7 @@
                             +2
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -481,7 +486,7 @@
                     g''4
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -517,7 +522,7 @@
                             +2
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -582,7 +587,7 @@
                             -16
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -632,7 +637,7 @@
                     af'2
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -696,7 +701,7 @@
                                 +0
                             }
                         \stopTextSpanOne
-                        - \abjad-solid-line-with-hook
+                        - \abjad-invisible-line
                         - \tweak bound-details.left.text \markup \concat { \upright
                             norm. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
@@ -745,7 +750,7 @@
                             +0
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -782,7 +787,7 @@
                             B+41
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -826,7 +831,7 @@
                             +14
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -875,7 +880,7 @@
                             F♯+26
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -987,7 +992,7 @@
                     cf4
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -1036,7 +1041,7 @@
                     f4
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -1104,7 +1109,7 @@
                     gf2.
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -1176,7 +1181,7 @@
                     g4
                     :32
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
@@ -1219,7 +1224,7 @@
                             A♭+41
                         }
                     \stopTextSpanOne
-                    - \abjad-solid-line-with-hook
+                    - \abjad-invisible-line
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3

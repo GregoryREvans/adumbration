@@ -240,6 +240,14 @@ maker = evans.SegmentMaker(
             _attach_marks,
             abjad.select().logical_ties(),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "komm (i)",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

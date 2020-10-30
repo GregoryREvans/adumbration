@@ -209,6 +209,14 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(18),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.Markup(
+                "crocodiles (i)",
+                direction=abjad.Up,
+            ).override(("font-name", "STIXGeneral Bold")),
+            baca.leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -31,6 +31,16 @@
                 }
             s1 * 1
             ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    "[ensombrecida (ii)]"
+                }
+            ^ \markup {
+                \override
+                    #'(font-name . "STIXGeneral Bold")
+                    anamorphosis/calligrapher
+                }
+            ^ \markup {
               \huge
               \concat {
                   \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"38" #"1" #"3"
@@ -77,11 +87,12 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     c''2.
-                    \f
+                    \p
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    ^ \markup { 1/2clt. }
 
                     r4
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -158,11 +169,12 @@
                             }
                         }
                     f'2
-                    \f
+                    \mf
                     ^ \markup {
                         \center-align
                             +47
                         }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -172,6 +184,7 @@
                         \center-align
                             +33
                         }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }
 
                     r4
                     \bar ":|."
@@ -214,6 +227,7 @@
                     \tweak Accidental.text \natural-one-syntonic-comma-down 
                     e4
                     \f
+                    - \snappizzicato
                     ^ \markup {
                         \center-align
                             -14
@@ -226,6 +240,7 @@
                         \center-align
                             +2
                         }
+                    ^ \markup { "slow bow" }
                     ~
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -266,7 +281,7 @@
 
                 \context Voice = "Voice 4"
                 {
-                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-1.25 . 0)
+                    \once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)
                     % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \set Staff.shortInstrumentName =                           %! applying staff names and clefs
@@ -287,7 +302,7 @@
                             }
                         }
                     d,4
-                    \f
+                    \mp
                     ^ \markup {
                         \center-align
                             -45
@@ -303,6 +318,8 @@
                             }
                         }
                     bf,2
+                    :32
+                    \f
                     ^ \markup {
                         \center-align
                             -31
@@ -312,10 +329,12 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \flat-one-syntonic-comma-up 
                     ef,2
+                    \mf
                     ^ \markup {
                         \center-align
                             +16
                         }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
