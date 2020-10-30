@@ -97,16 +97,22 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e''2
-                    \f
+                    \p
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    \<
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-up 
                     g''1
-                    \mp
                     ^ \markup {
                         \center-align
                             A♭-41
@@ -116,12 +122,21 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-up 
                     c'''4
+                    \mf
                     ^ \markup {
                         \center-align
                             +14
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -133,11 +148,19 @@
                             }
                         }
                     d'''4
+                    \f
                     ^ \markup {
                         \center-align
                             C♯-26
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -171,22 +194,39 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g'2
+                    \mp
                     ^ \markup {
                         \center-align
                             +2
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     r2
+                    \stopTextSpanOne
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e'''2.
+                    \p
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    \<
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
@@ -208,21 +248,38 @@
                             }
                         }
                     cs'''4
+                    \mf
                     ^ \markup {
                         \center-align
                             C+41
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-up 
                     d'''4
+                    \f
                     ^ \markup {
                         \center-align
                             +18
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -239,30 +296,54 @@
                             }
                         }
                     bf'4
+                    \mp
                     ^ \markup {
                         \center-align
                             +49
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     r2.
+                    \stopTextSpanOne
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     c'''2
+                    \pp
                     ^ \markup {
                         \center-align
                             +37
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
                     % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     d'''2
+                    \p
                     ^ \markup {
                         \center-align
                             -31
                         }
+                    \<
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -335,14 +416,23 @@
                                 }
                             }
                         gs''4
+                        \mf
                         ^ \markup {
                             \center-align
                                 -30
                             }
+                        \stopTextSpanOne
+                        - \abjad-invisible-line
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            norm. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 3
+                        - \tweak staff-padding #8
+                        \startTextSpanOne
 
                     }
 
                     r2
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -356,11 +446,19 @@
                             }
                         }
                     c'''4
+                    \f
                     ^ \markup {
                         \center-align
                             C♯-26
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -375,8 +473,17 @@
                             }
                         }
                     c'''4
+                    \mp
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #8
+                    \startTextSpanOne
 
                     r2
+                    \stopTextSpanOne
                     \bar "||"
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -413,16 +520,22 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     c'2
-                    \mf
+                    \p
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    \<
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     gs'4
-                    \mp
                     ^ \markup {
                         \center-align
                             -14
@@ -436,12 +549,21 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e'4
+                    \mf
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -456,11 +578,19 @@
                             }
                         }
                     af'2
+                    \f
                     ^ \markup {
                         \center-align
                             A-26
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
@@ -482,24 +612,41 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \natural-one-syntonic-comma-up 
                         g'8
+                        \mp
                         ^ \markup {
                             \center-align
                                 +16
                             }
+                        \stopTextSpanOne
+                        - \abjad-invisible-line
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            1/2clt. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 3
+                        - \tweak staff-padding #4.5
+                        \startTextSpanOne
 
                     }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r2.
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''4
+                    \p
                     ^ \markup {
                         \center-align
                             -12
                         }
+                    \<
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -527,24 +674,50 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b'4
+                    \mf
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g'2
+                    \f
                     ^ \markup {
                         \center-align
                             +2
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g'2.
+                    \mp
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     r2
+                    \stopTextSpanOne
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -559,21 +732,36 @@
                             }
                         }
                     bff'4
+                    \pp
                     ^ \markup {
                         \center-align
                             A♭+37
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     d''4
+                    \p
                     ^ \markup {
                         \center-align
                             -31
                         }
+                    \<
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
@@ -585,16 +773,25 @@
                         d''4
 
                         b'2.
+                        \mf
                         ^ \markup {
                             \center-align
                                 +45
                             }
+                        \stopTextSpanOne
+                        - \abjad-invisible-line
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            norm. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 3
+                        - \tweak staff-padding #4.5
+                        \startTextSpanOne
 
                     }
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
                     r1 * 1/4
+                    \stopTextSpanOne                                           %! applying indicators
 
                     R1 * 1/4
                     % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -604,10 +801,18 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-up 
                     g'2
+                    \f
                     ^ \markup {
                         \center-align
                             A♭-41
                         }
+                    \>
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
@@ -622,8 +827,17 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e'4
+                    \mp
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -635,16 +849,23 @@
                             }
                         }
                     f'4
+                    \pp
                     ^ \markup {
                         \center-align
                             E-24
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak staff-padding #4.5
+                    \startTextSpanOne
                     \bar "||"
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
                     r1 * 1/8
+                    \stopTextSpanOne
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
                     R1 * 1/8
@@ -679,11 +900,18 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural 
                         f'1
-                        \f
+                        \p
                         ^ \markup {
                             \center-align
                                 -2
                             }
+                        \<
+                        - \abjad-solid-line-with-arrow
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            clt. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 1.4
+                        - \tweak staff-padding #5.5
+                        \startTextSpanOne
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \markup {
@@ -697,7 +925,6 @@
                                 }
                             }
                         gs2.
-                        \mp
                         ^ \markup {
                             \center-align
                                 -30
@@ -733,8 +960,17 @@
                             }
                         }
                     gs4
+                    \mf
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
 
                     r2
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -746,40 +982,72 @@
                             }
                         }
                     a2
+                    \f
                     ^ \markup {
                         \center-align
                             A♭-24
                         }
+                    \>
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b4
+                    \mp
                     ^ \markup {
                         \center-align
                             +2
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-tridecimal-third-tone-up 
                     d'2
+                    \pp
                     ^ \markup {
                         \center-align
                             E♭-39
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r2.
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b2
+                    \p
                     ^ \markup {
                         \center-align
                             +2
                         }
+                    \<
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -830,8 +1098,17 @@
                     ~
 
                     d'4
+                    \mf
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
                     % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -844,12 +1121,19 @@
                             }
                         }
                     cs'2
+                    \pp
                     ^ \markup {
                         \center-align
                             C+41
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -867,10 +1151,18 @@
                                 }
                             }
                         ds'2
+                        \f
                         ^ \markup {
                             \center-align
                                 +37
                             }
+                        \>
+                        - \abjad-solid-line-with-arrow
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            clt. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 1.4
+                        - \tweak staff-padding #5.5
+                        \startTextSpanOne
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural 
@@ -894,22 +1186,39 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e4
+                    \mp
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
                     % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     gs2
+                    \p
                     ^ \markup {
                         \center-align
                             -14
                         }
+                    \<
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
@@ -922,14 +1231,23 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \natural-one-syntonic-comma-up 
                         c'4.
+                        \mf
                         ^ \markup {
                             \center-align
                                 +14
                             }
+                        \stopTextSpanOne
+                        - \abjad-invisible-line
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            1/2clt. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 3
+                        - \tweak staff-padding #5.5
+                        \startTextSpanOne
 
                     }
 
                     r4
+                    \stopTextSpanOne
                     % [Voice 3 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r2
@@ -946,16 +1264,23 @@
                             }
                         }
                     g4
+                    \pp
                     ^ \markup {
                         \center-align
                             A♭-24
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak staff-padding #5.5
+                    \startTextSpanOne
                     \bar "||"
                     % [Voice 3 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
                     r1 * 1/8
+                    \stopTextSpanOne
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
                     R1 * 1/8
@@ -986,16 +1311,22 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-up 
                     g,1
-                    \fff
+                    \p
                     ^ \markup {
                         \center-align
                             +16
                         }
+                    \<
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e,2
-                    \mp
                     ^ \markup {
                         \center-align
                             +0
@@ -1005,12 +1336,21 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     cs2
+                    \mf
                     ^ \markup {
                         \center-align
                             -16
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -1024,10 +1364,18 @@
                             }
                         }
                     ef'2
+                    \f
                     ^ \markup {
                         \center-align
                             E-24
                         }
+                    \>
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1042,24 +1390,40 @@
                             }
                         }
                     ds2
+                    \mp
                     ^ \markup {
                         \center-align
                             -28
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
 
                     r2
+                    \stopTextSpanOne
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \clef "tenorvarC"
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \flat-one-syntonic-comma-up 
                     bf'4
+                    \pp
                     ^ \markup {
                         \center-align
                             +18
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
@@ -1069,10 +1433,18 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural 
                         b,2
+                        \p
                         ^ \markup {
                             \center-align
                                 +2
                             }
+                        \<
+                        - \abjad-solid-line-with-arrow
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            1/2clt. \hspace #0.5 }
+                        - \tweak bound-details.right.padding 1.4
+                        - \tweak staff-padding #7
+                        \startTextSpanOne
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \sharp-one-syntonic-comma-down 
@@ -1108,20 +1480,37 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,4
+                    \mf
                     ^ \markup {
                         \center-align
                             +2
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r2.
+                    \stopTextSpanOne
 
                     d2
+                    \f
                     ^ \markup {
                         \center-align
                             +45
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     d2
@@ -1129,13 +1518,22 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-up 
                     c4
+                    \mp
                     ^ \markup {
                         \center-align
                             +14
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \markup {
@@ -1147,10 +1545,18 @@
                             }
                         }
                     ds1
+                    \p
                     ^ \markup {
                         \center-align
                             +32
                         }
+                    \<
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     % [Voice 4 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1165,21 +1571,38 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-up 
                     g,4
+                    \mf
                     ^ \markup {
                         \center-align
                             +16
                         }
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
 
                     r2
+                    \stopTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     e,4
+                    \f
                     ^ \markup {
                         \center-align
                             +0
                         }
+                    \>
                     ~
+                    - \abjad-solid-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 1.4
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1201,9 +1624,18 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     cs4
+                    \mp
+                    \stopTextSpanOne
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        clt. \hspace #0.5 }
+                    - \tweak bound-details.right.padding 3
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
+                    \stopTextSpanOne
 
                     \clef "tenorvarC"
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1218,16 +1650,23 @@
                             }
                         }
                     bf'2
+                    \pp
                     ^ \markup {
                         \center-align
                             A-26
                         }
+                    - \abjad-solid-line-with-hook
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        1/2clt. \hspace #0.5 }
+                    - \tweak staff-padding #7
+                    \startTextSpanOne
                     \bar "||"
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
                     r1 * 1/8
+                    \stopTextSpanOne
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
                     R1 * 1/8

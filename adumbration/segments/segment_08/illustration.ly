@@ -33,7 +33,7 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "[ensombrecida (ii)]"
+                    "[ombreggiato (ii)]"
                 }
             ^ \markup {
                 \override

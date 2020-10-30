@@ -17,7 +17,7 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    ensombrecida
+                    ombreggiato
                 }
             ^ \markup {
               \huge

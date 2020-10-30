@@ -157,7 +157,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "[ensombrecida (ii)]",
+                "[ombreggiato (ii)]",
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
