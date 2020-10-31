@@ -2,8 +2,8 @@ from collections import OrderedDict
 
 import abjad
 from abjadext import rmakers as rmakers
-from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
 from tsmakers import SilentTimespan
+from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
 
 from adumbration.materials.score_structure.instruments import instruments
 

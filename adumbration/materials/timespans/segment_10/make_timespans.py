@@ -4,7 +4,6 @@ import abjad
 import tsmakers
 from abjadext import rmakers as rmakers
 from tsmakers.TaleaTimespanMaker import TaleaTimespanMaker
-from tsmakers import SilentTimespan
 
 from adumbration.materials.score_structure.instruments import instruments
 

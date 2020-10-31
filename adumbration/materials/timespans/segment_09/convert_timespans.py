@@ -1,9 +1,7 @@
 import abjad
 import evans
 
-from adumbration.materials.pitch import (
-    circular_pitch_handler,
-)
+from adumbration.materials.pitch import circular_pitch_handler
 from adumbration.materials.score_structure.segment_09.rhythm_material_pattern import (
     rhythm_material_list,
 )

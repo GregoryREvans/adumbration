@@ -16,7 +16,6 @@ from adumbration.materials.timespans.segment_10.convert_timespans import (
     rhythm_commands,
 )
 
-
 noteheads = evans.NoteheadHandler(
     ["cross"],
     head_boolean_vector=[1],

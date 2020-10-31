@@ -1,7 +1,4 @@
-from adumbration.materials.rhythm import (
-    tap_rhythm_handler,
-    silence_handler,
-)
+from adumbration.materials.rhythm import silence_handler, tap_rhythm_handler
 
 rhythm_material_list = [
     silence_handler,

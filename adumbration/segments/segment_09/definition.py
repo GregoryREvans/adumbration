@@ -16,7 +16,6 @@ from adumbration.materials.timespans.segment_09.convert_timespans import (
     rhythm_commands,
 )
 
-
 met_115 = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 115)
 mark_115 = abjad.LilyPondLiteral(
     [
