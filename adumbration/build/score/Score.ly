@@ -18,6 +18,8 @@
 	\include "segment_06.ly"
 	\include "segment_07.ly"
 	\include "segment_08.ly"
+	\include "segment_09.ly"
+	\include "segment_10.ly"
 	}
 %\midi{}
 }

@@ -447,3 +447,17 @@ chorale_pitch_handler = evans.PitchHandler(
     name="chorale_pitch_handler",
     as_ratios=True,
 )
+
+# segment 9
+
+circular_pitch_handler = evans.PitchHandler(
+    [7, 9, 7, 9, 7, 9, 14, 16],
+    forget=False,
+)
+
+# segment 10
+
+tap_pitch_handler = evans.PitchHandler(
+    [-1, 4, -1, 4, -1, 4, -3, 5, -3, 5],
+    forget=False,
+)

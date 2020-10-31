@@ -7,6 +7,12 @@ silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
 )
 
+silence_handler = evans.RhythmHandler(
+    rmaker=silence_maker,
+    forget=True,
+    name="silence_handler",
+)
+
 rmaker_one = abjadext.rmakers.stack(
     abjadext.rmakers.talea(
         [2, 1, 5, 4, 1, 2, 3], 2, extra_counts=[0, -1, 2, 0, -3, 0, 0, 4, 3, 0, 2, 1]
@@ -250,4 +256,36 @@ rhythm_handler_eight = evans.RhythmHandler(
     rmaker=rmaker_eight,
     forget=False,
     name="rhythm_handler_eight",
+)
+
+#### SEGMENT 09
+
+long_rmaker = abjadext.rmakers.stack(
+    abjadext.rmakers.talea([20], 1, extra_counts=[0]),
+    abjadext.rmakers.trivialize(abjad.select().tuplets()),
+    abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+    abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+)
+
+long_rhythm_handler = evans.RhythmHandler(
+    rmaker=long_rmaker,
+    forget=False,
+    name="long_rhythm_handler",
+)
+
+#### SEGMENT 10
+
+tap_rmaker = evans.RTMMaker(rtm=[
+    "(1 (-1 1 -1))",
+    "(1 (1 -2 1))",
+    "(1 (1 1 -2 1))",
+    "(1 (1 -3 1 -1 1))",
+    "(1 (1 -1 1 1 1 -1))",
+])
+
+tap_rhythm_handler = evans.RhythmHandler(
+    rmaker=tap_rmaker,
+    forget=False,
+    name="tap_rhythm_handler",
 )
