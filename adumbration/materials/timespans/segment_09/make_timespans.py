@@ -29,9 +29,21 @@ rhythm_timespan_list = rhythm_timespan_maker(
     music_specifiers=music_specifiers, target_timespan=rhythm_target_timespan
 )
 
-rhythm_timespan_list.append(SilentTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((6, 1)), voice_name='Voice 3'))
+rhythm_timespan_list.append(
+    SilentTimespan(
+        start_offset=abjad.Offset((0, 1)),
+        stop_offset=abjad.Offset((6, 1)),
+        voice_name="Voice 3",
+    )
+)
 
-rhythm_timespan_list.append(SilentTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((6, 1)), voice_name='Voice 4'))
+rhythm_timespan_list.append(
+    SilentTimespan(
+        start_offset=abjad.Offset((0, 1)),
+        stop_offset=abjad.Offset((6, 1)),
+        voice_name="Voice 4",
+    )
+)
 
 # temp_list = abjad.TimespanList([
 #     abjad.AnnotatedTimespan(_.start_offset, _.stop_offset, annotation=_.voice_name) for _ in rhythm_timespan_list

@@ -64,13 +64,13 @@
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #7
+        \override TimeSignature.font-size = #5.5
 		%{ \override TimeSignature.font-size = #2 %}
 		\override TimeSignature.font-name = "STIXGeneral"
         \override TimeSignature.self-alignment-X = #center
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = ##t
-        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 11) (minimum-distance . 11) (padding . 5) (stretchability . 0))
+        \override VerticalAxisGroup.default-staff-staff-spacing = #'((basic-distance . 9) (minimum-distance . 9) (padding . 4) (stretchability . 0))
     }
     \context {
         \Score
@@ -106,7 +106,7 @@
 		%{ \override GraceSpacing.spacing-increment = #2.0 %}
         %{ \override SpacingSpanner.strict-note-spacing = ##t %}
         %{ \override SpacingSpanner.uniform-stretching = ##t %}
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 19) (minimum-distance . 19) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 17.5) (minimum-distance . 17.5) (padding . 0))
 		\override StemTremolo.beam-width = 1
 		\override StemTremolo.beam-thickness = #0.3
         \override StemTremolo.flag-count = 4
@@ -154,7 +154,7 @@
 
 \paper {
 	system-separator-markup = \markup { \slashSeparator }
-	system-system-spacing = #'((basic-distance . 16) (minimum-distance . 16) (padding . 6))
+	system-system-spacing = #'((basic-distance . 13) (minimum-distance . 13) (padding . 4))
 
 	indent = 20\mm
     short-indent = 15\mm

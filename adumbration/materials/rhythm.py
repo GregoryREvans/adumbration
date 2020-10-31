@@ -276,16 +276,36 @@ long_rhythm_handler = evans.RhythmHandler(
 
 #### SEGMENT 10
 
-tap_rmaker = evans.RTMMaker(rtm=[
-    "(1 (-1 1 -1))",
-    "(1 (1 -2 1))",
-    "(1 (1 1 -2 1))",
-    "(1 (1 -3 1 -1 1))",
-    "(1 (1 -1 1 1 1 -1))",
-])
+tap_rmaker = evans.RTMMaker(
+    rtm=[
+        "(1 (-1 1 -1))",
+        "(1 (1 -2 1))",
+        "(1 (1 1 -2 1))",
+        "(1 (1 -3 1 -1 1))",
+        "(1 (1 -1 1 1 1 -1))",
+    ]
+)
 
 tap_rhythm_handler = evans.RhythmHandler(
     rmaker=tap_rmaker,
     forget=False,
     name="tap_rhythm_handler",
+)
+
+#### SEGMENT 11
+
+noise_rmaker = evans.RTMMaker(
+    rtm=[
+        "(1 (-2 1 1 -1))",
+        "(1 (1 1 -2))",
+        "(1 (1 1 -1 2 1))",
+        "(1 (1 1 -1 3 1 -1))",
+        "(1 (1 1 -1 1 1-1))",
+    ]
+)
+
+noise_rhythm_handler = evans.RhythmHandler(
+    rmaker=noise_rmaker,
+    forget=False,
+    name="noise_rhythm_handler",
 )

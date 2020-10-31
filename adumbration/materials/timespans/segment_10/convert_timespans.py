@@ -74,7 +74,12 @@ for span in segment_10_pitch_timespans:
 # ######
 
 circular_dynamic_handler = evans.DynamicHandler(
-    ["p", "pp", "p", "mp",],
+    [
+        "p",
+        "pp",
+        "p",
+        "mp",
+    ],
     forget=False,
     hold_last_boolean_vector=[1],
     with_constante_hairpins=False,

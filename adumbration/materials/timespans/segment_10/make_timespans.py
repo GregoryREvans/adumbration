@@ -34,14 +34,40 @@ music_specifiers = OrderedDict(
 #
 # rhythm_timespan_list.append(SilentTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((6, 1)), voice_name='Voice 4'))
 
-rhythm_timespan_list = abjad.TimespanList([
-    tsmakers.PerformedTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((4, 1)), voice_name='Voice 1'),
-    tsmakers.PerformedTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((4, 1)), voice_name='Voice 2'),
-    tsmakers.PerformedTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((3, 4)), voice_name='Voice 3'),
-    tsmakers.PerformedTimespan(start_offset=abjad.Offset((3, 4)), stop_offset=abjad.Offset((7, 4)), voice_name='Voice 3'),
-    tsmakers.PerformedTimespan(start_offset=abjad.Offset((7, 4)), stop_offset=abjad.Offset((4, 1)), voice_name='Voice 3'),
-    tsmakers.PerformedTimespan(start_offset=abjad.Offset((0, 1)), stop_offset=abjad.Offset((4, 1)), voice_name='Voice 4'),
-])
+rhythm_timespan_list = abjad.TimespanList(
+    [
+        tsmakers.PerformedTimespan(
+            start_offset=abjad.Offset((0, 1)),
+            stop_offset=abjad.Offset((4, 1)),
+            voice_name="Voice 1",
+        ),
+        tsmakers.PerformedTimespan(
+            start_offset=abjad.Offset((0, 1)),
+            stop_offset=abjad.Offset((4, 1)),
+            voice_name="Voice 2",
+        ),
+        tsmakers.PerformedTimespan(
+            start_offset=abjad.Offset((0, 1)),
+            stop_offset=abjad.Offset((3, 4)),
+            voice_name="Voice 3",
+        ),
+        tsmakers.PerformedTimespan(
+            start_offset=abjad.Offset((3, 4)),
+            stop_offset=abjad.Offset((7, 4)),
+            voice_name="Voice 3",
+        ),
+        tsmakers.PerformedTimespan(
+            start_offset=abjad.Offset((7, 4)),
+            stop_offset=abjad.Offset((4, 1)),
+            voice_name="Voice 3",
+        ),
+        tsmakers.PerformedTimespan(
+            start_offset=abjad.Offset((0, 1)),
+            stop_offset=abjad.Offset((4, 1)),
+            voice_name="Voice 4",
+        ),
+    ]
+)
 
 # temp_list = abjad.TimespanList([
 #     abjad.AnnotatedTimespan(_.start_offset, _.stop_offset, annotation=_.voice_name) for _ in rhythm_timespan_list

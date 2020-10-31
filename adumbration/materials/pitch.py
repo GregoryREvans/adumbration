@@ -461,3 +461,18 @@ tap_pitch_handler = evans.PitchHandler(
     [-1, 4, -1, 4, -1, 4, -3, 5, -3, 5],
     forget=False,
 )
+
+# segment 11
+
+noise_pitch_handler = evans.PitchHandler(
+    [
+        5.5,
+        8,
+        5,
+        8.5,
+        9,
+        6.5,
+        5,
+    ],
+    forget=False,
+)
