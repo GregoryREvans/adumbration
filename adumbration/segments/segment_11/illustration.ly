@@ -61,6 +61,7 @@
             \bacaStartTextSpanMM
             % [Global Context measure 5]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+            \tempo 4=63
             \time 6/4                                                          %! scaling time signatures
             s1 * 3/2
             \bacaStopTextSpanMM

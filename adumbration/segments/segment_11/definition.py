@@ -176,6 +176,11 @@ maker = evans.SegmentMaker(
         evans.call(
             "Global Context", tempo_handler, abjad.select().leaves().get([4, 5, 6])
         ),
+        evans.attach(
+            "Global Context",
+            abjad.MetronomeMark((1, 4), 63),
+            baca.leaf(4),
+        ),
         evans.call(
             "Global Context",
             tempo_handler,
