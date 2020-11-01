@@ -38,12 +38,12 @@
 
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
+            \pageBreak
             % [Global Context measure 4]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \tempo 4=38
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
-            \pageBreak
             ^ \markup {
               \huge
               \concat {
@@ -66,8 +66,8 @@
             % [Global Context measure 7]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/4                                                          %! scaling time signatures
-            s1 * 1/4
+            \time 4/4                                                          %! scaling time signatures
+            s1 * 1
 
         }
 
@@ -125,10 +125,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 1/2
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 1/2
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
@@ -194,10 +194,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 1/2
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 1/2
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
@@ -261,10 +261,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 1/2
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 1/2
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
@@ -328,10 +328,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 1/2
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 1/2
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
