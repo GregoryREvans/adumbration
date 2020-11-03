@@ -124,7 +124,7 @@
 		\override TupletNumber.font-size = #1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
-		proportionalNotationDuration = #(ly:make-moment 1 15)
+		proportionalNotationDuration = #(ly:make-moment 1 14)
         tupletFullLength = ##t
     }
 	\context {
