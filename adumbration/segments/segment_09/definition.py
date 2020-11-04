@@ -151,7 +151,7 @@ maker = evans.SegmentMaker(
     barline="||",
     tempo=((1, 4), 115),
     rehearsal_mark="",
-    page_break_counts=[90], # prefer system breaks to page breaks?
+    page_break_counts=[90],  # prefer system breaks to page breaks?
     fermata="scripts.uverylongfermata",
 )
 
