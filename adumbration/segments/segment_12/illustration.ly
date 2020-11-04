@@ -35,7 +35,7 @@
                     "pins for loose geographies"
                 }
             - \abjad-dashed-line-with-arrow
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "50"
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "60"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
@@ -50,7 +50,7 @@
             s1 * 1
             \bacaStopTextSpanMM
             - \abjad-invisible-line
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "115"
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
@@ -65,11 +65,12 @@
             \time 9/4                                                          %! scaling time signatures
             s1 * 9/4
             - \abjad-dashed-line-with-arrow
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "115"
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
+            \break
             % [Global Context measure 6]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
@@ -80,7 +81,7 @@
             s1 * 7/4
             \bacaStopTextSpanMM
             - \abjad-invisible-line
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
@@ -103,7 +104,7 @@
             \time 3/4                                                          %! scaling time signatures
             s1 * 3/4
             - \abjad-dashed-line-with-arrow
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
@@ -114,7 +115,7 @@
             s1 * 1
             \bacaStopTextSpanMM
             - \abjad-invisible-line
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "50"
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "60"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
@@ -122,8 +123,8 @@
             % [Global Context measure 13]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/4                                                          %! scaling time signatures
-            s1 * 1/4
+            \time 3/16                                                         %! scaling time signatures
+            s1 * 3/16
             \bacaStopTextSpanMM
 
         }
@@ -229,10 +230,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips
@@ -383,10 +384,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips
@@ -626,10 +627,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips
@@ -745,10 +746,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips

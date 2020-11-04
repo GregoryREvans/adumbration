@@ -123,6 +123,11 @@ maker = evans.SegmentMaker(
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+            baca.leaf(4),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -309,3 +309,57 @@ noise_rhythm_handler = evans.RhythmHandler(
     forget=False,
     name="noise_rhythm_handler",
 )
+
+#### SEGMENT 13
+
+composite_handler_1 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        evans.RTMMaker(
+            rtm=[
+                "(1 (-4 1))",
+                "(1 (3 -1))",
+                "(1 (-2 1))",
+                "(1 (1 -1))",
+            ]
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [0, 1, 2, 3],
+            forget=False,
+        ),
+        evans.BendHandler(
+            [2.5, -3.5, 3, -3, 3.5, -2.5],
+            boolean_vector=[0, 1, 0, 0, 1],
+        ),
+        evans.DynamicHandler(
+            dynamic_list=["f", "mf"],
+            hold_first_boolean_vector=[1, 0],
+            hold_first_forget=False,
+            hold_last_boolean_vector=[0, 1],
+            hold_last_forget=False,
+            forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+composite_handler_2 = evans.CompositeHandler(
+    rhythm_handler=tap_rhythm_handler,
+    attachment_handlers=[
+        evans.PitchHandler(
+            [_ + 24 for _ in [6.5, 8, 9.5, 5]],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            dynamic_list=["p", "mp"],
+            hold_first_boolean_vector=[1, 0],
+            hold_first_forget=False,
+            hold_last_boolean_vector=[0, 1],
+            hold_last_forget=False,
+            forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)

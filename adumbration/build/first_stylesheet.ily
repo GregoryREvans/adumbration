@@ -60,11 +60,13 @@
 		\override RehearsalMark.outside-staff-priority = 500
 		\override RehearsalMark.self-alignment-X = #center
         \override TimeSignature.X-extent = #'(0 . 0)
+		%{ \override TimeSignature.right-padding = #3 %}
+		%{ \override TimeSignature.X-extent = ##f %}
         \override TimeSignature.X-offset = #ly:self-alignment-interface::x-aligned-on-self
         \override TimeSignature.Y-extent = #'(0 . 0)
         \override TimeSignature.break-align-symbol = ##f
         \override TimeSignature.break-visibility = #end-of-line-invisible
-        \override TimeSignature.font-size = #5.5
+        \override TimeSignature.font-size = #4 % was 5
 		%{ \override TimeSignature.font-size = #2 %}
 		\override TimeSignature.font-name = "STIXGeneral"
         \override TimeSignature.self-alignment-X = #center
@@ -91,7 +93,7 @@
   		\override Clef.whiteout = 1
 		\override DynamicText.font-size = #-2
 		%{ \override DynamicLineSpanner.staff-padding = 4.5 %}
-		\override DynamicLineSpanner.staff-padding = 5
+		\override DynamicLineSpanner.staff-padding = 4 % was 5
 		\override DynamicLineSpanner.padding = 2
         %{ \override DynamicLineSpanner.Y-extent = #'(-1.5 . 1.5) %}
 		\override Hairpin.bound-padding = #1
@@ -116,9 +118,9 @@
 		\override StemTremolo.shape = #'beam-like
 		\override TupletBracket.bracket-visibility = ##t
         \override TupletBracket.minimum-length = #3
-        \override TupletBracket.padding = #2
+        \override TupletBracket.padding = #1.5 % was 2
 		%{ \override TupletBracket.staff-padding = #1.5 %}
-		\override TupletBracket.staff-padding = #1.5
+		\override TupletBracket.staff-padding = #1.3
         \override TupletBracket.springs-and-rods = #ly:spanner::set-spacing-rods
 		\override TupletBracket.direction = #down % occasionally tweak up
 		\override TupletNumber.font-size = #1

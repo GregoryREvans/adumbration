@@ -16,7 +16,7 @@ from adumbration.materials.timespans.segment_07.convert_timespans import (
     rhythm_commands,
 )
 
-cyc_padding = evans.CyclicList([8, 4.5, 5.5, 7], forget=False)
+cyc_padding = evans.CyclicList([7.2, 4.2, 5.3, 6.6], forget=False)
 
 maker = evans.SegmentMaker(
     instruments=insts,

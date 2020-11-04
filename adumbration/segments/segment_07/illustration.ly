@@ -88,8 +88,8 @@
             % [Global Context measure 12]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/4                                                          %! scaling time signatures
-            s1 * 1/4
+            \time 3/16                                                         %! scaling time signatures
+            s1 * 3/16
 
         }
 
@@ -122,7 +122,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -147,7 +147,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     r4
@@ -174,7 +174,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -219,7 +219,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     r2
@@ -240,7 +240,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -273,7 +273,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     r4
@@ -293,7 +293,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -321,7 +321,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     r2.
@@ -337,7 +337,7 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     r4
@@ -357,7 +357,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -441,7 +441,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             norm. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #8
+                        - \tweak staff-padding #7.2
                         \startTextSpanOne
 
                     }
@@ -472,7 +472,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -494,7 +494,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #8
+                    - \tweak staff-padding #7.2
                     \startTextSpanOne
 
                     r2
@@ -504,10 +504,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips
@@ -545,7 +545,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -574,7 +574,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     r4
@@ -604,7 +604,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -637,7 +637,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             1/2clt. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #4.5
+                        - \tweak staff-padding #4.2
                         \startTextSpanOne
 
                     }
@@ -660,7 +660,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -695,7 +695,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     r4
@@ -715,7 +715,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -728,7 +728,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     r2
@@ -755,7 +755,7 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     r4
@@ -775,7 +775,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -798,7 +798,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             norm. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #4.5
+                        - \tweak staff-padding #4.2
                         \startTextSpanOne
 
                     }
@@ -826,7 +826,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -848,7 +848,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
 
                     r4
@@ -872,18 +872,18 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4.2
                     \startTextSpanOne
                     \bar "||"
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
                     \stopTextSpanOne
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips
@@ -925,7 +925,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             clt. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #5.5
+                        - \tweak staff-padding #5.3
                         \startTextSpanOne
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -981,7 +981,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
 
                     r2
@@ -1007,7 +1007,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1024,7 +1024,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
 
                     r4
@@ -1041,7 +1041,7 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1061,7 +1061,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1119,7 +1119,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
 
                     r4
@@ -1144,7 +1144,7 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
 
                     r4
@@ -1176,7 +1176,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             clt. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #5.5
+                        - \tweak staff-padding #5.3
                         \startTextSpanOne
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1211,7 +1211,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
 
                     r4
@@ -1232,7 +1232,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -1256,7 +1256,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             1/2clt. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #5.5
+                        - \tweak staff-padding #5.3
                         \startTextSpanOne
 
                     }
@@ -1287,18 +1287,18 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.3
                     \startTextSpanOne
                     \bar "||"
                     % [Voice 3 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
                     \stopTextSpanOne
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips
@@ -1336,7 +1336,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1361,7 +1361,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
 
                     r4
@@ -1389,7 +1389,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1415,7 +1415,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
 
                     r2
@@ -1434,7 +1434,7 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
 
                     r4
@@ -1458,7 +1458,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             1/2clt. \hspace #0.5 }
                         - \tweak bound-details.right.padding 1.4
-                        - \tweak staff-padding #7
+                        - \tweak staff-padding #6.6
                         \startTextSpanOne
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1505,7 +1505,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1524,7 +1524,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1543,7 +1543,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1570,7 +1570,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     % [Voice 4 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1596,7 +1596,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
 
                     r2
@@ -1616,7 +1616,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -1645,7 +1645,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         clt. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1673,18 +1673,18 @@
                     - \abjad-solid-line-with-hook
                     - \tweak bound-details.left.text \markup \concat { \upright
                         1/2clt. \hspace #0.5 }
-                    - \tweak staff-padding #7
+                    - \tweak staff-padding #6.6
                     \startTextSpanOne
                     \bar "||"
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
                     \stopTextSpanOne
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.ushortfermata"                           %! applying ending skips

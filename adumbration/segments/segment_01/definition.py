@@ -22,7 +22,7 @@ def _add_tremolos(selections):
         abjad.attach(tremolo, leaf)
 
 
-cyc_padding = evans.CyclicList([4.5, 5.5, 4.9, 5.9], forget=False)
+cyc_padding = evans.CyclicList([4, 5.2, 4.6, 5.9], forget=False)
 
 
 def _call_text_spanner(selections):

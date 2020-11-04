@@ -70,6 +70,7 @@
                   \upright ]
               }
             }
+            \break
             % [Global Context measure 5]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures
@@ -81,8 +82,8 @@
             % [Global Context measure 7]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 1/4                                                          %! scaling time signatures
-            s1 * 1/4
+            \time 3/16                                                         %! scaling time signatures
+            s1 * 3/16
 
         }
 
@@ -140,10 +141,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
@@ -209,10 +210,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
@@ -276,10 +277,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips
@@ -343,10 +344,10 @@
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
                     \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 1/8
+                    r1 * 3/32
 
                     \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 1/8
+                    R1 * 3/32
                     ^ \markup {                                                %! applying ending skips
                         \musicglyph                                            %! applying ending skips
                             #"scripts.uverylongfermata"                        %! applying ending skips

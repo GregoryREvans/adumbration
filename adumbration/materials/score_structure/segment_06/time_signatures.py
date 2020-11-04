@@ -64,6 +64,6 @@ time_signatures = [
     abjad.TimeSignature((4, 4)),
 ]
 
-time_signatures.append(abjad.TimeSignature((1, 4)))  # for ending skip
+time_signatures.append(abjad.TimeSignature((3, 16)))  # for ending skip
 
 bounds = abjad.mathx.cumulative_sums([_.duration for _ in time_signatures])

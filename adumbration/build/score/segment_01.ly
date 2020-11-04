@@ -93,7 +93,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -110,7 +110,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
 
                     r4
@@ -132,7 +132,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -145,7 +145,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
 
                     r4
@@ -167,7 +167,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
@@ -208,7 +208,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             norm. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #4.5
+                        - \tweak staff-padding #4
                         \startTextSpanOne
 
                     }
@@ -230,7 +230,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -256,7 +256,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
 
                     r4
@@ -287,7 +287,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
                     % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -304,7 +304,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.5
+                    - \tweak staff-padding #4
                     \startTextSpanOne
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -349,7 +349,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -371,7 +371,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -393,7 +393,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -419,7 +419,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     r4
@@ -441,7 +441,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     \override Staff.Stem.stemlet-length = 0.75
@@ -490,7 +490,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     r4
@@ -510,7 +510,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -526,7 +526,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -547,7 +547,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -591,7 +591,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
 
                     r4
@@ -619,7 +619,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
                     % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -641,7 +641,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #5.5
+                    - \tweak staff-padding #5.2
                     \startTextSpanOne
                     \bar "||"
 
@@ -679,7 +679,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -705,7 +705,7 @@
                         - \tweak bound-details.left.text \markup \concat { \upright
                             norm. \hspace #0.5 }
                         - \tweak bound-details.right.padding 3
-                        - \tweak staff-padding #4.9
+                        - \tweak staff-padding #4.6
                         \startTextSpanOne
 
                     }
@@ -738,7 +738,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -754,7 +754,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
 
                     r4
@@ -775,7 +775,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -791,7 +791,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -812,7 +812,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
                     % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -835,7 +835,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         norm. \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
 
                     r4
@@ -855,7 +855,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         XFB. \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -884,7 +884,7 @@
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
                     - \tweak bound-details.right.padding 3
-                    - \tweak staff-padding #4.9
+                    - \tweak staff-padding #4.6
                     \startTextSpanOne
 
                     r4

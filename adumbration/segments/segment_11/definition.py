@@ -191,6 +191,11 @@ maker = evans.SegmentMaker(
             tempo_handler,
             abjad.select().leaves().get([13, 14, 15, 16, 17, 18]),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+            baca.leaf(15),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

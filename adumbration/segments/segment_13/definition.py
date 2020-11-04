@@ -7,12 +7,25 @@ import evans
 from adumbration.materials.pitch import clef_handlers
 from adumbration.materials.score_structure.instruments import instruments as insts
 from adumbration.materials.score_structure.score_structure import score
-from adumbration.materials.score_structure.segment_12.time_signatures import (
+from adumbration.materials.score_structure.segment_13.time_signatures import (
     time_signatures,
 )
-from adumbration.materials.timespans.segment_12.convert_timespans import (
-    handler_commands,
-    rhythm_commands,
+from adumbration.materials.timespans.segment_13.convert_timespans import rhythm_commands
+
+gett_handler = evans.GettatoHandler(
+    number_of_attacks=[
+        5,
+        7,
+        4,
+        6,
+        3,
+        5,
+        2,
+        4,
+    ],
+    actions=["throw", "throw", "drop"],
+    boolean_vector=[1],
+    vector_forget=False,
 )
 
 tempo_handler = evans.TempoSpannerHandler(
@@ -58,7 +71,6 @@ maker = evans.SegmentMaker(
             abjad.select().components(abjad.Score),
         ),
         "skips",
-        handler_commands,
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
@@ -67,58 +79,34 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "pins for loose geographies",
+                "marigolds",
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),
+        # evans.call(
+        #     "Global Context", tempo_handler, abjad.select().leaves().get([0, 2]),
+        # ),
+        # evans.call(
+        #     "Global Context", tempo_handler, abjad.select().leaves().get([4, 6]),
+        # ),
+        # evans.call(
+        #     "Global Context",
+        #     tempo_handler,
+        #     abjad.select().leaves().get([10, 11]),
+        # ),
         evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([0, 2])
-        ),
-        evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([4, 6])
-        ),
-        evans.call(
-            "Global Context",
-            tempo_handler,
-            abjad.select().leaves().get([10, 11]),
-        ),
-        evans.attach(
             "Voice 1",
-            abjad.LilyPondLiteral(
-                r"^ \markup { finger percussion }",
-                format_slot="after",
+            gett_handler,
+            abjad.select()
+            .logical_ties(pitched=True)
+            .get(
+                [
+                    2,
+                    7,
+                    10,
+                ]
             ),
-            baca.leaf(0, pitched=True),
-        ),
-        evans.attach(
-            "Voice 2",
-            abjad.LilyPondLiteral(
-                r"^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }",
-                format_slot="after",
-            ),
-            baca.leaf(0, pitched=True),
-        ),
-        evans.attach(
-            "Voice 3",
-            abjad.LilyPondLiteral(
-                r"^ \markup { slow bow }",
-                format_slot="after",
-            ),
-            baca.leaf(0, pitched=True),
-        ),
-        evans.attach(
-            "Voice 4",
-            abjad.LilyPondLiteral(
-                r"^ \markup { slow bow }",
-                format_slot="after",
-            ),
-            baca.leaf(0, pitched=True),
-        ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-            baca.leaf(5),
         ),
     ],
     score_template=score,
@@ -130,7 +118,7 @@ maker = evans.SegmentMaker(
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily",
     ],
-    segment_name="segment_12",
+    segment_name="segment_13",
     current_directory=pathlib.Path(__file__).resolve().parent,
     cutaway=False,
     beam_pattern="meter",
