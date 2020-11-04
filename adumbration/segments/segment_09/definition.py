@@ -126,6 +126,11 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+            baca.leaf(2),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
             baca.leaf(4),
         ),
     ],
@@ -146,7 +151,7 @@ maker = evans.SegmentMaker(
     barline="||",
     tempo=((1, 4), 115),
     rehearsal_mark="",
-    page_break_counts=[3, 90],
+    page_break_counts=[90], # prefer system breaks to page breaks?
     fermata="scripts.uverylongfermata",
 )
 

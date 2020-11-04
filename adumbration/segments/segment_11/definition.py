@@ -194,7 +194,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-            baca.leaf(15),
+            baca.leaf(-3),
         ),
     ],
     score_template=score,

@@ -111,11 +111,11 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             baca.leaf(13, pitched=True),
         ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-            baca.leaf(3),
-        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+        #     baca.leaf(3),
+        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,

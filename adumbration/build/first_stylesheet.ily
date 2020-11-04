@@ -160,10 +160,10 @@
 
 	indent = 20\mm
     short-indent = 15\mm
-    bottom-margin = 9\mm
-    left-margin = 9\mm
-    right-margin = 9\mm
-    top-margin = 9\mm
+    bottom-margin = 8\mm
+    left-margin = 8\mm
+    right-margin = 8\mm
+    top-margin = 8\mm
 
 	%{ top-margin = 1\cm
 	bottom-margin = 1\cm
