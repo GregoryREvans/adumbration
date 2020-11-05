@@ -18,6 +18,19 @@ from adumbration.materials.timespans.segment_07.convert_timespans import (
 
 cyc_padding = evans.CyclicList([7.2, 4.2, 5.3, 6.6], forget=False)
 
+
+def add_markups(runs):
+    cyc_marks = evans.CyclicList(
+        [
+            abjad.Markup(_, direction=abjad.Up)
+            for _ in ["clt.", "1/2clt.", "norm.", "1/2clt."]
+        ],
+        forget=False,
+    )
+    for run in runs:
+        abjad.attach(cyc_marks(r=1)[0], abjad.select(run).leaf(0))
+
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -177,50 +190,22 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "Voice 1",
-            evans.TextSpanHandler(
-                span_one_positions=["clt.", "1/2clt.", "norm.", "1/2clt."],
-                span_one_style="solid-line",
-                span_one_padding=cyc_padding(r=1)[0],
-                attach_span_one_to="bounds",
-                hooks=False,
-                forget=False,
-            ),
+            add_markups,
             abjad.select().runs(),
         ),
         evans.call(
             "Voice 2",
-            evans.TextSpanHandler(
-                span_one_positions=["clt.", "1/2clt.", "norm.", "1/2clt."],
-                span_one_style="solid-line",
-                span_one_padding=cyc_padding(r=1)[0],
-                attach_span_one_to="bounds",
-                hooks=False,
-                forget=False,
-            ),
+            add_markups,
             abjad.select().runs(),
         ),
         evans.call(
             "Voice 3",
-            evans.TextSpanHandler(
-                span_one_positions=["clt.", "1/2clt.", "norm.", "1/2clt."],
-                span_one_style="solid-line",
-                span_one_padding=cyc_padding(r=1)[0],
-                attach_span_one_to="bounds",
-                hooks=False,
-                forget=False,
-            ),
+            add_markups,
             abjad.select().runs(),
         ),
         evans.call(
             "Voice 4",
-            evans.TextSpanHandler(
-                span_one_positions=["clt.", "1/2clt.", "norm.", "1/2clt."],
-                span_one_style="solid-line",
-                span_one_padding=cyc_padding(r=1)[0],
-                attach_span_one_to="bounds",
-                hooks=False,
-                forget=False,
-            ),
+            add_markups,
             abjad.select().runs(),
         ),
     ],

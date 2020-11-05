@@ -21,7 +21,7 @@
         {
             % [Global Context measure 1]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \tempo 4=83
+            \tempo 4=115
             \time 5/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -34,6 +34,12 @@
                     #'(font-name . "STIXGeneral Bold")
                     marigolds
                 }
+            ^ \markup {
+              \huge
+              \concat {
+                  \abjad-metronome-mark-markup #2 #0 #1 #"115"
+              }
+            }
             % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 9/4                                                          %! scaling time signatures
@@ -117,6 +123,7 @@
 
                             gqf'''4
                             \p
+                            - \staccato
 
                             r4
 
@@ -132,6 +139,7 @@
 
                             af'''4.
                             \mp
+                            - \tenuto
                             \>
                             <>
                             \p
@@ -197,6 +205,7 @@
                                     \voiceTwo                                  %! abjad.on_beat_grace_container(4)
                                     aqs'''4.
                                     \mp
+                                    - \accent
 
                                 }
                                 }
@@ -216,10 +225,12 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             f'''16
+                            - \staccato
                             [
 
                             \revert Staff.Stem.stemlet-length
                             gqf'''16
+                            - \staccato
                             ]
 
                             r16
@@ -228,6 +239,7 @@
 
                             af'''16
                             \p
+                            - \staccato
 
                         }
 
@@ -248,6 +260,8 @@
 
                             c'2
                             \f
+                            ^ \markup { "(c.3 clicks)" }
+                            ^ \markup { XSB. }
 
                         }
 
@@ -337,6 +351,7 @@
 
                             d'2
                             \mf
+                            ^ \markup { "XSB. (c.5)" }
                             \<
 
                         }
@@ -347,6 +362,7 @@
                         % [Voice 1 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         ef'2
+                        ^ \markup { "XSB. (c.7)" }
                         <>
                         \f
 
@@ -441,6 +457,7 @@
                             % [Voice 1 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             cs'2.
+                            ^ \markup { "XSB. (c.11)" }
 
                             r4
 
@@ -506,6 +523,7 @@
 
                             aqs'''2
                             \mp
+                            - \staccato
 
                             r1
 
@@ -513,6 +531,7 @@
 
                             f'''2
                             \p
+                            - \tenuto
                             \<
                             <>
                             \mp
@@ -521,6 +540,7 @@
 
                             gqf'''2
                             \p
+                            - \staccato
 
                         }
 
@@ -541,20 +561,132 @@
 
                             r1
 
-                            d'2
-                            \f
-                            - \bendAfter #'2.5
-                            \>
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    \once \override Beam.grow-direction = #left
+                                    \slash                                     %! abjad.on_beat_grace_container(2)
+                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
+                                    <
+                                        \tweak font-size #0
+                                        \tweak transparent ##t
+                                        d'
+                                    >32 * 8/7
+                                    ^ \markup {
+                                        \hspace
+                                            #1
+                                        throw
+                                        (6)
+                                        }
+                                    [
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/7
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/7
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/7
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/7
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/7
+                                    ]
+
+                                }
+                                \tag #'voice6 {
+
+                                \context Voice = "Voice 2"
+                                {
+
+                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
+                                    d'2
+                                    \f
+                                    - \bendAfter #'2.5
+                                    \>
+
+                                }
+                                }
+
+                            >>
 
                         }
 
                     }
 
                     {
-                        % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        ef'4
-                        \mf
+                        <<
+
+                            \context Voice = "On_Beat_Grace_Container"
+                            {
+                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
+                                % [Voice 2 measure 5]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                \once \override Beam.grow-direction = #left
+                                \slash                                         %! abjad.on_beat_grace_container(2)
+                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
+                                <
+                                    \tweak font-size #0
+                                    \tweak transparent ##t
+                                    ef'
+                                >32 * 4/3
+                                ^ \markup {
+                                    \hspace
+                                        #1
+                                    throw
+                                    (3)
+                                    }
+                                [
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+                                ]
+
+                            }
+                            \tag #'voice7 {
+
+                            \context Voice = "Voice 2"
+                            {
+
+                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
+                                ef'4
+                                \mf
+
+                            }
+                            }
+
+                        >>
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
                         r4
 
@@ -574,16 +706,76 @@
 
                             c'8
                             \f
+                            - \staccato
 
                         }
 
                     }
 
                     {
-                        % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        cs'2.
-                        - \bendAfter #'-3
+                        <<
+
+                            \context Voice = "On_Beat_Grace_Container"
+                            {
+                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
+                                % [Voice 2 measure 6]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                \once \override Beam.grow-direction = #right
+                                \slash                                         %! abjad.on_beat_grace_container(2)
+                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
+                                <
+                                    \tweak font-size #0
+                                    \tweak transparent ##t
+                                    cs'
+                                >32 * 4/3
+                                ^ \markup {
+                                    \hspace
+                                        #1
+                                    drop
+                                    (5)
+                                    }
+                                [
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+                                ]
+
+                            }
+                            \tag #'voice8 {
+
+                            \context Voice = "Voice 2"
+                            {
+
+                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
+                                cs'2.
+                                - \bendAfter #'-3
+
+                            }
+                            }
+
+                        >>
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
                         r4
 
@@ -599,6 +791,7 @@
 
                             d'8
                             \mf
+                            ^ \markup { "XSB. (c.3 clicks)" }
                             \<
                             <>
                             \f
@@ -620,9 +813,53 @@
 
                     {
 
-                        ef'2
-                        \mf
-                        - \bendAfter #'-2.5
+                        <<
+
+                            \context Voice = "On_Beat_Grace_Container"
+                            {
+                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                \once \override Beam.grow-direction = #left
+                                \slash                                         %! abjad.on_beat_grace_container(2)
+                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
+                                <
+                                    \tweak font-size #0
+                                    \tweak transparent ##t
+                                    ef'
+                                >32 * 4/3
+                                ^ \markup {
+                                    \hspace
+                                        #1
+                                    throw
+                                    (2)
+                                    }
+                                [
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+                                ]
+
+                            }
+                            \tag #'voice9 {
+
+                            \context Voice = "Voice 2"
+                            {
+
+                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
+                                ef'2
+                                \mf
+                                - \bendAfter #'-2.5
+
+                            }
+                            }
+
+                        >>
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
                         r2
 
@@ -640,6 +877,7 @@
 
                             c'16
                             \f
+                            ^ \markup { "XSB. (c.8)" }
                             \>
 
                         }
@@ -662,6 +900,7 @@
                         d'4
                         \f
                         - \bendAfter #'3
+                        ^ \markup { "XSB. (c.11)" }
 
                     }
 
@@ -704,7 +943,7 @@
 
             \context Staff = "Staff 3"
             {
-                \tag #'voice6 {
+                \tag #'voice10 {
 
                 \context Voice = "Voice 3"
                 {
@@ -724,6 +963,7 @@
                         c'4
                         \mf
                         - \bendAfter #'3.5
+                        ^ \markup { "XSB. (c.5 clicks)" }
                         \<
 
                     }
@@ -743,8 +983,61 @@
 
                             r1
 
-                            d'2
-                            \mf
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    \once \override Beam.grow-direction = #left
+                                    \slash                                     %! abjad.on_beat_grace_container(2)
+                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
+                                    <
+                                        \tweak font-size #0
+                                        \tweak transparent ##t
+                                        d'
+                                    >32 * 8/5
+                                    ^ \markup {
+                                        \hspace
+                                            #1
+                                        throw
+                                        (4)
+                                        }
+                                    [
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/5
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/5
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 8/5
+                                    ]
+
+                                }
+                                \tag #'voice11 {
+
+                                \context Voice = "Voice 3"
+                                {
+
+                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
+                                    d'2
+                                    \mf
+
+                                }
+                                }
+
+                            >>
 
                         }
 
@@ -753,9 +1046,11 @@
                     {
 
                         \scaleDurations #'(1 . 1) {
+                            \oneVoice                                          %! abjad.on_beat_grace_container(5)
                             % [Voice 3 measure 3]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             ef'4
+                            ^ \markup { "XSB. (c.6)" }
                             ~
 
                             ef'8
@@ -792,18 +1087,27 @@
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
                         \times 5/6 {
 
+                            \ottava 1
+                            \clef "treble"
                             af'''4
                             \mp
+                            - \staccato
 
+                            \ottava 0
                             r4
 
+                            \ottava 1
                             aqs'''4
                             \p
+                            - \staccato
 
                             f'''4
+                            - \staccato
 
                             gqf'''4
+                            - \staccato
 
+                            \ottava 0
                             r4
 
                         }
@@ -815,9 +1119,68 @@
 
                     {
 
-                        cs'2.
-                        \mf
-                        - \bendAfter #'-3
+                        <<
+
+                            \context Voice = "On_Beat_Grace_Container"
+                            {
+                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                \once \override Beam.grow-direction = #right
+                                \slash                                         %! abjad.on_beat_grace_container(2)
+                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
+                                <
+                                    \tweak font-size #0
+                                    \tweak transparent ##t
+                                    cs'
+                                >32 * 4/3
+                                ^ \markup {
+                                    \hspace
+                                        #1
+                                    drop
+                                    (5)
+                                    }
+                                [
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 4/3
+                                ]
+
+                            }
+                            \tag #'voice12 {
+
+                            \context Voice = "Voice 3"
+                            {
+
+                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
+                                cs'2.
+                                \mf
+                                - \bendAfter #'-3
+
+                            }
+                            }
+
+                        >>
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
                         r4
 
@@ -833,6 +1196,7 @@
 
                             d'2
                             \f
+                            ^ \markup { "XSB. (c.7)" }
                             \>
 
                         }
@@ -873,6 +1237,7 @@
                             c'4
                             \f
                             - \bendAfter #'2.5
+                            ^ \markup { "XSB. (c.9)" }
 
                         }
 
@@ -893,6 +1258,7 @@
                             d'2
                             \mf
                             - \bendAfter #'3
+                            ^ \markup { "XSB. (c.10)" }
                             \<
 
                         }
@@ -958,7 +1324,7 @@
 
             \context Staff = "Staff 4"
             {
-                \tag #'voice7 {
+                \tag #'voice13 {
 
                 \context Voice = "Voice 4"
                 {
@@ -968,19 +1334,88 @@
                         \tweak text #tuplet-number::calc-fraction-text
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "4")
                         \times 3/4 {
-                            % [Voice 4 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { vc. }                                    %! applying staff names and clefs
-                            \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Violoncello"                                      %! applying staff names and clefs
-                            \clef "bass"
-                            cs'2.
-                            \f
-                            - \bendAfter #'-2.5
-                            \>
-                            <>
-                            \mf
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
+                                    % [Voice 4 measure 1]                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                                    \set Staff.shortInstrumentName =           %! applying staff names and clefs
+                                    \markup { vc. }                            %! applying staff names and clefs
+                                    \set Staff.instrumentName =                %! applying staff names and clefs
+                                    "Violoncello"                              %! applying staff names and clefs
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    \once \override Beam.grow-direction = #left
+                                    \clef "treble"
+                                    \slash                                     %! abjad.on_beat_grace_container(2)
+                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
+                                    <
+                                        \tweak font-size #0
+                                        \tweak transparent ##t
+                                        cs'
+                                    >32 * 16/9
+                                    ^ \markup {
+                                        \hspace
+                                            #1
+                                        throw
+                                        (7)
+                                        }
+                                    [
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    cs'32 * 16/9
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    cs'32 * 16/9
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    cs'32 * 16/9
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    cs'32 * 16/9
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    cs'32 * 16/9
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    cs'32 * 16/9
+                                    ]
+
+                                }
+                                \tag #'voice14 {
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
+                                    cs'2.
+                                    \f
+                                    - \bendAfter #'-2.5
+                                    \>
+                                    <>
+                                    \mf
+
+                                }
+                                }
+
+                            >>
+                            \oneVoice                                          %! abjad.on_beat_grace_container(5)
 
                             r4
 
@@ -1000,12 +1435,66 @@
 
                             r2
 
-                            d'4
-                            \f
+                            <<
+
+                                \context Voice = "On_Beat_Grace_Container"
+                                {
+                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    \once \override Beam.grow-direction = #left
+                                    \slash                                     %! abjad.on_beat_grace_container(2)
+                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
+                                    <
+                                        \tweak font-size #0
+                                        \tweak transparent ##t
+                                        d'
+                                    >32 * 2
+                                    ^ \markup {
+                                        \hspace
+                                            #1
+                                        throw
+                                        (4)
+                                        }
+                                    [
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 2
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 2
+
+                                    \once \override NoteHead.no-ledgers = ##t
+                                    \once \override Accidental.transparent = ##t
+                                    \tweak transparent ##t
+                                    d'32 * 2
+                                    ]
+
+                                }
+                                \tag #'voice15 {
+
+                                \context Voice = "Voice 4"
+                                {
+
+                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
+                                    d'4
+                                    \f
+
+                                }
+                                }
+
+                            >>
 
                         }
 
                     }
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
 
                     r4
 
@@ -1018,9 +1507,9 @@
                             r2
 
                             \ottava 1
-                            \clef "treble"
                             af'''2
                             \mp
+                            - \tenuto
                             \>
                             <>
                             \p
@@ -1038,6 +1527,7 @@
                         \ottava 1
                         aqs'''8
                         \mp
+                        - \staccato
 
                         \ottava 0
                         r4
@@ -1045,6 +1535,7 @@
                         \ottava 1
                         f'''8
                         \p
+                        - \staccato
 
                     }
 
@@ -1060,6 +1551,7 @@
 
                             ef'2
                             \mf
+                            ^ \markup { "XSB. (c.5 clicks)" }
                             ~
 
                             ef'4
@@ -1086,6 +1578,7 @@
 
                             c'8
                             \f
+                            ^ \markup { "XSB. (c.8)" }
 
                         }
 
@@ -1112,6 +1605,7 @@
                             d'8
                             \mf
                             - \bendAfter #'3.5
+                            ^ \markup { "XSB. (c.11)" }
                             \<
                             <>
                             \f
@@ -1123,10 +1617,74 @@
                     r2.
 
                     {
-                        % [Voice 4 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        ef'2
-                        \mf
+                        <<
+
+                            \context Voice = "On_Beat_Grace_Container"
+                            {
+                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
+                                % [Voice 4 measure 7]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                \once \override Beam.grow-direction = #right
+                                \slash                                         %! abjad.on_beat_grace_container(2)
+                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
+                                <
+                                    \tweak font-size #0
+                                    \tweak transparent ##t
+                                    ef'
+                                >32 * 4/3
+                                ^ \markup {
+                                    \hspace
+                                        #1
+                                    drop
+                                    (6)
+                                    }
+                                [
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                ef'32 * 4/3
+                                ]
+
+                            }
+                            \tag #'voice16 {
+
+                            \context Voice = "Voice 4"
+                            {
+
+                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
+                                ef'2
+                                \mf
+
+                            }
+                            }
+
+                        >>
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
                         r2
 
@@ -1144,6 +1702,7 @@
                         c'4
                         \f
                         - \bendAfter #'2.5
+                        ^ \markup { "XSB. (c.12)" }
                         \>
 
                     }
@@ -1176,6 +1735,7 @@
 
                             d'2
                             \f
+                            ^ \markup { "XSB. (c.13)" }
 
                         }
 

@@ -15,6 +15,17 @@ from adumbration.materials.timespans.segment_12.convert_timespans import (
     rhythm_commands,
 )
 
+clefs = [
+    clef_handlers[0],
+    clef_handlers[1],
+    clef_handlers[2],
+    evans.ClefHandler(
+        clef="treble",
+        add_extended_clefs=True,
+        add_ottavas=True,
+    ),
+]
+
 tempo_handler = evans.TempoSpannerHandler(
     tempo_list=[
         (2, 0, 1, "60"),
@@ -123,7 +134,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=score,
     time_signatures=time_signatures,
-    clef_handlers=clef_handlers,
+    clef_handlers=clefs,
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=True,
     score_includes=[

@@ -655,7 +655,7 @@
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violoncello"                                              %! applying staff names and clefs
                     \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \clef "bass"
+                    \clef "treble"
                     r1 * 3/8
 
                     R1 * 3/8
@@ -697,7 +697,6 @@
                     R1 * 7/8
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \clef "tenorvarC"
                     \tweak NoteHead.style #'default
                     a'2
                     \f
