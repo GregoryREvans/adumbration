@@ -16,6 +16,13 @@ from adumbration.materials.timespans.segment_06.convert_timespans import (
     rhythm_commands,
 )
 
+clefs = [
+    clef_handlers[0],
+    clef_handlers[1],
+    clef_handlers[2],
+    None,
+]
+
 
 def _slur_runs(selections):
     for run in abjad.select(selections).runs():
@@ -84,10 +91,29 @@ maker = evans.SegmentMaker(
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),
+        evans.call(
+            "Voice 4",
+            evans.ClefHandler(
+                clef="bass",
+                add_extended_clefs=True,
+                add_ottavas=True,
+            ),
+            abjad.select().logical_ties(),
+        ),
+        evans.detach(
+            "Voice 4", abjad.Clef("tenorvarC"), abjad.select().run(11).leaf(1)
+        ),
+        evans.detach("Voice 4", abjad.Clef("treble"), abjad.select().run(11).leaf(5)),
+        evans.attach("Voice 4", abjad.Clef("treble"), abjad.select().run(11).leaf(0)),
+        evans.detach(
+            "Voice 4", abjad.Clef("tenorvarC"), abjad.select().run(13).leaf(2)
+        ),
+        evans.detach("Voice 4", abjad.Clef("treble"), abjad.select().run(13).leaf(6)),
+        evans.attach("Voice 4", abjad.Clef("treble"), abjad.select().run(13).leaf(0)),
     ],
     score_template=score,
     time_signatures=time_signatures,
-    clef_handlers=clef_handlers,
+    clef_handlers=clefs,
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=False,
     score_includes=[

@@ -4249,13 +4249,13 @@
                     \times 10/9 {
                         % [Voice 4 measure 22]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
                         e'16
                         \mp
                         \>
                         [
 
-                        \clef "tenorvarC"
                         a'16
 
                         g'16
@@ -4264,7 +4264,6 @@
 
                         c''16
 
-                        \clef "treble"
                         d''16
 
                         a'16
@@ -4444,6 +4443,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "16")
                     \times 10/9 {
 
+                        \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
                         ef'16
                         \mf
@@ -4452,7 +4452,6 @@
 
                         e'16
 
-                        \clef "tenorvarC"
                         a'16
 
                         af'16
@@ -4461,7 +4460,6 @@
 
                         b'16
 
-                        \clef "treble"
                         cs''16
 
                         f'16
