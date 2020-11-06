@@ -12,20 +12,27 @@ from adumbration.materials.score_structure.segment_13.time_signatures import (
 )
 from adumbration.materials.timespans.segment_13.convert_timespans import rhythm_commands
 
-clefs = [
-    clef_handlers[0],
-    clef_handlers[1],
-    evans.ClefHandler(
-        clef="alto",
-        add_extended_clefs=True,
-        add_ottavas=True,
-    ),
-    evans.ClefHandler(
-        clef="treble",
-        add_extended_clefs=True,
-        add_ottavas=True,
-    ),
-]
+
+def remove_ottava(leaf):
+    indicators = abjad.get.indicators(leaf, abjad.Ottava)
+    for _ in indicators:
+        abjad.detach(_, leaf)
+
+
+# clefs = [
+#     clef_handlers[0],
+#     clef_handlers[1],
+#     evans.ClefHandler(
+#         clef="alto",
+#         add_extended_clefs=True,
+#         add_ottavas=True,
+#     ),
+#     evans.ClefHandler(
+#         clef="treble",
+#         add_extended_clefs=True,
+#         add_ottavas=True,
+#     ),
+# ]
 
 gett_handler = evans.GettatoHandler(
     number_of_attacks=[
@@ -112,6 +119,64 @@ maker = evans.SegmentMaker(
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),
+        evans.call(
+            "Voice 1",
+            clef_handlers[0],
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 2",
+            clef_handlers[1],
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 3",
+            evans.ClefHandler(
+                clef="alto",
+                add_extended_clefs=True,
+                add_ottavas=True,
+            ),
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 4",
+            evans.ClefHandler(
+                clef="treble",
+                add_extended_clefs=True,
+                add_ottavas=True,
+            ),
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 3",
+            remove_ottava,
+            baca.leaf(11),
+        ),
+        evans.call(
+            "Voice 3",
+            remove_ottava,
+            baca.leaf(12),
+        ),
+        evans.call(
+            "Voice 4",
+            remove_ottava,
+            baca.leaf(9),
+        ),
+        evans.call(
+            "Voice 4",
+            remove_ottava,
+            baca.leaf(10),
+        ),
+        evans.call(
+            "Voice 4",
+            remove_ottava,
+            baca.leaf(11),
+        ),
+        evans.call(
+            "Voice 4",
+            remove_ottava,
+            baca.leaf(13),
+        ),
         # evans.call(
         #     "Global Context", tempo_handler, abjad.select().leaves().get([0, 2]),
         # ),
@@ -134,7 +199,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB.",
+                "XSB",
                 direction=abjad.Up,
             ),
             baca.leaf(6, pitched=True),
@@ -142,15 +207,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB. (c.5)",
-                direction=abjad.Up,
-            ),
-            baca.leaf(8, pitched=True),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.Markup(
-                "XSB. (c.7)",
+                "XSB(c.5)",
                 direction=abjad.Up,
             ),
             baca.leaf(9, pitched=True),
@@ -158,10 +215,18 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB. (c.11)",
+                "XSB(c.7)",
                 direction=abjad.Up,
             ),
-            baca.leaf(11, pitched=True),
+            baca.leaf(10, pitched=True),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup(
+                "XSB(c.11)",
+                direction=abjad.Up,
+            ),
+            baca.leaf(12, pitched=True),
         ),
         evans.attach(
             "Voice 2",
@@ -171,7 +236,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB. (c.3 clicks)",
+                "XSB(c.3 clicks)",
                 direction=abjad.Up,
             ),
             baca.leaf(7, pitched=True),
@@ -179,7 +244,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB. (c.8)",
+                "XSB(c.8)",
                 direction=abjad.Up,
             ),
             baca.leaf(9, pitched=True),
@@ -187,7 +252,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB. (c.11)",
+                "XSB(c.11)",
                 direction=abjad.Up,
             ),
             baca.leaf(12, pitched=True),
@@ -195,7 +260,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB. (c.5 clicks)",
+                "XSB(c.5 clicks)",
                 direction=abjad.Up,
             ),
             baca.leaf(0, pitched=True),
@@ -203,7 +268,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB. (c.6)",
+                "XSB(c.6)",
                 direction=abjad.Up,
             ),
             baca.leaf(3, pitched=True),
@@ -211,7 +276,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB. (c.7)",
+                "XSB(c.7)",
                 direction=abjad.Up,
             ),
             baca.leaf(11, pitched=True),
@@ -219,7 +284,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB. (c.9)",
+                "XSB(c.9)",
                 direction=abjad.Up,
             ),
             baca.leaf(13, pitched=True),
@@ -227,7 +292,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB. (c.10)",
+                "XSB(c.10)",
                 direction=abjad.Up,
             ),
             baca.leaf(15, pitched=True),
@@ -235,7 +300,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB. (c.5 clicks)",
+                "XSB(c.5 clicks)",
                 direction=abjad.Up,
             ),
             baca.leaf(5, pitched=True),
@@ -243,34 +308,34 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB. (c.8)",
+                "XSB(c.8)",
                 direction=abjad.Up,
             ),
-            baca.leaf(7, pitched=True),
+            baca.leaf(6, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB. (c.11)",
+                "XSB(c.11)",
                 direction=abjad.Up,
             ),
-            baca.leaf(9, pitched=True),
+            baca.leaf(8, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB. (c.12)",
+                "XSB(c.12)",
                 direction=abjad.Up,
             ),
-            baca.leaf(11, pitched=True),
+            baca.leaf(10, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB. (c.13)",
+                "XSB(c.13)",
                 direction=abjad.Up,
             ),
-            baca.leaf(13, pitched=True),
+            baca.leaf(12, pitched=True),
         ),
         evans.call(
             "Voice 1",
@@ -332,7 +397,7 @@ maker = evans.SegmentMaker(
     ],
     score_template=score,
     time_signatures=time_signatures,
-    clef_handlers=clefs,
+    # clef_handlers=[None],
     tuplet_bracket_noteheads=False,
     add_final_grand_pause=True,
     score_includes=[

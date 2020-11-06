@@ -12,7 +12,6 @@ from adumbration.materials.score_structure.segment_14.time_signatures import (
 )
 from adumbration.materials.timespans.segment_14.convert_timespans import rhythm_commands
 
-
 tempo_handler = evans.TempoSpannerHandler(
     tempo_list=[
         (2, 0, 1, "60"),

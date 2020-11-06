@@ -108,7 +108,7 @@
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
                     \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \clef "treble"
+                    \clef "treble"                                             %! applying indicators
                     r1 * 5/8
 
                     R1 * 5/8
@@ -239,7 +239,7 @@
                         c'2
                         \f
                         ^ \markup { "(c.3 clicks)" }
-                        ^ \markup { XSB. }
+                        ^ \markup { XSB }
 
                     }
 
@@ -312,7 +312,6 @@
 
                             cs'8
                             - \bendAfter #'-3.5
-                            ^ \markup { "XSB. (c.5)" }
 
                         }
                         }
@@ -329,13 +328,14 @@
 
                         d'2
                         \mf
-                        ^ \markup { "XSB. (c.7)" }
+                        ^ \markup { XSB(c.5) }
                         \<
 
                     }
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     ef'2
+                    ^ \markup { XSB(c.7) }
                     <>
                     \f
 
@@ -407,7 +407,6 @@
                             c'4
                             \mf
                             - \bendAfter #'3.5
-                            ^ \markup { "XSB. (c.11)" }
 
                         }
                         }
@@ -421,6 +420,7 @@
                         % [Voice 1 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         cs'2.
+                        ^ \markup { XSB(c.11) }
 
                         r4
 
@@ -470,7 +470,7 @@
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
                     \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \clef "treble"
+                    \clef "treble"                                             %! applying indicators
                     r1 * 5/8
 
                     R1 * 5/8
@@ -724,7 +724,7 @@
 
                         d'8
                         \mf
-                        ^ \markup { "XSB. (c.3 clicks)" }
+                        ^ \markup { "XSB(c.3 clicks)" }
                         \<
                         <>
                         \f
@@ -800,7 +800,7 @@
 
                         c'16
                         \f
-                        ^ \markup { "XSB. (c.8)" }
+                        ^ \markup { XSB(c.8) }
                         \>
 
                     }
@@ -819,7 +819,7 @@
                     d'4
                     \f
                     - \bendAfter #'3
-                    ^ \markup { "XSB. (c.11)" }
+                    ^ \markup { XSB(c.11) }
 
                     \scaleDurations #'(1 . 1) {
                         % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -867,7 +867,7 @@
                     c'4
                     \mf
                     - \bendAfter #'3.5
-                    ^ \markup { "XSB. (c.5 clicks)" }
+                    ^ \markup { "XSB(c.5 clicks)" }
                     \<
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -947,7 +947,7 @@
 
                         ef'4.
                         - \bendAfter #'-3.5
-                        ^ \markup { "XSB. (c.6)" }
+                        ^ \markup { XSB(c.6) }
 
                         r4.
 
@@ -974,10 +974,8 @@
                         \mp
                         - \staccato
 
-                        \ottava 0
                         r4
 
-                        \ottava 1
                         aqs'''4
                         \p
                         - \staccato
@@ -1072,7 +1070,7 @@
 
                         d'2
                         \f
-                        ^ \markup { "XSB. (c.7)" }
+                        ^ \markup { XSB(c.7) }
                         \>
 
                     }
@@ -1103,7 +1101,7 @@
                         c'4
                         \f
                         - \bendAfter #'2.5
-                        ^ \markup { "XSB. (c.9)" }
+                        ^ \markup { XSB(c.9) }
 
                     }
                     % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1120,7 +1118,7 @@
                         d'2
                         \mf
                         - \bendAfter #'3
-                        ^ \markup { "XSB. (c.10)" }
+                        ^ \markup { XSB(c.10) }
                         \<
 
                     }
@@ -1193,7 +1191,6 @@
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
                                 \once \override Beam.grow-direction = #left
-                                \clef "treble"
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
@@ -1246,6 +1243,7 @@
                             \context Voice = "Voice 4"
                             {
 
+                                \clef "treble"
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 cs'2.
                                 \f
@@ -1349,23 +1347,19 @@
                         <>
                         \p
 
-                        \ottava 0
                         r2
 
                     }
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \ottava 1
                     aqs'''8
                     \mp
                     - \staccato
 
-                    \ottava 0
                     r8
 
                     r8
 
-                    \ottava 1
                     f'''8
                     \p
                     - \staccato
@@ -1381,7 +1375,7 @@
                         ef'2.
                         \mf
                         - \bendAfter #'-3.5
-                        ^ \markup { "XSB. (c.5 clicks)" }
+                        ^ \markup { "XSB(c.5 clicks)" }
 
                         r2.
 
@@ -1396,6 +1390,7 @@
 
                         c'8
                         \f
+                        ^ \markup { XSB(c.8) }
 
                     }
 
@@ -1404,7 +1399,6 @@
                     \times 3/4 {
 
                         cs'2.
-                        ^ \markup { "XSB. (c.8)" }
 
                         r4
 
@@ -1419,6 +1413,7 @@
                         d'8
                         \mf
                         - \bendAfter #'3.5
+                        ^ \markup { XSB(c.11) }
                         \<
                         <>
                         \f
@@ -1488,7 +1483,6 @@
                             \voiceTwo                                          %! abjad.on_beat_grace_container(4)
                             ef'2
                             \mf
-                            ^ \markup { "XSB. (c.11)" }
 
                         }
                         }
@@ -1506,6 +1500,7 @@
                     c'4
                     \f
                     - \bendAfter #'2.5
+                    ^ \markup { XSB(c.12) }
                     \>
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -1515,7 +1510,6 @@
 
                         cs'2.
                         \mf
-                        ^ \markup { "XSB. (c.12)" }
 
                         r4
 
@@ -1531,6 +1525,7 @@
 
                         d'2
                         \f
+                        ^ \markup { XSB(c.13) }
 
                     }
 
@@ -1539,7 +1534,6 @@
 
                         ef'4.
                         - \bendAfter #'-3
-                        ^ \markup { "XSB. (c.13)" }
 
                         r4.
 
