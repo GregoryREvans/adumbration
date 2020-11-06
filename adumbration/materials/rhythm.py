@@ -1,6 +1,7 @@
 import abjad
 import abjadext.rmakers
 import evans
+from abjadext import microtones
 
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),
@@ -375,6 +376,156 @@ composite_handler_2 = evans.CompositeHandler(
         ),
         evans.DynamicHandler(
             dynamic_list=["p", "mp"],
+            hold_first_boolean_vector=[1, 0],
+            hold_first_forget=False,
+            hold_last_boolean_vector=[0, 1],
+            hold_last_forget=False,
+            forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+#### SEGMENT 14
+
+composite_handler_3 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [1],
+                4,
+                extra_counts=[
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    1,
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    2,
+                    3,
+                    0,
+                    0,
+                ],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [
+                -4,
+                1,
+                6,
+                11,
+                16,
+                11,
+                6,
+                1,
+            ],
+            forget=False,
+        ),
+        evans.GlissandoHandler(
+            line_style="solid-line",
+            boolean_vector=[1],
+            forget=False,
+            apply_to="runs",
+        ),
+        evans.ArticulationHandler(
+            [
+                "downbow",
+                "upbow",
+            ],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            dynamic_list=["p", "mp"],
+            hold_first_boolean_vector=[1, 0],
+            hold_first_forget=False,
+            hold_last_boolean_vector=[0, 1],
+            hold_last_forget=False,
+            forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+composite_handler_4 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [2, 2, 2, 1, 1],
+                16,
+                preamble=[3],
+                end_counts=[4],
+                extra_counts=[0, 1, 2, 3, 2, 1],
+            ),
+            abjadext.rmakers.force_rest(
+                abjad.select().logical_ties().get([0, 1], 9),
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            evans.random_walk(
+                random_seed=25,
+                length=200,
+                step_list=[1, 2],
+                mapped_list=evans.mirror(
+                    microtones.PitchSegment(
+                        [
+                            0,
+                            "1/3",
+                            "2/3",
+                            "3/3",
+                            "4/3",
+                            "5/3",
+                            "6/3",
+                            "7/3",
+                            "8/3",
+                            "9/3",
+                        ]
+                    ).transpose(-3),
+                    sequential_duplicates=False,
+                ),
+            ),
+            forget=False,
+        ),
+        evans.ArticulationHandler(
+            [
+                "tremolo",
+            ],
+            forget=False,
+        ),
+        evans.ArticulationHandler(
+            [
+                "accent",
+            ],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            dynamic_list=["f", "ff"],
             hold_first_boolean_vector=[1, 0],
             hold_first_forget=False,
             hold_last_boolean_vector=[0, 1],
