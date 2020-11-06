@@ -113,168 +113,38 @@
 
                     R1 * 5/8
 
-                    {
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
+                    \times 2/3 {
+                        % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
-                        \times 2/3 {
-                            % [Voice 1 measure 2]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
 
-                            r4
+                        gqf'''4
+                        \p
+                        - \staccato
 
-                            gqf'''4
-                            \p
-                            - \staccato
-
-                            r4
-
-                        }
+                        r4
 
                     }
 
                     r4
 
-                    {
+                    \scaleDurations #'(1 . 1) {
 
-                        \scaleDurations #'(1 . 1) {
+                        af'''4.
+                        \mp
+                        - \tenuto
+                        \>
+                        <>
+                        \p
 
-                            af'''4.
-                            \mp
-                            - \tenuto
-                            \>
-                            <>
-                            \p
-
-                            r8
-
-                            r2
-
-                            r8
-
-                            <<
-
-                                \context Voice = "On_Beat_Grace_Container"
-                                {
-                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    \once \override Beam.grow-direction = #left
-                                    \slash                                     %! abjad.on_beat_grace_container(2)
-                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
-                                    <
-                                        \tweak font-size #0
-                                        \tweak transparent ##t
-                                        aqs'''
-                                    >32 * 4/3
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (5)
-                                        }
-                                    [
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    aqs'''32 * 4/3
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    aqs'''32 * 4/3
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    aqs'''32 * 4/3
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    aqs'''32 * 4/3
-                                    ]
-
-                                }
-                                \tag #'voice2 {
-
-                                \context Voice = "Voice 1"
-                                {
-
-                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
-                                    aqs'''4.
-                                    \mp
-                                    - \accent
-
-                                }
-                                }
-
-                            >>
-
-                        }
-
-                    }
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
-                        \times 4/5 {
-                            \oneVoice                                          %! abjad.on_beat_grace_container(5)
-                            % [Voice 1 measure 3]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            \override Staff.Stem.stemlet-length = 0.75
-                            f'''16
-                            - \staccato
-                            [
-
-                            \revert Staff.Stem.stemlet-length
-                            gqf'''16
-                            - \staccato
-                            ]
-
-                            r16
-
-                            r16
-
-                            af'''16
-                            \p
-                            - \staccato
-
-                        }
-
-                    }
-
-                    r2
-
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 10 7) "4")
-                        \times 7/10 {
-                            % [Voice 1 measure 4]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r1.
-
-                            r2
-
-                            c'2
-                            \f
-                            ^ \markup { "(c.3 clicks)" }
-                            ^ \markup { XSB. }
-
-                        }
-
-                    }
-
-                    {
+                        r2.
 
                         <<
 
                             \context Voice = "On_Beat_Grace_Container"
                             {
                                 \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
-                                % [Voice 1 measure 5]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
@@ -285,90 +155,191 @@
                                 <
                                     \tweak font-size #0
                                     \tweak transparent ##t
-                                    cs'
+                                    aqs'''
                                 >32 * 4/3
                                 ^ \markup {
                                     \hspace
                                         #1
                                     throw
-                                    (7)
+                                    (5)
                                     }
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
+                                aqs'''32 * 4/3
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
+                                aqs'''32 * 4/3
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
+                                aqs'''32 * 4/3
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
+                                aqs'''32 * 4/3
                                 ]
 
                             }
-                            \tag #'voice3 {
+                            \tag #'voice2 {
 
                             \context Voice = "Voice 1"
                             {
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                cs'4.
-                                - \bendAfter #'-3.5
+                                aqs'''4.
+                                \mp
+                                - \accent
 
                             }
                             }
 
                         >>
+
+                    }
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
+                    \times 4/5 {
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
+                        % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        f'''16
+                        - \staccato
+                        [
+
+                        \revert Staff.Stem.stemlet-length
+                        gqf'''16
+                        - \staccato
+                        ]
 
                         r8
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
-                        \times 2/3 {
+                        af'''16
+                        \p
+                        - \staccato
 
-                            r1
+                    }
 
-                            d'2
-                            \mf
-                            ^ \markup { "XSB. (c.5)" }
-                            \<
+                    r2
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 10 7) "4")
+                    \times 7/10 {
+                        % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r\breve
+
+                        c'2
+                        \f
+                        ^ \markup { "(c.3 clicks)" }
+                        ^ \markup { XSB. }
+
+                    }
+
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+                            % [Voice 1 measure 5]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #left
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                cs'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                throw
+                                (7)
+                                }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+                            ]
 
                         }
+                        \tag #'voice3 {
 
-                    }
+                        \context Voice = "Voice 1"
+                        {
 
-                    {
-                        % [Voice 1 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            cs'4
+                            ~
 
-                        ef'2
+                            cs'8
+                            - \bendAfter #'-3.5
+                            ^ \markup { "XSB. (c.5)" }
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
+
+                    r8
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
+                    \times 2/3 {
+
+                        r1
+
+                        d'2
+                        \mf
                         ^ \markup { "XSB. (c.7)" }
-                        <>
-                        \f
-
-                        r2
+                        \<
 
                     }
+                    % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    ef'2
+                    <>
+                    \f
+
+                    r2
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -381,87 +352,77 @@
                     r1 * 3/4
 
                     R1 * 3/4
+                    % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    {
-                        % [Voice 1 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    r1
 
-                        r2.
+                    <<
 
-                        r4
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
 
-                        <<
-
-                            \context Voice = "On_Beat_Grace_Container"
-                            {
-                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #right
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
                                 \tweak transparent ##t
-                                \once \override Beam.grow-direction = #right
-                                \slash                                         %! abjad.on_beat_grace_container(2)
-                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
-                                <
-                                    \tweak font-size #0
-                                    \tweak transparent ##t
-                                    c'
-                                >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (4)
-                                    }
-                                [
+                                c'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                drop
+                                (4)
+                                }
+                            [
 
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                c'32 * 4/3
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            c'32 * 4/3
 
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                c'32 * 4/3
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            c'32 * 4/3
 
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                c'32 * 4/3
-                                ]
-
-                            }
-                            \tag #'voice4 {
-
-                            \context Voice = "Voice 1"
-                            {
-
-                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                c'4
-                                \mf
-                                - \bendAfter #'3.5
-
-                            }
-                            }
-
-                        >>
-
-                    }
-
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
-                            \oneVoice                                          %! abjad.on_beat_grace_container(5)
-                            % [Voice 1 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            cs'2.
-                            ^ \markup { "XSB. (c.11)" }
-
-                            r4
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            c'32 * 4/3
+                            ]
 
                         }
+                        \tag #'voice4 {
+
+                        \context Voice = "Voice 1"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            c'4
+                            \mf
+                            - \bendAfter #'3.5
+                            ^ \markup { "XSB. (c.11)" }
+
+                        }
+                        }
+
+                    >>
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
+                    \times 5/4 {
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
+                        % [Voice 1 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        cs'2.
+
+                        r4
 
                     }
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -514,35 +475,29 @@
 
                     R1 * 5/8
 
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 14 9) "4")
+                    \times 9/14 {
+                        % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 14 9) "4")
-                        \times 9/14 {
-                            % [Voice 2 measure 2]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        aqs'''2
+                        \mp
+                        - \staccato
 
-                            aqs'''2
-                            \mp
-                            - \staccato
+                        r1.
 
-                            r1
+                        f'''2
+                        \p
+                        - \tenuto
+                        \<
+                        <>
+                        \mp
 
-                            r2
+                        r2
 
-                            f'''2
-                            \p
-                            - \tenuto
-                            \<
-                            <>
-                            \mp
-
-                            r2
-
-                            gqf'''2
-                            \p
-                            - \staccato
-
-                        }
+                        gqf'''2
+                        \p
+                        - \staccato
 
                     }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -552,95 +507,18 @@
 
                     R1 * 3/8
 
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 7) "4")
+                    \times 7/6 {
+                        % [Voice 2 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 7) "4")
-                        \times 7/6 {
-                            % [Voice 2 measure 4]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r1
-
-                            <<
-
-                                \context Voice = "On_Beat_Grace_Container"
-                                {
-                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    \once \override Beam.grow-direction = #left
-                                    \slash                                     %! abjad.on_beat_grace_container(2)
-                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
-                                    <
-                                        \tweak font-size #0
-                                        \tweak transparent ##t
-                                        d'
-                                    >32 * 8/7
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (6)
-                                        }
-                                    [
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/7
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/7
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/7
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/7
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/7
-                                    ]
-
-                                }
-                                \tag #'voice6 {
-
-                                \context Voice = "Voice 2"
-                                {
-
-                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
-                                    d'2
-                                    \f
-                                    - \bendAfter #'2.5
-                                    \>
-
-                                }
-                                }
-
-                            >>
-
-                        }
-
-                    }
-
-                    {
+                        r1
 
                         <<
 
                             \context Voice = "On_Beat_Grace_Container"
                             {
                                 \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
-                                % [Voice 2 measure 5]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
@@ -651,152 +529,205 @@
                                 <
                                     \tweak font-size #0
                                     \tweak transparent ##t
-                                    ef'
-                                >32 * 4/3
+                                    d'
+                                >32 * 8/7
                                 ^ \markup {
                                     \hspace
                                         #1
                                     throw
-                                    (3)
+                                    (6)
                                     }
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                d'32 * 8/7
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                d'32 * 8/7
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                d'32 * 8/7
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                d'32 * 8/7
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                d'32 * 8/7
                                 ]
 
                             }
-                            \tag #'voice7 {
+                            \tag #'voice6 {
 
                             \context Voice = "Voice 2"
                             {
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                ef'4
-                                \mf
+                                d'2
+                                \f
+                                - \bendAfter #'2.5
+                                \>
 
                             }
                             }
 
                         >>
-                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
-
-                        r4
 
                     }
+
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+                            % [Voice 2 measure 5]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #left
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                ef'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                throw
+                                (3)
+                                }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+                            ]
+
+                        }
+                        \tag #'voice7 {
+
+                        \context Voice = "Voice 2"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            ef'4
+                            \mf
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
+
+                    r2
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
+                    \times 6/5 {
+
+                        r2
+
+                        c'8
+                        \f
+                        - \staccato
+
+                    }
+
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+                            % [Voice 2 measure 6]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #right
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                cs'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                drop
+                                (5)
+                                }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+                            ]
+
+                        }
+                        \tag #'voice8 {
+
+                        \context Voice = "Voice 2"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            cs'2.
+                            - \bendAfter #'-3
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
 
                     r4
 
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
-                        \times 6/5 {
-
-                            r4.
-
-                            r8
-
-                            c'8
-                            \f
-                            - \staccato
-
-                        }
-
-                    }
-
-                    {
-
-                        <<
-
-                            \context Voice = "On_Beat_Grace_Container"
-                            {
-                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
-                                % [Voice 2 measure 6]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                \once \override Beam.grow-direction = #right
-                                \slash                                         %! abjad.on_beat_grace_container(2)
-                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
-                                <
-                                    \tweak font-size #0
-                                    \tweak transparent ##t
-                                    cs'
-                                >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (5)
-                                    }
-                                [
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
-                                ]
-
-                            }
-                            \tag #'voice8 {
-
-                            \context Voice = "Voice 2"
-                            {
-
-                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                cs'2.
-                                - \bendAfter #'-3
-
-                            }
-                            }
-
-                        >>
-                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
+                    \times 2/3 {
+                        % [Voice 2 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         r4
 
-                    }
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
-                        \times 2/3 {
-                            % [Voice 2 measure 7]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r4
-
-                            d'8
-                            \mf
-                            ^ \markup { "XSB. (c.3 clicks)" }
-                            \<
-                            <>
-                            \f
-
-                        }
+                        d'8
+                        \mf
+                        ^ \markup { "XSB. (c.3 clicks)" }
+                        \<
+                        <>
+                        \f
 
                     }
 
@@ -811,115 +742,92 @@
 
                     r4
 
-                    {
+                    <<
 
-                        <<
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
 
-                            \context Voice = "On_Beat_Grace_Container"
-                            {
-                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #left
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
                                 \tweak transparent ##t
-                                \once \override Beam.grow-direction = #left
-                                \slash                                         %! abjad.on_beat_grace_container(2)
-                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
-                                <
-                                    \tweak font-size #0
-                                    \tweak transparent ##t
-                                    ef'
-                                >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    throw
-                                    (2)
-                                    }
-                                [
+                                ef'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                throw
+                                (2)
+                                }
+                            [
 
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                ef'32 * 4/3
-                                ]
-
-                            }
-                            \tag #'voice9 {
-
-                            \context Voice = "Voice 2"
-                            {
-
-                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                ef'2
-                                \mf
-                                - \bendAfter #'-2.5
-
-                            }
-                            }
-
-                        >>
-                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
-
-                        r2
-
-                    }
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
-                        \times 4/5 {
-                            % [Voice 2 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r8.
-
-                            r16
-
-                            c'16
-                            \f
-                            ^ \markup { "XSB. (c.8)" }
-                            \>
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+                            ]
 
                         }
+                        \tag #'voice9 {
 
-                        cs'2
-                        \mf
-                        ~
+                        \context Voice = "Voice 2"
+                        {
 
-                        cs'4
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            ef'2
+                            \mf
+                            - \bendAfter #'-2.5
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
+
+                    r2
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
+                    \times 4/5 {
+                        % [Voice 2 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         r4
 
-                    }
-
-                    {
-                        % [Voice 2 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        r2
-
-                        d'4
+                        c'16
                         \f
-                        - \bendAfter #'3
-                        ^ \markup { "XSB. (c.11)" }
+                        ^ \markup { "XSB. (c.8)" }
+                        \>
 
                     }
 
-                    {
+                    cs'2
+                    \mf
+                    ~
 
-                        \scaleDurations #'(1 . 1) {
-                            % [Voice 2 measure 12]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    cs'4
 
-                            ef'4
-                            ~
+                    r4
+                    % [Voice 2 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            ef'8
+                    r2
 
-                            r8
+                    d'4
+                    \f
+                    - \bendAfter #'3
+                    ^ \markup { "XSB. (c.11)" }
 
-                            r4
-                            \bar "||"
+                    \scaleDurations #'(1 . 1) {
+                        % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        }
+                        ef'4.
+
+                        r4.
+                        \bar "||"
 
                     }
                     % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -947,177 +855,33 @@
 
                 \context Voice = "Voice 3"
                 {
+                    % [Voice 3 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    {
-                        % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
+                    \markup { va. }                                            %! applying staff names and clefs
+                    \set Staff.instrumentName =                                %! applying staff names and clefs
+                    "Viola"                                                    %! applying staff names and clefs
+                    \clef "varC"
+                    r1
 
-                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
-                        \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
-                        \clef "varC"
-                        r2.
+                    c'4
+                    \mf
+                    - \bendAfter #'3.5
+                    ^ \markup { "XSB. (c.5 clicks)" }
+                    \<
+                    % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        r4
+                    cs'2.
+                    <>
+                    \f
 
-                        c'4
-                        \mf
-                        - \bendAfter #'3.5
-                        ^ \markup { "XSB. (c.5 clicks)" }
-                        \<
+                    r4
 
-                    }
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
+                    \times 5/6 {
 
-                    {
-                        % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        cs'2.
-                        <>
-                        \f
-
-                        r4
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
-                        \times 5/6 {
-
-                            r1
-
-                            <<
-
-                                \context Voice = "On_Beat_Grace_Container"
-                                {
-                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    \once \override Beam.grow-direction = #left
-                                    \slash                                     %! abjad.on_beat_grace_container(2)
-                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
-                                    <
-                                        \tweak font-size #0
-                                        \tweak transparent ##t
-                                        d'
-                                    >32 * 8/5
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (4)
-                                        }
-                                    [
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/5
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/5
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 8/5
-                                    ]
-
-                                }
-                                \tag #'voice11 {
-
-                                \context Voice = "Voice 3"
-                                {
-
-                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
-                                    d'2
-                                    \mf
-
-                                }
-                                }
-
-                            >>
-
-                        }
-
-                    }
-
-                    {
-
-                        \scaleDurations #'(1 . 1) {
-                            \oneVoice                                          %! abjad.on_beat_grace_container(5)
-                            % [Voice 3 measure 3]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            ef'4
-                            ^ \markup { "XSB. (c.6)" }
-                            ~
-
-                            ef'8
-                            - \bendAfter #'-3.5
-
-                            r8
-
-                            r4
-
-                        }
-
-                    }
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
-                        \times 4/5 {
-                            % [Voice 3 measure 4]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r4.
-
-                            r8
-
-                            c'8
-                            \f
-
-                        }
-
-                    }
-
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
-                        \times 5/6 {
-
-                            \ottava 1
-                            \clef "treble"
-                            af'''4
-                            \mp
-                            - \staccato
-
-                            \ottava 0
-                            r4
-
-                            \ottava 1
-                            aqs'''4
-                            \p
-                            - \staccato
-
-                            f'''4
-                            - \staccato
-
-                            gqf'''4
-                            - \staccato
-
-                            \ottava 0
-                            r4
-
-                        }
-
-                    }
-                    % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2
-
-                    {
+                        r1
 
                         <<
 
@@ -1128,91 +892,197 @@
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                \once \override Beam.grow-direction = #right
+                                \once \override Beam.grow-direction = #left
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
                                     \tweak font-size #0
                                     \tweak transparent ##t
-                                    cs'
-                                >32 * 4/3
+                                    d'
+                                >32 * 8/5
                                 ^ \markup {
                                     \hspace
                                         #1
-                                    drop
-                                    (5)
+                                    throw
+                                    (4)
                                     }
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
+                                d'32 * 8/5
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
+                                d'32 * 8/5
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                cs'32 * 4/3
-
-                                \once \override NoteHead.no-ledgers = ##t
-                                \once \override Accidental.transparent = ##t
-                                \tweak transparent ##t
-                                cs'32 * 4/3
+                                d'32 * 8/5
                                 ]
 
                             }
-                            \tag #'voice12 {
+                            \tag #'voice11 {
 
                             \context Voice = "Voice 3"
                             {
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                cs'2.
+                                d'2
                                 \mf
-                                - \bendAfter #'-3
 
                             }
                             }
 
                         >>
-                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
+                    }
+
+                    \scaleDurations #'(1 . 1) {
+                        \oneVoice                                              %! abjad.on_beat_grace_container(5)
+                        % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        ef'4.
+                        - \bendAfter #'-3.5
+                        ^ \markup { "XSB. (c.6)" }
+
+                        r4.
+
+                    }
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
+                    \times 4/5 {
+                        % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2
+
+                        c'8
+                        \f
+
+                    }
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
+                    \times 5/6 {
+
+                        \ottava 1
+                        \clef "treble"
+                        af'''4
+                        \mp
+                        - \staccato
+
+                        \ottava 0
+                        r4
+
+                        \ottava 1
+                        aqs'''4
+                        \p
+                        - \staccato
+
+                        f'''4
+                        - \staccato
+
+                        gqf'''4
+                        - \staccato
+
+                        \ottava 0
                         r4
 
                     }
+                    % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    {
+                    r2
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
-                        \times 2/3 {
-                            % [Voice 3 measure 6]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    <<
 
-                            r1
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
 
-                            d'2
-                            \f
-                            ^ \markup { "XSB. (c.7)" }
-                            \>
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #right
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                cs'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                drop
+                                (5)
+                                }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            cs'32 * 4/3
+                            ]
 
                         }
+                        \tag #'voice12 {
+
+                        \context Voice = "Voice 3"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            cs'4
+                            \mf
+                            ~
+
+                            cs'2
+                            - \bendAfter #'-3
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
+
+                    r4
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
+                    \times 2/3 {
+                        % [Voice 3 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1
+
+                        d'2
+                        \f
+                        ^ \markup { "XSB. (c.7)" }
+                        \>
 
                     }
+                    % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    {
-                        % [Voice 3 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    ef'8
+                    <>
+                    \mf
 
-                        ef'8
-                        <>
-                        \mf
-
-                        r8
-
-                    }
+                    r8
 
                     r2.
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1225,79 +1095,54 @@
 
                     r4
 
-                    {
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
+                    \times 4/5 {
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
-                        \times 4/5 {
+                        r1
 
-                            r2.
+                        c'4
+                        \f
+                        - \bendAfter #'2.5
+                        ^ \markup { "XSB. (c.9)" }
 
-                            r4
+                    }
+                    % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            c'4
-                            \f
-                            - \bendAfter #'2.5
-                            ^ \markup { "XSB. (c.9)" }
+                    cs'8.
 
-                        }
+                    r16
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
+                    \times 2/3 {
+
+                        r1
+
+                        d'2
+                        \mf
+                        - \bendAfter #'3
+                        ^ \markup { "XSB. (c.10)" }
+                        \<
 
                     }
 
-                    {
-                        % [Voice 3 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \scaleDurations #'(1 . 1) {
+                        % [Voice 3 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        cs'8.
+                        ef'4.
+                        \f
 
-                        r16
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
-                        \times 2/3 {
-
-                            r1
-
-                            d'2
-                            \mf
-                            - \bendAfter #'3
-                            ^ \markup { "XSB. (c.10)" }
-                            \<
-
-                        }
+                        r4.
 
                     }
 
-                    {
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
+                    \times 4/5 {
+                        % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \scaleDurations #'(1 . 1) {
-                            % [Voice 3 measure 11]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2
 
-                            ef'4
-                            \f
-                            ~
-
-                            ef'8
-
-                            r8
-
-                            r4
-
-                        }
-
-                    }
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
-                        \times 4/5 {
-                            % [Voice 3 measure 12]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r4.
-
-                            r8
-
-                            c'8
-                            \mf
-
-                        }
+                        c'8
+                        \mf
 
                     }
 
@@ -1329,355 +1174,84 @@
                 \context Voice = "Voice 4"
                 {
 
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "4")
-                        \times 3/4 {
-
-                            <<
-
-                                \context Voice = "On_Beat_Grace_Container"
-                                {
-                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
-                                    % [Voice 4 measure 1]                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                                    \set Staff.shortInstrumentName =           %! applying staff names and clefs
-                                    \markup { vc. }                            %! applying staff names and clefs
-                                    \set Staff.instrumentName =                %! applying staff names and clefs
-                                    "Violoncello"                              %! applying staff names and clefs
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    \once \override Beam.grow-direction = #left
-                                    \clef "treble"
-                                    \slash                                     %! abjad.on_beat_grace_container(2)
-                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
-                                    <
-                                        \tweak font-size #0
-                                        \tweak transparent ##t
-                                        cs'
-                                    >32 * 16/9
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (7)
-                                        }
-                                    [
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    cs'32 * 16/9
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    cs'32 * 16/9
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    cs'32 * 16/9
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    cs'32 * 16/9
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    cs'32 * 16/9
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    cs'32 * 16/9
-                                    ]
-
-                                }
-                                \tag #'voice14 {
-
-                                \context Voice = "Voice 4"
-                                {
-
-                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
-                                    cs'2.
-                                    \f
-                                    - \bendAfter #'-2.5
-                                    \>
-                                    <>
-                                    \mf
-
-                                }
-                                }
-
-                            >>
-                            \oneVoice                                          %! abjad.on_beat_grace_container(5)
-
-                            r4
-
-                        }
-
-                    }
-
-                    r2
-                    % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
-                        \times 2/3 {
-
-                            r2
-
-                            <<
-
-                                \context Voice = "On_Beat_Grace_Container"
-                                {
-                                    \set fontSize = #-4                        %! abjad.on_beat_grace_container(1)
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    \once \override Beam.grow-direction = #left
-                                    \slash                                     %! abjad.on_beat_grace_container(2)
-                                    \voiceOne                                  %! abjad.on_beat_grace_container(3)
-                                    <
-                                        \tweak font-size #0
-                                        \tweak transparent ##t
-                                        d'
-                                    >32 * 2
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (4)
-                                        }
-                                    [
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 2
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 2
-
-                                    \once \override NoteHead.no-ledgers = ##t
-                                    \once \override Accidental.transparent = ##t
-                                    \tweak transparent ##t
-                                    d'32 * 2
-                                    ]
-
-                                }
-                                \tag #'voice15 {
-
-                                \context Voice = "Voice 4"
-                                {
-
-                                    \voiceTwo                                  %! abjad.on_beat_grace_container(4)
-                                    d'4
-                                    \f
-
-                                }
-                                }
-
-                            >>
-
-                        }
-
-                    }
-                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
-
-                    r4
-
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
-                        \times 5/6 {
-
-                            r2
-
-                            \ottava 1
-                            af'''2
-                            \mp
-                            - \tenuto
-                            \>
-                            <>
-                            \p
-
-                            \ottava 0
-                            r2
-
-                        }
-
-                    }
-
-                    {
-                        % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        \ottava 1
-                        aqs'''8
-                        \mp
-                        - \staccato
-
-                        \ottava 0
-                        r4
-
-                        \ottava 1
-                        f'''8
-                        \p
-                        - \staccato
-
-                    }
-
-                    \ottava 0
-                    r4
-                    % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    {
-
-                        \scaleDurations #'(1 . 1) {
-
-                            ef'2
-                            \mf
-                            ^ \markup { "XSB. (c.5 clicks)" }
-                            ~
-
-                            ef'4
-                            - \bendAfter #'-3.5
-
-                            r4
-
-                            r2
-
-                        }
-
-                    }
-
-                    {
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
-                        \times 6/5 {
-                            % [Voice 4 measure 5]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r4.
-
-                            r8
-
-                            c'8
-                            \f
-                            ^ \markup { "XSB. (c.8)" }
-
-                        }
-
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "4")
-                        \times 3/4 {
-
-                            cs'2.
-
-                            r4
-
-                        }
-
-                    }
-
-                    {
-
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
-                        \times 2/3 {
-                            % [Voice 4 measure 6]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                            r4
-
-                            d'8
-                            \mf
-                            - \bendAfter #'3.5
-                            ^ \markup { "XSB. (c.11)" }
-                            \<
-                            <>
-                            \f
-
-                        }
-
-                    }
-
-                    r2.
-
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "4")
+                    \times 3/4 {
 
                         <<
 
                             \context Voice = "On_Beat_Grace_Container"
                             {
                                 \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
-                                % [Voice 4 measure 7]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                                % [Voice 4 measure 1]                          %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                                \set Staff.shortInstrumentName =               %! applying staff names and clefs
+                                \markup { vc. }                                %! applying staff names and clefs
+                                \set Staff.instrumentName =                    %! applying staff names and clefs
+                                "Violoncello"                                  %! applying staff names and clefs
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                \once \override Beam.grow-direction = #right
+                                \once \override Beam.grow-direction = #left
+                                \clef "treble"
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
                                     \tweak font-size #0
                                     \tweak transparent ##t
-                                    ef'
-                                >32 * 4/3
+                                    cs'
+                                >32 * 16/9
                                 ^ \markup {
                                     \hspace
                                         #1
-                                    drop
-                                    (6)
+                                    throw
+                                    (7)
                                     }
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                cs'32 * 16/9
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                cs'32 * 16/9
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                cs'32 * 16/9
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                cs'32 * 16/9
 
                                 \once \override NoteHead.no-ledgers = ##t
                                 \once \override Accidental.transparent = ##t
                                 \tweak transparent ##t
-                                ef'32 * 4/3
+                                cs'32 * 16/9
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                cs'32 * 16/9
                                 ]
 
                             }
-                            \tag #'voice16 {
+                            \tag #'voice14 {
 
                             \context Voice = "Voice 4"
                             {
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
-                                ef'2
+                                cs'2.
+                                \f
+                                - \bendAfter #'-2.5
+                                \>
+                                <>
                                 \mf
 
                             }
@@ -1686,97 +1260,302 @@
                         >>
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
 
-                        r2
+                        r4
 
                     }
-                    % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    r2
+                    % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
 
-                    {
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
+                    \times 2/3 {
+
+                        r2
+
+                        <<
+
+                            \context Voice = "On_Beat_Grace_Container"
+                            {
+                                \set fontSize = #-4                            %! abjad.on_beat_grace_container(1)
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                \once \override Beam.grow-direction = #left
+                                \slash                                         %! abjad.on_beat_grace_container(2)
+                                \voiceOne                                      %! abjad.on_beat_grace_container(3)
+                                <
+                                    \tweak font-size #0
+                                    \tweak transparent ##t
+                                    d'
+                                >32 * 2
+                                ^ \markup {
+                                    \hspace
+                                        #1
+                                    throw
+                                    (4)
+                                    }
+                                [
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                d'32 * 2
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                d'32 * 2
+
+                                \once \override NoteHead.no-ledgers = ##t
+                                \once \override Accidental.transparent = ##t
+                                \tweak transparent ##t
+                                d'32 * 2
+                                ]
+
+                            }
+                            \tag #'voice15 {
+
+                            \context Voice = "Voice 4"
+                            {
+
+                                \voiceTwo                                      %! abjad.on_beat_grace_container(4)
+                                d'4
+                                \f
+
+                            }
+                            }
+
+                        >>
+
+                    }
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
+
+                    r4
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
+                    \times 5/6 {
+
+                        r2
+
+                        \ottava 1
+                        af'''2
+                        \mp
+                        - \tenuto
+                        \>
+                        <>
+                        \p
+
+                        \ottava 0
+                        r2
+
+                    }
+                    % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \ottava 1
+                    aqs'''8
+                    \mp
+                    - \staccato
+
+                    \ottava 0
+                    r8
+
+                    r8
+
+                    \ottava 1
+                    f'''8
+                    \p
+                    - \staccato
+
+                    \ottava 0
+                    r4
+                    % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    r4
+
+                    \scaleDurations #'(1 . 1) {
+
+                        ef'2.
+                        \mf
+                        - \bendAfter #'-3.5
+                        ^ \markup { "XSB. (c.5 clicks)" }
 
                         r2.
 
-                        r4
+                    }
 
-                        c'4
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
+                    \times 6/5 {
+                        % [Voice 4 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2
+
+                        c'8
                         \f
-                        - \bendAfter #'2.5
-                        ^ \markup { "XSB. (c.12)" }
-                        \>
 
                     }
 
-                    {
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 3) "4")
+                    \times 3/4 {
 
-                        \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
-                            % [Voice 4 measure 9]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        cs'2.
+                        ^ \markup { "XSB. (c.8)" }
 
-                            cs'2.
-                            \mf
+                        r4
 
-                            r4
+                    }
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "8")
+                    \times 2/3 {
+                        % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r4
+
+                        d'8
+                        \mf
+                        - \bendAfter #'3.5
+                        \<
+                        <>
+                        \f
+
+                    }
+
+                    r2.
+
+                    <<
+
+                        \context Voice = "On_Beat_Grace_Container"
+                        {
+                            \set fontSize = #-4                                %! abjad.on_beat_grace_container(1)
+                            % [Voice 4 measure 7]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            \once \override Beam.grow-direction = #right
+                            \slash                                             %! abjad.on_beat_grace_container(2)
+                            \voiceOne                                          %! abjad.on_beat_grace_container(3)
+                            <
+                                \tweak font-size #0
+                                \tweak transparent ##t
+                                ef'
+                            >32 * 4/3
+                            ^ \markup {
+                                \hspace
+                                    #1
+                                drop
+                                (6)
+                                }
+                            [
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+
+                            \once \override NoteHead.no-ledgers = ##t
+                            \once \override Accidental.transparent = ##t
+                            \tweak transparent ##t
+                            ef'32 * 4/3
+                            ]
 
                         }
+                        \tag #'voice16 {
+
+                        \context Voice = "Voice 4"
+                        {
+
+                            \voiceTwo                                          %! abjad.on_beat_grace_container(4)
+                            ef'2
+                            \mf
+                            ^ \markup { "XSB. (c.11)" }
+
+                        }
+                        }
+
+                    >>
+                    \oneVoice                                                  %! abjad.on_beat_grace_container(5)
+
+                    r2
+                    % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    r2.
+
+                    r2
+
+                    c'4
+                    \f
+                    - \bendAfter #'2.5
+                    \>
+
+                    \tweak text #tuplet-number::calc-fraction-text
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
+                    \times 5/4 {
+                        % [Voice 4 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        cs'2.
+                        \mf
+                        ^ \markup { "XSB. (c.12)" }
+
+                        r4
 
                     }
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
 
-                    {
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
+                    \times 2/3 {
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
-                        \times 2/3 {
+                        r1
 
-                            r1
-
-                            d'2
-                            \f
-                            ^ \markup { "XSB. (c.13)" }
-
-                        }
+                        d'2
+                        \f
 
                     }
 
-                    {
+                    \scaleDurations #'(1 . 1) {
+                        % [Voice 4 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \scaleDurations #'(1 . 1) {
-                            % [Voice 4 measure 11]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        ef'4.
+                        - \bendAfter #'-3
+                        ^ \markup { "XSB. (c.13)" }
 
-                            ef'4
-                            ~
-
-                            ef'8
-                            - \bendAfter #'-3
-
-                            r8
-
-                            r4
-
-                        }
+                        r4.
 
                     }
 
-                    {
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
+                    \times 4/5 {
+                        % [Voice 4 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
-                        \times 4/5 {
-                            % [Voice 4 measure 12]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2
 
-                            r4.
-
-                            r8
-
-                            c'8
-                            \mf
-                            \<
-                            <>
-                            \f
-
-                        }
+                        c'8
+                        \mf
+                        \<
+                        <>
+                        \f
 
                     }
 

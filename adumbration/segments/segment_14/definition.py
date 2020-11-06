@@ -12,21 +12,6 @@ from adumbration.materials.score_structure.segment_14.time_signatures import (
 )
 from adumbration.materials.timespans.segment_14.convert_timespans import rhythm_commands
 
-gett_handler = evans.GettatoHandler(
-    number_of_attacks=[
-        5,
-        7,
-        4,
-        6,
-        3,
-        5,
-        2,
-        4,
-    ],
-    actions=["throw", "throw", "drop"],
-    boolean_vector=[1],
-    vector_forget=False,
-)
 
 tempo_handler = evans.TempoSpannerHandler(
     tempo_list=[
