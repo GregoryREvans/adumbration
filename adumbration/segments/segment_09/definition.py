@@ -94,7 +94,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.LilyPondLiteral(
-                r"^ \markup { 1/2clt. \raise #0.75 \baca-circle-very-wide-markup }",
+                r"^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }",
                 format_slot="after",
             ),
             baca.leaf(0, pitched=True),
@@ -117,8 +117,11 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "herzensschatzi komm [komm (iii)]",
+            abjad.Markup.column(
+                [
+                    abjad.Markup("Herzensschatzi Komm").caps().box(),
+                    abjad.Markup("[Komm (iii)]").caps(),
+                ],
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),

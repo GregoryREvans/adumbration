@@ -77,16 +77,11 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "(ascend to the basement)",
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
-        ),
-        evans.attach(
-            "Global Context",
-            abjad.Markup(
-                "t. talked with god",
+            abjad.Markup.column(
+                [
+                    abjad.Markup("T. Talked with God [Crocodiles (iii)]").caps().box(),
+                    abjad.Markup("(Ascend to the Basement)").caps(),
+                ],
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),

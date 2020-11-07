@@ -30,9 +30,11 @@
                 }
             s1 * 3/4
             ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    fluxes/phylums
+                \box
+                    \override
+                        #'(font-name . "STIXGeneral Bold")
+                        \caps
+                            Fluxes/Phylums
                 }
             % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -144,23 +146,24 @@
                     \clef "treble"
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    c'4
+                    e'4
                     \p
-                    - \downbow
+                    - \baca-full-downbow
+                    ^ \markup { ½clt. }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    es'4
-                    - \upbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    a'4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as'4
-                    - \downbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    d''4
+                    - \baca-stop-on-string-full-downbow
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -174,46 +177,47 @@
                         % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds''4
+                        \tweak Accidental.text \abjad-natural-markup
+                        g''4
                         \mp
-                        - \upbow
+                        - \baca-full-downbow
+                        ^ \markup { clt. }
                         \>
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        gs''4
-                        - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
-                        \glissando                                             %! abjad.glissando(7)
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds''4
-                        - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
-                        \glissando                                             %! abjad.glissando(7)
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        as'4
-                        - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
-                        \glissando                                             %! abjad.glissando(7)
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        es'4
-                        - \upbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        c'''4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        c'4
-                        - \downbow
+                        g''4
+                        - \baca-full-downbow
+                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        \glissando                                             %! abjad.glissando(7)
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d''4
+                        - \baca-full-upbow
+                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        \glissando                                             %! abjad.glissando(7)
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a'4
+                        - \baca-full-downbow
+                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        \glissando                                             %! abjad.glissando(7)
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
@@ -224,24 +228,24 @@
                         % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        es'4
-                        - \upbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        a'4
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        as'4
-                        - \downbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        d''4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds''4
+                        \tweak Accidental.text \abjad-natural-markup
+                        g''4
                         \p
-                        - \upbow
+                        - \baca-stop-on-string-full-downbow
 
                     }
 
@@ -260,8 +264,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'16
+                    \tweak Accidental.text \abjad-natural-markup
+                    e'16
                     :32
                     \f
                     - \accent
@@ -269,13 +273,13 @@
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'16
+                    \tweak Accidental.text \abjad-natural-markup
+                    e'16
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    eqs'16
                     :32
                     - \accent
                     ~
@@ -283,26 +287,26 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    eqs'16
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'16
+                    \tweak Accidental.text \abjad-natural-markup
+                    e'16
                     :32
                     - \accent
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    d'16
+                    e'16
                     :32
                     - \accent
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    eqs'16
                     :32
                     - \accent
                     ~
@@ -314,21 +318,21 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        eqs'16
                         :32
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        f'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds'8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        fqs'8
                         :32
                         - \accent
                         ]
@@ -347,38 +351,39 @@
                     % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs''4
+                    \tweak Accidental.text \abjad-natural-markup
+                    c'''4
                     \mp
-                    - \downbow
-                    - \tweak style #'solid-line                                %! abjad.glissando(7)
-                    \glissando                                                 %! abjad.glissando(7)
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds''4
-                    - \upbow
-                    - \tweak style #'solid-line                                %! abjad.glissando(7)
-                    \glissando                                                 %! abjad.glissando(7)
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as'4
-                    - \downbow
-                    - \tweak style #'solid-line                                %! abjad.glissando(7)
-                    \glissando                                                 %! abjad.glissando(7)
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    es'4
-                    - \upbow
+                    - \baca-full-downbow
+                    ^ \markup { ½clt. }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    c'4
-                    - \downbow
+                    g''4
+                    - \baca-full-upbow
+                    - \tweak style #'solid-line                                %! abjad.glissando(7)
+                    \glissando                                                 %! abjad.glissando(7)
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    d''4
+                    - \baca-full-downbow
+                    - \tweak style #'solid-line                                %! abjad.glissando(7)
+                    \glissando                                                 %! abjad.glissando(7)
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    a'4
+                    - \baca-full-upbow
+                    - \tweak style #'solid-line                                %! abjad.glissando(7)
+                    \glissando                                                 %! abjad.glissando(7)
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    e'4
+                    - \baca-stop-on-string-full-downbow
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -411,7 +416,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        e'16
                         :32
                         \ff
                         - \accent
@@ -420,20 +425,20 @@
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        f'16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        eqs'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs'8
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'8
                         :32
                         - \accent
                         ]
@@ -447,21 +452,21 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        e'8
                         :32
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        eqs'16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        f'16
                         :32
                         - \accent
                         ]
@@ -474,7 +479,7 @@
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'4
+                        e'4
                         :32
                         \ff
                         - \accent
@@ -501,46 +506,47 @@
                         % [Voice 1 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        es'4
+                        \tweak Accidental.text \abjad-natural-markup
+                        a'4
                         \p
-                        - \upbow
+                        - \baca-full-downbow
+                        ^ \markup { norm. }
                         \<
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        as'4
-                        - \downbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        d''4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds''4
-                        - \upbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        g''4
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        gs''4
-                        - \downbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        c'''4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds''4
-                        - \upbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        g''4
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        as'4
-                        - \downbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        d''4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
@@ -548,10 +554,10 @@
                     % [Voice 1 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    es'4
+                    \tweak Accidental.text \abjad-natural-markup
+                    a'4
                     \mp
-                    - \upbow
+                    - \baca-stop-on-string-full-downbow
 
                     r2.
                     % [Voice 1 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -567,8 +573,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs'8
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'8
                         :32
                         \f
                         - \accent
@@ -576,27 +582,27 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        eqs'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        f'16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds'16
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        fqs'16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
-                        ds'16
+                        fs'16
                         :32
                         - \accent
                         ~
@@ -612,20 +618,20 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
-                        ds'16
+                        fs'16
                         :32
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
-                        ds'8
+                        fs'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        f'8
                         :32
                         \ff
                         - \accent
@@ -638,46 +644,46 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        e'8
                         :32
                         \f
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs'8
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        eqs'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        f'16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'16
+                        e'16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d'16
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds'8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        fqs'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d'8
+                        f'8
                         :32
                         - \accent
                         ]
@@ -691,8 +697,8 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    eqs'16
                     :32
                     \ff
                     - \accent
@@ -701,8 +707,8 @@
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'8
+                    \tweak Accidental.text \abjad-natural-markup
+                    e'8
                     :32
                     - \accent
                     ]
@@ -710,7 +716,7 @@
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    d'8
+                    e'8
                     :32
                     - \accent
                     [
@@ -718,14 +724,14 @@
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    d'8
+                    f'8
                     :32
                     - \accent
                     ]
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'4
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    eqs'4
                     :32
                     \f
                     - \accent
@@ -768,25 +774,26 @@
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
                     \clef "treble"
-                    af4
+                    c'4
                     \p
-                    - \downbow
+                    - \baca-full-downbow
+                    ^ \markup { ½clt. }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
-                    cs'4
-                    - \upbow
+                    f'4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
-                    fs'4
-                    - \downbow
+                    bf'4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    b'4
-                    - \upbow
+                    ef''4
+                    - \baca-stop-on-string-full-upbow
 
                     r2.
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -818,42 +825,42 @@
                         r8
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        a16
+                        c'16
                         :32
                         \ff
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \two-thirds-flat-markup
-                        bf16
+                        \tweak Accidental.text \one-third-sharp-markup
+                        c'16
                         :32
                         - \accent
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \five-sixths-flat-markup
-                        bf8
-                        :32
-                        - \accent
-
-                        bf8
+                        cqs'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-third-flat-markup
-                        b8
+                        df'8
+                        :32
+                        - \accent
+
+                        dqf'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \two-thirds-flat-markup
-                        bf16
+                        \tweak Accidental.text \one-third-sharp-markup
+                        c'16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
-                        bf16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-flat-markup
+                        df'16
                         :32
                         - \accent
                         ]
@@ -863,9 +870,7 @@
                         r8
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
-                        b8
+                        d'8
                         :32
                         \f
                         - \accent
@@ -873,9 +878,7 @@
                         [
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        b16
+                        dqf'16
                         :32
                         - \accent
                         ]
@@ -888,31 +891,29 @@
                         % [Voice 2 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        b16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-sharp-markup
+                        d'16
                         :32
                         - \accent
                         [
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        c'8
+                        d'8
+                        :32
+                        - \accent
+
+                        d'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
-                        b8
-                        :32
-                        - \accent
-
-                        b8
+                        \tweak Accidental.text \one-third-sharp-markup
+                        d'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
-                        c'16
+                        dqf'16
                         :32
                         \ff
                         - \accent
@@ -922,9 +923,7 @@
 
                         r16
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        c'4
+                        d'4
                         :32
                         \f
                         - \accent
@@ -950,27 +949,28 @@
                     R1 * 1/2
                     % [Voice 2 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    e''4
+                    af''4
                     \mp
-                    - \downbow
+                    - \baca-full-downbow
+                    ^ \markup { clt. }
                     \>
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
-                    b'4
-                    - \upbow
+                    ef''4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
-                    fs'4
-                    - \downbow
+                    bf'4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    cs'4
+                    f'4
                     \p
-                    - \upbow
+                    - \baca-stop-on-string-full-upbow
 
                     r2.
                     % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -991,7 +991,9 @@
                         r16
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        c'16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-flat-markup
+                        df'16
                         :32
                         \ff
                         - \accent
@@ -999,28 +1001,28 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
+                        \tweak Accidental.text \one-third-sharp-markup
                         c'8
                         :32
                         - \accent
 
-                        b8
+                        c'8
+                        :32
+                        - \accent
+
+                        cqs'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-third-flat-markup
-                        c'8
-                        :32
-                        - \accent
-
-                        c'16
+                        df'16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
+                        \tweak Accidental.text \one-third-sharp-markup
                         c'16
                         :32
                         - \accent
@@ -1033,7 +1035,7 @@
                     \times 6/7 {
                         % [Voice 2 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        b8
+                        c'8
                         :32
                         - \accent
                         <>
@@ -1044,32 +1046,30 @@
                         r8
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
-                        b16
+                        cqs'16
                         :32
                         \ff
                         - \accent
                         [
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        c'16
+                        cqs'16
                         :32
                         - \accent
 
-                        b8
+                        c'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        b8
+                        \tweak Accidental.text \one-third-sharp-markup
+                        c'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
-                        bf8
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-flat-markup
+                        df'8
                         :32
                         - \accent
                         ]
@@ -1082,17 +1082,13 @@
                         % [Voice 2 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \five-sixths-flat-markup
-                        bf16
+                        d'16
                         :32
                         - \accent
                         [
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \two-thirds-flat-markup
-                        bf16
+                        dqf'16
                         :32
                         - \accent
                         ]
@@ -1103,34 +1099,32 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        b8
+                        \tweak Accidental.text \one-third-sharp-markup
+                        c'8
                         :32
                         \f
                         - \accent
                         \<
                         [
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
-                        b16
-                        :32
-                        - \accent
-
-                        bf16
+                        cqs'16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \two-thirds-flat-markup
-                        bf8
+                        \tweak Accidental.text \one-third-flat-markup
+                        df'16
+                        :32
+                        - \accent
+
+                        dqf'8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-third-flat-markup
-                        b16
+                        \tweak Accidental.text \one-third-sharp-markup
+                        c'16
                         :32
                         - \accent
                         ~
@@ -1141,22 +1135,20 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \one-third-flat-markup
-                    b16
+                    \tweak Accidental.text \one-third-sharp-markup
+                    c'16
                     :32
                     [
 
-                    bf16
+                    df'16
                     :32
                     - \accent
                     ~
 
-                    bf16
+                    df'16
 
                     \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \five-sixths-flat-markup
-                    bf16
+                    d'16
                     :32
                     \ff
                     - \accent
@@ -1167,57 +1159,58 @@
 
                     r4
 
-                    af4
+                    c'4
                     \mp
-                    - \downbow
+                    - \baca-full-downbow
+                    ^ \markup { ½clt. }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
-                    cs'4
-                    - \upbow
+                    f'4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
-                    fs'4
-                    - \downbow
+                    bf'4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     % [Voice 2 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    b'8.
-                    - \upbow
+                    ef''8.
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    e''16
-                    - \downbow
+                    af''16
+                    - \baca-full-downbow
                     - \tweak style #'solid-line
                     \glissando
                     ~
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    e''8
+                    af''8
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    b'8
-                    - \upbow
+                    ef''8
+                    - \baca-full-upbow
                     - \tweak style #'solid-line
                     \glissando
                     ~
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    b'16
+                    ef''16
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    fs'8.
-                    - \downbow
+                    bf'8.
+                    - \baca-stop-on-string-full-downbow
                     ]
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -1230,44 +1223,40 @@
                         r8
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \two-thirds-flat-markup
-                        bf16
+                        dqf'16
                         :32
                         \f
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-sharp-markup
+                        c'16
+                        :32
+                        - \accent
+
+                        cqs'8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-third-flat-markup
-                        b16
+                        df'8
+                        :32
+                        - \accent
+
+                        dqf'8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-sixth-flat-markup
-                        b8
-                        :32
-                        - \accent
-
-                        bf8
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \two-thirds-flat-markup
-                        bf8
-                        :32
-                        - \accent
-
-                        a16
+                        \tweak Accidental.text \one-third-sharp-markup
+                        d'16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \five-sixths-flat-markup
-                        bf16
+                        d'16
                         :32
                         - \accent
                         ]
@@ -1276,9 +1265,7 @@
 
                         r8
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \five-sixths-flat-markup
-                        bf4
+                        d'4
                         :32
                         \ff
                         - \accent
@@ -1333,54 +1320,55 @@
                     "Viola"                                                    %! applying staff names and clefs
                     \clef "varC"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs4
+                    \tweak Accidental.text \abjad-natural-markup
+                    d'4
                     \p
-                    - \upbow
+                    - \baca-full-downbow
+                    ^ \markup { norm. }
                     \<
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-flat-markup
-                    ef4
-                    - \downbow
-                    - \tweak style #'solid-line                                %! abjad.glissando(7)
-                    \glissando                                                 %! abjad.glissando(7)
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs4
-                    - \upbow
-                    - \tweak style #'solid-line                                %! abjad.glissando(7)
-                    \glissando                                                 %! abjad.glissando(7)
-                    % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'4
-                    - \downbow
-                    - \tweak style #'solid-line                                %! abjad.glissando(7)
-                    \glissando                                                 %! abjad.glissando(7)
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'4
-                    - \upbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    a4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    b'4
-                    - \downbow
+                    d'4
+                    - \baca-full-downbow
+                    - \tweak style #'solid-line                                %! abjad.glissando(7)
+                    \glissando                                                 %! abjad.glissando(7)
+                    % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    g'4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'4
-                    - \upbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    c''4
+                    - \baca-full-downbow
+                    - \tweak style #'solid-line                                %! abjad.glissando(7)
+                    \glissando                                                 %! abjad.glissando(7)
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    f''4
+                    - \baca-full-upbow
+                    - \tweak style #'solid-line                                %! abjad.glissando(7)
+                    \glissando                                                 %! abjad.glissando(7)
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    c''4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
@@ -1389,24 +1377,24 @@
                         % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs'4
-                        - \downbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        g'4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        gs4
-                        - \upbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        d'4
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-flat-markup
-                        ef4
+                        \tweak Accidental.text \abjad-natural-markup
+                        a4
                         \mp
-                        - \downbow
+                        - \baca-stop-on-string-full-upbow
 
                     }
 
@@ -1449,28 +1437,28 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e8
+                        b8
                         :32
                         \ff
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        b16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf8
                         :32
                         - \accent
                         ]
@@ -1484,22 +1472,22 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf8
                         :32
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        fs8
+                        \tweak Accidental.text \abjad-natural-markup
+                        a8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf16
                         :32
                         - \accent
                         ]
@@ -1511,7 +1499,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        b8
                         :32
                         \f
                         - \accent
@@ -1520,38 +1508,38 @@
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e8
+                        b8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        b16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        b8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f8
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        e8
+                        b8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf8
                         :32
                         \ff
                         - \accent
@@ -1562,8 +1550,8 @@
                         r16
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf16
                         :32
                         \f
                         - \accent
@@ -1577,34 +1565,34 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf16
                         :32
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        b8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e8
+                        b8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf16
                         :32
                         - \accent
                         ]
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f4
+                        b4
                         :32
                         - \accent
 
@@ -1638,24 +1626,25 @@
                     % [Voice 3 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs4
+                    \tweak Accidental.text \abjad-natural-markup
+                    d'4
                     \p
-                    - \upbow
+                    - \baca-full-downbow
+                    ^ \markup { ½clt. }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'4
-                    - \downbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    g'4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'4
-                    - \upbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    c''4
+                    - \baca-stop-on-string-full-downbow
                     % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -1686,8 +1675,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf16
                         :32
                         \ff
                         - \accent
@@ -1695,39 +1684,39 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        fs8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        a8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f8
+                        b8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        fs16
+                        \tweak Accidental.text \abjad-natural-markup
+                        a16
                         :32
                         - \accent
                         ]
@@ -1740,8 +1729,8 @@
                     r4
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f4
+                    \tweak Accidental.text \abjad-flat-markup
+                    bf4
                     :32
                     \ff
                     - \accent
@@ -1766,15 +1755,15 @@
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        f16
+                        b16
                         :32
                         \f
                         - \accent
                         \<
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        f4
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        bqf4
                         :32
                         \ff
                         - \accent
@@ -1814,33 +1803,34 @@
                     "Violoncello"                                              %! applying staff names and clefs
                     \clef "bass"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs4
+                    \tweak Accidental.text \abjad-flat-markup
+                    af4
                     \mp
-                    - \downbow
+                    - \baca-full-downbow
+                    ^ \markup { clt. }
                     \>
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds4
-                    - \upbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    ef4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as,4
-                    - \downbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    bf,4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    es,4
-                    - \upbow
+                    \tweak Accidental.text \abjad-natural-markup
+                    f,4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
@@ -1848,7 +1838,7 @@
                     \tweak Accidental.text \abjad-natural-markup
                     c,4
                     \p
-                    - \downbow
+                    - \baca-stop-on-string-full-downbow
 
                     r2
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1861,40 +1851,41 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        es,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        f,8
                         \mp
-                        - \upbow
+                        - \baca-full-downbow
+                        ^ \markup { ½clt. }
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        as,8
-                        - \downbow
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf,8
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds8
-                        - \upbow
+                        \tweak Accidental.text \abjad-flat-markup
+                        ef8
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        gs8
-                        - \downbow
+                        \tweak Accidental.text \abjad-flat-markup
+                        af8
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds8
-                        - \upbow
+                        \tweak Accidental.text \abjad-flat-markup
+                        ef8
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         ]
@@ -1906,23 +1897,23 @@
                         % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        as,4
-                        - \downbow
+                        \tweak Accidental.text \abjad-flat-markup
+                        bf,4
+                        - \baca-full-upbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        es,4
-                        - \upbow
+                        \tweak Accidental.text \abjad-natural-markup
+                        f,4
+                        - \baca-full-downbow
                         - \tweak style #'solid-line                            %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c,4
-                        - \downbow
+                        - \baca-stop-on-string-full-upbow
 
                     }
 
@@ -1940,35 +1931,35 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,8
                         :32
                         \f
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,16
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,16
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e,16
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        c,8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,16
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,16
                         :32
                         - \accent
                         ~
@@ -1982,21 +1973,21 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,16
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,16
                         :32
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
                         :32
                         - \accent
                         ]
@@ -2007,8 +1998,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         \ff
                         - \accent
@@ -2017,8 +2008,8 @@
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        d,8
                         :32
                         - \accent
                         ]
@@ -2038,27 +2029,27 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d,8
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        c,8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,8
                         :32
                         - \accent
                         ]
@@ -2071,8 +2062,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,8
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,8
                         :32
                         \ff
                         - \accent
@@ -2080,8 +2071,8 @@
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,8
                         :32
                         - \accent
                         ]
@@ -2095,8 +2086,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         - \accent
                         [
@@ -2108,21 +2099,21 @@
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,8
                         :32
                         - \accent
                         ]
@@ -2149,8 +2140,8 @@
                     r8.
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds,16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    cqs,16
                     :32
                     \f
                     - \accent
@@ -2158,53 +2149,27 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds,16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    cqs,16
                     \<
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e,16
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    cqs,16
                     :32
                     - \accent
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    e,16
+                    c,16
                     :32
                     - \accent
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds,16
-                    :32
-                    - \accent
-                    ~
-                    ]
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds,16
-                    [
-
-                    \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    e,16
-                    :32
-                    - \accent
-                    ~
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e,16
-
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e,16
+                    c,16
                     :32
                     - \accent
                     ~
@@ -2213,13 +2178,39 @@
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    e,16
+                    c,16
+                    [
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    cqs,16
+                    :32
+                    - \accent
+                    ~
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \one-quarter-sharp-markup
+                    cqs,16
+
+                    \revert Staff.Stem.stemlet-length
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-flat-markup
+                    df,16
+                    :32
+                    - \accent
+                    ~
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-flat-markup
+                    df,16
                     [
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
-                    e,16
+                    c,16
                     :32
                     \ff
                     - \accent
@@ -2236,8 +2227,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        e,8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         \f
                         - \accent
@@ -2245,33 +2236,33 @@
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e,8
+                        d,8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e,16
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        e,16
+                        c,16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        e,8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         - \accent
                         ]
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        e,4
+                        d,4
                         :32
                         - \accent
 
@@ -2285,55 +2276,56 @@
                     % [Voice 4 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    es,4
+                    \tweak Accidental.text \abjad-natural-markup
+                    f,4
                     \p
-                    - \upbow
+                    - \baca-full-downbow
+                    ^ \markup { norm. }
                     \<
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as,4
-                    - \downbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    bf,4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds4
-                    - \upbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    ef4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     % [Voice 4 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs4
-                    - \downbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    af4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds4
-                    - \upbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    ef4
+                    - \baca-full-downbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as,4
-                    - \downbow
+                    \tweak Accidental.text \abjad-flat-markup
+                    bf,4
+                    - \baca-full-upbow
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    es,4
+                    \tweak Accidental.text \abjad-natural-markup
+                    f,4
                     \mp
-                    - \upbow
+                    - \baca-stop-on-string-full-downbow
                     % [Voice 4 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \once \override Rest.transparent = ##t                     %! applying invisibility
@@ -2366,8 +2358,8 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \abjad-natural-markup
+                        d,8
                         :32
                         \ff
                         - \accent
@@ -2375,39 +2367,39 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d,8
+                        c,8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,16
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d,16
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs,8
+                        c,8
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d,8
+                        c,8
                         :32
                         - \accent
                         ]
@@ -2426,28 +2418,34 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
                         :32
                         \ff
                         - \accent
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,8
-                        :32
-                        - \accent
-
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs,8
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,8
                         :32
                         - \accent
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d,8
+                        c,8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,8
+                        :32
+                        - \accent
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
                         :32
                         - \accent
 
@@ -2457,16 +2455,10 @@
                         :32
                         - \accent
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,16
-                        :32
-                        - \accent
-
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        ds,8
+                        \tweak Accidental.text \one-quarter-flat-markup
+                        dqf,8
                         :32
                         - \accent
                         ]
@@ -2486,7 +2478,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        c,16
                         :32
                         \f
                         - \accent
@@ -2494,22 +2486,22 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        \tweak Accidental.text \abjad-flat-markup
+                        df,16
                         :32
                         - \accent
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural-markup
-                        d,16
+                        \tweak Accidental.text \one-quarter-sharp-markup
+                        cqs,16
                         :32
                         - \accent
                         ]
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp-markup
-                        cs,4
+                        \tweak Accidental.text \abjad-natural-markup
+                        c,4
                         :32
                         \ff
                         - \accent

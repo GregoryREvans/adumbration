@@ -14,10 +14,17 @@
                     }
                 }
             s1 * 3/4
-            ^ \markup {
+            _ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "pins for loose geographies"
+                    \column
+                        {
+                            \box
+                                \caps
+                                    Pins
+                            \caps
+                                "(for Loose Geographies)"
+                        }
                 }
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "60"

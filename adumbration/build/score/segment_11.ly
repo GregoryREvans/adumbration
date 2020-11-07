@@ -14,10 +14,17 @@
                     }
                 }
             s1 * 1
-            ^ \markup {
+            _ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "komm komm komm [komm (v)]"
+                    \column
+                        {
+                            \box
+                                \caps
+                                    "Komm Komm Komm"
+                            \caps
+                                "[Komm (v)]"
+                        }
                 }
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "115"
@@ -188,7 +195,7 @@
                     \tweak NoteHead.style #'default
                     g'2
                     \p
-                    ^ \markup { 1/2clt. \raise #0.75 \baca-circle-very-wide-markup }
+                    ^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }
 
                     r1..
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -698,7 +705,7 @@
                     \ff
                     \>
                     ~
-                    ^ \markup { 1/2clt. \raise #0.75 \baca-circle-slow-markup }
+                    ^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak NoteHead.style #'default
@@ -969,7 +976,7 @@
                     \pp
                     \<
                     ~
-                    ^ \markup { 1/2clt. \raise #0.75 \baca-circle-slow-markup }
+                    ^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }
 
                     \tweak NoteHead.style #'default
                     e''2.

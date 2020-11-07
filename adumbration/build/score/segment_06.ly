@@ -17,12 +17,14 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "(ascend to the basement)"
-                }
-            ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    "t. talked with god"
+                    \column
+                        {
+                            \box
+                                \caps
+                                    "T. Talked with God [Crocodiles (iii)]"
+                            \caps
+                                "(Ascend to the Basement)"
+                        }
                 }
             ^ \markup {
               \huge

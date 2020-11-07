@@ -76,9 +76,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "fluxes/phylums",
+                "Fluxes/Phylums",
                 direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
+            )
+            .caps()
+            .override(("font-name", "STIXGeneral Bold"))
+            .box(),
             baca.leaf(0),
         ),
         evans.call(
@@ -88,12 +91,12 @@ maker = evans.SegmentMaker(
         ),
         evans.call(
             "Voice 3",
-            evans.PitchHandler([-5], apply_all=True),
+            evans.PitchHandler([-3], apply_all=True),
             abjad.select(),
         ),
         evans.call(
             "Voice 4",
-            evans.PitchHandler([-20], apply_all=True),
+            evans.PitchHandler([-24], apply_all=True),
             abjad.select(),
         ),
         # evans.call(

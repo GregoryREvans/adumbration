@@ -70,8 +70,11 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "are we still married? [komm (iv)]",
+            abjad.Markup.column(
+                [
+                    abjad.Markup("Are We Still Married?").caps().box(),
+                    abjad.Markup("[Komm (iv)]").caps(),
+                ],
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),

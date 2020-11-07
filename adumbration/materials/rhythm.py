@@ -388,6 +388,22 @@ composite_handler_2 = evans.CompositeHandler(
 
 #### SEGMENT 14
 
+rotations = evans.CyclicList(["½clt.", "clt.", "½clt.", "norm."], forget=False)
+
+
+def full_bows(selections):
+    bowings = evans.CyclicList(["baca-full-downbow", "baca-full-upbow"], forget=False)
+    for run in abjad.select(selections).runs():
+        for tie in abjad.select(run).logical_ties()[:-1]:
+            articulation = abjad.Articulation(bowings(r=1)[0])
+            abjad.attach(articulation, tie[0])
+        mark = abjad.Markup(rotations(r=1)[0], direction=abjad.Up)
+        text = bowings(r=1)[0]
+        final = abjad.Articulation(text[:4] + "-stop-on-string" + text[4:])
+        abjad.attach(mark, abjad.select(run).logical_tie(0)[0])
+        abjad.attach(final, abjad.select(run).logical_tie(-1)[0])
+
+
 composite_handler_3 = evans.CompositeHandler(
     rhythm_handler=evans.RhythmHandler(
         abjadext.rmakers.stack(
@@ -429,16 +445,18 @@ composite_handler_3 = evans.CompositeHandler(
     ),
     attachment_handlers=[
         evans.PitchHandler(
-            [
-                -4,
-                1,
-                6,
-                11,
-                16,
-                11,
-                6,
-                1,
-            ],
+            microtones.PitchSegment(
+                [
+                    -4,
+                    1,
+                    6,
+                    11,
+                    16,
+                    11,
+                    6,
+                    1,
+                ]
+            ).transpose(4),
             forget=False,
         ),
         evans.GlissandoHandler(
@@ -447,13 +465,7 @@ composite_handler_3 = evans.CompositeHandler(
             forget=False,
             apply_to="runs",
         ),
-        evans.ArticulationHandler(
-            [
-                "downbow",
-                "upbow",
-            ],
-            forget=False,
-        ),
+        full_bows,
         evans.DynamicHandler(
             dynamic_list=["p", "mp"],
             hold_first_boolean_vector=[1, 0],
@@ -496,17 +508,14 @@ composite_handler_4 = evans.CompositeHandler(
                     microtones.PitchSegment(
                         [
                             0,
-                            "1/3",
                             "2/3",
-                            "3/3",
                             "4/3",
-                            "5/3",
                             "6/3",
-                            "7/3",
                             "8/3",
-                            "9/3",
+                            "1/2",
+                            "3/2",
                         ]
-                    ).transpose(-3),
+                    ).sorted(),
                     sequential_duplicates=False,
                 ),
             ),

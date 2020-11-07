@@ -15,9 +15,11 @@
                 }
             s1 * 3/2
             ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    "komm (i)"
+                \box
+                    \override
+                        #'(font-name . "STIXGeneral Bold")
+                        \caps
+                            "Komm (i)"
                 }
             ^ \markup {
               \huge

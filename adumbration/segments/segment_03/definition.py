@@ -364,9 +364,12 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "extinct anatomies",
+                "Extinct Anatomies",
                 direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
+            )
+            .caps()
+            .override(("font-name", "STIXGeneral Bold"))
+            .box(),
             baca.leaf(0),
         ),
     ],

@@ -151,21 +151,16 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup("1/2clt.", direction=abjad.Up),
+            abjad.Markup("½clt.", direction=abjad.Up),
             baca.leaf(0),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "[ombreggiato (ii)]",
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
-        ),
-        evans.attach(
-            "Global Context",
-            abjad.Markup(
-                "anamorphosis/calligrapher",
+            abjad.Markup.column(
+                [
+                    abjad.Markup("Anamorphosis/Calligrapher").caps().box(),
+                    abjad.Markup("[Ombreggiato (ii)]").caps(),
+                ],
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),

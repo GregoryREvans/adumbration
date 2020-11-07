@@ -35,7 +35,7 @@ tempo_handler = evans.TempoSpannerHandler(
 marks = evans.CyclicList(
     [
         abjad.LilyPondLiteral(
-            r"^ \markup { 1/2clt. \raise #0.75 \baca-circle-very-wide-markup }",
+            r"^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }",
             format_slot="after",
         ),
         abjad.LilyPondLiteral(
@@ -71,7 +71,7 @@ marks = evans.CyclicList(
             format_slot="after",
         ),
         abjad.LilyPondLiteral(
-            r"^ \markup { 1/2clt. \raise #0.75 \baca-circle-slow-markup }",
+            r"^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }",
             format_slot="after",
         ),
         abjad.LilyPondLiteral(
@@ -87,7 +87,7 @@ marks = evans.CyclicList(
             format_slot="after",
         ),
         abjad.LilyPondLiteral(
-            r"^ \markup { 1/2clt. \raise #0.75 \baca-circle-slow-markup }",
+            r"^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }",
             format_slot="after",
         ),
         abjad.LilyPondLiteral(
@@ -148,9 +148,12 @@ maker = evans.SegmentMaker(
         # ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "komm komm komm [komm (v)]",
-                direction=abjad.Up,
+            abjad.Markup.column(
+                [
+                    abjad.Markup("Komm Komm Komm").caps().box(),
+                    abjad.Markup("[Komm (v)]").caps(),
+                ],
+                direction=abjad.Down,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),

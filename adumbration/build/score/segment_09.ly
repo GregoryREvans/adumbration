@@ -17,7 +17,14 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "herzensschatzi komm [komm (iii)]"
+                    \column
+                        {
+                            \box
+                                \caps
+                                    "Herzensschatzi Komm"
+                            \caps
+                                "[Komm (iii)]"
+                        }
                 }
             ^ \markup {
               \huge
@@ -112,7 +119,7 @@
                     \p
                     \>
                     ~
-                    ^ \markup { 1/2clt. \raise #0.75 \baca-circle-very-wide-markup }
+                    ^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     g'1

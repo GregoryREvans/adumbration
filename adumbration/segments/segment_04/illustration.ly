@@ -31,9 +31,11 @@
                 }
             s1 * 1
             ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    "crocodiles (ii)"
+                \box
+                    \override
+                        #'(font-name . "STIXGeneral Bold")
+                        \caps
+                            "Crocodiles (ii)"
                 }
             ^ \markup {
               \huge

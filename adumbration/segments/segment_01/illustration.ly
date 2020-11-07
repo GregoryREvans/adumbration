@@ -30,9 +30,11 @@
                 }
             s1 * 1
             ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    ombreggiato
+                \box
+                    \override
+                        #'(font-name . "STIXGeneral Bold")
+                        \caps
+                            "Ombreggiato (i)"
                 }
             ^ \markup {
               \huge
@@ -145,7 +147,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4
                     \startTextSpanOne
@@ -180,7 +182,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4
                     \startTextSpanOne
@@ -300,7 +302,7 @@
                         }
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4
                     \startTextSpanOne
@@ -406,7 +408,7 @@
                     \<
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.2
                     \startTextSpanOne
@@ -454,7 +456,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.2
                     \startTextSpanOne
@@ -560,7 +562,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.2
                     \startTextSpanOne
@@ -632,7 +634,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.2
                     \startTextSpanOne
@@ -751,7 +753,7 @@
                     \<
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.6
                     \startTextSpanOne
@@ -788,7 +790,7 @@
                         }
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.6
                     \startTextSpanOne
@@ -868,7 +870,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #4.6
                     \startTextSpanOne
@@ -1038,7 +1040,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.9
                     \startTextSpanOne
@@ -1088,7 +1090,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.9
                     \startTextSpanOne
@@ -1218,7 +1220,7 @@
                     ~
                     - \abjad-solid-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
-                        XFB. \hspace #0.5 }
+                        XFB \hspace #0.5 }
                     - \tweak bound-details.right.padding 1.4
                     - \tweak staff-padding #5.9
                     \startTextSpanOne

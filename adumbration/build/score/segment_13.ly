@@ -15,9 +15,11 @@
                 }
             s1 * 5/4
             ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    marigolds
+                \box
+                    \override
+                        #'(font-name . "STIXGeneral Bold")
+                        \caps
+                            Marigolds
                 }
             ^ \markup {
               \huge

@@ -17,7 +17,14 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "E.H. [komm (ii)]"
+                    \column
+                        {
+                            \box
+                                \caps
+                                    E.H.
+                            \caps
+                                "[Komm (ii)]"
+                        }
                 }
             ^ \markup {
               \huge
@@ -140,7 +147,7 @@
                         \center-align
                             C♯-26
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \>
                     ~
 
@@ -233,7 +240,7 @@
                         \center-align
                             +18
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \>
                     ~
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -280,7 +287,7 @@
                         \center-align
                             -31
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \<
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -487,7 +494,7 @@
                         \center-align
                             A-26
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \>
                     ~
 
@@ -572,7 +579,7 @@
                         \center-align
                             +2
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \>
                     ~
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -614,7 +621,7 @@
                         \center-align
                             -31
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \<
                     ~
 
@@ -688,7 +695,7 @@
                         \center-align
                             E-24
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \bar "||"
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -803,7 +810,7 @@
                         \center-align
                             A♭-24
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \>
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -839,7 +846,7 @@
                         \center-align
                             +2
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \<
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -936,7 +943,7 @@
                             \center-align
                                 +37
                             }
-                        ^ \markup { 1/2clt. }
+                        ^ \markup { ½clt. }
                         \>
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1023,7 +1030,7 @@
                         \center-align
                             A♭-24
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \bar "||"
                     % [Voice 3 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1105,7 +1112,7 @@
                         \center-align
                             E-24
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \>
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1156,7 +1163,7 @@
                             \center-align
                                 +2
                             }
-                        ^ \markup { 1/2clt. }
+                        ^ \markup { ½clt. }
                         \<
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1242,7 +1249,7 @@
                         \center-align
                             +32
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \<
                     % [Voice 4 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1321,7 +1328,7 @@
                         \center-align
                             A-26
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
                     \bar "||"
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 

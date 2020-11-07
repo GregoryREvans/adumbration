@@ -33,12 +33,14 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "[ombreggiato (ii)]"
-                }
-            ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    anamorphosis/calligrapher
+                    \column
+                        {
+                            \box
+                                \caps
+                                    Anamorphosis/Calligrapher
+                            \caps
+                                "[Ombreggiato (ii)]"
+                        }
                 }
             ^ \markup {
               \huge
@@ -93,7 +95,7 @@
                         \center-align
                             +0
                         }
-                    ^ \markup { 1/2clt. }
+                    ^ \markup { ½clt. }
 
                     r4
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()

@@ -17,7 +17,14 @@
             ^ \markup {
                 \override
                     #'(font-name . "STIXGeneral Bold")
-                    "are we still married? [komm (iv)]"
+                    \column
+                        {
+                            \box
+                                \caps
+                                    "Are We Still Married?"
+                            \caps
+                                "[Komm (iv)]"
+                        }
                 }
             ^ \markup {
               \huge

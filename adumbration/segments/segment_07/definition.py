@@ -23,7 +23,7 @@ def add_markups(runs):
     cyc_marks = evans.CyclicList(
         [
             abjad.Markup(_, direction=abjad.Up)
-            for _ in ["clt.", "1/2clt.", "norm.", "1/2clt."]
+            for _ in ["clt.", "½clt.", "norm.", "½clt."]
         ],
         forget=False,
     )
@@ -84,8 +84,8 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "E.H. [komm (ii)]",
+            abjad.Markup.column(
+                [abjad.Markup("E.H.").caps().box(), abjad.Markup("[Komm (ii)]").caps()],
                 direction=abjad.Up,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),

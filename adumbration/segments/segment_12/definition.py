@@ -77,9 +77,12 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "pins for loose geographies",
-                direction=abjad.Up,
+            abjad.Markup.column(
+                [
+                    abjad.Markup("Pins").caps().box(),
+                    abjad.Markup("(for Loose Geographies)").caps(),
+                ],
+                direction=abjad.Down,
             ).override(("font-name", "STIXGeneral Bold")),
             baca.leaf(0),
         ),

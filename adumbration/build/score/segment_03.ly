@@ -15,9 +15,11 @@
                 }
             s1 * 7/8
             ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    "extinct anatomies"
+                \box
+                    \override
+                        #'(font-name . "STIXGeneral Bold")
+                        \caps
+                            "Extinct Anatomies"
                 }
             ^ \markup {
               \huge
