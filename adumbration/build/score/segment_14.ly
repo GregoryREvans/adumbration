@@ -6,7 +6,7 @@
         {
             % [Global Context measure 1]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \tempo 4=115
+            \tempo 4=153
             \time 3/4                                                          %! scaling time signatures
             \mark \markup {
                 \bold
@@ -21,6 +21,17 @@
                         \caps
                             Fluxes/Phylums
                 }
+            ^ \markup {
+              \huge
+              \concat {
+                  \abjad-metronome-mark-mixed-number-markup #2 #0 #1 #"153" #"1" #"3"
+                  \hspace #1
+                  \upright [
+                  \abjad-metric-modulation #3 #1 #2 #0 #'(0.6 . 0.6)
+                  \hspace #0.5
+                  \upright ]
+              }
+            }
             % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures

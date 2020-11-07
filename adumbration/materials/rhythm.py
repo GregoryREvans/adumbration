@@ -544,3 +544,117 @@ composite_handler_4 = evans.CompositeHandler(
         ),
     ],
 )
+
+#### SEGMENT 15
+
+
+def full_bows_without_rotations(selections):
+    bowings = evans.CyclicList(["baca-full-downbow", "baca-full-upbow"], forget=False)
+    for run in abjad.select(selections).runs():
+        for tie in abjad.select(run).logical_ties()[:-1]:
+            articulation = abjad.Articulation(bowings(r=1)[0])
+            abjad.attach(articulation, tie[0])
+        text = bowings(r=1)[0]
+        final = abjad.Articulation(text[:4] + "-stop-on-string" + text[4:])
+        abjad.attach(final, abjad.select(run).logical_tie(-1)[0])
+
+
+composite_handler_5 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [60],
+                1,
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler([20]),
+    ],
+)
+
+composite_handler_6 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [60],
+                1,
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler([7]),
+    ],
+)
+
+composite_handler_7 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [2, 2, 1, 1, 2, 1, 1, 2, 2, 1, 1, 1],
+                16,
+                preamble=[3],
+                end_counts=[4],
+                extra_counts=[0, 1, 2, 3, 2, 1],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler([9]),
+        full_bows_without_rotations,
+    ],
+)
+
+composite_handler_8 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [1],
+                4,
+                extra_counts=[
+                    0,
+                    1,
+                    3,
+                    4,
+                    2,
+                    1,
+                ],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            evans.mirror(
+                [8, 14, 20, 22, 24, 25, 26, 26.5, 27, 27.5, 28],
+                sequential_duplicates=False,
+            ),
+            forget=False,
+        ),
+        evans.GlissandoHandler(
+            line_style="solid-line",
+            boolean_vector=[1],
+            forget=False,
+            apply_to="runs",
+        ),
+    ],
+)
