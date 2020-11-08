@@ -747,7 +747,7 @@ composite_handler_10 = evans.CompositeHandler(
     ],
 )
 
-#### SEGMENT 16
+#### SEGMENT 17
 
 composite_handler_11 = evans.CompositeHandler(
     rhythm_handler=evans.RhythmHandler(
@@ -825,4 +825,36 @@ composite_handler_11 = evans.CompositeHandler(
             with_constante_hairpins=False,
         ),
     ],
+)
+
+#### SEGMENT 18
+
+infinite_durs = evans.RhythmHandler(
+    abjadext.rmakers.stack(
+        abjadext.rmakers.talea(
+            [60],
+            1,
+        ),
+        abjadext.rmakers.trivialize(abjad.select().tuplets()),
+        abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+        abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+        abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+    ),
+    forget=False,
+)
+
+#### SEGMENT 19
+
+fainting_durs = evans.RhythmHandler(
+    abjadext.rmakers.stack(
+        abjadext.rmakers.tuplet(
+            [(4, 1)],
+            1,
+        ),
+        abjadext.rmakers.trivialize(abjad.select().tuplets()),
+        abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+        abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+        abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+    ),
+    forget=False,
 )

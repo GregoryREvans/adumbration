@@ -27,6 +27,8 @@
 	\include "segment_15.ly"
 	\include "segment_16.ly"
 	\include "segment_17.ly"
+	\include "segment_18.ly"
+	\include "segment_19.ly"
 	}
 %\midi{}
 }
