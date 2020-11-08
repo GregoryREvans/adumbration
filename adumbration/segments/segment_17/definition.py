@@ -3,8 +3,6 @@ import pathlib
 import abjad
 import baca
 import evans
-import quicktions
-from abjadext import microtones
 
 from adumbration.materials.pitch import clef_handlers
 from adumbration.materials.score_structure.instruments import instruments as insts
@@ -13,6 +11,10 @@ from adumbration.materials.score_structure.segment_17.time_signatures import (
     time_signatures,
 )
 from adumbration.materials.timespans.segment_17.convert_timespans import rhythm_commands
+
+# import quicktions
+# from abjadext import microtones
+
 
 tempo_handler = evans.TempoSpannerHandler(
     tempo_list=[
