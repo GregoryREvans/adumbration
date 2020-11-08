@@ -66,7 +66,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "The Ghosts of Departed Quantities",
+                "Ghosts of Departed Quantities",
                 direction=abjad.Up,
             )
             .caps()

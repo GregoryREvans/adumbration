@@ -113,7 +113,6 @@
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
                     \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \bar ".|:"                                                 %! applying indicators
                     \clef "treble"
                     r1 * 5/8
 
@@ -200,6 +199,7 @@
                     \tweak Accidental.text \abjad-natural-markup
                     g''2.
                     \mf
+                    ^ \markup { "norm. (noise poco a poco)" }
                     ~
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -256,7 +256,6 @@
                     \markup { "vn. II" }                                       %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
-                    \bar ".|:"
                     \clef "treble"
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1028,6 +1027,7 @@
                     gs'4
                     \f
                     ^ \markup { IV. }
+                    ^ \markup { "norm. (noise poco a poco)" }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
 
@@ -1254,7 +1254,6 @@
                         \markup { va. }                                        %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
                         "Viola"                                                %! applying staff names and clefs
-                        \bar ".|:"
                         \clef "varC"
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1989,6 +1988,7 @@
                     gs8.
                     \f
                     ^ \markup { III. }
+                    ^ \markup { "norm. (noise poco a poco)" }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     [
@@ -2195,7 +2195,6 @@
                         \markup { vc. }                                        %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
                         "Violoncello"                                          %! applying staff names and clefs
-                        \bar ".|:"
                         \clef "bass"
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2969,6 +2968,7 @@
                     \tweak Accidental.text \abjad-natural-markup
                     g,2.
                     \mf
+                    ^ \markup { "norm. (noise poco a poco)" }
                     ~
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 

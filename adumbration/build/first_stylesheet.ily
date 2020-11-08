@@ -108,7 +108,7 @@
 		%{ \override GraceSpacing.spacing-increment = #2.0 %}
         %{ \override SpacingSpanner.strict-note-spacing = ##t %}
         %{ \override SpacingSpanner.uniform-stretching = ##t %}
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 17.5) (minimum-distance . 17.5) (padding . 0))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 2))
 		\override StemTremolo.beam-width = 1
 		\override StemTremolo.beam-thickness = #0.3
         \override StemTremolo.flag-count = 4
@@ -126,7 +126,7 @@
 		\override TupletNumber.font-size = #1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
-		proportionalNotationDuration = #(ly:make-moment 1 14)
+		proportionalNotationDuration = #(ly:make-moment 1 12)
         tupletFullLength = ##t
     }
 	\context {

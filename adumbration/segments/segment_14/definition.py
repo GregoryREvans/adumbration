@@ -86,6 +86,26 @@ maker = evans.SegmentMaker(
             evans.PitchHandler([-24], apply_all=True),
             abjad.select(),
         ),
+        evans.call(
+            "Voice 1",
+            clef_handlers[0],
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 2",
+            clef_handlers[1],
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 3",
+            clef_handlers[2],
+            abjad.select(),
+        ),
+        evans.call(
+            "Voice 4",
+            clef_handlers[3],
+            abjad.select(),
+        ),
         evans.attach(
             "Global Context",
             evans.metric_modulation(
@@ -96,12 +116,33 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Voice 3",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
+                format_slot="absolute_before",
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.LilyPondLiteral(
+                r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
+                format_slot="absolute_before",
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+            baca.leaf(-2),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,
-    clef_handlers=clef_handlers,
+    clef_handlers=None,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily",
@@ -111,7 +152,7 @@ maker = evans.SegmentMaker(
     cutaway=False,
     beam_pattern="meter",
     beam_rests=False,
-    barline="||",
+    barline=".|:",
     tempo=((1, 4), 153),
     rehearsal_mark="",
     page_break_counts=[90],

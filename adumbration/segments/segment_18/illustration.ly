@@ -34,7 +34,7 @@
                     \override
                         #'(font-name . "STIXGeneral Bold")
                         \caps
-                            "The Ghosts of Departed Quantities"
+                            "Ghosts of Departed Quantities"
                 }
             ^ \markup {
               \huge
