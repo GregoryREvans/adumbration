@@ -34,7 +34,7 @@
                     \override
                         #'(font-name . "STIXGeneral Bold")
                         \caps
-                            Marigolds
+                            Quipu
                 }
             ^ \markup {
               \huge

@@ -114,7 +114,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "Marigolds",
+                "Quipu",
                 direction=abjad.Up,
             )
             .caps()
