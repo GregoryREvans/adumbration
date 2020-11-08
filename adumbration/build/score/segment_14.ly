@@ -405,9 +405,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
 
-                        r8
-
-                        r8
+                        r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -469,9 +467,7 @@
                         <>
                         \f
 
-                        r8
-
-                        r16
+                        r8.
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
@@ -563,9 +559,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -633,9 +627,7 @@
                         - \accent
                         ]
 
-                        r16
-
-                        r16
+                        r8
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -816,9 +808,7 @@
                     \times 20/21 {
                         % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        r8
-
-                        r8
+                        r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         c'16
@@ -861,9 +851,7 @@
                         - \accent
                         ]
 
-                        r8
-
-                        r8
+                        r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         d'8
@@ -915,9 +903,7 @@
                         - \accent
                         ]
 
-                        r16
-
-                        r16
+                        r8
 
                         d'4
                         :32
@@ -982,9 +968,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 8) "16")
                     \times 8/11 {
 
-                        r16
-
-                        r16
+                        r8
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1037,9 +1021,7 @@
                         <>
                         \f
 
-                        r8
-
-                        r8
+                        r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         cqs'16
@@ -1089,9 +1071,7 @@
                         - \accent
                         ]
 
-                        r8
-
-                        r8
+                        r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1214,9 +1194,7 @@
                     \times 20/21 {
                         % [Voice 2 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         dqf'16
@@ -1257,9 +1235,7 @@
                         - \accent
                         ]
 
-                        r8
-
-                        r8
+                        r4
 
                         d'4
                         :32
@@ -1426,9 +1402,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
 
-                        r8
-
-                        r8
+                        r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1488,9 +1462,7 @@
                         - \accent
                         ]
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1541,9 +1513,7 @@
                         - \accent
                         ]
 
-                        r16
-
-                        r16
+                        r8
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
@@ -1665,9 +1635,7 @@
                     \times 12/13 {
                         % [Voice 3 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1745,9 +1713,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
 
-                        r8
-
-                        r8
+                        r4
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
@@ -1921,9 +1887,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
                     \times 4/5 {
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1988,9 +1952,7 @@
                         - \accent
                         ]
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2052,9 +2014,7 @@
                         <>
                         \f
 
-                        r16
-
-                        r16
+                        r8
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2114,9 +2074,9 @@
                         - \accent
                         ]
 
-                        r16
-
                         r4
+
+                        r16
 
                     }
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2348,9 +2308,7 @@
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "8")
                     \times 6/7 {
 
-                        r16
-
-                        r16
+                        r8
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2408,9 +2366,7 @@
                     \times 4/5 {
                         % [Voice 4 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        r8
-
-                        r16
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2467,9 +2423,7 @@
                     \times 4/5 {
                         % [Voice 4 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        r16
-
-                        r8
+                        r8.
 
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print

@@ -476,3 +476,13 @@ noise_pitch_handler = evans.PitchHandler(
     ],
     forget=False,
 )
+
+# segment 16
+
+baca_seq = microtones.PitchSegment(
+    [13, 14, 10, 11, 11.5, 12, 12.5, 13, 11, 13, 13.5, 14, 14.5]
+)
+baca_seq += baca_seq.transpose(3)
+baca_seq += baca_seq.invert(14).transpose(1)
+baca_seq += baca_seq.transpose(4).retrograde()
+baca_seq += baca_seq.transpose(6)

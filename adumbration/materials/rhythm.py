@@ -3,6 +3,8 @@ import abjadext.rmakers
 import evans
 from abjadext import microtones
 
+from .pitch import baca_seq
+
 silence_maker = abjadext.rmakers.stack(
     abjadext.rmakers.NoteRhythmMaker(),
     abjadext.rmakers.force_rest(abjad.select().leaves(pitched=True)),
@@ -655,6 +657,172 @@ composite_handler_8 = evans.CompositeHandler(
             boolean_vector=[1],
             forget=False,
             apply_to="runs",
+        ),
+    ],
+)
+
+#### SEGMENT 16
+
+composite_handler_9 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [1],
+                2,
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [7],
+        ),
+        evans.DynamicHandler(
+            ["f"],
+            hold_first_boolean_vector=[1],
+            hold_first_forget=False,
+            forget=False,
+            with_constante_hairpins=False,
+        ),
+        evans.ArticulationHandler(
+            ["tenuto"],
+            forget=False,
+        ),
+    ],
+)
+
+composite_handler_10 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 3, 2, 1, 1, 1],
+                16,
+                extra_counts=[
+                    0,
+                    # 1,
+                    # 0,
+                    # 1,
+                    # 1,
+                    # 3,
+                    # 0,
+                    # 3,
+                    # 2,
+                ],
+            ),
+            abjadext.rmakers.force_rest(
+                abjad.select().logical_ties().get([0, 1, 6, 8], 9),
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.ArticulationHandler(
+            [
+                "staccato",
+                "staccato",
+                "staccato",
+                "staccato",
+                "staccatissimo",
+                "staccato",
+                "staccato",
+                "staccatissimo",
+            ],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            ["mp", "mf", "f", "mp", "p", "mf"],
+            hold_first_boolean_vector=[1],
+            hold_first_forget=False,
+            forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+#### SEGMENT 16
+
+composite_handler_11 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [1, 1, 1, 2, 1, 1, 1, 2, 1, 1, 2, 3, 2, 1, 1, 1],
+                16,
+                extra_counts=[
+                    0,
+                    1,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    -1,
+                    -1,
+                    -1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    -1,
+                    0,
+                    0,
+                    -1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    -1,
+                    0,
+                    0,
+                    1,
+                ],
+            ),
+            abjadext.rmakers.force_rest(
+                abjad.select().logical_ties().get([0, 1, 6, 8], 9),
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            baca_seq,
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            ["f", "ff", "mf", "f", "mf"],
+            forget=False,
+            hold_last_boolean_vector=[1],
+            hold_last_forget=False,
+            with_constante_hairpins=False,
         ),
     ],
 )
