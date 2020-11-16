@@ -6,6 +6,7 @@ __pycache__/
 *.DS_Store
 *.midi
 *.mid
+*.scd
 
 # C extensions
 *.so

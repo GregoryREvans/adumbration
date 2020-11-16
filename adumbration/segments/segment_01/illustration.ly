@@ -325,11 +325,8 @@
                     \startTextSpanOne
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/4
-                    \stopTextSpanOne                                           %! applying indicators
-
-                    R1 * 1/4
+                    r2
+                    \stopTextSpanOne
                     \bar "||"
 
                 }
@@ -920,10 +917,7 @@
                     r2.
                     % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/4
-
-                    R1 * 1/4
+                    r2
                     \bar "||"
 
                 }
@@ -1249,11 +1243,8 @@
                     \startTextSpanOne
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/4
-                    \stopTextSpanOne                                           %! applying indicators
-
-                    R1 * 1/4
+                    r2
+                    \stopTextSpanOne
                     \bar "||"
 
                 }

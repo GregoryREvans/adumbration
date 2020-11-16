@@ -56,7 +56,6 @@
 
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
-            \break
             % [Global Context measure 3]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures
@@ -77,7 +76,6 @@
                   \upright ]
               }
             }
-            \break
             % [Global Context measure 5]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures
@@ -86,11 +84,6 @@
 
             \time 3/4                                                          %! scaling time signatures
             s1 * 3/4
-            % [Global Context measure 7]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 3/16                                                         %! scaling time signatures
-            s1 * 3/16
 
         }
 
@@ -109,23 +102,16 @@
                     \markup { "vn. I" }                                        %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r2
@@ -144,19 +130,6 @@
                     g'2.
                     \pp
                     \bar "||"
-                    % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.uverylongfermata"                        %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -189,10 +162,7 @@
                     r4
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     g'1
@@ -208,24 +178,8 @@
                     r4
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     \bar "||"
-                    % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.uverylongfermata"                        %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -244,55 +198,26 @@
                     \markup { va. }                                            %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Viola"                                                    %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "varC"
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     \bar "||"
-                    % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.uverylongfermata"                        %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -311,55 +236,26 @@
                     \markup { vc. }                                            %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violoncello"                                              %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "bass"
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     \bar "||"
-                    % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.uverylongfermata"                        %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }

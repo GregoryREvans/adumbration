@@ -168,12 +168,12 @@
                     f'16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     c''16
                     )
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
                     \bar "||"
 
                 }
@@ -193,12 +193,9 @@
                     \markup { "vn. II" }                                       %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    r1 * 3/8
-                    \stopTextSpanOne                                           %! applying indicators
-
-                    R1 * 3/8
+                    r2.
+                    \stopTextSpanOne
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 11 8) "16")
                     \times 8/11 {
@@ -253,12 +250,12 @@
                     bf'16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     fs'16
                     )
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
                     \once \override Staff.TupletBracket.direction = #UP
 
                     \tweak text #tuplet-number::calc-fraction-text

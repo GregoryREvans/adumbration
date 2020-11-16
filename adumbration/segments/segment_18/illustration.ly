@@ -83,37 +83,53 @@
                     ~
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <a' c'''>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <a' cs'''>8
                     \sfp
                     \<
                     ~
+                    ]
 
                     <a' cs'''>2
                     ~
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <a' cs'''>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <a' ctqs'''>8
                     \sfp
                     \<
                     ~
+                    ]
 
                     <a' ctqs'''>2.
                     \bar "||"
@@ -152,23 +168,31 @@
                     \<
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <e' b'>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <e' c''>8
                     \sfp
                     \<
                     ~
+                    ]
 
                     <e' c''>4
                     ~
@@ -176,11 +200,15 @@
                     <e' c''>4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <e' c''>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
                     \bar "||"
 
                 }
@@ -206,37 +234,53 @@
                     \<
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <fs d'>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <fs ds'>8
                     \sfp
                     \<
                     ~
+                    ]
 
                     <fs ds'>4
                     ~
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <fs ds'>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <fs dtqs'>8
                     \sfp
                     \<
                     ~
+                    ]
 
                     <fs dtqs'>2
                     <>
@@ -275,38 +319,54 @@
                     \<
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <d, a,>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <d, a,>8
                     \sfp
                     \<
                     ~
+                    ]
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     <d, a,>2.
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <d, a,>8
+                    [
                     <>
                     \ff
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     <d, c>8
                     \sfp
                     \<
                     ~
+                    ]
 
                     <d, c>2
                     ~

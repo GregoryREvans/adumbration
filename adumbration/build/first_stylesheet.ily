@@ -109,6 +109,7 @@
         %{ \override SpacingSpanner.strict-note-spacing = ##t %}
         %{ \override SpacingSpanner.uniform-stretching = ##t %}
         \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 2))
+		\override Stem.stemlet-length = #1.15
 		\override StemTremolo.beam-width = 1
 		\override StemTremolo.beam-thickness = #0.3
         \override StemTremolo.flag-count = 4
@@ -126,7 +127,7 @@
 		\override TupletNumber.font-size = #1
         \override TupletNumber.text = #tuplet-number::calc-fraction-text
 		autoBeaming = ##f
-		proportionalNotationDuration = #(ly:make-moment 1 12)
+		proportionalNotationDuration = #(ly:make-moment 2 25)
         tupletFullLength = ##t
     }
 	\context {

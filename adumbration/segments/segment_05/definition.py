@@ -251,6 +251,46 @@ maker = evans.SegmentMaker(
             .box(),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartHairpin("<"),
+            baca.leaf(0, pitched=True),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StopHairpin(),
+            baca.leaf(-1, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartHairpin("<"),
+            baca.leaf(0, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopHairpin(),
+            baca.leaf(-1, pitched=True),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartHairpin("<"),
+            baca.leaf(0, pitched=True),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StopHairpin(),
+            baca.leaf(-1, pitched=True),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartHairpin("<"),
+            baca.leaf(0, pitched=True),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StopHairpin(),
+            baca.leaf(-1, pitched=True),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,
@@ -265,7 +305,8 @@ maker = evans.SegmentMaker(
     current_directory=pathlib.Path(__file__).resolve().parent,
     cutaway=False,
     beam_pattern="meter",
-    beam_rests=False,
+    beam_rests=True,
+    mm_rests=False,
     barline="||",
     tempo=((1, 4), 76),
     rehearsal_mark="",
@@ -273,3 +314,4 @@ maker = evans.SegmentMaker(
 )
 
 maker.build_segment()
+# maker._make_sc_file()

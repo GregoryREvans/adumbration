@@ -412,6 +412,7 @@ maker = evans.SegmentMaker(
     cutaway=False,
     beam_pattern="meter",
     beam_rests=False,
+    mm_rests=False,
     barline="||",
     tempo=((1, 4), 115),
     rehearsal_mark="",
@@ -420,3 +421,4 @@ maker = evans.SegmentMaker(
 )
 
 maker.build_segment()
+# maker._make_sc_file()

@@ -109,11 +109,10 @@
                     \markup { "vn. I" }                                        %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \clef "treble"                                             %! applying indicators
-                    r1 * 5/8
+                    \clef "treble"
+                    r2.
 
-                    R1 * 5/8
+                    r2
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
                     \times 2/3 {
@@ -344,16 +343,10 @@
                     r2
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/4
-
-                    R1 * 3/4
+                    r1.
                     % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r1
@@ -429,16 +422,10 @@
                     }
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     \bar "||"
                     % [Voice 1 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -471,11 +458,10 @@
                     \markup { "vn. II" }                                       %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \clef "treble"                                             %! applying indicators
-                    r1 * 5/8
+                    \clef "treble"
+                    r2.
 
-                    R1 * 5/8
+                    r2
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 14 9) "4")
@@ -504,10 +490,7 @@
                     }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 7) "4")
@@ -736,10 +719,7 @@
                     r2.
                     % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/4
-
-                    R1 * 3/4
+                    r1.
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -1087,10 +1067,7 @@
                     r2.
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/4
-
-                    R1 * 3/4
+                    r1.
                     % [Voice 3 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4

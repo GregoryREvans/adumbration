@@ -79,12 +79,11 @@
                     \markup { "vn. I" }                                        %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \clef "treble"                                             %! applying indicators
-                    r1 * 5/8
-                    \ff                                                        %! applying indicators
+                    \clef "treble"
+                    r2.
+                    \ff
 
-                    R1 * 5/8
+                    r2
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     gtqs4.
@@ -118,11 +117,8 @@
                     \startTextSpan
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-                    \stopTextSpan                                              %! applying indicators
-
-                    R1 * 1/2
+                    r1
+                    \stopTextSpan
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     gtqs4
@@ -137,10 +133,14 @@
                     - \tweak staff-padding #2
                     \startTextSpan
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     gtqs8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \stopTextSpan
+                    ]
 
                     r2.
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -180,10 +180,14 @@
                     gtqs4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     gtqs8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \stopTextSpan
+                    ]
                     % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
@@ -235,10 +239,14 @@
                     r4.
                     \stopTextSpan
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     g8
                     ~
+                    ]
                     - \abjad-dashed-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
@@ -270,11 +278,10 @@
                     \startTextSpan
                     % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
-                    \stopTextSpan                                              %! applying indicators
+                    r2.
+                    \stopTextSpan
 
-                    R1 * 5/8
+                    r2
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     <g d'>4.
@@ -307,10 +314,14 @@
                     - \tweak staff-padding #2
                     \startTextSpan
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     g8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \stopTextSpan
+                    ]
 
                     r2
                     % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -371,10 +382,14 @@
                     r4
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     gqs8
                     ~
+                    ]
                     - \abjad-dashed-line-with-arrow
                     - \tweak bound-details.left.text \markup \concat { \upright
                         noise \hspace #0.5 }
@@ -405,11 +420,10 @@
                     \startTextSpan
                     % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
-                    \stopTextSpan                                              %! applying indicators
+                    r2.
+                    \stopTextSpan
 
-                    R1 * 5/8
+                    r2
                     % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     gqs4.

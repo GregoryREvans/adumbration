@@ -153,235 +153,235 @@
                     "Violin I"                                                 %! applying staff names and clefs
                     \clef "treble"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    c''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            -2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    c''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            -2
                         }
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    c''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            -2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    c''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            -2
                         }
                     % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
 
                     r2
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    c''2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            -2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    c''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            -2
                         }
                     % [Voice 1 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r8
-
                     \override Staff.Stem.stemlet-length = 0.75
+                    r8
+                    [
+
                     cs''16
                     \mp
                     - \staccato
-                    [
 
                     \revert Staff.Stem.stemlet-length
                     d''16
@@ -396,84 +396,93 @@
                     bf'16
                     - \staccato
 
-                    \revert Staff.Stem.stemlet-length
                     b'16
                     - \staccato
+
+                    \revert Staff.Stem.stemlet-length
+                    r16
                     ]
 
-                    r16
-
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
-                    % [Voice 1 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r8.
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 1 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    bqs'16
-                    \mf
-                    - \staccatissimo
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8.
+                        [
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    c''8
-                    - \staccato
-                    [
+                        bqs'16
+                        \mf
+                        - \staccato
 
-                    \revert Staff.Stem.stemlet-length
-                    cqs''8
-                    - \staccato
-                    ]
+                        c''8
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        cqs''8.
+                        - \staccato
+                        ]
+
+                    }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \abjad-natural 
+                    d''2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +2
                         }
                     % [Voice 1 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    bf'2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    gf''2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +16
+                            +29
                         }
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     r8.
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     cs''16
                     \f
-                    - \staccatissimo
+                    - \staccato
+                    ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     b'16
@@ -483,12 +492,12 @@
                     cs''16
                     - \staccato
 
-                    \revert Staff.Stem.stemlet-length
                     dqf''16
                     - \staccato
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r16
+                    ]
                     \bar "||"
 
                 }
@@ -510,360 +519,375 @@
                     "Violin II"                                                %! applying staff names and clefs
                     \clef "treble"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
                     % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            -2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            -2
+                            +16
                         }
                     % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            -2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            -2
+                            +16
                         }
                     % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
                     % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
                     % [Voice 2 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    gf''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +29
+                            +16
                         }
 
-                    r8.
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
 
-                    cs''16
-                    \mp
-                    - \staccato
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8.
+                        [
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    d''16
-                    - \staccatissimo
-                    [
+                        cs''16
+                        \mp
+                        - \staccato
 
-                    bf'16
-                    - \staccato
+                        d''16
+                        - \staccato
 
-                    \revert Staff.Stem.stemlet-length
-                    b'8
-                    - \staccato
-                    ]
+                        bf'8
+                        - \staccato
+
+                        b'16
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        r16
+                        ]
+
+                    }
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            -2
+                            +16
                         }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            -2
+                            +16
                         }
                     % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2
-
-                    r8
-
-                    bqs'8
-                    \p
-                    - \staccatissimo
+                    r2.
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    c''8.
-                    - \staccato
+                    r16
                     [
 
+                    bqs'16
+                    \p
+                    - \staccato
+                    ~
+
+                    bqs'16
+
                     \revert Staff.Stem.stemlet-length
-                    cqs''16
+                    c''16
                     - \staccato
                     ]
                     % [Voice 2 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    cqs''2
                     \f
                     - \tenuto
-                    ^ \markup {
-                        \center-align
-                            +2
-                        }
 
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    d''2
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +2
+                            +16
                         }
-                    % [Voice 2 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r8
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 2 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8
+                        [
+
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        ef'16
+                        \mf
+                        - \staccato
+                        ^ \markup {
+                            \center-align
+                                +16
+                            }
+
+                        cs''16
+                        - \staccato
+
+                        b'16
+                        - \staccato
+
+                        cs''8
+                        - \staccato
+
+                        r16
+
+                        \revert Staff.Stem.stemlet-length
+                        dqf''16
+                        \mp
+                        - \staccato
+                        ]
+
+                    }
+
+                    r4
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cs''16
+                    d''16
                     \mf
                     - \staccato
                     [
 
-                    \revert Staff.Stem.stemlet-length
-                    b'16
-                    - \staccato
-                    ]
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    cs''16
-                    - \staccatissimo
-                    [
-
-                    \revert Staff.Stem.stemlet-length
-                    dqf''16
-                    - \staccato
-                    ]
-
-                    r16
-
-                    d''16
-                    \mp
+                    dqs''16
                     - \staccato
                     ~
 
-                    d''16
+                    dqs''16
 
-                    r8.
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    dqs''8
-                    \mf
-                    - \staccatissimo
-                    [
-
+                    \revert Staff.Stem.stemlet-length
                     e''16
                     - \staccato
-
-                    \revert Staff.Stem.stemlet-length
-                    f''16
-                    - \staccato
+                    ~
                     ]
-                    % [Voice 2 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    cs''8
-                    - \staccato
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 2 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r8
+                        \override Staff.Stem.stemlet-length = 0.75
+                        e''8
+                        [
 
-                    r16
+                        f''8
+                        - \staccato
+
+                        r16
+
+                        cs''16
+                        \f
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        r8.
+                        ]
+
+                    }
 
                     \override Staff.Stem.stemlet-length = 0.75
                     d''16
-                    \f
+                    \mp
+                    - \staccato
+                    [
+
+                    dqs''16
                     - \staccato
                     ~
-                    [
 
-                    \revert Staff.Stem.stemlet-length
-                    d''16
-                    ]
-
-                    r16
-
-                    r8
-
-                    \override Staff.Stem.stemlet-length = 0.75
                     dqs''16
-                    \mp
-                    - \staccatissimo
-                    [
 
                     \revert Staff.Stem.stemlet-length
                     ef''16
@@ -875,15 +899,13 @@
                     - \staccato
                     [
 
-                    e''16
-                    - \staccatissimo
-                    ~
+                    r16
 
                     \revert Staff.Stem.stemlet-length
-                    e''16
+                    e''8
+                    \p
+                    - \staccato
                     ]
-
-                    r16
                     \bar "||"
 
                 }
@@ -1117,36 +1139,58 @@
                             +14
                         }
 
-                    r8
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
 
-                    cs''8
-                    \p
-                    - \staccato
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8
+                        [
+
+                        cs''8
+                        \mf
+                        - \staccato
+
+                        d''8.
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        bf'8
+                        - \staccato
+                        ]
+
+                    }
+                    % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    d''16
+                    b'16
                     - \staccato
                     [
 
-                    bf'16
+                    r16
+
+                    bqs'16
+                    \mp
                     - \staccato
 
                     \revert Staff.Stem.stemlet-length
-                    b'8
-                    - \staccato
+                    r16
                     ]
-                    % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r8.
+                    \override Staff.Stem.stemlet-length = 0.75
+                    r8
+                    [
 
-                    bqs'16
+                    \revert Staff.Stem.stemlet-length
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \natural-one-syntonic-comma-down 
+                    e8
                     \mf
-                    - \staccatissimo
-                    ~
-
-                    bqs'16
-
-                    r8.
+                    - \staccato
+                    ^ \markup {
+                        \center-align
+                            -14
+                        }
+                    ]
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-down 
@@ -1159,103 +1203,113 @@
                         }
                     % [Voice 3 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \natural-one-syntonic-comma-down 
-                    b2
+                    c''2
                     - \tenuto
-                    ^ \markup {
-                        \center-align
-                            -14
-                        }
 
-                    r8
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8
+                        [
+
+                        cqs''16
+                        \f
+                        - \staccato
+
+                        cs''8
+                        - \staccato
+
+                        b'16
+                        - \staccato
+
+                        cs''16
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        r8
+                        ]
+
+                    }
+                    % [Voice 3 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    c''16
+                    dqf''8.
                     \mp
                     - \staccato
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    cqs''16
-                    - \staccato
-                    ~
+                    r16
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    cqs''16
+                    r8.
                     [
 
-                    cs''16
-                    - \staccatissimo
-
                     \revert Staff.Stem.stemlet-length
-                    b'16
-                    - \staccato
-                    ]
-
-                    r16
-                    % [Voice 3 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    cs''8
-                    \mf
-                    - \staccato
-
-                    r8
-
-                    r8
-
-                    dqf''8
-                    - \staccato
-
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    ef'2
-                    \f
-                    - \tenuto
+                    af16
+                    \p
+                    - \staccato
                     ^ \markup {
                         \center-align
                             +14
                         }
-                    % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r8.
-
-                    d''16
-                    \mp
-                    - \staccato
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    dqs''16
-                    - \staccatissimo
-                    [
-
-                    e''16
-                    - \staccato
-
-                    \revert Staff.Stem.stemlet-length
-                    f''16
-                    - \staccato
                     ]
 
-                    r16
+                    d''2
+                    \f
+                    - \tenuto
 
-                    cs''16
-                    \p
-                    - \staccatissimo
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 3 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r8.
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8
+                        [
 
-                    r16
+                        dqs''16
+                        \mf
+                        - \staccato
+
+                        e''8
+                        - \staccato
+
+                        f''16
+                        - \staccato
+
+                        cs''16
+                        - \staccato
+
+                        r16
+
+                        \revert Staff.Stem.stemlet-length
+                        d''16
+                        \mp
+                        - \staccato
+                        ~
+                        ]
+
+                    }
 
                     \override Staff.Stem.stemlet-length = 0.75
                     d''16
-                    \mf
-                    - \staccato
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    dqs''8
+                    r8.
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    r16
+                    [
+
+                    \revert Staff.Stem.stemlet-length
+                    dqs''8.
+                    \mf
                     - \staccato
                     ]
                     \bar "||"
@@ -1440,85 +1494,102 @@
                             +0
                         }
 
-                    r8
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
 
-                    \clef "treble"
-                    cs''8
-                    \mp
-                    - \staccato
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r8.
+                        [
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    d''8.
-                    - \staccato
-                    [
+                        \clef "treble"
+                        cs''16
+                        \f
+                        - \staccato
 
-                    \revert Staff.Stem.stemlet-length
-                    bf'16
-                    - \staccatissimo
-                    ]
+                        d''16
+                        - \staccato
+
+                        bf'16
+                        - \staccato
+
+                        \clef "bass"
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural 
+                        c,16
+                        - \staccato
+                        ^ \markup {
+                            \center-align
+                                +0
+                            }
+
+                        r16
+
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        ff,16
+                        \mp
+                        - \staccato
+                        ^ \markup {
+                            \center-align
+                                +27
+                            }
+                        ]
+
+                    }
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \clef "bass"
                     \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    g,2
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    cf2
                     \f
                     - \tenuto
                     ^ \markup {
                         \center-align
-                            +0
-                        }
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    cf2
-                    - \tenuto
-                    ^ \markup {
-                        \center-align
                             +27
                         }
-                    % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-two-syntonic-comma-up 
-                    cf2
-                    - \tenuto
-                    ^ \markup {
-                        \center-align
-                            +27
-                        }
-
-                    r8
 
                     \clef "treble"
+                    b'2
+                    - \tenuto
+                    % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    bqs'2
+                    - \tenuto
+
                     \override Staff.Stem.stemlet-length = 0.75
-                    b'16
-                    \mf
-                    - \staccato
+                    r8
                     [
 
-                    \revert Staff.Stem.stemlet-length
-                    bqs'16
-                    - \staccato
-                    ]
-
-                    \override Staff.Stem.stemlet-length = 0.75
                     c''16
-                    - \staccatissimo
-                    [
+                    \p
+                    - \staccato
 
                     \revert Staff.Stem.stemlet-length
                     cqs''16
                     - \staccato
                     ]
 
-                    r16
-
-                    cs''16
+                    \override Staff.Stem.stemlet-length = 0.75
+                    cs''8
                     - \staccato
-                    % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    [
 
                     \clef "bass"
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural 
+                    c,16
+                    - \staccato
+                    ^ \markup {
+                        \center-align
+                            +0
+                        }
+
+                    \revert Staff.Stem.stemlet-length
+                    r16
+                    ]
+                    % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2
@@ -1529,41 +1600,33 @@
                             +0
                         }
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    g,2
-                    - \tenuto
-                    ^ \markup {
-                        \center-align
-                            +0
-                        }
-                    % [Voice 4 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r8
-
                     \clef "treble"
-                    \override Staff.Stem.stemlet-length = 0.75
-                    b'16
-                    \mp
-                    - \staccato
-                    [
+                    b'2
+                    - \tenuto
 
-                    \revert Staff.Stem.stemlet-length
-                    cs''16
-                    - \staccato
-                    ]
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 4 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    dqf''8
-                    - \staccatissimo
-                    [
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r4
+                        [
 
-                    \revert Staff.Stem.stemlet-length
-                    d''16
-                    - \staccato
-                    ]
+                        r16
 
-                    r16
+                        cs''8
+                        \mf
+                        - \staccato
+
+                        dqf''16
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        d''16
+                        - \staccato
+                        ]
+
+                    }
 
                     \clef "bass"
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1586,103 +1649,128 @@
                             +0
                         }
 
-                    r4
-
-                    r16
+                    \override Staff.Stem.stemlet-length = 0.75
+                    r8
+                    [
 
                     \clef "treble"
-                    \override Staff.Stem.stemlet-length = 0.75
                     dqs''16
-                    \p
+                    \mp
                     - \staccato
-                    ~
-                    [
-
-                    dqs''16
 
                     \revert Staff.Stem.stemlet-length
                     e''16
-                    - \staccatissimo
+                    - \staccato
                     ]
-                    % [Voice 4 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    f''16
+                    f''8
                     - \staccato
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     cs''16
                     - \staccato
+
+                    \revert Staff.Stem.stemlet-length
+                    r16
                     ]
 
-                    r16
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 4 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    d''16
-                    \mf
-                    - \staccato
+                        \override Staff.Stem.stemlet-length = 0.75
+                        d''16
+                        \mf
+                        - \staccato
+                        [
 
-                    r4
+                        r4
+
+                        dqs''8
+                        \f
+                        - \staccato
+
+                        \revert Staff.Stem.stemlet-length
+                        ef''8
+                        - \staccato
+                        ~
+                        ]
+
+                    }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    dqs''16
-                    \mp
-                    - \staccato
-                    [
-
                     ef''16
-                    - \staccatissimo
-
-                    \revert Staff.Stem.stemlet-length
-                    eqf''8
-                    - \staccato
-                    ]
-
-                    e''16
-                    - \staccato
-
-                    r16
-
-                    d''8
-                    \mf
-                    - \staccatissimo
-                    % [Voice 4 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    r8
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    e''16
-                    \f
-                    - \staccato
                     [
 
-                    \revert Staff.Stem.stemlet-length
-                    eqs''16
+                    eqf''16
                     - \staccato
-                    ]
-
-                    \override Staff.Stem.stemlet-length = 0.75
-                    f''16
-                    - \staccato
-                    [
-
-                    \revert Staff.Stem.stemlet-length
-                    fqs''16
-                    - \staccato
-                    ]
-
-                    r16
-
-                    e''16
-                    \mp
-                    - \staccatissimo
                     ~
 
-                    e''16
+                    eqf''16
 
-                    r8.
+                    \revert Staff.Stem.stemlet-length
+                    e''16
+                    - \staccato
+                    ]
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    r16
+                    [
+
+                    d''16
+                    \mp
+                    - \staccato
+
+                    \revert Staff.Stem.stemlet-length
+                    r8
+                    ]
+
+                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
+                    \times 8/9 {
+                        % [Voice 4 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \override Staff.Stem.stemlet-length = 0.75
+                        r16
+                        [
+
+                        e''8
+                        \p
+                        - \staccato
+
+                        eqs''16
+                        - \staccato
+
+                        f''16
+                        - \staccato
+
+                        fqs''16
+                        - \staccato
+
+                        r8
+
+                        \revert Staff.Stem.stemlet-length
+                        e''16
+                        \mf
+                        - \staccato
+                        ]
+
+                    }
+
+                    r4
+
+                    \override Staff.Stem.stemlet-length = 0.75
+                    r8
+                    [
+
+                    \clef "bass"
+                    \revert Staff.Stem.stemlet-length
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural-markup
+                    c,8
+                    \mp
+                    - \staccato
+                    ]
                     \bar "||"
 
                 }

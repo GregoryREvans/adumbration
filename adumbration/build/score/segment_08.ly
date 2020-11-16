@@ -42,7 +42,6 @@
 
             \time 2/4                                                          %! scaling time signatures
             s1 * 1/2
-            \break
             % [Global Context measure 3]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures
@@ -85,10 +84,7 @@
                     r4
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/4
-
-                    R1 * 1/4
+                    r2
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -139,12 +135,9 @@
                     \markup { "vn. II" }                                       %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    \bar ".|:"                                                 %! applying indicators
+                    \bar ".|:"
                     \clef "treble"
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -239,10 +232,7 @@
                     r4
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     \bar ":|."
                     % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -325,10 +315,7 @@
                     ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     \bar ":|."
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 

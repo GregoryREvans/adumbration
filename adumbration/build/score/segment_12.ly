@@ -62,7 +62,6 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            \break
             % [Global Context measure 6]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
@@ -112,12 +111,6 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 13]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \once \override TimeSignature.color = #white                       %! applying ending skips
-            \time 3/16                                                         %! scaling time signatures
-            s1 * 3/16
-            \bacaStopTextSpanMM
 
         }
 
@@ -136,11 +129,8 @@
                     \markup { "vn. I" }                                        %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "4")
@@ -159,78 +149,43 @@
                     }
                     % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 9/8
+                    r1.
 
-                    R1 * 9/8
+                    r2.
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 7/8
-
-                    R1 * 7/8
+                    r1..
                     % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 9/8
+                    r1.
 
-                    R1 * 9/8
+                    r2.
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     \bar "||"
-                    % [Voice 1 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -290,34 +245,23 @@
                     \f
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 7/8
-
-                    R1 * 7/8
+                    r1..
                     % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 9/8
+                    r1.
 
-                    R1 * 9/8
+                    r2.
                     % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 2 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     r4
@@ -336,10 +280,14 @@
 
 
                     \tweak NoteHead.style #'harmonic-mixed
+                    \override Staff.Stem.stemlet-length = 0.75
                     af'8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \!
+                    ]
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
                     \times 4/5 {
@@ -361,30 +309,17 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
-                        \revert Staff.Stem.stemlet-length
                         aqf'16
-                        ]
 
+                        \revert Staff.Stem.stemlet-length
                         r8
                         \!
+                        ]
 
                     }
 
                     r2.
                     \bar "||"
-                    % [Voice 2 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -403,23 +338,16 @@
                     \markup { va. }                                            %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Viola"                                                    %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "varC"
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
@@ -441,10 +369,14 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
+                        \override Staff.Stem.stemlet-length = 0.75
                         gqf'8
+                        [
 
+                        \revert Staff.Stem.stemlet-length
                         r8
                         \!
+                        ]
 
                         \tweak NoteHead.style #'default
                         f'4.
@@ -526,20 +458,16 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
-                        \revert Staff.Stem.stemlet-length
                         f'16.
-                        ]
 
                         r16.
                         \!
 
                         \tweak NoteHead.style #'default
-                        \override Staff.Stem.stemlet-length = 0.75
                         fqs'8.
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
-                        [
 
                                         - \tweak arrow-length #2
                                         - \tweak arrow-width #0.5
@@ -549,44 +477,33 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
-                        \revert Staff.Stem.stemlet-length
                         af'16.
-                        ]
 
+                        \revert Staff.Stem.stemlet-length
                         r16.
                         \!
+                        ]
 
                     }
                     % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 7/8
-
-                    R1 * 7/8
+                    r1..
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 3 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 9/8
+                    r1.
 
-                    R1 * 9/8
+                    r2.
                     % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 3 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "2")
                     \times 2/3 {
@@ -615,19 +532,6 @@
                         \bar "||"
 
                     }
-                    % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }
@@ -646,47 +550,32 @@
                     \markup { vc. }                                            %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violoncello"                                              %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 5/8
+                    r2.
 
-                    R1 * 5/8
+                    r2
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 9/8
+                    r1.
 
-                    R1 * 9/8
+                    r2.
                     % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 7/8
-
-                    R1 * 7/8
+                    r1..
                     % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak NoteHead.style #'default
@@ -710,42 +599,19 @@
                     \!
                     % [Voice 4 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 9/8
+                    r1.
 
-                    R1 * 9/8
+                    r2.
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
-                    r1 * 1/2
-
-                    R1 * 1/2
+                    r1
                     \bar "||"
-                    % [Voice 4 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ushortfermata"                           %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
 
                 }
                 }

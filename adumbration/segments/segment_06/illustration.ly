@@ -1397,11 +1397,8 @@
                     \markup { "vn. II" }                                       %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin II"                                                %! applying staff names and clefs
-                    \once \override Rest.transparent = ##t                     %! applying invisibility
                     \clef "treble"
-                    r1 * 3/8
-
-                    R1 * 3/8
+                    r2.
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     d'2
@@ -1444,10 +1441,14 @@
                     ~
                     % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     f'8
                     \p
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "16")
@@ -1510,10 +1511,14 @@
                     a'8
                     ]
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     a'8
                     \fff
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1558,10 +1563,14 @@
                     ~
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     f'8
                     \f
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     af'16
@@ -1593,12 +1602,12 @@
                     f'16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     bf'16
                     \ff
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
 
@@ -1876,12 +1885,12 @@
                     g''16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     b'16
                     \p
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
@@ -1947,12 +1956,12 @@
                     bf'16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     b'16
                     \f
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 2 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2206,12 +2215,12 @@
                     af''16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     g''16
                     \f
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
@@ -2255,10 +2264,14 @@
                     e'4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     e'8
                     \p
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 2 measure 26]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2303,10 +2316,14 @@
                     ~
                     % [Voice 2 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     a'8
                     \f
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     ef''16
@@ -2338,12 +2355,12 @@
                     bf''16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     af''16
                     \mp
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
 
@@ -3395,12 +3412,12 @@
                     cs'16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     fs'16
                     \f
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
                     \bar "||"
 
                 }
@@ -3489,10 +3506,14 @@
                     }
                     % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     ef8
                     \fff
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     a16
@@ -3524,12 +3545,12 @@
                     e16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     cs'16
                     \f
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -3564,12 +3585,12 @@
                     af16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     c'16
                     \mp
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -3608,10 +3629,14 @@
                     fs,2.
                     % [Voice 4 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     a,8
                     \f
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
@@ -3911,12 +3936,12 @@
                     bf16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     ef'16
                     \mf
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "8")
@@ -4224,12 +4249,12 @@
                     bf'16
                     [
 
-                    \revert Staff.Stem.stemlet-length
                     c''16
                     \mf
-                    ]
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 5) "8")
@@ -4451,10 +4476,14 @@
                     }
                     % [Voice 4 measure 27]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     e8
                     \fff
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "16")
@@ -4519,10 +4548,14 @@
                     b,8
                     ]
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     b,8
                     \fff
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     r4
                     % [Voice 4 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -4567,10 +4600,14 @@
                     ~
                     % [Voice 4 measure 33]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     g,8
                     \p
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
+                    ]
 
                     \tweak text #tuplet-number::calc-fraction-text
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 7 6) "8")

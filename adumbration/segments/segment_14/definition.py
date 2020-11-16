@@ -132,11 +132,11 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(0),
         ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-            baca.leaf(-2),
-        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+        #     baca.leaf(-2),
+        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,
@@ -152,6 +152,7 @@ maker = evans.SegmentMaker(
     cutaway=False,
     beam_pattern="meter",
     beam_rests=False,
+    mm_rests=False,
     barline=".|:",
     tempo=((1, 4), 153),
     rehearsal_mark="",
@@ -160,3 +161,4 @@ maker = evans.SegmentMaker(
 )
 
 maker.build_segment()
+# maker._make_sc_file()

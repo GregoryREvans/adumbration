@@ -114,6 +114,8 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("mp"),
             baca.leaf(13, pitched=True),
         ),
+        evans.attach("Voice 3", abjad.StopBeam(), baca.leaf(4, pitched=True)),
+        evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(5, pitched=True)),
         # evans.attach(
         #     "Global Context",
         #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
@@ -124,7 +126,7 @@ maker = evans.SegmentMaker(
     time_signatures=time_signatures,
     clef_handlers=clef_handlers,
     tuplet_bracket_noteheads=False,
-    add_final_grand_pause=True,
+    add_final_grand_pause=False,
     score_includes=[
         "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily",
         "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily",
@@ -133,7 +135,8 @@ maker = evans.SegmentMaker(
     current_directory=pathlib.Path(__file__).resolve().parent,
     cutaway=False,
     beam_pattern="meter",
-    beam_rests=False,
+    beam_rests=True,
+    mm_rests=False,
     barline="||",
     tempo=((1, 4), 115),
     rehearsal_mark="",
@@ -142,3 +145,4 @@ maker = evans.SegmentMaker(
 )
 
 maker.build_segment()
+# maker._make_sc_file()

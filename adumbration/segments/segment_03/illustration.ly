@@ -117,6 +117,7 @@
                     >4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \natural-one-syntonic-comma-down 
@@ -125,9 +126,12 @@
                         \tweak Accidental.text \abjad-flat 
                         ef'''
                     >8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \ff
+                    ]
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     <
@@ -332,6 +336,7 @@
                     >4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat 
@@ -340,9 +345,12 @@
                         \tweak Accidental.text \one-tridecimal-third-tone-down 
                         c''
                     >8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \ff
+                    ]
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     <
@@ -552,6 +560,7 @@
                     >4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat 
@@ -560,9 +569,12 @@
                         \tweak Accidental.text \natural-one-syntonic-comma-down 
                         g'
                     >8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \ff
+                    ]
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -755,6 +767,7 @@
                     >4
                     ~
 
+                    \override Staff.Stem.stemlet-length = 0.75
                     <
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat 
@@ -763,9 +776,12 @@
                         \tweak Accidental.text \abjad-flat 
                         ef
                     >8
+                    [
 
+                    \revert Staff.Stem.stemlet-length
                     r8
                     \ff
+                    ]
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print

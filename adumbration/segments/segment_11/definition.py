@@ -194,11 +194,15 @@ maker = evans.SegmentMaker(
             tempo_handler,
             abjad.select().leaves().get([13, 14, 15, 16, 17, 18]),
         ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-            baca.leaf(-3),
-        ),
+        evans.attach("Voice 2", abjad.StopBeam(), baca.leaf(18, pitched=True)),
+        evans.detach("Voice 2", abjad.StopBeam(), baca.leaf(19, pitched=True)),
+        evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(11, pitched=True)),
+        evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(21)),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
+        #     baca.leaf(-3),
+        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,
@@ -213,7 +217,8 @@ maker = evans.SegmentMaker(
     current_directory=pathlib.Path(__file__).resolve().parent,
     cutaway=False,
     beam_pattern="meter",
-    beam_rests=False,
+    beam_rests=True,
+    mm_rests=False,
     barline="||",
     tempo=((1, 4), 115),
     rehearsal_mark="",
@@ -227,3 +232,4 @@ maker.build_segment()
 # work on tempi
 # remove redundant
 # accel spanners!
+# maker._make_sc_file()

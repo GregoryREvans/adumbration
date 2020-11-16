@@ -112,6 +112,116 @@ maker = evans.SegmentMaker(
         evans.call("Voice 4", clefs[3], abjad.select()),
         evans.call("Global Context", tempo_handler, baca.leaves().get([1, 2])),
         evans.call("Global Context", tempo_handler, baca.leaves().get([4, 5])),
+        evans.attach(
+            "Voice 1",
+            abjad.StopBeam(),
+            baca.leaf(9),
+        ),
+        evans.detach(
+            "Voice 1",
+            abjad.StopBeam(),
+            baca.leaf(11),
+        ),
+        evans.detach(
+            "Voice 1",
+            abjad.StartBeam(),
+            baca.leaf(14),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartBeam(),
+            baca.leaf(15),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StopBeam(),
+            baca.leaf(28),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartBeam(),
+            baca.leaf(30),
+        ),
+        evans.detach(
+            "Voice 1",
+            abjad.StartBeam(),
+            baca.leaf(45),
+        ),
+        evans.detach(
+            "Voice 1",
+            abjad.StopBeam(),
+            baca.leaf(46),
+        ),
+        evans.detach(
+            "Voice 1",
+            abjad.StartBeam(),
+            baca.leaf(52),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.StartBeam(),
+            baca.leaf(53),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StopBeam(),
+            baca.leaf(15),
+        ),
+        evans.detach(
+            "Voice 2",
+            abjad.StopBeam(),
+            baca.leaf(16),
+        ),
+        evans.detach(
+            "Voice 2",
+            abjad.StartBeam(),
+            baca.leaf(49),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.StartBeam(),
+            baca.leaf(51),
+        ),
+        evans.detach(
+            "Voice 3",
+            abjad.StartBeam(),
+            baca.leaf(30),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartBeam(),
+            baca.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StopBeam(),
+            baca.leaf(14),
+        ),
+        evans.detach(
+            "Voice 4",
+            abjad.StopBeam(),
+            baca.leaf(15),
+        ),
+        evans.detach(
+            "Voice 4",
+            abjad.StartBeam(),
+            baca.leaf(17),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartBeam(),
+            baca.leaf(18),
+        ),
+        evans.detach(
+            "Voice 4",
+            abjad.StartBeam(),
+            baca.leaf(32),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.StartBeam(),
+            baca.leaf(34),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,
@@ -126,7 +236,8 @@ maker = evans.SegmentMaker(
     current_directory=pathlib.Path(__file__).resolve().parent,
     cutaway=False,
     beam_pattern="meter",
-    beam_rests=False,
+    beam_rests=True,
+    mm_rests=False,
     barline="||",
     tempo=((1, 4), 153),
     rehearsal_mark="",
@@ -135,3 +246,4 @@ maker = evans.SegmentMaker(
 )
 
 maker.build_segment()
+# maker._make_sc_file()

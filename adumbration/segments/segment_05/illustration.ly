@@ -108,6 +108,7 @@
                                             \small
                                                 "cresc. a m.28 (ff)"
                         }
+                    \<
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -192,6 +193,7 @@
                     \tweak Accidental.text \one-septimal-comma-down 
                     g''2
                     :32
+                    \!
                     \bar "||"
 
                 }
@@ -241,6 +243,7 @@
                                             \small
                                                 "cresc. a m.28 (ff)"
                         }
+                    \<
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -332,6 +335,7 @@
                     \tweak Accidental.text \one-tridecimal-third-tone-down 
                     e''2
                     :32
+                    \!
                     \bar "||"
 
                 }
@@ -374,6 +378,7 @@
                                             \small
                                                 "cresc. a m.28 (ff)"
                         }
+                    \<
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -472,6 +477,7 @@
                         }
                     cs'2
                     :32
+                    \!
                     \bar "||"
 
                 }
@@ -514,6 +520,7 @@
                                             \small
                                                 "cresc. a m.28 (ff)"
                         }
+                    \<
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -619,6 +626,7 @@
                     \tweak Accidental.text \abjad-natural 
                     g,2
                     :32
+                    \!
                     \bar "||"
 
                 }

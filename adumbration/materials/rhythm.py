@@ -703,14 +703,7 @@ composite_handler_10 = evans.CompositeHandler(
                 16,
                 extra_counts=[
                     0,
-                    # 1,
-                    # 0,
-                    # 1,
-                    # 1,
-                    # 3,
-                    # 0,
-                    # 3,
-                    # 2,
+                    1,
                 ],
             ),
             abjadext.rmakers.force_rest(
@@ -727,13 +720,6 @@ composite_handler_10 = evans.CompositeHandler(
         evans.ArticulationHandler(
             [
                 "staccato",
-                "staccato",
-                "staccato",
-                "staccato",
-                "staccatissimo",
-                "staccato",
-                "staccato",
-                "staccatissimo",
             ],
             forget=False,
         ),
