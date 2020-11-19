@@ -144,11 +144,18 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 4",
             evans.ClefHandler(
-                clef="treble",
+                allowable_clefs=["bass", "treble"],
+                clef="bass",
+                clef_shelf=12,
                 add_extended_clefs=True,
                 add_ottavas=True,
             ),
             abjad.select(),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Clef("bass"),
+            baca.leaf(5, pitched=True),
         ),
         evans.call(
             "Voice 3",

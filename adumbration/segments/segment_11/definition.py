@@ -192,11 +192,11 @@ maker = evans.SegmentMaker(
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([13, 14, 15, 16, 17, 18]),
+            abjad.select().leaves().get([13, 14, 15, 16, 17]),
         ),
         evans.attach("Voice 2", abjad.StopBeam(), baca.leaf(18, pitched=True)),
         evans.detach("Voice 2", abjad.StopBeam(), baca.leaf(19, pitched=True)),
-        evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(11, pitched=True)),
+        evans.detach("Voice 3", abjad.StartBeam(), baca.leaf(11, pitched=True)),
         evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(21)),
         # evans.attach(
         #     "Global Context",

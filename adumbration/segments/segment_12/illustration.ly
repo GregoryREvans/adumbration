@@ -105,12 +105,19 @@
 
             \time 3/4                                                          %! scaling time signatures
             s1 * 3/4
+            - \abjad-dashed-line-with-arrow
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
+            - \tweak padding #0.2
+            - \tweak staff-padding #0.2
+            - \tweak font-size #2
+            \bacaStartTextSpanMM
             % [Global Context measure 11]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
             s1 * 3/4
-            - \abjad-dashed-line-with-arrow
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "120"
+            \bacaStopTextSpanMM
+            - \abjad-invisible-line
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "60"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
@@ -120,12 +127,6 @@
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
             \bacaStopTextSpanMM
-            - \abjad-invisible-line
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "60"
-            - \tweak padding #0.2
-            - \tweak staff-padding #0.2
-            - \tweak font-size #2
-            \bacaStartTextSpanMM
 
         }
 

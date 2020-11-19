@@ -143,10 +143,6 @@
 
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
-            % [Global Context measure 19]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 3/4                                                          %! scaling time signatures
-            s1 * 3/4
             \bacaStopTextSpanMM
             - \abjad-invisible-line
             - \baca-metronome-mark-spanner-left-text 2 0 1 "75"
@@ -154,12 +150,16 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
+            % [Global Context measure 19]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 3/4                                                          %! scaling time signatures
+            s1 * 3/4
+            \bacaStopTextSpanMM
             % [Global Context measure 20]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \once \override TimeSignature.color = #white                       %! applying ending skips
             \time 3/16                                                         %! scaling time signatures
             s1 * 3/16
-            \bacaStopTextSpanMM
 
         }
 
@@ -758,7 +758,6 @@
                         \tweak NoteHead.style #'harmonic-mixed
                         \override Staff.Stem.stemlet-length = 0.75
                         gqf'8
-                        [
 
                         \revert Staff.Stem.stemlet-length
                         r4

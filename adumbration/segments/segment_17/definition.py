@@ -88,14 +88,14 @@ maker = evans.SegmentMaker(
             .box(),
             baca.leaf(0),
         ),
-        evans.attach(
-            "Global Context",
-            abjad.LilyPondLiteral(
-                r"\bacaStopTextSpanMM",
-                format_slot="after",
-            ),
-            baca.leaf(0),
-        ),
+        # evans.attach(
+        #     "Global Context",
+        #     abjad.LilyPondLiteral(
+        #         r"\bacaStopTextSpanMM",
+        #         format_slot="after",
+        #     ),
+        #     baca.leaf(0),
+        # ),
         evans.attach(
             "Global Context",
             evans.metric_modulation(
@@ -185,12 +185,12 @@ maker = evans.SegmentMaker(
         evans.detach(
             "Voice 3",
             abjad.StartBeam(),
-            baca.leaf(30),
+            baca.leaf(36),
         ),
         evans.attach(
             "Voice 3",
             abjad.StartBeam(),
-            baca.leaf(32),
+            baca.leaf(37),
         ),
         evans.attach(
             "Voice 4",

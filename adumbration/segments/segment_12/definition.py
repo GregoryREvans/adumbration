@@ -95,7 +95,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([10, 11]),
+            abjad.select().leaves().get([9, 10]),
         ),
         evans.attach(
             "Voice 1",

@@ -844,3 +844,300 @@ fainting_durs = evans.RhythmHandler(
     ),
     forget=False,
 )
+
+#### SEGMENT 20
+
+vn_1_interim_1 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [
+                    3,
+                    1,
+                    2,
+                    1,
+                    2,
+                    2,
+                    3,
+                    2,
+                    3,
+                    2,
+                    1,
+                ],
+                4,
+                extra_counts=[
+                    0,
+                    1,
+                    -1,
+                    0,
+                    1,
+                    1,
+                ],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [-2],
+            forget=False,
+        ),
+    ],
+)
+
+vn_2_interim_1 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [
+                    1,
+                    2,
+                    2,
+                    3,
+                    2,
+                    3,
+                    2,
+                    1,
+                    3,
+                    1,
+                    2,
+                ],
+                4,
+                extra_counts=[
+                    -1,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1,
+                ],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [-1.5],
+            forget=False,
+        ),
+    ],
+)
+
+va_interim_1 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [
+                    2,
+                    3,
+                    2,
+                    3,
+                    2,
+                    1,
+                    3,
+                    1,
+                    2,
+                    1,
+                    2,
+                ],
+                4,
+                extra_counts=[
+                    1,
+                    1,
+                    0,
+                    1,
+                    -1,
+                    0,
+                ],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [-1],
+            forget=False,
+        ),
+    ],
+)
+
+vc_interim_1 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [
+                    3,
+                    2,
+                    1,
+                    3,
+                    1,
+                    2,
+                    1,
+                    2,
+                    2,
+                    3,
+                    2,
+                ],
+                4,
+                extra_counts=[
+                    1,
+                    0,
+                    1,
+                    -1,
+                    0,
+                    1,
+                ],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [-0.5],
+            forget=False,
+        ),
+    ],
+)
+
+vn_1_interim_2 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.note(),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [16],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            ["ff"],
+            forget=False,
+            hold_first_boolean_vector=[1],
+            hold_first_forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+vn_2_interim_2 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.note(),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [9],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            ["ff"],
+            forget=False,
+            hold_first_boolean_vector=[1],
+            hold_first_forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+va_interim_2 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.note(),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [2],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            ["ff"],
+            forget=False,
+            hold_first_boolean_vector=[1],
+            hold_first_forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+vc_interim_2 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.note(),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            [-17],
+            forget=False,
+        ),
+        evans.DynamicHandler(
+            ["ff"],
+            forget=False,
+            hold_first_boolean_vector=[1],
+            hold_first_forget=False,
+            with_constante_hairpins=False,
+        ),
+    ],
+)
+
+interim_3 = evans.CompositeHandler(
+    rhythm_handler=evans.RhythmHandler(
+        abjadext.rmakers.stack(
+            abjadext.rmakers.talea(
+                [100],
+                1,
+                extra_counts=[0],
+            ),
+            abjadext.rmakers.trivialize(abjad.select().tuplets()),
+            abjadext.rmakers.extract_trivial(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_rest_filled(abjad.select().tuplets()),
+            abjadext.rmakers.rewrite_sustained(abjad.select().tuplets()),
+        ),
+        forget=False,
+    ),
+    attachment_handlers=[
+        evans.PitchHandler(
+            ["b,"],
+            forget=False,
+        ),
+    ],
+)

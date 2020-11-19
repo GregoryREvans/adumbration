@@ -36,7 +36,6 @@
                         \caps
                             Samudra
                 }
-            \bacaStopTextSpanMM
             ^ \markup {
               \huge
               \concat {
@@ -750,13 +749,13 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         gqs''16
                         \mf
+                        [
 
                         r4
 
                         g''16
                         \f
                         \>
-                        [
 
                         gqf''8
 
@@ -772,11 +771,11 @@
 
                     \override Staff.Stem.stemlet-length = 0.75
                     r4
-                    [
 
                     f''16
                     \f
                     \<
+                    [
 
                     \revert Staff.Stem.stemlet-length
                     a''16

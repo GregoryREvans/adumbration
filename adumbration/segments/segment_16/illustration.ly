@@ -127,17 +127,13 @@
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
             \bacaStopTextSpanMM
-            % [Global Context measure 15]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 4/4                                                          %! scaling time signatures
-            s1 * 1
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 16]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 15]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
@@ -148,6 +144,11 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
+            % [Global Context measure 16]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 4/4                                                          %! scaling time signatures
+            s1 * 1
+            \bacaStopTextSpanMM
 
         }
 
@@ -799,9 +800,15 @@
                     ]
                     % [Voice 2 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    cqs''2
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \flat-one-syntonic-comma-up 
+                    bf'2
                     \f
                     - \tenuto
+                    ^ \markup {
+                        \center-align
+                            +16
+                        }
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \flat-one-syntonic-comma-up 
@@ -820,15 +827,9 @@
                         r8
                         [
 
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
-                        ef'16
+                        cqs''16
                         \mf
                         - \staccato
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
 
                         cs''16
                         - \staccato
@@ -1196,15 +1197,9 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \natural-one-syntonic-comma-down 
-                    e8
+                    c''8
                     \mf
                     - \staccato
-                    ^ \markup {
-                        \center-align
-                            -14
-                        }
                     ]
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1218,8 +1213,12 @@
                         }
                     % [Voice 3 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    c''2
+                    cqs''2
                     - \tenuto
+                    ^ \markup {
+                        \center-align
+                            -14
+                        }
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
@@ -1228,17 +1227,17 @@
                         r8
                         [
 
-                        cqs''16
+                        cs''16
                         \f
                         - \staccato
 
-                        cs''8
-                        - \staccato
-
-                        b'16
+                        b'8
                         - \staccato
 
                         cs''16
+                        - \staccato
+
+                        dqf''16
                         - \staccato
 
                         \revert Staff.Stem.stemlet-length
@@ -1249,7 +1248,7 @@
                     % [Voice 3 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    dqf''8.
+                    d''8.
                     \mp
                     - \staccato
                     [
@@ -1263,20 +1262,18 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \flat-one-syntonic-comma-up 
-                    af16
+                    dqs''16
                     \p
                     - \staccato
+                    ]
+
+                    e''2
+                    \f
+                    - \tenuto
                     ^ \markup {
                         \center-align
                             +14
                         }
-                    ]
-
-                    d''2
-                    \f
-                    - \tenuto
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
@@ -1286,23 +1283,23 @@
                         r8
                         [
 
-                        dqs''16
+                        f''16
                         \mf
                         - \staccato
 
-                        e''8
+                        cs''8
                         - \staccato
 
-                        f''16
+                        d''16
                         - \staccato
 
-                        cs''16
+                        dqs''16
                         - \staccato
 
                         r16
 
                         \revert Staff.Stem.stemlet-length
-                        d''16
+                        ef''16
                         \mp
                         - \staccato
                         ~
@@ -1311,7 +1308,7 @@
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    d''16
+                    ef''16
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -1323,7 +1320,7 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    dqs''8.
+                    eqf''8.
                     \mf
                     - \staccato
                     ]
@@ -1527,55 +1524,55 @@
                         bf'16
                         - \staccato
 
-                        \clef "bass"
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
-                        c,16
+                        b'16
                         - \staccato
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
 
                         r16
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
-                        ff,16
+                        bqs'16
                         \mp
                         - \staccato
-                        ^ \markup {
-                            \center-align
-                                +27
-                            }
                         ]
 
                     }
                     % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \clef "bass"
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural 
+                    g,2
+                    \f
+                    - \tenuto
+                    ^ \markup {
+                        \center-align
+                            +0
+                        }
+
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \flat-two-syntonic-comma-up 
                     cf2
-                    \f
+                    - \tenuto
+                    ^ \markup {
+                        \center-align
+                            +27
+                        }
+                    % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \flat-two-syntonic-comma-up 
+                    cf2
                     - \tenuto
                     ^ \markup {
                         \center-align
                             +27
                         }
 
-                    \clef "treble"
-                    b'2
-                    - \tenuto
-                    % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    bqs'2
-                    - \tenuto
-
                     \override Staff.Stem.stemlet-length = 0.75
                     r8
                     [
 
+                    \clef "treble"
                     c''16
                     \p
                     - \staccato
@@ -1590,21 +1587,15 @@
                     - \staccato
                     [
 
-                    \clef "bass"
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural 
-                    c,16
+                    b'16
                     - \staccato
-                    ^ \markup {
-                        \center-align
-                            +0
-                        }
 
                     \revert Staff.Stem.stemlet-length
                     r16
                     ]
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \clef "bass"
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     g,2
@@ -1615,9 +1606,14 @@
                             +0
                         }
 
-                    \clef "treble"
-                    b'2
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \abjad-natural 
+                    g,2
                     - \tenuto
+                    ^ \markup {
+                        \center-align
+                            +0
+                        }
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                     \times 8/9 {
@@ -1625,10 +1621,11 @@
 
                         \override Staff.Stem.stemlet-length = 0.75
                         r4
-                        [
 
                         r16
+                        [
 
+                        \clef "treble"
                         cs''8
                         \mf
                         - \staccato
@@ -1698,13 +1695,13 @@
                         d''16
                         \mf
                         - \staccato
-                        [
 
                         r4
 
                         dqs''8
                         \f
                         - \staccato
+                        [
 
                         \revert Staff.Stem.stemlet-length
                         ef''8
@@ -1778,11 +1775,8 @@
                     r8
                     [
 
-                    \clef "bass"
                     \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c,8
+                    ef''8
                     \mp
                     - \staccato
                     ]

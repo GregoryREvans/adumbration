@@ -1222,7 +1222,7 @@
                             \context Voice = "Voice 4"
                             {
 
-                                \clef "treble"
+                                \clef "bass"
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 cs'2.
                                 \f
@@ -1319,6 +1319,7 @@
                         r2
 
                         \ottava 1
+                        \clef "treble"
                         af'''2
                         \mp
                         - \tenuto
@@ -1351,6 +1352,7 @@
 
                     \scaleDurations #'(1 . 1) {
 
+                        \clef "bass"
                         ef'2.
                         \mf
                         - \bendAfter #'-3.5

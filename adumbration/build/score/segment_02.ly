@@ -378,7 +378,6 @@
 
                         \revert Staff.Stem.stemlet-length
                         af'16
-                        )
                         ]
 
                     }
