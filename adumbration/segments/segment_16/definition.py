@@ -73,6 +73,11 @@ maker = evans.SegmentMaker(
             .box(),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="before"),
+            baca.leaf(10),
+        ),
         evans.call(
             "Voice 1",
             evans.PitchHandler([0], apply_all=True, apply_all_spelling="sharp"),
@@ -501,6 +506,16 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             baca.leaf(-9, pitched=True),
         ),
+        evans.detach(
+            "Voice 3",
+            abjad.StartBeam(),
+            baca.leaf(30),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartBeam(),
+            baca.leaf(32),
+        ),
         evans.detach("Voice 4", abjad.StartBeam(), baca.leaf(35)),
         evans.attach("Voice 4", abjad.StartBeam(), baca.leaf(36)),
         evans.detach("Voice 4", abjad.StartBeam(), baca.leaf(48)),
@@ -517,7 +532,7 @@ maker = evans.SegmentMaker(
         ),
         evans.call("Global Context", tempo_handler, baca.leaves().get([8, 9])),
         evans.call("Global Context", tempo_handler, baca.leaves().get([11, 12])),
-        evans.call("Global Context", tempo_handler, baca.leaves().get([13, 14])),
+        evans.call("Global Context", tempo_handler, baca.leaves().get([14, 15])),
     ],
     score_template=score,
     time_signatures=time_signatures,

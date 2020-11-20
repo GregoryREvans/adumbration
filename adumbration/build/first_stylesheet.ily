@@ -1,7 +1,7 @@
 \version "2.19.84"
 \language "english"
 #(set-default-paper-size "letterportrait")
-#(set-global-staff-size 13)
+#(set-global-staff-size 12) % was 13. Try 12.5?
 \include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
 \include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
 \include "/Users/evansdsg2/baca/lilypond/baca.ily"
@@ -108,7 +108,7 @@
 		%{ \override GraceSpacing.spacing-increment = #2.0 %}
         %{ \override SpacingSpanner.strict-note-spacing = ##t %}
         %{ \override SpacingSpanner.uniform-stretching = ##t %}
-        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 15) (minimum-distance . 15) (padding . 2))
+        \override StaffGrouper.staff-staff-spacing = #'((basic-distance . 14) (minimum-distance . 14) (padding . 2))
 		\override Stem.stemlet-length = #1.15
 		\override StemTremolo.beam-width = 1
 		\override StemTremolo.beam-thickness = #0.3

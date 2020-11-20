@@ -78,6 +78,11 @@ maker = evans.SegmentMaker(
             baca.leaf(0),
         ),
         evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="before"),
+            baca.leaf(2),
+        ),
+        evans.attach(
             "Voice 1",
             abjad.Markup("ord.", direction=abjad.Up),
             baca.leaf(0),

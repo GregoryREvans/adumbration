@@ -38,6 +38,7 @@
             s1 * 1/2
             % [Global Context measure 3]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+            \break
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
             % [Global Context measure 4]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()

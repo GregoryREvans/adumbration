@@ -61,16 +61,16 @@ head_handler = evans.NoteheadHandler(
 def attach_clicks(selections):
     cyc_clicks = evans.CyclicList(
         [
-            "XSB.(c.2 clicks per second)",
-            "XSB.(c.3 clicks/s)",
-            "XSB.(c.4)",
-            "XSB.(c.5)",
-            "XSB.(c.6)",
-            "XSB.(c.7)",
-            "XSB.(c.8)",
+            "XSB(c.2 clicks per second)",
+            "XSB(c.3 clicks/s)",
+            "XSB(c.4)",
+            "XSB(c.5)",
+            "XSB(c.6)",
+            "XSB(c.7)",
+            "XSB(c.8)",
             "slow bow",
             "norm.",
-            "quais noise",
+            "quasi noise",
         ],
         forget=False,
     )
@@ -198,6 +198,19 @@ maker = evans.SegmentMaker(
             .override(("font-name", "STIXGeneral Bold"))
             .box(),
             baca.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(
+                r"\bacaStopTextSpanMM",
+                format_slot="after",
+            ),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Global Context",
+            abjad.LilyPondLiteral(r"\break", format_slot="before"),
+            baca.leaf(30),
         ),
         evans.attach("Global Context", mark_60, baca.leaf(0)),
         evans.attach("Global Context", mark_120, baca.leaf(3)),

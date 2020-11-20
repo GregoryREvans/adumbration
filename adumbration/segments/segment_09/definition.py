@@ -102,7 +102,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.LilyPondLiteral(
-                r"^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }",
+                r"^ \markup { \raise #0.75 \baca-circle-very-wide-markup }",
                 format_slot="after",
             ),
             baca.leaf(0, pitched=True),

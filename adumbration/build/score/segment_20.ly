@@ -21,6 +21,7 @@
                         \caps
                             "Yellow Light in Fog"
                 }
+            \bacaStopTextSpanMM
             ^ \markup {
               \huge
               \concat {
@@ -180,6 +181,7 @@
             s1 * 3/4
             % [Global Context measure 31]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+            \break
             \time 5/8                                                          %! scaling time signatures
             s1 * 5/8
             % [Global Context measure 32]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -881,7 +883,7 @@
                         \center-align
                             -31
                         }
-                    ^ \markup { "XSB.(c.2 clicks per second)" }
+                    ^ \markup { "XSB(c.2 clicks per second)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -893,14 +895,14 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''1
-                    ^ \markup { "XSB.(c.3 clicks/s)" }
+                    ^ \markup { "XSB(c.3 clicks/s)" }
                     ~
                     % [Voice 1 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB.(c.4) }
+                    ^ \markup { XSB(c.4) }
                     ~
                     % [Voice 1 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -918,7 +920,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB.(c.5) }
+                    ^ \markup { XSB(c.5) }
                     ~
                     % [Voice 1 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -936,7 +938,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB.(c.6) }
+                    ^ \markup { XSB(c.6) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -954,7 +956,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB.(c.7) }
+                    ^ \markup { XSB(c.7) }
                     ~
                     % [Voice 1 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -978,7 +980,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''4.
-                    ^ \markup { XSB.(c.8) }
+                    ^ \markup { XSB(c.8) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1015,7 +1017,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''4.
-                    ^ \markup { "quais noise" }
+                    ^ \markup { "quasi noise" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1757,7 +1759,7 @@
                         \center-align
                             -14
                         }
-                    ^ \markup { "XSB.(c.2 clicks per second)" }
+                    ^ \markup { "XSB(c.2 clicks per second)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1769,14 +1771,14 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''1
-                    ^ \markup { "XSB.(c.3 clicks/s)" }
+                    ^ \markup { "XSB(c.3 clicks/s)" }
                     ~
                     % [Voice 2 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB.(c.4) }
+                    ^ \markup { XSB(c.4) }
                     ~
                     % [Voice 2 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1794,7 +1796,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB.(c.5) }
+                    ^ \markup { XSB(c.5) }
                     ~
                     % [Voice 2 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1812,7 +1814,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB.(c.6) }
+                    ^ \markup { XSB(c.6) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1830,7 +1832,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB.(c.7) }
+                    ^ \markup { XSB(c.7) }
                     ~
                     % [Voice 2 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1854,7 +1856,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''4.
-                    ^ \markup { XSB.(c.8) }
+                    ^ \markup { XSB(c.8) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1891,7 +1893,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''4.
-                    ^ \markup { "quais noise" }
+                    ^ \markup { "quasi noise" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2628,7 +2630,7 @@
                         \center-align
                             +2
                         }
-                    ^ \markup { "XSB.(c.2 clicks per second)" }
+                    ^ \markup { "XSB(c.2 clicks per second)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2640,14 +2642,14 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'1
-                    ^ \markup { "XSB.(c.3 clicks/s)" }
+                    ^ \markup { "XSB(c.3 clicks/s)" }
                     ~
                     % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB.(c.4) }
+                    ^ \markup { XSB(c.4) }
                     ~
                     % [Voice 3 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2665,7 +2667,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB.(c.5) }
+                    ^ \markup { XSB(c.5) }
                     ~
                     % [Voice 3 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2683,7 +2685,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB.(c.6) }
+                    ^ \markup { XSB(c.6) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2701,7 +2703,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB.(c.7) }
+                    ^ \markup { XSB(c.7) }
                     ~
                     % [Voice 3 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2725,7 +2727,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'4.
-                    ^ \markup { XSB.(c.8) }
+                    ^ \markup { XSB(c.8) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2762,7 +2764,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'4.
-                    ^ \markup { "quais noise" }
+                    ^ \markup { "quasi noise" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3501,7 +3503,7 @@
                         \center-align
                             +0
                         }
-                    ^ \markup { "XSB.(c.2 clicks per second)" }
+                    ^ \markup { "XSB(c.2 clicks per second)" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3513,14 +3515,14 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,1
-                    ^ \markup { "XSB.(c.3 clicks/s)" }
+                    ^ \markup { "XSB(c.3 clicks/s)" }
                     ~
                     % [Voice 4 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB.(c.4) }
+                    ^ \markup { XSB(c.4) }
                     ~
                     % [Voice 4 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -3538,7 +3540,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB.(c.5) }
+                    ^ \markup { XSB(c.5) }
                     ~
                     % [Voice 4 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -3556,7 +3558,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB.(c.6) }
+                    ^ \markup { XSB(c.6) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3574,7 +3576,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB.(c.7) }
+                    ^ \markup { XSB(c.7) }
                     ~
                     % [Voice 4 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -3598,7 +3600,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,4.
-                    ^ \markup { XSB.(c.8) }
+                    ^ \markup { XSB(c.8) }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3635,7 +3637,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,4.
-                    ^ \markup { "quais noise" }
+                    ^ \markup { "quasi noise" }
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print

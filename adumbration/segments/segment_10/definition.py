@@ -116,11 +116,6 @@ maker = evans.SegmentMaker(
         ),
         evans.attach("Voice 3", abjad.StopBeam(), baca.leaf(4, pitched=True)),
         evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(5, pitched=True)),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-        #     baca.leaf(3),
-        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -98,6 +98,7 @@
             \bacaStartTextSpanMM
             % [Global Context measure 11]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+            \break
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
             \bacaStopTextSpanMM
@@ -127,13 +128,17 @@
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
             \bacaStopTextSpanMM
+            % [Global Context measure 15]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 4/4                                                          %! scaling time signatures
+            s1 * 1
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 15]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 16]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
@@ -144,11 +149,6 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 16]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 4/4                                                          %! scaling time signatures
-            s1 * 1
-            \bacaStopTextSpanMM
 
         }
 
@@ -1201,6 +1201,7 @@
                     \mf
                     - \staccato
                     ]
+                    [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \natural-one-syntonic-comma-down 

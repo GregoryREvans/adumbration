@@ -87,24 +87,24 @@ maker = evans.SegmentMaker(
             baca.leaf(0),
         ),
         evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([0, 2])
+            "Global Context", tempo_handler, abjad.select().leaves().get([3, 4])
         ),
         evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([4, 6])
+            "Global Context", tempo_handler, abjad.select().leaves().get([7, 8])
         ),
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([9, 10]),
+            abjad.select().leaves().get([10, 11]),
         ),
-        evans.attach(
-            "Voice 1",
-            abjad.LilyPondLiteral(
-                r"^ \markup { finger percussion }",
-                format_slot="after",
-            ),
-            baca.leaf(0, pitched=True),
-        ),
+        # evans.attach(
+        #     "Voice 1",
+        #     abjad.LilyPondLiteral(
+        #         r"^ \markup { finger percussion }",
+        #         format_slot="after",
+        #     ),
+        #     baca.leaf(0, pitched=True),
+        # ),
         evans.attach(
             "Voice 2",
             abjad.LilyPondLiteral(
@@ -112,6 +112,14 @@ maker = evans.SegmentMaker(
                 format_slot="after",
             ),
             baca.leaf(0, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.LilyPondLiteral(
+                r"^ \markup { slow bow }",
+                format_slot="after",
+            ),
+            baca.leaf(-4, pitched=True),
         ),
         evans.attach(
             "Voice 3",
@@ -129,11 +137,6 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(0, pitched=True),
         ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-        #     baca.leaf(5),
-        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,

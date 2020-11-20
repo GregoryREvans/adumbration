@@ -187,29 +187,10 @@ maker = evans.SegmentMaker(
             remove_ottava,
             baca.leaf(13),
         ),
-        # evans.call(
-        #     "Global Context", tempo_handler, abjad.select().leaves().get([0, 2]),
-        # ),
-        # evans.call(
-        #     "Global Context", tempo_handler, abjad.select().leaves().get([4, 6]),
-        # ),
-        # evans.call(
-        #     "Global Context",
-        #     tempo_handler,
-        #     abjad.select().leaves().get([10, 11]),
-        # ),
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "(c.3 clicks)",
-                direction=abjad.Up,
-            ),
-            baca.leaf(6, pitched=True),
-        ),
-        evans.attach(
-            "Voice 1",
-            abjad.Markup(
-                "XSB",
+                "XSB(c.3)",
                 direction=abjad.Up,
             ),
             baca.leaf(6, pitched=True),
@@ -233,7 +214,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB(c.11)",
+                "XSB(c.9)",
                 direction=abjad.Up,
             ),
             baca.leaf(12, pitched=True),
@@ -246,7 +227,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB(c.3 clicks)",
+                "XSB(c.3)",
                 direction=abjad.Up,
             ),
             baca.leaf(7, pitched=True),
@@ -254,7 +235,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB(c.8)",
+                "XSB(c.5)",
                 direction=abjad.Up,
             ),
             baca.leaf(9, pitched=True),
@@ -262,7 +243,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB(c.11)",
+                "XSB(c.7)",
                 direction=abjad.Up,
             ),
             baca.leaf(12, pitched=True),
@@ -270,7 +251,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.5 clicks)",
+                "XSB(c.3)",
                 direction=abjad.Up,
             ),
             baca.leaf(0, pitched=True),
@@ -278,7 +259,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.6)",
+                "XSB(c.5)",
                 direction=abjad.Up,
             ),
             baca.leaf(3, pitched=True),
@@ -302,7 +283,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.10)",
+                "slow bow",
                 direction=abjad.Up,
             ),
             baca.leaf(15, pitched=True),
@@ -310,7 +291,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.5 clicks)",
+                "XSB(c.3)",
                 direction=abjad.Up,
             ),
             baca.leaf(5, pitched=True),
@@ -318,7 +299,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.8)",
+                "XSB(c.4)",
                 direction=abjad.Up,
             ),
             baca.leaf(6, pitched=True),
@@ -326,7 +307,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.11)",
+                "XSB(c.7)",
                 direction=abjad.Up,
             ),
             baca.leaf(8, pitched=True),
@@ -334,7 +315,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.12)",
+                "XSB(c.9)",
                 direction=abjad.Up,
             ),
             baca.leaf(10, pitched=True),
@@ -342,7 +323,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.13)",
+                "slow bow",
                 direction=abjad.Up,
             ),
             baca.leaf(12, pitched=True),

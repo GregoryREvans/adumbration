@@ -41,24 +41,20 @@
                                 "[Komm (v)]"
                         }
                 }
+            % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 3/4                                                          %! scaling time signatures
+            s1 * 3/4
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "115"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 2]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 3/4                                                          %! scaling time signatures
-            s1 * 3/4
             % [Global Context measure 3]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 9/4                                                          %! scaling time signatures
             s1 * 9/4
-            % [Global Context measure 4]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 6/4                                                          %! scaling time signatures
-            s1 * 3/2
             \bacaStopTextSpanMM
             - \abjad-invisible-line
             - \baca-metronome-mark-spanner-left-text 2 0 1 "50"
@@ -66,12 +62,16 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
+            % [Global Context measure 4]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 6/4                                                          %! scaling time signatures
+            s1 * 3/2
+            \bacaStopTextSpanMM
             % [Global Context measure 5]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \tempo 4=63
             \time 6/4                                                          %! scaling time signatures
             s1 * 3/2
-            \bacaStopTextSpanMM
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "50"
             - \tweak padding #0.2
@@ -98,16 +98,16 @@
             \time 4/4                                                          %! scaling time signatures
             s1 * 1
             \bacaStopTextSpanMM
+            % [Global Context measure 9]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 4/4                                                          %! scaling time signatures
+            s1 * 1
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "50"
             - \tweak padding #0.2
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 9]                                       %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 4/4                                                          %! scaling time signatures
-            s1 * 1
             % [Global Context measure 10]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
@@ -116,14 +116,6 @@
 
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
-            % [Global Context measure 12]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 9/4                                                          %! scaling time signatures
-            s1 * 9/4
-            % [Global Context measure 13]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-            \time 3/4                                                          %! scaling time signatures
-            s1 * 3/4
             \bacaStopTextSpanMM
             - \abjad-invisible-line
             - \baca-metronome-mark-spanner-left-text 2 0 1 "75"
@@ -131,11 +123,19 @@
             - \tweak staff-padding #0.2
             - \tweak font-size #2
             \bacaStartTextSpanMM
-            % [Global Context measure 14]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+            % [Global Context measure 12]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 9/4                                                          %! scaling time signatures
             s1 * 9/4
             \bacaStopTextSpanMM
+            % [Global Context measure 13]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 3/4                                                          %! scaling time signatures
+            s1 * 3/4
+            % [Global Context measure 14]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+            \time 9/4                                                          %! scaling time signatures
+            s1 * 9/4
             - \abjad-dashed-line-with-arrow
             - \baca-metronome-mark-spanner-left-text 2 0 1 "50"
             - \tweak padding #0.2
@@ -146,10 +146,18 @@
 
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
+            \bacaStopTextSpanMM
+            - \abjad-invisible-line
+            - \baca-metronome-mark-spanner-left-text 2 0 1 "75"
+            - \tweak padding #0.2
+            - \tweak staff-padding #0.2
+            - \tweak font-size #2
+            \bacaStartTextSpanMM
             % [Global Context measure 16]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
             s1 * 3/4
+            \bacaStopTextSpanMM
             % [Global Context measure 17]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
@@ -158,18 +166,10 @@
 
             \time 5/4                                                          %! scaling time signatures
             s1 * 5/4
-            \bacaStopTextSpanMM
-            - \abjad-invisible-line
-            - \baca-metronome-mark-spanner-left-text 2 0 1 "75"
-            - \tweak padding #0.2
-            - \tweak staff-padding #0.2
-            - \tweak font-size #2
-            \bacaStartTextSpanMM
             % [Global Context measure 19]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \time 3/4                                                          %! scaling time signatures
             s1 * 3/4
-            \bacaStopTextSpanMM
             % [Global Context measure 20]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
             \once \override TimeSignature.color = #white                       %! applying ending skips
@@ -219,7 +219,6 @@
                     \tweak NoteHead.style #'cross
                     b4
                     \p
-                    ^ \markup { finger percussion }
 
                     r4
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -606,7 +605,6 @@
                     \tweak NoteHead.style #'cross
                     e'4
                     \pp
-                    ^ \markup { finger percussion }
 
                     r4
 

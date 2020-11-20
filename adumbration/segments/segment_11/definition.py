@@ -38,10 +38,10 @@ marks = evans.CyclicList(
             r"^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }",
             format_slot="after",
         ),
-        abjad.LilyPondLiteral(
-            r"^ \markup { finger percussion }",
-            format_slot="after",
-        ),
+        # abjad.LilyPondLiteral(
+        #     r"^ \markup { finger percussion }",
+        #     format_slot="after",
+        # ),
         abjad.LilyPondLiteral(
             r"^ \markup { slow bow }",
             format_slot="after",
@@ -66,10 +66,10 @@ marks = evans.CyclicList(
             r"^ \markup { slow bow }",
             format_slot="after",
         ),
-        abjad.LilyPondLiteral(
-            r"^ \markup { finger percussion }",
-            format_slot="after",
-        ),
+        # abjad.LilyPondLiteral(
+        #     r"^ \markup { finger percussion }",
+        #     format_slot="after",
+        # ),
         abjad.LilyPondLiteral(
             r"^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }",
             format_slot="after",
@@ -97,6 +97,16 @@ marks = evans.CyclicList(
         abjad.LilyPondLiteral(
             r"^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }",
             format_slot="after",
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("(pizz)", direction=abjad.Up),
+            baca.leaf(-3, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("(pizz)", direction=abjad.Up),
+            baca.leaf(-1, pitched=True),
         ),
     ],
     forget=False,
@@ -158,14 +168,14 @@ maker = evans.SegmentMaker(
             baca.leaf(0),
         ),
         evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
-        evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
+        # evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
         evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
         evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([4]).leaf(0)),
         evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([5]).leaf(0)),
         evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
         evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
         evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
-        evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([7]).leaf(0)),
+        # evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([7]).leaf(0)),
         evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
         evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
         evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
@@ -174,7 +184,7 @@ maker = evans.SegmentMaker(
         evans.attach("Voice 4", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
         evans.attach("Voice 4", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
         evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([0, 1, 2, 3])
+            "Global Context", tempo_handler, abjad.select().leaves().get([1, 2])
         ),
         evans.call(
             "Global Context", tempo_handler, abjad.select().leaves().get([4, 5, 6])
@@ -187,12 +197,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([7, 8, 9, 10, 11, 12]),
+            abjad.select().leaves().get([8, 9, 10]),
         ),
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([13, 14, 15, 16, 17]),
+            abjad.select().leaves().get([13, 14]),
         ),
         evans.attach("Voice 2", abjad.StopBeam(), baca.leaf(18, pitched=True)),
         evans.detach("Voice 2", abjad.StopBeam(), baca.leaf(19, pitched=True)),

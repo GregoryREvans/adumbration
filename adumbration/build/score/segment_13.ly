@@ -224,8 +224,7 @@
 
                         c'2
                         \f
-                        ^ \markup { "(c.3 clicks)" }
-                        ^ \markup { XSB }
+                        ^ \markup { XSB(c.3) }
 
                     }
 
@@ -400,7 +399,7 @@
                         % [Voice 1 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         cs'2.
-                        ^ \markup { XSB(c.11) }
+                        ^ \markup { XSB(c.9) }
 
                         r4
 
@@ -694,7 +693,7 @@
 
                         d'8
                         \mf
-                        ^ \markup { "XSB(c.3 clicks)" }
+                        ^ \markup { XSB(c.3) }
                         \<
                         <>
                         \f
@@ -767,7 +766,7 @@
 
                         c'16
                         \f
-                        ^ \markup { XSB(c.8) }
+                        ^ \markup { XSB(c.5) }
                         \>
 
                     }
@@ -786,7 +785,7 @@
                     d'4
                     \f
                     - \bendAfter #'3
-                    ^ \markup { XSB(c.11) }
+                    ^ \markup { XSB(c.7) }
 
                     \scaleDurations #'(1 . 1) {
                         % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -834,7 +833,7 @@
                     c'4
                     \mf
                     - \bendAfter #'3.5
-                    ^ \markup { "XSB(c.5 clicks)" }
+                    ^ \markup { XSB(c.3) }
                     \<
                     % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -914,7 +913,7 @@
 
                         ef'4.
                         - \bendAfter #'-3.5
-                        ^ \markup { XSB(c.6) }
+                        ^ \markup { XSB(c.5) }
 
                         r4.
 
@@ -1082,7 +1081,7 @@
                         d'2
                         \mf
                         - \bendAfter #'3
-                        ^ \markup { XSB(c.10) }
+                        ^ \markup { "slow bow" }
                         \<
 
                     }
@@ -1341,7 +1340,7 @@
                         ef'2.
                         \mf
                         - \bendAfter #'-3.5
-                        ^ \markup { "XSB(c.5 clicks)" }
+                        ^ \markup { XSB(c.3) }
 
                         r2.
 
@@ -1356,7 +1355,7 @@
 
                         c'8
                         \f
-                        ^ \markup { XSB(c.8) }
+                        ^ \markup { XSB(c.4) }
 
                     }
 
@@ -1379,7 +1378,7 @@
                         d'8
                         \mf
                         - \bendAfter #'3.5
-                        ^ \markup { XSB(c.11) }
+                        ^ \markup { XSB(c.7) }
                         \<
                         <>
                         \f
@@ -1466,7 +1465,7 @@
                     c'4
                     \f
                     - \bendAfter #'2.5
-                    ^ \markup { XSB(c.12) }
+                    ^ \markup { XSB(c.9) }
                     \>
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -1491,7 +1490,7 @@
 
                         d'2
                         \f
-                        ^ \markup { XSB(c.13) }
+                        ^ \markup { "slow bow" }
 
                     }
 
