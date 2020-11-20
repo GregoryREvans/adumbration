@@ -98,16 +98,6 @@ marks = evans.CyclicList(
             r"^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }",
             format_slot="after",
         ),
-        evans.attach(
-            "Voice 2",
-            abjad.Markup("(pizz)", direction=abjad.Up),
-            baca.leaf(-3, pitched=True),
-        ),
-        evans.attach(
-            "Voice 2",
-            abjad.Markup("(pizz)", direction=abjad.Up),
-            baca.leaf(-1, pitched=True),
-        ),
     ],
     forget=False,
 )
@@ -208,11 +198,16 @@ maker = evans.SegmentMaker(
         evans.detach("Voice 2", abjad.StopBeam(), baca.leaf(19, pitched=True)),
         evans.detach("Voice 3", abjad.StartBeam(), baca.leaf(11, pitched=True)),
         evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(21)),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-        #     baca.leaf(-3),
-        # ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("(pizz)", direction=abjad.Up),
+            baca.leaf(-3, pitched=True),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("(pizz)", direction=abjad.Up),
+            baca.leaf(-1, pitched=True),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

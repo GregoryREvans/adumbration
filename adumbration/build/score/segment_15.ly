@@ -130,7 +130,7 @@
                     ^ \markup { "XSB (noise poco a poco)" }
                     _ \markup {
                         \box
-                            "cresc. a m.168 (ff)"
+                            "cresc. a m.196 (ff)"
                         }
                     \<
                     ~

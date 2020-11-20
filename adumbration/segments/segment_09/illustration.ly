@@ -153,7 +153,7 @@
                     \p
                     \<
                     ~
-                    ^ \markup { \raise #0.75 \baca-circle-very-wide-markup }
+                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     a'1

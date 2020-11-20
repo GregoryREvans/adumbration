@@ -155,7 +155,7 @@
                         \center-align
                             +47
                         }
-                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
+                    ^ \markup { \raise #0.75 \baca-circle-very-wide-markup }
                     % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print

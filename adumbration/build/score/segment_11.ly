@@ -608,6 +608,7 @@
                         \tweak NoteHead.style #'cross
                         \override Staff.Stem.stemlet-length = 0.75
                         e'8
+                        ^ \markup { (pizz) }
                         [
 
                         \tweak NoteHead.style #'cross
@@ -621,6 +622,7 @@
                         \revert Staff.Stem.stemlet-length
                         e'8
                         \mp
+                        ^ \markup { (pizz) }
                         ]
                         \bar "||"
 

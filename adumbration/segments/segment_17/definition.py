@@ -185,6 +185,16 @@ maker = evans.SegmentMaker(
         evans.detach(
             "Voice 3",
             abjad.StartBeam(),
+            baca.leaf(30),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.StartBeam(),
+            baca.leaf(32),
+        ),
+        evans.detach(
+            "Voice 3",
+            abjad.StartBeam(),
             baca.leaf(36),
         ),
         evans.attach(

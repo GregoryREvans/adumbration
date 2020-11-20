@@ -750,13 +750,13 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         gqs''16
                         \mf
-                        [
 
                         r4
 
                         g''16
                         \f
                         \>
+                        [
 
                         gqf''8
 
