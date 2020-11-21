@@ -31,7 +31,7 @@
         \numericTimeSignature
         \consists Axis_group_engraver
 		\consists Bar_number_engraver
-        \consists Time_signature_engraver
+        %{ \consists Time_signature_engraver %}
 		\consists Mark_engraver
 		\consists Metronome_mark_engraver
 		\consists Text_engraver
@@ -143,7 +143,7 @@
 		\override TimeSignature.whiteout-style = #'outline
 		\override TimeSignature.whiteout = 0.25
 		\numericTimeSignature %}
-		\remove Time_signature_engraver
+		%{ \remove Time_signature_engraver %}
 		fontSize = #-1
     }
     \context {
@@ -156,7 +156,7 @@
 }
 
 \paper {
-	system-separator-markup = \markup { \slashSeparator }
+	%{ system-separator-markup = \markup { \slashSeparator } %}
 	system-system-spacing = #'((basic-distance . 13) (minimum-distance . 13) (padding . 4))
 
 	indent = 20\mm

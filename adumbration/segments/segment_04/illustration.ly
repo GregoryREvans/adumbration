@@ -67,562 +67,574 @@
         \context StaffGroup = "Staff Group"
         <<
 
-            \context Staff = "Staff 1"
+            \tag #'voice1
             {
-                \tag #'voice1 {
 
-                \context Voice = "Voice 1"
+                \context Staff = "Staff 1"
                 {
-                    % [Voice 1 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { "vn. I" }                                        %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violin I"                                                 %! applying staff names and clefs
-                    \bar ".|:"
-                    \clef "treble"
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e''16
-                    \f
-                    [
-                    (
+                    \context Voice = "Voice 1"
+                    {
+                        % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs''16
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violin I"                                             %! applying staff names and clefs
+                        \bar ".|:"
+                        \clef "treble"
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e''16
+                        \f
+                        [
+                        (
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c'''16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        cs'''16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds'''16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c'''16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs''16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        ds'''16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    b''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f''16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        b''16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e'''16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        f''16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'''16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'''16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g'''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d'''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    b''16
-                    )
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g'''16
 
-                    r4
-                    % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        b''16
+                        )
+                        ]
 
-                    r2
-                    % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r4
+                        r2
+                        % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'''16
-                    [
-                    (
+                        r4
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'''16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        cs'''16
+                        [
+                        (
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs'''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d'''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'''16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        cs'''16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds'''16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d'''16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e'''16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        ds'''16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f'''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'''16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        f'''16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g''16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs'''16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs''16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g''16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a''16
-                    )
-                    ]
-                    \bar ":|."
-                    % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs''16
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a''16
+                        )
+                        ]
+                        \bar ":|."
+                        % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
 
-                }
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
+
                 }
 
             }
 
-            \context Staff = "Staff 2"
+            \tag #'voice2
             {
-                \tag #'voice2 {
 
-                \context Voice = "Voice 2"
+                \context Staff = "Staff 2"
                 {
-                    % [Voice 2 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { "vn. II" }                                       %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violin II"                                                %! applying staff names and clefs
-                    \bar ".|:"
-                    \clef "treble"
-                    r1
-                    % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 2"
+                    {
+                        % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'16
-                    \f
-                    [
-                    (
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violin II"                                            %! applying staff names and clefs
+                        \bar ".|:"
+                        \clef "treble"
+                        r1
+                        % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e''16
-                    )
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs'16
+                        \f
+                        [
+                        (
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e''16
-                    (
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e''16
+                        )
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f''16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e''16
+                        (
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs''16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        f''16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c''16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        cs''16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    b'16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c''16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as'16
-                    ]
-                    % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        b'16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    b'16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        as'16
+                        ]
+                        % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a'16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        b'16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a'16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs'16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c''16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g'16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs'16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g'16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c''16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs'16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    b'16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c''16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as'16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        b'16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a'16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        as'16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs'16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a'16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g'16
-                    )
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs'16
 
-                    r4
-                    \bar ":|."
-                    % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g'16
+                        )
+                        ]
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
+                        r4
+                        \bar ":|."
+                        % [Voice 2 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
 
-                }
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
+
                 }
 
             }
 
-            \context Staff = "Staff 3"
+            \tag #'voice3
             {
-                \tag #'voice3 {
 
-                \context Voice = "Voice 3"
+                \context Staff = "Staff 3"
                 {
-                    % [Voice 3 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { va. }                                            %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Viola"                                                    %! applying staff names and clefs
-                    \bar ".|:"
-                    \clef "varC"
-                    r2
+                    \context Voice = "Voice 3"
+                    {
+                        % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds'16
-                    \f
-                    [
-                    (
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { va. }                                        %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Viola"                                                %! applying staff names and clefs
+                        \bar ".|:"
+                        \clef "varC"
+                        r2
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs'16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        ds'16
+                        \f
+                        [
+                        (
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c'16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs'16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a'16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c'16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a'16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        as16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g16
-                    ]
-                    % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds'16
-                    )
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g16
+                        ]
+                        % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds'16
-                    (
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        ds'16
+                        )
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    e'16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        ds'16
+                        (
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d'16
-                    )
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        e'16
 
-                    r4
-                    % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d'16
+                        )
+                        ]
 
-                    r1
-                    \bar ":|."
-                    % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
+                        r1
+                        \bar ":|."
+                        % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
 
-                }
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
+
                 }
 
             }
 
-            \context Staff = "Staff 4"
+            \tag #'voice4
             {
-                \tag #'voice4 {
 
-                \context Voice = "Voice 4"
+                \context Staff = "Staff 4"
                 {
-                    % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { vc. }                                            %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violoncello"                                              %! applying staff names and clefs
-                    \bar ".|:"
-                    \clef "bass"
-                    r4
+                    \context Voice = "Voice 4"
+                    {
+                        % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g,16
-                    \f
-                    [
-                    (
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { vc. }                                        %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violoncello"                                          %! applying staff names and clefs
+                        \bar ".|:"
+                        \clef "bass"
+                        r4
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g,16
+                        \f
+                        [
+                        (
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a,16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as,16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a,16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        as,16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        f16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        cs16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as,16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    b,16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        as,16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    c16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        b,16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    cs16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        c16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    d16
-                    ]
-                    % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        cs16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f,16
-                    )
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        d16
+                        ]
+                        % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    f,16
-                    (
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        f,16
+                        )
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    ds16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        f,16
+                        (
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    fs16
-                    ]
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        ds16
 
-                    \override Staff.Stem.stemlet-length = 0.75
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    g16
-                    [
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        fs16
+                        ]
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    gs16
+                        \override Staff.Stem.stemlet-length = 0.75
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        g16
+                        [
 
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-natural-markup
-                    a16
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        gs16
 
-                    \revert Staff.Stem.stemlet-length
-                    \tweak Accidental.stencil #ly:text-interface::print
-                    \tweak Accidental.text \abjad-sharp-markup
-                    as,16
-                    )
-                    ]
-                    % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-natural-markup
+                        a16
 
-                    r1
-                    \bar ":|."
-                    % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \revert Staff.Stem.stemlet-length
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \abjad-sharp-markup
+                        as,16
+                        )
+                        ]
+                        % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
+                        r1
+                        \bar ":|."
+                        % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
 
-                }
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
+
                 }
 
             }

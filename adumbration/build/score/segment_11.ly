@@ -166,584 +166,67 @@
         \context StaffGroup = "Staff Group"
         <<
 
-            \context Staff = "Staff 1"
+            \tag #'voice1
             {
-                \tag #'voice1 {
 
-                \context Voice = "Voice 1"
+                \context Staff = "Staff 1"
                 {
-                    % [Voice 1 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { "vn. I" }                                        %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violin I"                                                 %! applying staff names and clefs
-                    \clef "treble"
-                    r1
-                    % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    g'2
-                    \p
-                    ^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }
-
-                    r1..
-                    % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-                    % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-                    % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    \tweak NoteHead.style #'default
-                    b4
-                    \p
-                    ^ \markup { ½clt. }
-
-                    r4
-                    % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-
-                    r2.
-                    % [Voice 1 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1
-                    % [Voice 1 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1
-                    % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    \tweak NoteHead.style #'default
-                    fqs'4
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    ^ \markup { slow bow }
-
-                                    - \tweak arrow-length #2
-                                    - \tweak arrow-width #0.5
-                                    - \tweak bound-details.right.arrow ##t
-                                    - \tweak thickness #2.5
-                                    \glissando
-
-
-                    \tweak NoteHead.style #'harmonic-mixed
-                    \override Staff.Stem.stemlet-length = 0.75
-                    af'8
-                    [
-
-                    \revert Staff.Stem.stemlet-length
-                    r8
-                    \!
-                    ]
-                    % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    f'2
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-
-                                    - \tweak arrow-length #2
-                                    - \tweak arrow-width #0.5
-                                    - \tweak bound-details.right.arrow ##t
-                                    - \tweak thickness #2.5
-                                    \glissando
-
-
-                    \tweak NoteHead.style #'harmonic-mixed
-                    aqf'4
-
-                    r2
-                    \!
-                    % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1
-
-                    \tweak NoteHead.style #'default
-                    a'2
-                    \f
-                    \>
-                    ~
-                    ^ \markup { arco \raise #0.75 \baca-circle-granulation-markup }
-
-                    \tweak NoteHead.style #'default
-                    a'2.
-                    ~
-                    % [Voice 1 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    a'2.
-                    \mp
-                    % [Voice 1 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-
-                    r2.
-                    % [Voice 1 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-
-                    r2
-                    % [Voice 1 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    % [Voice 1 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    % [Voice 1 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    \override Staff.Stem.stemlet-length = 0.75
-                    a'8
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    [
-                    ^ \markup { slow bow }
-
-                                    - \tweak arrow-length #2
-                                    - \tweak arrow-width #0.5
-                                    - \tweak bound-details.right.arrow ##t
-                                    - \tweak thickness #2.5
-                                    \glissando
-
-
-                    \tweak NoteHead.style #'harmonic-mixed
-                    gqf'16
-
-                    \revert Staff.Stem.stemlet-length
-                    r16
-                    \!
-                    ]
-
-                    \tweak NoteHead.style #'default
-                    \override Staff.Stem.stemlet-length = 0.75
-                    f'8.
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    [
-
-                                    - \tweak arrow-length #2
-                                    - \tweak arrow-width #0.5
-                                    - \tweak bound-details.right.arrow ##t
-                                    - \tweak thickness #2.5
-                                    \glissando
-
-
-                    \tweak NoteHead.style #'harmonic-mixed
-                    \revert Staff.Stem.stemlet-length
-                    fqs'16
-                    ]
-
-                    r2.
-                    \!
-                    % [Voice 1 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    \bar "||"
-                    % [Voice 1 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
-
-                }
-                }
-
-            }
-
-            \context Staff = "Staff 2"
-            {
-                \tag #'voice2 {
-
-                \context Voice = "Voice 2"
-                {
-                    % [Voice 2 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { "vn. II" }                                       %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violin II"                                                %! applying staff names and clefs
-                    \clef "treble"
-                    r1
-                    % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    g'2.
-                    \p
-                    \>
-                    ~
-                    ^ \markup { arco \raise #0.75 \baca-circle-ext-tight-markup }
-                    % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    g'2
-                    \pp
-
-                    r1..
-                    % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-                    % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2
-
-                    \tweak NoteHead.style #'default
-                    a'1
-                    \p
-                    \<
-                    ~
-                    ^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }
-                    % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    a'2.
-                    ~
-                    % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    a'4
-                    \mf
-
-                    r\breve
-                    % [Voice 2 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1
-                    % [Voice 2 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1
-                    % [Voice 2 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "8")
-                    \times 10/9 {
-                        % [Voice 2 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 1"
+                    {
+                        % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violin I"                                             %! applying staff names and clefs
+                        \clef "treble"
+                        r1
+                        % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak NoteHead.style #'default
-                        af'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-                        ^ \markup { slow bow }
-
-                                        - \tweak arrow-length #2
-                                        - \tweak arrow-width #0.5
-                                        - \tweak bound-details.right.arrow ##t
-                                        - \tweak thickness #2.5
-                                        \glissando
-
-
-                        \tweak NoteHead.style #'harmonic-mixed
-                        \override Staff.Stem.stemlet-length = 0.75
-                        f'8
-                        [
-
-                        \revert Staff.Stem.stemlet-length
-                        r8
-                        \!
-                        ]
-
-                        \tweak NoteHead.style #'default
-                        aqf'4.
-                        \f
-                        - \tweak stencil #constante-hairpin
-                        \<
-
-                                        - \tweak arrow-length #2
-                                        - \tweak arrow-width #0.5
-                                        - \tweak bound-details.right.arrow ##t
-                                        - \tweak thickness #2.5
-                                        \glissando
-
-
-                        \tweak NoteHead.style #'harmonic-mixed
-                        \override Staff.Stem.stemlet-length = 0.75
-                        a'8
-                        [
-
-                        \revert Staff.Stem.stemlet-length
-                        r8
-                        \!
-                        ]
-
-                    }
-                    % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    \override Staff.Stem.stemlet-length = 0.75
-                    gqf'16
-                    \mf
-                    - \tweak stencil #constante-hairpin
-                    \<
-                    [
-
-                                    - \tweak arrow-length #2
-                                    - \tweak arrow-width #0.5
-                                    - \tweak bound-details.right.arrow ##t
-                                    - \tweak thickness #2.5
-                                    \glissando
-
-
-                    \tweak NoteHead.style #'harmonic-mixed
-                    f'32
-
-                    r32
-                    \!
-
-                    \tweak NoteHead.style #'default
-                    fqs'16
-                    \f
-                    - \tweak stencil #constante-hairpin
-                    \<
-
-                                    - \tweak arrow-length #2
-                                    - \tweak arrow-width #0.5
-                                    - \tweak bound-details.right.arrow ##t
-                                    - \tweak thickness #2.5
-                                    \glissando
-
-
-                    \tweak NoteHead.style #'harmonic-mixed
-                    af'32
-
-                    \revert Staff.Stem.stemlet-length
-                    r32
-                    \!
-                    ]
-
-                    r2
-
-                    r1.
-
-                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
-                    \times 2/3 {
-                        % [Voice 2 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        r4
-
-                        \tweak NoteHead.style #'default
-                        f'4
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-
-                                        - \tweak arrow-length #2
-                                        - \tweak arrow-width #0.5
-                                        - \tweak bound-details.right.arrow ##t
-                                        - \tweak thickness #2.5
-                                        \glissando
-
-
-                        \tweak NoteHead.style #'harmonic-mixed
-                        \override Staff.Stem.stemlet-length = 0.75
-                        aqf'8
-                        [
-
-                        \revert Staff.Stem.stemlet-length
-                        r8
-                        \!
-                        ]
-
-                    }
-
-                    r4
-                    % [Voice 2 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-
-                    r2.
-                    % [Voice 2 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-
-                    r2
-                    % [Voice 2 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    % [Voice 2 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    % [Voice 2 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    \tweak NoteHead.style #'default
-                    e'4
-                    \pp
-                    ^ \markup { ½clt. }
-
-                    r4
-
-                    r4
-
-                    \tweak NoteHead.style #'default
-                    b4
-                    \ff
-                    \>
-
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
-                    \times 6/5 {
-                        % [Voice 2 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                        \tweak NoteHead.style #'default
-                        \override Staff.Stem.stemlet-length = 0.75
-                        e'8
-                        [
-
-                        \tweak NoteHead.style #'default
-                        b8
+                        g'2
                         \p
-                        ]
+                        ^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }
+
+                        r1..
+                        % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+                        % [Voice 1 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+                        % [Voice 1 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         r4
 
                         \tweak NoteHead.style #'default
-                        \revert Staff.Stem.stemlet-length
-                        e'8
-                        \mp
-                        ]
-                        \bar "||"
+                        b4
+                        \p
+                        ^ \markup { ½clt. }
 
-                    }
-                    % [Voice 2 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        % [Voice 1 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
+                        r1.
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+                        r2.
+                        % [Voice 1 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                }
-                }
+                        r1
+                        % [Voice 1 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            }
+                        r1
+                        % [Voice 1 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-            \context Staff = "Staff 3"
-            {
-                \tag #'voice3 {
-
-                \context Voice = "Voice 3"
-                {
-                    % [Voice 3 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { va. }                                            %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Viola"                                                    %! applying staff names and clefs
-                    \clef "varC"
-                    \tweak NoteHead.style #'default
-                    g'1
-                    \ff
-                    \>
-                    ~
-                    ^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }
-                    % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    g'2.
-                    ~
-                    % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    g'4
-                    \mf
-
-                    r\breve
-                    % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-                    % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-
-                    \tweak NoteHead.style #'default
-                    a'2.
-                    \p
-                    \<
-                    ~
-                    ^ \markup { arco \raise #0.75 \baca-circle-tight-poss-grind-at-talon-markup }
-                    % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    a'2
-                    \f
-
-                    r4
-                    % [Voice 3 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1.
-
-                    r2.
-                    % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r1
-                    % [Voice 3 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    d''1
-                    \mp
-                    \>
-                    ~
-                    ^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }
-                    % [Voice 3 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    d''2.
-                    ~
-                    % [Voice 3 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    d''2.
-                    ~
-
-                    \tweak NoteHead.style #'default
-                    d''2
-                    ~
-                    % [Voice 3 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \tweak NoteHead.style #'default
-                    d''4
-                    \p
-
-                    r\breve
-                    % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r4
-
-                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
-                    \times 4/5 {
+                        r4
 
                         \tweak NoteHead.style #'default
-                        a'4
-                        \f
+                        fqs'4
+                        \mf
                         - \tweak stencil #constante-hairpin
                         \<
                         ^ \markup { slow bow }
@@ -757,41 +240,17 @@
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \override Staff.Stem.stemlet-length = 0.75
-                        gqf'8
+                        af'8
+                        [
 
                         \revert Staff.Stem.stemlet-length
-                        r4
+                        r8
                         \!
                         ]
-
-                    }
-
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 9) "4")
-                    \times 9/8 {
-                        % [Voice 3 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        % [Voice 1 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak NoteHead.style #'default
                         f'2
-                        \mf
-                        - \tweak stencil #constante-hairpin
-                        \<
-
-                                        - \tweak arrow-length #2
-                                        - \tweak arrow-width #0.5
-                                        - \tweak bound-details.right.arrow ##t
-                                        - \tweak thickness #2.5
-                                        \glissando
-
-
-                        \tweak NoteHead.style #'harmonic-mixed
-                        fqs'4
-
-                        r4
-                        \!
-
-                        \tweak NoteHead.style #'default
-                        af'2.
                         \f
                         - \tweak stencil #constante-hairpin
                         \<
@@ -804,24 +263,55 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
-                        f'4
+                        aqf'4
 
-                                        - \tweak arrow-length #2
-                                        - \tweak arrow-width #0.5
-                                        - \tweak bound-details.right.arrow ##t
-                                        - \tweak thickness #2.5
-                                        \glissando
+                        r2
+                        \!
+                        % [Voice 1 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-
-                    }
-
-                    \tweak text #tuplet-number::calc-fraction-text
-                    \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "8")
-                    \times 10/9 {
-                        % [Voice 3 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
 
                         \tweak NoteHead.style #'default
-                        aqf'4
+                        a'2
+                        \f
+                        \>
+                        ~
+                        ^ \markup { arco \raise #0.75 \baca-circle-granulation-markup }
+
+                        \tweak NoteHead.style #'default
+                        a'2.
+                        ~
+                        % [Voice 1 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        a'2.
+                        \mp
+                        % [Voice 1 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+
+                        r2.
+                        % [Voice 1 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+
+                        r2
+                        % [Voice 1 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 1 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 1 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        \override Staff.Stem.stemlet-length = 0.75
+                        a'8
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+                        ^ \markup { slow bow }
 
                                         - \tweak arrow-length #2
                                         - \tweak arrow-width #0.5
@@ -831,18 +321,204 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
-                        \override Staff.Stem.stemlet-length = 0.75
-                        a'8
-                        [
+                        gqf'16
 
                         \revert Staff.Stem.stemlet-length
-                        r8
+                        r16
                         \!
                         ]
 
                         \tweak NoteHead.style #'default
-                        gqf'4.
+                        \override Staff.Stem.stemlet-length = 0.75
+                        f'8.
+                        \f
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+
+                                        - \tweak arrow-length #2
+                                        - \tweak arrow-width #0.5
+                                        - \tweak bound-details.right.arrow ##t
+                                        - \tweak thickness #2.5
+                                        \glissando
+
+
+                        \tweak NoteHead.style #'harmonic-mixed
+                        \revert Staff.Stem.stemlet-length
+                        fqs'16
+                        ]
+
+                        r2.
+                        \!
+                        % [Voice 1 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        \bar "||"
+                        % [Voice 1 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
+
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
+
+                }
+
+            }
+
+            \tag #'voice2
+            {
+
+                \context Staff = "Staff 2"
+                {
+
+                    \context Voice = "Voice 2"
+                    {
+                        % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violin II"                                            %! applying staff names and clefs
+                        \clef "treble"
+                        r1
+                        % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'2.
+                        \p
+                        \>
+                        ~
+                        ^ \markup { arco \raise #0.75 \baca-circle-ext-tight-markup }
+                        % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'2
+                        \pp
+
+                        r1..
+                        % [Voice 2 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+                        % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2
+
+                        \tweak NoteHead.style #'default
+                        a'1
+                        \p
+                        \<
+                        ~
+                        ^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }
+                        % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        a'2.
+                        ~
+                        % [Voice 2 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        a'4
                         \mf
+
+                        r\breve
+                        % [Voice 2 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1
+                        % [Voice 2 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1
+                        % [Voice 2 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "8")
+                        \times 10/9 {
+                            % [Voice 2 measure 11]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \tweak NoteHead.style #'default
+                            af'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ^ \markup { slow bow }
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            \override Staff.Stem.stemlet-length = 0.75
+                            f'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            r8
+                            \!
+                            ]
+
+                            \tweak NoteHead.style #'default
+                            aqf'4.
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            \override Staff.Stem.stemlet-length = 0.75
+                            a'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            r8
+                            \!
+                            ]
+
+                        }
+                        % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        \override Staff.Stem.stemlet-length = 0.75
+                        gqf'16
+                        \mf
+                        - \tweak stencil #constante-hairpin
+                        \<
+                        [
+
+                                        - \tweak arrow-length #2
+                                        - \tweak arrow-width #0.5
+                                        - \tweak bound-details.right.arrow ##t
+                                        - \tweak thickness #2.5
+                                        \glissando
+
+
+                        \tweak NoteHead.style #'harmonic-mixed
+                        f'32
+
+                        r32
+                        \!
+
+                        \tweak NoteHead.style #'default
+                        fqs'16
+                        \f
                         - \tweak stencil #constante-hairpin
                         \<
 
@@ -854,183 +530,519 @@
 
 
                         \tweak NoteHead.style #'harmonic-mixed
-                        \override Staff.Stem.stemlet-length = 0.75
-                        f'8
-                        [
+                        af'32
 
                         \revert Staff.Stem.stemlet-length
-                        r8
+                        r32
                         \!
                         ]
 
+                        r2
+
+                        r1.
+
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
+                        \times 2/3 {
+                            % [Voice 2 measure 13]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            r4
+
+                            \tweak NoteHead.style #'default
+                            f'4
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            \override Staff.Stem.stemlet-length = 0.75
+                            aqf'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            r8
+                            \!
+                            ]
+
+                        }
+
+                        r4
+                        % [Voice 2 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+
+                        r2.
+                        % [Voice 2 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+
+                        r2
+                        % [Voice 2 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 2 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 2 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r4
+
+                        \tweak NoteHead.style #'default
+                        e'4
+                        \pp
+                        ^ \markup { ½clt. }
+
+                        r4
+
+                        r4
+
+                        \tweak NoteHead.style #'default
+                        b4
+                        \ff
+                        \>
+
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 6) "8")
+                        \times 6/5 {
+                            % [Voice 2 measure 19]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \tweak NoteHead.style #'default
+                            \override Staff.Stem.stemlet-length = 0.75
+                            e'8
+                            [
+
+                            \tweak NoteHead.style #'default
+                            b8
+                            \p
+                            ]
+
+                            r4
+
+                            \tweak NoteHead.style #'default
+                            \revert Staff.Stem.stemlet-length
+                            e'8
+                            \mp
+                            ]
+                            \bar "||"
+
+                        }
+                        % [Voice 2 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
+
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
                     }
-                    % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    % [Voice 3 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    % [Voice 3 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-
-                    r2
-                    % [Voice 3 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    r2.
-                    \bar "||"
-                    % [Voice 3 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
-
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
-
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
-
-                }
                 }
 
             }
 
-            \context Staff = "Staff 4"
+            \tag #'voice3
             {
-                \tag #'voice4 {
 
-                \context Voice = "Voice 4"
+                \context Staff = "Staff 3"
                 {
-                    % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { vc. }                                            %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violoncello"                                              %! applying staff names and clefs
-                    \clef "bass"
-                    r1
-                    % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 3"
+                    {
+                        % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { va. }                                        %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Viola"                                                %! applying staff names and clefs
+                        \clef "varC"
+                        \tweak NoteHead.style #'default
+                        g'1
+                        \ff
+                        \>
+                        ~
+                        ^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }
+                        % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \clef "treble"
-                    \tweak NoteHead.style #'default
-                    e''1.
-                    \pp
-                    \<
-                    ~
-                    ^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }
+                        \tweak NoteHead.style #'default
+                        g'2.
+                        ~
+                        % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    e''2.
-                    ~
-                    % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak NoteHead.style #'default
+                        g'4
+                        \mf
 
-                    \tweak NoteHead.style #'default
-                    e''2
-                    \p
+                        r\breve
+                        % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1
-                    % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1.
+                        % [Voice 3 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    g'1
-                    \mf
-                    \<
-                    ^ \markup { arco \raise #0.75 \baca-circle-very-wide-markup }
+                        r2.
 
-                    \tweak NoteHead.style #'default
-                    a'2
-                    ~
-                    % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak NoteHead.style #'default
+                        a'2.
+                        \p
+                        \<
+                        ~
+                        ^ \markup { arco \raise #0.75 \baca-circle-tight-poss-grind-at-talon-markup }
+                        % [Voice 3 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    a'2
-                    \ff
+                        \tweak NoteHead.style #'default
+                        a'2
+                        \f
 
-                    r4
-                    % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        % [Voice 3 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1.
+                        r1.
 
-                    r2.
-                    % [Voice 4 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2.
+                        % [Voice 3 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    g'1
-                    \mf
-                    \>
-                    ~
-                    ^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }
-                    % [Voice 4 measure 9]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
+                        % [Voice 3 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    g'1
-                    ~
-                    % [Voice 4 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak NoteHead.style #'default
+                        d''1
+                        \mp
+                        \>
+                        ~
+                        ^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }
+                        % [Voice 3 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    g'2.
-                    ~
-                    % [Voice 4 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak NoteHead.style #'default
+                        d''2.
+                        ~
+                        % [Voice 3 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \tweak NoteHead.style #'default
-                    g'4
-                    \p
+                        \tweak NoteHead.style #'default
+                        d''2.
+                        ~
 
-                    r1
-                    % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak NoteHead.style #'default
+                        d''2
+                        ~
+                        % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1.
+                        \tweak NoteHead.style #'default
+                        d''4
+                        \p
 
-                    r2.
-                    % [Voice 4 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r\breve
+                        % [Voice 3 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    % [Voice 4 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
 
-                    r1.
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "8")
+                        \times 4/5 {
 
-                    r2.
-                    % [Voice 4 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \tweak NoteHead.style #'default
+                            a'4
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
+                            ^ \markup { slow bow }
 
-                    r2.
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
 
-                    r2
-                    % [Voice 4 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    % [Voice 4 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \tweak NoteHead.style #'harmonic-mixed
+                            \override Staff.Stem.stemlet-length = 0.75
+                            gqf'8
 
-                    r2.
-                    % [Voice 4 measure 18]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \revert Staff.Stem.stemlet-length
+                            r4
+                            \!
+                            ]
 
-                    r2.
+                        }
 
-                    r2
-                    % [Voice 4 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 9) "4")
+                        \times 9/8 {
+                            % [Voice 3 measure 14]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    \bar "||"
-                    % [Voice 4 measure 20]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                            \tweak NoteHead.style #'default
+                            f'2
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
 
-                    \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
-                    \once \override Rest.color = #white                        %! applying ending skips
-                    r1 * 3/32
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
 
-                    \once \override MultiMeasureRest.color = #white            %! applying ending skips
-                    R1 * 3/32
-                    ^ \markup {                                                %! applying ending skips
-                        \musicglyph                                            %! applying ending skips
-                            #"scripts.ufermata"                                %! applying ending skips
-                        }                                                      %! applying ending skips
-                    \stopStaff \startStaff                                     %! applying ending skips
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            fqs'4
+
+                            r4
+                            \!
+
+                            \tweak NoteHead.style #'default
+                            af'2.
+                            \f
+                            - \tweak stencil #constante-hairpin
+                            \<
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            f'4
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                        }
+
+                        \tweak text #tuplet-number::calc-fraction-text
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 10) "8")
+                        \times 10/9 {
+                            % [Voice 3 measure 15]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                            \tweak NoteHead.style #'default
+                            aqf'4
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            \override Staff.Stem.stemlet-length = 0.75
+                            a'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            r8
+                            \!
+                            ]
+
+                            \tweak NoteHead.style #'default
+                            gqf'4.
+                            \mf
+                            - \tweak stencil #constante-hairpin
+                            \<
+
+                                            - \tweak arrow-length #2
+                                            - \tweak arrow-width #0.5
+                                            - \tweak bound-details.right.arrow ##t
+                                            - \tweak thickness #2.5
+                                            \glissando
+
+
+                            \tweak NoteHead.style #'harmonic-mixed
+                            \override Staff.Stem.stemlet-length = 0.75
+                            f'8
+                            [
+
+                            \revert Staff.Stem.stemlet-length
+                            r8
+                            \!
+                            ]
+
+                        }
+                        % [Voice 3 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 3 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 3 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+
+                        r2
+                        % [Voice 3 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        \bar "||"
+                        % [Voice 3 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
+
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
 
                 }
+
+            }
+
+            \tag #'voice4
+            {
+
+                \context Staff = "Staff 4"
+                {
+
+                    \context Voice = "Voice 4"
+                    {
+                        % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { vc. }                                        %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violoncello"                                          %! applying staff names and clefs
+                        \clef "bass"
+                        r1
+                        % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \clef "treble"
+                        \tweak NoteHead.style #'default
+                        e''1.
+                        \pp
+                        \<
+                        ~
+                        ^ \markup { ½clt. \raise #0.75 \baca-circle-slow-markup }
+
+                        \tweak NoteHead.style #'default
+                        e''2.
+                        ~
+                        % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        e''2
+                        \p
+
+                        r1
+                        % [Voice 4 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'1
+                        \mf
+                        \<
+                        ^ \markup { arco \raise #0.75 \baca-circle-very-wide-markup }
+
+                        \tweak NoteHead.style #'default
+                        a'2
+                        ~
+                        % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        a'2
+                        \ff
+
+                        r4
+                        % [Voice 4 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+
+                        r2.
+                        % [Voice 4 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'1
+                        \mf
+                        \>
+                        ~
+                        ^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }
+                        % [Voice 4 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'1
+                        ~
+                        % [Voice 4 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'2.
+                        ~
+                        % [Voice 4 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \tweak NoteHead.style #'default
+                        g'4
+                        \p
+
+                        r1
+                        % [Voice 4 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+
+                        r2.
+                        % [Voice 4 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 4 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r1.
+
+                        r2.
+                        % [Voice 4 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+
+                        r2
+                        % [Voice 4 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 4 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        % [Voice 4 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+
+                        r2
+                        % [Voice 4 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        r2.
+                        \bar "||"
+                        % [Voice 4 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+
+                        \stopStaff \once \override Staff.StaffSymbol.line-count = #0 \startStaff %! applying ending skips
+                        \once \override Rest.color = #white                    %! applying ending skips
+                        r1 * 3/32
+
+                        \once \override MultiMeasureRest.color = #white        %! applying ending skips
+                        R1 * 3/32
+                        ^ \markup {                                            %! applying ending skips
+                            \musicglyph                                        %! applying ending skips
+                                #"scripts.ufermata"                            %! applying ending skips
+                            }                                                  %! applying ending skips
+                        \stopStaff \startStaff                                 %! applying ending skips
+
+                    }
+
                 }
 
             }

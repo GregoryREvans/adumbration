@@ -75,174 +75,186 @@
         \context StaffGroup = "Staff Group"
         <<
 
-            \context Staff = "Staff 1"
+            \tag #'voice1
             {
-                \tag #'voice1 {
 
-                \context Voice = "Voice 1"
+                \context Staff = "Staff 1"
                 {
-                    % [Voice 1 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { "vn. I" }                                        %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violin I"                                                 %! applying staff names and clefs
-                    \clef "treble"
-                    r1
-                    % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 1"
+                    {
+                        % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violin I"                                             %! applying staff names and clefs
+                        \clef "treble"
+                        r1
+                        % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2
-                    % [Voice 1 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2.
 
-                    r1
-                    % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2
+                        % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2
+                        r1
+                        % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'2
-                    \p
-                    \>
-                    ~
-                    ^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }
-                    % [Voice 1 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2
 
-                    g'1
-                    ~
-                    % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        g'2
+                        \p
+                        \>
+                        ~
+                        ^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }
+                        % [Voice 1 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'2.
-                    \pp
-                    \bar "||"
+                        g'1
+                        ~
+                        % [Voice 1 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                }
+                        g'2.
+                        \pp
+                        \bar "||"
+
+                    }
+
                 }
 
             }
 
-            \context Staff = "Staff 2"
+            \tag #'voice2
             {
-                \tag #'voice2 {
 
-                \context Voice = "Voice 2"
+                \context Staff = "Staff 2"
                 {
-                    % [Voice 2 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { "vn. II" }                                       %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violin II"                                                %! applying staff names and clefs
-                    \clef "treble"
-                    a'1
-                    \p
-                    \<
-                    ~
-                    ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
-                    % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 2"
+                    {
+                        % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    a'1
-                    \mp
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violin II"                                            %! applying staff names and clefs
+                        \clef "treble"
+                        a'1
+                        \p
+                        \<
+                        ~
+                        ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
+                        % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r4
-                    % [Voice 2 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        a'1
+                        \mp
 
-                    r1
-                    % [Voice 2 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r4
+                        % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'1
-                    \p
-                    \>
-                    ~
-                    ^ \markup { clt. \raise #0.75 \baca-circle-slow-markup }
-                    % [Voice 2 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
+                        % [Voice 2 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    g'2.
-                    \pp
+                        g'1
+                        \p
+                        \>
+                        ~
+                        ^ \markup { clt. \raise #0.75 \baca-circle-slow-markup }
+                        % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r4
-                    % [Voice 2 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        g'2.
+                        \pp
 
-                    r2.
-                    \bar "||"
+                        r4
+                        % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                }
+                        r2.
+                        \bar "||"
+
+                    }
+
                 }
 
             }
 
-            \context Staff = "Staff 3"
+            \tag #'voice3
             {
-                \tag #'voice3 {
 
-                \context Voice = "Voice 3"
+                \context Staff = "Staff 3"
                 {
-                    % [Voice 3 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { va. }                                            %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Viola"                                                    %! applying staff names and clefs
-                    \clef "varC"
-                    r1
-                    % [Voice 3 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 3"
+                    {
+                        % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { va. }                                        %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Viola"                                                %! applying staff names and clefs
+                        \clef "varC"
+                        r1
+                        % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2
-                    % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2.
 
-                    r1
-                    % [Voice 3 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2
+                        % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1
-                    % [Voice 3 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
+                        % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1
-                    % [Voice 3 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
+                        % [Voice 3 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    \bar "||"
+                        r1
+                        % [Voice 3 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                }
+                        r2.
+                        \bar "||"
+
+                    }
+
                 }
 
             }
 
-            \context Staff = "Staff 4"
+            \tag #'voice4
             {
-                \tag #'voice4 {
 
-                \context Voice = "Voice 4"
+                \context Staff = "Staff 4"
                 {
-                    % [Voice 4 measure 1]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    \set Staff.shortInstrumentName =                           %! applying staff names and clefs
-                    \markup { vc. }                                            %! applying staff names and clefs
-                    \set Staff.instrumentName =                                %! applying staff names and clefs
-                    "Violoncello"                                              %! applying staff names and clefs
-                    \clef "bass"
-                    r1
-                    % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                    \context Voice = "Voice 4"
+                    {
+                        % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
+                        \set Staff.shortInstrumentName =                       %! applying staff names and clefs
+                        \markup { vc. }                                        %! applying staff names and clefs
+                        \set Staff.instrumentName =                            %! applying staff names and clefs
+                        "Violoncello"                                          %! applying staff names and clefs
+                        \clef "bass"
+                        r1
+                        % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2
-                    % [Voice 4 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2.
 
-                    r1
-                    % [Voice 4 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r2
+                        % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1
-                    % [Voice 4 measure 5]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
+                        % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r1
-                    % [Voice 4 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
+                        r1
+                        % [Voice 4 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    r2.
-                    \bar "||"
+                        r1
+                        % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                }
+                        r2.
+                        \bar "||"
+
+                    }
+
                 }
 
             }
