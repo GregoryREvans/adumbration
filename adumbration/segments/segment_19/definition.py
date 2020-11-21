@@ -116,11 +116,11 @@ maker = evans.SegmentMaker(
             apply_spanner,
             abjad.select(),
         ),
-        evans.attach(
-            "Voice 1",
-            abjad.Dynamic("ff"),
-            baca.leaf(0),
-        ),
+        # evans.attach(
+        #     "Voice 1",
+        #     abjad.Dynamic("ff"),
+        #     baca.leaf(0),
+        # ),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("mp"),
@@ -170,11 +170,11 @@ maker = evans.SegmentMaker(
             apply_spanner,
             abjad.select(),
         ),
-        evans.attach(
-            "Voice 3",
-            abjad.Dynamic("ff"),
-            baca.leaf(0),
-        ),
+        # evans.attach(
+        #     "Voice 3",
+        #     abjad.Dynamic("ff"),
+        #     baca.leaf(0),
+        # ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("mp"),

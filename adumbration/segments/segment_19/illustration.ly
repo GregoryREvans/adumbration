@@ -96,7 +96,6 @@
                     "Violin I"                                                 %! applying staff names and clefs
                     \clef "treble"
                     r2.
-                    \ff
 
                     r2
                     % [Voice 1 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -373,7 +372,6 @@
                     "Viola"                                                    %! applying staff names and clefs
                     \clef "varC"
                     r1
-                    \ff
 
                     gqs4
                     \mp

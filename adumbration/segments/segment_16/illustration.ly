@@ -398,6 +398,7 @@
                     cs''16
                     \mp
                     - \staccato
+                    ^ \markup { "staccati leggiero" }
 
                     \revert Staff.Stem.stemlet-length
                     d''16
@@ -744,6 +745,7 @@
                         cs''16
                         \mp
                         - \staccato
+                        ^ \markup { "staccati leggiero" }
 
                         d''16
                         - \staccato
@@ -1165,6 +1167,7 @@
                         cs''8
                         \mf
                         - \staccato
+                        ^ \markup { "staccati leggiero" }
 
                         d''8.
                         - \staccato
@@ -1214,7 +1217,9 @@
                         }
                     % [Voice 3 measure 14]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                    cqs''2
+                    \tweak Accidental.stencil #ly:text-interface::print
+                    \tweak Accidental.text \natural-one-syntonic-comma-down 
+                    b2
                     - \tenuto
                     ^ \markup {
                         \center-align
@@ -1228,17 +1233,17 @@
                         r8
                         [
 
-                        cs''16
+                        cqs''16
                         \f
                         - \staccato
 
-                        b'8
+                        cs''8
+                        - \staccato
+
+                        b'16
                         - \staccato
 
                         cs''16
-                        - \staccato
-
-                        dqf''16
                         - \staccato
 
                         \revert Staff.Stem.stemlet-length
@@ -1249,7 +1254,7 @@
                     % [Voice 3 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    d''8.
+                    dqf''8.
                     \mp
                     - \staccato
                     [
@@ -1263,12 +1268,12 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    dqs''16
+                    d''16
                     \p
                     - \staccato
                     ]
 
-                    e''2
+                    dqs''2
                     \f
                     - \tenuto
                     ^ \markup {
@@ -1284,23 +1289,23 @@
                         r8
                         [
 
-                        f''16
+                        e''16
                         \mf
                         - \staccato
 
-                        cs''8
+                        f''8
+                        - \staccato
+
+                        cs''16
                         - \staccato
 
                         d''16
                         - \staccato
 
-                        dqs''16
-                        - \staccato
-
                         r16
 
                         \revert Staff.Stem.stemlet-length
-                        ef''16
+                        dqs''16
                         \mp
                         - \staccato
                         ~
@@ -1309,7 +1314,7 @@
                     }
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    ef''16
+                    dqs''16
                     [
 
                     \revert Staff.Stem.stemlet-length
@@ -1321,7 +1326,7 @@
                     [
 
                     \revert Staff.Stem.stemlet-length
-                    eqf''8.
+                    ef''8.
                     \mf
                     - \staccato
                     ]
@@ -1518,6 +1523,7 @@
                         cs''16
                         \f
                         - \staccato
+                        ^ \markup { "staccati leggiero" }
 
                         d''16
                         - \staccato

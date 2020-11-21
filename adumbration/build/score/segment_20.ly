@@ -207,6 +207,8 @@
                     \markup { "vn. I" }                                        %! applying staff names and clefs
                     \set Staff.instrumentName =                                %! applying staff names and clefs
                     "Violin I"                                                 %! applying staff names and clefs
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     \clef "treble"
                     bf2.
                     \p
@@ -218,20 +220,28 @@
                     \startTextSpan
                     \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
+                    \hide NoteHead                                             %! abjad.glissando(1)
+                    \override Accidental.stencil = ##f                         %! abjad.glissando(1)
+                    \override NoteColumn.glissando-skip = ##t                  %! abjad.glissando(1)
+                    \override NoteHead.no-ledgers = ##t                        %! abjad.glissando(1)
                     bf4
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
                     \times 4/5 {
                         % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf4
                         \f
                         \>
@@ -245,12 +255,12 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
 
@@ -259,11 +269,18 @@
                     \times 4/3 {
                         % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bf4
                         \p
                         \stopTextSpan
@@ -513,6 +530,8 @@
                     \oneVoice                                                  %! abjad.on_beat_grace_container(5)
                     % [Voice 1 measure 6]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bf2
                     \p
                     \<
@@ -523,20 +542,28 @@
                     \startTextSpan
                     \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
+                    \hide NoteHead                                             %! abjad.glissando(1)
+                    \override Accidental.stencil = ##f                         %! abjad.glissando(1)
+                    \override NoteColumn.glissando-skip = ##t                  %! abjad.glissando(1)
+                    \override NoteHead.no-ledgers = ##t                        %! abjad.glissando(1)
                     bf2
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
                     \times 4/5 {
                         % [Voice 1 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2.
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2
                         \f
                         \>
@@ -550,7 +577,6 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
 
@@ -558,16 +584,24 @@
                     \times 4/5 {
                         % [Voice 1 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf4
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2.
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bf4
                         \p
                         \stopTextSpan
@@ -811,6 +845,8 @@
                     \oneVoice                                                  %! abjad.on_beat_grace_container(5)
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bf2
                     \p
                     \<
@@ -821,11 +857,18 @@
                     \startTextSpan
                     \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
+                    \hide NoteHead                                             %! abjad.glissando(1)
+                    \override Accidental.stencil = ##f                         %! abjad.glissando(1)
+                    \override NoteColumn.glissando-skip = ##t                  %! abjad.glissando(1)
+                    \override NoteHead.no-ledgers = ##t                        %! abjad.glissando(1)
                     bf4
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bf4
                     \p
                     \<
@@ -835,9 +878,12 @@
                     \times 4/5 {
                         % [Voice 1 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf4
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2
                         \f
                         \>
@@ -851,8 +897,9 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf2
                         \p
                         \<
@@ -865,9 +912,16 @@
                     \times 4/3 {
                         % [Voice 1 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bf4
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bf2
                         \f
                         \stopTextSpan
@@ -883,8 +937,13 @@
                         \center-align
                             -31
                         }
-                    ^ \markup { "XSB(c.2 clicks per second)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.2 clicks per second)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
@@ -895,15 +954,25 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''1
-                    ^ \markup { "XSB(c.3 clicks/s)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.3 clicks/s)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 1 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB(c.4) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.4) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 1 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -920,8 +989,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB(c.5) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.5) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 1 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -938,8 +1012,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB(c.6) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.6) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
@@ -956,8 +1035,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { XSB(c.7) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.7) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 1 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -980,8 +1064,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''4.
-                    ^ \markup { XSB(c.8) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.8) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
@@ -992,8 +1081,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { "slow bow" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "slow bow" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
@@ -1010,19 +1104,30 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''2.
-                    ^ \markup { norm. }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 1 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''4.
-                    ^ \markup { "quasi noise" }
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "quasi noise" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \one-septimal-comma-down 
                     a''4
+                    \stopTextSpan
                     ~
                     % [Voice 1 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1076,6 +1181,8 @@
                         \markup { "vn. II" }                                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
                         "Violin II"                                            %! applying staff names and clefs
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         \clef "treble"
                         bqf4
                         \p
@@ -1087,19 +1194,27 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         bqf2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
                     % [Voice 2 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf2
                     \p
                     \<
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf2
                     \f
                     \>
@@ -1119,14 +1234,22 @@
                     \times 4/5 {
                         % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bqf2
                         \f
                         \stopTextSpan
@@ -1370,6 +1493,8 @@
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
                         % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
                         \p
                         \<
@@ -1380,16 +1505,24 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         bqf2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
                         \f
                         \>
@@ -1398,9 +1531,12 @@
                     }
                     % [Voice 2 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf2
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf4
                     \p
                     \<
@@ -1414,8 +1550,9 @@
                         }
                     - \tweak staff-padding #2
                     \startTextSpan
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf4
                     \f
                     \>
@@ -1425,19 +1562,28 @@
                     \times 4/5 {
                         % [Voice 2 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bqf4
                         \p
                         \stopTextSpan
@@ -1691,6 +1837,8 @@
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
                         % [Voice 2 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf4
                         \p
                         \<
@@ -1701,6 +1849,12 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         bqf2
                         \f
                         \>
@@ -1709,14 +1863,18 @@
                     }
                     % [Voice 2 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf4
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf2
                     \p
                     \<
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqf4
                     \f
                     \>
@@ -1736,14 +1894,22 @@
                     \times 4/5 {
                         % [Voice 2 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf2
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqf2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bqf4
                         \f
                         \stopTextSpan
@@ -1759,8 +1925,13 @@
                         \center-align
                             -14
                         }
-                    ^ \markup { "XSB(c.2 clicks per second)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.2 clicks per second)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
@@ -1771,15 +1942,25 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''1
-                    ^ \markup { "XSB(c.3 clicks/s)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.3 clicks/s)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 2 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB(c.4) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.4) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 2 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1796,8 +1977,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB(c.5) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.5) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 2 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1814,8 +2000,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB(c.6) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.6) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
@@ -1832,8 +2023,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { XSB(c.7) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.7) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 2 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1856,8 +2052,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''4.
-                    ^ \markup { XSB(c.8) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.8) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
@@ -1868,8 +2069,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { "slow bow" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "slow bow" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
@@ -1886,19 +2092,30 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''2.
-                    ^ \markup { norm. }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 2 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''4.
-                    ^ \markup { "quasi noise" }
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "quasi noise" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \sharp-one-syntonic-comma-down 
                     ds''4
+                    \stopTextSpan
                     ~
                     % [Voice 2 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1951,6 +2168,8 @@
                         \markup { va. }                                        %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
                         "Viola"                                                %! applying staff names and clefs
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         \clef "varC"
                         b2
                         \p
@@ -1962,10 +2181,15 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         b2.
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
 
@@ -1973,11 +2197,14 @@
                     \times 4/5 {
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2.
                         \f
                         \>
@@ -1991,21 +2218,28 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
                     % [Voice 3 measure 3]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     b2
                     \p
                     \<
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     b4
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
+                    \revert Accidental.stencil                                 %! abjad.glissando(6)
+                    \revert NoteColumn.glissando-skip                          %! abjad.glissando(6)
+                    \revert NoteHead.no-ledgers                                %! abjad.glissando(6)
+                    \undo \hide NoteHead                                       %! abjad.glissando(6)
                     b4
                     \p
                     \stopTextSpan
@@ -2253,6 +2487,8 @@
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
                         % [Voice 3 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2
                         \p
                         \<
@@ -2263,15 +2499,21 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         b4
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
 
@@ -2280,6 +2522,8 @@
                     \times 4/3 {
                         % [Voice 3 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b4
                         \f
                         \>
@@ -2293,21 +2537,28 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
                     % [Voice 3 measure 8]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     b2
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
+                    \revert Accidental.stencil                                 %! abjad.glissando(6)
+                    \revert NoteColumn.glissando-skip                          %! abjad.glissando(6)
+                    \revert NoteHead.no-ledgers                                %! abjad.glissando(6)
+                    \undo \hide NoteHead                                       %! abjad.glissando(6)
                     b2
                     \p
                     \stopTextSpan
@@ -2552,6 +2803,8 @@
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
                         % [Voice 3 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b4
                         \p
                         \<
@@ -2562,11 +2815,18 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         b2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2
                         \p
                         \<
@@ -2578,14 +2838,18 @@
                     \times 4/5 {
                         % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b4
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b4
                         \p
                         \<
@@ -2599,8 +2863,9 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         b4
                         \f
                         \>
@@ -2609,14 +2874,22 @@
                     }
                     % [Voice 3 measure 13]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     b2
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     b4
                     \p
                     \<
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
+                    \revert Accidental.stencil                                 %! abjad.glissando(6)
+                    \revert NoteColumn.glissando-skip                          %! abjad.glissando(6)
+                    \revert NoteHead.no-ledgers                                %! abjad.glissando(6)
+                    \undo \hide NoteHead                                       %! abjad.glissando(6)
                     b4
                     \f
                     \stopTextSpan
@@ -2630,8 +2903,13 @@
                         \center-align
                             +2
                         }
-                    ^ \markup { "XSB(c.2 clicks per second)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.2 clicks per second)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
@@ -2642,15 +2920,25 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'1
-                    ^ \markup { "XSB(c.3 clicks/s)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.3 clicks/s)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB(c.4) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.4) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 3 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2667,8 +2955,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB(c.5) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.5) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 3 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2685,8 +2978,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB(c.6) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.6) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
@@ -2703,8 +3001,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { XSB(c.7) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.7) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 3 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2727,8 +3030,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'4.
-                    ^ \markup { XSB(c.8) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.8) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
@@ -2739,8 +3047,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { "slow bow" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "slow bow" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
@@ -2757,19 +3070,30 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'2.
-                    ^ \markup { norm. }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 3 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'4.
-                    ^ \markup { "quasi noise" }
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "quasi noise" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp 
                     fs'4
+                    \stopTextSpan
                     ~
                     % [Voice 3 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2822,6 +3146,8 @@
                         \markup { vc. }                                        %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
                         "Violoncello"                                          %! applying staff names and clefs
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         \clef "bass"
                         bqs2.
                         \p
@@ -2833,28 +3159,37 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         bqs2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
                     % [Voice 4 measure 2]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs4
                     \p
                     \<
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs2.
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
                     \times 4/5 {
                         % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs4
                         \p
                         \<
@@ -2868,18 +3203,25 @@
                             }
                         - \tweak staff-padding #2
                         \startTextSpan
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs4
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bqs4
                         \f
                         \stopTextSpan
@@ -3127,6 +3469,8 @@
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
                         % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs4
                         \p
                         \<
@@ -3137,19 +3481,27 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         bqs2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
                     % [Voice 4 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs2.
                     \p
                     \<
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs4
                     \f
                     \>
@@ -3169,14 +3521,22 @@
                     \times 4/5 {
                         % [Voice 4 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs4
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs2.
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bqs4
                         \f
                         \stopTextSpan
@@ -3426,6 +3786,8 @@
                         \oneVoice                                              %! abjad.on_beat_grace_container(5)
                         % [Voice 4 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs4
                         \p
                         \<
@@ -3436,24 +3798,33 @@
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \hide NoteHead                                         %! abjad.glissando(1)
+                        \override Accidental.stencil = ##f                     %! abjad.glissando(1)
+                        \override NoteColumn.glissando-skip = ##t              %! abjad.glissando(1)
+                        \override NoteHead.no-ledgers = ##t                    %! abjad.glissando(1)
                         bqs4
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs2.
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
                     }
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs4
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs2
                     \p
                     \<
@@ -3467,27 +3838,35 @@
                         }
                     - \tweak staff-padding #2
                     \startTextSpan
-                    \glissando                                                 %! abjad.glissando(7)
 
+                    \once \override Staff.Tie.transparent = ##t
+                    \once \override Dots.staff-position = #1.75
                     bqs4
                     \f
                     \>
-                    \glissando                                                 %! abjad.glissando(7)
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
                     \times 4/5 {
                         % [Voice 4 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs2
                         \p
                         \<
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
                         bqs2
                         \f
                         \>
-                        \glissando                                             %! abjad.glissando(7)
 
+                        \once \override Staff.Tie.transparent = ##t
+                        \once \override Dots.staff-position = #1.75
+                        \revert Accidental.stencil                             %! abjad.glissando(6)
+                        \revert NoteColumn.glissando-skip                      %! abjad.glissando(6)
+                        \revert NoteHead.no-ledgers                            %! abjad.glissando(6)
+                        \undo \hide NoteHead                                   %! abjad.glissando(6)
                         bqs4
                         \p
                         \stopTextSpan
@@ -3503,8 +3882,13 @@
                         \center-align
                             +0
                         }
-                    ^ \markup { "XSB(c.2 clicks per second)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.2 clicks per second)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
@@ -3515,15 +3899,25 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,1
-                    ^ \markup { "XSB(c.3 clicks/s)" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB(c.3 clicks/s)" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 4 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB(c.4) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.4) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 4 measure 17]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3540,8 +3934,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB(c.5) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.5) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 4 measure 19]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3558,8 +3957,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB(c.6) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.6) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
@@ -3576,8 +3980,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { XSB(c.7) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.7) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 4 measure 23]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -3600,8 +4009,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,4.
-                    ^ \markup { XSB(c.8) }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        XSB(c.8) \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
@@ -3612,8 +4026,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { "slow bow" }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "slow bow" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
@@ -3630,19 +4049,30 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,2.
-                    ^ \markup { norm. }
+                    \stopTextSpan
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        norm. \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
                     % [Voice 4 measure 29]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,4.
-                    ^ \markup { "quasi noise" }
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "quasi noise" \hspace #0.5 }
+                    - \tweak padding #6.75
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural 
                     b,4
+                    \stopTextSpan
                     ~
                     % [Voice 4 measure 30]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 

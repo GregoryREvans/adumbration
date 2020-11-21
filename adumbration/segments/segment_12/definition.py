@@ -137,6 +137,11 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(0, pitched=True),
         ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("½clt.", direction=abjad.Up),
+            baca.leaf(0, pitched=True),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -16,14 +16,6 @@ from adumbration.materials.timespans.segment_10.convert_timespans import (
     rhythm_commands,
 )
 
-noteheads = evans.NoteheadHandler(
-    ["cross"],
-    head_boolean_vector=[1],
-    head_vector_forget=False,
-    forget=False,
-)
-
-
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -84,10 +76,10 @@ maker = evans.SegmentMaker(
             tap_pitch_handler,
             abjad.select().components(abjad.Score),
         ),
-        evans.call(
+        evans.attach(
             "Voice 3",
-            noteheads,
-            abjad.select().leaves(),
+            abjad.Markup("½clt.", direction=abjad.Up),
+            abjad.select().leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",

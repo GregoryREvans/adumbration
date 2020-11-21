@@ -77,9 +77,30 @@ def attach_clicks(selections):
     for leaf in abjad.select(selections).leaves():
         text = cyc_clicks(r=1)[0]
         mark = abjad.Markup(text, direction=abjad.Up)
-        abjad.attach(mark, leaf)
+        span = abjad.StartTextSpan(
+            left_text=mark.upright(),
+            style="dashed-line-with-arrow",
+        )
+        abjad.tweak(span).padding = 6.75
+        abjad.attach(span, leaf)
+        abjad.attach(abjad.StopTextSpan(), leaf)
     first_leaf = abjad.select(selections).leaf(0)
     abjad.attach(abjad.Dynamic("fff"), first_leaf)
+    abjad.detach(abjad.StopTextSpan(), first_leaf)
+    final = abjad.StartTextSpan(
+        left_text=abjad.Markup("quasi noise").upright(),
+        style="invisible-line",
+    )
+    abjad.tweak(final).padding = 6.75
+    final_leaf = abjad.select(selections).leaf(-1)
+    start_span_indicator = [
+        _
+        for _ in abjad.get.indicators(final_leaf)
+        if isinstance(_, abjad.StartTextSpan)
+    ]
+    abjad.detach(start_span_indicator[0], final_leaf)
+    abjad.attach(final, final_leaf)
+    abjad.attach(abjad.StopTextSpan(), abjad.get.leaf(final_leaf, 1))
 
 
 def attach_material(selections):
@@ -113,6 +134,17 @@ def attach_material(selections):
     abjad.attach(middle_stop, center_leaf)
     abjad.attach(middle, center_leaf)
     abjad.attach(final_stop, last_leaf)
+    for leaf in abjad.select(selections).leaves():
+        literal_1 = abjad.LilyPondLiteral(
+            r"\once \override Staff.Tie.transparent = ##t",
+            format_slot="before",
+        )
+        abjad.attach(literal_1, leaf)
+        literal_2 = abjad.LilyPondLiteral(
+            r"\once \override Dots.staff-position = #1.75",
+            format_slot="before",
+        )
+        abjad.attach(literal_2, leaf)
 
 
 met_60 = abjad.MetronomeMark.make_tempo_equation_markup((1, 4), 60)
@@ -309,6 +341,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             evans.GlissandoHandler(
+                glissando_style="hide_middle_note_heads",
                 boolean_vector=[1],
                 forget=False,
                 apply_to="runs",
@@ -358,6 +391,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 2",
             evans.GlissandoHandler(
+                glissando_style="hide_middle_note_heads",
                 boolean_vector=[1],
                 forget=False,
                 apply_to="runs",
@@ -408,6 +442,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 3",
             evans.GlissandoHandler(
+                glissando_style="hide_middle_note_heads",
                 boolean_vector=[1],
                 forget=False,
                 apply_to="runs",
@@ -459,6 +494,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 4",
             evans.GlissandoHandler(
+                glissando_style="hide_middle_note_heads",
                 boolean_vector=[1],
                 forget=False,
                 apply_to="runs",

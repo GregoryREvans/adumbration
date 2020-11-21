@@ -394,16 +394,13 @@ rotations = evans.CyclicList(["½clt.", "clt.", "½clt.", "norm."], forget=False
 
 
 def full_bows(selections):
-    bowings = evans.CyclicList(["baca-full-downbow", "baca-full-upbow"], forget=False)
+    bowings = evans.CyclicList(["downbow", "upbow"], forget=False)
     for run in abjad.select(selections).runs():
-        for tie in abjad.select(run).logical_ties()[:-1]:
+        for tie in abjad.select(run).logical_ties():
             articulation = abjad.Articulation(bowings(r=1)[0])
             abjad.attach(articulation, tie[0])
         mark = abjad.Markup(rotations(r=1)[0], direction=abjad.Up)
-        text = bowings(r=1)[0]
-        final = abjad.Articulation(text[:4] + "-stop-on-string" + text[4:])
         abjad.attach(mark, abjad.select(run).logical_tie(0)[0])
-        abjad.attach(final, abjad.select(run).logical_tie(-1)[0])
 
 
 composite_handler_3 = evans.CompositeHandler(
@@ -551,14 +548,11 @@ composite_handler_4 = evans.CompositeHandler(
 
 
 def full_bows_without_rotations(selections):
-    bowings = evans.CyclicList(["baca-full-downbow", "baca-full-upbow"], forget=False)
+    bowings = evans.CyclicList(["downbow", "upbow"], forget=False)
     for run in abjad.select(selections).runs():
-        for tie in abjad.select(run).logical_ties()[:-1]:
+        for tie in abjad.select(run).logical_ties():
             articulation = abjad.Articulation(bowings(r=1)[0])
             abjad.attach(articulation, tie[0])
-        text = bowings(r=1)[0]
-        final = abjad.Articulation(text[:4] + "-stop-on-string" + text[4:])
-        abjad.attach(final, abjad.select(run).logical_tie(-1)[0])
 
 
 composite_handler_5 = evans.CompositeHandler(

@@ -132,6 +132,106 @@ maker = evans.SegmentMaker(
             ),
             baca.leaf(0),
         ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(17),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(11),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(19),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(18),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(30),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(32),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(46),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(68),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(40),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(40),
+        ),
+        evans.attach(
+            "Voice 3",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(54),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(81),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(52),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("full bows as possible", direction=abjad.Up),
+            baca.leaf(67),
+        ),
+        evans.attach(
+            "Voice 1",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(62),
+        ),
+        evans.attach(
+            "Voice 2",
+            abjad.Markup("ord.", direction=abjad.Up),
+            baca.leaf(77),
+        ),
         # evans.attach(
         #     "Global Context",
         #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),

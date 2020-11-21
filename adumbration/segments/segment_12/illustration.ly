@@ -154,9 +154,10 @@
 
                         r2
 
-                        \tweak NoteHead.style #'cross
+                        \tweak NoteHead.style #'default
                         b2
                         \p
+                        ^ \markup { ½clt. }
 
                         r2
 

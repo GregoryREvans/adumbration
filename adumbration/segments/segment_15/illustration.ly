@@ -35,7 +35,7 @@
                     \override
                         #'(font-name . "STIXGeneral Bold")
                         \caps
-                            "A Thousand Plateaus"
+                            Plateaus
                 }
             ^ \markup {
               \huge
@@ -142,13 +142,17 @@
                     \tweak Accidental.text \abjad-sharp-markup
                     gs'''2.
                     \pp
-                    ^ \markup { "XSB (noise poco a poco)" }
                     _ \markup {
                         \box
                             "cresc. a m.196 (ff)"
                         }
                     \<
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "XSB (noise poco a poco)" \hspace #0.5 }
+                    - \tweak padding #9
+                    \startTextSpan
                     % [Voice 1 measure 4]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -194,7 +198,13 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp-markup
                     gs'''2.
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        noise \hspace #0.5 }
+                    - \tweak padding #9
+                    \startTextSpan
                     % [Voice 1 measure 10]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -202,6 +212,7 @@
                     gs'''4
                     \!
                     \ff
+                    \stopTextSpan
 
                     r1
                     % [Voice 1 measure 11]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -210,8 +221,12 @@
                     \tweak Accidental.text \abjad-natural-markup
                     g''2.
                     \mf
-                    ^ \markup { "norm. (noise poco a poco)" }
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "norm. (noise poco a poco)" \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
                     % [Voice 1 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -229,12 +244,19 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     g''2.
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        noise \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
                     % [Voice 1 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     g''1
+                    \stopTextSpan
                     \bar ":|."
                     % [Voice 1 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -273,7 +295,8 @@
                     \tweak Accidental.text \abjad-natural-markup
                     a'8.
                     \sfz
-                    - \baca-full-downbow
+                    - \downbow
+                    ^ \markup { "full bows as possible" }
                     [
                     _ \markup {
                       \column {
@@ -285,7 +308,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     ~
                     ]
 
@@ -298,7 +321,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -309,20 +332,20 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -333,20 +356,20 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -357,7 +380,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     ~
                     ]
 
@@ -373,23 +396,23 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
                         ~
                         ]
 
@@ -409,48 +432,48 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -463,74 +486,74 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -544,49 +567,49 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -599,24 +622,24 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -625,38 +648,38 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'8
-                    - \baca-full-downbow
+                    - \downbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'8
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
@@ -667,34 +690,34 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -707,54 +730,54 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -768,29 +791,29 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'32
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'32
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'32
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -802,69 +825,69 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
                         ~
                         ]
 
@@ -878,69 +901,73 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        ^ \markup { "noise poco a poco" }
                         [
+                        - \abjad-dashed-line-with-arrow
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "noise poco a poco" \hspace #0.5 }
+                        - \tweak padding #6
+                        \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-upbow
+                        - \upbow
                         ~
                         ]
 
@@ -951,23 +978,30 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
+                    \stopTextSpan
                     [
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        noise \hspace #0.5 }
+                    - \tweak padding #6
+                    \startTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
+                    \stopTextSpan
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
                     ]
 
@@ -980,7 +1014,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -991,26 +1025,26 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'16
-                    - \baca-full-downbow
+                    - \downbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a'8
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
@@ -1020,12 +1054,12 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'4
-                        - \baca-stop-on-string-full-upbow
+                        - \upbow
 
                     }
 
@@ -1038,9 +1072,13 @@
                     gs'4
                     \f
                     ^ \markup { IV. }
-                    ^ \markup { "norm. (noise poco a poco)" }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "norm. (noise poco a poco)" \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
 
                     \tweak NoteHead.style #'harmonic-mixed
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1137,9 +1175,15 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     e'''8.
+                    \stopTextSpan
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     [
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        noise \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
 
                     \revert Staff.Stem.stemlet-length
                     \tweak NoteHead.style #'harmonic-mixed
@@ -1227,6 +1271,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d''4
+                        \stopTextSpan
                         \bar ":|."
 
                     }
@@ -1271,7 +1316,8 @@
                         \tweak Accidental.text \abjad-natural-markup
                         a16
                         \sfz
-                        - \baca-full-downbow
+                        - \downbow
+                        ^ \markup { "full bows as possible" }
                         [
                         _ \markup {
                           \column {
@@ -1282,78 +1328,78 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -1367,29 +1413,29 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a32
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a32
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a32
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -1401,39 +1447,39 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -1446,64 +1492,64 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -1513,32 +1559,32 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a8
-                    - \baca-full-downbow
+                    - \downbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-downbow
+                    - \downbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -1549,7 +1595,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-upbow
+                    - \upbow
                     ~
                     ]
 
@@ -1562,18 +1608,18 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-downbow
+                    - \downbow
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
                     ]
 
@@ -1591,48 +1637,48 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
                         ~
                         ]
 
@@ -1652,78 +1698,78 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -1737,29 +1783,29 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a32
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a32
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a32
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -1771,69 +1817,69 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -1846,35 +1892,39 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
-                        ^ \markup { "noise poco a poco" }
+                        - \upbow
                         [
+                        - \abjad-dashed-line-with-arrow
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "noise poco a poco" \hspace #0.5 }
+                        - \tweak padding #6
+                        \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -1883,38 +1933,38 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-downbow
+                    - \downbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a8
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a8
-                    - \baca-full-downbow
+                    - \downbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a16
-                    - \baca-full-downbow
+                    - \downbow
                     ]
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -1926,49 +1976,56 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
+                        \stopTextSpan
                         [
+                        - \abjad-invisible-line
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            noise \hspace #0.5 }
+                        - \tweak padding #6
+                        \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
+                        \stopTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -1980,12 +2037,12 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a4
-                        - \baca-stop-on-string-full-upbow
+                        - \upbow
 
                     }
 
@@ -1999,10 +2056,14 @@
                     gs8.
                     \f
                     ^ \markup { III. }
-                    ^ \markup { "norm. (noise poco a poco)" }
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
                     [
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "norm. (noise poco a poco)" \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
 
                     \revert Staff.Stem.stemlet-length
                     \tweak NoteHead.style #'harmonic-mixed
@@ -2127,8 +2188,14 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \three-quarters-sharp-markup
                     dtqs''4
+                    \stopTextSpan
                     - \tweak style #'solid-line                                %! abjad.glissando(7)
                     \glissando                                                 %! abjad.glissando(7)
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        noise \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
 
                     \tweak NoteHead.style #'harmonic-mixed
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2170,6 +2237,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-sharp-markup
                     as'4
+                    \stopTextSpan
                     \bar ":|."
                     % [Voice 3 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2212,7 +2280,8 @@
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
                         \sfz
-                        - \baca-full-downbow
+                        - \downbow
+                        ^ \markup { "full bows as possible" }
                         [
                         _ \markup {
                           \column {
@@ -2223,83 +2292,83 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         ~
                         ]
 
@@ -2319,48 +2388,48 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -2373,39 +2442,39 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         ~
                         ]
 
@@ -2420,32 +2489,32 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-downbow
+                    - \downbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,8
-                    - \baca-full-downbow
+                    - \downbow
                     [
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,8
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \tweak text #tuplet-number::calc-fraction-text
@@ -2457,54 +2526,54 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -2518,49 +2587,49 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -2573,44 +2642,44 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -2623,54 +2692,54 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -2683,34 +2752,34 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
                         ]
 
                     }
@@ -2719,24 +2788,24 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-downbow
+                    - \downbow
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
 
                     \revert Staff.Stem.stemlet-length
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
                     ]
 
@@ -2749,7 +2818,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2760,20 +2829,20 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-downbow
+                    - \downbow
                     ]
 
                     \override Staff.Stem.stemlet-length = 0.75
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
                     [
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-downbow
+                    - \downbow
                     ~
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2784,7 +2853,7 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     a,16
-                    - \baca-full-upbow
+                    - \upbow
                     ]
 
                     \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
@@ -2795,40 +2864,44 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
-                        ^ \markup { "noise poco a poco" }
+                        - \downbow
                         [
+                        - \abjad-dashed-line-with-arrow
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            "noise poco a poco" \hspace #0.5 }
+                        - \tweak padding #6
+                        \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         ~
                         ]
 
@@ -2846,38 +2919,38 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         ~
                         ]
 
@@ -2891,58 +2964,65 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
+                        \stopTextSpan
                         [
+                        - \abjad-invisible-line
+                        - \tweak bound-details.left.text \markup \concat { \upright
+                            noise \hspace #0.5 }
+                        - \tweak padding #6
+                        \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
+                        \stopTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,8
-                        - \baca-full-downbow
+                        - \downbow
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                     }
@@ -2955,20 +3035,20 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-downbow
+                        - \downbow
                         [
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,16
-                        - \baca-full-upbow
+                        - \upbow
                         ]
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a,4
-                        - \baca-stop-on-string-full-downbow
+                        - \downbow
 
                     }
 
@@ -2979,8 +3059,12 @@
                     \tweak Accidental.text \abjad-natural-markup
                     g,2.
                     \mf
-                    ^ \markup { "norm. (noise poco a poco)" }
                     ~
+                    - \abjad-dashed-line-with-arrow
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        "norm. (noise poco a poco)" \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
                     % [Voice 4 measure 12]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
@@ -2998,12 +3082,19 @@
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     g,2.
+                    \stopTextSpan
                     ~
+                    - \abjad-invisible-line
+                    - \tweak bound-details.left.text \markup \concat { \upright
+                        noise \hspace #0.5 }
+                    - \tweak padding #7
+                    \startTextSpan
                     % [Voice 4 measure 15]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                     \tweak Accidental.stencil #ly:text-interface::print
                     \tweak Accidental.text \abjad-natural-markup
                     g,1
+                    \stopTextSpan
                     \bar ":|."
                     % [Voice 4 measure 16]                                     %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 

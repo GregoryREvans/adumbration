@@ -130,14 +130,13 @@
                     \clef "varC"
                     r4
 
-                    \tweak NoteHead.style #'cross
                     b4
                     \mp
+                    ^ \markup { ½clt. }
 
                     r4
 
                     \override Staff.Stem.stemlet-length = 0.75
-                    \tweak NoteHead.style #'cross
                     e'16
                     [
 
@@ -146,7 +145,6 @@
                     r16
 
                     \revert Staff.Stem.stemlet-length
-                    \tweak NoteHead.style #'cross
                     b16
                     \f
                     ]
@@ -157,18 +155,15 @@
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        \tweak NoteHead.style #'cross
                         e'8
                         [
 
-                        \tweak NoteHead.style #'cross
                         b8
                         ]
 
                         r4
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak NoteHead.style #'cross
                         e'8
                         \p
                         ]
@@ -180,19 +175,16 @@
                     \times 8/7 {
 
                         \override Staff.Stem.stemlet-length = 0.75
-                        \tweak NoteHead.style #'cross
                         a32
                         [
 
                         r16.
 
-                        \tweak NoteHead.style #'cross
                         f'32
 
                         r32
 
                         \revert Staff.Stem.stemlet-length
-                        \tweak NoteHead.style #'cross
                         a32
                         \f
                         ]
@@ -203,18 +195,14 @@
                     \times 2/3 {
                         % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak NoteHead.style #'cross
                         f'4
 
                         r4
 
-                        \tweak NoteHead.style #'cross
                         b4
 
-                        \tweak NoteHead.style #'cross
                         e'4
 
-                        \tweak NoteHead.style #'cross
                         b4
 
                         r4
@@ -227,7 +215,6 @@
 
                         r2
 
-                        \tweak NoteHead.style #'cross
                         e'2
                         \mp
 

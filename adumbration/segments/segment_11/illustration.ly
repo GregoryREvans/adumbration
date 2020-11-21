@@ -216,9 +216,10 @@
 
                     r4
 
-                    \tweak NoteHead.style #'cross
+                    \tweak NoteHead.style #'default
                     b4
                     \p
+                    ^ \markup { ½clt. }
 
                     r4
                     % [Voice 1 measure 7]                                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -602,15 +603,16 @@
 
                     r4
 
-                    \tweak NoteHead.style #'cross
+                    \tweak NoteHead.style #'default
                     e'4
                     \pp
+                    ^ \markup { ½clt. }
 
                     r4
 
                     r4
 
-                    \tweak NoteHead.style #'cross
+                    \tweak NoteHead.style #'default
                     b4
                     \ff
                     \>
@@ -620,24 +622,22 @@
                     \times 6/5 {
                         % [Voice 2 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                        \tweak NoteHead.style #'cross
+                        \tweak NoteHead.style #'default
                         \override Staff.Stem.stemlet-length = 0.75
                         e'8
-                        ^ \markup { (pizz) }
                         [
 
-                        \tweak NoteHead.style #'cross
+                        \tweak NoteHead.style #'default
                         b8
                         \p
                         ]
 
                         r4
 
-                        \tweak NoteHead.style #'cross
+                        \tweak NoteHead.style #'default
                         \revert Staff.Stem.stemlet-length
                         e'8
                         \mp
-                        ^ \markup { (pizz) }
                         ]
                         \bar "||"
 

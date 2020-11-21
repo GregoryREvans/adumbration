@@ -190,7 +190,7 @@ notehead_handler_1 = evans.NoteheadHandler(
 )
 
 notehead_handler_2 = evans.NoteheadHandler(
-    notehead_list=["cross"],
+    notehead_list=["default"],
     head_boolean_vector=[1],
     head_vector_forget=False,
     forget=False,
