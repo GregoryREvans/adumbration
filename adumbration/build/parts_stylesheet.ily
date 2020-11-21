@@ -1,7 +1,7 @@
 \version "2.19.84"
 \language "english"
 #(set-default-paper-size "letterportrait")
-#(set-global-staff-size 12) % was 13. Try 12.5?
+#(set-global-staff-size 14) % was 13. Try 12.5?
 \include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
 \include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
 \include "/Users/evansdsg2/baca/lilypond/baca.ily"
@@ -157,7 +157,7 @@
 
 \paper {
 	%{ system-separator-markup = \markup { \slashSeparator } %}
-	system-system-spacing = #'((basic-distance . 13) (minimum-distance . 13) (padding . 4))
+	system-system-spacing = #'((basic-distance . 12) (minimum-distance . 9) (padding . 3))
 
 	indent = 20\mm
     short-indent = 15\mm
