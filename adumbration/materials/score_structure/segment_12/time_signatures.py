@@ -43,4 +43,4 @@ time_signatures = [abjad.TimeSignature(_) for _ in fitted_meters]
 
 time_signatures.append(abjad.TimeSignature((3, 16)))  # for ending skip
 
-bounds = abjad.mathx.cumulative_sums([_.duration for _ in time_signatures])
+bounds = abjad.math.cumulative_sums([_.duration for _ in time_signatures])
