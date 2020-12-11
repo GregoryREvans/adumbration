@@ -72,6 +72,7 @@ jobs:
         git clone https://github.com/GregoryREvans/evans.git $EVANS
         pip install -e $EVANS
         echo "$EVANS/scr" >> $GITHUB_PATH
+        ln -s $EVANS/dotfiles/test_segments.py test.py
 
     - name: Install baca
       run: |
@@ -101,4 +102,5 @@ jobs:
         black-check .
         flake8-check .
         isort-check .
+        py.test -rf test.py
     # evans-doctest .
