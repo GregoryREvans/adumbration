@@ -107,4 +107,4 @@ jobs:
 
     - name: Test segments
       run: |
-        py.test -rf $NAME/test.py
+        py.test -rf $NAME/$NAME/test.py
