@@ -1,3 +1,0 @@
-version: ~> 1.0
-
-import: GregoryREvans/evans:dotfiles/score.yml
