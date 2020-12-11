@@ -73,7 +73,7 @@ jobs:
         git clone https://github.com/GregoryREvans/evans.git $EVANS
         pip install -e $EVANS
         echo "$EVANS/scr" >> $GITHUB_PATH
-        ln -s $EVANS/dotfiles/test_segments.py $NAME/test.py
+        ln -s $EVANS/dotfiles/test_segments.py $NAME/$NAME/test.py
 
     - name: Install baca
       run: |
