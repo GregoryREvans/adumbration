@@ -9,6 +9,7 @@ on:
     - master
 
 env:
+  NAME: adumbration
   LILYPOND: /tmp/lilypond
   LILYPOND_URL: http://lilypond.org/download/binaries/linux-64/
   LILYPOND_SOURCE: lilypond-2.19.84-1.linux-64.sh
@@ -72,7 +73,7 @@ jobs:
         git clone https://github.com/GregoryREvans/evans.git $EVANS
         pip install -e $EVANS
         echo "$EVANS/scr" >> $GITHUB_PATH
-        ln -s $EVANS/dotfiles/test_segments.py test.py
+        ln -s $EVANS/dotfiles/test_segments.py $NAME/test.py
 
     - name: Install baca
       run: |
@@ -102,5 +103,8 @@ jobs:
         black-check .
         flake8-check .
         isort-check .
-        py.test -rf test.py
     # evans-doctest .
+
+    - name: Test segments
+      run: |
+        py.test -rf $NAME/test.py
