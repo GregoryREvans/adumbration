@@ -264,6 +264,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         e'16
+                        :32
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -278,6 +279,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         eqs'16
+                        :32
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1077,6 +1079,7 @@
                         ~
 
                         df'16
+                        :32
 
                         \revert Staff.Stem.stemlet-length
                         d'16
@@ -2012,6 +2015,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         cqs,16
+                        :32
                         \<
                         [
 
@@ -2040,6 +2044,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c,16
+                        :32
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2052,6 +2057,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         cqs,16
+                        :32
 
                         \revert Staff.Stem.stemlet-length
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2066,6 +2072,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         df,16
+                        :32
                         [
 
                         \revert Staff.Stem.stemlet-length
