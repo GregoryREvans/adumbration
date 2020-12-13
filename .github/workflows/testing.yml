@@ -9,7 +9,6 @@ on:
     - master
 
 env:
-  NAME: adumbration
   LILYPOND: /tmp/lilypond
   LILYPOND_URL: http://lilypond.org/download/binaries/linux-64/
   LILYPOND_SOURCE: lilypond-2.19.84-1.linux-64.sh
@@ -75,7 +74,7 @@ jobs:
         pip install -e $EVANS
         echo "$EVANS/scr" >> $GITHUB_PATH
         ln -s $EVANS/dotfiles/.mypy.ini ./mypy.ini
-        ln -s $EVANS/dotfiles/test_segments.py ./$NAME/test.py
+        ln -s $EVANS/dotfiles/test_segments.py ./adumbration/test.py
 
     - name: Install baca
       run: |
