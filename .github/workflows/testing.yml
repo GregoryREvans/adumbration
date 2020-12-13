@@ -9,6 +9,7 @@ on:
     - master
 
 env:
+  NAME: adumbration
   LILYPOND: /tmp/lilypond
   LILYPOND_URL: http://lilypond.org/download/binaries/linux-64/
   LILYPOND_SOURCE: lilypond-2.19.84-1.linux-64.sh
@@ -19,7 +20,7 @@ env:
   EVANS: /tmp/evans
   BACA: /tmp/baca
   IDE: /tmp/ide
-  MYPYPATH: "/tmp/abjad:/tmp/abjad-ext-rmakers:/tmp/abjad-ext-microtones:/tmp/tsmakers:/tmp/evans:/tmp/baca:/tmp/ide"
+  MYPYPATH: "$ABJAD:$RMAKERS:$MICROTONES:$TSMAKERS:$EVANS:$BACA:$IDE"
 
 jobs:
   build:
@@ -74,7 +75,7 @@ jobs:
         pip install -e $EVANS
         echo "$EVANS/scr" >> $GITHUB_PATH
         ln -s $EVANS/dotfiles/.mypy.ini ./mypy.ini
-        ln -s $EVANS/dotfiles/test_segments.py ./adumbration/test.py
+        ln -s $EVANS/dotfiles/test_segments.py ./$NAME/test.py
 
     - name: Install baca
       run: |
@@ -108,4 +109,4 @@ jobs:
 
     - name: Test segments
       run: |
-        py.test -rf ./adumbration/test.py
+        py.test -rf ./$NAME/test.py
