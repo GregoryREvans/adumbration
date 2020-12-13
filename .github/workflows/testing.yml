@@ -20,7 +20,7 @@ env:
   EVANS: /tmp/evans
   BACA: /tmp/baca
   IDE: /tmp/ide
-  MYPYPATH: "/tmp/abjad:/tmp/abjad-ext-rmakers:/tmp/abjad-ext-microtones:/tmp/tsmakers:/tmp/baca:/tmp/ide"
+  MYPYPATH: "/tmp/abjad:/tmp/abjad-ext-rmakers:/tmp/abjad-ext-microtones:/tmp/tsmakers:/tmp/evans:/tmp/baca:/tmp/ide"
 
 jobs:
   build:
