@@ -105,8 +105,7 @@ jobs:
         flake8-check .
         isort-check .
         mypy .
-        py.test ./test.py
 
     - name: Test segments
       run: |
-        py.test -rf ./$NAME/test.py
+        py.test -rf ./adumbration/test.py
