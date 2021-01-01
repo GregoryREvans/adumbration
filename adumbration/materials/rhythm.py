@@ -499,24 +499,26 @@ composite_handler_4 = evans.CompositeHandler(
     ),
     attachment_handlers=[
         evans.PitchHandler(
-            evans.random_walk(
+            evans.Sequence(
+                microtones.PitchSegment(
+                    [
+                        0,
+                        "2/3",
+                        "4/3",
+                        "6/3",
+                        "8/3",
+                        "1/2",
+                        "3/2",
+                    ]
+                ).sorted(),
+            )
+            .mirror(
+                sequential_duplicates=False,
+            )
+            .random_walk(
                 random_seed=25,
                 length=200,
                 step_list=[1, 2],
-                mapped_list=evans.mirror(
-                    microtones.PitchSegment(
-                        [
-                            0,
-                            "2/3",
-                            "4/3",
-                            "6/3",
-                            "8/3",
-                            "1/2",
-                            "3/2",
-                        ]
-                    ).sorted(),
-                    sequential_duplicates=False,
-                ),
             ),
             forget=False,
         ),
@@ -640,10 +642,9 @@ composite_handler_8 = evans.CompositeHandler(
     ),
     attachment_handlers=[
         evans.PitchHandler(
-            evans.mirror(
+            evans.Sequence(
                 [8, 14, 20, 22, 24, 25, 26, 26.5, 27, 27.5, 28],
-                sequential_duplicates=False,
-            ),
+            ).mirror(sequential_duplicates=False),
             forget=False,
         ),
         evans.GlissandoHandler(
