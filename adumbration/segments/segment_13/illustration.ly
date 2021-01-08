@@ -404,15 +404,15 @@
                         >>
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "4")
+                        \times 5/8 {
                             \oneVoice                                          %! abjad.on_beat_grace_container(5)
                             % [Voice 1 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            cs'2.
+                            cs'1.
                             ^ \markup { XSB(c.9) }
 
-                            r4
+                            r2
 
                         }
                         % [Voice 1 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -491,11 +491,11 @@
                         r2.
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 6 7) "4")
-                        \times 7/6 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 12 7) "4")
+                        \times 7/12 {
                             % [Voice 2 measure 4]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            r1
+                            r\breve
 
                             <<
 
@@ -513,7 +513,7 @@
                                         \tweak font-size #0
                                         \tweak transparent ##t
                                         d'
-                                    >32 * 8/7
+                                    >32 * 16/7
                                     ^ \markup {
                                         \hspace
                                             #1
@@ -525,27 +525,27 @@
                                     \once \override NoteHead.no-ledgers = ##t
                                     \once \override Accidental.transparent = ##t
                                     \tweak transparent ##t
-                                    d'32 * 8/7
+                                    d'32 * 16/7
 
                                     \once \override NoteHead.no-ledgers = ##t
                                     \once \override Accidental.transparent = ##t
                                     \tweak transparent ##t
-                                    d'32 * 8/7
+                                    d'32 * 16/7
 
                                     \once \override NoteHead.no-ledgers = ##t
                                     \once \override Accidental.transparent = ##t
                                     \tweak transparent ##t
-                                    d'32 * 8/7
+                                    d'32 * 16/7
 
                                     \once \override NoteHead.no-ledgers = ##t
                                     \once \override Accidental.transparent = ##t
                                     \tweak transparent ##t
-                                    d'32 * 8/7
+                                    d'32 * 16/7
 
                                     \once \override NoteHead.no-ledgers = ##t
                                     \once \override Accidental.transparent = ##t
                                     \tweak transparent ##t
-                                    d'32 * 8/7
+                                    d'32 * 16/7
                                     ]
 
                                 }
@@ -554,7 +554,7 @@
                                 {
 
                                     \voiceTwo                                  %! abjad.on_beat_grace_container(4)
-                                    d'2
+                                    d'1
                                     \f
                                     - \bendAfter #'2.5
                                     \>
@@ -1471,14 +1471,14 @@
                         \>
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "4")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "4")
+                        \times 5/8 {
                             % [Voice 4 measure 9]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
-                            cs'2.
+                            cs'1.
                             \mf
 
-                            r4
+                            r2
 
                         }
                         % [Voice 4 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()

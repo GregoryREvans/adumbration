@@ -790,12 +790,12 @@
                         }
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 9) "4")
-                        \times 9/8 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 16 9) "4")
+                        \times 9/16 {
                             % [Voice 3 measure 14]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \tweak NoteHead.style #'default
-                            f'2
+                            f'1
                             \mf
                             - \tweak stencil #constante-hairpin
                             \<
@@ -808,13 +808,13 @@
 
 
                             \tweak NoteHead.style #'harmonic-mixed
-                            fqs'4
+                            fqs'2
 
-                            r4
+                            r2
                             \!
 
                             \tweak NoteHead.style #'default
-                            af'2.
+                            af'1.
                             \f
                             - \tweak stencil #constante-hairpin
                             \<
@@ -827,7 +827,7 @@
 
 
                             \tweak NoteHead.style #'harmonic-mixed
-                            f'4
+                            f'2
 
                                             - \tweak arrow-length #2
                                             - \tweak arrow-width #0.5

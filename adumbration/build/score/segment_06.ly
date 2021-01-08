@@ -1883,29 +1883,29 @@
                         ]
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "8")
+                        \times 5/8 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            a'16
+                            a'8
                             - \tweak circled-tip ##t
                             \<
                             [
 
-                            a'16
+                            a'8
 
-                            a'16
+                            a'8
 
-                            bf'16
+                            bf'8
 
-                            bf'16
+                            bf'8
 
-                            bf'16
+                            bf'8
 
-                            bf'16
+                            bf'8
 
                             \revert Staff.Stem.stemlet-length
-                            bf'16
+                            bf'8
                             \fff
                             ]
 
@@ -2213,29 +2213,29 @@
                         ]
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "8")
+                        \times 5/8 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            bf'16
+                            bf'8
                             - \tweak circled-tip ##t
                             \<
                             [
 
-                            bf'16
+                            bf'8
 
-                            ef''16
+                            ef''8
 
-                            ef''16
+                            ef''8
 
-                            ef''16
+                            ef''8
 
-                            ef''16
+                            ef''8
 
-                            ef''16
+                            ef''8
 
                             \revert Staff.Stem.stemlet-length
-                            ef''16
+                            ef''8
                             \fff
                             ]
 
@@ -3635,29 +3635,29 @@
                         ]
 
                         \tweak text #tuplet-number::calc-fraction-text
-                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 4 5) "8")
-                        \times 5/4 {
+                        \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 8 5) "8")
+                        \times 5/8 {
 
                             \override Staff.Stem.stemlet-length = 0.75
-                            ef16
+                            ef8
                             - \tweak circled-tip ##t
                             \<
                             [
 
-                            ef16
+                            ef8
 
-                            ef16
+                            ef8
 
-                            ef16
+                            ef8
 
-                            ef16
+                            ef8
 
-                            ef16
+                            ef8
 
-                            c16
+                            c8
 
                             \revert Staff.Stem.stemlet-length
-                            c16
+                            c8
                             \fff
                             ]
 
