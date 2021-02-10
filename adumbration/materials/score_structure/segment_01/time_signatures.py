@@ -27,6 +27,7 @@ import abjad
 #     meters=permitted_meters,
 #     maximum_run_length=1,
 # )
+# abjad.show(fitted_meters, scale=0.85)
 
 fitted_meter_pairs = (
     (4, 4),
