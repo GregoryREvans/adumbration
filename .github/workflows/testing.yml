@@ -107,7 +107,7 @@ jobs:
         black-check .
         flake8-check .
         isort-check .
-        mypy .
+        # mypy .
 
     - name: Test segments
       run: |
