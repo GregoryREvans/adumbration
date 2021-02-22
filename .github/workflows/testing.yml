@@ -52,7 +52,7 @@ jobs:
 
     - name: Install abjad
       run: |
-        git clone -b trevor/dev https://github.com/Abjad/abjad.git $ABJAD
+        git clone https://github.com/Abjad/abjad.git $ABJAD
         pip install -e $ABJAD
         echo "$ABJAD/scr" >> $GITHUB_PATH
 
