@@ -65,18 +65,16 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "Anomaly",
+                r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Anomaly""",
                 direction=abjad.Up,
-            )
-            .caps()
-            .override(("font-name", "STIXGeneral Bold"))
-            .box(),
-            baca.leaf(0),
+                literal=True,
+            ),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
             abjad.LilyPondLiteral(r"\break", format_slot="before"),
-            baca.leaf(10),
+            baca.selectors.leaf(10),
         ),
         evans.call(
             "Voice 1",
@@ -498,27 +496,27 @@ maker = evans.SegmentMaker(
         evans.detach(
             "Voice 4",
             abjad.Dynamic("f"),
-            baca.leaf(27, pitched=True),
+            baca.selectors.leaf(27, pitched=True),
         ),
         evans.detach(
             "Voice 3",
             abjad.Dynamic("f"),
-            baca.leaf(-9, pitched=True),
+            baca.selectors.leaf(-9, pitched=True),
         ),
         evans.detach(
             "Voice 3",
             abjad.StartBeam(),
-            baca.leaf(30),
+            baca.selectors.leaf(30),
         ),
         evans.attach(
             "Voice 3",
             abjad.StartBeam(),
-            baca.leaf(32),
+            baca.selectors.leaf(32),
         ),
-        evans.detach("Voice 4", abjad.StartBeam(), baca.leaf(35)),
-        evans.attach("Voice 4", abjad.StartBeam(), baca.leaf(36)),
-        evans.detach("Voice 4", abjad.StartBeam(), baca.leaf(48)),
-        evans.attach("Voice 4", abjad.StartBeam(), baca.leaf(50)),
+        evans.detach("Voice 4", abjad.StartBeam(), baca.selectors.leaf(35)),
+        evans.attach("Voice 4", abjad.StartBeam(), baca.selectors.leaf(36)),
+        evans.detach("Voice 4", abjad.StartBeam(), baca.selectors.leaf(48)),
+        evans.attach("Voice 4", abjad.StartBeam(), baca.selectors.leaf(50)),
         evans.attach(
             "Global Context",
             evans.metric_modulation(
@@ -527,30 +525,38 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'4")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
-        evans.call("Global Context", tempo_handler, baca.leaves().get([8, 9])),
-        evans.call("Global Context", tempo_handler, baca.leaves().get([11, 12])),
-        evans.call("Global Context", tempo_handler, baca.leaves().get([14, 15])),
+        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([8, 9])),
+        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([11, 12])),
+        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([14, 15])),
         evans.attach(
             "Voice 1",
-            abjad.Markup("staccati leggiero", direction=abjad.Up),
-            baca.leaf(25),
+            abjad.Markup(
+                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
+            ),
+            baca.selectors.leaf(25),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup("staccati leggiero", direction=abjad.Up),
-            baca.leaf(22),
+            abjad.Markup(
+                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
+            ),
+            baca.selectors.leaf(22),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("staccati leggiero", direction=abjad.Up),
-            baca.leaf(24),
+            abjad.Markup(
+                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
+            ),
+            baca.selectors.leaf(24),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup("staccati leggiero", direction=abjad.Up),
-            baca.leaf(18),
+            abjad.Markup(
+                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
+            ),
+            baca.selectors.leaf(18),
         ),
     ],
     score_template=score,

@@ -31,6 +31,12 @@ def _slur_runs(selections):
             abjad.attach(abjad.StopSlur(), run[-1])
 
 
+title_markup = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "T. Talked with God [Crocodiles (iii)]" \caps "(Ascend to the Basement)" }""",
+    direction=abjad.Up,
+    literal=True,
+)
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -73,18 +79,12 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'2")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [
-                    abjad.Markup("T. Talked with God [Crocodiles (iii)]").caps().box(),
-                    abjad.Markup("(Ascend to the Basement)").caps(),
-                ],
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            title_markup,
+            baca.selectors.leaf(0),
         ),
         evans.call(
             "Voice 4",

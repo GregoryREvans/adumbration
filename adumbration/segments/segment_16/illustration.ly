@@ -4,14 +4,6 @@
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"           %! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily" %! abjad.LilyPondFile._get_formatted_includes()
 
-\header {                                                                      %! abjad.LilyPondFile._get_formatted_blocks()
-    tagline = ##f
-}                                                                              %! abjad.LilyPondFile._get_formatted_blocks()
-
-\layout {}
-
-\paper {}
-
 \score {                                                                       %! abjad.LilyPondFile._get_formatted_blocks()
 
     \context Score = "adumbration Score"
@@ -23,19 +15,9 @@
 
             \tempo 4=38
             \time 4/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 1
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            Anomaly
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \box \caps Anomaly
             ^ \markup {
               \huge
               \concat {
@@ -166,231 +148,162 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
                         % [Voice 1 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
                         % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -2
-                            }
+                        ^ \markup \center-align { -2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -2
-                            }
+                        ^ \markup \center-align { -2 }
                         % [Voice 1 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -2
-                            }
+                        ^ \markup \center-align { -2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -2
-                            }
+                        ^ \markup \center-align { -2 }
                         % [Voice 1 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
                         % [Voice 1 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
 
                         r2
                         % [Voice 1 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -2
-                            }
+                        ^ \markup \center-align { -2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -2
-                            }
+                        ^ \markup \center-align { -2 }
                         % [Voice 1 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -400,7 +313,7 @@
                         cs''16
                         \mp
                         - \staccato
-                        ^ \markup { "staccati leggiero" }
+                        ^ \markup { staccati leggiero }
 
                         \revert Staff.Stem.stemlet-length
                         d''16
@@ -423,33 +336,24 @@
                         ]
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -474,24 +378,18 @@
                         }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         d''2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         % [Voice 1 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         gf''2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +29
-                            }
+                        ^ \markup \center-align { +29 }
 
                         \override Staff.Stem.stemlet-length = 0.75
                         r8.
@@ -536,209 +434,146 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -750,7 +585,7 @@
                             cs''16
                             \mp
                             - \staccato
-                            ^ \markup { "staccati leggiero" }
+                            ^ \markup { staccati leggiero }
 
                             d''16
                             - \staccato
@@ -769,23 +604,17 @@
                         % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         % [Voice 2 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         r2.
@@ -808,23 +637,17 @@
                         % [Voice 2 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         bf'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -948,222 +771,156 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         b2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         b2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
                         % [Voice 3 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         b2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         b2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
                         % [Voice 3 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         r2
                         % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef'2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -1175,7 +932,7 @@
                             cs''8
                             \mf
                             - \staccato
-                            ^ \markup { "staccati leggiero" }
+                            ^ \markup { staccati leggiero }
 
                             d''8.
                             - \staccato
@@ -1215,24 +972,18 @@
                         [
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         b2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
                         % [Voice 3 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         b2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -1284,10 +1035,7 @@
                         dqs''2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +14
-                            }
+                        ^ \markup \center-align { +14 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -1357,171 +1105,120 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \clef "bass"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         cf2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +27
-                            }
+                        ^ \markup \center-align { +27 }
                         % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         cf2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +27
-                            }
+                        ^ \markup \center-align { +27 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 8]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -1534,7 +1231,7 @@
                             cs''16
                             \f
                             - \staccato
-                            ^ \markup { "staccati leggiero" }
+                            ^ \markup { staccati leggiero }
 
                             d''16
                             - \staccato
@@ -1558,33 +1255,24 @@
 
                         \clef "bass"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         cf2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +27
-                            }
+                        ^ \markup \center-align { +27 }
                         % [Voice 4 measure 11]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-two-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-two-syntonic-comma-up  }
                         cf2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +27
-                            }
+                        ^ \markup \center-align { +27 }
 
                         \override Staff.Stem.stemlet-length = 0.75
                         r8
@@ -1615,23 +1303,17 @@
 
                         \clef "bass"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 9 8) "16")
                         \times 8/9 {
@@ -1660,24 +1342,18 @@
 
                         \clef "bass"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         % [Voice 4 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g,2
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
 
                         \override Staff.Stem.stemlet-length = 0.75
                         r8

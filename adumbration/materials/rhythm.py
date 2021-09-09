@@ -399,7 +399,11 @@ def full_bows(selections):
         for tie in abjad.select(run).logical_ties():
             articulation = abjad.Articulation(bowings(r=1)[0])
             abjad.attach(articulation, tie[0])
-        mark = abjad.Markup(rotations(r=1)[0], direction=abjad.Up)
+        mark = abjad.Markup(
+            fr"\markup {{ {rotations(r=1)[0]} }}",
+            direction=abjad.Up,
+            literal=True,
+        )
         abjad.attach(mark, abjad.select(run).logical_tie(0)[0])
 
 

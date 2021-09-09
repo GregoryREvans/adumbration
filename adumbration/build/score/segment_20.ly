@@ -8,19 +8,9 @@
 
             \tempo 4=60
             \time 4/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 1
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            "Yellow Light in Fog"
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \box \caps "Yellow Light in Fog" 
             \bacaStopTextSpanMM
             ^ \markup {
               \huge
@@ -206,9 +196,9 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \once \override Staff.Tie.transparent = ##t
                         \once \override Dots.staff-position = #1.75
                         \clef "treble"
@@ -216,9 +206,8 @@
                         \p
                         \<
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                        - \tweak staff-padding 2
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
@@ -249,13 +238,9 @@
                             \>
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                             \once \override Staff.Tie.transparent = ##t
@@ -322,7 +307,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 e''2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -526,9 +511,8 @@
                         \p
                         \<
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                        - \tweak staff-padding 2
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
@@ -559,13 +543,9 @@
                             \>
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                         }
@@ -631,7 +611,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 e''2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -829,9 +809,8 @@
                         \p
                         \<
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                        - \tweak staff-padding 2
                         \startTextSpan
                         \glissando                                             %! abjad.glissando(7)
 
@@ -867,13 +846,9 @@
                             \>
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                             \once \override Staff.Tie.transparent = ##t
@@ -908,220 +883,207 @@
                         % [Voice 1 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \fff
-                        ^ \markup {
-                            \center-align
-                                -31
-                            }
+                        ^ \markup \center-align { -31 }
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.2 clicks per second)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.2 clicks per second) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2
                         ~
                         % [Voice 1 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''1
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.3 clicks/s)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.3 clicks/s) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 1 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.4) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.4) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 1 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4
                         ~
                         % [Voice 1 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.5) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.5) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 1 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4
                         ~
                         % [Voice 1 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.6) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.6) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2
                         ~
                         % [Voice 1 measure 21]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''1
                         ~
                         % [Voice 1 measure 22]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.7) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.7) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 1 measure 23]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4
                         ~
                         % [Voice 1 measure 24]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         ~
                         % [Voice 1 measure 25]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.8) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.8) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4
                         ~
                         % [Voice 1 measure 26]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "slow bow" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { slow bow } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2
                         ~
                         % [Voice 1 measure 27]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''1
                         ~
                         % [Voice 1 measure 28]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { norm. } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 1 measure 29]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4.
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "quasi noise" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { quasi noise } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4
                         \stopTextSpan
                         ~
                         % [Voice 1 measure 30]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''2.
                         ~
                         % [Voice 1 measure 31]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-down 
+                        \tweak Accidental.text \markup { \one-septimal-comma-down  }
                         a''4
                         \bar "||"
                         % [Voice 1 measure 32]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1132,10 +1094,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -1159,9 +1118,9 @@
                             % [Voice 2 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { "vn. II" }                               %! applying staff names and clefs
+                            \markup { \hcenter-in #12 "vn. II" }               %! applying staff names and clefs
                             \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Violin II"                                        %! applying staff names and clefs
+                            \markup { \hcenter-in #14 "Violin II" }            %! applying staff names and clefs
                             \once \override Staff.Tie.transparent = ##t
                             \once \override Dots.staff-position = #1.75
                             \clef "treble"
@@ -1169,9 +1128,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -1202,13 +1160,9 @@
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                st.
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright st.
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
@@ -1273,7 +1227,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 a'2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -1468,9 +1422,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -1511,13 +1464,9 @@
                         \<
                         \stopTextSpan
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                st.
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright st.
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \once \override Staff.Tie.transparent = ##t
@@ -1592,7 +1541,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 a'2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -1800,9 +1749,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -1838,13 +1786,9 @@
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                st.
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright st.
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
@@ -1875,220 +1819,207 @@
                         % [Voice 2 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \fff
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.2 clicks per second)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.2 clicks per second) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2
                         ~
                         % [Voice 2 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''1
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.3 clicks/s)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.3 clicks/s) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 2 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.4) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.4) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 2 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4
                         ~
                         % [Voice 2 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.5) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.5) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 2 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4
                         ~
                         % [Voice 2 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.6) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.6) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2
                         ~
                         % [Voice 2 measure 21]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''1
                         ~
                         % [Voice 2 measure 22]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.7) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.7) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 2 measure 23]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4
                         ~
                         % [Voice 2 measure 24]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         ~
                         % [Voice 2 measure 25]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.8) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.8) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4
                         ~
                         % [Voice 2 measure 26]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "slow bow" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { slow bow } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2
                         ~
                         % [Voice 2 measure 27]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''1
                         ~
                         % [Voice 2 measure 28]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { norm. } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 2 measure 29]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4.
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "quasi noise" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { quasi noise } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4
                         \stopTextSpan
                         ~
                         % [Voice 2 measure 30]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''2.
                         ~
                         % [Voice 2 measure 31]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                         ds''4
                         \bar "||"
                         % [Voice 2 measure 32]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2099,10 +2030,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -2125,9 +2053,9 @@
                             % [Voice 3 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { va. }                                    %! applying staff names and clefs
+                            \markup { \hcenter-in #12 "va." }                  %! applying staff names and clefs
                             \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Viola"                                            %! applying staff names and clefs
+                            \markup { \hcenter-in #14 "Viola" }                %! applying staff names and clefs
                             \once \override Staff.Tie.transparent = ##t
                             \once \override Dots.staff-position = #1.75
                             \clef "varC"
@@ -2135,9 +2063,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -2170,13 +2097,9 @@
                             \>
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                         }
@@ -2237,7 +2160,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 d'2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -2441,9 +2364,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -2477,13 +2399,9 @@
                             \>
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                             \once \override Staff.Tie.transparent = ##t
@@ -2544,7 +2462,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 d'2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -2745,9 +2663,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -2791,13 +2708,9 @@
                             \<
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                             \once \override Staff.Tie.transparent = ##t
@@ -2832,220 +2745,207 @@
                         % [Voice 3 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \fff
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
+                        ^ \markup \center-align { +2 }
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.2 clicks per second)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.2 clicks per second) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2
                         ~
                         % [Voice 3 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'1
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.3 clicks/s)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.3 clicks/s) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 3 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.4) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.4) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 3 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4
                         ~
                         % [Voice 3 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.5) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.5) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 3 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4
                         ~
                         % [Voice 3 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.6) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.6) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2
                         ~
                         % [Voice 3 measure 21]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'1
                         ~
                         % [Voice 3 measure 22]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.7) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.7) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 3 measure 23]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4
                         ~
                         % [Voice 3 measure 24]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         ~
                         % [Voice 3 measure 25]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.8) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.8) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4
                         ~
                         % [Voice 3 measure 26]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "slow bow" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { slow bow } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2
                         ~
                         % [Voice 3 measure 27]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'1
                         ~
                         % [Voice 3 measure 28]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { norm. } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 3 measure 29]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4.
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "quasi noise" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { quasi noise } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4
                         \stopTextSpan
                         ~
                         % [Voice 3 measure 30]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'2.
                         ~
                         % [Voice 3 measure 31]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-sharp 
+                        \tweak Accidental.text \markup { \abjad-sharp  }
                         fs'4
                         \bar "||"
                         % [Voice 3 measure 32]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -3056,10 +2956,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -3082,9 +2979,9 @@
                             % [Voice 4 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { vc. }                                    %! applying staff names and clefs
+                            \markup { \hcenter-in #12 "vc." }                  %! applying staff names and clefs
                             \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Violoncello"                                      %! applying staff names and clefs
+                            \markup { \hcenter-in #14 "Violoncello" }          %! applying staff names and clefs
                             \once \override Staff.Tie.transparent = ##t
                             \once \override Dots.staff-position = #1.75
                             \clef "bass"
@@ -3092,9 +2989,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -3134,13 +3030,9 @@
                             \<
                             \stopTextSpan
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                msp. \hspace #0.5 }
-                            - \tweak bound-details.right.text \markup {
-                                \upright
-                                    st.
-                                }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                            - \tweak bound-details.right.text \markup \upright st.
+                            - \tweak staff-padding 2
                             \startTextSpan
 
                             \once \override Staff.Tie.transparent = ##t
@@ -3206,7 +3098,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 g,2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -3402,9 +3294,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -3435,13 +3326,9 @@
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                st.
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright st.
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "4")
@@ -3503,7 +3390,7 @@
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 g,2
                                 \ff
-                                ^ \markup { "sp.(quasi noise)" }
+                                ^ \markup { sp.(quasi noise) }
 
                             }
 
@@ -3707,9 +3594,8 @@
                             \p
                             \<
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                norm. \hspace #0.5 }
-                            - \tweak staff-padding #2
+                            - \tweak bound-details.left.text \markup \concat { \upright norm. \hspace #0.5 }
+                            - \tweak staff-padding 2
                             \startTextSpan
                             \glissando                                         %! abjad.glissando(7)
 
@@ -3745,13 +3631,9 @@
                         \<
                         \stopTextSpan
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            msp. \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                st.
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright msp. \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright st.
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \once \override Staff.Tie.transparent = ##t
@@ -3790,220 +3672,207 @@
                         % [Voice 4 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \fff
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.2 clicks per second)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.2 clicks per second) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2
                         ~
                         % [Voice 4 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,1
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB(c.3 clicks/s)" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.3 clicks/s) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 4 measure 16]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.4) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.4) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 4 measure 17]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4
                         ~
                         % [Voice 4 measure 18]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.5) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.5) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 4 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4
                         ~
                         % [Voice 4 measure 20]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.6) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.6) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2
                         ~
                         % [Voice 4 measure 21]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,1
                         ~
                         % [Voice 4 measure 22]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.7) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.7) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 4 measure 23]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4
                         ~
                         % [Voice 4 measure 24]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         ~
                         % [Voice 4 measure 25]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            XSB(c.8) \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { XSB(c.8) } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4
                         ~
                         % [Voice 4 measure 26]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "slow bow" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { slow bow } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2
                         ~
                         % [Voice 4 measure 27]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,1
                         ~
                         % [Voice 4 measure 28]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         \stopTextSpan
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            norm. \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { norm. } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
                         % [Voice 4 measure 29]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4.
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "quasi noise" \hspace #0.5 }
-                        - \tweak padding #6.75
+                        - \tweak bound-details.left.text \markup \concat { \upright { quasi noise } \hspace #0.5 }
+                        - \tweak padding 6.75
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4
                         \stopTextSpan
                         ~
                         % [Voice 4 measure 30]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,2.
                         ~
                         % [Voice 4 measure 31]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4.
                         ~
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         b,4
                         \bar "||"
                         % [Voice 4 measure 32]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -4014,10 +3883,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }

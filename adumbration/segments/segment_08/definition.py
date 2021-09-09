@@ -18,6 +18,11 @@ from adumbration.materials.timespans.segment_08.convert_timespans import (
 
 bar_literal = abjad.LilyPondLiteral(r'\bar ".|:"', format_slot="before")
 
+section_title = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Anamorphosis/Calligrapher" \caps "[Ombreggiato (ii)]" }""",
+    direction=abjad.Up,
+    literal=True,
+)
 
 maker = evans.SegmentMaker(
     instruments=insts,
@@ -66,26 +71,26 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'8.")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
-        evans.attach("Voice 1", bar_literal, baca.leaf(0)),
-        evans.attach("Voice 2", bar_literal, baca.leaf(0)),
-        evans.attach("Voice 3", bar_literal, baca.leaf(0)),
-        evans.attach("Voice 4", bar_literal, baca.leaf(0)),
+        evans.attach("Voice 1", bar_literal, baca.selectors.leaf(0)),
+        evans.attach("Voice 2", bar_literal, baca.selectors.leaf(0)),
+        evans.attach("Voice 3", bar_literal, baca.selectors.leaf(0)),
+        evans.attach("Voice 4", bar_literal, baca.selectors.leaf(0)),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("p"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("f"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("mp"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 4",
@@ -93,27 +98,27 @@ maker = evans.SegmentMaker(
                 r"\once \override Staff.Clef.X-extent = ##f \once \override Staff.Clef.extra-offset = #'(-2.25 . 0)",
                 format_slot="absolute_before",
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.Articulation("snappizzicato"),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("slow bow", direction=abjad.Up),
-            baca.leaf(2),
+            abjad.Markup(r"\markup { slow bow }", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(2),
         ),
         evans.attach(
             "Voice 4",
             abjad.StemTremolo(32),
-            baca.leaf(2),
+            baca.selectors.leaf(2),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("f"),
-            baca.leaf(2),
+            baca.selectors.leaf(2),
         ),
         evans.attach(
             "Voice 4",
@@ -121,12 +126,12 @@ maker = evans.SegmentMaker(
                 r"^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }",
                 format_slot="after",
             ),
-            baca.leaf(3),
+            baca.selectors.leaf(3),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("mf"),
-            baca.leaf(3),
+            baca.selectors.leaf(3),
         ),
         evans.attach(
             "Voice 2",
@@ -134,7 +139,7 @@ maker = evans.SegmentMaker(
                 r"^ \markup { \raise #0.75 \baca-circle-very-wide-markup }",
                 format_slot="after",
             ),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 2",
@@ -142,34 +147,23 @@ maker = evans.SegmentMaker(
                 r"^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }",
                 format_slot="after",
             ),
-            baca.leaf(2),
+            baca.selectors.leaf(2),
         ),
         evans.attach(
             "Voice 2",
             abjad.Dynamic("mf"),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup("½clt.", direction=abjad.Up),
-            baca.leaf(0),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [
-                    abjad.Markup("Anamorphosis/Calligrapher").caps().box(),
-                    abjad.Markup("[Ombreggiato (ii)]").caps(),
-                ],
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-        #     baca.leaf(2),
-        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,

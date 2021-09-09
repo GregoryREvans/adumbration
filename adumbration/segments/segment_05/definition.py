@@ -23,9 +23,9 @@ def _add_tremolos(selections):
         abjad.attach(tremolo, leaf)
 
 
-x = abjad.Markup("XFB.", direction=abjad.Up)
-n = abjad.Markup("norm.", direction=abjad.Up)
-s = abjad.Markup("noise", direction=abjad.Up)
+x = abjad.Markup(r"\markup XFB.", direction=abjad.Up, literal=True)
+n = abjad.Markup(r"\markup norm.", direction=abjad.Up, literal=True)
+s = abjad.Markup(r"\markup noise", direction=abjad.Up, literal=True)
 
 cyc_techniques = evans.CyclicList([x, n, s, n, x, n, s], forget=False)
 
@@ -33,6 +33,19 @@ cyc_techniques = evans.CyclicList([x, n, s, n, x, n, s], forget=False)
 def _attach_marks(selections):
     for tie in abjad.select(selections).logical_ties(pitched=True):
         abjad.attach(cyc_techniques(r=1)[0], tie[0])
+
+
+crescendo_markup = abjad.Markup(
+    r"""\markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a m.28 (ff)" }""",
+    direction=abjad.Down,
+    literal=True,
+)
+
+section_title = abjad.Markup(
+    r"""\markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Komm (i) } }""",
+    direction=abjad.Up,
+    literal=True,
+)
 
 
 maker = evans.SegmentMaker(
@@ -82,128 +95,92 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'4")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
             abjad.LilyPondLiteral(r"\break", format_slot="before"),
-            baca.leaf(2),
+            baca.selectors.leaf(2),
         ),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("mf"),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
             abjad.Dynamic("mf"),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("mf"),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("mf"),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup("st.", direction=abjad.Up),
-            baca.leaf(0),
+            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup("st.", direction=abjad.Up),
-            baca.leaf(0),
+            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("st.", direction=abjad.Up),
-            baca.leaf(0),
+            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup("st.", direction=abjad.Up),
-            baca.leaf(0),
+            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                "cresc. a m.28 (ff)",
-                direction=abjad.Down,
-            )
-            .small()
-            .whiteout()
-            .box()
-            .italic()
-            .override(("box-padding", 0.5))
-            .override(("style", "box")),
-            baca.leaf(0),
+            crescendo_markup,
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                "cresc. a m.28 (ff)",
-                direction=abjad.Down,
-            )
-            .small()
-            .whiteout()
-            .box()
-            .italic()
-            .override(("box-padding", 0.5))
-            .override(("style", "box")),
-            baca.leaf(0),
+            crescendo_markup,
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(
-                "cresc. a m.28 (ff)",
-                direction=abjad.Down,
-            )
-            .small()
-            .whiteout()
-            .box()
-            .italic()
-            .override(("box-padding", 0.5))
-            .override(("style", "box")),
-            baca.leaf(0),
+            crescendo_markup,
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                "cresc. a m.28 (ff)",
-                direction=abjad.Down,
-            )
-            .small()
-            .whiteout()
-            .box()
-            .italic()
-            .override(("box-padding", 0.5))
-            .override(("style", "box")),
-            baca.leaf(0),
+            crescendo_markup,
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("ff"),
-            baca.leaf(-2, pitched=True),
+            baca.selectors.leaf(-2, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.Dynamic("ff"),
-            baca.leaf(-2, pitched=True),
+            baca.selectors.leaf(-2, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("ff"),
-            baca.leaf(-2, pitched=True),
+            baca.selectors.leaf(-2, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("ff"),
-            baca.leaf(-2, pitched=True),
+            baca.selectors.leaf(-2, pitched=True),
         ),
         evans.call(
             "Voice 1",
@@ -247,54 +224,48 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "Komm (i)",
-                direction=abjad.Up,
-            )
-            .caps()
-            .override(("font-name", "STIXGeneral Bold"))
-            .box(),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
             abjad.StartHairpin("<"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 1",
             abjad.StopHairpin(),
-            baca.leaf(-1, pitched=True),
+            baca.selectors.leaf(-1, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.StartHairpin("<"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.StopHairpin(),
-            baca.leaf(-1, pitched=True),
+            baca.selectors.leaf(-1, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.StartHairpin("<"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.StopHairpin(),
-            baca.leaf(-1, pitched=True),
+            baca.selectors.leaf(-1, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.StartHairpin("<"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.StopHairpin(),
-            baca.leaf(-1, pitched=True),
+            baca.selectors.leaf(-1, pitched=True),
         ),
     ],
     score_template=score,

@@ -102,6 +102,12 @@ marks = evans.CyclicList(
     forget=False,
 )
 
+section_title = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Komm Komm Komm" \caps "[Komm (v)]" }""",
+    direction=abjad.Down,
+    literal=True,
+)
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -136,26 +142,10 @@ maker = evans.SegmentMaker(
             evans.SegmentMaker.beam_score,
             abjad.select().components(abjad.Score),
         ),
-        # evans.attach(
-        #     "Global Context",
-        #     evans.metric_modulation(
-        #         metronome_mark=((1, 4), quicktions.Fraction(115, 2)),
-        #         left_note=(abjad.Note("c'4")),
-        #         right_note=(abjad.Note("c'2")),
-        #         modulated_beat=(abjad.Note("c'4")),
-        #     ),
-        #     baca.leaf(0),
-        # ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [
-                    abjad.Markup("Komm Komm Komm").caps().box(),
-                    abjad.Markup("[Komm (v)]").caps(),
-                ],
-                direction=abjad.Down,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
         evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
         # evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
@@ -182,7 +172,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 63),
-            baca.leaf(4),
+            baca.selectors.leaf(4),
         ),
         evans.call(
             "Global Context",
@@ -194,19 +184,19 @@ maker = evans.SegmentMaker(
             tempo_handler,
             abjad.select().leaves().get([13, 14]),
         ),
-        evans.attach("Voice 2", abjad.StopBeam(), baca.leaf(18, pitched=True)),
-        evans.detach("Voice 2", abjad.StopBeam(), baca.leaf(19, pitched=True)),
-        evans.detach("Voice 3", abjad.StartBeam(), baca.leaf(11, pitched=True)),
-        evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(21)),
+        evans.attach("Voice 2", abjad.StopBeam(), baca.selectors.leaf(18, pitched=True)),
+        evans.detach("Voice 2", abjad.StopBeam(), baca.selectors.leaf(19, pitched=True)),
+        evans.detach("Voice 3", abjad.StartBeam(), baca.selectors.leaf(11, pitched=True)),
+        evans.detach("Voice 3", abjad.StopBeam(), baca.selectors.leaf(21)),
         evans.attach(
             "Voice 1",
-            abjad.Markup("½clt.", direction=abjad.Up),
-            baca.leaf(1, pitched=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(1, pitched=True),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup("½clt.", direction=abjad.Up),
-            baca.leaf(15, pitched=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(15, pitched=True),
         ),
     ],
     score_template=score,

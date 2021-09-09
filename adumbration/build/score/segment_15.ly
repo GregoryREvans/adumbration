@@ -8,20 +8,9 @@
 
             \tempo 4=76
             \time 5/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                        x5
-                    }
-                }
+            \mark \markup \bold { x5 }
             s1 * 5/4
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            Plateaus
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \box \caps Plateaus
             ^ \markup {
               \huge
               \concat {
@@ -111,9 +100,9 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         r2.
 
@@ -129,16 +118,12 @@
                         \tweak Accidental.text \abjad-sharp-markup
                         gs'''2.
                         \pp
-                        _ \markup {
-                            \box
-                                "cresc. a m.196 (ff)"
-                            }
+                        _ \markup \box "cresc. a m.196 (ff)" 
                         \<
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "XSB (noise poco a poco)" \hspace #0.5 }
-                        - \tweak padding #9
+                        - \tweak bound-details.left.text \markup \concat { \upright "XSB (noise poco a poco)"  \hspace #0.5 }
+                        - \tweak padding 9
                         \startTextSpan
                         % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -188,9 +173,8 @@
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak padding #9
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak padding 9
                         \startTextSpan
                         % [Voice 1 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -210,9 +194,8 @@
                         \mf
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "norm. (noise poco a poco)" \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright "norm. (noise poco a poco)"  \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
                         % [Voice 1 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -234,9 +217,8 @@
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
                         % [Voice 1 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -253,10 +235,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -276,9 +255,9 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -286,7 +265,7 @@
                         a'8.
                         \sfz
                         - \downbow
-                        ^ \markup { "full bows as possible" }
+                        ^ \markup "full bows as possible" 
                         [
                         _ \markup {
                           \column {
@@ -893,9 +872,8 @@
                             a'16
                             [
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "noise poco a poco" \hspace #0.5 }
-                            - \tweak padding #6
+                            - \tweak bound-details.left.text \markup \concat { \upright "noise poco a poco"  \hspace #0.5 }
+                            - \tweak padding 6
                             \startTextSpan
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -971,9 +949,8 @@
                         \stopTextSpan
                         [
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak padding #6
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak padding 6
                         \startTextSpan
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1061,27 +1038,26 @@
                         \tweak Accidental.text \abjad-sharp-markup
                         gs'4
                         \f
-                        ^ \markup { IV. }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup IV.
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "norm. (noise poco a poco)" \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright "norm. (noise poco a poco)"  \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         gs''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1090,7 +1066,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         as''8.
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         [
 
@@ -1099,7 +1075,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c'''16
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -1116,7 +1092,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         cs'''8
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -1133,7 +1109,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d'''8.
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         ]
                         % [Voice 2 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1142,21 +1118,21 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         dqs'''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         ds'''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \three-quarters-sharp-markup
                         dtqs'''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 2 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1166,13 +1142,12 @@
                         \tweak Accidental.text \abjad-natural-markup
                         e'''8.
                         \stopTextSpan
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         [
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
 
                         \revert Staff.Stem.stemlet-length
@@ -1180,7 +1155,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \three-quarters-sharp-markup
                         dtqs'''16
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -1197,7 +1172,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         ds'''8
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -1214,7 +1189,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         dqs'''8.
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         ]
 
@@ -1226,35 +1201,35 @@
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             d'''4
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak NoteHead.style #'harmonic-mixed
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-sharp-markup
                             cs'''4
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak NoteHead.style #'harmonic-mixed
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             c'''4
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak NoteHead.style #'harmonic-mixed
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-sharp-markup
                             as''4
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak NoteHead.style #'harmonic-mixed
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-sharp-markup
                             gs''4
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak NoteHead.style #'harmonic-mixed
@@ -1273,10 +1248,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -1300,9 +1272,9 @@
                             % [Voice 3 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { va. }                                    %! applying staff names and clefs
+                            \markup { \hcenter-in #12 "va." }                  %! applying staff names and clefs
                             \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Viola"                                            %! applying staff names and clefs
+                            \markup { \hcenter-in #14 "Viola" }                %! applying staff names and clefs
                             \clef "varC"
                             \override Staff.Stem.stemlet-length = 0.75
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -1310,7 +1282,7 @@
                             a16
                             \sfz
                             - \downbow
-                            ^ \markup { "full bows as possible" }
+                            ^ \markup "full bows as possible" 
                             [
                             _ \markup {
                               \column {
@@ -1888,9 +1860,8 @@
                             - \upbow
                             [
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "noise poco a poco" \hspace #0.5 }
-                            - \tweak padding #6
+                            - \tweak bound-details.left.text \markup \concat { \upright "noise poco a poco"  \hspace #0.5 }
+                            - \tweak padding 6
                             \startTextSpan
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -1973,9 +1944,8 @@
                             \stopTextSpan
                             [
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                noise \hspace #0.5 }
-                            - \tweak padding #6
+                            - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                            - \tweak padding 6
                             \startTextSpan
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -2048,14 +2018,13 @@
                         \tweak Accidental.text \abjad-sharp-markup
                         gs8.
                         \f
-                        ^ \markup { III. }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup III.
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         [
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "norm. (noise poco a poco)" \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright "norm. (noise poco a poco)"  \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
 
                         \revert Staff.Stem.stemlet-length
@@ -2063,7 +2032,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d'16
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -2080,7 +2049,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         gs'8
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -2097,7 +2066,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         as'8.
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         ]
                         % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2106,21 +2075,21 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         cs''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 3 measure 13]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2129,7 +2098,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         dqs''8.
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         [
 
@@ -2138,7 +2107,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         ds''16
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -2155,7 +2124,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \three-quarters-sharp-markup
                         dtqs''8
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -2172,7 +2141,7 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         e''8.
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         ]
                         % [Voice 3 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2182,26 +2151,25 @@
                         \tweak Accidental.text \three-quarters-sharp-markup
                         dtqs''4
                         \stopTextSpan
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         ds''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \one-quarter-sharp-markup
                         dqs''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 3 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2209,21 +2177,21 @@
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-sharp-markup
                         cs''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c''4
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak NoteHead.style #'harmonic-mixed
@@ -2240,10 +2208,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -2267,9 +2232,9 @@
                             % [Voice 4 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { vc. }                                    %! applying staff names and clefs
+                            \markup { \hcenter-in #12 "vc." }                  %! applying staff names and clefs
                             \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Violoncello"                                      %! applying staff names and clefs
+                            \markup { \hcenter-in #14 "Violoncello" }          %! applying staff names and clefs
                             \clef "bass"
                             \override Staff.Stem.stemlet-length = 0.75
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -2277,7 +2242,7 @@
                             a,16
                             \sfz
                             - \downbow
-                            ^ \markup { "full bows as possible" }
+                            ^ \markup "full bows as possible" 
                             [
                             _ \markup {
                               \column {
@@ -2863,9 +2828,8 @@
                             - \downbow
                             [
                             - \abjad-dashed-line-with-arrow
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                "noise poco a poco" \hspace #0.5 }
-                            - \tweak padding #6
+                            - \tweak bound-details.left.text \markup \concat { \upright "noise poco a poco"  \hspace #0.5 }
+                            - \tweak padding 6
                             \startTextSpan
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -2963,9 +2927,8 @@
                             \stopTextSpan
                             [
                             - \abjad-invisible-line
-                            - \tweak bound-details.left.text \markup \concat { \upright
-                                noise \hspace #0.5 }
-                            - \tweak padding #6
+                            - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                            - \tweak padding 6
                             \startTextSpan
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -3057,9 +3020,8 @@
                         \mf
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            "norm. (noise poco a poco)" \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright "norm. (noise poco a poco)"  \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
                         % [Voice 4 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -3081,9 +3043,8 @@
                         \stopTextSpan
                         ~
                         - \abjad-invisible-line
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak padding #7
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak padding 7
                         \startTextSpan
                         % [Voice 4 measure 15]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -3100,10 +3061,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }

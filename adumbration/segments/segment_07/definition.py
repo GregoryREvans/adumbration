@@ -22,7 +22,7 @@ cyc_padding = evans.CyclicList([7.2, 4.2, 5.3, 6.6], forget=False)
 def add_markups(runs):
     cyc_marks = evans.CyclicList(
         [
-            abjad.Markup(_, direction=abjad.Up)
+            abjad.Markup(fr"\markup {_}", direction=abjad.Up, literal=True)
             for _ in ["clt.", "½clt.", "norm.", "½clt."]
         ],
         forget=False,
@@ -30,6 +30,12 @@ def add_markups(runs):
     for run in runs:
         abjad.attach(cyc_marks(r=1)[0], abjad.select(run).leaf(0))
 
+
+section_title = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps E.H. \caps "[Komm (ii)]" }""",
+    direction=abjad.Up,
+    literal=True,
+)
 
 maker = evans.SegmentMaker(
     instruments=insts,
@@ -80,15 +86,12 @@ maker = evans.SegmentMaker(
                 ),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [abjad.Markup("E.H.").caps().box(), abjad.Markup("[Komm (ii)]").caps()],
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
         evans.call(
             "Voice 1",

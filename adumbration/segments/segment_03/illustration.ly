@@ -4,14 +4,6 @@
 \include "/Users/evansdsg2/abjad/docs/source/_stylesheets/abjad.ily"           %! abjad.LilyPondFile._get_formatted_includes()
 \include "/Users/evansdsg2/Scores/adumbration/adumbration/build/first_stylesheet.ily" %! abjad.LilyPondFile._get_formatted_includes()
 
-\header {                                                                      %! abjad.LilyPondFile._get_formatted_blocks()
-    tagline = ##f
-}                                                                              %! abjad.LilyPondFile._get_formatted_blocks()
-
-\layout {}
-
-\paper {}
-
 \score {                                                                       %! abjad.LilyPondFile._get_formatted_blocks()
 
     \context Score = "adumbration Score"
@@ -23,19 +15,9 @@
 
             \tempo 4=102
             \time 7/8                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 7/8
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            "Extinct Anatomies"
-                }
+            ^ \markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Extinct Anatomies } }
             ^ \markup {
               \huge
               \concat {
@@ -82,40 +64,31 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'''
                         >4.
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +0
-                                        \center-align
-                                            -14
-                                    }
-                            }
-                        ^ \markup { ord. }
+                        ^ \markup \center-align \center-column { +0 -14  }
+                        ^ \markup ord.
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         ~
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'''
                         >4
                         ~
@@ -123,10 +96,10 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'''
                         >8
                         [
@@ -139,23 +112,14 @@
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \one-septimal-comma-down 
+                            \tweak Accidental.text \markup { \one-septimal-comma-down  }
                             d'''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-sharp 
+                            \tweak Accidental.text \markup { \abjad-sharp  }
                             fs'''
                         >1
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +4
-                                        \center-align
-                                            -31
-                                    }
-                            }
+                        ^ \markup \center-align \center-column { +4 -31  }
                         \<
 
                         r4
@@ -164,49 +128,31 @@
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'''
                         >2
                         \p
                         - \accent
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +0
-                                        \center-align
-                                            -14
-                                    }
-                            }
+                        ^ \markup \center-align \center-column { +0 -14  }
 
                         r2
                         % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \one-septimal-comma-down 
+                            \tweak Accidental.text \markup { \one-septimal-comma-down  }
                             d'''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-sharp 
+                            \tweak Accidental.text \markup { \abjad-sharp  }
                             fs'''
                         >4
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +4
-                                        \center-align
-                                            -31
-                                    }
-                            }
-                        ^ \markup { sp. }
+                        ^ \markup \center-align \center-column { +4 -31  }
+                        ^ \markup sp.
 
                         r8
 
@@ -223,16 +169,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     ef''
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    throw
-                                    (4)
-                                    }
+                                ^ \markup { \hspace #1 throw (4)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -258,13 +199,10 @@
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \abjad-flat 
+                                \tweak Accidental.text \markup { \abjad-flat  }
                                 ef''4
                                 \mp
-                                ^ \markup {
-                                    \center-align
-                                        +0
-                                    }
+                                ^ \markup \center-align { +0 }
                                 \bar "||"
 
                             }
@@ -279,10 +217,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ulongfermata"                        %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ulongfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -302,40 +237,31 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \one-tridecimal-third-tone-down 
+                            \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
                             c''
                         >4.
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            B+41
-                                        \center-align
-                                            +0
-                                    }
-                            }
-                        ^ \markup { ord. }
+                        ^ \markup \center-align \center-column { B+41 +0  }
+                        ^ \markup ord.
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         ~
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \one-tridecimal-third-tone-down 
+                            \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
                             c''
                         >4
                         ~
@@ -343,10 +269,10 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \one-tridecimal-third-tone-down 
+                            \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
                             c''
                         >8
                         [
@@ -359,23 +285,14 @@
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                             gs''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-natural 
+                            \tweak Accidental.text \markup { \abjad-natural  }
                             b''
                         >1
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +2
-                                        \center-align
-                                            -14
-                                    }
-                            }
+                        ^ \markup \center-align \center-column { +2 -14  }
                         \<
 
                         r4
@@ -384,49 +301,31 @@
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef'
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \one-tridecimal-third-tone-down 
+                            \tweak Accidental.text \markup { \one-tridecimal-third-tone-down  }
                             c''
                         >2
                         \p
                         - \accent
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            B+41
-                                        \center-align
-                                            +0
-                                    }
-                            }
+                        ^ \markup \center-align \center-column { B+41 +0  }
 
                         r2
                         % [Voice 2 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \sharp-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \sharp-one-syntonic-comma-down  }
                             gs''
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-natural 
+                            \tweak Accidental.text \markup { \abjad-natural  }
                             b''
                         >4
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +2
-                                        \center-align
-                                            -14
-                                    }
-                            }
-                        ^ \markup { sp. }
+                        ^ \markup \center-align \center-column { +2 -14  }
+                        ^ \markup sp.
 
                         r8
 
@@ -443,16 +342,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     f'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (5)
-                                    }
+                                ^ \markup { \hspace #1 drop (5)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -483,13 +377,10 @@
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \abjad-natural 
+                                \tweak Accidental.text \markup { \abjad-natural  }
                                 f'4
                                 \mp
-                                ^ \markup {
-                                    \center-align
-                                        +4
-                                    }
+                                ^ \markup \center-align { +4 }
                                 \bar "||"
 
                             }
@@ -504,10 +395,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ulongfermata"                        %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ulongfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -527,40 +415,31 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             bf
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g'
                         >4.
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            -14
-                                        \center-align
-                                            +2
-                                    }
-                            }
-                        ^ \markup { ord. }
+                        ^ \markup \center-align \center-column { -14 +2  }
+                        ^ \markup ord.
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         ~
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             bf
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g'
                         >4
                         ~
@@ -568,10 +447,10 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             bf
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g'
                         >8
                         [
@@ -583,13 +462,10 @@
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         e'1
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         \<
 
                         r4
@@ -598,38 +474,26 @@
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             bf
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \natural-one-syntonic-comma-down 
+                            \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                             g'
                         >2
                         \p
                         - \accent
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            -14
-                                        \center-align
-                                            +2
-                                    }
-                            }
+                        ^ \markup \center-align \center-column { -14 +2  }
 
                         r2
                         % [Voice 3 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         e'4
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
-                        ^ \markup { sp. }
+                        ^ \markup \center-align { +0 }
+                        ^ \markup sp.
 
                         r8
 
@@ -646,16 +510,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     ef
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    throw
-                                    (6)
-                                    }
+                                ^ \markup { \hspace #1 throw (6)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -691,13 +550,10 @@
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \abjad-flat 
+                                \tweak Accidental.text \markup { \abjad-flat  }
                                 ef4
                                 \mp
-                                ^ \markup {
-                                    \center-align
-                                        +0
-                                    }
+                                ^ \markup \center-align { +0 }
                                 \bar "||"
 
                             }
@@ -712,10 +568,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ulongfermata"                        %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ulongfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -735,40 +588,31 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \clef "bass"
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef,
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef
                         >4.
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +0
-                                        \center-align
-                                            +0
-                                    }
-                            }
-                        ^ \markup { ord. }
+                        ^ \markup \center-align \center-column { +0 +0  }
+                        ^ \markup ord.
                         - \tweak stencil #abjad-flared-hairpin
                         \<
                         ~
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef,
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef
                         >4
                         ~
@@ -776,10 +620,10 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef,
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef
                         >8
                         [
@@ -791,13 +635,10 @@
                         % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         e1
                         \sfp
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
+                        ^ \markup \center-align { +0 }
                         \<
 
                         r4
@@ -806,38 +647,26 @@
 
                         <
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef,
                             \tweak Accidental.stencil #ly:text-interface::print
-                            \tweak Accidental.text \abjad-flat 
+                            \tweak Accidental.text \markup { \abjad-flat  }
                             ef
                         >2
                         \p
                         - \accent
-                        ^ \markup {
-                            \center-align
-                                \center-column
-                                    {
-                                        \center-align
-                                            +0
-                                        \center-align
-                                            +0
-                                    }
-                            }
+                        ^ \markup \center-align \center-column { +0 +0  }
 
                         r2
                         % [Voice 4 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         e4
                         \f
                         - \tenuto
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
-                        ^ \markup { sp. }
+                        ^ \markup \center-align { +0 }
+                        ^ \markup sp.
 
                         r8
 
@@ -854,16 +683,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     f
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (4)
-                                    }
+                                ^ \markup { \hspace #1 drop (4)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -889,13 +713,10 @@
 
                                 \voiceTwo                                      %! abjad.on_beat_grace_container(4)
                                 \tweak Accidental.stencil #ly:text-interface::print
-                                \tweak Accidental.text \abjad-natural 
+                                \tweak Accidental.text \markup { \abjad-natural  }
                                 f4
                                 \mp
-                                ^ \markup {
-                                    \center-align
-                                        +4
-                                    }
+                                ^ \markup \center-align { +4 }
                                 \bar "||"
 
                             }
@@ -910,10 +731,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ulongfermata"                        %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ulongfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }

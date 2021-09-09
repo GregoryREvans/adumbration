@@ -66,18 +66,16 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "Ghosts of Departed Quantities",
+                r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps "Ghosts of Departed Quantities" """,
                 direction=abjad.Up,
-            )
-            .caps()
-            .override(("font-name", "STIXGeneral Bold"))
-            .box(),
-            baca.leaf(0),
+                literal=True,
+            ),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
             mark_115,
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.call("Voice 1", clef_handlers[0], abjad.select()),
         evans.call("Voice 2", clef_handlers[1], abjad.select()),

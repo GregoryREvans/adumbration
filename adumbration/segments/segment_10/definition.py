@@ -16,6 +16,12 @@ from adumbration.materials.timespans.segment_10.convert_timespans import (
     rhythm_commands,
 )
 
+section_title = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Are We Still Married?" \caps "[Komm (iv)]" }""",
+    direction=abjad.Up,
+    literal=True,
+)
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -58,18 +64,12 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'2")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [
-                    abjad.Markup("Are We Still Married?").caps().box(),
-                    abjad.Markup("[Komm (iv)]").caps(),
-                ],
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
         evans.call(
             "score",
@@ -78,36 +78,36 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("½clt.", direction=abjad.Up),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
             abjad.select().leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("mp"),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("f"),
-            baca.leaf(2, pitched=True),
+            baca.selectors.leaf(2, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("p"),
-            baca.leaf(5, pitched=True),
+            baca.selectors.leaf(5, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("f"),
-            baca.leaf(8, pitched=True),
+            baca.selectors.leaf(8, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("mp"),
-            baca.leaf(13, pitched=True),
+            baca.selectors.leaf(13, pitched=True),
         ),
-        evans.attach("Voice 3", abjad.StopBeam(), baca.leaf(4, pitched=True)),
-        evans.detach("Voice 3", abjad.StopBeam(), baca.leaf(5, pitched=True)),
+        evans.attach("Voice 3", abjad.StopBeam(), baca.selectors.leaf(4, pitched=True)),
+        evans.detach("Voice 3", abjad.StopBeam(), baca.selectors.leaf(5, pitched=True)),
     ],
     score_template=score,
     time_signatures=time_signatures,

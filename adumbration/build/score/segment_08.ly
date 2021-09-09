@@ -8,25 +8,9 @@
 
             \tempo 4=38
             \time 4/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                        x4
-                    }
-                }
+            \mark \markup \bold { x4 }
             s1 * 1
-            ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    \column
-                        {
-                            \box
-                                \caps
-                                    Anamorphosis/Calligrapher
-                            \caps
-                                "[Ombreggiato (ii)]"
-                        }
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Anamorphosis/Calligrapher" \caps "[Ombreggiato (ii)]" }
             ^ \markup {
               \huge
               \concat {
@@ -68,20 +52,17 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \bar ".|:"
                         \clef "treble"
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         c''2.
                         \p
-                        ^ \markup {
-                            \center-align
-                                +0
-                            }
-                        ^ \markup { ½clt. }
+                        ^ \markup \center-align { +0 }
+                        ^ \markup ½clt.
 
                         r4
                         % [Voice 1 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -92,19 +73,9 @@
                         r4
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \markup {
-                            \concat
-                                {
-                                    \one-septimal-comma-up 
-                                    \hspace #0.125
-                                    \sharp-one-syntonic-comma-down 
-                                }
-                            }
+                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \sharp-one-syntonic-comma-down  }
                         gs''2.
-                        ^ \markup {
-                            \center-align
-                                +21
-                            }
+                        ^ \markup \center-align { +21 }
                         \bar ":|."
                         % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -114,10 +85,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ufermata"                            %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ufermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -137,39 +105,26 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \bar ".|:"
                         \clef "treble"
                         r1
                         % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \markup {
-                            \concat
-                                {
-                                    \one-septimal-comma-up 
-                                    \hspace #0.125
-                                    \natural-one-syntonic-comma-up 
-                                }
-                            }
+                        \tweak Accidental.text \markup \concat { \one-septimal-comma-up \hspace #0.125 \natural-one-syntonic-comma-up  }
                         f'2
                         \mf
-                        ^ \markup {
-                            \center-align
-                                +47
-                            }
+                        ^ \markup \center-align { +47 }
                         ^ \markup { \raise #0.75 \baca-circle-very-wide-markup }
                         % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \one-septimal-comma-up 
+                        \tweak Accidental.text \markup { \one-septimal-comma-up  }
                         a'2.
-                        ^ \markup {
-                            \center-align
-                                +33
-                            }
+                        ^ \markup \center-align { +33 }
                         ^ \markup { clt. \raise #0.75 \baca-circle-wide-poss-markup }
 
                         r4
@@ -182,10 +137,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ufermata"                            %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ufermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -205,36 +157,30 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \bar ".|:"
                         \clef "varC"
                         r2
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \natural-one-syntonic-comma-down 
+                        \tweak Accidental.text \markup { \natural-one-syntonic-comma-down  }
                         e4
                         \f
                         - \snappizzicato
-                        ^ \markup {
-                            \center-align
-                                -14
-                            }
+                        ^ \markup \center-align { -14 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g4
-                        ^ \markup {
-                            \center-align
-                                +2
-                            }
-                        ^ \markup { "slow bow" }
+                        ^ \markup \center-align { +2 }
+                        ^ \markup { slow bow }
                         ~
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \abjad-natural 
+                        \tweak Accidental.text \markup { \abjad-natural  }
                         g4
 
                         r4
@@ -250,10 +196,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ufermata"                            %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ufermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -274,55 +217,32 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \bar ".|:"
                         \clef "bass"
                         r4
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \markup {
-                            \concat
-                                {
-                                    \one-septimal-comma-down 
-                                    \hspace #0.125
-                                    \natural-one-syntonic-comma-down 
-                                }
-                            }
+                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \natural-one-syntonic-comma-down  }
                         d,4
                         \mp
-                        ^ \markup {
-                            \center-align
-                                -45
-                            }
+                        ^ \markup \center-align { -45 }
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \markup {
-                            \concat
-                                {
-                                    \one-septimal-comma-down 
-                                    \hspace #0.125
-                                    \abjad-flat 
-                                }
-                            }
+                        \tweak Accidental.text \markup \concat { \one-septimal-comma-down \hspace #0.125 \abjad-flat  }
                         bf,2
                         :32
                         \f
-                        ^ \markup {
-                            \center-align
-                                -31
-                            }
+                        ^ \markup \center-align { -31 }
                         % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \tweak Accidental.stencil #ly:text-interface::print
-                        \tweak Accidental.text \flat-one-syntonic-comma-up 
+                        \tweak Accidental.text \markup { \flat-one-syntonic-comma-up  }
                         ef,2
                         \mf
-                        ^ \markup {
-                            \center-align
-                                +16
-                            }
+                        ^ \markup \center-align { +16 }
                         ^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }
                         % [Voice 4 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -336,10 +256,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ufermata"                            %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ufermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }

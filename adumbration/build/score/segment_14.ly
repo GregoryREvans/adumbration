@@ -8,19 +8,9 @@
 
             \tempo 4=153
             \time 3/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 3/4
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            Fluxes/Phylums
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \box \caps Fluxes/Phylums
             ^ \markup {
               \huge
               \concat {
@@ -133,9 +123,9 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
@@ -143,15 +133,15 @@
                         \p
                         - \downbow
                         ^ \markup { ½clt. }
-                        ^ \markup { "full bows as possible" }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup { full bows as possible }
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -174,42 +164,42 @@
                             - \downbow
                             ^ \markup { clt. }
                             \>
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             c'''4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             g''4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             d''4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             a'4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             e'4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                         }
@@ -222,14 +212,14 @@
                             \tweak Accidental.text \abjad-natural-markup
                             a'4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             d''4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -257,7 +247,7 @@
                         :32
                         \f
                         - \accent
-                        ^ \markup { ord. }
+                        ^ \markup ord.
                         ~
                         [
 
@@ -344,29 +334,29 @@
                         \mp
                         - \downbow
                         ^ \markup { ½clt. }
-                        ^ \markup { "full bows as possible" }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup { full bows as possible }
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         g''4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d''4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a'4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -398,7 +388,7 @@
                             :32
                             \ff
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             \>
                             [
 
@@ -482,44 +472,44 @@
                             \p
                             - \downbow
                             ^ \markup { norm. }
-                            ^ \markup { "full bows as possible" }
+                            ^ \markup { full bows as possible }
                             \<
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             d''4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             g''4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             c'''4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             g''4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             d''4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                         }
@@ -548,7 +538,7 @@
                             :32
                             \f
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             \<
                             [
 
@@ -726,26 +716,26 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         c'4
                         \p
                         - \downbow
                         ^ \markup { ½clt. }
-                        ^ \markup { "full bows as possible" }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup { full bows as possible }
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         f'4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         bf'4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -779,7 +769,7 @@
                             :32
                             \ff
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             [
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -893,19 +883,19 @@
                         \mp
                         - \downbow
                         ^ \markup { clt. }
-                        ^ \markup { "full bows as possible" }
+                        ^ \markup { full bows as possible }
                         \>
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         ef''4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         bf'4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 2 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -933,7 +923,7 @@
                             :32
                             \ff
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             \>
                             [
 
@@ -1073,11 +1063,15 @@
                         :32
                         [
 
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-flat-markup
                         df'16
                         :32
                         - \accent
                         ~
 
+                        \tweak Accidental.stencil #ly:text-interface::print
+                        \tweak Accidental.text \one-third-flat-markup
                         df'16
                         :32
 
@@ -1097,32 +1091,32 @@
                         \mp
                         - \downbow
                         ^ \markup { ½clt. }
-                        ^ \markup { "full bows as possible" }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup { full bows as possible }
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         f'4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         bf'4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 2 measure 19]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \override Staff.Stem.stemlet-length = 0.75
                         ef''8.
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         [
 
                         \revert Staff.Stem.stemlet-length
                         af''16
                         - \downbow
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -1134,7 +1128,7 @@
                         \revert Staff.Stem.stemlet-length
                         ef''8
                         - \upbow
-                        - \tweak style #'solid-line
+                        - \tweak style solid-line
                         \glissando
                         ~
                         ]
@@ -1160,7 +1154,7 @@
                             :32
                             \f
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             [
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -1232,9 +1226,9 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
@@ -1242,23 +1236,23 @@
                         \p
                         - \downbow
                         ^ \markup { norm. }
-                        ^ \markup { "full bows as possible" }
+                        ^ \markup { full bows as possible }
                         \<
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         a4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         d'4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1266,28 +1260,28 @@
                         \tweak Accidental.text \abjad-natural-markup
                         g'4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c''4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         f''4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         c''4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 3 2) "4")
@@ -1298,14 +1292,14 @@
                             \tweak Accidental.text \abjad-natural-markup
                             g'4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             d'4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -1349,7 +1343,7 @@
                             :32
                             \ff
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             [
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -1524,15 +1518,15 @@
                         \p
                         - \downbow
                         ^ \markup { ½clt. }
-                        ^ \markup { "full bows as possible" }
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        ^ \markup { full bows as possible }
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-natural-markup
                         g'4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1565,7 +1559,7 @@
                             :32
                             \ff
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             \>
                             [
 
@@ -1670,9 +1664,9 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \clef "bass"
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
@@ -1680,23 +1674,23 @@
                         \mp
                         - \downbow
                         ^ \markup { clt. }
-                        ^ \markup { "full bows as possible" }
+                        ^ \markup { full bows as possible }
                         \>
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         ef4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         bf,4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 4 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -1704,7 +1698,7 @@
                         \tweak Accidental.text \abjad-natural-markup
                         f,4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -1729,7 +1723,7 @@
                             \mp
                             - \downbow
                             ^ \markup { ½clt. }
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
                             [
 
@@ -1737,21 +1731,21 @@
                             \tweak Accidental.text \abjad-flat-markup
                             bf,8
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-flat-markup
                             ef8
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-flat-markup
                             af8
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \revert Staff.Stem.stemlet-length
@@ -1759,7 +1753,7 @@
                             \tweak Accidental.text \abjad-flat-markup
                             ef8
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
                             ]
 
@@ -1773,14 +1767,14 @@
                             \tweak Accidental.text \abjad-flat-markup
                             bf,4
                             - \upbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
                             \tweak Accidental.text \abjad-natural-markup
                             f,4
                             - \downbow
-                            - \tweak style #'solid-line                        %! abjad.glissando(7)
+                            - \tweak style solid-line                          %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -1807,7 +1801,7 @@
                             :32
                             \f
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             [
 
                             \tweak Accidental.stencil #ly:text-interface::print
@@ -2146,23 +2140,23 @@
                         \p
                         - \downbow
                         ^ \markup { norm. }
-                        ^ \markup { "full bows as possible" }
+                        ^ \markup { full bows as possible }
                         \<
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         bf,4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         ef4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
                         % [Voice 4 measure 14]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -2170,21 +2164,21 @@
                         \tweak Accidental.text \abjad-flat-markup
                         af4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         ef4
                         - \downbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
                         \tweak Accidental.text \abjad-flat-markup
                         bf,4
                         - \upbow
-                        - \tweak style #'solid-line                            %! abjad.glissando(7)
+                        - \tweak style solid-line                              %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak Accidental.stencil #ly:text-interface::print
@@ -2220,7 +2214,7 @@
                             :32
                             \ff
                             - \accent
-                            ^ \markup { ord. }
+                            ^ \markup ord.
                             \>
                             [
 

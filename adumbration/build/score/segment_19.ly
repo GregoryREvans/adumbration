@@ -8,19 +8,9 @@
 
             \tempo 4=115
             \time 5/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 5/4
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            Nacht/Maska
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \box \caps Nacht/Maska
             ^ \markup {
               \huge
               \concat {
@@ -78,9 +68,9 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         r2.
 
@@ -91,13 +81,9 @@
                         \mp
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         gtqs4
@@ -108,13 +94,9 @@
 
                         gtqs2
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 1 measure 4]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -125,13 +107,9 @@
                         gtqs4
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -151,13 +129,9 @@
                         gtqs4
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 1 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -169,13 +143,9 @@
                         gtqs4
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         gtqs4
@@ -197,10 +167,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.uverylongfermata"                    %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -221,22 +188,18 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         r2
 
                         g2.
                         \mp
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -252,13 +215,9 @@
                         ~
                         ]
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 2 measure 3]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -272,13 +231,9 @@
 
                         g2
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 2 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -309,13 +264,9 @@
                         g2
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         \override Staff.Stem.stemlet-length = 0.75
@@ -336,10 +287,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.uverylongfermata"                    %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -360,9 +308,9 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         r1
 
@@ -370,13 +318,9 @@
                         \mp
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -397,13 +341,9 @@
                         ~
                         ]
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         gqs4
@@ -416,13 +356,9 @@
 
                         gqs2
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
                         % [Voice 3 measure 5]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -435,13 +371,9 @@
                         gqs4.
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         gqs4
@@ -453,13 +385,9 @@
                         gqs2
                         ~
                         - \abjad-dashed-line-with-arrow
-                        - \tweak bound-details.left.text \markup \concat { \upright
-                            noise \hspace #0.5 }
-                        - \tweak bound-details.right.text \markup {
-                            \upright
-                                XSB
-                            }
-                        - \tweak staff-padding #2
+                        - \tweak bound-details.left.text \markup \concat { \upright noise \hspace #0.5 }
+                        - \tweak bound-details.right.text \markup \upright XSB
+                        - \tweak staff-padding 2
                         \startTextSpan
 
                         gqs4
@@ -474,10 +402,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.uverylongfermata"                    %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 
@@ -498,9 +423,9 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \clef "bass"
                         gs,2.
                         \f
@@ -540,8 +465,8 @@
                         % [Voice 4 measure 7]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         gs,1
-                        ^ \markup { "molto vibrato" }
-                        - \tweak style #'zigzag                                %! abjad.glissando(7)
+                        ^ \markup { molto vibrato }
+                        - \tweak style zigzag                                  %! abjad.glissando(7)
                         \glissando                                             %! abjad.glissando(7)
 
                         \tweak TupletNumber.text #(tuplet-number::append-note-wrapper(tuplet-number::non-default-tuplet-fraction-text 5 4) "16")
@@ -550,7 +475,7 @@
                             gtqs,4
                             - \tweak circled-tip ##t
                             \>
-                            - \tweak style #'zigzag                            %! abjad.glissando(7)
+                            - \tweak style zigzag                              %! abjad.glissando(7)
                             \glissando                                         %! abjad.glissando(7)
 
                             etqf,16
@@ -576,10 +501,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.uverylongfermata"                    %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.uverylongfermata" %! applying ending skips
                         \bar "|."
                         \stopStaff                                             %! applying ending skips
 

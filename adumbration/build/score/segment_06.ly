@@ -8,24 +8,9 @@
 
             \tempo 4=153
             \time 3/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 3/4
-            ^ \markup {
-                \override
-                    #'(font-name . "STIXGeneral Bold")
-                    \column
-                        {
-                            \box
-                                \caps
-                                    "T. Talked with God [Crocodiles (iii)]"
-                            \caps
-                                "(Ascend to the Basement)"
-                        }
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "T. Talked with God [Crocodiles (iii)]" \caps "(Ascend to the Basement)" }
             ^ \markup {
               \huge
               \concat {
@@ -186,9 +171,9 @@
                             % [Voice 1 measure 1]                              %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             \set Staff.shortInstrumentName =                   %! applying staff names and clefs
-                            \markup { "vn. I" }                                %! applying staff names and clefs
+                            \markup { \hcenter-in #12 "vn. I" }                %! applying staff names and clefs
                             \set Staff.instrumentName =                        %! applying staff names and clefs
-                            "Violin I"                                         %! applying staff names and clefs
+                            \markup { \hcenter-in #14 "Violin I" }             %! applying staff names and clefs
                             \clef "treble"
                             \override Staff.Stem.stemlet-length = 0.75
                             g'16
@@ -227,17 +212,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         e'16
                         \f
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a mf"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a mf" }
                         \>
                         [
 
@@ -507,17 +482,7 @@
 
                         ef'1
                         \mp
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
                         ~
                         % [Voice 1 measure 9]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -643,17 +608,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         g''16
                         \p
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a mf"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a mf" }
                         \<
                         [
 
@@ -922,17 +877,7 @@
 
                         fs'4
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a p"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                         \>
 
                         g'4
@@ -1067,17 +1012,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         a''16
                         \mf
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
                         [
 
@@ -1342,17 +1277,7 @@
 
                         a'2
                         \mp
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
 
                         fs'2
@@ -1384,26 +1309,16 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         r2.
                         % [Voice 2 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         d'2
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a p"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                         \>
 
                         e'4
@@ -1515,17 +1430,7 @@
 
                         fs'1
                         \mp
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
 
                         a'4
@@ -1649,17 +1554,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             e''16
                             \mp
-                            _ \markup {
-                                \override
-                                    #'(style . "box")
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \italic
-                                            \box
-                                                \whiteout
-                                                    \small
-                                                        "dim. a p"
-                                }
+                            _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                             \>
                             [
 
@@ -1959,17 +1854,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         e''16
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a f" }
                         \>
                         [
 
@@ -2268,17 +2153,7 @@
 
                         g'1
                         \mp
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
 
                         bf'4
@@ -2388,17 +2263,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         e''16
                         \p
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a mf"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a mf" }
                         \<
                         [
 
@@ -2518,9 +2383,9 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         r2
 
@@ -2674,17 +2539,7 @@
 
                         e1
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a p"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                         \>
                         ~
                         % [Voice 3 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2815,17 +2670,7 @@
 
                         fs1
                         \mp
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
                         ~
                         % [Voice 3 measure 12]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -2947,17 +2792,7 @@
 
                         af2
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a p"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                         \>
                         ~
 
@@ -3082,17 +2917,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         c'16
                         \f
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a mf"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a mf" }
                         \>
                         [
 
@@ -3327,17 +3152,7 @@
 
                         fs1
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a p"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                         \>
                         % [Voice 3 measure 30]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -3430,9 +3245,9 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \clef "bass"
                         r4
 
@@ -3441,17 +3256,7 @@
 
                             \override Staff.Stem.stemlet-length = 0.75
                             a,8
-                            _ \markup {
-                                \override
-                                    #'(style . "box")
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \italic
-                                            \box
-                                                \whiteout
-                                                    \small
-                                                        "cresc. a fff"
-                                }
+                            _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a fff" }
                             - \tweak circled-tip ##t
                             \<
                             [
@@ -3593,17 +3398,7 @@
 
                         fs,1
                         \mp
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a f"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a f" }
                         \<
 
                         g,4
@@ -3701,17 +3496,7 @@
                         \override Staff.Stem.stemlet-length = 0.75
                         d'16
                         \p
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "cresc. a mf"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a mf" }
                         \<
                         [
 
@@ -4022,17 +3807,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             g'16
                             \f
-                            _ \markup {
-                                \override
-                                    #'(style . "box")
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \italic
-                                            \box
-                                                \whiteout
-                                                    \small
-                                                        "dim. a mf"
-                                }
+                            _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a mf" }
                             \>
                             [
 
@@ -4327,17 +4102,7 @@
                             \clef "bass"
                             \override Staff.Stem.stemlet-length = 0.75
                             af,8
-                            _ \markup {
-                                \override
-                                    #'(style . "box")
-                                    \override
-                                        #'(box-padding . 0.5)
-                                        \italic
-                                            \box
-                                                \whiteout
-                                                    \small
-                                                        "cresc. a fff"
-                                }
+                            _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a fff" }
                             - \tweak circled-tip ##t
                             \<
                             [
@@ -4558,17 +4323,7 @@
 
                         fs,2
                         \ff
-                        _ \markup {
-                            \override
-                                #'(style . "box")
-                                \override
-                                    #'(box-padding . 0.5)
-                                    \italic
-                                        \box
-                                            \whiteout
-                                                \small
-                                                    "dim. a p"
-                            }
+                        _ \markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "dim. a p" }
                         \>
 
                         af,4

@@ -8,19 +8,9 @@
 
             \tempo 4=115
             \time 5/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 5/4
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            Quipu
-                }
+            ^ \markup \override #'(font-name . "STIXGeneral Bold") \box \caps Quipu
             ^ \markup {
               \huge
               \concat {
@@ -93,9 +83,9 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         r2.
 
@@ -141,16 +131,11 @@
                                     \slash                                     %! abjad.on_beat_grace_container(2)
                                     \voiceOne                                  %! abjad.on_beat_grace_container(3)
                                     <
-                                        \tweak font-size #0
+                                        \tweak font-size 0
                                         \tweak transparent ##t
                                         aqs'''
                                     >32 * 4/3
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (5)
-                                        }
+                                    ^ \markup { \hspace #1 throw (5)}
                                     [
 
                                     \once \override NoteHead.no-ledgers = ##t
@@ -224,7 +209,7 @@
 
                             c'2
                             \f
-                            ^ \markup { XSB(c.3) }
+                            ^ \markup XSB(c.3)
 
                         }
 
@@ -242,16 +227,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     cs'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    throw
-                                    (7)
-                                    }
+                                ^ \markup { \hspace #1 throw (7)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -311,14 +291,14 @@
 
                             d'2
                             \mf
-                            ^ \markup { XSB(c.5) }
+                            ^ \markup XSB(c.5)
                             \<
 
                         }
                         % [Voice 1 measure 6]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         ef'2
-                        ^ \markup { XSB(c.7) }
+                        ^ \markup XSB(c.7)
                         <>
                         \f
 
@@ -346,16 +326,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     c'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (4)
-                                    }
+                                ^ \markup { \hspace #1 drop (4)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -395,7 +370,7 @@
                             % [Voice 1 measure 10]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                             cs'1.
-                            ^ \markup { XSB(c.9) }
+                            ^ \markup XSB(c.9)
 
                             r2
 
@@ -415,10 +390,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -438,9 +410,9 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         r2.
 
@@ -495,16 +467,11 @@
                                     \slash                                     %! abjad.on_beat_grace_container(2)
                                     \voiceOne                                  %! abjad.on_beat_grace_container(3)
                                     <
-                                        \tweak font-size #0
+                                        \tweak font-size 0
                                         \tweak transparent ##t
                                         d'
                                     >32 * 16/7
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (6)
-                                        }
+                                    ^ \markup { \hspace #1 throw (6)}
                                     [
 
                                     \once \override NoteHead.no-ledgers = ##t
@@ -564,16 +531,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     ef'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    throw
-                                    (3)
-                                    }
+                                ^ \markup { \hspace #1 throw (3)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -629,16 +591,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     cs'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (5)
-                                    }
+                                ^ \markup { \hspace #1 drop (5)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -686,7 +643,7 @@
 
                             d'8
                             \mf
-                            ^ \markup { XSB(c.3) }
+                            ^ \markup XSB(c.3)
                             \<
                             <>
                             \f
@@ -714,16 +671,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     ef'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    throw
-                                    (2)
-                                    }
+                                ^ \markup { \hspace #1 throw (2)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -757,7 +709,7 @@
 
                             c'16
                             \f
-                            ^ \markup { XSB(c.5) }
+                            ^ \markup XSB(c.5)
                             \>
 
                         }
@@ -776,7 +728,7 @@
                         d'4
                         \f
                         - \bendAfter #'3
-                        ^ \markup { XSB(c.7) }
+                        ^ \markup XSB(c.7)
 
                         \scaleDurations #'(1 . 1) {
                             % [Voice 2 measure 12]                             %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -795,10 +747,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -818,16 +767,16 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         r1
 
                         c'4
                         \mf
                         - \bendAfter #'3.5
-                        ^ \markup { XSB(c.3) }
+                        ^ \markup XSB(c.3)
                         \<
                         % [Voice 3 measure 2]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
@@ -856,16 +805,11 @@
                                     \slash                                     %! abjad.on_beat_grace_container(2)
                                     \voiceOne                                  %! abjad.on_beat_grace_container(3)
                                     <
-                                        \tweak font-size #0
+                                        \tweak font-size 0
                                         \tweak transparent ##t
                                         d'
                                     >32 * 8/5
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (4)
-                                        }
+                                    ^ \markup { \hspace #1 throw (4)}
                                     [
 
                                     \once \override NoteHead.no-ledgers = ##t
@@ -905,7 +849,7 @@
 
                             ef'4.
                             - \bendAfter #'-3.5
-                            ^ \markup { XSB(c.5) }
+                            ^ \markup XSB(c.5)
 
                             r4.
 
@@ -965,16 +909,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     cs'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (5)
-                                    }
+                                ^ \markup { \hspace #1 drop (5)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -1026,7 +965,7 @@
 
                             d'2
                             \f
-                            ^ \markup { XSB(c.7) }
+                            ^ \markup XSB(c.7)
                             \>
 
                         }
@@ -1054,7 +993,7 @@
                             c'4
                             \f
                             - \bendAfter #'2.5
-                            ^ \markup { XSB(c.9) }
+                            ^ \markup XSB(c.9)
 
                         }
                         % [Voice 3 measure 10]                                 %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
@@ -1071,7 +1010,7 @@
                             d'2
                             \mf
                             - \bendAfter #'3
-                            ^ \markup { "slow bow" }
+                            ^ \markup { slow bow }
                             \<
 
                         }
@@ -1107,10 +1046,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }
@@ -1140,9 +1076,9 @@
                                     % [Voice 4 measure 1]                      %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                                     \set Staff.shortInstrumentName =           %! applying staff names and clefs
-                                    \markup { vc. }                            %! applying staff names and clefs
+                                    \markup { \hcenter-in #12 "vc." }          %! applying staff names and clefs
                                     \set Staff.instrumentName =                %! applying staff names and clefs
-                                    "Violoncello"                              %! applying staff names and clefs
+                                    \markup { \hcenter-in #14 "Violoncello" }  %! applying staff names and clefs
                                     \once \override NoteHead.no-ledgers = ##t
                                     \once \override Accidental.transparent = ##t
                                     \tweak transparent ##t
@@ -1150,16 +1086,11 @@
                                     \slash                                     %! abjad.on_beat_grace_container(2)
                                     \voiceOne                                  %! abjad.on_beat_grace_container(3)
                                     <
-                                        \tweak font-size #0
+                                        \tweak font-size 0
                                         \tweak transparent ##t
                                         cs'
                                     >32 * 16/9
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (7)
-                                        }
+                                    ^ \markup { \hspace #1 throw (7)}
                                     [
 
                                     \once \override NoteHead.no-ledgers = ##t
@@ -1239,16 +1170,11 @@
                                     \slash                                     %! abjad.on_beat_grace_container(2)
                                     \voiceOne                                  %! abjad.on_beat_grace_container(3)
                                     <
-                                        \tweak font-size #0
+                                        \tweak font-size 0
                                         \tweak transparent ##t
                                         d'
                                     >32 * 2
-                                    ^ \markup {
-                                        \hspace
-                                            #1
-                                        throw
-                                        (4)
-                                        }
+                                    ^ \markup { \hspace #1 throw (4)}
                                     [
 
                                     \once \override NoteHead.no-ledgers = ##t
@@ -1329,7 +1255,7 @@
                             ef'2.
                             \mf
                             - \bendAfter #'-3.5
-                            ^ \markup { XSB(c.3) }
+                            ^ \markup XSB(c.3)
 
                             r2.
 
@@ -1344,7 +1270,7 @@
 
                             c'8
                             \f
-                            ^ \markup { XSB(c.4) }
+                            ^ \markup XSB(c.4)
 
                         }
 
@@ -1367,7 +1293,7 @@
                             d'8
                             \mf
                             - \bendAfter #'3.5
-                            ^ \markup { XSB(c.7) }
+                            ^ \markup XSB(c.7)
                             \<
                             <>
                             \f
@@ -1390,16 +1316,11 @@
                                 \slash                                         %! abjad.on_beat_grace_container(2)
                                 \voiceOne                                      %! abjad.on_beat_grace_container(3)
                                 <
-                                    \tweak font-size #0
+                                    \tweak font-size 0
                                     \tweak transparent ##t
                                     ef'
                                 >32 * 4/3
-                                ^ \markup {
-                                    \hspace
-                                        #1
-                                    drop
-                                    (6)
-                                    }
+                                ^ \markup { \hspace #1 drop (6)}
                                 [
 
                                 \once \override NoteHead.no-ledgers = ##t
@@ -1452,7 +1373,7 @@
                         c'4
                         \f
                         - \bendAfter #'2.5
-                        ^ \markup { XSB(c.9) }
+                        ^ \markup XSB(c.9)
                         \>
 
                         \tweak text #tuplet-number::calc-fraction-text
@@ -1477,7 +1398,7 @@
 
                             d'2
                             \f
-                            ^ \markup { "slow bow" }
+                            ^ \markup { slow bow }
 
                         }
 
@@ -1515,10 +1436,7 @@
 
                         \once \override MultiMeasureRest.color = #white        %! applying ending skips
                         R1 * 3/32
-                        ^ \markup {                                            %! applying ending skips
-                            \musicglyph                                        %! applying ending skips
-                                #"scripts.ushortfermata"                       %! applying ending skips
-                            }                                                  %! applying ending skips
+                        ^ \markup \center-align \musicglyph #"scripts.ushortfermata" %! applying ending skips
                         \stopStaff \startStaff                                 %! applying ending skips
 
                     }

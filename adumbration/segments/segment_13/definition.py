@@ -114,13 +114,11 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "Quipu",
+                r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Quipu""",
                 direction=abjad.Up,
-            )
-            .caps()
-            .override(("font-name", "STIXGeneral Bold"))
-            .box(),
-            baca.leaf(0),
+                literal=True,
+            ),
+            baca.selectors.leaf(0),
         ),
         evans.call(
             "Voice 1",
@@ -155,178 +153,195 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 4",
             abjad.Clef("bass"),
-            baca.leaf(5, pitched=True),
+            baca.selectors.leaf(5, pitched=True),
         ),
         evans.call(
             "Voice 3",
             remove_ottava,
-            baca.leaf(11),
+            baca.selectors.leaf(11),
         ),
         evans.call(
             "Voice 3",
             remove_ottava,
-            baca.leaf(12),
+            baca.selectors.leaf(12),
         ),
         evans.call(
             "Voice 4",
             remove_ottava,
-            baca.leaf(9),
+            baca.selectors.leaf(9),
         ),
         evans.call(
             "Voice 4",
             remove_ottava,
-            baca.leaf(10),
+            baca.selectors.leaf(10),
         ),
         evans.call(
             "Voice 4",
             remove_ottava,
-            baca.leaf(11),
+            baca.selectors.leaf(11),
         ),
         evans.call(
             "Voice 4",
             remove_ottava,
-            baca.leaf(13),
+            baca.selectors.leaf(13),
         ),
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB(c.3)",
+                r"\markup XSB(c.3)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(6, pitched=True),
+            baca.selectors.leaf(6, pitched=True),
         ),
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB(c.5)",
+                r"\markup XSB(c.5)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(9, pitched=True),
+            baca.selectors.leaf(9, pitched=True),
         ),
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB(c.7)",
+                r"\markup XSB(c.7)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(10, pitched=True),
+            baca.selectors.leaf(10, pitched=True),
         ),
         evans.attach(
             "Voice 1",
             abjad.Markup(
-                "XSB(c.9)",
+                r"\markup XSB(c.9)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(12, pitched=True),
+            baca.selectors.leaf(12, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.Articulation("staccato"),
-            baca.leaf(5, pitched=True),
+            baca.selectors.leaf(5, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB(c.3)",
+                r"\markup XSB(c.3)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(7, pitched=True),
+            baca.selectors.leaf(7, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB(c.5)",
+                r"\markup XSB(c.5)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(9, pitched=True),
+            baca.selectors.leaf(9, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                "XSB(c.7)",
+                r"\markup XSB(c.7)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(12, pitched=True),
+            baca.selectors.leaf(12, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.3)",
+                r"\markup XSB(c.3)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.5)",
+                r"\markup XSB(c.5)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(3, pitched=True),
+            baca.selectors.leaf(3, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.7)",
+                r"\markup XSB(c.7)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(11, pitched=True),
+            baca.selectors.leaf(11, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "XSB(c.9)",
+                r"\markup XSB(c.9)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(13, pitched=True),
+            baca.selectors.leaf(13, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                "slow bow",
+                r"\markup { slow bow }",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(15, pitched=True),
+            baca.selectors.leaf(15, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.3)",
+                r"\markup XSB(c.3)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(5, pitched=True),
+            baca.selectors.leaf(5, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.4)",
+                r"\markup XSB(c.4)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(6, pitched=True),
+            baca.selectors.leaf(6, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.7)",
+                r"\markup XSB(c.7)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(8, pitched=True),
+            baca.selectors.leaf(8, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "XSB(c.9)",
+                r"\markup XSB(c.9)",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(10, pitched=True),
+            baca.selectors.leaf(10, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                "slow bow",
+                r"\markup { slow bow }",
                 direction=abjad.Up,
+                literal=True,
             ),
-            baca.leaf(12, pitched=True),
+            baca.selectors.leaf(12, pitched=True),
         ),
         evans.call(
             "Voice 1",
@@ -383,7 +398,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             mark_115,
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
     ],
     score_template=score,

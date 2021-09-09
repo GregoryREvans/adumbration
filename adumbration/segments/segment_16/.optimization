@@ -401,3 +401,21 @@ Segment runtime: 7 seconds
  Pre-handlers runtime: 0 seconds
  Handlers runtime: 4 seconds
  Post-handlers runtime: 3 seconds
+
+2021-03-02 13:30:11
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 2 seconds
+
+2021-03-02 14:36:20
+Segment runtime: 4 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 2 seconds
+ Post-handlers runtime: 2 seconds
+
+2021-03-02 14:54:40
+Segment runtime: 5 seconds
+ Pre-handlers runtime: 0 seconds
+ Handlers runtime: 3 seconds
+ Post-handlers runtime: 2 seconds

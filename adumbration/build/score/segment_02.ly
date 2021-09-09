@@ -8,19 +8,9 @@
 
             \tempo 4=153
             \time 3/4                                                          %! scaling time signatures
-            \mark \markup {
-                \bold
-                    {
-                    }
-                }
+            \mark \markup \bold {  }
             s1 * 3/4
-            ^ \markup {
-                \box
-                    \override
-                        #'(font-name . "STIXGeneral Bold")
-                        \caps
-                            "Crocodiles (i)"
-                }
+            ^ \markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Crocodiles (i) } }
             ^ \markup {
               \huge
               \concat {
@@ -57,14 +47,14 @@
                         % [Voice 1 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. I" }                                    %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. I" }                    %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin I"                                             %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin I" }                 %! applying staff names and clefs
                         \clef "treble"
                         \override Staff.Stem.stemlet-length = 0.75
                         c'16
                         \pp
-                        ^ \markup { sp. }
+                        ^ \markup sp.
                         [
                         (
 
@@ -180,9 +170,9 @@
                         % [Voice 2 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { "vn. II" }                                   %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vn. II" }                   %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violin II"                                            %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violin II" }                %! applying staff names and clefs
                         \clef "treble"
                         r2.
                         \stopTextSpanOne
@@ -195,7 +185,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             bf'16
                             \p
-                            ^ \markup { sp. }
+                            ^ \markup sp.
                             [
 
                             c'16
@@ -305,9 +295,9 @@
                         % [Voice 3 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { va. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "va." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Viola"                                                %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Viola" }                    %! applying staff names and clefs
                         \clef "varC"
                         r2
 
@@ -318,7 +308,7 @@
                             \override Staff.Stem.stemlet-length = 0.75
                             g'16
                             \pp
-                            ^ \markup { sp. }
+                            ^ \markup sp.
                             [
                             (
 
@@ -412,16 +402,16 @@
                         % [Voice 4 measure 1]                                  %! COMMENT_MEASURE_NUMBERS:abjad.SegmentMaker.comment_measure_numbers()
 
                         \set Staff.shortInstrumentName =                       %! applying staff names and clefs
-                        \markup { vc. }                                        %! applying staff names and clefs
+                        \markup { \hcenter-in #12 "vc." }                      %! applying staff names and clefs
                         \set Staff.instrumentName =                            %! applying staff names and clefs
-                        "Violoncello"                                          %! applying staff names and clefs
+                        \markup { \hcenter-in #14 "Violoncello" }              %! applying staff names and clefs
                         \clef "bass"
                         r4
 
                         \override Staff.Stem.stemlet-length = 0.75
                         ef'16
                         \pp
-                        ^ \markup { sp. }
+                        ^ \markup sp.
                         [
                         (
 

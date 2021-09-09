@@ -41,6 +41,12 @@ tempo_handler = evans.TempoSpannerHandler(
     forget=False,
 )
 
+section_title = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps Pins \caps "(for Loose Geographies)" }""",
+    direction=abjad.Down,
+    literal=True,
+)
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -77,14 +83,8 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [
-                    abjad.Markup("Pins").caps().box(),
-                    abjad.Markup("(for Loose Geographies)").caps(),
-                ],
-                direction=abjad.Down,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
         evans.call(
             "Global Context", tempo_handler, abjad.select().leaves().get([3, 4])
@@ -103,7 +103,7 @@ maker = evans.SegmentMaker(
         #         r"^ \markup { finger percussion }",
         #         format_slot="after",
         #     ),
-        #     baca.leaf(0, pitched=True),
+        #     baca.selectors.leaf(0, pitched=True),
         # ),
         evans.attach(
             "Voice 2",
@@ -111,7 +111,7 @@ maker = evans.SegmentMaker(
                 r"^ \markup { clt. \raise #0.75 \baca-circle-fast-markup }",
                 format_slot="after",
             ),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 2",
@@ -119,7 +119,7 @@ maker = evans.SegmentMaker(
                 r"^ \markup { slow bow }",
                 format_slot="after",
             ),
-            baca.leaf(-4, pitched=True),
+            baca.selectors.leaf(-4, pitched=True),
         ),
         evans.attach(
             "Voice 3",
@@ -127,7 +127,7 @@ maker = evans.SegmentMaker(
                 r"^ \markup { slow bow }",
                 format_slot="after",
             ),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 4",
@@ -135,12 +135,12 @@ maker = evans.SegmentMaker(
                 r"^ \markup { slow bow }",
                 format_slot="after",
             ),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup("½clt.", direction=abjad.Up),
-            baca.leaf(0, pitched=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
     ],
     score_template=score,

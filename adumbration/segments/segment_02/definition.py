@@ -23,6 +23,13 @@ def _slur_runs(selections):
             abjad.attach(abjad.StopSlur(), run[-1])
 
 
+section_title = abjad.Markup(
+    r"""\markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Crocodiles (i) } }""",
+    direction=abjad.Up,
+    literal=True,
+)
+
+
 maker = evans.SegmentMaker(
     instruments=insts,
     names=[
@@ -65,7 +72,7 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.StopTextSpan(command=r"\stopTextSpanOne"),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
@@ -75,109 +82,109 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'4")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("pp"),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup("sp.", direction=abjad.Up),
-            baca.leaf(0),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
             abjad.Dynamic("p"),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup("sp.", direction=abjad.Up),
-            baca.leaf(1),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("pp"),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("sp.", direction=abjad.Up),
-            baca.leaf(1),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("pp"),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup("sp.", direction=abjad.Up),
-            baca.leaf(1),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            baca.selectors.leaf(1),
         ),
         evans.call(
             "Voice 1",
             _slur_runs,
-            baca.leaves(),
+            baca.selectors.leaves(),
         ),
         evans.call(
             "Voice 2",
             _slur_runs,
-            baca.leaves(),
+            baca.selectors.leaves(),
         ),
         # evans.call(
         #     "Voice 3",
         #     _slur_runs,
-        #     baca.leaves(),
+        #     baca.selectors.leaves(),
         # ),
         evans.call(
             "Voice 4",
             _slur_runs,
-            baca.leaves(),
+            baca.selectors.leaves(),
         ),
-        evans.detach("Voice 1", abjad.StartSlur(), baca.leaf(10)),
-        evans.attach("Voice 1", abjad.StartSlur(), baca.leaf(11)),
-        evans.detach("Voice 2", abjad.StartSlur(), baca.leaf(1)),
-        evans.attach("Voice 2", abjad.StartSlur(), baca.leaf(3)),
-        evans.attach("Voice 3", abjad.StartSlur(), baca.leaf(0, pitched=True)),
-        evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(3, pitched=True)),
-        evans.attach("Voice 3", abjad.StartSlur(), baca.leaf(4, pitched=True)),
-        evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(6, pitched=True)),
-        evans.attach("Voice 3", abjad.StartSlur(), baca.leaf(7, pitched=True)),
-        evans.attach("Voice 3", abjad.StopSlur(), baca.leaf(18, pitched=True)),
-        evans.attach("Voice 4", abjad.StopSlur(), baca.leaf(8)),
-        evans.attach("Voice 4", abjad.StartSlur(), baca.leaf(12)),
+        evans.detach("Voice 1", abjad.StartSlur(), baca.selectors.leaf(10)),
+        evans.attach("Voice 1", abjad.StartSlur(), baca.selectors.leaf(11)),
+        evans.detach("Voice 2", abjad.StartSlur(), baca.selectors.leaf(1)),
+        evans.attach("Voice 2", abjad.StartSlur(), baca.selectors.leaf(3)),
+        evans.attach("Voice 3", abjad.StartSlur(), baca.selectors.leaf(0, pitched=True)),
+        evans.attach("Voice 3", abjad.StopSlur(), baca.selectors.leaf(3, pitched=True)),
+        evans.attach("Voice 3", abjad.StartSlur(), baca.selectors.leaf(4, pitched=True)),
+        evans.attach("Voice 3", abjad.StopSlur(), baca.selectors.leaf(6, pitched=True)),
+        evans.attach("Voice 3", abjad.StartSlur(), baca.selectors.leaf(7, pitched=True)),
+        evans.attach("Voice 3", abjad.StopSlur(), baca.selectors.leaf(18, pitched=True)),
+        evans.attach("Voice 4", abjad.StopSlur(), baca.selectors.leaf(8)),
+        evans.attach("Voice 4", abjad.StartSlur(), baca.selectors.leaf(12)),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("mp"),
-            baca.leaf(8, pitched=True),
+            baca.selectors.leaf(8, pitched=True),
         ),
         evans.attach(
             "Voice 1",
             abjad.Dynamic("f"),
-            baca.leaf(16, pitched=True),
+            baca.selectors.leaf(16, pitched=True),
         ),
         evans.attach(
             "Voice 2",
             abjad.Dynamic("f"),
-            baca.leaf(-13, pitched=True),
+            baca.selectors.leaf(-13, pitched=True),
         ),
         evans.attach(
             "Voice 3",
             abjad.Dynamic("mf"),
-            baca.leaf(-13, pitched=True),
+            baca.selectors.leaf(-13, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("mf"),
-            baca.leaf(-11, pitched=True),
+            baca.selectors.leaf(-11, pitched=True),
         ),
         evans.attach(
             "Voice 4",
             abjad.Dynamic("f"),
-            baca.leaf(-4, pitched=True),
+            baca.selectors.leaf(-4, pitched=True),
         ),
         evans.attach(
             "Voice 1",
@@ -185,7 +192,7 @@ maker = evans.SegmentMaker(
                 r"\once \override Staff.TupletBracket.direction = #UP",
                 format_slot="after",
             ),
-            baca.leaf(9),
+            baca.selectors.leaf(9),
         ),
         evans.attach(
             "Voice 1",
@@ -193,7 +200,7 @@ maker = evans.SegmentMaker(
                 r"\once \override Staff.TupletBracket.direction = #UP",
                 format_slot="after",
             ),
-            baca.leaf(14),
+            baca.selectors.leaf(14),
         ),
         evans.attach(
             "Voice 2",
@@ -201,7 +208,7 @@ maker = evans.SegmentMaker(
                 r"\once \override Staff.TupletBracket.direction = #UP",
                 format_slot="absolute_before",
             ),
-            baca.leaf(1),
+            baca.selectors.leaf(1),
         ),
         evans.attach(
             "Voice 2",
@@ -209,18 +216,12 @@ maker = evans.SegmentMaker(
                 r"\once \override Staff.TupletBracket.direction = #UP",
                 format_slot="after",
             ),
-            baca.leaf(18),
+            baca.selectors.leaf(18),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup(
-                "Crocodiles (i)",
-                direction=abjad.Up,
-            )
-            .caps()
-            .override(("font-name", "STIXGeneral Bold"))
-            .box(),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
     ],
     score_template=score,

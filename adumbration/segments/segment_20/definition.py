@@ -43,7 +43,7 @@ grace_handler = evans.OnBeatGraceHandler(
         1,
     ],
     font_size=-4,
-    leaf_duration=(1, 100),
+    leaf_duration=None,
     attack_number_forget=False,
     durations_forget=False,
     boolean_vector=[1],
@@ -76,9 +76,9 @@ def attach_clicks(selections):
     )
     for leaf in abjad.select(selections).leaves():
         text = cyc_clicks(r=1)[0]
-        mark = abjad.Markup(text, direction=abjad.Up)
+        mark = abjad.Markup(fr"\upright {{ {text} }}", direction=abjad.Up, literal=True)
         span = abjad.StartTextSpan(
-            left_text=mark.upright(),
+            left_text=mark,
             style="dashed-line-with-arrow",
         )
         abjad.tweak(span).padding = 6.75
@@ -88,7 +88,7 @@ def attach_clicks(selections):
     abjad.attach(abjad.Dynamic("fff"), first_leaf)
     abjad.detach(abjad.StopTextSpan(), first_leaf)
     final = abjad.StartTextSpan(
-        left_text=abjad.Markup("quasi noise").upright(),
+        left_text=abjad.Markup(r"\upright { quasi noise }", literal=True),
         style="invisible-line",
     )
     abjad.tweak(final).padding = 6.75
@@ -117,13 +117,12 @@ def attach_material(selections):
         hairpin = abjad.StartHairpin(cyc_hairpins(r=1)[0])
         abjad.attach(hairpin, tie[0])
     start = abjad.StartTextSpan(
-        left_text=abjad.Markup("norm.").upright(),
-        # right_text=abjad.Markup("mst.").upright(),
+        left_text=abjad.Markup(r"\upright norm.", literal=True),
         style="dashed-line-with-arrow",
     )
     middle = abjad.StartTextSpan(
-        left_text=abjad.Markup("msp.").upright(),
-        right_text=abjad.Markup("st.").upright(),
+        left_text=abjad.Markup(r"\upright msp.", literal=True),
+        right_text=abjad.Markup(r"\markup \upright st.", literal=True),
         style="dashed-line-with-arrow",
     )
     middle_stop = abjad.StopTextSpan()
@@ -223,13 +222,11 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Global Context",
             abjad.Markup(
-                "Yellow Light in Fog",
+                r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps "Yellow Light in Fog" """,
                 direction=abjad.Up,
-            )
-            .caps()
-            .override(("font-name", "STIXGeneral Bold"))
-            .box(),
-            baca.leaf(0),
+                literal=True,
+            ),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
@@ -237,43 +234,43 @@ maker = evans.SegmentMaker(
                 r"\bacaStopTextSpanMM",
                 format_slot="after",
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
             abjad.LilyPondLiteral(r"\break", format_slot="before"),
-            baca.leaf(30),
+            baca.selectors.leaf(30),
         ),
-        evans.attach("Global Context", mark_60, baca.leaf(0)),
-        evans.attach("Global Context", mark_120, baca.leaf(3)),
+        evans.attach("Global Context", mark_60, baca.selectors.leaf(0)),
+        evans.attach("Global Context", mark_120, baca.selectors.leaf(3)),
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 120),
-            baca.leaf(3),
+            baca.selectors.leaf(3),
         ),
-        evans.attach("Global Context", mark_60, baca.leaf(5)),
+        evans.attach("Global Context", mark_60, baca.selectors.leaf(5)),
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 60),
-            baca.leaf(5),
+            baca.selectors.leaf(5),
         ),
-        evans.attach("Global Context", mark_120, baca.leaf(8)),
+        evans.attach("Global Context", mark_120, baca.selectors.leaf(8)),
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 120),
-            baca.leaf(8),
+            baca.selectors.leaf(8),
         ),
-        evans.attach("Global Context", mark_60, baca.leaf(10)),
+        evans.attach("Global Context", mark_60, baca.selectors.leaf(10)),
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 60),
-            baca.leaf(10),
+            baca.selectors.leaf(10),
         ),
-        evans.attach("Global Context", mark_108, baca.leaf(13)),
+        evans.attach("Global Context", mark_108, baca.selectors.leaf(13)),
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 108),
-            baca.leaf(13),
+            baca.selectors.leaf(13),
         ),
         evans.call(
             "Voice 1",
@@ -535,12 +532,16 @@ maker = evans.SegmentMaker(
         evans.call("Voice 4", clef_handlers[3], abjad.select()),
         evans.attach(
             "Voice 1",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([7]).leaf(0),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([20]).leaf(0),
         ),
         evans.call(
@@ -590,12 +591,16 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([6]).leaf(0),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([21]).leaf(0),
         ),
         evans.call(
@@ -645,12 +650,16 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([7]).leaf(0),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([20]).leaf(0),
         ),
         evans.call(
@@ -700,12 +709,16 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([8]).leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup("sp.(quasi noise)", direction=abjad.Up),
+            abjad.Markup(
+                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
+            ),
             abjad.select().logical_ties().get([20]).leaf(0),
         ),
         evans.call(

@@ -29,6 +29,11 @@ mark_115 = abjad.LilyPondLiteral(
     format_slot="after",
 )
 
+section_title = abjad.Markup(
+    r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Herzensschatzi Komm" \caps "[Komm (iii)]" }""",
+    direction=abjad.Up,
+    literal=True,
+)
 
 maker = evans.SegmentMaker(
     instruments=insts,
@@ -74,7 +79,7 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'2")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(0),
+            baca.selectors.leaf(0),
         ),
         evans.attach(
             "Global Context",
@@ -84,12 +89,12 @@ maker = evans.SegmentMaker(
                 right_note=(abjad.Note("c'4")),
                 modulated_beat=(abjad.Note("c'4")),
             ),
-            baca.leaf(3),
+            baca.selectors.leaf(3),
         ),
         evans.attach(
             "Global Context",
             abjad.MetronomeMark((1, 4), 38),
-            baca.leaf(3),
+            baca.selectors.leaf(3),
         ),
         evans.attach(
             "Voice 1",
@@ -97,7 +102,7 @@ maker = evans.SegmentMaker(
                 r"^ \markup { ½clt. \raise #0.75 \baca-circle-very-wide-markup }",
                 format_slot="after",
             ),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 2",
@@ -105,7 +110,7 @@ maker = evans.SegmentMaker(
                 r"^ \markup { clt. \raise #0.75 \baca-circle-very-wide-markup }",
                 format_slot="after",
             ),
-            baca.leaf(0, pitched=True),
+            baca.selectors.leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 2",
@@ -113,29 +118,13 @@ maker = evans.SegmentMaker(
                 r"^ \markup { clt. \raise #0.75 \baca-circle-slow-markup }",
                 format_slot="after",
             ),
-            baca.leaf(2, pitched=True),
+            baca.selectors.leaf(2, pitched=True),
         ),
         evans.attach(
             "Global Context",
-            abjad.Markup.column(
-                [
-                    abjad.Markup("Herzensschatzi Komm").caps().box(),
-                    abjad.Markup("[Komm (iii)]").caps(),
-                ],
-                direction=abjad.Up,
-            ).override(("font-name", "STIXGeneral Bold")),
-            baca.leaf(0),
+            section_title,
+            baca.selectors.leaf(0),
         ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-        #     baca.leaf(2),
-        # ),
-        # evans.attach(
-        #     "Global Context",
-        #     abjad.LilyPondLiteral(r"\break", format_slot="absolute_before"),
-        #     baca.leaf(4),
-        # ),
     ],
     score_template=score,
     time_signatures=time_signatures,
