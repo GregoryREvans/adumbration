@@ -184,9 +184,15 @@ maker = evans.SegmentMaker(
             tempo_handler,
             abjad.select().leaves().get([13, 14]),
         ),
-        evans.attach("Voice 2", abjad.StopBeam(), baca.selectors.leaf(18, pitched=True)),
-        evans.detach("Voice 2", abjad.StopBeam(), baca.selectors.leaf(19, pitched=True)),
-        evans.detach("Voice 3", abjad.StartBeam(), baca.selectors.leaf(11, pitched=True)),
+        evans.attach(
+            "Voice 2", abjad.StopBeam(), baca.selectors.leaf(18, pitched=True)
+        ),
+        evans.detach(
+            "Voice 2", abjad.StopBeam(), baca.selectors.leaf(19, pitched=True)
+        ),
+        evans.detach(
+            "Voice 3", abjad.StartBeam(), baca.selectors.leaf(11, pitched=True)
+        ),
         evans.detach("Voice 3", abjad.StopBeam(), baca.selectors.leaf(21)),
         evans.attach(
             "Voice 1",

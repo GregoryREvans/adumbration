@@ -16,9 +16,7 @@ from adumbration.materials.timespans.segment_15.convert_timespans import rhythm_
 bar_literal = abjad.LilyPondLiteral(r'\bar ".|:"', format_slot="before")
 
 xsb_noise_poco_a_poco = abjad.StartTextSpan(
-    left_text=abjad.Markup(
-        r"""\upright "XSB (noise poco a poco)" """, literal=True
-    ),
+    left_text=abjad.Markup(r"""\upright "XSB (noise poco a poco)" """, literal=True),
     style="dashed-line-with-arrow",
 )
 abjad.tweak(xsb_noise_poco_a_poco).padding = 9
@@ -42,9 +40,7 @@ noise_poco_a_poco_final_noise = abjad.StartTextSpan(
 abjad.tweak(noise_poco_a_poco_final_noise).padding = 6
 
 norm_noise_poco_a_poco = abjad.StartTextSpan(
-    left_text=abjad.Markup(
-        r"""\upright "norm. (noise poco a poco)" """, literal=True
-    ),
+    left_text=abjad.Markup(r"""\upright "norm. (noise poco a poco)" """, literal=True),
     style="dashed-line-with-arrow",
 )
 abjad.tweak(norm_noise_poco_a_poco).padding = 7
@@ -186,8 +182,12 @@ maker = evans.SegmentMaker(
             abjad.StopTextSpan(),
             baca.selectors.leaf(9, pitched=True),
         ),
-        evans.attach("Voice 1", abjad.Dynamic("pp"), baca.selectors.leaf(0, pitched=True)),
-        evans.attach("Voice 1", abjad.StartHairpin("<"), baca.selectors.leaf(0, pitched=True)),
+        evans.attach(
+            "Voice 1", abjad.Dynamic("pp"), baca.selectors.leaf(0, pitched=True)
+        ),
+        evans.attach(
+            "Voice 1", abjad.StartHairpin("<"), baca.selectors.leaf(0, pitched=True)
+        ),
         evans.attach(
             "Voice 1",
             abjad.Markup(
@@ -197,8 +197,12 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0, pitched=True),
         ),
-        evans.attach("Voice 1", abjad.StopHairpin(), baca.selectors.leaf(9, pitched=True)),
-        evans.attach("Voice 1", abjad.Dynamic("ff"), baca.selectors.leaf(9, pitched=True)),
+        evans.attach(
+            "Voice 1", abjad.StopHairpin(), baca.selectors.leaf(9, pitched=True)
+        ),
+        evans.attach(
+            "Voice 1", abjad.Dynamic("ff"), baca.selectors.leaf(9, pitched=True)
+        ),
         evans.attach(
             "Voice 2",
             noise_poco_a_poco,
@@ -259,8 +263,12 @@ maker = evans.SegmentMaker(
             abjad.StopTextSpan(),
             baca.selectors.leaf(111),
         ),
-        evans.attach("Voice 1", abjad.Dynamic("mf"), baca.selectors.leaf(-5, pitched=True)),
-        evans.attach("Voice 2", abjad.Dynamic("f"), baca.selectors.leaf(-24, pitched=True)),
+        evans.attach(
+            "Voice 1", abjad.Dynamic("mf"), baca.selectors.leaf(-5, pitched=True)
+        ),
+        evans.attach(
+            "Voice 2", abjad.Dynamic("f"), baca.selectors.leaf(-24, pitched=True)
+        ),
         evans.call(
             "Voice 2",
             evans.NoteheadHandler(
@@ -291,8 +299,12 @@ maker = evans.SegmentMaker(
             abjad.Markup(r"\markup III.", direction=abjad.Up, literal=True),
             baca.selectors.leaf(-22, pitched=True),
         ),
-        evans.attach("Voice 3", abjad.Dynamic("f"), baca.selectors.leaf(-22, pitched=True)),
-        evans.attach("Voice 4", abjad.Dynamic("mf"), baca.selectors.leaf(-5, pitched=True)),
+        evans.attach(
+            "Voice 3", abjad.Dynamic("f"), baca.selectors.leaf(-22, pitched=True)
+        ),
+        evans.attach(
+            "Voice 4", abjad.Dynamic("mf"), baca.selectors.leaf(-5, pitched=True)
+        ),
         evans.attach(
             "Global Context",
             evans.metric_modulation(
@@ -386,21 +398,27 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 2",
             abjad.Markup(
-                r"""\markup "full bows as possible" """, direction=abjad.Up, literal=True
+                r"""\markup "full bows as possible" """,
+                direction=abjad.Up,
+                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.Markup(
-                r"""\markup "full bows as possible" """, direction=abjad.Up, literal=True
+                r"""\markup "full bows as possible" """,
+                direction=abjad.Up,
+                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
             abjad.Markup(
-                r"""\markup "full bows as possible" """, direction=abjad.Up, literal=True
+                r"""\markup "full bows as possible" """,
+                direction=abjad.Up,
+                literal=True,
             ),
             baca.selectors.leaf(0),
         ),

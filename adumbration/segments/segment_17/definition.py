@@ -108,8 +108,12 @@ maker = evans.SegmentMaker(
         evans.call("Voice 2", clefs[1], abjad.select()),
         evans.call("Voice 3", clefs[2], abjad.select()),
         evans.call("Voice 4", clefs[3], abjad.select()),
-        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([2, 3])),
-        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([5, 6])),
+        evans.call(
+            "Global Context", tempo_handler, baca.selectors.leaves().get([2, 3])
+        ),
+        evans.call(
+            "Global Context", tempo_handler, baca.selectors.leaves().get([5, 6])
+        ),
         evans.attach(
             "Voice 1",
             abjad.StopBeam(),

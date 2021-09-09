@@ -195,7 +195,9 @@ maker = evans.SegmentMaker(
             abjad.Dynamic("f"),
             baca.selectors.leaf(0),
         ),
-        evans.attach("Voice 4", abjad.StartHairpin(">o"), baca.selectors.leaf(-2, pitched=True)),
+        evans.attach(
+            "Voice 4", abjad.StartHairpin(">o"), baca.selectors.leaf(-2, pitched=True)
+        ),
         evans.attach("Voice 4", abjad.StopHairpin(), baca.selectors.leaf(-2)),
         evans.attach(
             "Voice 4",

@@ -527,9 +527,15 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0),
         ),
-        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([8, 9])),
-        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([11, 12])),
-        evans.call("Global Context", tempo_handler, baca.selectors.leaves().get([14, 15])),
+        evans.call(
+            "Global Context", tempo_handler, baca.selectors.leaves().get([8, 9])
+        ),
+        evans.call(
+            "Global Context", tempo_handler, baca.selectors.leaves().get([11, 12])
+        ),
+        evans.call(
+            "Global Context", tempo_handler, baca.selectors.leaves().get([14, 15])
+        ),
         evans.attach(
             "Voice 1",
             abjad.Markup(

@@ -148,12 +148,20 @@ maker = evans.SegmentMaker(
         evans.attach("Voice 1", abjad.StartSlur(), baca.selectors.leaf(11)),
         evans.detach("Voice 2", abjad.StartSlur(), baca.selectors.leaf(1)),
         evans.attach("Voice 2", abjad.StartSlur(), baca.selectors.leaf(3)),
-        evans.attach("Voice 3", abjad.StartSlur(), baca.selectors.leaf(0, pitched=True)),
+        evans.attach(
+            "Voice 3", abjad.StartSlur(), baca.selectors.leaf(0, pitched=True)
+        ),
         evans.attach("Voice 3", abjad.StopSlur(), baca.selectors.leaf(3, pitched=True)),
-        evans.attach("Voice 3", abjad.StartSlur(), baca.selectors.leaf(4, pitched=True)),
+        evans.attach(
+            "Voice 3", abjad.StartSlur(), baca.selectors.leaf(4, pitched=True)
+        ),
         evans.attach("Voice 3", abjad.StopSlur(), baca.selectors.leaf(6, pitched=True)),
-        evans.attach("Voice 3", abjad.StartSlur(), baca.selectors.leaf(7, pitched=True)),
-        evans.attach("Voice 3", abjad.StopSlur(), baca.selectors.leaf(18, pitched=True)),
+        evans.attach(
+            "Voice 3", abjad.StartSlur(), baca.selectors.leaf(7, pitched=True)
+        ),
+        evans.attach(
+            "Voice 3", abjad.StopSlur(), baca.selectors.leaf(18, pitched=True)
+        ),
         evans.attach("Voice 4", abjad.StopSlur(), baca.selectors.leaf(8)),
         evans.attach("Voice 4", abjad.StartSlur(), baca.selectors.leaf(12)),
         evans.attach(
