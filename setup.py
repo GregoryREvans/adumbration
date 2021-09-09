@@ -1,6 +1,12 @@
 import setuptools
 
-install_requires = ["abjad"]
+install_requires = [
+    "abjad",
+    "evans",
+    "tsmakers",
+    "abjad-ext-microtones",
+    "abjad-ext-rmakers",
+]
 
 keywords = [
     "abjad",
