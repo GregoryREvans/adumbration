@@ -1,13 +1,13 @@
 import abjad
-handler_to_value = abjad.OrderedDict(
+handler_to_value = dict(
     [
         (
             'silence_maker',
-            abjad.OrderedDict(
+            dict(
                 [
                     (
                         'state',
-                        abjad.OrderedDict(
+                        dict(
                             [
                                 ('divisions_consumed', 1),
                                 ('logical_ties_produced', 1),
@@ -19,7 +19,7 @@ handler_to_value = abjad.OrderedDict(
             ),
         (
             'tap_rhythm_handler',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('state', 0),
                     ]
@@ -27,11 +27,11 @@ handler_to_value = abjad.OrderedDict(
             ),
         (
             'long_rhythm_handler',
-            abjad.OrderedDict(
+            dict(
                 [
                     (
                         'state',
-                        abjad.OrderedDict(
+                        dict(
                             [
                                 ('divisions_consumed', 5),
                                 ('incomplete_last_note', True),
@@ -45,7 +45,7 @@ handler_to_value = abjad.OrderedDict(
             ),
         (
             'noise_rhythm_handler',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('state', 1),
                     ]

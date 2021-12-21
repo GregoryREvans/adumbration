@@ -98,37 +98,36 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Quipu""",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
         evans.call(
             "Voice 1",
             clef_handlers[0],
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 2",
             clef_handlers[1],
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 3",
@@ -137,7 +136,7 @@ maker = evans.SegmentMaker(
                 add_extended_clefs=True,
                 add_ottavas=True,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
@@ -148,7 +147,7 @@ maker = evans.SegmentMaker(
                 add_extended_clefs=True,
                 add_ottavas=True,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.attach(
             "Voice 4",
@@ -190,7 +189,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.3)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(6, pitched=True),
         ),
@@ -199,7 +197,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.5)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(9, pitched=True),
         ),
@@ -208,7 +205,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.7)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(10, pitched=True),
         ),
@@ -217,7 +213,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.9)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(12, pitched=True),
         ),
@@ -231,7 +226,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.3)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(7, pitched=True),
         ),
@@ -240,7 +234,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.5)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(9, pitched=True),
         ),
@@ -249,7 +242,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.7)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(12, pitched=True),
         ),
@@ -258,7 +250,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.3)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0, pitched=True),
         ),
@@ -267,7 +258,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.5)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(3, pitched=True),
         ),
@@ -276,7 +266,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.7)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(11, pitched=True),
         ),
@@ -285,7 +274,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.9)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(13, pitched=True),
         ),
@@ -294,7 +282,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup { slow bow }",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(15, pitched=True),
         ),
@@ -303,7 +290,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.3)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(5, pitched=True),
         ),
@@ -312,7 +298,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.4)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(6, pitched=True),
         ),
@@ -321,7 +306,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.7)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(8, pitched=True),
         ),
@@ -330,7 +314,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup XSB(c.9)",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(10, pitched=True),
         ),
@@ -339,14 +322,13 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"\markup { slow bow }",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(12, pitched=True),
         ),
         evans.call(
             "Voice 1",
             gett_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -359,7 +341,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 2",
             gett_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -373,7 +355,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 3",
             gett_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -385,7 +367,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 4",
             gett_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [

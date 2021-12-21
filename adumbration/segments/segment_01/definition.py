@@ -17,7 +17,7 @@ from adumbration.materials.timespans.segment_01.convert_timespans import (
 
 
 def _add_tremolos(selections):
-    for leaf in abjad.select(selections).leaves(pitched=True):
+    for leaf in abjad.Selection(selections).leaves(pitched=True):
         tremolo = abjad.StemTremolo(32)
         abjad.attach(tremolo, leaf)
 
@@ -34,7 +34,7 @@ def _call_text_spanner(selections):
         hooks=False,
         forget=False,
     )
-    for run in abjad.select(selections).runs():
+    for run in abjad.Selection(selections).runs():
         if 1 < len(run):
             trem_text(run)
 
@@ -55,7 +55,6 @@ mark_115 = abjad.LilyPondLiteral(
 section_title = abjad.Markup(
     r"""\markup { \box { \override #'(font-name . "STIXGeneral Bold") \caps { Ombreggiato (i) } } }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -78,12 +77,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
@@ -95,7 +94,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "Voice 1",

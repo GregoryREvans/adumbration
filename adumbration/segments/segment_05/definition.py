@@ -18,33 +18,31 @@ from adumbration.materials.timespans.segment_05.convert_timespans import (
 
 
 def _add_tremolos(selections):
-    for leaf in abjad.select(selections).leaves(pitched=True):
+    for leaf in abjad.Selection(selections).leaves(pitched=True):
         tremolo = abjad.StemTremolo(32)
         abjad.attach(tremolo, leaf)
 
 
-x = abjad.Markup(r"\markup XFB.", direction=abjad.Up, literal=True)
-n = abjad.Markup(r"\markup norm.", direction=abjad.Up, literal=True)
-s = abjad.Markup(r"\markup noise", direction=abjad.Up, literal=True)
+x = abjad.Markup(r"\markup XFB.", direction=abjad.Up)
+n = abjad.Markup(r"\markup norm.", direction=abjad.Up)
+s = abjad.Markup(r"\markup noise", direction=abjad.Up)
 
 cyc_techniques = evans.CyclicList([x, n, s, n, x, n, s], forget=False)
 
 
 def _attach_marks(selections):
-    for tie in abjad.select(selections).logical_ties(pitched=True):
+    for tie in abjad.Selection(selections).logical_ties(pitched=True):
         abjad.attach(cyc_techniques(r=1)[0], tie[0])
 
 
 crescendo_markup = abjad.Markup(
     r"""\markup { \override #'(style . "box") \override #'(box-padding . 0.5) \italic \box \whiteout \small "cresc. a m.28 (ff)" }""",
     direction=abjad.Down,
-    literal=True,
 )
 
 section_title = abjad.Markup(
     r"""\markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Komm (i) } }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 
@@ -68,12 +66,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
@@ -85,7 +83,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -124,22 +122,22 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup st.", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup st.", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup st.", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(r"\markup st.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup st.", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -185,42 +183,42 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             _add_tremolos,
-            abjad.select().leaves(),
+            lambda _: abjad.Selection(_).leaves(),
         ),
         evans.call(
             "Voice 2",
             _add_tremolos,
-            abjad.select().leaves(),
+            lambda _: abjad.Selection(_).leaves(),
         ),
         evans.call(
             "Voice 3",
             _add_tremolos,
-            abjad.select().leaves(),
+            lambda _: abjad.Selection(_).leaves(),
         ),
         evans.call(
             "Voice 4",
             _add_tremolos,
-            abjad.select().leaves(),
+            lambda _: abjad.Selection(_).leaves(),
         ),
         evans.call(
             "Voice 1",
             _attach_marks,
-            abjad.select().logical_ties(),
+            lambda _: abjad.Selection(_).logical_ties(),
         ),
         evans.call(
             "Voice 2",
             _attach_marks,
-            abjad.select().logical_ties(),
+            lambda _: abjad.Selection(_).logical_ties(),
         ),
         evans.call(
             "Voice 3",
             _attach_marks,
-            abjad.select().logical_ties(),
+            lambda _: abjad.Selection(_).logical_ties(),
         ),
         evans.call(
             "Voice 4",
             _attach_marks,
-            abjad.select().logical_ties(),
+            lambda _: abjad.Selection(_).logical_ties(),
         ),
         evans.attach(
             "Global Context",

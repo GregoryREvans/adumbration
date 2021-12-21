@@ -31,16 +31,16 @@ c = abjad.LilyPondLiteral(
 
 
 def apply_spanner(selections):
-    for run in abjad.select(selections).runs():
+    for run in abjad.Selection(selections).runs():
         start = abjad.StartTextSpan(
-            left_text=abjad.Markup(r"\upright noise", literal=True),
-            right_text=abjad.Markup(r"\markup \upright XSB", literal=True),
+            left_text=abjad.Markup(r"\upright noise"),
+            right_text=abjad.Markup(r"\markup \upright XSB"),
             style="dashed-line-with-arrow",
         )
         abjad.tweak(start).staff_padding = 2
         stop = abjad.StopTextSpan()
-        abjad.attach(start, abjad.select(run).leaf(0))
-        abjad.attach(stop, abjad.get.leaf(abjad.select(run).leaf(-1), 1))
+        abjad.attach(start, abjad.Selection(run).leaf(0))
+        abjad.attach(stop, abjad.get.leaf(abjad.Selection(run).leaf(-1), 1))
 
 
 maker = evans.SegmentMaker(
@@ -63,25 +63,24 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Nacht/Maska""",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
@@ -95,10 +94,10 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0),
         ),
-        evans.call("Voice 1", clef_handlers[0], abjad.select()),
-        evans.call("Voice 2", clef_handlers[1], abjad.select()),
-        evans.call("Voice 3", clef_handlers[2], abjad.select()),
-        evans.call("Voice 4", clef_handlers[3], abjad.select()),
+        evans.call("Voice 1", clef_handlers[0], lambda _: abjad.Selection(_)),
+        evans.call("Voice 2", clef_handlers[1], lambda _: abjad.Selection(_)),
+        evans.call("Voice 3", clef_handlers[2], lambda _: abjad.Selection(_)),
+        evans.call("Voice 4", clef_handlers[3], lambda _: abjad.Selection(_)),
         evans.call(
             "Voice 1",
             evans.PitchHandler(
@@ -107,12 +106,12 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 1",
             apply_spanner,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         # evans.attach(
         #     "Voice 1",
@@ -136,17 +135,17 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 2",
             apply_spanner,
-            abjad.select().runs().get([0, 1, 2, 4]),
+            lambda _: abjad.Selection(_).runs().get([0, 1, 2, 4]),
         ),
         evans.call(
             "Voice 2",
             evans.BowAngleHandler([-45, 45]),
-            abjad.select().run(3),
+            lambda _: abjad.Selection(_).run(3),
         ),
         evans.attach(
             "Voice 2",
@@ -161,12 +160,12 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 3",
             apply_spanner,
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         # evans.attach(
         #     "Voice 3",
@@ -188,7 +187,7 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.attach(
             "Voice 4",
@@ -201,9 +200,7 @@ maker = evans.SegmentMaker(
         evans.attach("Voice 4", abjad.StopHairpin(), baca.selectors.leaf(-2)),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\markup { molto vibrato }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { molto vibrato }", direction=abjad.Up),
             baca.selectors.leaf(-3, pitched=True),
         ),
         evans.call(

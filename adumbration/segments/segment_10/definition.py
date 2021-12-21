@@ -19,7 +19,6 @@ from adumbration.materials.timespans.segment_10.convert_timespans import (
 section_title = abjad.Markup(
     r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Are We Still Married?" \caps "[Komm (iv)]" }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -42,19 +41,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -74,12 +73,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             tap_pitch_handler,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
-            abjad.select().leaf(0, pitched=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up),
+            lambda _: abjad.Selection(_).leaf(0, pitched=True),
         ),
         evans.attach(
             "Voice 3",

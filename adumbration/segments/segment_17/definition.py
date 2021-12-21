@@ -64,25 +64,24 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Samudra""",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
@@ -104,10 +103,10 @@ maker = evans.SegmentMaker(
             ),
             baca.selectors.leaf(0),
         ),
-        evans.call("Voice 1", clefs[0], abjad.select()),
-        evans.call("Voice 2", clefs[1], abjad.select()),
-        evans.call("Voice 3", clefs[2], abjad.select()),
-        evans.call("Voice 4", clefs[3], abjad.select()),
+        evans.call("Voice 1", clefs[0], lambda _: abjad.Selection(_)),
+        evans.call("Voice 2", clefs[1], lambda _: abjad.Selection(_)),
+        evans.call("Voice 3", clefs[2], lambda _: abjad.Selection(_)),
+        evans.call("Voice 4", clefs[3], lambda _: abjad.Selection(_)),
         evans.call(
             "Global Context", tempo_handler, baca.selectors.leaves().get([2, 3])
         ),

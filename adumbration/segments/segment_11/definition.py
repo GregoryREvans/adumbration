@@ -105,7 +105,6 @@ marks = evans.CyclicList(
 section_title = abjad.Markup(
     r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Komm Komm Komm" \caps "[Komm (v)]" }""",
     direction=abjad.Down,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -128,46 +127,106 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             section_title,
             baca.selectors.leaf(0),
         ),
-        evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
-        # evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
-        evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
-        evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([4]).leaf(0)),
-        evans.attach("Voice 1", marks(r=1)[0], abjad.select().runs().get([5]).leaf(0)),
-        evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
-        evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
-        evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
-        # evans.attach("Voice 2", marks(r=1)[0], abjad.select().runs().get([7]).leaf(0)),
-        evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
-        evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
-        evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
-        evans.attach("Voice 3", marks(r=1)[0], abjad.select().runs().get([3]).leaf(0)),
-        evans.attach("Voice 4", marks(r=1)[0], abjad.select().runs().get([0]).leaf(0)),
-        evans.attach("Voice 4", marks(r=1)[0], abjad.select().runs().get([1]).leaf(0)),
-        evans.attach("Voice 4", marks(r=1)[0], abjad.select().runs().get([2]).leaf(0)),
-        evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([1, 2])
+        evans.attach(
+            "Voice 1",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([0]).leaf(0),
+        ),
+        # evans.attach("Voice 1", marks(r=1)[0], lambda _: abjad.Selection(_).runs().get([1]).leaf(0)),
+        evans.attach(
+            "Voice 1",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([2]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([4]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 1",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([5]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([0]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([1]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 2",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([2]).leaf(0),
+        ),
+        # evans.attach("Voice 2", marks(r=1)[0], lambda _: abjad.Selection(_).runs().get([7]).leaf(0)),
+        evans.attach(
+            "Voice 3",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([0]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([1]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([2]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 3",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([3]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([0]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([1]).leaf(0),
+        ),
+        evans.attach(
+            "Voice 4",
+            marks(r=1)[0],
+            lambda _: abjad.Selection(_).runs().get([2]).leaf(0),
         ),
         evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([4, 5, 6])
+            "Global Context",
+            tempo_handler,
+            lambda _: abjad.Selection(_).leaves().get([1, 2]),
+        ),
+        evans.call(
+            "Global Context",
+            tempo_handler,
+            lambda _: abjad.Selection(_).leaves().get([4, 5, 6]),
         ),
         evans.attach(
             "Global Context",
@@ -177,12 +236,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([8, 9, 10]),
+            lambda _: abjad.Selection(_).leaves().get([8, 9, 10]),
         ),
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([13, 14]),
+            lambda _: abjad.Selection(_).leaves().get([13, 14]),
         ),
         evans.attach(
             "Voice 2", abjad.StopBeam(), baca.selectors.leaf(18, pitched=True)
@@ -196,12 +255,12 @@ maker = evans.SegmentMaker(
         evans.detach("Voice 3", abjad.StopBeam(), baca.selectors.leaf(21)),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up),
             baca.selectors.leaf(1, pitched=True),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up),
             baca.selectors.leaf(15, pitched=True),
         ),
     ],

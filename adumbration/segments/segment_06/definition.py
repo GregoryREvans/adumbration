@@ -25,7 +25,7 @@ clefs = [
 
 
 def _slur_runs(selections):
-    for run in abjad.select(selections).runs():
+    for run in abjad.Selection(selections).runs():
         if 1 < len(run):
             abjad.attach(abjad.StartSlur(), run[0])
             abjad.attach(abjad.StopSlur(), run[-1])
@@ -34,7 +34,6 @@ def _slur_runs(selections):
 title_markup = abjad.Markup(
     r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "T. Talked with God [Crocodiles (iii)]" \caps "(Ascend to the Basement)" }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -57,19 +56,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -93,18 +92,38 @@ maker = evans.SegmentMaker(
                 add_extended_clefs=True,
                 add_ottavas=True,
             ),
-            abjad.select().logical_ties(),
+            lambda _: abjad.Selection(_).logical_ties(),
         ),
         evans.detach(
-            "Voice 4", abjad.Clef("tenorvarC"), abjad.select().run(11).leaf(1)
+            "Voice 4",
+            abjad.Clef("tenorvarC"),
+            lambda _: abjad.Selection(_).run(11).leaf(1),
         ),
-        evans.detach("Voice 4", abjad.Clef("treble"), abjad.select().run(11).leaf(5)),
-        evans.attach("Voice 4", abjad.Clef("treble"), abjad.select().run(11).leaf(0)),
         evans.detach(
-            "Voice 4", abjad.Clef("tenorvarC"), abjad.select().run(13).leaf(2)
+            "Voice 4",
+            abjad.Clef("treble"),
+            lambda _: abjad.Selection(_).run(11).leaf(5),
         ),
-        evans.detach("Voice 4", abjad.Clef("treble"), abjad.select().run(13).leaf(6)),
-        evans.attach("Voice 4", abjad.Clef("treble"), abjad.select().run(13).leaf(0)),
+        evans.attach(
+            "Voice 4",
+            abjad.Clef("treble"),
+            lambda _: abjad.Selection(_).run(11).leaf(0),
+        ),
+        evans.detach(
+            "Voice 4",
+            abjad.Clef("tenorvarC"),
+            lambda _: abjad.Selection(_).run(13).leaf(2),
+        ),
+        evans.detach(
+            "Voice 4",
+            abjad.Clef("treble"),
+            lambda _: abjad.Selection(_).run(13).leaf(6),
+        ),
+        evans.attach(
+            "Voice 4",
+            abjad.Clef("treble"),
+            lambda _: abjad.Selection(_).run(13).leaf(0),
+        ),
     ],
     score_template=score,
     time_signatures=time_signatures,

@@ -44,7 +44,6 @@ tempo_handler = evans.TempoSpannerHandler(
 section_title = abjad.Markup(
     r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps Pins \caps "(for Loose Geographies)" }""",
     direction=abjad.Down,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -67,19 +66,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -87,15 +86,19 @@ maker = evans.SegmentMaker(
             baca.selectors.leaf(0),
         ),
         evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([3, 4])
-        ),
-        evans.call(
-            "Global Context", tempo_handler, abjad.select().leaves().get([7, 8])
+            "Global Context",
+            tempo_handler,
+            lambda _: abjad.Selection(_).leaves().get([3, 4]),
         ),
         evans.call(
             "Global Context",
             tempo_handler,
-            abjad.select().leaves().get([10, 11]),
+            lambda _: abjad.Selection(_).leaves().get([7, 8]),
+        ),
+        evans.call(
+            "Global Context",
+            tempo_handler,
+            lambda _: abjad.Selection(_).leaves().get([10, 11]),
         ),
         # evans.attach(
         #     "Voice 1",
@@ -139,7 +142,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up),
             baca.selectors.leaf(0, pitched=True),
         ),
     ],

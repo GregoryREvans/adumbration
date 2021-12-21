@@ -22,19 +22,18 @@ cyc_padding = evans.CyclicList([7.2, 4.2, 5.3, 6.6], forget=False)
 def add_markups(runs):
     cyc_marks = evans.CyclicList(
         [
-            abjad.Markup(fr"\markup {_}", direction=abjad.Up, literal=True)
+            abjad.Markup(fr"\markup {_}", direction=abjad.Up)
             for _ in ["clt.", "½clt.", "norm.", "½clt."]
         ],
         forget=False,
     )
     for run in runs:
-        abjad.attach(cyc_marks(r=1)[0], abjad.select(run).leaf(0))
+        abjad.attach(cyc_marks(r=1)[0], abjad.Selection(run).leaf(0))
 
 
 section_title = abjad.Markup(
     r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps E.H. \caps "[Komm (ii)]" }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -57,12 +56,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
@@ -74,7 +73,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -115,7 +114,7 @@ maker = evans.SegmentMaker(
                 hold_last_boolean_vector=[1],
                 with_constante_hairpins=False,
             ),
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 2",
@@ -140,7 +139,7 @@ maker = evans.SegmentMaker(
                 hold_last_boolean_vector=[1],
                 with_constante_hairpins=False,
             ),
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 3",
@@ -164,7 +163,7 @@ maker = evans.SegmentMaker(
                 hold_last_boolean_vector=[1],
                 with_constante_hairpins=False,
             ),
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 4",
@@ -189,27 +188,27 @@ maker = evans.SegmentMaker(
                 hold_last_boolean_vector=[1],
                 with_constante_hairpins=False,
             ),
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 1",
             add_markups,
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 2",
             add_markups,
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 3",
             add_markups,
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
         evans.call(
             "Voice 4",
             add_markups,
-            abjad.select().runs(),
+            lambda _: abjad.Selection(_).runs(),
         ),
     ],
     score_template=score,

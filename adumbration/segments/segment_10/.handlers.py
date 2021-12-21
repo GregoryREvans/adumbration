@@ -1,9 +1,9 @@
 import abjad
-handler_to_value = abjad.OrderedDict(
+handler_to_value = dict(
     [
         (
             'circular_dynamic_handler',
-            abjad.OrderedDict(
+            dict(
                 [
                     ('count_1', -1),
                     ('count_2', -1),

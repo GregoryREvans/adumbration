@@ -48,7 +48,7 @@ evans.timespan.intercalate_silences(rhythm_commands)
 # ######
 # pitch#
 # ######
-voicewise_material = abjad.OrderedDict(
+voicewise_material = dict(
     [
         ("Voice 1", c_pitch_handler_one),
         ("Voice 2", c_pitch_handler_two),

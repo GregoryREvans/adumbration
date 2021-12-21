@@ -74,9 +74,9 @@ def attach_clicks(selections):
         ],
         forget=False,
     )
-    for leaf in abjad.select(selections).leaves():
+    for leaf in abjad.Selection(selections).leaves():
         text = cyc_clicks(r=1)[0]
-        mark = abjad.Markup(fr"\upright {{ {text} }}", direction=abjad.Up, literal=True)
+        mark = abjad.Markup(fr"\upright {{ {text} }}", direction=abjad.Up)
         span = abjad.StartTextSpan(
             left_text=mark,
             style="dashed-line-with-arrow",
@@ -84,15 +84,15 @@ def attach_clicks(selections):
         abjad.tweak(span).padding = 6.75
         abjad.attach(span, leaf)
         abjad.attach(abjad.StopTextSpan(), leaf)
-    first_leaf = abjad.select(selections).leaf(0)
+    first_leaf = abjad.Selection(selections).leaf(0)
     abjad.attach(abjad.Dynamic("fff"), first_leaf)
     abjad.detach(abjad.StopTextSpan(), first_leaf)
     final = abjad.StartTextSpan(
-        left_text=abjad.Markup(r"\upright { quasi noise }", literal=True),
+        left_text=abjad.Markup(r"\upright { quasi noise }"),
         style="invisible-line",
     )
     abjad.tweak(final).padding = 6.75
-    final_leaf = abjad.select(selections).leaf(-1)
+    final_leaf = abjad.Selection(selections).leaf(-1)
     start_span_indicator = [
         _
         for _ in abjad.get.indicators(final_leaf)
@@ -104,10 +104,10 @@ def attach_clicks(selections):
 
 
 def attach_material(selections):
-    ties = abjad.select(selections).logical_ties()
-    first_leaf = abjad.select(ties).leaf(0)
-    center_leaf = abjad.select(ties[len(ties) // 2]).leaf(0)
-    last_leaf = abjad.select(ties).leaf(-1)
+    ties = abjad.Selection(selections).logical_ties()
+    first_leaf = abjad.Selection(ties).leaf(0)
+    center_leaf = abjad.Selection(ties[len(ties) // 2]).leaf(0)
+    last_leaf = abjad.Selection(ties).leaf(-1)
     cyc_dynamics = evans.CyclicList(["p", "f"], forget=False)
     cyc_hairpins = evans.CyclicList(["<", ">"], forget=False)
     for tie in ties:
@@ -117,12 +117,12 @@ def attach_material(selections):
         hairpin = abjad.StartHairpin(cyc_hairpins(r=1)[0])
         abjad.attach(hairpin, tie[0])
     start = abjad.StartTextSpan(
-        left_text=abjad.Markup(r"\upright norm.", literal=True),
+        left_text=abjad.Markup(r"\upright norm."),
         style="dashed-line-with-arrow",
     )
     middle = abjad.StartTextSpan(
-        left_text=abjad.Markup(r"\upright msp.", literal=True),
-        right_text=abjad.Markup(r"\markup \upright st.", literal=True),
+        left_text=abjad.Markup(r"\upright msp."),
+        right_text=abjad.Markup(r"\markup \upright st."),
         style="dashed-line-with-arrow",
     )
     middle_stop = abjad.StopTextSpan()
@@ -133,7 +133,7 @@ def attach_material(selections):
     abjad.attach(middle_stop, center_leaf)
     abjad.attach(middle, center_leaf)
     abjad.attach(final_stop, last_leaf)
-    for leaf in abjad.select(selections).leaves():
+    for leaf in abjad.Selection(selections).leaves():
         literal_1 = abjad.LilyPondLiteral(
             r"\once \override Staff.Tie.transparent = ##t",
             format_slot="before",
@@ -206,25 +206,24 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps "Yellow Light in Fog" """,
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
@@ -275,65 +274,67 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             evans.PitchHandler(["7/1"], forget=False, as_ratios=True),
-            abjad.select().logical_tie(32),
+            lambda _: abjad.Selection(_).logical_tie(32),
         ),
         evans.call(
             "Voice 2",
             evans.PitchHandler(["5/1"], forget=False, as_ratios=True),
-            abjad.select().logical_tie(33),
+            lambda _: abjad.Selection(_).logical_tie(33),
         ),
         evans.call(
             "Voice 3",
             evans.PitchHandler(["3/1"], forget=False, as_ratios=True),
-            abjad.select().logical_tie(34),
+            lambda _: abjad.Selection(_).logical_tie(34),
         ),
         evans.call(
             "Voice 4",
             evans.PitchHandler(["1/1"], forget=False, as_ratios=True),
-            abjad.select().logical_tie(35),
+            lambda _: abjad.Selection(_).logical_tie(35),
         ),
         evans.call(
             "Voice 1",
             attach_clicks,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .leaves()
             .get([-29, -27, -26, -23, -20, -17, -13, -11, -8, -7]),
         ),
         evans.call(
             "Voice 2",
             attach_clicks,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .leaves()
             .get([-29, -27, -26, -23, -20, -17, -13, -11, -8, -7]),
         ),
         evans.call(
             "Voice 3",
             attach_clicks,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .leaves()
             .get([-29, -27, -26, -23, -20, -17, -13, -11, -8, -7]),
         ),
         evans.call(
             "Voice 4",
             attach_clicks,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .leaves()
             .get([-29, -27, -26, -23, -20, -17, -13, -11, -8, -7]),
         ),
         evans.call(
             "Voice 1",
             attach_material,
-            abjad.select().logical_ties().get([0, 1, 2, 3, 4, 5, 6]),
+            lambda _: abjad.Selection(_).logical_ties().get([0, 1, 2, 3, 4, 5, 6]),
         ),
         evans.call(
             "Voice 1",
             attach_material,
-            abjad.select().logical_ties().get([13, 14, 15, 16, 17, 18, 19]),
+            lambda _: abjad.Selection(_)
+            .logical_ties()
+            .get([13, 14, 15, 16, 17, 18, 19]),
         ),
         evans.call(
             "Voice 1",
             attach_material,
-            abjad.select().logical_ties().get([26, 27, 28, 29, 30, 31]),
+            lambda _: abjad.Selection(_).logical_ties().get([26, 27, 28, 29, 30, 31]),
         ),
         evans.call(
             "Voice 1",
@@ -343,7 +344,7 @@ maker = evans.SegmentMaker(
                 forget=False,
                 apply_to="runs",
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -373,17 +374,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 2",
             attach_material,
-            abjad.select().logical_ties().get([0, 1, 2, 3, 4, 5]),
+            lambda _: abjad.Selection(_).logical_ties().get([0, 1, 2, 3, 4, 5]),
         ),
         evans.call(
             "Voice 2",
             attach_material,
-            abjad.select().logical_ties().get([12, 13, 14, 15, 16, 17, 18, 19, 20]),
+            lambda _: abjad.Selection(_)
+            .logical_ties()
+            .get([12, 13, 14, 15, 16, 17, 18, 19, 20]),
         ),
         evans.call(
             "Voice 2",
             attach_material,
-            abjad.select().logical_ties().get([27, 28, 29, 30, 31, 32]),
+            lambda _: abjad.Selection(_).logical_ties().get([27, 28, 29, 30, 31, 32]),
         ),
         evans.call(
             "Voice 2",
@@ -393,7 +396,7 @@ maker = evans.SegmentMaker(
                 forget=False,
                 apply_to="runs",
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -424,17 +427,21 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 3",
             attach_material,
-            abjad.select().logical_ties().get([0, 1, 2, 3, 4, 5, 6]),
+            lambda _: abjad.Selection(_).logical_ties().get([0, 1, 2, 3, 4, 5, 6]),
         ),
         evans.call(
             "Voice 3",
             attach_material,
-            abjad.select().logical_ties().get([13, 14, 15, 16, 17, 18, 19]),
+            lambda _: abjad.Selection(_)
+            .logical_ties()
+            .get([13, 14, 15, 16, 17, 18, 19]),
         ),
         evans.call(
             "Voice 3",
             attach_material,
-            abjad.select().logical_ties().get([26, 27, 28, 29, 30, 31, 32, 33]),
+            lambda _: abjad.Selection(_)
+            .logical_ties()
+            .get([26, 27, 28, 29, 30, 31, 32, 33]),
         ),
         evans.call(
             "Voice 3",
@@ -444,7 +451,7 @@ maker = evans.SegmentMaker(
                 forget=False,
                 apply_to="runs",
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -476,17 +483,19 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 4",
             attach_material,
-            abjad.select().logical_ties().get([0, 1, 2, 3, 4, 5, 6, 7]),
+            lambda _: abjad.Selection(_).logical_ties().get([0, 1, 2, 3, 4, 5, 6, 7]),
         ),
         evans.call(
             "Voice 4",
             attach_material,
-            abjad.select().logical_ties().get([14, 15, 16, 17, 18, 19]),
+            lambda _: abjad.Selection(_).logical_ties().get([14, 15, 16, 17, 18, 19]),
         ),
         evans.call(
             "Voice 4",
             attach_material,
-            abjad.select().logical_ties().get([26, 27, 28, 29, 30, 31, 32, 33, 34]),
+            lambda _: abjad.Selection(_)
+            .logical_ties()
+            .get([26, 27, 28, 29, 30, 31, 32, 33, 34]),
         ),
         evans.call(
             "Voice 4",
@@ -496,7 +505,7 @@ maker = evans.SegmentMaker(
                 forget=False,
                 apply_to="runs",
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -526,28 +535,24 @@ maker = evans.SegmentMaker(
                 ]
             ),
         ),
-        evans.call("Voice 1", clef_handlers[0], abjad.select()),
-        evans.call("Voice 2", clef_handlers[1], abjad.select()),
-        evans.call("Voice 3", clef_handlers[2], abjad.select()),
-        evans.call("Voice 4", clef_handlers[3], abjad.select()),
+        evans.call("Voice 1", clef_handlers[0], lambda _: abjad.Selection(_)),
+        evans.call("Voice 2", clef_handlers[1], lambda _: abjad.Selection(_)),
+        evans.call("Voice 3", clef_handlers[2], lambda _: abjad.Selection(_)),
+        evans.call("Voice 4", clef_handlers[3], lambda _: abjad.Selection(_)),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([7]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([7]).leaf(0),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([20]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([20]).leaf(0),
         ),
         evans.call(
             "Voice 1",
             grace_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -582,31 +587,27 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.call(
             "Staff 1",
             head_handler,
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([6]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([6]).leaf(0),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([21]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([21]).leaf(0),
         ),
         evans.call(
             "Voice 2",
             grace_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -641,31 +642,27 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.call(
             "Staff 2",
             head_handler,
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([7]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([7]).leaf(0),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([20]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([20]).leaf(0),
         ),
         evans.call(
             "Voice 3",
             grace_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -700,31 +697,27 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.call(
             "Staff 3",
             head_handler,
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([8]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([8]).leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\markup { sp.(quasi noise) }", direction=abjad.Up, literal=True
-            ),
-            abjad.select().logical_ties().get([20]).leaf(0),
+            abjad.Markup(r"\markup { sp.(quasi noise) }", direction=abjad.Up),
+            lambda _: abjad.Selection(_).logical_ties().get([20]).leaf(0),
         ),
         evans.call(
             "Voice 4",
             grace_handler,
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties()
             .get(
                 [
@@ -759,12 +752,12 @@ maker = evans.SegmentMaker(
                 ],
                 forget=False,
             ),
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
         evans.call(
             "Staff 4",
             head_handler,
-            abjad.select().logical_ties(grace=True),
+            lambda _: abjad.Selection(_).logical_ties(grace=True),
         ),
     ],
     score_template=score,

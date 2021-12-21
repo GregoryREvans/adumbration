@@ -1,5 +1,5 @@
 import abjad
-info = abjad.OrderedDict(
+info = dict(
     [
         (
             'Voice 1',

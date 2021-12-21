@@ -18,7 +18,7 @@ from adumbration.materials.timespans.segment_04.convert_timespans import (
 
 
 def _slur_runs(selections):
-    for run in abjad.select(selections).runs():
+    for run in abjad.Selection(selections).runs():
         if 1 < len(run):
             abjad.attach(abjad.StartSlur(), run[0])
             abjad.attach(abjad.StopSlur(), run[-1])
@@ -29,7 +29,6 @@ bar_literal = abjad.LilyPondLiteral(r'\bar ".|:"', format_slot="before")
 section_title = abjad.Markup(
     r"""\markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Crocodiles (ii) } }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 
@@ -53,12 +52,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
@@ -70,7 +69,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",

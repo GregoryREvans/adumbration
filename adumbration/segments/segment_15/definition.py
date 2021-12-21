@@ -16,37 +16,37 @@ from adumbration.materials.timespans.segment_15.convert_timespans import rhythm_
 bar_literal = abjad.LilyPondLiteral(r'\bar ".|:"', format_slot="before")
 
 xsb_noise_poco_a_poco = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"""\upright "XSB (noise poco a poco)" """, literal=True),
+    left_text=abjad.Markup(r"""\upright "XSB (noise poco a poco)" """),
     style="dashed-line-with-arrow",
 )
 abjad.tweak(xsb_noise_poco_a_poco).padding = 9
 
 xsb_noise_poco_a_poco_final_noise = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"\upright noise", literal=True),
+    left_text=abjad.Markup(r"\upright noise"),
     style="invisible-line",
 )
 abjad.tweak(xsb_noise_poco_a_poco_final_noise).padding = 9
 
 noise_poco_a_poco = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"""\upright "noise poco a poco" """, literal=True),
+    left_text=abjad.Markup(r"""\upright "noise poco a poco" """),
     style="dashed-line-with-arrow",
 )
 abjad.tweak(noise_poco_a_poco).padding = 6
 
 noise_poco_a_poco_final_noise = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"\upright noise", literal=True),
+    left_text=abjad.Markup(r"\upright noise"),
     style="invisible-line",
 )
 abjad.tweak(noise_poco_a_poco_final_noise).padding = 6
 
 norm_noise_poco_a_poco = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"""\upright "norm. (noise poco a poco)" """, literal=True),
+    left_text=abjad.Markup(r"""\upright "norm. (noise poco a poco)" """),
     style="dashed-line-with-arrow",
 )
 abjad.tweak(norm_noise_poco_a_poco).padding = 7
 
 norm_noise_poco_a_poco_final_noise = abjad.StartTextSpan(
-    left_text=abjad.Markup(r"\upright noise", literal=True),
+    left_text=abjad.Markup(r"\upright noise"),
     style="invisible-line",
 )
 abjad.tweak(norm_noise_poco_a_poco_final_noise).padding = 7
@@ -71,47 +71,46 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Plateaus""",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
         evans.call(
             "Voice 1",
             evans.PitchHandler([12], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 2",
             evans.PitchHandler([0], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 3",
             evans.PitchHandler([-12], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
             evans.PitchHandler([-24], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         # evans.attach("Voice 1", bar_literal, baca.selectors.leaf(0)),
         # evans.attach("Voice 2", bar_literal, baca.selectors.leaf(0)),
@@ -193,7 +192,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"""\markup \box "cresc. a m.196 (ff)" """,
                 direction=abjad.Down,
-                literal=True,
             ),
             baca.selectors.leaf(0, pitched=True),
         ),
@@ -277,7 +275,7 @@ maker = evans.SegmentMaker(
                 head_vector_forget=False,
                 forget=False,
             ),
-            abjad.select().run(-1),
+            lambda _: abjad.Selection(_).run(-1),
         ),
         evans.call(
             "Voice 3",
@@ -287,16 +285,16 @@ maker = evans.SegmentMaker(
                 head_vector_forget=False,
                 forget=False,
             ),
-            abjad.select().run(-1),
+            lambda _: abjad.Selection(_).run(-1),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup IV.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup IV.", direction=abjad.Up),
             baca.selectors.leaf(-24, pitched=True),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup III.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup III.", direction=abjad.Up),
             baca.selectors.leaf(-22, pitched=True),
         ),
         evans.attach(
@@ -318,89 +316,88 @@ maker = evans.SegmentMaker(
         evans.attach(
             "Voice 1",
             norm_noise_poco_a_poco,
-            abjad.select().runs().get([-1]).leaf(0),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(0),
         ),
         evans.attach(
             "Voice 1",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-2),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-2),
         ),
         evans.attach(
             "Voice 1",
             norm_noise_poco_a_poco_final_noise,
-            abjad.select().runs().get([-1]).leaf(-2),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-2),
         ),
         evans.attach(
             "Voice 1",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-1),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-1),
         ),
         evans.attach(
             "Voice 2",
             norm_noise_poco_a_poco,
-            abjad.select().runs().get([-1]).leaf(0),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(0),
         ),
         evans.attach(
             "Voice 2",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-12),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-12),
         ),
         evans.attach(
             "Voice 2",
             norm_noise_poco_a_poco_final_noise,
-            abjad.select().runs().get([-1]).leaf(-12),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-12),
         ),
         evans.attach(
             "Voice 2",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-1),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-1),
         ),
         evans.attach(
             "Voice 3",
             norm_noise_poco_a_poco,
-            abjad.select().runs().get([-1]).leaf(0),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(0),
         ),
         evans.attach(
             "Voice 3",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-7),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-7),
         ),
         evans.attach(
             "Voice 3",
             norm_noise_poco_a_poco_final_noise,
-            abjad.select().runs().get([-1]).leaf(-7),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-7),
         ),
         evans.attach(
             "Voice 3",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-1),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-1),
         ),
         evans.attach(
             "Voice 4",
             norm_noise_poco_a_poco,
-            abjad.select().runs().get([-1]).leaf(0),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(0),
         ),
         evans.attach(
             "Voice 4",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-2),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-2),
         ),
         evans.attach(
             "Voice 4",
             norm_noise_poco_a_poco_final_noise,
-            abjad.select().runs().get([-1]).leaf(-2),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-2),
         ),
         evans.attach(
             "Voice 4",
             abjad.StopTextSpan(),
-            abjad.select().runs().get([-1]).leaf(-1),
+            lambda _: abjad.Selection(_).runs().get([-1]).leaf(-1),
         ),
         evans.attach(
             "Voice 2",
             abjad.Markup(
                 r"""\markup "full bows as possible" """,
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
@@ -409,7 +406,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"""\markup "full bows as possible" """,
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
@@ -418,7 +414,6 @@ maker = evans.SegmentMaker(
             abjad.Markup(
                 r"""\markup "full bows as possible" """,
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),

@@ -47,62 +47,61 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Fluxes/Phylums""",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
         evans.call(
             "Voice 1",
             evans.PitchHandler([4], apply_all=True),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 3",
             evans.PitchHandler([-3], apply_all=True),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
             evans.PitchHandler([-24], apply_all=True),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 1",
             clef_handlers[0],
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 2",
             clef_handlers[1],
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 3",
             clef_handlers[2],
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
             clef_handlers[3],
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.attach(
             "Global Context",
@@ -132,122 +131,102 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(17),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(11),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(19),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(18),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(30),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(32),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(46),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(68),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(40),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(40),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(54),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(81),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(52),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                r"\markup { full bows as possible }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { full bows as possible }", direction=abjad.Up),
             baca.selectors.leaf(67),
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(62),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup ord.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ord.", direction=abjad.Up),
             baca.selectors.leaf(77),
         ),
         # evans.attach(

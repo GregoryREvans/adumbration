@@ -17,7 +17,7 @@ from adumbration.materials.timespans.segment_02.convert_timespans import (
 
 
 def _slur_runs(selections):
-    for run in abjad.select(selections).runs():
+    for run in abjad.Selection(selections).runs():
         if 1 < len(run):
             abjad.attach(abjad.StartSlur(), run[0])
             abjad.attach(abjad.StopSlur(), run[-1])
@@ -26,7 +26,6 @@ def _slur_runs(selections):
 section_title = abjad.Markup(
     r"""\markup { \box \override #'(font-name . "STIXGeneral Bold") \caps { Crocodiles (i) } }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 
@@ -50,12 +49,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
@@ -67,7 +66,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Voice 2",
@@ -91,7 +90,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
@@ -101,7 +100,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up),
             baca.selectors.leaf(1),
         ),
         evans.attach(
@@ -111,7 +110,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up),
             baca.selectors.leaf(1),
         ),
         evans.attach(
@@ -121,7 +120,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(r"\markup sp.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup sp.", direction=abjad.Up),
             baca.selectors.leaf(1),
         ),
         evans.call(

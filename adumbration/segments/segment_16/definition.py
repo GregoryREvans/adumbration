@@ -49,25 +49,24 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
             abjad.Markup(
                 r"""\markup \override #'(font-name . "STIXGeneral Bold") \box \caps Anomaly""",
                 direction=abjad.Up,
-                literal=True,
             ),
             baca.selectors.leaf(0),
         ),
@@ -79,22 +78,22 @@ maker = evans.SegmentMaker(
         evans.call(
             "Voice 1",
             evans.PitchHandler([0], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 2",
             evans.PitchHandler([0], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 3",
             evans.PitchHandler([-12], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 4",
             evans.PitchHandler([-24], apply_all=True, apply_all_spelling="sharp"),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.call(
             "Voice 1",
@@ -131,7 +130,7 @@ maker = evans.SegmentMaker(
                 as_ratios=True,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(
                 pitched=True,
             )
@@ -179,7 +178,7 @@ maker = evans.SegmentMaker(
                 as_ratios=True,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(
                 pitched=True,
             )
@@ -248,7 +247,7 @@ maker = evans.SegmentMaker(
                 as_ratios=True,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(
                 pitched=True,
             )
@@ -316,7 +315,7 @@ maker = evans.SegmentMaker(
                 as_ratios=True,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(
                 pitched=True,
             )
@@ -355,7 +354,7 @@ maker = evans.SegmentMaker(
                 baca_seq,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -379,7 +378,7 @@ maker = evans.SegmentMaker(
                 baca_seq,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -413,7 +412,7 @@ maker = evans.SegmentMaker(
                 baca_seq,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -445,7 +444,7 @@ maker = evans.SegmentMaker(
                 baca_seq,
                 forget=False,
             ),
-            abjad.select()
+            lambda _: abjad.Selection(_)
             .logical_ties(pitched=True)
             .get(
                 [
@@ -480,9 +479,9 @@ maker = evans.SegmentMaker(
                 ]
             ),
         ),
-        evans.call("Voice 1", clef_handlers[0], abjad.select()),
-        evans.call("Voice 2", clef_handlers[1], abjad.select()),
-        evans.call("Voice 3", clef_handlers[2], abjad.select()),
+        evans.call("Voice 1", clef_handlers[0], lambda _: abjad.Selection(_)),
+        evans.call("Voice 2", clef_handlers[1], lambda _: abjad.Selection(_)),
+        evans.call("Voice 3", clef_handlers[2], lambda _: abjad.Selection(_)),
         evans.call(
             "Voice 4",
             evans.ClefHandler(
@@ -491,7 +490,7 @@ maker = evans.SegmentMaker(
                 add_extended_clefs=True,
                 add_ottavas=True,
             ),
-            abjad.select(),
+            lambda _: abjad.Selection(_),
         ),
         evans.detach(
             "Voice 4",
@@ -538,30 +537,22 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(
-                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { staccati leggiero }", direction=abjad.Up),
             baca.selectors.leaf(25),
         ),
         evans.attach(
             "Voice 2",
-            abjad.Markup(
-                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { staccati leggiero }", direction=abjad.Up),
             baca.selectors.leaf(22),
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(
-                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { staccati leggiero }", direction=abjad.Up),
             baca.selectors.leaf(24),
         ),
         evans.attach(
             "Voice 4",
-            abjad.Markup(
-                r"\markup { staccati leggiero }", direction=abjad.Up, literal=True
-            ),
+            abjad.Markup(r"\markup { staccati leggiero }", direction=abjad.Up),
             baca.selectors.leaf(18),
         ),
     ],

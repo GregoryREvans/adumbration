@@ -21,7 +21,6 @@ bar_literal = abjad.LilyPondLiteral(r'\bar ".|:"', format_slot="before")
 section_title = abjad.Markup(
     r"""\markup \override #'(font-name . "STIXGeneral Bold") \column { \box \caps "Anamorphosis/Calligrapher" \caps "[Ombreggiato (ii)]" }""",
     direction=abjad.Up,
-    literal=True,
 )
 
 maker = evans.SegmentMaker(
@@ -44,12 +43,12 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.transform_brackets,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.call(
             "score",
             evans.SegmentMaker.rewrite_meter,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         "skips",
         handler_commands,
@@ -61,7 +60,7 @@ maker = evans.SegmentMaker(
         evans.call(
             "score",
             evans.SegmentMaker.beam_score,
-            abjad.select().components(abjad.Score),
+            lambda _: abjad.Selection(_).components(abjad.Score),
         ),
         evans.attach(
             "Global Context",
@@ -107,7 +106,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 3",
-            abjad.Markup(r"\markup { slow bow }", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup { slow bow }", direction=abjad.Up),
             baca.selectors.leaf(2),
         ),
         evans.attach(
@@ -156,7 +155,7 @@ maker = evans.SegmentMaker(
         ),
         evans.attach(
             "Voice 1",
-            abjad.Markup(r"\markup ½clt.", direction=abjad.Up, literal=True),
+            abjad.Markup(r"\markup ½clt.", direction=abjad.Up),
             baca.selectors.leaf(0),
         ),
         evans.attach(
