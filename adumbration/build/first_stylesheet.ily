@@ -2,10 +2,10 @@
 \language "english"
 #(set-default-paper-size "letterportrait")
 #(set-global-staff-size 12) % was 13. Try 12.5?
-\include "/Users/evansdsg2/evans/lilypond/evans-markups.ily"
-\include "/Users/evansdsg2/evans/lilypond/evans-spanners.ily"
-\include "/Users/evansdsg2/baca/lilypond/baca.ily"
-\include "/Users/evansdsg2/abjad/docs/source/_stylesheets/ekmelos-ji-accidental-markups.ily"
+\include "/Users/gregoryevans/evans/lilypond/evans-markups.ily"
+\include "/Users/gregoryevans/evans/lilypond/evans-spanners.ily"
+\include "/Users/gregoryevans/baca/lilypond/baca.ily"
+\include "/Users/gregoryevans/abjad/docs/source/_stylesheets/ekmelos-ji-accidental-markups.ily"
 \header {
 	tagline = ##f
 	breakbefore = ##t
